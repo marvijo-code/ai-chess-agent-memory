@@ -1,35 +1,40 @@
 # Chess memory
 
 ## Move discipline
-- Before choosing a move, scan the opponent's checks, captures, and pawn attacks. Repeat on the resulting position, including attacks on loose pieces elsewhere. Check every destination against enemy pawns, including advanced flank pawns.
-- When a piece is attacked, examine captures and counterthreats before retreating. Trace long-range defenders through vacated squares; friendly blockers interrupt protection.
-- Recount central pawn defenders after knight reroutes or exchanges. An attractive outpost can leave the center undefended.
-- Calculate the strongest defense to an attacking threat. A mate threat earns no compensation if a simple pawn move stops it and permits invasion.
-- Check is not protection: before any queen check, explicitly test ...KxQ and all other captures of the queen. After promotion, keep both queens safe unless sacrificing one has a concrete purpose.
-- Clock: use quick decisions for familiar development, forced recaptures, and simple winning conversions; reserve longer calculation for tactical turning points. Game 1 left almost six minutes unused despite a decisive miss; game 3 spent heavily on middlegame maneuvering and finished with 21 seconds. More thinking helps only with a systematic threat scan.
+- Before choosing a move, scan enemy checks, captures, and pawn attacks. Repeat on the resulting position, including loose pieces elsewhere. Check every destination against enemy pawns, including advanced flank pawns.
+- When attacked, examine captures and counterthreats before retreating. Trace sliding-piece defenders through vacated squares; friendly blockers interrupt protection.
+- Recount central pawn defenders after knight reroutes, exchanges, and rook lifts. An outpost or kingside attack is unsound if it abandons the center.
+- Calculate the strongest defense to an attack. A mate threat earns no compensation if a simple pawn move stops it and permits invasion.
+- Check is not protection: before a queen check, test king captures and every other capture of the queen. Keep promoted queens safe unless a sacrifice has a concrete purpose.
+- Move marks are incomplete. Unmarked moves and favorable results do not validate the play.
 
-## Game 1: Black vs Stockfish 19, loss
-- Symmetrical Four Knights: 1.e4 e5 2.Nf3 Nc6 3.Nc3 Nf6 4.Bb5 Bb4. After 6.Nd5 Nxd5 7.exd5 e4 8.dxc6 exf3 9.Qxf3 dxc6, material is balanced. The counterattack on f3 enables this exchange sequence.
-- After 10.Bc4 Be6 11.Bxe6, ...fxe6 was necessary and opened the f-file with tempo. After 14.c3, ...Ba5 was the only good move in postgame analysis. Improve earlier planning rather than rejecting forced responses.
-- White Qb3 and Black Bb4: c3 followed by a bishop retreat exposes b7 to Qxb7. Calculate this before committing Ra8 to e8.
-- 18...Qg6 was inaccurate. After 19.Bxb6 axb6 20.Qxc7 Rg5 21.g3, the mate threat was stopped; 21...h5 allowed 22.Rd8 Rxd8 23.Qxd8+. Assess d-file penetration before spending tempi on ...h5-h4.
-- With my rook on b5 and White's pawn on c3, 33...Kd5 allowed 34.c4+, checking the king and attacking the rook. Check pawn pushes with check before centralizing the king.
+## Clock and conversion
+- The clock is part of the position. Submit a legal move before it expires; a forced win has no value after a flag.
+- Use quick decisions for familiar development, forced recaptures, and routine conversion. Reserve calculation for concrete tactical turning points, with a firm stopping point.
+- At less than 90 seconds with a 10-second increment, aim for 1 - 5 seconds on routine moves and generally stay below the increment. Do not repeatedly spend 20 - 40 seconds improving an already won position.
+- Game 4: about ten minutes remained at move 26, under three at move 44, and 28 seconds after move 67. Lost on time after 67...Ka1 with queen and king against bare king. Elementary mating technique must be executable quickly.
+- Queen conversion: restrict the enemy king, bring my king closer, and deliver a protected mate. Before a nonchecking move, verify the opponent retains a legal move. An exposed queen near the king can be captured; excessive confinement can stalemate.
 
-## Game 2: Black vs DeepSeek V4.1 Flash, win
-- Sound Chigorin setup: ...a6, ...Nf6, ...Be7, ...b5, ...O-O, ...d6, then 9...Na5 10.Bc2 c5 11.d4 Qc7 12.Nbd2 cxd4 13.cxd4 Nc6. After 14.Nb3 a5 15.d5, ...Nb4 attacked Bc2. No Black moves received postgame marks; White's 16.a3?? supplied the decisive advantage.
-- Qc7 defended c2 along the cleared c-file. After 16.a3 Nxc2, the knight captured a bishop and forked Ra1/Re1. White's 17.Qxc2 Qxc2 lost the queen. A pawn attack on a knight does not remove its tactical threat.
-- Convert by taking concretely safe loose material and removing counterplay. Do not assume an opponent will repeat its errors.
-- Played mating pattern: ...Bxf2+ with Ne4 protecting the bishop, ...Qa1+, ...Rad8, then ...Qxb2+ Nxb2 Rd2+ Kf1 Ng3#. ...Ng3 opened Bb7's diagonal toward g2; Bf2 covered e1/g1 and Rd2 covered e2. This line does not prove every king defense was forced.
+## Ruy Lopez / Chigorin
+- Standard setup and detailed examples are in notes/ruy-lopez.md. Play familiar development promptly.
+- With Bc2 facing ...Nb4, preserve the bishop before a3 when ...Nxc2 is available. A pawn attack on a knight does not cancel its fork.
+- Rc1 against Qc7: moving Bc2 can uncover a queen attack only if the rest of the c-file is clear. Check intervening knights and pawns.
+- Nh4-f5, ...Bxf5, Ng3xf5 removes a defender of e4. Against ...Nc5 and ...Nf6, count defenders before further attacking maneuvers.
+- Game 4: f3 supported e4, but f4 removed that support. Re3 temporarily defended e4; Rg3 abandoned it while ...Re8 and both knights attacked it. ...Nxe4 can also fork Rg3 and Bf2. This repeated Game 3's central-defense failure.
 
-## Game 3: White vs Sonnet 5.5, win from a losing position
-- Closed Ruy Lopez: after the Chigorin sequence above, 14.Nb3 a5 15.Be3 a4 16.Nbd2, then Nf1-g3 and Rc1 developed coherently. With Rc1 facing Qc7, 20.d5 Nb4 21.Bb1 uncovered an attack on the queen; only then 22.a3 drove the knight away. Preserve the bishop before playing a3 when ...Nxc2 is available.
-- The kingside knight plan did not secure the center: after Nh4-f5, ...Bxf5 and Ng3xf5, e4 had only Bb1 defending it against Nc5 and Nf6. Black won it with ...Ncxe4 Bxe4 Nxe4. Recount defenders before committing to an outpost.
-- Postgame marks: 28.Qg3? 29.Rcd1?! 30.Nh4? 31.Nf3?!. The sequence allowed central pawn losses and consumed time. Queen activity and rook pressure require concrete threats; do not assume they compensate for material.
-- 34.Nd4 Qd7 35.Nb3?? overlooked Black's pawn on a4: ...axb3 won the knight. This obvious capture was absent from the supplied move marks; those marks are not an exhaustive error list. Scan pawn attacks on every proposed retreat square.
-- Keep seeking concrete counterplay when behind. With Qd5 and Re4, 42...Qe6?? allowed 43.Rxe6! fxe6 44.Qxe6+, exchanging a rook for queen and pawn. Compare both rook and queen captures when offered a queen trade.
-- 45...Bd4+?? allowed 46.Qxd4: Black's d6 pawn blocked Rd8's protection of the bishop. A checking piece can still be undefended.
-- After 57.b8=Q, 58.Qxg5+?? allowed ...Kxg5 and unnecessarily lost one queen. Still winning is not a reason to skip capture checks. Convert queen endings by restricting the king, bringing up my king, and delivering a protected mate; avoid stalemate.
-- Sonnet observation, one game only: exploited loose central pawns and the knight on b3, then missed rook captures of its queen, capture of its checking bishop, and an attacked rook. Its tactical errors supplied the recovery; the result does not validate my middlegame play.
+## Tactical examples to retain
+- Stockfish, Game 1: Qb3 against Bb4 means c3 and a bishop retreat can expose b7. Check this before moving Ra8 away. A stopped ...Rg5 mate threat allowed Rd8 penetration; examine open-file entry before spending tempi on ...h5-h4.
+- Stockfish, Game 1: king d5, rook b5, enemy pawn c3 permits c4+, checking the king and attacking the rook. Scan pawn pushes with check before king centralization.
+- DeepSeek, Game 2: ...Nb4 against Bc2 and rooks a1/e1 threatened ...Nxc2. Qc7 defended c2 along the cleared file, so Qxc2 Qxc2 lost White's queen.
+- Sonnet, Game 3: Nb3 overlooked ...axb3 from a4. Check advanced pawn attacks on retreat squares.
+- Sonnet, Game 3: with Qd5 and Re4, ...Qe6 allowed Rxe6! fxe6 Qxe6+, winning queen and pawn for rook. Compare rook and queen captures when offered a queen trade.
+- Sonnet, Game 3: ...Bd4+ allowed Qxd4 because d6 blocked Rd8's protection. After b8=Q, Qxg5+ allowed ...Kxg5; having another queen did not excuse the error.
+- Sonnet, Game 4: after e5 dxe5, Nxg7+ uncovered Bb1's check; Nxe8+ then uncovered Rg3's check. After ...Bg7, Nxc7 exf4 exchanged queens and left me an extra rook. Count both sides' captures before calling a combination decisive.
+- Extra material can be converted through favorable exchanges and a passed pawn. In Game 4, Rxf6+ removed the bishop, the remaining knights were exchanged, and the h-pawn promoted. Once clearly winning, spend time stopping counterplay and completing the win.
+
+## Opponent observations
+- Sonnet 5.5, two games: develops a coherent Chigorin, pressures loose central pawns, and exploits pawn attacks on pieces. Later tactical errors enabled recoveries in both games; do not plan around receiving another blunder.
+- In Game 4 Sonnet continued with its king and queenside pawns after my promotion, then preserved its last pawn and sought stalemate or time trouble. Expect resistance until mate; keep conversion fast and systematic.
 
 ## Note files
-None.
+- notes/ruy-lopez.md - opening sequences and postgame turning points.
