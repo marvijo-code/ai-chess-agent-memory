@@ -1,31 +1,38 @@
-# Ruy Lopez and Chigorin examples
+# Ruy Lopez: Chigorin safety and conversion
 
 ## Shared structure
 1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Re1 b5 7.Bb3 d6 8.c3 O-O 9.h3 Na5 10.Bc2 c5 11.d4 Qc7 12.Nbd2 cxd4 13.cxd4 Nc6.
 
-As White, Nf1-g3 and Be3 develop naturally. Count e4/d4 defenders before rerouting either knight or lifting the rook. As Black, ...Nb4 after d5 can attack Bc2 and threaten ...Nxc2.
+Count e4/d4 defenders before knight reroutes and rook lifts. After d5 ...Nb4, save Bc2 before a3: ...Nxc2 can fork both rooks.
 
-## Game 2: Black vs DeepSeek, win
-14.Nb3 a5 15.d5 Nb4 16.a3?? Nxc2. The knight took Bc2 and forked Ra1/Re1; 17.Qxc2 Qxc2 lost the queen because the c-file was clear. No Black moves received postgame marks; the opponent's blunder supplied the decisive advantage.
+## T5 round 1: White vs Sonnet, checkmate loss
+14.d5 Nb4 15.Bb1! a5! 16.Nf1 Bd7 17.a3 Na6! 18.Ng3 Nc5 19.Be3 Rac8 20.Bc2 Rfe8 21.Rc1 h6 22.b4 axb4 23.axb4! Na6! 24.Bd3 Nxb4?? 25.Rxc7 Rxc7 26.Bb1 Bf8 27.Qa4?? bxa4.
 
-Played finish included ...Bxf2+ protected by Ne4, ...Qa1+, ...Rad8, ...Qxb2+ Nxb2 Rd2+ Kf1 Ng3#. ...Ng3 opened Bb7's diagonal toward g2; Bf2 covered e1/g1 and Rd2 covered e2. This does not establish that every earlier king defense was forced.
+### Won queen, then overlooked an unmoved pawn
+- Bb1 preserved the bishop before challenging Nb4. ...a5 supported Nb4; a3 induced ...Na6, then ...Nc5 renewed pressure on e4.
+- After 23...Na6, the c-file between Rc1 and Qc7 was clear except for Bc2. Bd3 uncovered the attack. ...Nxb4 attacked Bd3 but ignored Rxc7, which won queen for rook after ...Rxc7.
+- Before Qa4: White Kg1/Qd1/Re1/Bb1/Be3/Nf3/Ng3, pawns d5 e4 f2 g2 h3. Black Kg8/Rc7/Re8/Bd7/Bf8/Nb4/Nf6, pawns b5 d6 e5 f7 g7 h6.
+- Qa4 attacked Nb4 but landed on b5's capture square. ...bxa4 won the queen outright. No White piece could recapture on a4. Black's a-pawn had disappeared in the earlier b4 exchanges; its original b-pawn was still on b5.
+- White went from Q+R against 2R, with equal minor pieces, to a full rook deficit. Reject Qa4 by checking enemy pawn attacks before considering its activity. No best replacement was supplied.
+- Qa4 took 25 seconds with 14:30 remaining. Time pressure did not cause the loss.
 
-## Game 3: White vs Sonnet, win after losing position
-14.Nb3 a5 15.Be3 a4 16.Nbd2, then Nf1-g3 and Rc1. After 20.d5 Nb4 21.Bb1, the c-file queen attack preceded 22.a3, safely driving the knight away.
+### Defensive opportunities and fresh losses
+28.Bd2 Nc2 29.Bxc2 Rxc2 exchanged bishop for knight; 33...Nb3 34.Nxb3 axb3 exchanged knights. These were ordinary trades, despite opponent comments calling captures free. Maintain my own inventory.
 
-Nh4-f5, ...Bxf5 and Ng3xf5 left e4 defended only by Bb1 against Nc5/Nf6. ...Ncxe4 Bxe4 Nxe4 won it. Qg3, Rcd1, Nh4 and Nf3 received adverse marks and consumed time without enough concrete pressure. Later Nb3?? lost to ...axb3 from a4, despite no supplied move mark.
+44.fxe5 dxe5 45.d6 Bxd6 46.Rxd6 R2c6 47.Rxc6 Rxc6 left White B+N against R+B, with three pawns against four. 49...Bc6 50.Nf5 Rxe4? 51.Ne7+! Kf8! 52.Nxc6! won the bishop by a king/bishop fork. White then had B+N against R, with two pawns against four. The tactical resource worked; it does not prove the preceding defense was optimal.
 
-## Game 4: White vs Sonnet, loss on time
-14.Nf1 Bd7 15.Ng3 Rfe8 16.Be3 Rac8 17.Rc1 h6 18.d5 Na5 19.Bb1?! Qb7?! 20.b3 Rxc1 21.Qxc1 Rc8 22.Qd2 Qc7.
+54.Kf3 Rc4 55.Na5 Ra4 56.Nb3?! Ra3 57.Ke4 Rxb3:
+- Ra3 pinned Nb3 to Kf3 along a3-b3-c3-d3-e3-f3.
+- Ke4 released the pin but supplied no defense to b3. The rook simply captured the knight. Before moving a king away from a pinned piece, calculate the existing capture on that piece.
 
-23.Nh4 Bf8 24.Nhf5 Bxf5 25.Nxf5 Nb7 26.f3?! Nc5 27.Bf2 Kh7 28.f4?! exf4?? 29.Qxf4? Re8?! 30.Re3? a5?? 31.Rg3?? b4??.
+59...Ke6 60.Be3 Rxe3:
+- White Kg4/Bf2, pawns g2/h3; Black Rb3/Ke6, pawns e5 f6 g6 h6.
+- Be3 blocked the rook's third-rank line but was undefended: Kg4 did not cover e3. ...Rxe3 won the bishop directly. An interposition needs capture safety, not merely a useful blocking role.
+- Finished with 5:33 and no illegal attempts. The decisive failures were destination checks and undefended pieces.
 
-Lessons from the marks and board:
-- Bb1's queen attack was real, but that did not establish it as the best move.
-- f3 supported e4; f4 removed the pawn defender. Re3 defended e4 vertically, but Rg3 removed it against Re8, Nc5 and Nf6. Knight captures on e4 can fork Rg3/Bf2 after exchanges.
-- ...exf4 was marked a blunder, but Qxf4 failed to exploit it fully. Do not assume an automatic queen recapture is best when central lines change.
-- The rook lift was a blunder despite the later successful attack; Black's ...a5 and ...b4 supplied opportunities.
-
-32.e5 dxe5 33.Nxg7+ Kg8 34.Nxe8+ Bg7 35.Nxc7 exf4. The first knight move uncovered Bb1's diagonal check; the second uncovered the g-file rook check. Both queens disappeared, but my knight survived and Black's rook was gone: an extra rook, not an extra queen.
-
-After exchanges I promoted the h-pawn on move 58. Spent 30 seconds on 61.Qe5+, 27 on 65.Qc5, and 18 on 67.Qxb4. Flagged after 67...Ka1 with Kc4/Qb4 against Ka1. The practical failure was slow elementary conversion.
+## Earlier games
+- Black vs DeepSeek: 14.Nb3 a5 15.d5 Nb4 16.a3?? Nxc2 forked Ra1/Re1 after taking Bc2; Qxc2 Qxc2 lost White's queen along the clear c-file. This blunder did not validate all earlier Black play.
+- White vs Sonnet Game 3: Bb1 before a3 preserved the bishop and uncovered Rc1's attack on Qc7. Later Nh4-f5, ...Bxf5, Ng3xf5 left e4 defended only by Bb1 against Nc5/Nf6; ...Ncxe4 Bxe4 Nxe4 won it. Nb3 later overlooked ...axb3 from a4.
+- White vs Sonnet Game 4: f3 supported e4; f4 removed that defender. Re3 defended e4; Rg3 abandoned it against Re8/Nc5/Nf6. The rook lift remained unsound despite later opponent blunders.
+- Game 4 recovery: e5 dxe5 Nxg7+ uncovered Bb1's check; Nxe8+ uncovered Rg3's check. Nxc7 exf4 exchanged queens and left an extra rook, not an extra queen.
+- Game 4 promoted on move 58, then spent 30 seconds on Qe5+, 27 on Qc5, and 18 on Qxb4. Flagged with Kc4/Qb4 against Ka1. Execute elementary queen mates promptly while checking stalemate and queen captures.
