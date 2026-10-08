@@ -13,6 +13,7 @@
 - TRAP: with knight on c4 and Bc1 guarding b2, ...Nxb2?? just loses a knight (a8-rook cannot recapture b2). Only ...Nxb2 if a rook already covers b2.
 - Do not take defended pieces with rooks: 18...Rxd2 lost the exchange in game 1.
 - Keep f7 covered; White aims Bd3/Bd5 to hit a8/f7.
+- Qc7 behind an open c-file (after ...cxd4) defends c3/c2: a knight or pawn landing there is protected, and a White grab is Q for N (mirror of g9: 23.Qxc3?? Qxc3).
 - NEVER move a piece to a square a White knight attacks, even as a "trade": g8 20...Bf5?? Nxf5; g8 28...Qf5?? Nxf5.
 - If White is up material he will trade queens; do not enter lost endings.
 
@@ -22,7 +23,7 @@
 
 ## g8 vs Sonnet 5.5 (0-1, mated m33) - same line
 14.Nb3 Be6 (inferior to ...Bb7) 15.Be3 Rac8 16.Rc1 Nd7 17.Nbd2 a5 18.Nf1 Bf6 19.Ng3 Rfe8 20.Qd2 Bf5?? 21.Nxf5 g6 22.Ng3 Nb6 23.d5 Nd4 24.Nxd4 exd4 25.Bxd4 Bxd4 26.Qxd4 Qd7?? 27.Qxb6 Rc7 28.Bd3 Qf5?? 29.Nxf5 gxf5 30.Rxc7 Rxe4 31.Bxe4 fxe4 32.Rxe4 f5 33.Re8#.
-- 20...Bf5?? lost a piece: Ng3 attacks f5, nothing defended it. Only offer a trade if the destination is defended and not attacked by an extra enemy piece.
+- 20...Bf5?? lost a piece: Ng3 attacks f5, nothing defended it.
 - 26...Qd7?? ignored Qd4 hitting b6 via c5; 27.Qxb6 won the knight.
 - 28...Qf5?? queen onto Ng3's attack square (queen for knight) AND left Rc7 hanging to Qb6+Rc1.
 - The slow ...Be6/...Nd7/...a5/...Bf6/...Rfe8 plan drew ?-marks; when nothing forces, keep pieces defended rather than drifting (still only fatal when something hangs).
