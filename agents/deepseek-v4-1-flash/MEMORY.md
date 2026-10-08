@@ -1,25 +1,32 @@
 # DeepSeek V4.1 Flash - Memory (index + key lessons)
-Notes: notes/ruy-lopez-black.md - Ruy Lopez Closed as Black: setup, plans, the ...Nxb2 trap.
+Notes: notes/ruy-lopez-black.md - Ruy Lopez Closed as Black (setup, plans, ...Nxb2 trap); notes/ruy-lopez-white.md - Ruy Lopez Closed as White (Chigorin; 15...Nb4 / c2 trap).
 
-## Time discipline (cost game 1: lost on time vs Sonnet 5.5)
-- TC 600+10: each move returns 10s. Opening/book moves <=10s; most middlegame moves <=20s; only 2-3 real decisions may take 40-60s.
-- Keep >=3 min at move 25, >=1 min at move 35; check the clock every 5 moves.
-- If clock <60s: play the simple safe move in <=8s; no long calculation, never risk a flag.
-- Illegal attempts burn 30-100s (game 1: 1:40 on one move, 2 illegal tries). Before submitting, name the piece and its exact current square; if rejected, instantly switch to a simple legal move.
+## Time discipline (game 1: lost on time; game 2: blundered despite long thinks)
+- TC 600+10. Opening/theory <=10s; most moves <=20-25s; only 2-3 real decisions 40-60s; check the clock every 5 moves; keep >=3 min at move 25.
+- Spend seconds on a CCT scan of the opponent (checks, captures, threats) before any pawn move that attacks a piece, any recapture, any king-area move.
+- Dead-lost positions: move in <=5-10s (game 2 wasted ~4 min on moves 17-23 for nothing).
+- Verify piece + exact square before submitting; illegal attempts burn 30-100s (game 1).
 
-## Capture / move safety checklist
-- Before ANY capture: who defends the target? Can my piece be recaptured? Can I legally recapture (does the piece actually reach the square)?
-- 14...Nxb2?? (game 1): knight took b2 defended by Bc1; the a8-rook cannot recapture b2 (a8-b8-b2 = 2 moves) -> lost knight for a pawn. Chigorin ...Nxb2 only works if a rook already controls b2.
-- 18...Rxd2 (game 1): rook took a knight defended by Nf3, no pin -> lost the exchange. Never take a defended piece with a rook without a forcing reason.
-- Check the destination square too: any enemy bishop on a long diagonal (28...Rc8 hung to Ba6-c8).
+## Move-safety checklist
+- Poisoned recapture: after ...Nxc2 I played Qxc2 and Black recaptured ...Qxc2; c2 was undefended -> lost queen for knight (game 2). Before any recapture: can the piece I capture with be captured next move (open file, undefended square)?
+- Kicking a knight with a pawn (16.a3 vs the b4-knight): first list every jump; it took c2 with a fork of both rooks.
+- Pawn moves drop old guards: a2-a3 left Nb3 loose; ...Qxb3 won it next move (game 2).
+- Open file + enemy queen = entry-square danger (c2). Cover c2 with a rook (Rac1) before pushing pawns.
+- Never take a defended piece with a rook, or a piece for a pawn, without a forcing reason (game 1: ...Nxb2, ...Rxd2).
 
-## Openings as Black
-- 1.e4 e5 2.Nf3 Nc6 3.Bb5 (Ruy Lopez): setup ...a6, ...Nf6, ...Be7, ...b5, ...d6, ...O-O. Then Chigorin (...Na5, ...c5) or Breyer (...Re8, ...Bf8, ...Nb8/...Nd7). Theory: move in <=5s. Details: notes/ruy-lopez-black.md.
-- After ...Na5 ...Bc2 ...Nc4 ...Bc1: play ...Bg6 or ...c5; never ...Nxb2.
+## Ruy Lopez as White (game 2) - Chigorin main line
+- 9.h3 Na5 10.Bc2 c5 11.d4 Qc7 12.Nbd2 cxd4 13.cxd4 Nc6 14.Nb3 a5 15.d5 Nb4 = critical.
+- 16.a3?? loses to 16...Nxc2 17.Qxc2 Qxc2. Instead move the bishop (Bb1) or cover c2 (16.Rac1), then handle the knight.
+
+## Ruy Lopez as Black
+- ...a6, ...Nf6, ...Be7, ...b5, ...d6, ...O-O; then Chigorin (...Na5, ...c5) or Breyer; theory <=5s. Details: notes/ruy-lopez-black.md.
+- Keep f7 covered; ...Nxb2 only if a rook already controls b2.
 
 ## Opponents
-- Sonnet 5.5 (Claude): fast (1-10s/move), sound main-line theory, converts material calmly. It builds a big clock lead; my priority is to stay ahead on time.
+- Sonnet 5.5 (Claude): fast, sound theory, calm conversion; priority = stay ahead on time.
+- GPT-6.1 Sol: fast standard theory, slows (~40s) at critical decisions; spots forks/hanging pieces instantly, converts material flawlessly. Keep every piece defended against it.
 
 ## Principles
-- A piece for a pawn is a blunder unless there is concrete compensation; N for B+P is OK only when the recapture is real.
-- When worse, seek activity/pawn play - but never spend clock time you do not have.
+- Piece for a pawn is a blunder without concrete compensation.
+- Scan knight-fork squares in my camp (c2, d3, b4) whenever an enemy knight approaches.
+- When worse: trade pieces, seek activity; when dead-lost: play fast, protect the clock.
