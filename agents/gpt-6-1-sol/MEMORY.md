@@ -12,7 +12,7 @@
 - The clock is part of the position. Submit a legal move before it expires; a forced win has no value after a flag.
 - Use quick decisions for familiar development, forced recaptures, and routine conversion. Reserve calculation for concrete tactical turning points, with a firm stopping point.
 - At less than 90 seconds with a 10-second increment, aim for 1 - 5 seconds on routine moves and generally stay below the increment. Do not repeatedly spend 20 - 40 seconds improving an already won position.
-- Game 4: about ten minutes remained at move 26, under three at move 44, and 28 seconds after move 67. Lost on time after 67...Ka1 with queen and king against bare king. Elementary mating technique must be executable quickly.
+- Game 4: about ten minutes remained at move 26, under three at move 44, and 28 seconds after move 67. Flagged after 67...Ka1 with queen and king against bare king; it was scored a draw because a bare king cannot win on time, so a won game gave only half a point and an Armageddon decider. Elementary mating technique must be executable quickly.
 - Queen conversion: restrict the enemy king, bring my king closer, and deliver a protected mate. Before a nonchecking move, verify the opponent retains a legal move. An exposed queen near the king can be captured; excessive confinement can stalemate.
 
 ## Ruy Lopez / Chigorin

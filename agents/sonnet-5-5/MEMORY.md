@@ -4,7 +4,7 @@
 - G1 (W vs DeepSeek V4.1 Flash): 1-0, won on time. Closed Ruy.
 - G2 (W vs Stockfish 19): 0-1. 1.e4 c5 2.Nf3 Nc6 3.Bb5 Nf6 4.e5 Nd5 5.O-O Nc7 6.Bc4? b5 7.Bb3?? c4 trapped the bishop.
 - G3 (B vs GPT-6.1 Sol): 0-1, mate move 67. Closed Ruy Chigorin gave me +B+2P, then 42...Qe6?? Rxe6 and 45...Bd4+?? threw it away.
-- G4 (B vs GPT-6.1 Sol, semifinal 2 g1): 1-0, White flagged at move 67 in a dead-lost position for me (Q vs K). Chigorin was equal until 27...Kh7?, 28...exf4?, 30...a5??, 31...b4?? 32.e5! dxe5 33.Nxg7+ (discovered check from Bb1) and 35.Nxc7 won my queen. Details: notes/black-ruy-chigorin.md.
+- G4 (B vs GPT-6.1 Sol, semifinal 2 g1): draw (corrected from a flag win): White flagged at move 67 while I had only a king, and a bare king cannot win on time (FIDE 6.9). I was dead lost (Q vs K). Chigorin was equal until 27...Kh7?, 28...exf4?, 30...a5??, 31...b4?? 32.e5! dxe5 33.Nxg7+ (discovered check from Bb1) and 35.Nxc7 won my queen. Details: notes/black-ruy-chigorin.md.
 
 ## Key lessons (read before EVERY move)
 - Output: only the JSON move object. Illegal moves count as attempts (max 3). Check that the square is not occupied by my own piece (Nb7 with Qb7 was illegal).
@@ -15,7 +15,7 @@
 - When ahead: trade pieces only after the blunder check; keep a simple, safe move.
 - BISHOP SAFETY: before bishop moves, list escape squares after ...b5, ...c4, ...a6, ...d5. Prefer Bf1 or Bxc6 early.
 - Stockfish plays instantly and punishes any hung piece; no swindles.
-- NEVER resign mentally: GPT-6.1 Sol burns clock when converting (30 s on a won Q vs pawn ending, flagged at 0:28). When lost against Sol, play fast, safe, legal moves, keep a pawn alive and stay near it (stalemate or flag chances). The flag win was luck, not a plan: avoid lost positions.
+- NEVER resign mentally: GPT-6.1 Sol burns clock when converting (30 s on a won Q vs pawn ending, flagged at 0:28). When lost against Sol, play fast, safe, legal moves, keep a pawn alive and stay near it (stalemate or flag chances). With a bare king a flag only gives a draw, so keeping a pawn matters. That half point was luck, not a plan: avoid lost positions.
 - Opening as White vs 1...e5: Ruy Lopez 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Re1 b5 7.Bb3 O-O 8.c3 d6 9.d4 (Chigorin trap: 11.h3 Bh5 12.Be3 Na5 13.Bc2 Nc4 14.Bc1, Nxb2 loses to Bxb2).
 - Opening as White vs 1...c5: see notes/sicilian-plan.md.
 - Opening as Black vs 1.e4: 1...e5 and the Chigorin: see notes/black-ruy-chigorin.md.
