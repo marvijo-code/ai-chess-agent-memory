@@ -1,30 +1,47 @@
 # DeepSeek V4.1 Flash: Chigorin tactics and conversion
 
-## Game 5, Black, checkmate win
-Shared Chigorin position through 13...Nc6:
+## Tournament 2, round 1: White, checkmate win
+Shared Chigorin through 13...Nc6, then:
+14.Nf1 Bd7 15.Ng3 Rac8 16.Be3?! a5? 17.d5?! Nb4 18.Bb1 Rfe8 19.a3 Na6 20.Nh4 Nc5?! 21.Nhf5 Bxf5 22.Nxf5 Nxd5?? 23.exd5 Bf8.
+
+- Be3 and d5 received inaccuracies despite the win. Development and space are reasons to consider moves, not proof they are best. No stronger alternatives were established by the supplied analysis.
+- Preserve Bc2 before a3 when ...Nxc2 forks the rooks. Bb1 followed by a3 avoided the Game 2 failure.
+- Ng3xf5 removed an e4 defender, repeating a familiar central-defense concern. Black's next blunder prevented this game from testing the plan fully.
+- The knight capturing d5 came from f6. Nc5 could not recapture after exd5. Black lost a knight for a pawn and continued with incorrect material assumptions.
+
+### C-file liquidation
+24.Bc2 a4 25.Rc1 b4 26.axb4 Nd3 27.Bxd3 Qxc1 28.Qxc1 Rxc1 29.Rxc1.
+
+- axb4 attacked Nc5. Its jump to d3 attacked Rc1 but allowed Bc2xd3, clearing the c-file between Rc1 and Qc7.
+- Calculate through both rook recaptures. White finished with Rc1, Bd3, Be3 and Nf5 against Re8 and Bf8: two extra minor pieces, with five pawns each.
+- The queen attack justified this concrete sequence; it does not make every bishop move on a blocked c-file a threat.
+
+29...e4 30.Bc2 Re5 31.Ng3 Rxd5 32.Bxe4 Rc5 33.bxc5 dxc5 34.Bxc5 h6 35.Bxf8 Kxf8.
+
+- Ng3 saved the attacked knight and defended e4, making Bxe4 safe after the rook left e5.
+- Bxe4 attacked Rd5. ...Rc5 overlooked the b4 pawn; bxc5 won the rook. Pawn attack maps matter for rook retreats too.
+- Bxc5 and Bxf8 removed Black's remaining central pawn and last piece. White retained rook, bishop and knight against pawns.
+
+### Finish and clock
+36.Ra1 f5 37.Bxf5 Kg8 38.Rxa4 Kf8 39.Ra7 Kg8 40.b4 h5 41.Nxh5 Kh8 42.Ra8#.
+
+Ra8 checked along the eighth rank and covered g8; Bf5 covered h7; Black's g7 pawn blocked that escape. Look for coordinated mate before continuing a passer plan.
+
+Finished with 13:04 from 15+10, avoiding the prior flag. Some routine conversion moves still consumed 26-34 seconds; shorten these when the safe move is clear.
+
+## Earlier Game 5: Black, checkmate win
 14.d5 Nb4 15.Bb1 a5! 16.a3 Na6! 17.Nf1 Bd7 18.Ng3 Nc5 19.Bg5 h6 20.Bh4?! Rfe8 21.Qd2? Nh7?? 22.Qc3?? Bxh4?? 23.Nxh4! g6 24.Rd1 Kg7 25.Qe3 Nf6 26.Qd2?? Nb3!.
 
-- Unlike Game 2, White preserved Bc2 before playing a3. After this defense, ...a5 and ...Na6 were marked only-good moves; the knight then reached c5.
-- ...Rfe8 defended Be7, permitting Nf6 to move without abandoning that bishop. This geometric fact did not validate ...Nh7 or ...Bxh4: both received blunder marks.
-- Do not treat an uncovered bishop attack or an apparently even exchange as sufficient analysis. Scan the central captures and forcing replies before committing.
+- ...Rfe8 defended Be7, but that geometry did not validate ...Nh7 or ...Bxh4; both were marked blunders. Scan central captures and forcing replies.
+- ...Nb3 forked Qd2/Ra1. 27.Qxa5 Rxa5 captured the queen: attacking a rook gains no tempo if that rook can take the queen.
+- Later ...Qc2 attacked Rd1/Be2; Bd3 Qxd1+ won the rook. ...Nxg3+ captured a knight and uncovered Qd1's first-rank check.
 
-## Decisive fork
-26...Nb3 attacked Qd2 and Ra1. White answered 27.Qxa5, attacking Ra8, but 27...Rxa5 simply captured the queen. 28.Ra2 saved the rook after the queen loss.
+### Released pin
+With White Kg1/g2/h3 and Black Qg3, g2 was pinned along the g-file, so ...Rxh3 was safe from gxh3. After 42.Kf1, I played ...Qf3+? 43.gxf3 Rxf3+, losing queen for pawn. The king move released the pin; Rh3's protection of f3 did not justify the exchange. This error had no supplied mark.
 
-The c5-knight's b3 jump attacks a1, c1, d2, d4, a5, and c5. Check queen/rook placements before routine queen retreats. An attack on a rook provides no tempo when the rook can capture the attacking queen.
+Recheck the king's location before relying on a pin. Enumerate pawn captures before queen checks.
 
-Later 30...Qc2 attacked Rd1 and Be2; 31.Bd3 Qxd1+ won the rook. White's bishop retreat did not answer both threats. ...Nd2 and ...Nxf1+ then removed the bishop; ...Nxg3+ captured a knight while uncovering Qd1's first-rank check.
+### Conversion failure to avoid
+36...Qd3 took 3:11 while I had queen, two rooks, bishop and knight against rook and knight. After the queen loss, two rooks and bishop still won: ...b4 axb4 Rxa2 removed the last rook, then ...Rxb2+ Kg3 Rd3#.
 
-## Released pin and queen loss
-With White Kg1, g2, h3 and Black Qg3, the g2 pawn was pinned along the g-file. 41...Rxh3 was therefore safe from gxh3.
-
-42.Kf1 changed the geometry: moving the g-pawn no longer exposed its king on g1. I nevertheless played 42...Qf3+ 43.gxf3 Rxf3+, losing the queen for the g-pawn. Rh3 defended f3, but a recapture did not justify the material loss. This error received no supplied move mark.
-
-Before relying on a pin, locate the king again. Before a queen check, enumerate pawn captures as well as king and piece captures; protection alone is insufficient.
-
-## Conversion and clock
-36...Qd3 consumed 3:11, reducing my clock from 9:17 to 6:16 while I had queen, two rooks, bishop, and knight against rook and knight. This repeated the slow-conversion tendency that caused Game 4's flag.
-
-After the queen loss I still had two rooks and bishop against one rook. 47...b4 opened the a-file after 48.axb4, allowing ...Rxa2 to remove White's last piece. 49...Rxb2+ 50.Kg3 Rd3# finished: Rd3 checked across the third rank, Rb2 covered the second rank, and Black's f7/g6/g5 pawns covered f6/h5/f4/h4.
-
-Use safe captures and coordinated rooks promptly when far ahead. The final mate does not validate the earlier queen loss or marked middlegame blunders.
+DeepSeek repeatedly miscounts material and overlooks forks or pawn captures, but its errors do not validate my own moves. Use independent board geometry and finish promptly.
