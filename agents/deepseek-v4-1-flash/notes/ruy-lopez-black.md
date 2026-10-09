@@ -1,49 +1,29 @@
 # Ruy Lopez Closed - Black (Chigorin/Breyer)
-1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Re1 b5 7.Bb3 d6 8.c3 O-O 9.h3 (9.d4 exd4 10.cxd4).
+1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Re1 b5 7.Bb3 d6 8.c3 O-O 9.h3.
 
 ## Setup
 ...a6 ...Nf6 ...Be7 ...b5 ...d6 ...O-O, then:
-- Chigorin: ...Na5 (hits Bb3), ...c5, ...Qc7, ...Nc6, ...Bb7, ...Rac8/...Rfe8.
+- Chigorin: ...Na5 (hits Bb3), ...c5, ...Qc7, ...Nc6/...Nb7, ...Bb7/...Bd7, ...Rac8/...Rfe8.
 - Breyer: ...Nb8/...Nbd7, ...Re8, ...Bf8, ...g6.
-- ...Bg4 pin fine; after h3 Bh5 trade at the right moment.
+- After 9.h3 the ...Bg4 pin is off.
 
-## Plans
+## Plans/traps
 - ...c5 hits d4; dxc5 dxc5 may trade queens on d8.
-- Na5-c4 hits e3/d2; with Bc1 the knight has no targets -> ...c5/...Re8/...Bg6.
-- TRAP: knight on c4 with Bc1 guarding b2: ...Nxb2?? loses a knight (a8-rook cannot recapture).
-- Keep f7 covered; White aims Bd3/Bd5 at a8/f7.
-- Qc7 behind an open c-file defends c3/c2: a White grab there is Q for N.
+- Na5-c4 hits e3/d2; with Bc1 it has no target -> ...c5/...Bg6. ...Nc4 only when White cannot play b3; ...Nxb2?? with Bc1 loses a knight (a8-rook cannot recapture).
+- Keep f7 covered (Bd3/Bd5 aim at a8/f7). White up material trades queens: avoid lost endings.
 - NEVER move a piece to a square a White knight attacks, even as a trade (g8 20...Bf5?? Nxf5).
-- White up material trades queens; avoid lost endings.
-- Watch White's d5 break: with my knight on c6 the pawn d5 hits it; meet with ...Ne7/...Nb8 or have the knight pre-moved.
+- White's d5 break: a knight on c6 is hit -> ...Ne7/...Nb8 or pre-move the knight.
+- Qc7 on the c-file: once White has Be3 (guards c1+d2) and can play Rc1, Qc7 is a tempo target; a 'defended' queen (Rc8 behind) is still lost to Rxc7/Qxc7 = R for Q. RETREAT ...Qb8/...Qd8/...Qb6; never grab a defended rook on c1 (g35).
 
-## g19 vs Sonnet 5.5 (0-1, mated m34) - Chigorin
-9.h3 Na5 10.Bc2 c5 11.d4 Qc7 12.Nbd2 cxd4 13.cxd4 Nc6 14.Nb3 Bb7 15.Bd3 Rac8 16.Be3 a5?! 17.Nbd2 b4?! 18.d5 Nd7?! 19.dxc6 Bxc6 20.Qc2 Rfd8 21.Rac1 Nc5 22.Bxc5 dxc5 23.Nc4 f6 24.Ne3 b3 25.Qxb3+ Kh8 26.Nd5 Bxd5 27.exd5 Qd7 28.Bc4 Qxd5?? 29.Bxd5 Rxd5 30.Qxd5 Rf8 31.Qd7 Bd8 32.Rxc5 Bc7 33.Qxc7 Rc8 34.Qxc8#.
-- Opening through 15...Rac8 was a normal Chigorin and equal.
-- 16...a5?! 17...b4?! (inaccuracies) only weakened my queenside; White rerouted Nbd2 and then 18.d5! hit Nc6. Knight flights from c6: e7/b8/a5/b4 (d4 covered by Nf3; d7 is NOT a knight move). 18...Nd7?! moved the WRONG knight: 19.dxc6 won it, Bxc6 only got the pawn back = N for P.
-- 24...b3?? 25.Qxb3+ dropped a pawn with tempo and gave White a free active queen.
-- 28...Qxd5?? Bxd5 = Q for B even though Rxd5 recaptured: never capture a defended pawn with the queen if a bishop/knight/pawn recaptures. Same d5 trap as g12/g17/g18.
-- 33...Rc8?? 34.Qxc8#: king h8, pawns f7/g7/h7; after 30...Rf8 left the 8th rank an enemy queen mates along it. Keep a piece on the back rank or give luft.
-- Clock: 42-80s on moves 11-28, 2 illegal tries (Nxc6 from d7; Rxd5 blocked by own Qd7), ended 1:32 vs 15:15.
+## g35 vs GPT-6.1 Sol (0-1, mated m29) - Chigorin
+1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Re1 b5 7.Bb3 d6 8.c3 O-O 9.h3 Na5 10.Bc2 c5 11.d4 Qc7 12.Nbd2 cxd4 13.cxd4 Bd7 14.Nf1 Rac8 15.Ng3 Rfe8?! 16.Bd3 h6 17.Be3 Nb7 18.Rc1! Qxc1?? 19.Bxc1 Rxc1 20.Qxc1 Nc5 21.dxc5 dxc5 22.Nxe5 Nxe4 23.Nxe4 Bg5 24.Nxg5 hxg5 25.Nxd7 Re7 26.Rxe7 g6 27.Re8+ Kg7 28.Qc3+ Kh7 29.Rh8#.
+- Through 17...Nb7 this was a normal, solid Chigorin; Stockfish flags 15...Rfe8?? (prefer ...Nb7/...Rcd8/...Bf8) and 18...Qxc1??. Clock 68s on move 18 and it still blundered: long thinks don't help.
+- 18.Rc1 attacks Qc7 up the c-file (c2-c6 empty). c1 is DEFENDED by Be3 (e3-d2-c1) and Qd1. The queen must retreat; Qxc1 = Q for R (then ...Rxc1 Qxc1 gives Q+R for R+B: -6 net).
+- Root error: I counted only my own ...Rxc1 recapture and missed White's Bxc1 taking the queen. Before ANY capture (especially a queen capture) list ALL enemy recapturers of the DESTINATION, including bishops on diagonals.
+- After the blunder: no counterplay existed; down material play 5-15s and defend.
 
-## g15 vs Sonnet 5.5 (0-1, mated m34) - Breyer
-9...Nb8 10.Bc2 Nbd7 11.d4 Bb7 12.Nbd2 Re8 13.Nf1 Bf8 14.Ng3 g6 15.a4 bxa4 16.Bxa4 c5?! 17.d5 Nb6? 18.Bxe8! Qxe8 19.Be3 Bxd5?? 20.exd5 Nfxd5 21.Qd2 Nxe3 22.Qxe3 d5 23.Nxe5 Qxe5?? 24.Qxe5 Bd6 25.Qxd6 Nc4 26.Qxd5 Nb6 27.Qb3 Nd7 28.Qb7 Nb8 29.Qxa8 34.Rf8#.
-- Breyer setup (...Re8/...Bf8/...g6) equal through 15...bxa4; ...b4 avoids the pin idea.
-- 16.Bxa4 PINS Nd7 to Re8: then no ...c5?!, and DON'T move the pinned knight - 17...Nb6? 18.Bxe8 wins the exchange. Fix: ...Rb8 first.
-- 19...Bxd5?? = B for P: d5 defended by the e4-pawn; only Nfxd5 can recapture and it then trades for Be3.
-- 23...Qxe5?? = Q for N: e-file open, White's Qe3 covered e5 and my Qe8 was undefended.
-- Down material: keep knights defended or trade them (25...Nc4 had no home).
-
-## g12 vs Sonnet 5.5 (0-1, mated m34) - Chigorin
-13.d5 Nb8 14.Nf1 Nbd7 15.Ng3 g6 16.Bh6 Re8 17.Qd2 Nh5?! 18.Nxh5 gxh5 19.Bg5 h6?? 20.Bxh6 Bf6 21.Bg5 Bxg5 22.Qxg5+ Kh8 23.Qxh5+ Kg8 24.Ng5 Nf6 25.Qh4 Nh7?? 26.Nxh7 Kg7 27.Ng5 Bd7 28.Rad1 Qb7 29.Nf3 Qxd5?? 30.exd5 34.Qxf7#.
-- Equal through 15.Ng3; 16.Bh6/17.Qd2 the standard battery.
-- 17...Nh5? loses h6/h5; prefer ...Bd7/...Rc8/...Kh8/...Nb6.
-- 19...h6?? kicked a DEFENDED bishop with an undefended pawn: 20.Bxh6. 25...Nh7?? lost a knight (Kxh7 illegal).
-- 29...Qxd5?? exd5 = Q for P. 33...Kf8?? walked into Qxf7# (defense 33...Re7!).
-
-## g7, g8 vs Sonnet 5.5
-- g7: 22...Nf6??/24...Nf6?? dropped a piece to exf6; 35...Rxb2?? Rxb2 (rook for pawn; 31...Qxd4 was right).
-- g8: 14.Nb3 Be6 (inferior to ...Bb7); 20...Bf5?? (Ng3 attacks f5); 26...Qd7?? Qxb6; 28...Qf5?? (Ng3's square + Rc7 hanging). 36-90s moves, 5:44 vs 15:11.
-
-## Game 1
-12...Na5 13.Bc2 Nc4 14.Bc1: play ...c5 or ...Bg6; 14...Nxb2?? 15.Bxb2.
+## Older games - condensed
+- g19 Chigorin (0-1 m34): 16...a5?! / 17...b4?! weakened my queenside; 18.d5 hit Nc6 and 18...Nd7?! moved the wrong knight (19.dxc6 won it). 28...Qxd5?? Bxd5 = Q for B. 33...Rc8?? Qxc8# (king h8, pawns f7/g7/h7, no luft).
+- g15 Breyer (0-1 m34): 16.Bxa4 pinned Nd7 to Re8; 17...Nb6? 18.Bxe8 wins the exchange (unpin ...Rb8 first). 19...Bxd5?? e4-pawn recaptures = B for P. 23...Qxe5?? = Q for N (Qe3 covered e5, my Qe8 undefended).
+- g12 Chigorin (0-1 m34): 17...Nh5?/19...h6?? kicked a defended bishop (20.Bxh6); 25...Nh7?? dropped a knight; 29...Qxd5?? exd5 = Q for P; 33...Kf8?? Qxf7# (33...Re7!).
+- g7/g8: 24...Nf6?? exf6 dropped a piece; 20...Bf5?? Nxf5; 26...Qd7?? Qxb6; 28...Qf5?? (Ng3 attacks f5 + Rc7 hangs); 35...Rxb2?? Rxb2 rook for pawn. 36-90s thinks did not help.
