@@ -1,39 +1,36 @@
-# DeepSeek V4.1 Flash - Memory (index + key lessons)
-Notes:
-- notes/capture-safety.md (scan + blunder catalogue g1-g42)
-- notes/sicilian-black.md (g28-g36)
-- notes/sicilian-dragon-white.md (g6,g34,g39,g42)
-- notes/four-knights-black.md (g3-g26)
-- notes/ruy-lopez-black.md (g1-g41)
-- notes/ruy-lopez-white.md (g2-g37)
+# Chess memory
+Note files (read when the opening appears), one line each:
+- notes/capture-safety.md - 5 s scan + blunder catalogue g1-g43
+- notes/ruy-lopez-black.md - Chigorin/Breyer as Black
+- notes/ruy-lopez-white.md - Chigorin as White
+- notes/sicilian-black.md - Dragon/Rauzer as Black
+- notes/sicilian-dragon-white.md - Yugoslav as White
+- notes/four-knights-black.md - 4.Bb5 Bb4 as Black
 
-## Rule 1 - pre-move scan (EVERY move; losses g1-g42)
-0. Scan the FINAL move and what it OPENS: a vacating piece/pawn (recapture!) uncovers his line/file onto my piece (g38 19.Bb3; g39 15.Nf4 -> Qd4#; g42 cxd5 vacated c6 -> Rfc8 hits Bc5).
-1. Destination: which enemy PAWNS, KNIGHTS, BISHOPS, KING, QUEEN, ROOKS attack it? Attacked+undefended -> reject. Pawn magnets: h3->g4, f3->g4/e4, c3->b4/d4, c4->b3/d3, g6->f5/h5, c6->d5, d5->c6/e6. Knight magnets: b3/b4->c1/d2; c2->a1/e1/e3; c6->b4/d4/e5/e7; c5->e4/d3/b3/a4. Bishop magnets: d2-B hits a5/c3/b4; c2-B hits g6+h7.
-2. MY attacked piece: save/trade/defend NOW (g30); no side move while it hangs (g42 16.h3?? Rxc5). His piece hits my QUEEN -> move her that move (g41); never grab a pawn a recapturer defends (g18,g23,g34).
-3. Knight captures: count every recapturer, even a check (g19,g22,g23); never a knight to an undefended square in a bad position or where his pawn captures it (g40).
-3b. QUEEN move/capture: list ALL attackers AND defenders of the destination, incl. rooks on the rank/file and PAWNS. No Q for R/B/N/P (g18..g42); never Qx where a rook defends (g36 14...Qxa4?? Rxa4; g42 17.Qxd5?? Rxd5); never a pawn-attacked square (g37,g28,g39). Trade offer needs a legal recapturer (g34).
-3c. Qc7/Qc8/Qa5: retreat ...Qd8/...Qb6 the moment his Be3/Rc1 (Qc7, g35,g38) or Bd2 (Qa5, g41) gains tempo. Rook hits queen -> retreat, never grab.
-3d. ROOK: check his rooks/king on the destination line; an undefended rook chasing a rook loses (g27); a rook his KING attacks loses (g29). His rook to an open file at my loose piece -> save it that move (g42).
-4. A moving piece/pawn stops defending its old squares; re-scan after every enemy move/check (g16,g27,g30); declined trade -> take it or walk away (g11).
-5. Knight forks: cover BOTH targets or vacate one (g23,g27); never move onto a forker's square; 2v2 = LAST recapturer lands there (g27).
-6. Pinned Nd7 (Ba4, Re8): moving loses the exchange; unpin ...Rb8 (g15).
-7. Mate nets: Qa1# (Kc1, g6); Qd4# (open d-file, Kf2, g39); Qxh7# with his Ng5+Nf5+Qh5: ...g6 BEFORE his queen arrives (g40); Qxh7+ with his Qh5+Bd3: ...g6, never ...Qf6?? (g25); Qe1+ then Qxd1# vs my undefended Rd1 (g42); Qf2#/Rb1#/Qg8# (g10,g21,g24); Q/R on the 8th, no luft: Re8#/Qc8#/Qd8# (g14..g41).
-8. Never push a pawn onto a defended piece (g12), a knight-attacked square (g16), a pawn's attack (g24), a bishop's capture (g25), where a queen gains tempo (g19), while it guards my piece (g30), or into cxb4 (g40).
-9. Loose units: check every undefended piece/pawn against ALL enemy lines (g26,g29); when lost, no 'active' piece to an undefended square (g39,g40): defend/trade, 5-15s.
-12. Legality BEFORE sending (3 invalid = forfeit, g34): trace the path square by square (g39); knight/bishop geometry (g28,g34,g36).
+## Rule 1 - pre-move scan (5 s on the FINAL position, EVERY move)
+1. Destination: list ALL enemy attackers (pawn, knight, bishop, rook on rank/file, queen, king) and my defenders. Attacked+undefended -> reject. Vacated squares lose their guard; a pawn push stops guarding its old squares.
+2. Open lines: my pawn capture can open a file for his rook onto mine. g43: 18.axb4 opened the a-file; Ra1 was UNDEFENDED (Bb1 blocked Qd1/Re1); 19...Nxb4 vacated a6; 20...Rxa1!. When a file opens at my rook, trade it (20.Rxa8!, which also wins the loose knight next move) or move/defend it THAT move - never a side move (19.Ba3?!) or grab (20.Bxb4??) first.
+3. His rook/pawn to an open file at my loose unit = emergency (g42,g43). Scan ALL loose units vs ALL his lines every move.
+4. Queen: never on a square his pawn/slider/rook attacks (g37 Qxc3?? bxc3; g43 22.Qa4?? Rxa4 - a-file rook and b5-pawn both cover a4). Every queen capture/trade: count recapturers incl. rooks on the destination rank/file and PAWNS (g42 17.Qxd5?? Rxd5; g36 14...Qxa4??). No Q for R/B/N/P (g18,g35-g43).
+5. Knight: never onto an undefended square or one a pawn takes, esp. down material (g24,g40); count recapturers even on checks (g6,g22); pinned Nd7 stays (g15).
+6. Forks: cover both targets or vacate one; never step onto a forker's square; 2v2 = last recapturer (g23,g27).
+7. Mate nets: Qa1# (Kc1); Qd4# (open d-file, Kf2); Qxh7# with Ng5/Nf5+Qh5 -> ...g6 before her Qh5; back rank: his Q/R on the 8th, no luft; Qe1+/Qxd1# vs loose Rd1.
+8. Pawn pushes: never onto a defended piece, a knight/bishop/pawn-attacked square, where his queen gains tempo, while it guards my piece (g12-g30,g40).
+9. Never grab a pawn a recapturer defends; B for P loses (g6,g34,g39,g42; g43 21.Bxd6? Bxd6, 28.Bxb5 Bxb5).
+10. Legality before sending (3 illegal = forfeit): trace the path square by square; geometry (g43 Qg4 illegal - Nf3 blocked d1-g4, cost a try).
+11. Lost position: no 'active' piece to an undefended square; defend/trade; 5-15 s.
 
-## Rule 2 - time (900+10)
-Book <=10s, routine <=15s; from m10 no move >30s (g41 43s; g42 41-56s m4,m13-18). Long thinks never fixed a blunder; the 5s final-move scan did. g36 flagged m30; g42 ended 8:38 vs 18:09 - opponents bank clock, I burn it.
+## Rule 2 - time
+Routine <=15 s; from m10 NO move >25 s. g43: 47-82 s on m14-22 produced the whole collapse; long thinks never fixed anything, the 5-s destination scan does. g43 used 19:00 vs his 5:00 (ended 1:26); g36/g42 flagged/burned clock. Opponents bank time; spend mine only on the scan.
 
 ## Openings
-- RL as Black (Chigorin/Breyer): ...a6 ...Nf6 ...Be7 ...b5 ...d6 ...O-O, ...Na5 ...c5 ...Qc7 ...Bb7 ...Rac8; equal through 15...Qxa5 (g41), then 16.Bd2 hits Qa5 -> retreat ...Qd8/...Qc7/...Qb6. Keep f7 covered; never ...Nc4 once White has b3 (g16). His Nf1-g3: resolve the centre or reroute ...Nc6/...Nb6 BEFORE 15.d5; ...g6 early vs Nf5/Ng5+Qh5 (g40). Qc7 with Be3+Rc1: retreat ...Qb8/...Qd8 (g35,g38).
-- Sicilian as Black: Dragon ...d6 ...cxd4 ...Nf6 ...Nc6 ...g6 ...Bg7 ...O-O ...a6 ...Bd7 ...Rc8 ...Qa5 equal (g28,g36); never ...Qxc4/Bxc4/Nd4; flank queen grabs lose to rook files (g36). Rauzer (g29,g32): 11...gxf6! not Bxf6; no Bxc3 while Bd7 hangs; g30: no ...f5?? (Nxc5).
-- 4N as Black (4.Bb5 Bb4): 6.Nd5 Nxd5! 7.exd5 Nd4!; 7.h3 kills ...Bg4; c8-B needs ...d6 first; 10.c3 -> retreat Bb4; no 10...d3?!; 12.Qh5 ...g6!; 15.Qf3: no ...Bf5??/...Qd7??; play ...Qe7/...Qc8/...Bb5.
-- Dragon as White (g6,g34,g39,g42): setup 6.Be3 7.f3 8.Qd2 9.O-O-O; losses are captures/trades: 12.Bxf6?!, 14.Nxe7+?! (g6); 9...d4! -> move the hit Nc3, not 10.Bxd4?? Qxd4 (g34); 8...d5 9.exd5 Nxd5 10.Nxc6 bxc6 11.Bd4 e5: no 12.Bxe5??/13.Qxd5?? (g39); g42: 12.Bc5! is loose - defend it (Qc3) or move it (Be3/Bb4) before 14.Nxd5 cxd5 opens the c-file for Rfc8; 16.h3?? lost it, 17.Qxd5?? Rxd5. Watch Qa1#/Qd4#/Qe1+.
-- RL as White (Chigorin): 14...Nb4 -> 15.Bb1!; ...Nb8 line fine to 27.Bxe4 (Bb7 blocked by d5); 27...c3: never 28.Qxc3?? bxc3; after ...g6 no Nf5 (g22); 18...Nc5 -> 19.Nd2! (19.Ng3?? Nb3!, g23); 14...Rac8 15.Ne3 Nc4: keep e3 EMPTY (g33); never Q on d5 or a pawn-attacked square.
+- RL as Black (Chigorin/Breyer): ...a6 ...Nf6 ...Be7 ...b5 ...d6 ...O-O, ...Na5 ...c5 ...Qc7 ...Bb7 ...Rac8; equal through 15...Qxa5, then 16.Bd2 hits Qa5 -> retreat ...Qd8/...Qb6 (never ...Rfd8?? g41). Resolve the centre or reroute knights BEFORE his 15.d5; ...g6 vs Nf5/Ng5+Qh5 (g40). Keep f7 covered; never ...Nc4 with his b3 pawn.
+- RL as White (Chigorin): 14...Nb4 -> 15.Bb1!; 14...Nb8: 15.Nf1 Nbd7 16.Be3; 14...Rac8 15.Ne3 Nc4: keep e3 EMPTY (g33). 17.b4 axb4 18.axb4 OPENS a-FILE: fix Ra1 (trade Rxa8) before anything; after 19...Nxb4 20.Rxa8! NOT 20.Bxb4?? Rxa1 (g43). No Q on pawn/rook-attacked squares; never Bx a defended pawn down material.
+- Sicilian as Black: Dragon ...d6 ...cxd4 ...Nf6 ...Nc6 ...g6 ...Bg7 ...O-O ...a6 ...Bd7 ...Rc8 ...Qa5 (g28,g36). Rauzer: 11...gxf6! not Bxf6; never leave Bd7 as d6's only shield; no ...Qxa4/...Qxc4 vs rook files; no ...f5/...f4 pushes that guard a knight (g30).
+- 4N as Black (4.Bb5 Bb4): 6.Nd5 Nxd5! 7.exd5 Nd4!; nothing on f5 while his Qf3 (g26); no ...Bg4 after h3; play ...Qe7/...Qc8/...Bb5.
+- Dragon as White: 6.Be3 7.f3 8.Qd2 9.O-O-O; all four losses were trades/grabs: no B-for-P (12.Bxf6?!, 12.Bxe5??, 10.Bxd4??); keep Bc5 defended while Rfc8/Ra8 can come (g42); after ...d5 count pawn/rook recapturers on d5 (g39,g42); after O-O-O no queen on a1-net squares (g6).
 
 ## Opponents
-- Stockfish 19 (g6..g42): ~0s/move; punishes loose pieces, queens on attacked squares/lines, loose bishops on open files (g42); Yugoslav ...d5: d5 pawn-guarded, d-file blocked.
-- Sonnet 5.5 (g7..g41): banks clock; instantly takes free/attacked units (Nxa1, Rxb2, Rxd6, Bxe4, Bxa5). Keep every piece and pawn defended; move an attacked queen at once; never a knight on an undefended square or where a pawn takes it (g40); no rook near his king.
-- GPT-6.1 Sol (g9..g38): closed RL, fast; punishes queens on his lines/files; captures must survive recapture (g35 Qxc1??, g38 Nb6??).
+- Stockfish 19 (g6..g43): ~0 s/move; punishes loose units, queens on attacked squares/lines, loose bishops on open files (g42), back-rank.
+- Sonnet 5.5 (g7..g43): banks clock; takes EVERY free/attacked unit instantly (Nxa1, Rxb2, Rxd6, Bxe4, Bxa5; g43 Nxb4, Rxa1, Rxa4, Rxc4, Qxc1, Qxe1+, Qxe4, Qxd5). Keep every piece and pawn defended; move an attacked queen at once; a loose rook facing his rook on an open file is lost.
+- GPT-6.1 Sol (g9..g38): closed RL, fast; punishes queens on his lines/files; captures must survive recapture (Qxc1??, Nb6?? g35,g38).

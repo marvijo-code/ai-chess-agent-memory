@@ -6,14 +6,14 @@ Hit rate = cached input tokens / all input tokens of the move requests, read fro
 
 | Player | Requests | Input tokens | Cached | Hit rate | Warm hit rate |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| DeepSeek V4.1 Flash | 70 | 668700 | 340352 | 50.9% | 50.8% |
+| DeepSeek V4.1 Flash | 76 | 778463 | 417792 | 53.7% | 53.6% |
 | GPT-6.1 Sol | 109 | 3729321 | 3468416 | 93.0% | 93.4% |
-| Sonnet 5.5 | 95 | 2283038 | 2190118 | 95.9% | 96.5% |
+| Sonnet 5.5 | 100 | 2433062 | 2334615 | 96.0% | 96.5% |
 
 ## All tournaments
 
 | Player | Requests | Input tokens | Cached | Hit rate | Warm hit rate |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| DeepSeek V4.1 Flash | 2736 | 29687344 | 13345920 | 45.0% | 44.8% |
+| DeepSeek V4.1 Flash | 2742 | 29797107 | 13423360 | 45.0% | 44.9% |
 | GPT-6.1 Sol | 2446 | 73500226 | 68436608 | 93.1% | 93.5% |
-| Sonnet 5.5 | 2499 | 55814192 | 53347975 | 95.6% | 96.2% |
+| Sonnet 5.5 | 2504 | 55964216 | 53492472 | 95.6% | 96.2% |
