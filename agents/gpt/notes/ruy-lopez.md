@@ -1,36 +1,38 @@
-# Ruy Lopez: defenders, forks, and passers
+# Ruy Lopez: central tactics and endgame barriers
 
 ## Shared Chigorin structure
 1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Re1 b5 7.Bb3 d6 8.c3 O-O 9.h3 Na5 10.Bc2 c5 11.d4 Qc7 12.Nbd2 cxd4 13.cxd4 Nc6.
 Recount central defenders after reroutes and exchanges. Preserve Bc2 before a3 against ...Nb4 if ...Nxc2 forks rooks.
 
-## T11 round 1: Black vs Sonnet, checkmate win
-White chose 8.d3, then h3/Nbd2/Nf1/Ng3 without c3. Black developed ...Bb7/...Re8/...Bf8/...Na5.
-- Bc2 was illegal while c2 remained occupied. White played c3 Nxb3 Qxb3: no doubled b-pawns. Name the actual recapture instead of assuming structural damage.
-- ...d5 exd5 Bxd5 attacked Qb3. After Qd1 c5 Nxe5 Bd6 Nf3, White retained an extra pawn. No adverse early marks establish an optimal repertoire or adequate compensation.
-- Rxe8+ Rxe8 Bg5 Bxg3 fxg3! Qxg3 Bh4 Qg6 Bxf6 Qxf6 exchanged both pairs of minor pieces except Black's bishop and White's knight, and recovered a pawn.
-- Ne1?! c4?! dxc4 Bxc4 Qd7 Qe6 Qxe6 Bxe6 reached equal pawn counts, R+B against R+N. ...c4 was marked inaccurate; no best replacement was supplied.
+## T12 round 1: Black vs Sonnet, repetition draw
+7...O-O 8.d3 d6 9.c3 Bb7 10.h3 Re8 11.Nbd2 Bf8 12.Nf1 d5 13.Ng3 Qd7?! 14.Qe2 Rad8?! 15.Bc2 d4?! 16.cxd4 Nxd4! 17.Nxd4! exd4 18.Nf5 g6?! 19.Nh6+! Bxh6 20.Bxh6 Nxe4? 21.dxe4! d3 22.Bxd3?? Qxd3! 23.Qxd3 Rxd3!.
+- ...Nxd4 attacked Qe2 as well as Nf3/Bc2. Reconstruct all targets, not just those named in commentary.
+- ...g6 allowed the protected checking jump Nh6+ and bishop exchange. Removing the outpost did not establish a sound resulting position.
+- ...Nxe4 relied on ...d3 forking Qe2/Bc2, but the sacrifice was marked a mistake. White's Bxd3 was a blunder; Qxd3 and Rxd3 were the only good replies. No best White defense was supplied. Calculate queen escapes and counterthreats before assuming a pawn fork recovers a sacrificed piece.
+- After the liquidation, each side had 2R+B and six pawns. Black had not won material. Opponent commentary about an extra piece/pawn was inaccurate.
 
-### Missed king-rook fork
-28.Nf3 Kf8 29.Kf2 Ke7 30.Nd4 Bc4 31.b3 Bd5 32.Rd1 Rd8? 33.h4? Kf6 34.g3 Ke5?? 35.Ke3?? h5?? 36.Rd2?? Rd6.
-- With Ke5/Rd8/Bd5 against Nd4/Rd1, Nc6+ checks the king and attacks Rd8. ...Bxc6 removes the knight but vacates d5, allowing Rxd8: White wins the exchange. A nominal answer to a knight fork can uncover another capture.
-- White missed Nc6+ on moves 35 and 36. ...Rd6 then removed the rook from d8 and protected it with Ke5. The escape does not validate ...Ke5 or ...h5.
-- ...Rd8, ...Ke5 and ...h5 received adverse marks. No engine-best replacements were supplied.
+### Passed pawn and liquidation
+24.f3 c5 25.Be3 c4 26.Rad1 Red8 27.Rxd3 cxd3 28.Rd1 Kf8 29.Bb6 Rd7 30.Kf2 Ke7 31.Ke3 Ke6 32.Rxd3 Rxd3+ 33.Kxd3!.
+- c4 defended Rd3. The pawn recapture created a d3 passer but removed that rook support.
+- Rd1 and Ke3 supplied two attackers against Rd7's single defense. Ke6 did not defend d3. The passer fell when White could answer ...Rxd3+ with Kxd3.
+- Rook liquidation left opposite-colored bishops with White six pawns against five. Do not infer that rook-backed advancement guarantees pawn survival.
 
-### Two passers and promotion geometry
-...f6/...g5/...gxh4 gxh4 left White's h4 pawn and Black's original h5 pawn. ...f5-f4+ drove Ke3 to f2; ...Ke4/...Rf6/...f3 brought the rook behind the passer.
-- ...Kf4/...Kg4??/...Kxh4? collected White's h-pawn but contained marked errors. White's Rd2??/Ke3??/a3? failed to exploit them; do not infer that this king route was forced or sound.
-- ...Kg3 Rf2 h4 a4 h3 a5 h2 Rf1 f2! opened Bd5-e4-f3-g2-h1. Rf1's rank coverage alone no longer stopped h-promotion because the bishop protected h1.
-- Ne2+ Kg2 Nf4+ Kxf1 Nxd5 h1=Q Nxf6 Qh6+ Kf3 Qxf6+ converted both Black pieces into a queen while removing White's rook and knight. Calculate the full liquidation before preserving threatened pieces automatically.
-- ...Ke1 cleared f1; ...f1=Q+ made a second queen. ...Kd2 blocked Qe2's second-rank control and allowed Kb2. Later ...Ke3+ vacated d2, uncovering Qe2's check; Qae1# finished with Qe2 protecting e1 and controlling the second rank.
-- Finished with 4:23, no illegal attempts. Six moves after the second promotion reduced 6:24 to 4:23 despite increments. Routine mate choices took 26-45 seconds; simplify the search once a safe mating route is available.
+### Barrier that held
+33...Ke5 34.Ke3 Bc6 35.Bd4+ Ke6 36.f4 f5 37.exf5+ Kxf5 38.g3 h5 39.h4 Kg4 40.Kf2 Bd5.
+- ...f5 exchanged White's central e-pawn for Black's f-pawn and activated the king. ...h5 fixed the kingside; ...Kg4 attacked g3 while Bd5 attacked a2.
+- White stabilized with b3-b4/a3 and Be1. Be1's diagonal to g3 was initially blocked by Kf2; 46.Ke3 opened it. Trace blockers before claiming protection.
+- Final barrier: Black Kd6 with Bd5/Bc6, pawns a6 b5 g6 h5; White Kd4, dark bishop, pawns a3 b4 f4 g3 h4. Kd6 barred c5/e5; bishop shuffles preserved b5 and the central barrier. Repetition held the pawn-down ending; the result alone is not proof every earlier position was drawn.
+- Finished with 9:03 against 14:36, no invalid attempts. Many routine defensive moves took 25-42 seconds. Spend less once the barrier and waiting moves are verified.
 
-## Earlier recurring failures
-- T9 White: Bb1 saved the bishop before a3. Nxg5 hxg5 Bxg5 exchanged knight for bishop, not a piece gain. Bg5?? allowed fxg5: f6 was unpinned. Nf8 blockaded g6/h7 despite their proximity to promotion.
-- Nc5 and Nd7 must be tracked separately. Bxd7 Nxd7 replaced one knight with the other on d7, preserving ...Nxf8. ...Rc8 added another f8 defender.
-- Rc6 was protected by d5: ...Rxc6 dxc6 attacked Rb7/Nd7. This local tactic did not prove a win. ...b1=Q Rxb1 Rxb1 cost White a rook; Ra8 later allowed ...Rd8xa8.
-- T8 Black: Rc1/Qc7 were screened by Bc2/Nc5. ...Na4 Bxa4 bxa4 Rxc7 removed both screens and lost queen for rook. ...Bf6 allowed gxf6; Bd4 prevented Kxf6 and supported the mating attack.
-- Be3 Nxd4 Nxd4 exd4 Qxd4 Qxc2 opened the c-file while Qxd4 abandoned Bc2. ...Qc4 Rxc4 Rxc4 lost queen for rook.
-- Qg3 threatened mate but abandoned Bd4 to Rxd4. ...Rg4 allowed Qh7#, protected by Rf7 through g7.
-- Nxc5 dxc5 opened Bc8's diagonal; the OTHER bishop could capture Nf5. exf5 removed e4's support of d5.
-- Bd3 cleared Rc1 against Qc7. Qa4 allowed bxa4; Nb3 allowed axb3. Nh4-f5/Bxf5/Ng3xf5, f3-f4 and Re3-g3 remove e4 defenders. Be7 can block Re8's defense of e5.
+## T11 round 1: Black vs Sonnet, mate win
+- With White's c2 pawn unmoved, Bc2 was illegal. c3 Nxb3 Qxb3 caused no doubled b-pawns. ...d5 exd5 Bxd5 Qd1 c5 Nxe5 left White an extra pawn.
+- ...Ke5 with Rd8/Bd5 against Nd4/Rd1 allowed Nc6+: ...Bxc6 vacated d5 and permitted Rxd8. White missed it twice; ...Rd6 escaped. The missed fork does not validate ...Ke5 or ...h5.
+- ...f2 opened Bd5-e4-f3-g2-h1, protecting h-promotion. Ne2+ Kg2 Nf4+ Kxf1 Nxd5 h1=Q Nxf6 Qh6+ Kf3 Qxf6+ converted both Black pieces into a queen while removing White's rook and knight.
+- ...Ke1 cleared f1 for ...f1=Q+. Two-queen conversion still consumed 26-45 seconds per routine move.
+
+## Recurring failures
+- Rc1/Qc7 can have two screens, Bc2/Nc5. ...Na4 Bxa4 bxa4 Rxc7 removed both and lost queen for rook.
+- Be3 Nxd4 Nxd4 exd4 Qxd4 Qxc2: Qxd4 abandoned Bc2 on the opened file. ...Qc4 Rxc4 Rxc4 lost queen for rook.
+- f3-f4, Re3-g3, and Nh4-f5/Bxf5/Ng3xf5 remove e4 defenders. Be7 can block Re8's defense of e5.
+- Bxd7 Nxd7 can replace one knight with another, retaining ...Nxf8. Track both knights and every new defender.
+- Bg5 allowed fxg5 when f6 was unpinned. Qa4 allowed bxa4; Nb3 allowed axb3. Useful plans do not excuse unsafe destinations.
