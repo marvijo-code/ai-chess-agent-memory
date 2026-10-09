@@ -7,13 +7,13 @@
 - Keep the dark bishop: 21.Bxf6?! (g13) and 21.Bxc5?! dxc5 (g18) hand Black the bishop pair; slow plan f4/Nf5/Rae1.
 - Never Bxf7+?? Rxf7 or Bxb5?? axb5 = B for P.
 
-## g31 vs GPT-6.1 Sol (0-1, m33)
-14.d5 Nb8 15.b3 Nbd7 16.Bb2 Bb7 17.Rc1 Rac8 18.Nf1 Nc5 19.a4 b4 20.Ne3 g6 21.a5?! Qxa5 22.Nc4 Qc7 23.Nxd6?? Bxd6 24.Nxe5?? Bxe5 25.Bxe5 Qxe5 -> N+N for P, lost.
-- Equal through 20...g6; b3/Bb2/Rc1 and Nf1-e3 are fine.
-- 19.a4?! ...b4 then 21.a5?! drops a pawn: a5 undefended, his queen grabs it. Keep the pawn back; play Nd2/Bb1/f4 first.
-- 23.Nxd6??: d6 is DEFENDED by Be7 (and Qc7). 24.Nxe5??: after ...Bxd6 the bishop also covers e5. Before ANY knight capture list enemy BISHOPS and check both diagonals of the target; d6/e5 sit on Be7/Bd6.
-- 28.Qd6?? Qxd6 (undefended queen on his queen's diagonal - 'offering a trade' is no defense). 32.Re7?? Nxe7 (undefended rook where a knight attacks).
-- Clock 1:28 vs 13:54; 39-69s on moves 14-32, incl. 49s on the Nxd6 blunder.
+## g33 vs GPT-6.1 Sol (0-1, m27)
+14.Nf1 Rac8 15.Ne3 Nc4 16.Nxc4 Qxc4 17.Be3?? Rfe8 18.Qd2?? Bxe4 19.Bxe4 Nxe4 20.dxe5?? Nxd2 21.Nxd2 Qd5 -> Q for N, mated 27...Qxg2#.
+- 14...Rac8 15.Ne3 Nc4: Black offers this exchange; 16.Nxc4 Qxc4 (QUEEN recapture) gives him an active queen hitting Bc2. Equal through 16...Qxc4.
+- 17.Be3?? Rfe8 18.Qd2?? Bxe4!: with a piece on e3, Re1's e-file is blocked AND Qd2-e3-e4 is blocked, so e4 has no rescuer. Keep e3 EMPTY while his Qc4+...Bb7 aim at e4: 17.Qd2 (or Bd2) first, or block with d5. General: my own piece must not block my rescuer (also g33 20.Qxe4/Nd2 illegal tries).
+- 19...Nxe4: the knight hits d2/f2/g3/g5/c3/c5/d6/f6 - my QUEEN on d2 was attacked. 20.dxe5?? ignored it -> 20...Nxd2. Save the queen first (Qe2/Qe3); 2:35 and 3 tries on this move.
+- 23.Nxe5?? Qxe5 = N for P (knight grab of a queen-defended pawn). 24.Bd4?? Qxd4: no rook actually defended d4 - an 'offer' only his queen can accept just loses it.
+- Down material: king safety first; 27...Qxg2# with Rc2 guarding the queen.
 
 ## Rook endings (g27)
 - An enemy rook on the 2nd rank eats b2 then my rooks; 19...Nc2 forked Ra1+Re1 and c2 was 2v2 -> his LAST recapturer is a ROOK.
@@ -34,4 +34,4 @@
 
 ## Game management
 - Routine <=15s; the 5s scan of the FINAL move is the fix.
-- Down material (g10,g13,g18,g22,g23,g27,g31): king safety first, defend loose pieces, trade, 5-15s, no pawn grabs, no capture his piece recaptures.
+- Down material (g10,g13,g18,g22,g23,g27,g31,g33): king safety first, defend loose pieces, trade, 5-15s, no pawn grabs, no capture his piece recaptures.
