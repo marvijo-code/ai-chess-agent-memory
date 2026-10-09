@@ -94,12 +94,12 @@
      "games": 4,
      "read_in_prompt": 4,
      "read_latest": 4,
-     "reflections": 3,
-     "memory_updates": 3,
-     "note_updates": 6,
+     "reflections": 4,
+     "memory_updates": 4,
+     "note_updates": 8,
      "rejected": 0,
      "errors": 0,
-     "retries": 0
+     "retries": 1
     },
     "Sonnet 5.5": {
      "games": 4,
@@ -116,7 +116,7 @@
   }
  },
  "last_written": {
-  "DeepSeek V4.1 Flash": "6bb7f4274457",
+  "DeepSeek V4.1 Flash": "0b2b1fa4acbf",
   "Sonnet 5.5": "c47968e5639e",
   "GPT-6.1 Sol": "57bcbc154c1a"
  }
