@@ -42,9 +42,9 @@
    "number": 13,
    "players": {
     "GPT-6.1 Sol": {
-     "games": 1,
-     "read_in_prompt": 1,
-     "read_latest": 1,
+     "games": 2,
+     "read_in_prompt": 2,
+     "read_latest": 2,
      "reflections": 1,
      "memory_updates": 1,
      "note_updates": 1,
@@ -53,20 +53,20 @@
      "retries": 1
     },
     "DeepSeek V4.1 Flash": {
-     "games": 1,
-     "read_in_prompt": 1,
-     "read_latest": 1,
+     "games": 2,
+     "read_in_prompt": 2,
+     "read_latest": 2,
      "reflections": 1,
      "memory_updates": 1,
      "note_updates": 2,
      "rejected": 0,
-     "errors": 0,
+     "errors": 1,
      "retries": 1
     },
     "Sonnet 5.5": {
-     "games": 1,
-     "read_in_prompt": 1,
-     "read_latest": 1,
+     "games": 2,
+     "read_in_prompt": 2,
+     "read_latest": 2,
      "reflections": 1,
      "memory_updates": 1,
      "note_updates": 1,
