@@ -1,29 +1,38 @@
-# QGD: pins, exact defenders, and candidate safety
+# QGD: skewers, defenders, and file clearance
 
-## T4 round 2: Exchange QGD, White vs Sonnet, checkmate loss
-1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.cxd5 exd5 5.Bg5 Be7 6.e3 O-O 7.Bd3 Nbd7 8.Nge2 c6 9.O-O Re8 10.Qc2 Nf8 11.f3 Ne6 12.Bh4 h6 13.Rad1 Nh5 14.Bf2 Nf6 15.e4 dxe4 16.fxe4 Qd7 17.Ng3 Rd8 18.d5 cxd5 19.exd5 Nxd5 20.Nxd5 Bf8 21.Nf4 Nxf4 22.Bh7+ Kh8 23.Rxd7 Bxd7.
+## T7 semifinal 2, game 1: White vs Sonnet, checkmate win
+1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Bg5 Be7 5.e3 O-O 6.Nf3 h6 7.Bh4 Ne4 8.Bxe7 Qxe7 9.cxd5 Nxc3 10.bxc3 exd5 11.Bd3 Nd7 12.O-O Nf6 13.Qc2 Be6 14.Rfe1 Rfe8 15.e4 dxe4 16.Bxe4! Nxe4 17.Rxe4 c6 18.Rae1 Rad8.
 
-- Ng3 was marked a mistake and exd5 an inaccuracy; their local purposes did not establish soundness.
-- Nf4 moved Nd5 onto Ne6's capture square. Bf2 did not defend f4: its diagonals run through e3/d4 and g3/h4.
-- Bd3 blocked Rd1's line to Qd7. Bh7+ removed that blocker with check, allowing Rxd7 Bxd7: rook for queen. This resource did not validate the mistaken defender count.
+### Active pieces still require safety checks
+- 19.Ne5?? left Re4/Qc2 aligned on f5-e4-d3-c2. ...Bf5 would skewer rook and queen; moving Be6 also opens Qe7's attack on Ne5. Black instead played ...Qd6??. A supported knight does not make the whole position safe.
+- 20.h3 f6 21.Ng6 Bf7 22.Nf4?! Rxe4 23.Rxe4! Rd7 24.Qd3??.
+- Qd6 attacked Nf4 through e5; Re4 defended the knight along the fourth rank. ...f5 would attack Re4 while the queen attacked Nf4. Moving the rook abandons the knight; moving the knight leaves the rook attacked. Scan attacks on a defender and its charge together.
+- Black instead played ...g5?! 25.Ne2 Kg7? 26.Ng3 Be6?? 27.Nh5+? Kf7?! 28.c4??. Now ...Bf5 again skewered Re4/Qd3 along f5-e4-d3. Pawn mobility did not address the tactical alignment.
+- No engine-best replacements were supplied for the marked errors. Do not treat the eventual win as validation of these choices.
 
-24.Bf5 Be6 25.Bxe6 Nxe6 26.Qf5 g6 27.Qxf7 Ng7 28.Qxg6 Rd6 29.Qg4 Ne6 30.Nf5 Rc6 31.Bd4+ Nxd4 32.Qxd4+ Kg8 33.Qg4+ Kh7 34.Ng3 Rg6 35.Rf7+ Bg7 36.Qe4 Rf8 37.Rxf8 Bxf8 38.Qxb7+ Rg7 39.Qxa7?? Rxa7.
+### Bishop screen and alternative recaptures
+28...Qe7?? 29.d5 cxd5 30.cxd5?? Bxd5?? 31.Rxe7+ Kxe7.
+- Be6 was the only blocker between Re4 and Qe7. ...Bxd5 vacated e6, allowing the queen capture with check. White exchanged rook for queen and retained Q+N against R+B, not an extra queen with otherwise equal material.
+- Black could instead capture with ...Rxd5, preserving Be6 and attacking Qd3 along the cleared d-file. The pawn attack did not force the bishop to leave its screening square.
+- Before a central recapture, compare every capturing piece and reconstruct the resulting file. A bishop shielding its queen has a concrete defensive function even when attacked.
 
-### Pin did not prevent capture
-After ...Rg7: White Kg1/Qb7/Ng3, pawns a2 b2 g2 h2; Black Kh7/Rg7/Bf8, pawns a7 h6.
-- Qb7 pinned Rg7 along the seventh rank. The rook could legally move along that rank or capture the pinning queen. Qxa7 allowed exactly that, with no White recapture.
-- Discard the earlier Qe4/Rg6/Kh7 diagonal pin after queen and rook moves. A remembered pin is not current protection.
-- White had Q+N against R+B before losing the queen. Collecting a7 was unnecessary without verifying safety. Qxa7 took twelve seconds with eight minutes remaining.
+### Conversion
+32.Qd4 Rd6 33.Nxf6 Be6 34.Qe5 Rd1+ 35.Kh2 Kf7 36.Ne4 Rd5 37.Qf6+ Ke8 38.Qxe6+ Kf8.
+- Qd4 attacked Bd5, whose rook defender was on d6. ...Rxf6 would abandon the bishop to Qxd5; calculate this exchange before claiming a free knight capture.
+- Qe5 pinned Be6 to Ke7; ...Kf7 released that pin. Ne4 then protected Qf6, and Qf6+ drove the king away from Be6, allowing Qxe6+.
+- After ...Kf8, Qxd5 could safely remove the last rook. I instead collected h6/g5 and later used Ne6+ Rxe6 Qxe6. Prefer immediate safe simplification.
+- Queen-only finish: approach with the king while the queen restricts Black. With Kc7/Qd7 against Ka8, my king blocked Qd7-b7; Qc8+ Ka7 Qb7# delivered protected mate.
+- Finished with 10:13 and no illegal attempts. Routine king approach took 5 - 12 seconds; some simple attacking moves still took 24 - 40 seconds.
 
-Later ...Rf2 pinned Nf4 to Kf5. After g5 hxg5 Kxg5, the king move released the pin, but ...Bd2 added a second attacker. h5 ignored this: ...Bxf4+ won the knight, protected by Rf2 along f2-f3-f4. Releasing a pin does not remove existing attacks.
+## Earlier QGD losses
+### T4 Exchange QGD
+- Ng3 was a mistake; exd5 was inaccurate. Nf4 moved Nd5 onto Ne6's capture square. Bf2 did not defend f4: its diagonals pass through e3/d4 and g3/h4.
+- Bd3 blocked Rd1's attack on Qd7. Bh7+ removed the blocker with check, enabling Rxd7 Bxd7. This resource did not validate the earlier knight loss.
+- With Kh7/Rg7/Bf8 against Qb7/Ng3, Qxa7?? allowed Rxa7. A rook pinned along a rank can move along that rank or capture the pinning queen. The earlier diagonal pin no longer existed.
+- Later a king move released Nf4's pin, but ...Bd2 added another attacker. Ignoring it allowed ...Bxf4+, protected by Rf2.
 
-## T3 round 2: Lasker QGD, White vs Sonnet, checkmate loss
-1.d4 Nf6 2.c4 e6 3.Nf3 d5 4.Nc3 Be7 5.Bg5 O-O 6.e3 h6 7.Bh4 Ne4 8.Bxe7 Qxe7 9.Rc1 Nxc3 10.Rxc3 dxc4 11.Bxc4 c5 12.O-O Nc6 13.d5 exd5 14.Bxd5 Nb4 15.Bb3 Bf5 16.a3 Nc6 17.Qe2 Nd4 18.Nxd4 cxd4 19.Rc5?? Qxc5 20.exd4 Qxd4.
-
-- d5 was inaccurate despite attacking Nc6; ...exd5 Bxd5 Nb4 gained a tempo against the bishop. No best replacement was supplied.
-- Before ...Nd4, e3 blocked Qe7's line to Qe2. exd4 would expose my queen to ...Qxe2: a queen constraint, not a king pin.
-- Nxd4 cxd4 exchanged knights and attacked Rc3. Rc5 attacked Bf5 but was undefended on Qe7's diagonal e7-d6-c5. ...Qxc5 won the rook outright.
-- Attacking a bishop does not force its retreat. Test captures of the attacking piece before claiming a tempo.
-- After ...Qxc5, the queen left e7 and the old restriction on exd4 disappeared; ...Qxd4 still collected that pawn. Refresh constraints after every capture.
-- Later Bc6 attacked Rd5 and b7, but ...bxc6 won the bishop. A pawn I attack can also capture my piece, including from its starting square. This giveaway had no adverse mark.
-- Both losses occurred with ample time and no illegal attempts. Sonnet's earlier mistakes did not prevent it from taking exposed material. Verify destinations, blockers, and complete exchanges instead of relying on activity narratives.
+### T3 Lasker QGD
+- d5 exd5 Bxd5 Nb4 gained Black a bishop tempo. After ...Nd4, exd4 would uncover Qe7's attack on Qe2 through the vacated e3 square.
+- Nxd4 cxd4 attacked Rc3. Rc5?? attacked Bf5 but landed undefended on Qe7-d6-c5; Qxc5 won the rook. Attacking a bishop does not force retreat.
+- After Qxc5, the old e-file restriction disappeared. Refresh constraints after captures.
+- Bc6 attacked Rd5/b7 but allowed bxc6. Test pawn captures of the attacking piece, including from starting squares.
