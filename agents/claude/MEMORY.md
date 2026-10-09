@@ -1,53 +1,48 @@
 # MEMORY (chess tournament; clocks 600+10, 900+10; Armageddon: White 10 min, Black 7:30 + draw odds)
 
 ## Record
-- Closed Ruy as White: vs DeepSeek 8 wins (G1,G9,G14,G15,G19,G20,T5R3,T10R3); vs Sol T5SF2G1, T8R2, T10R2 1-0, T6R3 0-1, T12R1 draw (notes/white-closed-ruy.md, notes/white-anti-marshall-d3.md).
+- Closed Ruy White: DeepSeek 8 wins; Sol T5SF2G1, T8R2, T10R2 1-0, T6R3 0-1, T12R1 draw (notes/white-closed-ruy.md, white-anti-marshall-d3.md).
 - Sicilian White vs DeepSeek: Rauzer T8R1, T8SF1G1, Yugoslav T9R2 all 1-0 (notes/white-open-sicilian-sf.md).
-- Chigorin as Black: DeepSeek 6 wins (T6R2, T7R2, T7R5.2, T11R2, T12R2, T12R5.2); Sol T5R1, T9SF2G1 1-0, G3, T7R1 0-1, G4 draw (notes/black-ruy-chigorin.md).
-- vs Sol as Black: QGD G13, G18 1-0; T7SF2G1 0-1 (notes/black-qgd-lasker.md). Vs 3.Bc4: T9R1 0-1, T12SF2G1 0-1 (Qf5?? at move 30) (notes/black-giuoco-pianissimo.md).
-- vs Sol as White: G5, G8 1-0 (4.d3).
-- vs SF as White 1.e4 c5: only losses/draws (notes/sicilian-plan.md). vs SF as Black 1.e4 e5 2.Nf3 Nc6 3.Nc3: G6, G11, T11 Final, T12R3 losses; G7/T6/T8R3/T10R1 draws (notes/black-four-knights.md).
+- Chigorin Black: DeepSeek 6 wins + T13R1 DRAW (B+B+N vs pawns, repetition); Sol T5R1, T9SF2G1 1-0, G3, T7R1 0-1, G4 draw (notes/black-ruy-chigorin.md).
+- Sol as Black: QGD G13, G18 1-0, T7SF2G1 0-1 (notes/black-qgd-lasker.md); vs 3.Bc4 T9R1, T12SF2G1 0-1 (notes/black-giuoco-pianissimo.md). Sol as White: G5, G8 1-0 (4.d3).
+- vs SF as White 1.e4 c5: only losses/draws (notes/sicilian-plan.md). vs SF as Black 3.Nc3: G6, G11, T11 Final, T12R3 lost; G7/T6/T8R3/T10R1 drawn (notes/black-four-knights.md).
 
 ## Key lessons (read before EVERY move)
-- Output: only the JSON move object. Illegal moves count as attempts (max 3). Trace the path; destination must not be my own piece.
-- QUEEN-DESTINATION CHECK (T12SF2G1 lost an equal game): before ANY queen move, name the square, list every enemy piece/queen line hitting it, and name MY recapturer by exact path (own pawn in the way = no recapture). Zero defenders + his queen attacks = hangs the queen. A 'queen trade offer' needs a defended queen.
-- NOTES MUST CHANGE THE MOVE: I wrote warnings for 30 moves and still blundered; T12R3 note said dxc6 and I played bxc6. Re-read the last 3 notes before each move; calculate HIS best reply first.
+- Output: only the JSON move object. Illegal moves count as attempts (max 3). Trace the path; destination must not be my own piece (T13R1: Qxb2 illegal, own b5 pawn blocked).
+- CONVERSION (T13R1: +B+B+N vs pawns for 35 moves = DRAW by threefold): I blockaded White's last pawns (b3/d5 stuck), so he had only king moves; I dodged stalemate by shuffling B/N around the same net. FIX: (1) bring my KING (Kg7-f6-e5...) as mating piece; (2) win/untangle pawns, make a queen (b4/f4 passers) - promote before mating; (3) leave him spare pawn moves; (4) keep a list of positions: never repeat one twice; (5) stalemate check every ply. Mate K+B+B+N needs the king, not only pieces.
+- QUEEN-DESTINATION CHECK (T12SF2G1 lost): before ANY queen move name the square, every enemy piece/line hitting it, and MY recapturer by exact path (own pawn in the way = no recapture). A 'queen trade offer' needs a defended queen. Also check what attacks my queen NOW (T13R1 Qe3 hit my Qb6, which I almost missed).
+- NOTES MUST CHANGE THE MOVE: written warnings at move 30 still lost (T12R3: note said dxc6, played bxc6). Re-read last 3 notes before each move; calculate HIS best reply first.
 - VS SF 3.Nc3 AS BLACK: 3...Nf6 4.Bb5 Bb4 5.O-O O-O 6.Nd5 Nxd5 7.exd5 e4! 8.dxc6 exf3 9.Qxf3 dxc6 (ONLY dxc6) 10.Bc4. Never 3...Bc5, never 10...Bxd2.
-- BLOCKED-DEFENDER CHECK (T12R5.2: DeepSeek's Qxd5?? lost Q since its f5 pawn blocked Bb1): own pawns block own bishop/rook lines, his and mine. Trace recaptures through pawns. SF marked my 23...Nxd5 ?? there: before grabbing a 'loose' pawn, list his Nxe5/Rxe5 tricks.
-- STACKED-LINE CHECK: two of my pieces on one file/diagonal? Moving the front one discovers an attack on the rear.
-- 'UP A PIECE' ILLUSION (T12R1): 'Bxh6 wins a piece' but ...Nxe4 dxe4 d3 forked Q+B. Play the forcing line to the end; check pawn forks (d3, d4, e4).
-- DRAWN-ENDING TRAP: a pawn up in an opposite-colored bishop ending is a draw. Keep rooks, make a plan, vary shuffles, use the clock.
-- RETREAT-SQUARE CHECK: before a bishop grabs a pawn on e5/d4, list its retreat squares vs f4/c3/e5 pushes.
-- LUFT/BACK RANK (lost G16, G23): as White play h3 by move 9-12, before Rc1/Qd2. Before each rook trade or queen move: 'Qb1+/Qa1+, what is my only blocker?'
-- TRADE CHECK: before a trade ask where HIS queen/bishop lands and what it hits (G23 19.Bxd5? Qxd5).
-- VS PAWN STORMS (T9R1 lost, T9SF2G1 won): don't shuffle. Trade the outpost knight, meet g5 with ...Bf6, offer DEFENDED queen trades, ...Nh7, keep Q off the c-file.
-- BACK-RANK/Rf8# with Kh8 under g6/h7: keep a piece guarding f8 and a rook home.
-- ATTACK PATTERN (T9R2, T10R3): h7 has one defender + my Q reaches h5/h6 + Ng5 (Nf5 covering g7) -> Qxh7#.
-- QUEEN-LINE CHECK: queen on a file/diagonal with enemy rook/bishop and ONE blocker? Moving the blocker allows discovery.
+- BLOCKED-DEFENDER CHECK: own pawns block own bishop/rook lines, his and mine (DeepSeek's Qxd5?? lost Q, f5 pawn blocked Bb1). Before grabbing a 'loose' pawn list his Nxe5/Rxe5 tricks.
+- STACKED-LINE / QUEEN-LINE CHECK: two of my pieces (or Q + rook + one blocker) on a line? Moving the front piece discovers an attack.
+- 'UP A PIECE' ILLUSION (T12R1): 'Bxh6 wins a piece' but ...Nxe4 dxe4 d3 forked Q+B. Play forcing lines to the end; check pawn forks (d3, d4, e4).
+- DRAWN-ENDING TRAP: pawn up in opposite-colored bishop ending = draw. Keep rooks, make a plan, vary shuffles.
+- RETREAT-SQUARE CHECK: before a bishop grabs a pawn on e5/d4, list retreat squares vs f4/c3/e5 pushes.
+- LUFT/BACK RANK (lost G16, G23): as White h3 by move 9-12 before Rc1/Qd2. Before each rook trade/queen move: 'Qb1+/Qa1+, my only blocker?' Keep a piece on f8 vs Rf8# with Kh8.
+- TRADE CHECK: before a trade ask where HIS queen/bishop lands (G23 19.Bxd5? Qxd5).
+- VS PAWN STORMS (T9R1 lost, T9SF2G1 won): don't shuffle. Trade the outpost knight, meet g5 with ...Bf6, offer DEFENDED queen trades, ...Nh7, queen off c-file.
+- ATTACK PATTERN (T9R2, T10R3): h7 one defender + my Q reaches h5/h6 + Ng5 (Nf5 covers g7) -> Qxh7#.
 - ATTACKED-PIECE CHECK FIRST: list every piece of mine his move attacks (incl. discovered) and who defends it.
-- 'Is his piece defended?': DeepSeek and Sol leave pieces undefended, but Sol DOES take a free queen. List his defenders AND my recapture path. SF never errs.
-- Q for R/minor is a LOSS. NEVER hit a queen with an UNDEFENDED piece.
+- DeepSeek and Sol leave pieces undefended, but Sol DOES take a free queen. SF never errs and takes every free pawn; a pawn down vs SF snowballs. Q for R/minor is a LOSS. NEVER hit a queen with an UNDEFENDED piece.
 - MATERIAL COUNT: Q=9, R=5, B/N=3. Recount at the END of every capture sequence. 'Free piece': ask why it is offered; list ALL his checks.
 - BLUNDER CHECK: (1) anything of mine attacked? (2) captures on destination; (3) his checks, pushes, discoveries, forks; (4) what my move leaves undefended.
-- SF takes every free pawn; a pawn down vs SF snowballs. Solid moves, no loose pawns.
-- REPETITION LIFELINE vs SF: when lost, find a forced shuffle (T10R1 drew at +7; T12R3 failed). Keep pieces protected.
-- TIME: book moves 1-8 s; 30-120 s at captures, queen moves, pawn breaks. Spend it on the destination check, not on waiting moves.
-- WINNING ENDINGS: trade down, stalemate check EVERY ply, ladder mate with two rooks (T12R5.2: Rc2+, Qh3+, Qg2#).
+- REPETITION LIFELINE vs SF: when lost, find a forced shuffle (T10R1 drew at +7; T12R3 failed when SF had a passed pawn).
+- TIME: book moves 1-8 s; 30-120 s at captures, queen moves, pawn breaks. Winning endings: use the clock to PLAN (T13R1 I had 5 min more than him and shuffled).
 - Armageddon as White (draw loses): solid, luft first. As Black (draw wins): safest known setup.
-- Openings as White: vs 1...e5 3...Nf6 4.d3; vs 3...a6 closed Ruy (9.h3; vs 7...O-O 8.d3). Vs 1...c5 DeepSeek: Rauzer or Yugoslav. vs SF: Alapin lost 4 times.
-- Openings as Black: vs 1.d4 QGD. Vs 1.e4: 1...e5 (3.Bb5 a6 Chigorin; 3.Bc4 Nf6 4.d3 Be7 equal -> giuoco note; 3.Nc3 -> prepared line). Caro-Kann Advance lost.
+- Openings White: vs 1...e5 3...Nf6 4.d3; vs 3...a6 closed Ruy (9.h3; vs 7...O-O 8.d3). Vs 1...c5 DeepSeek: Rauzer or Yugoslav. vs SF: Alapin lost 4 times.
+- Openings Black: vs 1.d4 QGD. Vs 1.e4: 1...e5 (3.Bb5 a6 Chigorin; 3.Bc4 Nf6 4.d3 Be7 -> giuoco note; 3.Nc3 -> prepared line). Caro-Kann Advance lost.
 
 ## Opponents
-- DeepSeek V4.1 Flash (0 losses to me in 15): 1...e5 or 1...c5. Trades queens, hangs pieces, ignores sole-defender mate threats, tries illegal moves. As White Ruy it plays 14.d5, 15.Bb1, 17.a3, 19.Bxc5, then drifts.
+- DeepSeek V4.1 Flash (0 losses to me in 16, 1 draw): 1...e5 or 1...c5. Trades queens, hangs pieces (T13R1 lost N, R, B by move 30), tries illegal moves. White Ruy: 13.d5 (T13R1), 14.d5, 15.Bb1/Be3, then drifts; when lost it shuffles K and pushes pawns.
 - Stockfish 19 (depth-4): instant moves. White: 1.e4, 2.Nf3, 3.Nc3 vs 1...e5. Black: 1...c5, Accelerated Dragon. Grabs loose pawns, finds back-rank queen checks, mates a piece-down side.
-- GPT-6.1 Sol: White Ruy (c3, h3, d4, Nf1-g3, Nf5, g4-g5 storm), 3.Bc4 (T9R1 storm; T12SF2G1 d3/c3/d4 plan, e5 push), or 1.d4 2.c4 3.Nc3 4.Bg5. Fast book moves, converts any free material, hunts the king with Q+N+R after. Strong at storms; errs under pressure.
+- GPT-6.1 Sol: White Ruy (c3, h3, d4, Nf1-g3, Nf5, g4-g5 storm), 3.Bc4, or 1.d4 2.c4 3.Nc3 4.Bg5. Fast book moves, converts free material, hunts king with Q+N+R. Strong at storms; errs under pressure.
 
 ## Notes files (max 8)
 - notes/sicilian-plan.md: White Alapin vs SF + luft rules.
-- notes/white-open-sicilian-sf.md: Rauzer/Yugoslav wins vs DeepSeek; losses vs SF.
-- notes/black-ruy-chigorin.md: Black Chigorin games (incl. T12R5.2).
+- notes/white-open-sicilian-sf.md: Rauzer/Yugoslav wins vs DeepSeek; SF losses.
+- notes/black-ruy-chigorin.md: Black Chigorin games.
 - notes/white-closed-ruy.md: closed Ruy wins vs DeepSeek/Sol, T6R3 loss.
-- notes/white-anti-marshall-d3.md: 8.d3 vs Sol (T10R2 win, T12R1 draw).
-- notes/black-four-knights.md: vs 3.Nc3 prepared line, losses (incl. T12R3).
+- notes/white-anti-marshall-d3.md: 8.d3 vs Sol.
+- notes/black-four-knights.md: vs 3.Nc3 line, losses.
 - notes/black-qgd-lasker.md: QGD games vs Sol.
-- notes/black-giuoco-pianissimo.md: T9R1 and T12SF2G1 losses vs Sol 3.Bc4, fixes.
+- notes/black-giuoco-pianissimo.md: losses vs Sol 3.Bc4, fixes.
