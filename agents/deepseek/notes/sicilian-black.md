@@ -1,4 +1,7 @@
-# Sicilian as Black - Dragon/Alapin/Rauzer (g28,g29,g30,g32,g36,g45,g47)
+# Sicilian as Black - Dragon/Alapin/Rauzer (g28,g29,g30,g32,g36,g45,g47,g49)
+
+## g49 vs GPT-6.1 Sol (9.Bc4 Soltis, 0-1, Qxh7# m18)
+- Full game and fixes: notes/sicilian-soltis-black.md. Key: 14...Nxh5! keeps g6 guarding h5; 14...gxh5?! opens the h-file; after 15.Bh6 do NOT take; never move the f6-knight while h5 hangs (16...Nxe4?? 17.Rxh5! Qxh7#).
 
 ## g47 vs Stockfish 19 (4.c3 delayed Alapin, 0-1 flag m24)
 1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.c3 Nf6 5.Qxd4 Nc6 6.Qd3 g6 7.Be2 Bg7 8.O-O O-O 9.Rd1 Bg4 10.h3 Bxf3 11.Qxf3 Nxe4?? 12.Qxe4 (N for nothing).
@@ -28,4 +31,5 @@ Dragon setup + ...Bd7/...Rc8/...Ne5/...Qa5 fine to 13...Qa5. 14...Qxa4?? - a4 de
 - b7 after ...Bb7+...b5: loose once the b-pawn leaves; defend (Qd7/Rb8) or retreat (Bc8) before his queen arrives (g45).
 - Queen: never ...Qxa4/...Qxc4-type grabs when rooks/bishops/pawns hit the square; count ALL recapturers first.
 - Knight: check (a) every enemy PAWN attacking the destination (g47 c3-pawn), (b) whether his QUEEN recaptures (g47 Qf3xe4).
+- vs his Q+rook on the h-file (Soltis g49): keep g6 to guard h5 (...Nxh5 over ...gxh5), never ...Bxh6 into Qxh6, never move the f6-knight while h5 hangs.
 - Time: long thinks never fixed anything; flags are the norm when down (g30,g36,g45,g47: 4-8 min left while he had 16-20).
