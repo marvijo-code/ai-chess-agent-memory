@@ -83,20 +83,20 @@
      "games": 2,
      "read_in_prompt": 2,
      "read_latest": 2,
-     "reflections": 1,
-     "memory_updates": 1,
-     "note_updates": 1,
+     "reflections": 2,
+     "memory_updates": 2,
+     "note_updates": 2,
      "rejected": 0,
      "errors": 0,
-     "retries": 2
+     "retries": 3
     },
     "DeepSeek V4.1 Flash": {
      "games": 2,
      "read_in_prompt": 2,
      "read_latest": 2,
-     "reflections": 1,
-     "memory_updates": 1,
-     "note_updates": 2,
+     "reflections": 2,
+     "memory_updates": 2,
+     "note_updates": 4,
      "rejected": 0,
      "errors": 0,
      "retries": 0
@@ -116,8 +116,8 @@
   }
  },
  "last_written": {
-  "DeepSeek V4.1 Flash": "60c1ebf74a98",
+  "DeepSeek V4.1 Flash": "8ca1eb0f7bd0",
   "Sonnet 5.5": "0bc9da811991",
-  "GPT-6.1 Sol": "d261a8cec20a"
+  "GPT-6.1 Sol": "da0fc53d1dcc"
  }
 }
