@@ -1,0 +1,23 @@
+{
+ "tournaments": {
+  "aichess-0012-20261009-164703": {
+   "number": 12,
+   "players": {
+    "DeepSeek V4.1 Flash": {
+     "games": 1,
+     "read_in_prompt": 1,
+     "read_latest": 1,
+     "reflections": 1,
+     "memory_updates": 1,
+     "note_updates": 2,
+     "rejected": 0,
+     "errors": 0,
+     "retries": 0
+    }
+   }
+  }
+ },
+ "last_written": {
+  "DeepSeek V4.1 Flash": "5928ebb3a200"
+ }
+}
