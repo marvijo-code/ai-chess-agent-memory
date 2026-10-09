@@ -1,42 +1,37 @@
 # DeepSeek V4.1 Flash: tactics and conversion
 
-Shared Chigorin structure through 13...Nc6 is in notes/ruy-lopez.md. Opponent errors and wins do not validate my moves. Keep an independent material inventory.
+Shared Chigorin opening through 13...Nc6 is in notes/ruy-lopez.md. Opponent errors and wins do not validate my moves. Keep an independent material inventory.
+
+## T7 round 3: Black, opponent flagged
+14.d5 Nb4 15.Bb1 a5! 16.Nf1 Bd7 17.Ng3 Rac8 18.Be3 g6 19.Qd2 Rfe8 20.Rc1 Qb8?! 21.a3 Na6 22.Bc2?! Nc5?! 23.Nf1?? Nfxe4 24.Bxe4 Nxe4! 25.N3h2? Nxd2 26.Nxd2.
+- ...a5 supported Nb4. ...Qb8 and ...Nc5 were inaccurate; later tactical success does not validate them. No best replacements were supplied.
+- Nf3-f1 removed an e4 defender. Bc2 remained, but both black knights attacked e4. Nfxe4 Bxe4 Nxe4 exchanged knight for bishop, won a pawn, and renewed the attack on Qd2.
+- N3h2 did not move or defend the queen. Nxd2 Nxd2 gained queen for knight; it was an opponent oversight, not a forced continuation.
+
+26...Rxc1+ 27.Rxc1 Rc8 28.Rxc8+ Qxc8 29.Nhf3 Qc6?? 30.dxc6! Bxc6! 31.Nd4? exd4! 32.Bxd4.
+- The rook exchanges left Q+2B against B+2N, with an extra pawn. Routine simplification was sound locally; queen safety still required checking.
+- Qc6 targeted d5 but landed directly on that pawn's capture square. Bd7 protected c6 only enough to recapture: dxc6 Bxc6 lost queen for pawn. The move took 32 seconds with over fourteen minutes remaining.
+- After Bxc6, Black had 2B against B+2N and two extra pawns: down a knight for two pawns, not a clean conversion.
+- Nd4 attacked Bc6/b5 but allowed e5xd4. Bxd4 restored equal minor-piece counts, leaving Black 2B against B+N with one extra pawn. Calculate captures before retreating an attacked bishop.
+
+32...Kf8 33.Nf3 Bxf3 34.gxf3 Ke8 35.Bb6 a4 36.Bc5 dxc5 37.f4 Kd7 38.f5 gxf5 39.f4 Bf6 40.Kf2 Bxb2 41.Ke3 Bxa3 42.Ke2 c4 43.Kf3 c3 44.Ke3 c2.
+- Bxf3 gxf3 traded bishop for knight and doubled White's f-pawns; it did not win a piece. Black then had B against B and an extra pawn.
+- Bc5 landed on d6's capture square; dxc5 removed White's last piece. Bf6-b2-a3 collected queenside pawns and left connected a/b/c passers.
+- Ba3 protected promotion on c1 through b2. Advance a verified unstoppable passer promptly.
+- Finished with 14:22, no illegal attempts. White had three illegal attempts and flagged, but the queen giveaway was a serious independent error. DeepSeek immediately found dxc6; do not rely on habitual misses.
 
 ## T6 third place: Black, checkmate win
 14.d5 Nd8?! 15.Nf1 Bd7 16.Be3 Nb7 17.Qd2 Nc5 18.Bxc5 dxc5 19.Ng3 Bd6 20.Nf5 Bxf5! 21.exf5 Rfe8 22.Be4 Nxe4 23.Rxe4! Qd7 24.Rxe5?? Bxe5 25.Nxe5 Rxe5.
+- Nd8 was inaccurate. Bd7 cleared c8-d7-e6-f5; dxc5 opened Qc7-d6-e5 until Qd7.
+- Bxf5 and Nxe4 exchanged minor pieces without winning material. Rxe5 Bxe5 Nxe5 Rxe5 then traded White's rook and knight for bishop and pawn; Re8's defense became usable after e5 cleared.
+- Qd4 cxd4 captured White's queen before retreating Re5. Qxd5 Rxd4 Qxd4 removed the last rook.
+- Finish: Qf4+ Kh1 Re1#. Qf4 covered h2 through g3; g2/h3 blocked escapes. Finished with 14:01, but Qf4+ took 43 seconds despite overwhelming material.
 
-- Nd8 was marked inaccurate; no best replacement was supplied. Reaching c5 and winning later do not validate the reroute. Bd7 cleared c8-d7-e6-f5 for the bishop's later capture of Nf5.
-- ...dxc5 cleared Qc7-d6-e5, adding queen defense of e5 until ...Qd7. The pawn on c5 remained tactically relevant.
-- ...Bxf5 removed the active knight; exf5 vacated e4 and opened White's e-file. Nxe4 Rxe4 exchanged my remaining knight for White's bishop, without winning material by itself.
-- Before Rxe5, e5 was defended by Bd6 and Re8. Rxe5 Bxe5 Nxe5 Rxe5 exchanged White's rook and knight for my bishop and pawn. Re8 could recapture once e5 was cleared: the pawn's initial blockade did not erase the rook's defense. Black then had Q+2R against Q+R, with no minor pieces.
-
-26.Qd4 cxd4 27.Rd1 Qxd5 28.Rxd4 Qxd4 29.Kh2 Qf4+ 30.Kh1 Re1#.
-
-- Qd4 attacked Re5 and defended d5 but landed directly on c5's capture square. Capture the queen before retreating the rook.
-- Qxd5 attacked Rd1 down the clear d-file. Rxd4 collected the pawn but allowed Qxd4, removing White's last piece.
-- Qf4 covered h2 through empty g3. Re1 checked Kh1 along empty f1/g1; White's g2/h3 pawns occupied other escapes. Verify these squares before using the pattern.
-- Finished with 14:01 and no illegal attempts. Familiar opening moves took 3-6 seconds; Qf4+ took 43 seconds despite overwhelming material. Execute verified finishing sequences promptly. White spent heavily on regrouping and had two illegal attempts, but material errors decided the game.
-
-## T6 round 1: Black, opponent flagged
-14.d5 Nb8 15.Nf1 Nbd7 16.Be3 Bb7 17.Qd2 Nc5 18.Ng3 Rfe8 19.Nf5? Bf8? 20.Bxc5 Qxc5 21.Ne3 g6 22.Nh4 Bg7 23.Nef5 gxf5 24.Nxf5 Bf8?? 25.Qg5+ Kh8 26.Nxd6?? Qxd6.
-- Both Bf8 retreats received adverse marks. After gxf5 Nxf5, Bf8 defended d6 but abandoned Nf6: calculate Qg5+ and Qxf6+. White instead placed its knight on Qc5-d6's capture line.
-- ...Rec8 defended Rc4 along the clear file. Qxc4 Rxc4 traded White's queen for one rook; Rxe4 Rxe4 Nxe4 exchanged the remaining rooks.
-- Bh6 attacked Rc1 along h6-g5-f4-e3-d2-c1; White ignored it and allowed Bxc1.
-- Qg3+? fxg3 lost my queen to an unpinned f2-pawn despite Ne4 support. No adverse mark flagged this giveaway. Protection permits recapture, not a favorable exchange.
-- Nf2 followed by Nxd1 left two bishops and knight against pawns, but losing the queen needlessly complicated conversion. Finished with 12:45; Bh6 took 52 seconds despite a large advantage.
-
-## T5 third place: Black, checkmate win
-14.d5 Nb4 15.Bd3?? Nxd3 16.Qe2 Nxe1 17.Qxe1 Bd7 18.Nc4 bxc4.
-- Nd2 blocked Qd1xd3. Qe2 attacked Nd3 but allowed Nxe1. Nc4 then landed on b5's capture square.
-- Qb3 attacked Qb2 but allowed cxb3; Qxa1+ collected the last rook. Qa1 protected Rc3 through b2.
-- Finish: f3 Qf4+ Kh1 Rb1#. Qf4 covered h2; g2 occupied the other escape.
-
-## T5 round 2: Black, checkmate win
-- Bxc5 dxc5 cleared Bb7's diagonal; Qd5?? Bxd5 exd5 Qxd6 lost White's queen. The recapturing d5 pawn blocked Rd1's line to d6.
-- Bd6 pinned Ng3 to Kh2 through e5/f4. Ne5 Bxe5 f3 Bxg3# used Ne4 to protect Bg3 and Qd1 to cover g1/h1.
-
-## Earlier errors
-- T4 Bf8?? and d5?? went unpunished; no best replacements were supplied.
-- Bd4+ allowed Kxd4; Qe3+ allowed fxe3; Bd6+ abandoned Be7's defense of Nh4 and allowed Kxh4.
-- Kf1 released g2's pin: Qf3+ gxf3 Rxf3+ lost queen for pawn despite Rh3 protection. Refresh pins before checks.
-- Qd3 once took 3:11 while overwhelmingly ahead. Convert promptly after verifying safety.
+## Earlier recurring patterns
+- T6 round 1: ...Bf8 retreats were unsound; after gxf5 Nxf5, Bf8 abandoned Nf6 and allowed Qg5+/Qxf6+. White instead played Nxd6?? Qxd6.
+- ...Rec8 defended Rc4; Qxc4 Rxc4 lost White's queen for rook. Bh6-c1 captured an ignored rook.
+- Qg3+? fxg3 lost my queen despite Ne4 support. Kf1 likewise released g2's pin before Qf3+? gxf3. Refresh pins and test pawn captures before queen checks.
+- T5: Nb4 Bd3?? Nxd3 Qe2 Nxe1; Nd2 blocked Qd1xd3. Nc4 allowed bxc4, Qb3 allowed cxb3. Finish Qf4+ Kh1 Rb1# covered h2.
+- Bxc5 dxc5 opened Bb7's diagonal; Qd5?? Bxd5 exd5 Qxd6 lost White's queen. Bd6 pinned Ng3 to Kh2; Ne5 Bxe5 f3 Bxg3# used Ne4 protection and Qd1's g1/h1 coverage.
+- Bd4+ allowed Kxd4; Qe3+ allowed fxe3; Bd6+ abandoned Nh4 and allowed Kxh4. Checks do not ensure safety.
+- Qd3 once took 3:11 while overwhelmingly ahead. Convert promptly after verifying captures and mate geometry.
