@@ -1,27 +1,27 @@
-# Pre-move scan & blunder catalogue (g1-g30)
+# Pre-move scan & blunder catalogue (g1-g34)
 
 ## Scan (EVERY move, 5s) - on the FINAL move, not the plan
-1. Destination: which enemy PAWN, KNIGHT, BISHOP, KING, QUEEN, ROOK attacks it? Attacked+undefended -> reject. KING attacks: no rook beside his king (g29 17...Rxc2?? Kxc2). Pawn magnets: h3->g4, f3->g4/e4, e5->d6/f6, d5->c6/e6, c3->b4/d4, b3/b5->a4/c4, c4->b3/d3 + e2/d3-B diag, g6->f5/h5, e6->d7/f7 (g30). Knight magnets: b4->a2/c2/d3/d5; b3/b4->a1/c1/d2/d4/a5/c5; c2->a1/e1/a3/e3/b4/d4; d4->b3/c2/e2/f3/f5/c6/e6; no N TO d4/c4 under his Q/B (g28); c6->a5/a7/b4/b8/d4/d8/e5/e7 only (g28). Lines: d3/c2-B hits g6+h7; his Qf3 hits f5, Qf5 hits d7; Qc7+Rc8 cover c2.
-2. MY attacked piece: if it has 0 defenders, add a defender NOW or move it (g30 15...Nf6?? lost the e6-bishop to Nxe6; ...Qd7 defends). Save/trade it before any side pawn-grab (g29 16...Rxc3?? while Rd6 attacked Bd7 -> 17.Rxd7).
-3. A moving piece OR PAWN stops defending its old squares (g30 20...f4?? pushed f5, the only defender of Ne4 -> 21.Rxe4). Re-scan after checks/forced moves and every enemy move (g16,g27,g30).
-4. Knight captures: count every recapturer, even a check (g6,g19,g22,g23). His pawn attacks my knight -> move/defend it (g19); before kicking a knight with a pawn, check its flights for free captures (g30 9...f5?? 10.Nxc5).
-5. Queen/rook moves: list ALL attackers incl. rooks on the file; 'defended' is not enough - reject Q for B/N/P (g18,g25,g28); d5 is a queen trap (g12,g17,g18,g19); name the squares it leaves (g17); an undefended rook attacking an enemy rook loses (g27), a rook on a square his KING attacks loses (g29).
-6. Knight forks: cover BOTH targets or vacate one (g23 19...Nb3; g27 19...Nc2); never step onto a forker's square (g23 20.Bd2??); 2v2 means the LAST recapturer lands there (g27).
-7. Pinned knight (Ba4-d7-e8): moving it loses the exchange (g15); unpin ...Rb8.
-8. Mate nets: c1 king ...Qa1# (g6); his Qh5+Bd3 -> Qxh7+, defend ...g6 not ...Qf6?? (g25); f8 king Qxf7# (g12); ...Qf2#/...Rb1# (g10,g21); ...Qg8# (g24); king on the 8th, pawns f7/g7/h7, no luft -> Re8#/Qc8#/Qd8#/Qxe8#/Rxd8# (g14,g16,g19,g20,g24,g25,g26,g29).
-9. Pawn pushes: never onto a defended piece (g12), a knight-attacked square (g16), an enemy pawn's attack (g24), a bishop's capture (g25), where a queen takes with tempo (g19), or when that pawn guards one of my pieces (g30 20...f4).
-10. Pawn grabs: no rook grab of a pawn a rook/queen/king recaptures (g18,g29); no bishop grab of a twice-defended pawn (g23); no pawn grabs down material.
-11. Legality: path clear, own pieces block (g25; g30 Qe8-e6 blocked by e7-pawn); knight geometry (g28).
-12. A recapture you cannot make is no defense: after 13...Bxe6 (g30) e6 had no recapturer (f-pawn on f5, Q blocked by e7-pawn).
+1. Destination: which enemy PAWN, KNIGHT, BISHOP, KING, QUEEN, ROOK attacks it? Attacked+undefended -> reject. KING attacks: no rook beside his king (g29). Check pawn/knight magnet squares (full list in MEMORY); lines: d3/c2-B hits g6+h7, Qf3 hits f5, Qf5 hits d7, Qc7+Rc8 cover c2.
+2. MY attacked piece: 0 defenders -> defend/move it NOW (g30 15...Nf6?? lost the e6-bishop; ...Qd7 defends). Save/trade it before any pawn-grab (g29 16...Rxc3?? while Rd6 attacked Bd7).
+3. A moving piece OR PAWN stops defending its old squares (g30 20...f4?? pushed the only defender of Ne4). Re-scan after checks/forced moves and every enemy move (g16,g27,g30).
+4. Pawn hits my knight -> move the knight to a safe flight; never grab the pawn with a piece (g34 10.Bxd4?? Qxd4 = B for P; d4 had e5-pawn+Qd8). Knight captures: count every recapturer, even a check (g6,g19,g22,g23).
+5. Queen/rook moves: list ALL attackers incl. rooks on the file; 'defended' is not enough - reject Q for B/N/P (g18,g25,g28); d5 is a queen trap (g12,g17,g18,g19); name the squares it leaves (g17); an undefended rook attacking an enemy rook loses (g27); a rook where his KING attacks loses (g29).
+6. A queen trade offer needs a legal recapturer on the square: 14.Qe3?? Qxe3 with no recapture = queen for nothing (g34).
+7. Knight forks: cover BOTH targets or vacate one (g23,g27); never step onto a forker's square (g23); 2v2 means the LAST recapturer lands there (g27).
+8. Pinned knight (Ba4-d7-e8): moving it loses the exchange; unpin ...Rb8 (g15).
+9. Mate nets: c1 king ...Qa1# (g6); his Qh5+Bd3 covers h7 - defend ...g6 not ...Qf6?? (g25); Qxf7# (g12); ...Qf2#/...Rb1# (g10,g21); ...Qg8# (g24); king on the 8th, pawns f7/g7/h7, no luft -> Re8#/Qc8#/Qd8#/Qxe8#/Rxd8# (g14,g16,g19,g20,g24,g25,g26,g29,g32).
+10. Pawn pushes: never onto a defended piece (g12), a knight-attacked square (g16), an enemy pawn's attack (g24), a bishop's capture (g25), where a queen takes with tempo (g19), or when that pawn guards one of my pieces (g30).
+11. Pawn grabs: no rook grab of a pawn a rook/queen/king recaptures (g18,g29); no bishop/major grab of a twice-defended pawn (g23,g34); no pawn grabs down material.
+12. Legality BEFORE sending (3 invalid tries = forfeit, g34): path clear/own pieces block (g25,g30); knight geometry (g28); bishop geometry (d3 cannot reach e3, g34).
+13. A recapture you cannot make is no defense: after 13...Bxe6 (g30) e6 had no recapturer.
 
-## Blunder catalogue (all losses, 30 games)
-g1 Nxb2 | g2 a3 Nxc2 | g3 Bxd4/Qxe4 | g4 Bxd2/Re8 Qxe8# | g5 Qd2 Nb3 | g6 e5 Qa1# | g8 Bf5/Qd7 | g10 Qc2 Rxc2 | g11 Bf5/Qxb4 | g12 h6/Nh7/Qxd5 | g13 Qxh6/Qh8+ | g14 Qe1+ | g15 Nb6/Bxd5 | g16 Nc4/Nxe4 | g17 Qd6 | g18 Qd5/Rxe5 | g19 Nd7/b3/Qxd5/Rc8 | g20 Nd7 | g21 Bd3/Nc4/Qb3/Rb1# | g22 Nef5/Nxd6/Qxc4 | g23 Ng3/Bd2/Bxa5/Nxe5 | g24 Bg4 | g25 d3/Qf6/Qg6 | g26 Bf5/Qd7 | g27 Nc2/Rac1/Rc2/Re2 | g28 Qxc4/Nd4 | g29 Rxc3/Rxc2/Rd8 | g30 Bxe6?/Nf6??/f4??
+## Blunder catalogue (all losses, 34 games)
+g1 Nxb2|g2 a3 Nxc2|g3 Bxd4/Qxe4|g4 Bxd2/Re8 Qxe8#|g5 Qd2 Nb3|g6 e5 Qa1#|g8 Bf5/Qd7|g10 Qc2 Rxc2|g11 Bf5/Qxb4|g12 h6/Nh7/Qxd5|g13 Qxh6/Qh8+|g14 Qe1+|g15 Nb6/Bxd5|g16 Nc4/Nxe4|g17 Qd6|g18 Qd5/Rxe5|g19 Nd7/b3/Qxd5/Rc8|g20 Nd7|g21 Bd3/Nc4/Qb3/Rb1#|g22 Nef5/Nxd6/Qxc4|g23 Ng3/Bd2/Bxa5/Nxe5|g24 Bg4|g25 d3/Qf6/Qg6|g26 Bf5/Qd7|g27 Nc2/Rac1/Rc2/Re2|g28 Qxc4/Nd4|g29 Rxc3/Rxc2/Rd8|g30 Bxe6?/Nf6??/f4??|g31 Re7?/Qd6?/Bxh6?/Nxb5?|g32 Bxf6?/Bxc3?/Rxd3?|g33 Be3?/Qd2?/Nxe5?/Bd4?|g34 Bxd4??/Qe3?? + 3x illegal Bxe3
 
 ## Patterns
-- Queen: d5 trap; leaving a duty; sliders on the capture line; my queen on a square his queen covers.
-- Magnet squares onto enemy N/P/B/Q/K attacks (g16 c4, g21 d3, g22 f5, g23 d2, g24 g4, g25 g6, g26 f5/d7, g29 c2, g30 e6).
-- Knight forks b3/b4/c2 forkers; never step onto the forker's square.
-- Back rank: king without luft + enemy Q/R on the 8th (g14,g16,g19,g20,g24,g25,g26,g29).
-- Pawn forks: e5-e6 forks Bd7+f7 (g30); a pawn kick that lets a knight grab a pawn (...f5/Nxc5, g30).
-- A hanging piece must be saved before any pawn grab; a moving pawn can hang another piece (g30).
+- My queen on a square his queen/slider covers (g10,g12,g13,g17,g18,g19,g22,g28,g31,g34); d5 is the classic trap; a trade offer with no recapturer loses the queen outright (g34).
+- Back rank: king without luft + enemy Q/R on the 8th (g14,g16,g19,g20,g24,g25,g26,g29,g32).
+- Pawn hits/forks: e5-e6 forks Bd7+f7 (g30); ...f5 lets Nxc5 (g30); a pawn hitting my knight -> move the knight, not a piece grab (g34).
+- A hanging piece must be saved before any pawn grab; a moving pawn/piece can hang another piece (g30,g34).
+- Illegal tries (g25,g28,g30,g33,g34) cost games by forfeit: verify path/geometry before sending.
 - Long thinks never prevented a blunder - the 5s destination scan is the fix.
