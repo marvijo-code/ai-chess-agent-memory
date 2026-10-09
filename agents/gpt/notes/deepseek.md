@@ -1,39 +1,36 @@
 # DeepSeek V4.1 Flash: tactics and conversion
 
-Wins, forfeits, and opponent explanations do not validate moves. Track material and blockers independently. Shared Chigorin opening is in notes/ruy-lopez.md.
+Wins, forfeits, and opponent explanations do not validate moves. Track material, defenders, and blockers independently. Chigorin structure: notes/ruy-lopez.md.
 
-## T11 round 3: White, opponent technical forfeit
-Shared opening through 12...cxd4 13.cxd4, then 13...Bb7 14.Nf1 Rac8 15.Ng3?? Nc6?? 16.d5 Nb8 17.Bd3.
-- At move 15, c2 held my bishop and c3-c6 were empty. ...Qxc2 Qxc2 Rxc2 won Bc2 while exchanging queens. Ng3 repeated my T9 oversight despite the recorded lesson. Check this capture before continuing the knight reroute.
-- ...Nc6 screened the file; d5 drove it away, and Bd3 finally saved the bishop. The opponent's missed capture does not vindicate Ng3.
-- ...Nbd7 Be3 Nc5 Bc2 Nfd7 Rc1?! Bf6? followed. Bc2 and Nc5 screened Rc1 from Qc7. Rc1 was marked inaccurate; no best replacement was supplied.
-- 21.b4 Nb3 22.Bxb3 removed the undefended knight and cleared Rc1's attack on Qc7. Black's a6/b5 pawns did not defend b3. ...axb3 was impossible; ...Rxc1 was blocked by Qc7.
-- 22...Nc5 interposed the remaining knight, but 23.bxc5 dxc5 lost it too. The knight on c5 attacked Bb3, not a bishop on d3. Reconstruct actual squares rather than trusting commentary.
-- 24.d6 attacked Qc7 and was protected by Qd1 through empty d2-d5. ...Qxd6 25.Qxd6 lost Black's queen outright. White retained Q+2R+2B+2N against 2R+2B, with two fewer pawns.
-- The game ended on a technical forfeit after Qxd6; no mating conversion was tested. Finished with 13:38 and no invalid attempts. Familiar development was quick; b4 took 53 seconds. Tactical omissions occurred with ample time.
+## T12 round 3: White, Dragon checkmate win
+1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 g6 6.Be3 Bg7 7.f3 O-O 8.Qd2 Nc6 9.Bc4 Bd7 10.O-O-O Rc8 11.Bb3 Ne5 12.h4 Nc4 13.Bxc4! Rxc4! 14.h5 gxh5?! 15.Bh6?? Bxh6?? 16.Qxh6! Nxe4?? 17.Rxh5 Rxd4 18.Qxh7#.
+- Nc4 attacked Qd2 and Bb3, not b2. Bxc4 removed the knight with tempo before continuing the pawn attack. The rook recapture was Black's only good reply.
+- Bh6 abandoned Be3's diagonal defense of Nd4. Rc4 could capture it: ...Rxd4, and Qxd4 Bxh6+ gives Black both minors for a rook. The bishop check reaches Kc1 through g5/f4/e3/d2 after the queen leaves d2. Calculate this before relying on a routine Dragon bishop exchange; no engine-best replacement for Bh6 was supplied.
+- Black accepted the bishop exchange instead. Qxh6 was the only good recapture. Nf6 had guarded h5 and h7; ...Nxe4 removed those functions. It did NOT attack Qh6: Ne4 attacks c3/c5/d2/d6/f2/f6/g3/g5.
+- Rxh5 removed the h5 pawn and supported Qxh7# up the h-file once Qh6 moved. With Bg7 gone, g7 was empty and covered by Qh7; f8 was occupied by Black's rook. The protected queen covered the remaining king destinations.
+- ...Rxd4 captured Nd4 but ignored mate. Do not automatically recapture when a verified mating move is available. Black's claim that Nc3xd4 allowed ...Rxd1+ was false: that recapture would remove its attacking rook.
+- No invalid attempts. Finished with 15:08 before the final increment. Book moves were quick; Bh6 took 22 seconds and still missed the defender's duty. Rxh5 took 53 seconds; select the verified mate promptly.
 
-## T10 third place: Black, checkmate win
-After ...Na5/...Rac8, 18.Nf3?? Qxc2 19.Qxc2 Rxc2 won Bc2 while exchanging queens. Nd2 never screened the c-file. This exploited the same threat I missed as White in T9 and T11.
-- Bd2 attacked Na5 along d2-c3-b4-a5. ...Nc4 Bc3 f6 Nd2 Nxd2 Bxd2 Rxd2 exchanged knights and won the remaining bishop; Rc2 supported d2 horizontally.
-- 24.Red1 Rxd1+ 25.Kh2 Rxa1: declining Ra1xd1 lost White's other rook. This was an opponent error, not a forced feature of the exchange.
-- ...Rf1 Kg3 R8xf3+ Kh2 R3f2 b3 Rg1 Kg3 Rgxg2#. Rf2 protected Rg2; Bd7 covered h3 through e6-f5-g4 and g5 covered h4. The two rooks alone did not cover every escape.
-- Finished with 11:49. R3f2 took 58 seconds and Rg1 took 39; select safe mating routes promptly with overwhelming material.
+## T11 round 3: White, technical forfeit
+After ...Na5/...Qc7/...Rac8, 15.Ng3?? ignored ...Qxc2 Qxc2 Rxc2, winning Bc2 while exchanging queens. c3-c6 were empty. ...Nc6 screened the file; d5 drove it away and Bd3 finally saved the bishop. This repeated T9's oversight.
+- Later Rc1/Qc7 had Bc2 and Nc5 as screens. Rc1 was inaccurate; no best replacement supplied.
+- b4 Nb3 Bxb3 removed an undefended knight and cleared the bishop screen. Black's a6/b5 pawns did not defend b3. ...Nc5 bxc5 dxc5 lost its other knight.
+- d6 attacked Qc7 and was defended by Qd1 through d2-d5. ...Qxd6 Qxd6 lost the queen outright. The forfeit tested no mating conversion; finished with 13:38.
 
-## T10 round 1: White, checkmate win
-...Na5/...Rac8 with Rc1/Qc7 had TWO screens: Bc2 and Nc4. Bb3 removed my screen; ...Nb6 removed the other and allowed Rxc7. The bishop attack did not force that retreat; Nc4's queen pin was not absolute.
-- Bxa4 bxa4 exchanged bishop for knight. Bxb6 Bxf5 exf5 removed Black's other knight while exchanging my knight for Bc8.
-- ...Rac8 Rxc8 Rxc8 Rxc8 exchanged ONE White rook for BOTH Black rooks. ...e4 forked Qd3/Nf3, but Qxe4 safely removed it.
-- Qe8 Kh7 Qxf8 g6 Qh8#: Rc8 protected h8. Kh7 released Bf8's pin; Qxf8 was not check. ...g6 occupied the former Kg6 escape.
+## T10 third place: Black, mate win
+...Na5/...Rac8 followed by Nf3?? Qxc2 Qxc2 Rxc2 won Bc2. Nd2 never screened the c-file.
+- Bd2 attacked Na5 via c3/b4. ...Nc4 Bc3 f6 Nd2 Nxd2 Bxd2 Rxd2 exchanged knights and won the remaining bishop; Rc2 supported d2 horizontally.
+- Red1 Rxd1+ Kh2 Rxa1: declining Ra1xd1 lost White's other rook; this was not forced.
+- ...Rf1 Kg3 R8xf3+ Kh2 R3f2 b3 Rg1 Kg3 Rgxg2#. Rf2 protected g2; Bd7 covered h3 and g5 covered h4. Finished with 11:49; lengthy rook maneuvers were unnecessary.
 
-## T9 round 3: White, checkmate win
-...Na5/...Rac8 made ...Qxc2 Qxc2 Rxc2 possible. Ng3 ignored it; Bd3 saved Bc2 only after Black missed the capture.
-- After Bd3/...Nb7 cleared the file, Rc1 Qxc1 Bxc1 Rxc1 Qxc1 gave Black Q+R for R+B. Bxc1 preserved Qd1 for the final capture.
-- Re8+ Kg7 Qc3+ Kh7 Rh8#: Qc3 protected h8 and covered g7; Bd3 covered h7.
+## Earlier White wins
+- T10: Rc1/Qc7 had Bc2 and Nc4 as screens. Bb3 removed one; ...Nb6 removed the other, allowing Rxc7. The bishop attack did not force that retreat; Nc4's queen pin was not absolute.
+- ...Rac8 Rxc8 Rxc8 Rxc8 exchanged one White rook for both Black rooks. ...e4 forked Qd3/Nf3, but Qxe4 removed it safely.
+- Qe8 Kh7 Qxf8 g6 Qh8#: Rc8 protected h8; ...g6 occupied Kg6's former escape.
+- T9: Ng3 again ignored ...Qxc2; Bd3 saved the bishop after Black missed it. With the file clear, Rc1 Qxc1 Bxc1 Rxc1 Qxc1 gave Black Q+R for R+B. Finish: Re8+ Kg7 Qc3+ Kh7 Rh8#, with Qc3 protecting h8.
 
-## Earlier recurring patterns
-- Nc4 and ...Bxe4 attacks succeeded only when White ignored threats; Nf3 could still defend e4 despite Be3 screening Re1.
-- Rc2 protected Qxf2+/Qxg2#; attacking the rook did not answer check.
-- Bxc5 dxc5 opened Bb7 for Qd5 Bxd5. Bf8 abandoned Nf6. Rec8 defended Rc4.
+## Recurring patterns
+- Bxc5 dxc5 opened Bb7 for Qd5 Bxd5. Bf8 abandoned Nf6; Rec8 defended Rc4.
 - Qg3+ fxg3 and Kf1 Qf3+ gxf3 lost queens; refresh pins after king moves.
-- Nb4 Bd3 Nxd3 worked because Nd2 blocked Qd1xd3. Nc4 allowed bxc4; Qb3 allowed cxb3.
-- Bd4+ allowed Kxd4; Qe3+ allowed fxe3; Bd6+ abandoned Nh4 to Kxh4. Checks do not ensure safety.
+- Nb4 Bd3 Nxd3 worked only because Nd2 blocked Qd1xd3. Nc4 allowed bxc4; Qb3 allowed cxb3.
+- Bd4+ allowed Kxd4; Qe3+ allowed fxe3; Bd6+ abandoned Nh4 to Kxh4. Checks require capture verification.
