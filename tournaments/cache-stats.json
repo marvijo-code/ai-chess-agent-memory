@@ -284,14 +284,14 @@
    "number": 9,
    "players": {
     "GPT-6.1 Sol": {
-     "calls": 89,
-     "input": 2777393,
-     "cached": 2505472,
-     "output": 30502,
-     "warm_input": 2708704,
-     "warm_cached": 2460160,
-     "hit_rate": 0.9021,
-     "warm_hit_rate": 0.9082
+     "calls": 117,
+     "input": 4496204,
+     "cached": 4180864,
+     "output": 35378,
+     "warm_input": 4427515,
+     "warm_cached": 4135552,
+     "hit_rate": 0.9299,
+     "warm_hit_rate": 0.9341
     },
     "Sonnet 5.5": {
      "calls": 63,
