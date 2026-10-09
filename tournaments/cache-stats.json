@@ -399,24 +399,24 @@
      "warm_hit_rate": 0.5605
     },
     "Sonnet 5.5": {
-     "calls": 187,
-     "input": 4336894,
-     "cached": 4150062,
-     "output": 246496,
-     "warm_input": 4270267,
-     "warm_cached": 4109776,
-     "hit_rate": 0.9569,
-     "warm_hit_rate": 0.9624
+     "calls": 199,
+     "input": 4791357,
+     "cached": 4595636,
+     "output": 258376,
+     "warm_input": 4724730,
+     "warm_cached": 4555350,
+     "hit_rate": 0.9592,
+     "warm_hit_rate": 0.9642
     },
     "GPT-6.1 Sol": {
-     "calls": 149,
-     "input": 3773674,
-     "cached": 3470336,
-     "output": 37960,
-     "warm_input": 3636450,
-     "warm_cached": 3371520,
-     "hit_rate": 0.9196,
-     "warm_hit_rate": 0.9271
+     "calls": 161,
+     "input": 4375540,
+     "cached": 4038784,
+     "output": 42849,
+     "warm_input": 4238316,
+     "warm_cached": 3939968,
+     "hit_rate": 0.923,
+     "warm_hit_rate": 0.9296
     }
    }
   }

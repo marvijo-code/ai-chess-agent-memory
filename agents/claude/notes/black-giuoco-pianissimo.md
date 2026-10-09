@@ -1,17 +1,17 @@
-# Black vs 3.Bc4 Giuoco Pianissimo (T9R1 vs Sol, LOST mate 47, 900+10)
+# Black vs 3.Bc4 (vs Sol: T9R1 LOST mate 47; T12SF2G1 LOST mate 50, both 900+10)
 
-1.e4 e5 2.Nf3 Nc6 3.Bc4 Bc5 4.c3 Nf6 5.d3 d6 6.O-O O-O 7.Re1 h6 8.Nbd2 a6 9.a4 Ba7 10.Nf1 Re8 11.h3 Be6 12.Bb3 Qd7 13.Ng3 Kh7 14.Be3 Bxe3 15.Rxe3 Bxb3 16.Qxb3 Rab8 17.d4 exd4 18.cxd4 d5 19.e5 Ng8 20.Rc1 Nge7 21.Qd3+ Kg8 22.Nh5 Nf5? 23.Re2 Qe6 24.Nf4 Qd7 25.g4 Nfe7 26.e6 fxe6 27.Nxe6 Ng6 28.Qe3 Rbd8?? 29.g5 hxg5?? 30.Nfxg5 Rc8 31.Qg3 Qd6 32.Qxd6 cxd6 33.Kg2 ... 44.h6 a5 45.h7+ Kh8 46.Rh3 Nf5 47.Nf7#.
+## T12SF2G1: equal for 29 moves, then Qf5?? hung the queen
+1.e4 e5 2.Nf3 Nc6 3.Bc4 Nf6 4.d3 Be7 5.O-O d6 6.c3 O-O 7.Re1 a6 8.Bb3 h6 9.Nbd2 Be6 10.Bc2 Re8 11.Nf1 Bf8 12.Ng3 Qd7 13.h3 Rad8 14.d4 exd4 15.cxd4 d5! 16.e5 Ne4! 17.Nxe4 dxe4! 18.Bxe4 Bf5! 19.Bxf5 Qxf5! 20.Be3 Rd5 21.Rc1 Qe6 22.Qe2 Be7 23.Red1 Bf8 24.Qc4 Qd7 25.Bf4 Rd8 26.Be3 Be7 27.Rc2 Bf8 28.Rcd2 Na5 29.Qd3 Nc6 30.Qe4 Qf5?? 31.Qxf5 (Q down) g6 ... 50.Qh7#.
+- Opening was good: SF marked 15...d5, 16...Ne4, 17...dxe4, 19...Qxf5 as best. The setup (Be7, d6, O-O, a6, h6, Be6, Re8, Bf8, Qd7, Rad8, then exd4 and ...d5 when d4 is isolated) equalised easily. Reuse it.
+- Moves 20-29 were shuffling (Be7/Bf8 four times, rook to d5 and back) using 6 min. No plan; the position was equal.
+- THE BLUNDER: Qf5 stood on the e4-f5 diagonal facing Qe4, and my Rd5 'defended' it only on paper: his pawn on e5 sat between Rd5 and f5. Qxf5 won the queen. My notes at ply 62 said 'a queen offer must be defended' only AFTER the move. I wrote the justification (Qxf5 Rxf5) without tracing the rook path.
+- RULE: for any queen move write 'Q on X, attacked by A, defended by B via path P' and trace P square by square. Enemy pawns (e5!) block my rook lines.
+- Better 30th moves (unverified): 30...Qd7 / 30...Ne7 / 30...Rd7 keeping the structure; watch Bxh6 only after counting; e5 pawn is a target for ...Nxe5 only when the queen is not on the e-file.
+- After the blunder I kept pieces protected for 20 moves; Sol still won by Ne5-g6+/e7+ forks and Q+R on the 7th. Down a queen, forks on the king are the main danger: no rook on the same line as the king within knight range.
+- Sol: 3-55 s per move, banked clock (ahead 12:50 vs 9:30 mid-game); takes free queen immediately.
 
-## What went wrong
-- Opening equal until 17.d4. I traded both bishops (14...Bxe3, 15...Bxb3), leaving only knights, no light-square control, and a knight pair vs White's central break.
-- 18...d5 19.e5 kicked Nf6 to g8 (passive, lost tempi: Ng8, Nge7). Then Nh5, g4 hit Nf5, 26.e6 gave White Ne6 (outpost forking c7/d8/f8/g7).
-- Engine marks: 22...Nf5?, 28...Rbd8??, 29...hxg5??. White's 28.Qe3?? and 29.g5?? were errors, so I had real chances there; I did not see the refutations (spent 34 s and 58 s). 29...hxg5 let Nfxg5 add a defender to Ne6 and opened h-file; afterwards I only shuffled Kh7/Kg8/Kh8 (moves 35-43) while White played h4-h5-h6-h7+ and Nf7#.
-- My in-game notes said 'never rooks on c7/d8/f8, never Kh8, keep g7 guarded' - correct, but the real problem was having no plan against a pawn storm.
-
-## Fixes for next time (unverified, calculate)
-- Keep one bishop pair piece: after Bxe3 Rxe3 do NOT also trade Bxb3 automatically; consider 14...Bxe3 15.Rxe3 Rad8/Nh5 or leave Be6, or avoid ...Kh7 and ...Qd7 setups that let Nh5/g4.
-- Against d4: after 17.d4 exd4 18.cxd4 prefer 18...Bb6/Na5 hitting Qb3 or ...Nb4/...Ne4 over 18...d5 19.e5. If ...d5 is played, answer e5 with ...Ne4 (ok only if Nxe4 dxe4 Rxe4 isn't winning a pawn) or ...Nd7.
-- Better early plan: ...Nh5-f4 or ...d5 before White gets d4; ...Bb6/...Ba7 with ...Nd7 and ...f5 ideas; ...Re8 and ...Bf8 without the Qd7/Kh7 clumsiness.
-- When e6 appears: 26.e6 fxe6? 27.Nxe6 is a bind; look at 26...Qd6/Qc8/Qe8 first and count 27.exf7+.
-- Don't open the h-file with ...hxg5 if the recapture adds an attacker. Prefer ...Nxg5 or ...Rxe6 sacrifices only after counting.
-- Spend the clock on plan-making at moves 17-30, not on 40-60 s waiting moves later (I ended with 2:57 vs White 5:01 at the end).
+## T9R1 (LOST mate 47): 3...Bc5 line
+1.e4 e5 2.Nf3 Nc6 3.Bc4 Bc5 4.c3 Nf6 5.d3 d6 6.O-O O-O 7.Re1 h6 8.Nbd2 a6 9.a4 Ba7 10.Nf1 Re8 11.h3 Be6 12.Bb3 Qd7 13.Ng3 Kh7 14.Be3 Bxe3 15.Rxe3 Bxb3 16.Qxb3 Rab8 17.d4 exd4 18.cxd4 d5 19.e5 Ng8 20.Rc1 Nge7 21.Qd3+ Kg8 22.Nh5 Nf5? 23.Re2 Qe6 24.Nf4 Qd7 25.g4 Nfe7 26.e6 fxe6 27.Nxe6 Ng6 28.Qe3 Rbd8?? 29.g5 hxg5?? 30.Nfxg5 ... 47.Nf7#.
+- Traded both bishops (14...Bxe3, 15...Bxb3): only knights, no light-square control. 18...d5 19.e5 kicked Nf6 to g8. 26.e6 gave Ne6 outpost. After 29...hxg5 the h-file opened and I only shuffled Kh7/Kg8/Kh8 while h4-h5-h6-h7+ came.
+- Fixes (unverified): prefer the Be7/d6 setup of T12SF2G1 (3...Nf6 4.d3 Be7); keep a bishop; after d4 exd4 cxd4 play ...d5 and meet e5 with ...Ne4 (worked); don't open the h-file with ...hxg5 if the recapture adds an attacker; when e6 appears look at ...Qd6/Qc8 first and count exf7+.
+- Spend the clock on plans at moves 17-30, not on waiting moves later.
