@@ -1,34 +1,24 @@
-# Caro-Kann Advance: destination safety and defenders
+# Caro-Kann Advance: destinations, promotion, and king safety
 
-## T9 round 2: Black vs Stockfish 19, checkmate loss
-1.e4 c6 2.d4 d5 3.e5 Bf5 4.Be2 e6 5.Nc3 Nd7 6.Nf3 Ne7 7.Nh4 Bg6 8.O-O c5 9.Nxg6 Nxg6 10.f4 cxd4 11.Nb5! Bc5 12.Nxd4 O-O 13.c3 f6 14.Kh1 Qe7 15.f5 exf5 16.Nxf5 Qxe5! 17.Bd3 Rae8 18.Qg4 Qe7?? 19.Nxe7+ Rxe7.
+## T12 final: Black vs Stockfish 19, checkmate loss
+1.e4 c6 2.d4 d5 3.e5 Bf5 4.Be2 e6 5.Nc3 c5 6.Bb5+ Nc6 7.Bxc6+ bxc6! 8.Nge2 cxd4 9.Nxd4 Bc5 10.Nxf5 exf5! 11.O-O Ne7 12.Na4 Bb6 13.Re1 O-O 14.Qf3 Qd7 15.h4 c5 16.Nxb6 axb6! 17.h5 Nc6 18.Qg3 g6? 19.hxg6 fxg6 20.e6! Qg7 21.Qd6 Nd4! 22.e7! Rfe8!.
+- This differed from the earlier ...Ng6 line. The marked recaptures were sound; no best replacement for ...g6 was supplied.
+- ...g6 did not simply seal g7: hxg6 fxg6 displaced f7's pawn, weakened shelter, and removed its control of e6. White advanced e6 with tempo against Qd7, then e7 against Rf8. Calculate pawn exchanges and central breakthroughs before declaring a defensive pawn push safe.
 
-- This ...Nd7/...Ne7 development differed from the earlier ...Nc6/...Ng6 line. No earlier move received an adverse mark, but that does not establish a best opening repertoire.
-- Bc5 pinned Nd4 to Kg1 through empty e3/f2. Kh1 released the pin. Refresh king-dependent constraints immediately.
-- Nxf5 attacked Qe7; Qxe5 was marked only good and captured the central pawn. After Qg4, returning to e7 put the queen directly on Nf5's capture square.
-- Qe7 defended g7, and Re8 could recapture on e7, but Nxe7+ won queen for knight. The checking capture prevented useful counterplay. A defended destination still loses material when the capturing piece is cheaper.
-- Qe7 took 69 seconds with 11:38 remaining. The decisive failure was omission of a direct knight capture, not insufficient thinking time. Before submitting a queen move, enumerate enemy knight attacks on its destination.
+23.Bg5 Nxc2 24.Re6 Nxa1 25.Qxd5? Rad8?? 26.exd8=N Qc7 27.Rxe8+ Kg7 28.Rg8#.
+- ...Nxc2 forked both rooks and ...Nxa1 won the exchange, but the e7 passer and king threats remained. Qxd5 was marked inaccurate; no best Black reply was supplied.
+- ...Rad8 put a rook directly on e7's capture-promotion square. The queen attack did not force retreat: exd8=N took the rook and promoted. A rook defended by another rook can still be lost to a promoting pawn. Scan BOTH forward promotion and capture-promotion before choosing any destination.
+- ...Qc7 attacked Nd8 but allowed Rxe8+. Once Re6 vacated e6, Qd5's diagonal d5-e6-f7-g8 protected Rg8#. Nd8 also controlled f7. Calculate the opponent's checks before trying to recover a promoted piece.
+- Had 11:36 after ...Rad8 and 10:57 after ...Kg7; no illegal attempts. The decisive rook move took 41 seconds. This was a safety failure, not clock shortage.
 
-### Counterplay and material
-27.Rfd1 Ng4 28.Be3 Rxd1+ 29.Qxd1 Nxe3 recovered a bishop and attacked the queen, but required exchanging a rook. Later 33...Re5 34.Qd4 Rxb5 35.Qxg4 Rg5 36.Qc8+ Kh7 37.Qxc7 removed my remaining bishop and one knight. White retained Q+R against R+N; queen chasing had not repaired the deficit.
+## T9: queen lost to a knight capture
+Different setup: ...Nd7/...Ne7, ...cxd4, ...Bc5, ...f6. After Kh1, Bc5 no longer pinned Nd4 to Kg1.
+15.f5 exf5 16.Nxf5 Qxe5! 17.Bd3 Rae8 18.Qg4 Qe7?? 19.Nxe7+ Rxe7.
+- Qe7 landed on Nf5's capture square. Defending g7 and having a rook recapture did not prevent losing queen for knight. Enumerate enemy knight attacks before every queen move.
+- Spent 69 seconds on Qe7 with 11:38 remaining. Later counterplay did not repair the queen deficit.
+- After a later ...Ne4+ Ke3, ...f4+ vacated f5's defense of Ne4 and allowed Kxe4. A checking pawn push can let the king escape by capturing the newly undefended piece; f6 did not defend e4.
 
-### Checking pawn abandons knight
-After 66.a8=Q Ne4+ 67.Ke3, Black had Kg7/Ne4 and pawns b6/f6/f5. Ne4 was supported by f5. 67...f4+ vacated f5, allowing 68.Kxe4: the king escaped the pawn check and captured the newly undefended knight. The f6 pawn did not defend e4. A checking pawn push must preserve any piece that the enemy king can capture while escaping check.
-
-### Clock
-11:38 at move 18, 6:57 at move 32, 1:07 at move 59, 0:41 at move 64. Many defensive moves consumed 25-55 seconds; even below 90 seconds, ...Ne5, ...Nd3+ and ...f4+ took 24-28 seconds. Use the increment for routine defense and reserve longer searches for concrete tactics. Finished with 0:40 and no illegal attempts; clock pressure was secondary to the early queen loss.
-
-## Earlier shared ...Nc6/...Ng6 line
-1.e4 c6 2.d4 d5 3.e5 Bf5 4.Be2 e6 5.Nc3 c5 6.Bb5+ Nc6 7.Bxc6+ bxc6! 8.Nge2 Ne7 9.Na4 Ng6?! 10.Nxc5 Bxc5 11.dxc5 Nxe5 12.Nd4.
-...Ng6 was inaccurate in both games; no best replacement was supplied. White's c5 pawn attacks b6/d6.
-
-## T7 final: castling did not prevent queen giveaway
-12...O-O 13.O-O Qc7?! 14.Bf4 Rac8 15.b4 f6 16.Re1 Qd6?? 17.cxd6 Ng6 18.Bd2 Rfd8 19.Re3 Rxd6.
-- Qd6 defended e5/c6 but landed on c5's capture square. Bishop or rook recapture could recover only the pawn, not the queen. Qc7 had blocked Rc8's file.
-- 26.Ra2 Rc1 27.Bxc1 bxc1=Q 28.Qxc1 Rxb1 29.Qxb1 Bxb1 left White 2R against B+N, with Black two extra pawns. Count the entire promotion liquidation before claiming recovery.
-- 44...Bxg2 45.Kxg2 lost the bishop: neither Kf4 nor Nf5 protected g2. Later ...Kb4 abandoned the protected d2 passer to Kxd2. Lost with 5:20 remaining.
-
-## T4 semifinal: unresolved king pin
-12...Qa5+ 13.Bd2 Qxc5 14.Nxf5 exf5 15.Bc3 Qd6? 16.Qe2 f6? 17.f4 d4 18.O-O-O Qc5?! 19.Rxd4 Qe7 20.fxe5 fxe5.
-- Qe2 absolutely pinned Ne5 to Ke8. ...f6 supplied support without freeing the knight; ...d4 attacked Bc3 without resolving the pin. White could castle instead of retreating and later won the knight for a pawn.
-- Finish: Qe6+ Kf8 Qxf5+ Kg8 Rhf1 Rf8 Qxf8#. Rf1 protected the mating queen; Kg8 blocked Rh8. Attacking the queen permitted its protected capture with mate. Lost with 10:10 remaining.
+## Earlier ...Nc6/...Ng6 line
+After 7...bxc6! 8.Nge2 Ne7 9.Na4 Ng6?! 10.Nxc5 Bxc5 11.dxc5 Nxe5 12.Nd4, ...Ng6 was inaccurate twice; no best replacement supplied. White's c5 pawn attacks b6/d6.
+- T7: ...Qc7, Bf4 Rac8, b4 f6, Re1 Qd6?? cxd6 lost the queen. A recapture recovers only the pawn. Later ...Bxg2 Kxg2 lost an unsupported bishop; ...Kb4 abandoned the d2 passer to Kxd2.
+- T4: Qe2 absolutely pinned Ne5 to Ke8. ...f6 supported it without releasing the pin; ...d4 attacked Bc3 without resolving it. Finish Qe6+ Kf8 Qxf5+ Kg8 Rhf1 Rf8 Qxf8#: Rf1 protected the queen. Attacking a queen can permit its mating capture.
