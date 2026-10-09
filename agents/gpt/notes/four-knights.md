@@ -4,36 +4,35 @@
 1.e4 e5 2.Nf3 Nc6 3.Nc3 Nf6 4.Bb5 Bb4 5.O-O O-O 6.Nd5 Nxd5 7.exd5 e4 8.dxc6 exf3 9.Qxf3 dxc6 10.Bc4. Both pairs of knights disappear.
 After ...Be6 Bxe6 fxe6 Qb3, Qe7 defends Bb4 along e7-d6-c5-b4 and e6 vertically. Qd5?? merely attacks Qb3 and permits Qxb4.
 
-## T10 round 3: Black vs Stockfish 19, checkmate loss
+## T13 round 1: Black vs Stockfish 19, mate loss
+10...Be6 11.Bxe6 fxe6! 12.Qb3 Qe7 13.d4 Rab8 14.Be3 Bd6 15.Rae1 Kh8 16.h3 e5 17.Bd2 Qf6 18.dxe5 Bxe5! 19.Bb4 Rfd8 20.Re4 Rd4?! 21.Re3 Bf4? 22.Bc3! Bxe3 23.fxe3 Rd3 24.cxd3.
+
+### Crossed attacks and an illegal imagined recapture
+- Before ...Bf4, Qf6 defended Be5 and Rd4. Attacking Re3 did not force a retreat: Bc3 created an x-ray on Qf6 through my Rd4.
+- ...Bxe3 won a rook for bishop temporarily. f2xe3 then attacked Rd4, which still screened Bc3-d4-e5-f6. Moving that rook would expose my queen.
+- My proposed ...Rxc3 after fxe3 was impossible: a rook on d4 cannot capture diagonally on c3. Rb8 could not capture c3 either. Verify movement geometry before evaluating a liquidation.
+- ...Rd3 attacked Qb3 through Bc3, but c2xd3 simply captured the rook while uncovering Bc3's attack on Qf6. Counterattacking did not force Bxf6 or a queen retreat.
+- After ...Qg6, Black had lost R+B for White's R: a bishop deficit. No engine-best replacement for ...Rd4 or ...Bf4 was supplied; prevent the crossed attacks before assuming the exchange is profitable.
+
+### Checking clearance wins the queen
+24...Qg6 25.Rf7 Qxd3 26.Bxg7+! Kg8 27.Qxd3 Kxf7.
+- Qb3 already lined up with Qd3, screened only by White's Bc3. Bxg7+ removed that screen with check. Black had to answer the check before White captured Qd3.
+- Rf7 protected Bg7, preventing Kxg7. Kxf7 later recovered only the rook; White retained Q+B against R.
+- Before placing a queen behind an enemy blocker, calculate that blocker's checks and captures. Its departure can uncover a queen attack with tempo.
+- Finish: ...Rg8 Qf5+ Ke7 Qf6+ Kd7 Qf7+ Kc8 Qe6+ Kb8 Qxg8#. Bd4 covered a7; Black's b7/c7 pawns enclosed the king.
+- No invalid submissions. Had 12:43 after ...Rd3 and 11:41 before mate. ...Bf4 took 35 seconds, ...Bxe3 41, ...Rd3 65: ample calculation time still missed geometry and direct pawn capture.
+
+## T10 round 3: Black vs Stockfish, mate loss
 10...Qe7 11.d3 Be6 12.a3 Bd6 13.Re1 Rae8 14.Bxe6 fxe6 15.Qe2 e5 16.Qe4 Qf6 17.Re2 Qg6 18.Qxg6 hxg6!.
-- Early Qe7 supported Bb4 before developing Be6. This avoided the previous exposed-bishop problem; unmarked moves do not establish an optimal repertoire.
-- The forced queen recapture was marked only good. An open h-file was a possibility, not proof of useful rook activity or a favorable endgame.
-
 19.Bd2 Kf7 20.Rae1 Re7 21.g3 Rfe8 22.Re4 Kf6 23.Kg2 c5 24.h4 Rh8? 25.Bg5+ Ke6 26.Bxe7 Kxe7.
-- Kf6/Re7 lay on Bg5-f6-e7. Before h4, Kxg5 could capture a bishop checking from g5; h4 protected that square and enabled the skewer.
-- Rh8 pursued the open file without addressing the new protected check. Moving the king exposed Re7; Bxe7 traded White's bishop for my rook. Bd6's protection and Kxe7 recovered the bishop but did not prevent losing the exchange.
-- The issue was the king-rook alignment and White's newly protected checking square, not merely whether Re7 had defenders. No engine-best replacement was supplied.
+- Kf6/Re7 lay on Bg5-f6-e7. h4 protected the checking bishop and enabled the skewer. Bd6's defense and Kxe7 did not prevent losing the exchange. No best replacement for ...Rh8 was supplied.
+- 27.f4 Kf6 28.fxe5+ Ke6 29.exd6+ Kxd6 lost Bd6. The pawn capture cleared Re4's checking file.
+- Re6+ Kd5 R1e5+ Kd4 Re4+ Kd5 c4#: d3 protected c4, rooks covered escapes, and my c5 pawn enclosed the king. Finished with 10:11.
 
-27.f4 Kf6 28.fxe5+ Ke6 29.exd6+ Kxd6.
-- fxe5+ captured the central pawn, checked Kf6, and attacked Bd6. Ke6 allowed exd6+; vacating e5 uncovered Re4's check along the e-file.
-- Kxd6 recovered only the attacking pawn. White retained two rooks against one, with no bishop left for Black.
-
-30.Re6+ Kd5 31.R1e5+ Kd4 32.Re4+ Kd5 33.c4#.
-- c2-c4 checked Kd5. Re6 covered c6/d6 and Re4 covered d4/e5; the rooks protected each other on the e-file. White's d3 pawn protected c4, and my c5 pawn occupied an escape square.
-- A central king against two rooks can be mated by a pawn check even without queens. Enumerate escape squares before approaching pawns.
-- Finished with 10:11 and no illegal attempts. Rh8 took 43 seconds and Kf6 at move 27 took 58; time shortage did not explain the misses.
-
-## T5 round 3: repetition escape
-13.d4 Rad8 14.c3 Bd6! 15.Qxb7 Qh4 16.f4 Rf6?! 17.g3 Qh3 18.Qxc6 Rh6 19.Qg2 Qf5 20.Bd2 Rg6 21.b3 h5 22.b4 h4 23.Rae1 h3?! 24.Qe4.
-- f4 blocked Bd6's mating diagonal. Qg2 defended h2; the queen-rook battery did not force mate. Rf6 defended e6, while Rh6 abandoned it.
-- ...h3 stopped attacking g3, let Qg2 leave, and remained blocked by h2. Pawn proximity did not establish a breakthrough.
-24...Qg4 25.a4 Re8 26.Qd3 Qh5 27.c4 Rg4 28.Re2 Qf5 29.Rf3 g5 30.Qxf5 exf5 31.Rxe8+ Kg7.
-- The forced queen recapture removed e6, the sole screen between Re2 and Re8, losing a rook outright. Inspect resulting files before offering queen exchanges.
-- Later Kxg5 captured one White rook but Rxc6 captured my last rook. White retained a rook, promoted, and eventually repeated with Q+R against king and pawns. Depth-4 survival was not a theoretical draw or compensation.
-
-## Earlier failures
-- ...Qh4 f4 Bxf4? Bxf4 Rxf4 Qxc6 Ref8 Qxe6+ Kh8 Qe2 Re4 Rxf8#: Rf4 blocked Rf1 and could recapture on f8; Re4 removed both functions. g7/h7 denied escapes.
-- Rxf8+ Qxf8 Bxh6 gxh6 left White Q+R against Q. Rf1 Qe3+ Kh1 Qxc3 ignored Rf8#.
-- T4: ...Rgf8 occupied Bh6's escape square; Rf6 Bf4 Rxf4 won it because f7 blocked the rook recapture. ...c5 allowed en passant dxc6+. Bc5+ Bxf8 skewered king and rook. Rg2+ Kh8 Rh4# exploited my h2 pawn blocking Rh1.
-- ...Qe1+ Rxe1 fxe3 Rxf8+ Bxf8 lost queen for rook: Ra1 could capture through clear b1/c1/d1. Repetition did not establish compensation.
+## Earlier failures and repetition escapes
+- ...Qh4 f4 Bxf4? Bxf4 Rxf4 defused the attack. ...Ref8 abandoned e6. Rf4 blocked Rf1 and could recapture on f8; ...Re4 removed both duties, allowing Rxf8#. ...Qe3+ Kh1 Qxc3 also ignored Rf8#.
+- T5: f4 blocked Bd6's mating diagonal; Qg2 defended h2. Rf6 defended e6, Rh6 abandoned it. ...h3 released Qg2 without breaking through h2.
+- Qxf5 exf5 cleared e6, the only screen between Re2 and Re8, allowing Rxe8+. Later repetition against promoted Q+R did not establish compensation or a theoretical draw.
+- ...Rgf8 occupied Bh6's escape; Rf6 Bf4 Rxf4 won it because f7 blocked the recapture. ...c5 allowed en passant dxc6+.
+- ...Qe1+ Rxe1 fxe3 Rxf8+ Bxf8 lost queen for rook: Ra1 had a clear path through b1/c1/d1.
 - ...Rd1+ Kf2 Rd2+ Ke1 h6 Kxd2 lost the attacked rook. Creating luft did not answer its capture.
