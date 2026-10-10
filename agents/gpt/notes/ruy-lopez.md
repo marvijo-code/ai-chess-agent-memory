@@ -1,30 +1,30 @@
-# Ruy Lopez: tension, screens and conversion
+# Ruy Lopez: central exchanges, screens and bishop endings
 
-## T18 semifinal 2 game 1: White vs Sonnet, win on time
-Chigorin through 11...Qc7; 12.Nbd2 Bd7 13.Nf1 Rac8 14.Ng3? Rfe8? 15.Be3?? g6? 16.d5 c4.
-- Unlike round 3, neither c-pawn had exchanged: c3/d4 faced c5/e5. Do not transfer the Nf1-g3/Be3 setup without recalculating the intact tension. Be3 also screens Re1's defense of e4. No verified refutation or best replacement was supplied.
-- 17.a4 bxa4 18.Bxa4! Bb5 19.Bc2 Rb8 20.Ra2 Nb7 21.b3 cxb3! 22.Bxb3! Qxc3. Challenging the c4 clamp opened lines but left c3 undefended. Before a pawn break, count what remains loose after every exchange.
-- 23.Bc2 Nc5 24.Qd2?! Qxd2! 25.Bxd2 Rbc8 26.Nh2 h6?! 27.f4? exf4 28.Bxf4!. Queen exchanges eased immediate pressure while leaving White a pawn down; f4 was not validated by its forced recapture.
+## T19 round 1: Black vs Sonnet, checkmate loss
+1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Re1 b5 7.Bb3 O-O 8.d3 d6 9.c3 Bb7 10.Nbd2 Re8 11.Nf1 d5 12.exd5 Nxd5 13.Nxe5 Nxe5 14.Rxe5! Bf6 15.Rxe8+! Qxe8.
+- Be7 screened Re8 from e5. Once exd5 cleared White's e-file, Nc6 was e5's sole defender; exchanging knights let Re1 take on e5. Bf6 opened Re8 and attacked the rook, but White exchanged with check and kept the pawn. Calculate this complete liquidation before ...d5. No verified best replacement or forced opening loss supplied.
+- ...Qc6/Rd8 sought diagonal threats; Bxd5?! Rxd5 kept the rook on d5, screening Qf3-c6. ...Rf5?! removed that screen, allowing Qxc6 Bxc6! and a pawn-down ending. Qxf5 instead allowed Qxg2#; an attack on the queen did not force the desired reply.
+- Kd6/Rh6, White Be1/c3/d4: ...b4?! cxb4 axb4 Bxb4+ lost another pawn. c3's departure cleared Be1-d2-c3-b4; the capture checked along b4-c5-d6. Calculate the break's final capture and check before opening lines for the bishop pair.
+- ...c6?! dxc6+ Kxc6 exchanged pawns without repairing the deficit. ...Bd6?! was also marked inaccurate; no best alternatives supplied.
+- ...Bxc3 Bxc3! removed White's knight, leaving opposite-colored bishops. ...Rd6 Rxd6+ Kxd6 Bxg7 left White three pawns up. Opposite-colored bishops alone establish no fortress: assess both wings, the king's blockade and pawn breaks.
+- White Bg7/f6 protected each other; Black's light-squared bishop could not capture f6. White's king approached on dark squares and g4 hxg4 Kxg4 removed Black's h-pawn.
+- After 48...Bf5+ 49.Kg5, Ke5 was Bf5's sole defender. 49...Kd4?? 50.Kxf5! lost it: f7 attacked e6/g6, not f5. Every king move must refresh protection of its bishop. Sparse marks omitted this direct loss.
+- ...Kc3/Kb2/Kxa2/Kxb3 could not stop h5-h6-h7-h8=Q. Count promotion tempos before chasing remote pawns; retain the defender when a race is hopeless. Finished with 8:20, no illegal attempts: board safety caused the loss.
 
-29.Nf3 Bc4 30.Rb2 Rb8 31.Rxb8 Rxb8! 32.Nd4 Bf8 33.e5?! dxe5? 34.Bxe5! Bxd5?? 35.Bxb8!.
-- e5 attacked Nf6; ...dxe5 moved the d6 screen away. Bxe5 then attacked Rb8 along e5-d6-c7-b8. ...Bxd5 took a pawn but ignored the rook attack. Bxb8 won the exchange; distinguish this concrete tactic from the inaccurate initiating pawn push.
-- ...Bc5 pinned Nd4 to Kg1 through d4-e3-f2-g1. Rd1 defended the knight; Bxd4+ Rxd4 traded the bishop for it. Refresh pins from the actual king square and cleared pawn squares.
-
-39.Bb6 Ncd7 40.Ba7 Bc6 41.Ne4 Nxe4 42.Bxe4 Ne5 43.Bxc6 Nxc6 44.Bb6?! Nxd4! 45.Bxd4+!.
-- Nxc6 forked Rd4 and Ba7. Saving the bishop conceded rook for knight and erased the exchange advantage. Compare rook retreats that also defend a7 before sacrificing the higher-value target; no verified best replacement was supplied.
-- The resulting ending was White K+B+g2/h3 against K+a6/f7/g6/h6. A bishop against separated passers requires coordination, not an assumption that simplifying has preserved the win.
-- g4 hxg4 hxg4 reduced Black's pawn mass. Bc3 attacked a5; after ...a4, Bb2 covered a1. ...f5+ gxf5+ created White's f-passer.
-- Final: White Kf4/Bb2/f6; Black Kg6/a4/g4. Bb2 guarded f6 AND a1 along one diagonal. A king on e5 blocks that diagonal; moving it changes the bishop's duties. Do not push f7 while Kg6 can capture it; escort the passer and assess Kxg4.
-- Sonnet flagged after 56.Kf4; no forced board win established. White had 7:32, no invalid attempts. Sonnet repeatedly spent 40-62 seconds on ordinary moves and continued 16-24-second turns below one minute. Preserve sound resistance and enforce my own output deadlines.
+## T18 semifinal: White vs Sonnet, win on time
+Chigorin with c3/d4 vs c5/e5 intact: Nf1-g3?/Be3?? was not validated by the earlier exchanged-c-pawn line. Be3 screens Re1's defense of e4. After d5 c4, a4/b3 exchanges opened lines but left c3 loose; Qd2?! traded queens a pawn down, f4? was inaccurate.
+- e5?! dxe5? Bxe5! removed d6's screen and attacked Rb8 along e5-d6-c7-b8. ...Bxd5?? ignored it; Bxb8 won the exchange. The recovery did not validate e5.
+- ...Bc5 pinned Nd4 to Kg1 through e3/f2; Rd1 supplied its defense. Refresh pins after pawn exchanges and king moves.
+- Bxc6 Nxc6 forked Rd4/Ba7. Bb6?! Nxd4 Bxd4+ conceded rook for knight. Compare rook retreats also defending a7.
+- Ending: Bb2 covered both f6 and a1. Ke5 would screen that diagonal; f7 could be captured by Kg6. Escort the passer and assess Kxg4.
+- Sonnet flagged after 56.Kf4; no board win established. Repeated 40-62-second ordinary moves and 16-24-second turns below one minute caused its flag. Maintain resistance and enforce my own output deadlines.
 
 ## T18 round 3: White vs Sonnet, mate win
-12...cxd4 13.cxd4! Nc6 14.Nf1 Bd7 15.Ng3 Rac8 16.Be3?! Rfe8? 17.Rc1 g6 18.d5 Nb4? 19.Bb1?! Qd8 20.a3 Nbxd5 21.exd5 Nxd5 22.Bd2?! Rxc1 23.Bxc1 Bf6?! 24.Qxd5.
-- a6 was occupied, c6 attacked by d5, and Bb1 controlled a2/c2/d3: a3 restricted Nb4. This was not a verified forced trap. Bxc1 restored Qd1's path to loose Nd5 after Bd2 had blocked it.
-- ...f5 threatened ...f4 against Be3/Ng3; f4 stopped it. Bd4 and Ng3-e2-c3 restrained the central pawns. Ba2 did not pin Be6 through the blocking d5 pawn; Bxd5 removed it with tempo against Qe6.
-- Qd4 Qc6? Ne7+ forked Kg8/Qc6/Rc8; Nxc6 Rxc6 Qd7+ won the rook. Enumerate ALL knight checks. Finish Bd4+ Kh7 Qd7+ Kg8 Qg7#: Bd4 guarded g7 and covered h8.
+After ...cxd4 cxd4, d5 Nb4? Bb1?! Qd8 a3 restricted Nb4: a6 occupied, c6 pawn-attacked, Bb1 covered a2/c2/d3. Not a verified forced trap. Bd2?! screened Qd1-d5; ...Rxc1 Bxc1 restored the path to loose Nd5.
+- ...f5 threatened ...f4 vs Be3/Ng3; f4 stopped it. Ba2 did not pin Be6 through d5; Bxd5 removed that screen with tempo against Qe6.
+- Qd4 Qc6? Ne7+ forked K/Q/R. Nxc6 Rxc6 Qd7+ won R; Bd4+ Kh7 Qd7+ Kg8 Qg7# used Bd4's g7 guard/h8 control.
 
-## Other Chigorin geometry
-- ...a5 frees a6 for Nb4-a6-c5; d6 supports Nc5. Bb1 guards e4; Be3 screens Re1. Rc1/Re1 can allow ...Nd3 forks.
-- ...Rc2??: Qxc2 preserves Ne3's Qb6-f2 screen; Nxc2?? Qxf2+ loses. With Kh2 on Bd6's diagonal, ...f5 exf5?? e4+ clears the line and hits Nf3.
-- ...a4 b4 permits ...axb3 e.p. Bxb3 abandons e4; axb3 can open Ra8-a1 with Bb1 blocking Re1. Nd2 can block Qe2's defense of Bc2.
-- ...Kd8 unpins Nd7 against b8 promotion; Rxd7+ Kxd7 b8=Q removes that guard. Nxc4 can abandon Rf7 to Kxf7.
+## Other geometry
+- ...a5 frees a6 for Nb4-a6-c5; d6 supports Nc5. Bb1 guards e4; Be3 screens Re1. Rc1/Re1 permit ...Nd3 forks.
+- ...Rc2?? Qxc2 preserves Ne3's Qb6-f2 screen; Nxc2?? Qxf2+ loses. Bd6 vs Kh2: ...f5 exf5?? e4+ opens the diagonal and hits Nf3.
+- ...a4 b4 permits ...axb3 e.p.; Bxb3 abandons e4, axb3 can open Ra8-a1 with Bb1 blocking Re1. Nd2 can screen Qe2's defense of Bc2.
