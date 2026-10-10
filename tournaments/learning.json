@@ -387,9 +387,9 @@
      "games": 1,
      "read_in_prompt": 1,
      "read_latest": 1,
-     "reflections": 0,
-     "memory_updates": 0,
-     "note_updates": 0,
+     "reflections": 1,
+     "memory_updates": 1,
+     "note_updates": 1,
      "rejected": 0,
      "errors": 0,
      "retries": 0
@@ -420,7 +420,7 @@
   }
  },
  "last_written": {
-  "DeepSeek V4.1 Flash": "5df8d98d359c",
+  "DeepSeek V4.1 Flash": "ee5ca07c482b",
   "Sonnet 5.5": "8cf2111bd441",
   "GPT-6.1 Sol": "be8d308ddd81"
  }
