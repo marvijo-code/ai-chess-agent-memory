@@ -644,24 +644,24 @@
      "warm_hit_rate": 0.9637
     },
     "GPT-6.1 Sol": {
-     "calls": 79,
-     "input": 2334444,
-     "cached": 2218624,
-     "output": 20130,
-     "warm_input": 2263935,
-     "warm_cached": 2159488,
-     "hit_rate": 0.9504,
-     "warm_hit_rate": 0.9539
+     "calls": 95,
+     "input": 2892263,
+     "cached": 2731264,
+     "output": 28611,
+     "warm_input": 2821754,
+     "warm_cached": 2672128,
+     "hit_rate": 0.9443,
+     "warm_hit_rate": 0.947
     },
     "DeepSeek V4.1 Flash": {
-     "calls": 93,
-     "input": 858835,
-     "cached": 330240,
-     "output": 9137,
-     "warm_input": 838321,
-     "warm_cached": 319744,
-     "hit_rate": 0.3845,
-     "warm_hit_rate": 0.3814
+     "calls": 121,
+     "input": 1308471,
+     "cached": 506368,
+     "output": 13921,
+     "warm_input": 1287957,
+     "warm_cached": 495872,
+     "hit_rate": 0.387,
+     "warm_hit_rate": 0.385
     }
    }
   }
