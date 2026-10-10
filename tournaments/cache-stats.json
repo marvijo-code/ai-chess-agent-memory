@@ -564,34 +564,34 @@
    "number": 17,
    "players": {
     "Sonnet 5.5": {
-     "calls": 73,
-     "input": 1336549,
-     "cached": 1258910,
-     "output": 118775,
-     "warm_input": 1302029,
-     "warm_cached": 1237932,
-     "hit_rate": 0.9419,
-     "warm_hit_rate": 0.9508
+     "calls": 118,
+     "input": 2243679,
+     "cached": 2124073,
+     "output": 206264,
+     "warm_input": 2192864,
+     "warm_cached": 2093289,
+     "hit_rate": 0.9467,
+     "warm_hit_rate": 0.9546
     },
     "GPT-6.1 Sol": {
-     "calls": 79,
-     "input": 2047215,
-     "cached": 1841280,
-     "output": 26347,
-     "warm_input": 1977143,
-     "warm_cached": 1782400,
-     "hit_rate": 0.8994,
-     "warm_hit_rate": 0.9015
+     "calls": 101,
+     "input": 2443727,
+     "cached": 2179072,
+     "output": 31075,
+     "warm_input": 2338492,
+     "warm_cached": 2090752,
+     "hit_rate": 0.8917,
+     "warm_hit_rate": 0.8941
     },
     "DeepSeek V4.1 Flash": {
-     "calls": 109,
-     "input": 1535495,
-     "cached": 1146240,
-     "output": 49881,
-     "warm_input": 1514367,
-     "warm_cached": 1135744,
-     "hit_rate": 0.7465,
-     "warm_hit_rate": 0.75
+     "calls": 144,
+     "input": 1860814,
+     "cached": 1269632,
+     "output": 58761,
+     "warm_input": 1829009,
+     "warm_cached": 1253120,
+     "hit_rate": 0.6823,
+     "warm_hit_rate": 0.6851
     }
    }
   }
