@@ -4,24 +4,25 @@
 - Start with the enemy's last move: changed attacks, pawn controls and opened lines. Scan checks, captures, forks, promotions and mates; repeat on the proposed final board.
 - Before Q/R moves, enumerate enemy pawn/knight captures and trace EVERY bishop ray. Check, attack and pin never establish destination safety.
 - Name exact defenders, screens and LEGAL recapturers; trace through OWN pawns. Simulate the enemy capture before claiming protection.
-- Refresh pins after either endpoint moves. A queen leaving one bishop ray may enter another behind the SAME screen. Relative pins permit moves that lose Q/R.
-- Before moving a screen, name BOTH endpoints and every exposed target. Counterattacking the pinning bishop does not stop it capturing my queen.
+- Refresh pins after either endpoint moves. Leaving one bishop ray may enter another behind the SAME screen. Relative pins permit moves that lose Q/R.
+- Before moving a screen, name BOTH endpoints and exposed targets. Attacking the pinning bishop does not stop it taking my queen.
 - Calculate FULL exchanges, including final KING recaptures and losses elsewhere. Attacking Q/R does not force retreat: test checks AND captures of the attacker.
-- Track pawn squares and forward AND capture-promotions. Blocked pawns attack diagonally. Verify recapture legality after a cheaper piece takes a defended unit.
+- Track pawn squares and forward AND capture-promotions. Blocked pawns attack diagonally; advancing a supporting pawn can abandon its target. Verify legal recaptures after cheaper captures.
 - After EVERY capture, refresh the capturer's attacks and lines vacated by its origin. Trust the board over commentary, wins and sparse marks.
 - When forked, compare saving the higher-value piece WITH defending the other target. Before king/Q moves, list guards and screens LOST, including back-rank entries.
-- Before a fork/discovered attack, test enemy checks FIRST. My centralized knight may be the only screen against a rook's mating entry.
+- Before a fork/discovered attack, test enemy checks FIRST. A centralized knight may be the only screen against a mating rook entry.
 
 ## Clock and conversion
 - Deadline INCLUDING output: book/forced 1-5 seconds; quiet 10-15; critical tactics 20-40. Below 5 minutes cap 15; below 90 seconds use 1-3.
 - Long thinks do not replace reply calculation. Name a target or pawn break before shuffling; shorten routine endgame maneuvers.
 - Ahead: restrain counterplay, simplify safely, preserve mating material. Worse or Black with draw odds: seek activity/repetition.
-- Escort passers with king/minors; count races before chasing pawns. Minor endings need a target, entry or break. Opposite bishops: count separated passers, blockades and king routes; defend the blocker.
-- Q+R: protected checks, restricted exits, mate before pawns. Check stalemate after EVERY quiet move/capture; preserve pawn tempi against an immobilized king.
+- Escort passers; count races before chasing pawns. Minor endings need a target, entry or break. Opposite bishops: count separated passers, blockades and king routes; defend the blocker.
+- Use protected checks and restricted exits. Check stalemate after EVERY quiet move/capture; preserve pawn tempi against an immobilized king.
 
-## Open games as White
+## White openings
+- T22 Classical Caro: dxe5 opens d-file; Qxd3 Rxd3 Nd5 attacks Bf4. Rd7?!/Rxb7?! missed an opportunity: examine c4 against Nd5 guarding Be7; no best replacement verified. Bf6?! exf6 wins B for P. ...c5 abandons d5: Rxd5. Rd8 needs Bg7 before Rh8#; Nf5 guards Bg7/h6, h5 bars g6.
 - T22 SF: ...Bh5 Qe2 Nc4 Ne5?? Bxe2 Rxe2 loses Q for B. Nf3 screened Bh5-g4-f3-e2; Qe2 did NOT unpin it. Answer ...Nc4's attack on Bd2 without exposing Q. No best replacement verified.
-- Finish: Bf4 Rd8 Nxf7?? Re1#. Ne5 screened Re6-e1; the fork of Qd6/Rd8 plus discovered Bf4-Qd6 attack could not answer mate. Own f2/g2/h2 denied flights. Ne5 took 47 seconds with 15 minutes left.
+- Finish: Bf4 Rd8 Nxf7?? Re1#. Ne5 screened Re6-e1; the fork of Qd6/Rd8 plus discovered Bf4-Qd6 attack could not answer mate. Own f2/g2/h2 denied flights.
 - T21 d3 Ruy: ...d5 e5 Ne4 Nc3 Nxc3 bxc3! Nxe5! uncovers Bd7-c6-b5. Rxe5 Bxb5 exchanges N for B. Rxd5?? Qxd5 loses R: OWN d4 blocks Qd1-d5. Assess a safe rook retreat.
 - Ng5 g6 Ne4? Qxe4 Qxe4 Rxe4 loses N: Re8 backs Qd5's capture. Fork threats do not prevent capturing the knight.
 - Chigorin Nb3/Be3/Nbd2 and central exchanges kept material level. Bb1/e5 clears b1-h7; Qe4-h7 vacates its own screen. ...dxe5 allowed Qh7+ Kf8 Qh8#; no earlier forced win established.
@@ -46,7 +47,7 @@
 - notes/accelerated-dragon.md - Rook captures and g-file mate.
 - notes/berlin-endgame.md - Clearance, recaptures and king safety.
 - notes/caro-kann-advance.md - A-file mate and queen screens.
-- notes/deepseek.md - Dragon tactics, liquidation and stalemate.
+- notes/deepseek.md - Classical Caro, Dragon liquidation and stalemate.
 - notes/four-knights.md - Double attacks, screens and clocks.
 - notes/qgd-exchange.md - Benoni screens and defenders.
 - notes/ruy-lopez.md - Relative pin, rook mate, Chigorin batteries.
