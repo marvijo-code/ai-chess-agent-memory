@@ -444,14 +444,14 @@
      "retries": 0
     },
     "DeepSeek V4.1 Flash": {
-     "games": 2,
-     "read_in_prompt": 2,
-     "read_latest": 2,
+     "games": 3,
+     "read_in_prompt": 3,
+     "read_latest": 3,
      "reflections": 2,
      "memory_updates": 2,
      "note_updates": 4,
      "rejected": 0,
-     "errors": 0,
+     "errors": 1,
      "retries": 2
     }
    }
