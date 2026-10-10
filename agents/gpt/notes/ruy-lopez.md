@@ -2,31 +2,37 @@
 
 ## Chigorin geometry
 - ...a5 vacates a6 for Nb4-a6-c5; d6 supports Nc5. Ba2 supports d5 and frees Ra1. Recount e4's usable defenders when Be3 screens Re1 or Bb1 moves away.
-- Rc1/Re1 permit ...Nd3's double-rook fork. Knights can screen doubled c-rooks; trace every blocker before captures.
+- Rc1/Re1 permit ...Nd3's double-rook fork. Trace every blocker on doubled-rook files.
 
-## T17 round 1: Black vs Sonnet, mate win with unsound rook raid
-Shared opening through 14.Nb3 a5 15.Be3 a4 16.Nbd2, then 16...Bb7 17.d5?! Nb4! 18.Bb1! Na6 19.a3 Nc5 20.Bxc5 dxc5 21.Nf1 c4 22.Qd2 Bd6.
-- ...Nb4 was the only good reply to d5. White exchanged the c5 knight instead of permitting T16's e4 combination. ...dxc5 preserved the bishop pair; ...c4 created a protected passer, and Bd6 blockaded d5. Do not import the ...Bd7/Qxc5 branch unchanged.
-- ...g6?!, ...h5?! and ...f5?! received adverse marks. Restricting knights and gaining space did not establish their soundness; no verified best replacements supplied.
+## T17 semifinal 2 game 1: White vs Sonnet, mate win
+Shared opening through 16.Nbd2 Bd7, then 17.d5 Nb4 18.Bb1! Rfc8 19.a3 Nc2 20.Bxc2 Qxc2! 21.Qxc2 Rxc2! 22.Rab1 b4 23.axb4 a3?! 24.bxa3! Rxa3?!.
+- Bb1 retained e4's bishop defense. After ...Nc2 forked Be3/Re1/Ra1, Bxc2 removed the knight. The queen exchanges left balanced material, Black's bishop pair and an active second-rank rook; no opening advantage was established.
+- Rab1 guarded b2; Nd2 had Nf3's defense. Scan every attack from an invading rook instead of assuming a queen trade ends the danger.
+- Black attempted illegal ...Bxb4: Be7-b4 was blocked by its own d6 pawn. Trace friendly blockers too. After axb4/a3/bxa3/Rxa3, White retained an extra b-pawn.
 
-23.Ne3 g6?! 24.Rc1?! Rfc8 25.Qe2 Qb6 26.Qd2 h5?! 27.Kh2 Nd7 28.Qe2 f5?! 29.exf5?? e4+! 30.g3 exf3 31.Qxf3.
-- The checking bishop was Bd6, not Bb7: ...e4 cleared e5 from d6-e5-f4-g3-h2. The pawn simultaneously attacked Nf3. White blocked with g3, then lost that knight to ...exf3. Black gained a piece for two pawns.
-- Before automatically recapturing on f5, scan pawn advances that uncover checks. The successful reply to exf5 does not certify ...f5 against better defense.
+25.Rec1? Rxc1+! 26.Rxc1! Bd8?! 27.Nc4 Ra6! 28.Nfd2 Bb5?! 29.f3?! Bxc4?! 30.Rxc4 Be7 31.Kf2 Ra7 32.Bxa7 Bd8 33.Rc8 Kf8 34.Rxd8+.
+- Rec1 was marked a mistake and f3 an inaccuracy; the win does not validate either. No verified best replacements were supplied. Rxc4 guarded b4/e4; Kf2 guarded Be3 and activated the king.
+- ...Ra7 placed an undefended rook on Be3's diagonal e3-d4-c5-b6-a7. Capture checks must include distant bishops, even when a rook move claims to defend another piece.
+- Rc8 pinned Bd8 to Kg8 along rank eight; ...Kf8 retained the pin and allowed Rxd8+. The decisive gain came from these loose units, not a proven forced attack beforehand.
 
-31...Ne5 32.Qe2 Nd3?! 33.Bxd3 cxd3! 34.Rxc8+ Rxc8?! 35.Qxd3 Rc2?? 36.Nxc2?? Qxf2+ 37.Kh1 Bxg3 38.Qxg3 Qxg3 39.Ne1 Bxd5+ 40.Nf3 Bxf3#.
-- ...Nd3 attacked Rc1 but allowed Bxd3 and loss of the c-passer after the rook exchange. ...cxd3 was the only good recapture, attacking Qe2 and opening the c-file; accurate recapture did not validate the preceding knight move.
-- ...Rc2 was a blunder. The rook pinned f2 to Kh2 along rank two BEFORE capture, but White could take with Qd3xc2 while retaining Ne3's screen on b6-c5-d4-e3-f2. Always compare every legal capturer of an offered rook.
-- Nxc2 instead vacated e3, enabling ...Qxf2+ and leaving Kh1 as the only king escape. ...Bxg3 threatened Qh2#; Qxg3 Qxg3 surrendered White's queen. The win depended on the wrong capturer, not a sound rook sacrifice.
-- Final ...Bxd5+ cleared White's d-pawn from Bb7's diagonal to Kh1; Nf3 Bxf3# finished. No invalid attempts; finished with 11:15. ...Rc2 took 52 seconds: ample thinking did not replace the capture comparison.
+35.Rb8 Kd7 36.b5 Ke7 37.b6 Nd7 38.Rc8 Nc5 39.Rc7+ Nd7 40.b7 Kd8 41.Rxd7+ Kxd7 42.b8=Q Ke7 43.Qc7+ Kf8 44.Qd8#.
+- Rb8 and Ba7 supported b6. ...Nd7 attacked both rook and pawn; Rc8 saved the rook while Ba7 still guarded b6.
+- Rc7+ placed the rook on b7's defending rank. Ba7 guarded b8, but that did not prevent Nd7 capturing a promoted queen. ...Kd8 unpinned Nd7; remove the knight with Rxd7+ before promoting.
+- Qd8# controlled e8/g8 and e7; Black's f7/g7 pawns occupied remaining exits. Verify actual king squares and pawn shelter.
+- No invalid White attempts; finished with 11:31. Routine opening moves mostly 3-6 seconds; Nc4 took 55. Preserve the safety scan when moving quickly.
 
-## T16 round 3: Black vs Sonnet, mate win
-16...Bd7 17.d5?! Nb4 18.Bb1! Rfc8 19.a3 Na6 20.Bc2?? Nc5?? 21.b4? axb3! e.p. 22.Bxb3! Ncxe4 23.Nxe4 Nxe4! 24.Qd3 Nc5 25.Bxc5 Qxc5!.
-- My ...Nc5 was marked a blunder; no verified replacement/refutation supplied. ...axb3 removed the pawn attacking Nc5. Bxb3 abandoned e4 while Be3 screened Re1; Nd2 alone could not resist both knights.
-- ...f5/e4 forked Qd3/Nf3. ...Bf6 attacked Ra1 through cleared e5-d4-c3-b2; Nd2 allowed Bxa1 and blocked Qe2's defense of Bc2, permitting ...Rxc2.
-- ...Qxf3 was not a queen trade: Rc2 pinned g2 to Kh2. Kg1 Qxg2# followed. Recheck pawn recapture legality after every king move.
+## T17 round 1: Black vs Sonnet, unsound rook raid
+16...Bb7 17.d5?! Nb4! 18.Bb1! Na6 19.a3 Nc5 20.Bxc5 dxc5 21.Nf1 c4 22.Qd2 Bd6.
+- ...dxc5 preserved the bishop pair; ...c4 made a protected passer and Bd6 blockaded d5. ...g6/ ...h5/ ...f5 were inaccurate; successful later tactics did not establish their soundness.
+- With Kh2 and Bd6: ...f5 exf5?? e4+! cleared d6-e5-f4-g3-h2 and attacked Nf3. After g3 exf3 Qxf3, Black gained a piece for two pawns.
+- ...Nd3?! Bxd3 cxd3! Rxc8+ Rxc8?! Qxd3 Rc2?? Nxc2?? Qxf2+ won only because White chose the wrong capturer. Qxc2 instead preserved Ne3's screen on Qb6-f2. The rook's pre-capture pin on f2 did not make its sacrifice sound.
 
-## Earlier conversion and capture lessons
-- T15 White: Be3?! allowed ...Ncxe4 Nxe4 Nxe4. ...Nxd5?? Qxd5 Bxg5 Nxg5 later won a knight for two pawns. Rxe8+ won a rook because Rd7 screened Bc6-e8.
-- Rf7/Ne5/Bd3 vs Ke6/b5: Bc4+? bxc4; Nxc4? abandoned Rf7 to Kxf7. Save threatened material before recapturing. Activate king/minors to support passers.
-- b4 axb3 e.p. Nxb3 Nxb3 clears the c-file: test Rxc7 Rxc7 Bxb3 before Bxb3, winning Q for R. Count every capture in doubled-rook exchanges.
-- ...a4 b4 axb3 e.p. axb3 opens Ra8-a1; Bb1 can block Re1's recapture. Qa3 permits ...Rxa3. Bd3 supports h7 through e4/f5/g6 once screens clear.
+## T16 round 3: Black vs Sonnet
+...Bd7 d5 Nb4 Bb1 Rfc8 a3 Na6 Bc2?? Nc5?? b4? axb3! e.p. Bxb3! Ncxe4 Nxe4 Nxe4! Qd3 Nc5 Bxc5 Qxc5!.
+- ...Nc5 was marked a blunder; no verified replacement/refutation supplied. Bxb3 abandoned e4 while Be3 screened Re1, leaving only Nd2 against both knights.
+- ...e4 forked Qd3/Nf3 and cleared Bf6-a1. Nd2 blocked Qe2's defense of Bc2. Rc2 pinned g2 to Kh2 against ...Qxf3; refresh that pin after king moves.
+
+## Other capture lessons
+- Nxc4 can abandon Rf7 to Kxf7. Save threatened material before recapturing; support passers with king/minors.
+- b4 axb3 e.p. Nxb3 Nxb3 clears the c-file: test Rxc7 Rxc7 Bxb3 before Bxb3, winning Q for R.
+- ...a4 b4 axb3 e.p. axb3 opens Ra8-a1; Bb1 can block Re1's recapture. Qa3 permits ...Rxa3.
