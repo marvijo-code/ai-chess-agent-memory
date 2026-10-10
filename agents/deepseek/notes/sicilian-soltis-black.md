@@ -1,11 +1,19 @@
-# Sicilian Dragon - Soltis 9.Bc4 as Black (g49,g53,g54 lost to Sol; g55 lost to Sonnet)
+# Sicilian Dragon - Soltis 9.Bc4 as Black (g49,g53,g54,g66 lost to Sol; g55 lost to Sonnet)
 
 ## Line
 1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 g6 6.Be3 Bg7 7.f3 O-O 8.Qd2 Nc6 9.Bc4 Bd7 10.O-O-O Rc8 11.Bb3 Ne5 12.h4 Nc4 13.Bxc4 Rxc4 =; 14.h5 Nxh5! (never ...gxh5, g49); 15.g4 Nf6 (only move).
 
+## g66 vs Sol (0-1, Qxh7# m18) - Nf6 is PINNED to h7
+14.h5 Nxh5 15.g4 Nf6 16.Qh2 Rc8?? 17.g5 Nxe4?? 18.Qxh7#.
+- After 16.Qh2 the h-file is open (h3-h6 empty: his h-pawn died on h5) and his Qh2+Rh1 bear on h7. My Nf6 is h7's SOLE guard (Kg8 cannot take: Rh1 covers h7). So the knight is absolutely tied: any move OFF the h-file = Qxh7#. 17...Nxe4?? left h7 and was mated at once.
+- The only safe knight square is h5, because it blocks the h-file: 17.g5 -> 17...Nh5! and Qxh5?? gxh5 wins his QUEEN (g6 defends h5), while gxh5 is impossible for his pawn (on g5 the pawn attacks f6/h6, not h5).
+- ...Nh5 is safe ONLY once his g-pawn has left g4; with his pawn still on g4, gxh5! wins the knight and the mate follows on h5/h7 (g54 16...Nh5?? 17.gxh5!).
+- 16...Rc8?? (38 s, Stockfish ??) was the first error; a queen/rook/pawn move that does not touch the pin was needed (...Qa5/...Qc7/...g5!? ideas). Never improvise in this razor-sharp line: at every move ask 'is Nf6 still the only guard of h7, and are h3-h6 empty?'
+- Clock: 18-46 s on m8-17 and both bad moves came after 38-46 s. The 5 s pin-check would have caught 17...Nxe4.
+
 ## The ...Nh5 block - only when his g-pawn has left g4
 - 16.g5: g4 vacated, h5 is NOT pawn-attacked -> 16...Nh5! is the only move: g6 defends h5, the knight blocks the h-file, Qxh5 gxh5 wins his queen. Retreating Ne8/Nd7 abandons h7: 17.Qh2! Qxh7# (g53).
-- 16.Qh2: g4 STILL attacks h5 -> 16...Nh5?? loses: 17.gxh5! gxh5 18.Qxh5 and Qxh7# (Rh1 owns the empty h-file, nothing blocks h6, Kg8 is h7's only guard). Instead: ...Qa5 (hits a2/Nc3), ...Ne8/...Nd7; if he then plays 17.g5, ...Nh5! is right.
+- 16.Qh2: g4 STILL attacks h5 -> 16...Nh5?? loses: 17.gxh5! gxh5 18.Qxh5 and Qxh7# (g54). Instead ...Qa5 (hits a2/Nc3); if he then plays 17.g5, ...Nh5! is right.
 
 ## g55 vs Sonnet (0-1, flagged m53)
 Same line to 16...Nh5! (only move); 17.Qd3 Rc8 18.Nf5 Bxf5! 19.exf5.
@@ -26,7 +34,8 @@ Same line to 16...Nh5! (only move); 17.Qd3 Rc8 18.Nf5 Bxf5! 19.exf5.
 14...gxh5?! opened the h-file (14...Nxh5! was right); after 15.Bh6 do NOT trade (15...Bxh6?? 16.Qxh6 hits h7 with tempo); 16...Nxe4?? while h5 hung: 17.Rxh5! Qxh7#.
 
 ## Rules
-- Block with ...Nh5 only from a square his g-pawn cannot capture (g-pawn on g5, or h5 defended by g6); check the pawn first.
+- Block with ...Nh5 only from a square his g-pawn cannot capture (his pawn on g5, or h5 defended by g6); check the pawn first.
+- Once his Q is on h2 with the h-file open, Nf6 cannot leave the h-file at all (mate); ...Nh5 (blocking) is the only knight move, and it needs his g-pawn off g4.
 - The g6-pawn is the h5-knight's SOLE guard: never push or recapture with it while the knight sits on h5 (g55 19...gxf5??).
 - Never move the f6/h5 knight off h7's guard while his Q+Rh1 face the open h-file.
 - No greedy captures (Rxd4, Nxe4, Bxd4) with mate on the board.
