@@ -1,33 +1,34 @@
-# White d4: double attacks, defenders and passers
+# White d4: screens, double attacks and passers
 
-## T17 round 2: Benoni vs Stockfish 19, mate loss
-1.d4 Nf6 2.c4 c5 3.d5 g6 4.Nc3 Bg7 5.e4 d6 6.Nf3 O-O 7.Be2 e6 8.O-O exd5 9.cxd5 Bg4 10.h3 Bxf3! 11.Bxf3 Nbd7 12.Bf4 Qe7 13.Re1 a6 14.a4 Rfe8 15.Qd2 Rac8 16.Rad1 Ne5 17.Be2 c4 18.Bh6 Bxh6 19.Qxh6! b5 20.axb5 axb5 21.f4 Qa7+ 22.Kh1 Ned7! 23.Bf3 Qc5.
-- Opening remained roughly balanced in the supplied shallow evaluations. Qxh6 was the only good move; this game does not establish an opening failure or a best replacement for later errors.
-- f4 vacated f2 and enabled Qa7+ along a7-b6-c5-d4-e3-f2-g1. Include newly opened queen diagonals in pawn-push calculations.
+## T19 round 3: Benoni vs Stockfish 19, mate loss
+1.d4 Nf6 2.c4 c5 3.d5 g6 4.Nc3 Bg7 5.e4 d6 6.Nf3 O-O 7.Be2 e6 8.O-O exd5 9.cxd5 Bg4 10.h3 Bxf3! 11.Bxf3 Nbd7 12.Re1 c4 13.Be3 Re8 14.b3 a6 15.bxc4 Rc8 16.Qb3 Qa5 17.Rac1 Nc5 18.Qc2 b5 19.cxb5 axb5 20.Bxc5?? Rxc5!.
+- The supplied shallow evaluations remained near equality before Bxc5, the only marked White blunder. No verified best replacement or opening refutation supplied.
+- Bxc5 traded Be3 for Nc5 but activated Rc8 on c5 against Nc3. It also removed e3's screen from the bishop route h6-g5-f4-e3-d2-c1. Count the enemy recapturer's new activity and my departing piece's blocking duties before exchanging.
 
-24.g4? Qf2! 25.Bg2 Qxb2 26.Re3 b4 27.Ne2 c3 28.Rc1 Qd2 29.Rg3 Qxe2.
-- g4 removed g2's protection of Bf3. Qf2 attacked that bishop vertically and b2 along f2-e2-d2-c2-b2. Bg2 saved the bishop but conceded the pawn and queen invasion. Preparing g5 was too slow; calculate enemy queen entries and every guard lost before a pawn storm. No verified best replacement supplied.
-- Re3 guarded Nc3 across d3, then Ne2 after the retreat. Black's b4 supported c3, while Rc8 stood behind the passer.
-- Rc1 moved Rd1 away from its control of d2. Qd2 then attacked Re3 diagonally and Ne2 horizontally. Rg3 saved the rook but removed Ne2's e-file defender, permitting Qxe2. List ALL attacks from the last queen move, and what a proposed rook swing abandons.
-- The queen on h6 and rook on g3 did not create a forcing attack quickly enough to justify the knight loss. Sparse move marks did not absolve this direct capture.
+21.Qd3 Bh6 22.Rc2 Rec8 23.e5 dxe5 24.Ne4 Qxe1+ 25.Kh2 Nxe4 26.Bxe4 Rxc2.
+- Bh6 attacked Rc1 along the diagonal cleared by Bxc5. Rc2 escaped that attack but put a rook behind Nc3 on the c-file; Black doubled rooks.
+- Nc3 now screened TWO targets: Qa5-b4-c3-d2-e1 against Re1, and Rc5-c4-c3-c2 against Rc2. Moving it required solving both lines.
+- Ne4 attacked Rc5 and Nf6, but Qxe1+ took a rook with check first. Nxe4 Bxe4 exchanged knights, then Rxc2 took the second rook. The apparent rook attack gained no useful tempo. Sparse marks omitted this direct double-screen failure.
+- e5 dxe5 did not resolve the c-file pressure. A central breakthrough needs a concrete answer to enemy checks and exposed rooks, not just an attacking purpose.
 
-30.g5 Nxe4 31.Bxe4 Qxe4+ 32.Kh2 Qd4 33.Rg4 Re2+ 34.Rg2 Rxg2+ 35.Kxg2 Qe4+ 36.Kg3 c2 37.h4 Qd3+ 38.Kg4 Qe2+ 39.Kg3 Rc3#.
-- Rc1 blockaded c2 but did not prevent Rc8-c3 with a lateral checking line. At mate Qe2 covered f2/g2/h2 and g4; Rc3 covered f3/g3/h3. Own f4 and h4 occupied the remaining adjacent exits. A blockaded passer can coexist with a decisive rook invasion.
-- No invalid attempts; finished with 9:03. g4 took 45 seconds, Rg3 58: missing guard and double-attack scans caused the loss despite ample clock.
+27.Qg3 Rc1 28.Qxe5 b4 29.d6 Qg1+ 30.Kg3 Bg7 31.Qe7 R1c3+ 32.Kf4 Qxf2+ 33.Kg4 Qg3#.
+- The passer could not compensate for two lost rooks. At mate Qg3 was protected by f2; Rc3 controlled the third rank, Rc8 the c-file, and Bg7 controlled e5/f6. Calculate the king's exits before choosing an exposed central square.
+- No invalid attempts; finished with 8:26. Bxc5 took 29 seconds, Ne4 53. Ample clock did not prevent the missed screens; prioritize the enemy's checking replies over explanations of my plan.
 
-## T11 semifinal 2: QGD vs Sonnet, mate loss
-After the Lasker exchanges, White Rc3/Qc2 faced ...Nd5. 17.Rd3?? allowed Nb4, forking rook and queen. 18.Re3 Qxe3! 19.fxe3 Nxc2! 20.Bxc2 traded queens and lost rook for knight. Attacking the queen did not force retreat; calculate its capture before the fork resolves. Examine Bxd5 cxd5 before retreating, without claiming it engine-best.
-- Ke3 defended d4 against doubled rooks; name exact defenders.
-- d5 cxd5 exd5?! a4 Bc4 Rc7 Bd3 Rxd5 Bxg6 Rxd1: Bd3 blocked Rd1's defense of d5 and did not itself guard d5. Bxg6 then cleared the file, exposing undefended Rd1. Ke3 could not recapture on d1.
-- Bb1 intended to stop a2 but landed on Rg1's clear first rank: Rxb1. Blockade destinations still need capture checks. Had ample time.
+## T17 round 2: Benoni vs Stockfish, mate loss
+After ...Ne5/...c4, Bh6 Bxh6 Qxh6! b5 axb5 axb5 f4 Qa7+ Kh1 Ned7 Bf3 Qc5:
+- f4 vacated f2, opening Qa7-g1. 24.g4? removed g2's guard of Bf3; Qf2 attacked Bf3 and b2. Bg2 Qxb2 conceded a pawn and queen entry. Calculate lost guards before a pawn storm.
+- Re3 b4 Ne2 c3 Rc1 Qd2 Rg3 Qxe2: Re3 defended Ne2. Rc1 abandoned Rd1's control of d2; Qd2 attacked Re3/Ne2, and Rg3 removed the knight's defender.
+- Later Rc1 blockaded c2 but allowed Rc8-c3#. Qe2 covered king exits while White's f4/h4 occupied others. A blockade does not prevent lateral rook invasion.
+- Finished with 9:03; g4/Rg3 took 45/58 seconds. No verified best replacements supplied.
 
-## T11 round 2: QGD vs Stockfish, mate loss
-- Qe2 removed Qd1's defense of isolated d4: Nxd4 Nxd4 Qxd4 lost a pawn.
-- R6d3? saved a rook but blocked Qe2-d3-c4-b5, abandoning Nb5. Qc6 attacked it and threatened Qg2# with Bb7 support; the g-pawn was on g3. Rf3 Qxf3 Qxf3 Bxf3 lost an extra rook.
-- Kh2 abandoned Bf1's king protection to Ra1xf1. King evacuation must include guards lost.
+## T11 QGD losses
+- Vs Sonnet: Rc3/Qc2 faced ...Nd5. Rd3?? Nb4 forked R/Q. Re3 Qxe3! fxe3 Nxc2! Bxc2 traded queens and lost R for N. Examine Bxd5 cxd5 before retreating; no engine-best claim.
+- Ke3 defended d4. d5 cxd5 exd5 a4 Bc4 Rc7 Bd3 Rxd5 Bxg6 Rxd1: Bd3 blocked Rd1's defense of d5; Bxg6 then cleared the file to undefended Rd1. Bb1 later landed on Rg1's clear rank and lost to Rxb1.
+- Vs Stockfish: Qe2 abandoned isolated d4 to Nxd4 Nxd4 Qxd4. R6d3 blocked Qe2-d3-c4-b5, abandoning Nb5. Qc6 hit it and threatened Qg2# with Bb7; Rf3 Qxf3 Qxf3 Bxf3 lost another rook. Kh2 abandoned Bf1 to Ra1xf1.
 
-## Other QGD geometry
+## Other geometry
 - ...Bf5 can skewer Re4/Qc2 or Re4/Qd3; moving Be6 can uncover Qe7 against Ne5.
-- d5 cxd5 cxd5 Bxd5 cleared Be6 from the e-file, allowing Rxe7+ Kxe7, rook for queen. Rxd5 preserved the bishop screen and attacked Qd3: compare recapturers.
-- Bf2 does not defend f4. Bd3 can block Rd1 against Qd7; Bh7+ removes that blocker with check.
-- Qxa7 allows Rxa7 when the pinned rook captures the pinning queen. Rc5 against Qe7-d6-c5 and Bc6 against b7 allow direct captures.
+- d5 cxd5 cxd5 Bxd5 cleared Be6 from the e-file, allowing Rxe7+ Kxe7, R for Q. Rxd5 preserved that screen: compare recapturers.
+- Bf2 does not defend f4. Bd3 can block Rd1 against Qd7; Bh7+ removes the blocker with check.
+- Qxa7 permits Rxa7: a pinned rook can capture the pinning queen. Rc5 against Qe7-d6-c5 and Bc6 against b7 permit direct captures.
