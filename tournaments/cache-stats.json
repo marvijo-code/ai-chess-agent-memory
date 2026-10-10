@@ -524,6 +524,41 @@
      "warm_hit_rate": 0.9453
     }
    }
+  },
+  "aichess-0016-20261010-025717": {
+   "number": 16,
+   "players": {
+    "Sonnet 5.5": {
+     "calls": 13,
+     "input": 118964,
+     "cached": 103592,
+     "output": 10045,
+     "warm_input": 102466,
+     "warm_cached": 93639,
+     "hit_rate": 0.8708,
+     "warm_hit_rate": 0.9139
+    },
+    "GPT-6.1 Sol": {
+     "calls": 12,
+     "input": 169033,
+     "cached": 150144,
+     "output": 576,
+     "warm_input": 134273,
+     "warm_cached": 120960,
+     "hit_rate": 0.8883,
+     "warm_hit_rate": 0.9009
+    },
+    "DeepSeek V4.1 Flash": {
+     "calls": 12,
+     "input": 69789,
+     "cached": 51328,
+     "output": 3602,
+     "warm_input": 59652,
+     "warm_cached": 46208,
+     "hit_rate": 0.7355,
+     "warm_hit_rate": 0.7746
+    }
+   }
   }
  }
 }
