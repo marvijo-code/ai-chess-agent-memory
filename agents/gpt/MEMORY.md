@@ -2,48 +2,53 @@
 
 ## Move discipline
 - Start with the enemy's last move: changed attacks, pawn controls and opened lines. Scan checks, captures, forks, promotions and mates; repeat on the proposed final board.
-- Before queen/rook moves, enumerate pawn/knight captures and trace EVERY bishop ray through ALL pieces. Check, attack and pin never establish destination safety.
-- Name exact defenders, screens and legal recapturers. Moving one can lose guards, blocks and escapes. Refresh pins after king or pinning-piece moves.
-- One piece can screen TWO targets. Trace every newly opened enemy queen/rook/bishop ray to its endpoint before moving it.
-- Before recapturing, inspect opened lines and stronger forcing replies; count the FULL exchange by values. Attacking Q/R does not force retreat: test checks FIRST.
+- Before Q/R moves, enumerate pawn/knight captures and trace EVERY bishop ray through ALL pieces. Check, attack and pin never establish destination safety.
+- Name exact defenders, screens and LEGAL recapturers. Moving one can lose guards, blocks and escapes. Refresh pins after king or pinning-piece moves.
+- One piece can screen TWO targets. Trace newly opened enemy Q/R/B rays to their endpoints before moving it.
+- Before captures, calculate the FULL exchange by values, including the final recapture and losses on other squares. Attacking Q/R does not force retreat: test checks FIRST.
 - Track current pawn squares and forward AND capture-promotions. A defended piece can lose to a cheaper capturer; verify my recapture is legal.
 - After EVERY capture, refresh the capturing piece's attacks. Trust the board over commentary; wins and sparse marks do not validate moves.
-- When forked, compare saving the higher-value piece WITH defense of the other target. Before king moves, list guards LOST and destination attacks.
+- When forked, compare saving the higher-value piece WITH defending the other target. Before king moves, list guards LOST and destination attacks.
 
 ## Clock and conversion
 - Deadline INCLUDING output: book/forced 1-5 seconds; quiet 10-15; critical tactics 20-40. Below 5 minutes cap 15; below 90 seconds use 1-3.
-- Long thinks did not prevent captures. Calculate enemy replies, especially checks after my planned attack.
+- Long thinks did not prevent losses. Calculate enemy replies, especially checks after my planned attack; shorten routine endgame maneuvers.
 - Ahead: restrain counterplay and simplify safely. Worse or Black with draw odds: seek activity/repetition. Escort passers with king/minors.
+- Before calling a minor ending favorable, name a reachable target, entry square or viable pawn break. Closed pawns alone do not give a knight a win.
 - Opposite-colored bishops: count separated passers, blockade squares, king routes and promotion races; keep the blocker defended.
-- Q+R conversion: coordinate protected checks and restrict king exits. Prefer a short concrete mate over pawn collection; check piece safety and stalemate.
+- Q+R: coordinate protected checks and restrict exits. Prefer a concrete mate over pawn collection; check safety and stalemate.
 
-## T20 R3: White Chigorin vs Sonnet, mate win
-- d5 Nb4 Bb1 a5 a3 Na6 Nc5 did NOT trap N: a5 freed a6. b4 displaced Nc5, but Qd2/Rxa8/exf5 received inaccuracies; no verified replacements supplied.
-- After Nh4-f5 Bxf5 exf5, Qd2 still guarded d5 through empty d3/d4. Nxd5?? Qxd5 won N for pawn. Do not copy Sonnet's claim that d5 was undefended.
-- Rd8 did NOT attack Qd5: d6 screened the file. Recalculate actual attacks instead of accepting a claimed tempo.
-- Qxb5 restored pawn balance. Queen trade reduced counterplay; Be4 supported b7, Ba7 attacked Rb8, then b8=Q Rxb8 Bxb8 exchanged the passer for R.
-- Finished with 5:41, no invalid moves. Sonnet spent 55-64 seconds repeatedly; my 38-47-second Q+R conversion moves also wasted clock.
+## T20 semifinal G1: White Chigorin vs Sonnet, draw
+- After ...Na4 Qe2 Rfc8, Bc2?? Qxc2 Qxc2 Rxc2 lost B: Qc7 and Rc8 formed a c-file battery. Qe2's recapture did not save the bishop. No verified replacement supplied.
+- ...Nh5? Nxh5! recovered N for nothing: neither Bd7 nor Be7 guarded h5. ...g6 Ng3! saved it. Verify bishop geometry, not an asserted recapture.
+- Rc1 Rxc1 Nxc1! simplified safely, but Bd7/Be8 guarded b5/c6, d6 guarded c5 and b5 barred Ka4. No winning knight route established; repetition was practical.
+- b4?!/Kf2? were marked; no verified replacements. Finished 6:36; repeated 31-54-second quiet/endgame moves wasted clock.
+
+## Chigorin: earlier Sonnet tactics
+- ...a5 frees a6: d5 Nb4 Bb1 a5 a3 Na6 Nc5 does not trap N.
+- Qd2 guards d5 through empty d3/d4: Nxd5?? Qxd5 wins N for P. d6 screens Rd8 from Qd5; no actual queen attack.
+- Be4 supports b7; Ba7 attacks Rb8 and guards b8. b8=Q Rxb8 Bxb8 wins R for passer. See notes for conversion.
 
 ## Caro-Kann as Black
 - Classical: dxe4 Nxe4 Bf5 Ng3 Bg6 h4 h6 Nf3 Nd7 h5 Bh7! Bd3 Bxd3 Qxd3 e6 O-O Ngf6 c4 Be7. h6 prepares h7 AND controls g5.
-- DeepSeek's Bg5?? hxg5! Nxg5 lost B for pawn. Nxh5 Nxh5 Rxh5? kept an extra B but was marked a mistake. Qh3? Rxh3 gxh3 Bxg5 exploited the cleared h-file; no verified replacement for Rxh5 supplied.
-- Bd4/Qf6/Nc5 versus Kg3/Re4: Nxe4+ Kf3 Qxf5+ Kg2 Qf2+ Kh1 Ng3#. Bd4 guards f2; Qf2 guards g3 and covers g1/g2/h2.
+- Bg5?? hxg5! Nxg5 loses B for P. Nxh5 Nxh5 Rxh5? retained extra B but was marked a mistake. Qh3? Rxh3 gxh3 Bxg5 exploits the cleared h-file; no verified replacement for Rxh5.
+- Bd4/Qf6/Nc5 vs Kg3/Re4: Nxe4+ Kf3 Qxf5+ Kg2 Qf2+ Kh1 Ng3#. Bd4 guards f2; Qf2 guards g3 and covers g1/g2/h2.
 - Advance: Bf5 outside chain, Nd7/Ne7-f5/c5/Be7/O-O; cxd4/Nxd4/Rac8 pressures c3, f6/fxe5/Nxe5 opens f-file. Setup, not forced win.
 - Qxe5 Rxf2 Qxd5??: e6 screens Qe7 from Re1. Rxc3+ Kb1 Rxb2+ Kxb2 Qxa3+ Kb1 exd5 relocates Q with check before recapturing. bxc3 permits Qxa3+ Kb1 Qb2#, supported by Rf2.
 
 ## Open games: screens and exchanges
-- Italian Bg5/Qg6: d4 exd4 cxd4 Nxd4 Nxd4 Qxg5 removed Nf3's guard of Bg5. Full chain lost a pawn, not a whole piece.
-- Re5 screened Qf6-e5-d4-c3-b2-a1; Rd5? exposed Ra1. Qc4 Re1+ Nxe1 Qxf2+ Kh1 Qg1# diverted Nf3 from g1 and cleared Bc5's diagonal.
-- Chigorin Nxc4 bxc4 Rxc4 trades N for TWO pawns despite attacking Q. Rb1+?? Bxb1 follows Bd3-c2-b1. Nxd5?? exd5 cannot be recaptured by Kd6 when Ba2 guards d5.
+- Italian Bg5/Qg6: d4 exd4 cxd4 Nxd4 Nxd4 Qxg5 removes Nf3's guard of Bg5. Full chain loses a pawn, not a piece.
+- Re5 screens Qf6-e5-d4-c3-b2-a1; Rd5? exposes Ra1. Qc4 Re1+ Nxe1 Qxf2+ Kh1 Qg1# diverts Nf3 from g1 and clears Bc5's diagonal.
+- Chigorin Nxc4 bxc4 Rxc4 trades N for TWO pawns. Rb1+?? Bxb1 follows Bd3-c2-b1. Nxd5?? exd5 cannot be recaptured by Kd6 when Ba2 guards d5.
 - Qb6 behind Be3/d4 permits dxe5 to uncover B's attack AND hit Nf6. Qxc8 Rxc8 Rxc8+ Bxc8 leaves Black Q vs R.
-- Ruy: Be7 screens Re8; d5 exd5 Nxd5 leaves e5 defended only by Nc6. Nxe5 Nxe5 Rxe5 Bf6 Rxe8+ Qxe8 loses a pawn.
-- Four Knights 5.Nd5 attacks Nc6/Bb4/Nf6. O-O? Bxc6 dxc6 Nxb4 Nxe4 loses a minor for pawn. Resolve attacks before castling.
-- d4 vacates d2: Qf4?? Bxf4 follows Bc1-d2-e3-f4. A pin on g3 does not protect Qf4.
+- Ruy: Be7 screens Re8; d5 exd5 Nxd5 leaves e5 guarded only by Nc6. Nxe5 Nxe5 Rxe5 Bf6 Rxe8+ Qxe8 loses a pawn.
+- Four Knights 5.Nd5 attacks Nc6/Bb4/Nf6. O-O? Bxc6 dxc6 Nxb4 Nxe4 loses minor for P. Resolve attacks before castling.
+- d4 vacates d2: Qf4?? Bxf4 follows Bc1-d2-e3-f4. Pinning g3 does not protect Qf4.
 
 ## White d4 and Sicilian geometry
-- Benoni Bxc5?? Rxc5 activates Rc5 against Nc3 and clears Be3's screen from Bh6 to Rc1. Nc3 then screens BOTH Qa5-e1 and Rc5-c2; Ne4 permits Qxe1+ and loss of both rooks.
+- Benoni Bxc5?? Rxc5 activates Rc5 against Nc3 and clears Be3's screen from Bh6 to Rc1. Nc3 screens BOTH Qa5-e1 and Rc5-c2; Ne4 permits Qxe1+ and loss of both rooks.
 - Qa4 abandons Qd1-e2-f3's recapture; Nxf3+ gxf3 exposes Kg1. Bxb5 then attacks Qa4: respond immediately.
-- c3 blocks Bb2-d4. c3 d3 Re1 d2 Red1 dxc1=Q Rxc1 loses R for pawn; Rd1 stops only forward promotion.
+- c3 blocks Bb2-d4. c3 d3 Re1 d2 Red1 dxc1=Q Rxc1 loses R for P; Rd1 stops only forward promotion.
 - Dragon Nc4 hits Qd2/Bb3: Bxc4 Rxc4 removes it. g4 BEFORE h5 permits gxh5 after Nxh5; h5 first leaves g6 protecting Nh5.
 - hxg6 hxg6 clears h-file; Bxg7 Kxg7 Qh6+ Kg8 Qh7# uses Rh1. Kg8 was not forced. Uncastled Rh8/h5 makes Bh6 Bxh6 Qxh6 Rxh6 lose Q.
 
@@ -54,5 +59,5 @@
 - notes/deepseek.md - Chigorin tactics and Dragon pawn order.
 - notes/four-knights.md - Double attacks, screens and clocks.
 - notes/qgd-exchange.md - Benoni screens and QGD defenders.
-- notes/ruy-lopez.md - Sonnet, exchanges and passer conversion.
+- notes/ruy-lopez.md - Sonnet, batteries, passers and locked endings.
 - notes/sicilian-maroczy.md - Recapture guards and promotions.
