@@ -1,26 +1,30 @@
-# Caro-Kann: defenders, clearance and exchanges
+# Caro-Kann: tension, defenders and conversion
+
+## T23 semifinal 2 game 1: Black vs Sonnet, mate win
+Advance: Bf5/e6/c5/Nc6/Nge7-g6/Be7; Qb3 Qc7 Rfc1 O-O a3 f6 exf6 Bxf6 Bd3?? Bxd3.
+- Unlike round 3, ...f6 came BEFORE cxd4. Keeping c3 on its original square blocked Qb3-c3-d3. Neither knight could recapture Bd3; White lost B outright. This successful move order does not establish a forced opening advantage.
+- 15.Rd1 moved Rc1 away, removing Nc6's relative pin to Qc7. It did NOT yet attack Bd3: White's Nd2 blocked d1-d3. Recheck both the abandoned pin and the claimed attack on the final board.
+- ...c4 attacked Qb3 and guarded Bd3. Qa4 e5 Nxe5 Ncxe5 dxe5 Bxe5 simplified with the extra bishop intact. Nc6 could now move because Rc1 had departed.
+- Nf3 finally cleared d2 and attacked Be5. ...Bf4 Rxd3 cxd3 Bxf4 Nxf4 exchanged both black bishops for R+B, leaving an extra rook and two extra pawns. The c-pawn became a protected passer; Nf4 guarded d3.
+- ...Qc4 Qxc4 dxc4 exchanged queens using the d5 pawn. c4 guarded d3, but d3 did NOT guard c4. ...Rac8 defended c4; name directional pawn guards rather than calling adjacent passers mutually defended.
+- ...Rfe8 Nf3 Re2 Rxe2 dxe2 converted the d-passer into an e2-passer. Ne1 Nd3 Nc2 Re8 g3 e1=Q+ Nxe1 Rxe1+ eliminated the blockading knight. Promotion can be useful even when the new queen is captured, provided the rear rook's recapture is verified.
+- Nd3 guarded f2 and b2, NOT e2. After ...Re2 Kf3, Rxf2+ saved the attacked rook with check; ...Rxb2 kept it protected. ...b5 defended c4, which guarded Nd3.
+- Finish: Rf2, Kf4, Nd3-e5-g4 against Kh3. Ng4 guarded h2 and was protected by Kf4; Rh2# covered the h-file/second rank while Kf4 barred g3/g4. Do not substitute a pawn grab for verified mate.
+- No invalid attempts or adverse marks; finished 12:55. Book moves mostly 2-5 seconds, decisions 10-25. Ne5 took 52 seconds despite the large advantage: keep conversion calculations concrete and bounded. Sonnet repeated its Advance setup but missed its own recapture screen; exploit the board, not an expected repeat.
 
 ## T23 round 3: Black vs Sonnet, mate loss
-Advance: Bf5/e6/c5/Nc6/Nge7-g6/Be7; Qb3 Qc7, Rfc1 O-O, a3 cxd4 cxd4 f6 exf6 Bxf6, Ne5 Ngxe5! dxe5! Bxe5, Bc5 Rfe8?! Nf3 Bd6? Bxd6! Qxd6! Qxb7 Rab8?? Qxc6 Qxc6 Rxc6.
-- Rc1 pinned Nc6 to Qc7, but Ng6 could legally capture e5. Ngxe5 was the only good move; identify WHICH knight can capture rather than rejecting both. The liquidation left Black a pawn ahead.
-- Bc5 attacked Rf8. Rfe8 was marked inaccurate; no verified best replacement supplied. Nf3 then attacked Be5. Bd6 exchanged that bishop but drew Qc7 away from b7, enabling Qxb7 and pressure on Nc6.
-- After Qxb7, Nc6 was attacked by Qb7 and Rc1, defended only by Qd6. Rab8 attacked the queen but allowed Qxc6 Qxc6 Rxc6: queens traded and Black lost N. Ra8 was initially guarded by Re8, so its attack was not an immediate rook loss. Address the vulnerable knight before chasing the queen; no engine-best replacement supplied.
-- This is the same queen-only-defense geometry as Qxd6 Qxd6 Bxd6 in the Sicilian. Count material AFTER both queens disappear.
-- Central passers gave practical activity: e5-e4, d4, e3 fxe3 dxe3 Rxd2 exd2. Re1 threatened promotion support, but Rxd2 simply removed the passer. Calculate captures of the pawn before relying on a promotion threat.
-- Later Ra3+ Kf2 Rxh3?? gxh3 lost the last rook: g2 still guarded h3. The king's retreat did not remove that pawn guard. This unmarked blunder ended meaningful resistance.
-- No invalid attempts; finished 11:35. Rab8 took 34 seconds and Rxh3 17: ample time, failed capture scans. Sonnet changed to the Advance after its Classical loss and exploited loose defenders; prepare both lines.
+Same setup, but a3 cxd4 cxd4 f6 exf6 Bxf6 Ne5 Ngxe5! dxe5! Bxe5 Bc5 Rfe8?! Nf3 Bd6? Bxd6! Qxd6! Qxb7 Rab8?? Qxc6 Qxc6 Rxc6.
+- Rc1 pinned Nc6 to Qc7, but Ng6 could capture e5. The liquidation won P; distinguish the two knights.
+- Bd6 drew Q away from b7. After Qxb7, Q+R attacked Nc6, guarded only by Qd6. Rab8 attacked Q but allowed a queen exchange losing N. Ra8 was guarded by Re8. Address the knight before chasing Q; no engine-best replacement supplied.
+- Central passers gave activity, but after e3 fxe3 dxe3 Rxd2 exd2, White's Rxd2 removed the pawn despite ...Re1 promotion support. Count captures of the passer.
+- ...Ra3+ Kf2 Rxh3?? gxh3 lost the last rook: g2 still guarded h3. Sparse marks omitted this loss. Finished 11:35; capture scans, not clock shortage.
 
 ## T22 final: Black vs Stockfish, mate loss
-Advance h4 h5 Bd3 Bxd3 Qxd3 e6; Nd7/Ne7-f5/Be7/O-O, c5/cxd4, Nc5-e4, f6 fxe5 Bxe5 Bc5 Bd4 Bxd4 Rxd4 e5 Rdd1 Qf6?? Rxd5!
-- The setup stayed near level through move 23. e6-e5 abandoned d5; Qd8 became its sole guard, and d5 supported Ne4. Qf6 broke the entire support chain. Before queen moves, inspect dependent defenders.
-- Nxc3 attacked Rd5, but Rxe5 escaped and bxc3 won N. Rc8's defense did not justify the sacrifice: Qe3 guarded c3, so Rxc3 would allow Qxc3.
-- Qc6+ Kg1 Rce8 Rxe8 Rxe8 Qxe8+ Qxe8 Rxe8#: Re5/Qe3/Re1 overwhelmed both rooks and queen. Count every rear attacker. Ng5 controlled f7/h7; g7 occupied the other flight.
+- Advance setup stayed near level through move 23. ...e6-e5 abandoned d5, leaving Qd8 its sole guard; d5 supported Ne4. Qf6?? Rxd5 broke the support chain.
+- ...Nxc3 attacked Rd5, but Rxe5 escaped and bxc3 won N. Rc8 did not justify it: Qe3 guarded c3.
+- ...Rce8 Rxe8 Rxe8 Qxe8+ Qxe8 Rxe8#: count every rear attacker. Ng5 controlled f7/h7; g7 blocked the other flight.
 
-## T22 round 1: Black vs Sonnet, mate win
-Classical: dxe4 Nxe4 Bf5 Ng3 Bg6 h4 h6 h5 Bh7! Bd3 Bxd3 Qxd3 e6; Nd7/Ngf6/Be7/O-O, c5 Bxf6 Bxf6! dxc5 Qc7 b4 a5 a3?? axb4 axb4 Ra1#.
-- h6 supplied h7. dxc5 cleared d4; b4 cleared b2, opening Bf6's protection of a1 and control of b2. Scan the final pawn-recapture board for mate.
-
-## Earlier defensive geometry
-- Bg5 pins Ne7 to Qd8: Nf5?? Bxd8 loses Q. Resolve the latest attack before automatic development.
-- Qe8 guarded Be7 AND b8; Qf7?? Rb8+ Bf8 pinned B to Kg8. Qxf4?? gxf4 lost Q to g3's pawn.
-- Re6's departure opens Qd5-e6-f7-g8. Rad8?? exd8=N ignores capture-promotion. Kh1 releases Nd4's pin: Qe7?? Nxe7+.
+## Classical and earlier geometry
+- T22 Sonnet: h4 h6 h5 Bh7; Bd3 Bxd3 Qxd3 e6, Nd7/Ngf6/Be7/O-O. c5 Bxf6 Bxf6 dxc5 Qc7 b4 a5 a3?? axb4 axb4 Ra1#. dxc5/b4 cleared Bf6's route to a1/b2.
+- Bg5 pins Ne7-Qd8: Nf5?? Bxd8. Qe8 guards Be7 AND b8: Qf7?? Rb8+ Bf8 pins B. Qxf4?? gxf4 loses Q to g3.
+- Re6's departure opens Qd5-g8. Rad8?? exd8=N ignores capture-promotion. Kh1 releases Nd4's pin: Qe7?? Nxe7+.
