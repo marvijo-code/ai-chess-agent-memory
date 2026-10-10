@@ -1,36 +1,34 @@
-# Ruy Lopez / Italian: blockers, forks and conversion
+# Ruy Lopez: screens, pawn breaks and knight endings
 
-## Shared Chigorin structure
-1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Re1 b5 7.Bb3 d6 8.c3 O-O 9.h3 Na5 10.Bc2 c5 11.d4 Qc7 12.Nbd2 cxd4 13.cxd4 Nc6 14.d5 Nb4 15.Bb1 a5.
-Preserve Bc2 against ...Nb4/...Nxc2. ...a5 vacates a6 for Nb4-a6-c5; d6 supports Nc5. Trace recaptures and file screens.
+## Chigorin geometry
+Usual line: 12.Nbd2 cxd4 13.cxd4 Nc6 14.d5 Nb4 15.Bb1 a5. Preserve Bc2 against ...Nb4/...Nxc2. ...a5 vacates a6 for Nb4-a6-c5; d6 supports Nc5. Trace recaptures and file screens.
+
+## T15 round 3: White vs Sonnet, repetition draw
+Different order: 14.Nf1 Bd7 15.Be3 Rac8 16.d5?! Nb4 17.Bb1 a5?! 18.a3 Nc2 19.Bxc2 Qxc2! 20.Qxc2 Rxc2! 21.Rab1?! a4? 22.Ng3 Rfc8 23.Rec1 Rxc1+ 24.Rxc1 Rxc1+ 25.Bxc1!.
+- Nc2 attacks Re1 and Be3, NOT Qd1. Bxc2 exchanges White's light bishop for Black's knight; the full queen liquidation leaves equal material and an active black rook, not a free bishop capture.
+- Rab1 defends b2 but was inaccurate. d5 also received an adverse mark; no best alternatives supplied. Assess rook invasion and the resulting minor pieces before committing to this move order.
+- Familiar development mostly took 3-7 seconds. No illegal attempts; ended with 9:57. Ample clock did not prevent the later pawn losses.
+
+Minor ending: 29.h4 Bf6 30.Be3 Nf8?! 31.h5 Nh7 32.Nd2 Bg5?! 33.Bxg5! Nxg5 34.b3?! axb3! 35.Nxb3 Ke7 36.Nd2 Nh7 37.a4? bxa4! 38.Kc4 Nf6 39.Kb4?! Ng4! 40.f3 Ne3! 41.Ndf1 Nxg2.
+- b3 exchanged White's b-pawn for Black's a-pawn. The later a4 push lost White's remaining queenside pawn: ...bxa4 was protected by Bd7 along d7-c6-b5-a4. A planned knight outpost is not compensation without a calculated recovery.
+- Kb4 left the king far from loose kingside pawns. ...Ng4 attacked f2; f3 displaced it to e3, attacking g2/d5. Ndf1 attacked Ne3 but allowed Nxg2. Check all captures by an attacked knight before expecting retreat.
+42.Nf5+ Bxf5 43.exf5 Nf4 44.Ne3 Nxh5 45.Kxa4 g6 46.Kb5 Nf4?! 47.Kc6! Nd3 48.Nc4 Nb4+ 49.Kc7 Nxd5+ 50.Kc6 Nb4+ 51.Kc7 Nd5+ 52.Kc6 Nb4+ 53.Kc7, repetition.
+- Nf5+ removed Bd7, permitting Kxa4, but ...Nf4 forked d5/h5. Ne3 protected d5/f5, not h5.
+- Kc6 protected d5 and pressured d6; Nc4 added pressure on d6. ...Nb4+ forced the king off d5's defense, then ...Nxd5+ took it. Test checking displacement of a pawn's sole defender.
+- Final material: White K+N+f3/f5; Black K+N+d6/e5/f7/g6/h6. THREE pawns down, despite Black's commentary saying two. Recount from actual captures.
+- Kc6 attacked Nd5; Kc7 maintained support for Nxd6. Sonnet chose repeated checks. Useful practical resistance, not proof the ending or repetition was forced.
 
 ## T15 round 1: Black vs DeepSeek, mate win
 16.Nf1 Bd7 17.Ng3 Na6 18.Be3 Nc5 19.Qd2 Rfe8 20.Qe2 a4 21.b4? axb3! e.p. 22.axb3?! Rxa1 23.Qb2 Raa8 24.Qa3 Rxa3.
-- ...a5 and ...axb3 were marked only good moves. ...a4 made b4 answerable by en passant, preserving Nc5 instead of retreating it.
-- axb3 vacated a2 and removed Black's a-pawn, clearing Ra8-a1. Bb1 could not recapture on a1 and blocked Re1-a1. The resulting rook capture won a whole rook.
-- Qb2 genuinely attacked Ra1 through b2-a1; withdraw the rook. Qa3 then put White's queen on its clear file, allowing ...Rxa3. A queen attacking a rook still needs protection against that rook's capture.
-25.Nxe5 dxe5 26.Bxc5 Bxc5 27.Bd3 Rxb3 28.Bc4 bxc4 29.Ne2 Qb6 30.Rc1 Bxf2+ 31.Kh2 Bg3+ 32.Nxg3 Qe3 33.Rxc4 Qxg3+ 34.Kg1 Rb1+ 35.Rc1 Rxc1#.
-- Nxe5 allowed a safe pawn capture; Bc4 attacked Rb3 but was directly capturable by b5. Counterattacks need not force retreats.
-- Qb6 protected Bxf2 along c5-d4-e3-f2. After Nxg3, Qe3 attacked Rc1 through d2 and Ng3 through f3. Rxc4 saved the rook but left the knight.
-- Qe3 temporarily blocked Rb3's protection of g3. Qxg3+ vacated e3, restoring that rook's protection of the queen. Reconstruct batteries after every move.
-- After Kg1, Rb1+ forced Rc1; Rxc1# followed. Qg3 covered f2/h2; White's g2/h3 pawns obstructed escapes. Verify blocks and king captures before declaring mate.
-- No invalid attempts; finished with 14:20. Familiar development took mostly 3-9 seconds. The win does not certify every unmarked move or establish that the bishop sacrifice was necessary.
+- axb3 vacated a2 and cleared Ra8-a1. Bb1 blocked Re1's recapture. Qb2 genuinely attacked Ra1; retreat. Qa3 then allowed a direct rook capture of the queen.
+- Bc4 later attacked Rb3 but was capturable by b5. Qb6 protected Bxf2 along c5-d4-e3-f2.
+- After ...Bg3+ Nxg3 Qe3 Rxc4 Qxg3+, moving Qe3 off the third rank restored Rb3's protection of Qg3. ...Rb1+ Rc1 Rxc1# followed. Recheck batteries and forcing replies even when winning.
 
-## T14 semifinal 2 game 1: White vs Sonnet, mate win
-16.a3 Na6 17.Nf1 Nc5 18.Ng3 Bd7 19.Ba2 a4 20.Be3?! Rfc8?! 21.Rc1 h6 22.Nd2 Rab8 23.b4 axb3! e.p. 24.Nxb3 Nxb3?? 25.Bxb3?? Qxc1?? 26.Bxc1 Rxc1 27.Qxc1.
-- Ba2 reinforced d5 and freed Ra1. Be3 was inaccurate after ...a4; no best replacement supplied.
-- Nc5xb3 removed the sole screen between Rc1 and Qc7. Before Bxb3, test Rxc7 Rxc7 Bxb3: queen for rook. Fast automatic recapture missed it.
-- ...Qxc1 lost Q+R for R+B. Be3 reached c1 through d2; Qd1 then recaptured. Count the entire chain, ignoring opponent claims of equal trades.
-- Later Nh5 Nxh5 Qxd7 traded knight for bishop; ...Nf6's queen attack was answered by Qxb5. Bc4 saved Bb3 from ...Nc5 and defended d5.
-- f4 exf4 Qg4 g5 Qf5 f6 Bd3 Kh8 Qh7#: Bd3 supports h7 through e4/f5/g6 once Qf5 leaves. Rescan immediate mates after king moves.
+## T14 White vs Sonnet
+Semifinal: Ba2 reinforced d5 and freed Ra1; Be3?! after ...a4. Rc1/h6/Nd2/Rab8/b4 axb3 e.p. Nxb3 Nxb3?? removed the sole c-file screen. Before Bxb3??, Rxc7 Rxc7 Bxb3 wins queen for rook. ...Qxc1?? Bxc1 Rxc1 Qxc1 lost Q+R for R+B.
+- Bd3 supported h7 through e4/f5/g6 after Qf5 left; ...Kh8 allowed Qh7#.
+Round 3: Be3/Rac8/Nf5 Bxf5/exf5/Rfe8/Ba2/h6/Rc1/Kh8??/Qe2?/Bd8??/Qxb5?. No best replacements supplied.
+- Rc1/Re1 allowed ...Nd3's double-rook fork; Red1 removed it. Nc5 screened doubled rooks. Nb5 forked Rc7/Ba7. Bxd5 and Bxb7 won a rook on d5-c6-b7; later b-pawn promotion converted.
 
-## T14 round 3: White vs Sonnet, mate win
-18.Ng3 Bd7 19.Be3 Rac8 20.Nf5 Bxf5 21.exf5 Rfe8 22.Ba2 h6 23.Rc1 Kh8?? 24.Qe2? Bd8?? 25.Qxb5? Qb6 26.Qxb6 Bxb6.
-- Qe2/Qxb5 were mistakes despite Black's blunders; no best replacements supplied.
-- Rc1/Re1 permitted ...Nd3's double-rook fork; Red1 removed it. Nd2-c4 attacked Bb6/d6; ...Ba7 Nxd6 attacked Rc8. ...Rd8 Nb5 forked Rc7/Ba7. Nc5 screened Black's doubled rooks.
-- ...Nxd5 Bxd5 Rb7 Bxb7 won a rook on d5-c6-b7. Later Nd6 Bxd6 Rxd6 removed the final bishop; b-pawn promotion converted.
-
-## T14 round 2: Black vs DeepSeek, mate win
-18.Be3?! Bd7?! 19.Ng3 Rac8 20.Nf5 Bxf5 21.exf5 Rfe8 22.Bxc5 Qxc5 23.Nd4?? exd4 24.Qxd4 Qxd4 25.Bc2 Rxc2 26.Rxe7 Rxe7 27.Rc1 Qxf2+ 28.Kh1 Qxg2#.
-- Be3 had exchanged on c5: no Bxd4 recapture existed. Qxd4 offered an undefended queen; Re8 defended Be7 after ...exd4 opened the file.
-- Qc5-d4 cleared Rc8. Rc1's attack on Rc2 did not stop protected queen captures across rank two. Do not assume Kh1 was forced.
+## T14 Black vs DeepSeek
+Bxc5 Qxc5 preserved d6's blockade. Nd4?? exd4 Qxd4 Qxd4 won an undefended queen; no Be3 recapture remained. Clearing Qc5 enabled ...Rxc2 and protected Qxf2+/Qxg2#. An attack on Rc2 did not stop mate.
