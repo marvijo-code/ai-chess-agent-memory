@@ -3,7 +3,7 @@
 ## Move discipline
 - Start with the enemy's last move: changed attacks, pawn controls and opened lines. Scan checks, captures, forks, promotions and mates; repeat on the proposed final board.
 - Before Q/R moves, enumerate enemy pawn/knight captures and trace EVERY bishop ray through ALL pieces. Check, attack and pin never establish destination safety.
-- Name exact defenders, screens and LEGAL recapturers. Moving one can lose guards, blocks and escapes. Refresh pins after king or pinning-piece moves.
+- Name exact defenders, screens and LEGAL recapturers. A legal move can expose Q/R behind a relative pin. Refresh pins after king or pinning-piece moves.
 - One piece can screen TWO targets. Trace opened enemy Q/R/B rays to their endpoints. Before relocating Q, also list back-rank entry squares it guards.
 - Calculate FULL exchanges by values, including final recaptures and losses elsewhere. Attacking Q/R does not force retreat: test checks FIRST.
 - Track current pawn squares and forward AND capture-promotions. Blocked pawns still attack diagonally. A defended piece can lose to a cheaper capturer; verify my recapture is legal.
@@ -19,9 +19,8 @@
 
 ## Caro-Kann as Black
 - Classical: dxe4 Nxe4 Bf5 Ng3 Bg6 h4 h6 h5 Bh7! Bd3 Bxd3 Qxd3 e6, then Nd7/Ngf6/Be7. h6 supplies h7 AND controls g5.
-- T20 Sonnet: Qd5/Qxd5/cxd5 simplified; Rac8/f6 drove Be5 off g7, Kf7 unpinned g7. Rg6/Re3 doubled attacks on e6; Rc6 added a guard. Rxh6?? gxh6 won R for P. Victory does not validate earlier defense.
-- DeepSeek: Bg5?? hxg5 wins B for P. Nxh5 Nxh5 Rxh5 retained extra B but was marked; no verified replacement. Qh3? Rxh3 gxh3 Bxg5 exploited clear h-file.
 - Advance: Bf5 outside chain, Nd7/Ne7-f5/c5/Be7/O-O; cxd4/Nxd4/Rac8 pressures c3, f6/fxe5/Nxe5 opens f-file. Setup, not forced win.
+- T21 SF: after h4 h5 Bd3 Bxd3 Qxd3 e6 Nf3 Ne7, Bg5 pins Ne7 to Qd8 via f6. Nf5?? Bxd8 Kxd8 loses Q for B. Resolve the queen screen before following Ne7-f5; legality and attacks on d4/h4 do not make it safe.
 - T20 SF: Qe8 guarded Be7 AND b8. Qf7?? abandoned b8: Rb8+ Bf8 pinned B to Kg8. Then Qxf4 lost Q to g3xf4 after a 71-second think. Recheck back-rank checks and pawn captures before pursuing targets.
 - T19: Qxe5 Rxf2 Qxd5?? left e6 screening Qe7 from Re1. Rxc3+ Kb1 Rxb2+ Kxb2 Qxa3+ Kb1 exd5 moved Q with check BEFORE recapturing. bxc3 permits Qxa3+ Kb1 Qb2#, supported by Rf2.
 
@@ -44,7 +43,7 @@
 ## Note files
 - notes/accelerated-dragon.md - Rook captures and g-file mate.
 - notes/berlin-endgame.md - Open-file mate and king safety.
-- notes/caro-kann-advance.md - Back-rank guards, pawn captures and conversion.
+- notes/caro-kann-advance.md - Queen screens, back-rank guards and conversion.
 - notes/deepseek.md - Chigorin tactics and Dragon pawn order.
 - notes/four-knights.md - Double attacks, screens and clocks.
 - notes/qgd-exchange.md - Benoni screens and QGD defenders.
