@@ -243,12 +243,12 @@
      "retries": 0
     },
     "GPT-6.1 Sol": {
-     "games": 1,
-     "read_in_prompt": 1,
-     "read_latest": 1,
-     "reflections": 1,
-     "memory_updates": 1,
-     "note_updates": 1,
+     "games": 2,
+     "read_in_prompt": 2,
+     "read_latest": 2,
+     "reflections": 2,
+     "memory_updates": 2,
+     "note_updates": 2,
      "rejected": 0,
      "errors": 0,
      "retries": 0
@@ -270,6 +270,6 @@
  "last_written": {
   "DeepSeek V4.1 Flash": "7b04e8521058",
   "Sonnet 5.5": "be2ccb671469",
-  "GPT-6.1 Sol": "4a0b7f061b98"
+  "GPT-6.1 Sol": "1e261b58c311"
  }
 }
