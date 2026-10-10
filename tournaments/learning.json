@@ -170,9 +170,9 @@
      "games": 4,
      "read_in_prompt": 4,
      "read_latest": 4,
-     "reflections": 3,
-     "memory_updates": 3,
-     "note_updates": 3,
+     "reflections": 4,
+     "memory_updates": 4,
+     "note_updates": 4,
      "rejected": 0,
      "errors": 0,
      "retries": 1
@@ -181,9 +181,9 @@
      "games": 4,
      "read_in_prompt": 4,
      "read_latest": 4,
-     "reflections": 3,
-     "memory_updates": 3,
-     "note_updates": 5,
+     "reflections": 4,
+     "memory_updates": 4,
+     "note_updates": 6,
      "rejected": 0,
      "errors": 0,
      "retries": 1
@@ -192,8 +192,8 @@
   }
  },
  "last_written": {
-  "DeepSeek V4.1 Flash": "b3d3132f489a",
+  "DeepSeek V4.1 Flash": "4ee33e6c1018",
   "Sonnet 5.5": "aa754a787395",
-  "GPT-6.1 Sol": "dc5f480f79d2"
+  "GPT-6.1 Sol": "c1129cc56e05"
  }
 }
