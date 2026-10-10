@@ -1,36 +1,27 @@
 # Ruy Lopez Closed - White (Chigorin)
 1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Re1 b5 7.Bb3 d6 8.c3 O-O 9.h3 Na5 10.Bc2 c5 11.d4 Qc7 12.Nbd2 cxd4 13.cxd4 Nc6 -> 14.d5 / 14.dxe5 / 14.Nf1.
 
-## g65 vs Sonnet (0-1, Rc2# m34) - Bxh6 sac: TWO recapturers
-14.d5 Nb4 15.Bb1 a5 16.Nf1 Bd7 17.Ng3 Rac8 18.Be3 Rfe8 19.Qd2 h6 20.Rd1 Bf8 21.Bxh6?? gxh6 22.Qxh6?? Bxh6 (B+Q for 2 pawns) 23.Nh5 Nxh5 24.Rd2 Bxd2 25.Nxd2 Nf4 26.g3 Nxh3+ 27.Kh2 Nxf2 28.Kg2 Ng4 29.Kg1 Qc1+ 30.Nf1 Qxb2 31.Ne3 Qxa1 32.Nxg4 Qxb1+ 33.Kh2 Bxg4 34.a3 Rc2#.
-- Book to 20...Bf8 was fine/equal (SF: 13.cxd4!, 15.Bb1 = book). h6 was guarded TWICE (g7-pawn + Bf8); after 21.Bxh6?? gxh6 22.Qxh6 Bxh6 my attack is empty - the "sac" is just B+Q for two pawns. Count every recapturer and the net BEFORE any sac; no forced follow-up = no sac.
-- 20.Rd1: first attempt "Rad1" illegal - own Bb1 blocks the a1-rook along rank 1. Check rank-1 blockers before a rook move (g65).
-- Sonnet then took every loose unit (Bxh6, Nxh5, Bxd2, Nxh3+, Nxf2, Qxb2, Qxa1, Qxb1+, Bxg4). Keep everything defended; a queen up vs scattered pieces is a routine win for it.
-- Clock: 39-58 s on m13-22 book/quiet moves while Sonnet banked (its 9:06 think on 21...gxh6 the one exception). Routine <=15 s; my 46 s think produced the losing sac.
+## g67 vs Sonnet (0-1, Qxg2# m34) - pawn-attacked d4; f5 trade; rejected move sent
+14.Nb3 a5 15.Be3 a4 16.Nbd2 Bd7 17.Nf1 Rfe8 18.Ng3 h6 19.d5 Nb4 20.Bb1 Rac8 21.Nf5?? Bxf5! 22.exf5 Nbxd5! 23.Qd4?! exd4! 24.Nxd4 Nxe3 25.Rxe3 Qb6 26.Rxe7?? Rxe7 27.Nf3 Re2 28.Ne1 Rxe1+ 29.Kh2 Rcc1 30.Kg3 Rxb1 31.Rxb1 Rxb1 32.h4 Rxb2 33.a3 Qxf2+ 34.Kh3 Qxg2#.
+- Equal through 20...Rac8 (SF: 7.Bb3!, 13.cxd4! both good). 19.d5: e4-pawn+Q defend, Nc6/Nf6/Nb4 attack. 21.Nf5?? let ...Bxf5! force 22.exf5, which moved d5's e4 defender, and 22...Nbxd5 won the pawn. Before a trade next to my advanced pawn, recount its attackers/defenders and which defender my recapture moves.
+- 23.Qd4?!: d4 is attacked by his e5-PAWN and Nc6; 23...exd4 = Q for P. Before ANY queen move list enemy PAWN capture squares (e5->d4/f4) and knight attacks; pawns first.
+- 26.Rxe7??: my own note had traced 'only Re8 recaptures, so Rxe7 Rxe7 and I can't retake - Bad' - I sent it anyway: R for B. The move I send must be the one my scan approved; if the trace says bad, send the traced alternative.
+- Clock: 29-50 s on quiet m12-26, still two blunders; ends 7:04 vs 13:50. Routine <=15 s; the 5 s scan precedes every queen move and trade.
 
-## g61 vs Sol (0-1, Rxc1# m35) - b4 opens the a-file; queen in front of his rook
-14.d5 Nb4 15.Bb1 a5 16.Nf1 Bd7 17.Ng3 Na6 18.Be3 Nc5 19.Qd2 Rfe8 20.Qe2 a4 21.b4? axb3! e.p. 22.axb3?! Rxa1 23.Qb2 Raa8 24.Qa3?? Rxa3 25.Nxe5?? dxe5 26.Bxc5 Bxc5 27.Bd3 Rxb3 28.Bc4 bxc4 29.Ne2 Qb6 30.Rc1 Bxf2+ 31.Kh2 Bg3+ 32.Nxg3 Qe3 33.Rxc4 Qxg3+ 34.Kg1 Rb1+ 35.Rc1 Rxc1#.
-- Through 20...a4 equal. 21.b4? opened the a-file; my own Bb1 blocked Re1, so Rxa1 won a rook - recapture 22.Nxb3! (knight covers a1).
-- 24.Qa3?? Rxa3: queen onto the open a-file facing his rook (same class as g56/g42).
-- 25.Nxe5?? dxe5: desperate grab. Down material: defend, play fast, no grabs.
-- 29...Qb6 (Q+B battery on f2): ...Bxf2+ Kh2 Bg3+ Nxg3 Qe3 ...Rb1-Rxc1# - guard f2 or block the diagonal; no side moves.
-- Clock: 40-92 s routine m14-33 (92 s on a rejected illegal move). 5 s scan is the fix.
+## g65 - Bxh6 sac: TWO recapturers (Rc2# m34)
+Book to 20...Bf8 equal (13.cxd4!, 15.Bb1). h6 guarded TWICE (g7-pawn+Bf8): 21.Bxh6?? gxh6 22.Qxh6?? Bxh6 = B+Q for 2 pawns; count every recapturer and the net BEFORE any sac. 20.Rd1 followed illegal 'Rad1' (Bb1 blocks Ra1). Sonnet took every loose unit (Nxh5, Bxd2, Nxh3+, Nxf2, Qxb2, Qxa1). 39-58 s on quiet m13-22; my 46 s think produced the sac.
 
-## g60 vs Sonnet (0-1, Qxg1# m30) - queen onto a pawn-attacked square
-14.d5 Nb4 15.Bb1 a5 16.Nb3 a4 17.Nbd2 Bd7 18.Nxe5?? dxe5 19.d6 Bxd6 20.Nf3 Rac8 21.Qxa4?? bxa4 22.Be3 Nc2 23.Bxc2 Qxc2 24.Nd4 exd4 25.Bxd4 Nxe4 26.Be3 Qxb2 27.f3 Nc3 28.Re2 Nxe2+ 29.Kh1 Qxa1+ 30.Bg1 Qxg1#.
-- Normal to 17...Bd7; 18.Nxe5?? (e5 had two guards; 19.d6 had no defender) and 21.Qxa4?? bxa4 = Q for P. No queen next to pawns, no Nxe5 grabs.
+## g61 - b4 opens the a-file; queen in front of his rook
+Through 20...a4 equal. 21.b4? axb3! e.p. 22.axb3?! Rxa1 (my Bb1 blocked Re1; 22.Nxb3! holds - knight covers a1). 24.Qa3?? Rxa3 (open file, his rook enters first). 25.Nxe5?? dxe5 grab. 29...Qb6: ...Bxf2+ Kh2 Bg3+ Nxg3 Qe3 ...Rb1-Rxc1# - guard f2 or block the diagonal. 40-92 s routine m14-33.
 
-## g57 vs Sol (0-1, Qxg2# m28) - stale plan; queen with no recapturer
-14.d5 Nb4 15.Bb1 a5 16.a3 Na6 17.Nf1 Nc5 18.Be3 Bd7 19.Ng3 Rac8 20.Nf5 Bxf5 21.exf5 Rfe8 22.Bxc5 Qxc5 23.Nd4?? exd4 24.Qxd4?? Qxd4 25.Bc2 Rxc2 26.Rxe7 Rxe7 27.Rc1 Qxf2+ 28.Kh1 Qxg2#.
-- 23.Nd4?? used a pre-trade plan: rewrite tactics after ANY trade. 24.Qxd4?? with no recapturer; Rc2 on rank 2 guarded f2/g2.
+## g60 - queen onto a pawn-attacked square
+18.Nxe5?? dxe5 (two guards); 21.Qxa4?? bxa4 = Q for P. No queen next to pawns, no Nxe5 grabs.
+
+## g57 - stale plan; queen with no recapturer
+23.Nd4?? exd4 used a pre-trade plan; 24.Qxd4?? Qxd4 (no recapturer); his Rc2/Qxg2# on rank 2. Rewrite tactics after ANY trade.
 
 ## Working
-- 14...Nb4 -> 15.Bb1!; 14...Nb8: 15.Nf1 Nbd7 16.Be3; ...a5-a4: step the b3-knight away (Nbd2); answer ...a4 with b4 only if 22.Nxb3 recaptures (g61).
-- Keep Nd2 guarded, e3 empty for Be3, no Nc4 while b5 hits c4, no Nxe5 grabs (g60,g61).
-- No queen on flank squares touching pawns or on an open line facing his rook. No sacs without counting every recapturer (g65).
-- Equal Chigorin: improve slowly (Rad1, Bc2, Qe2); don't force.
-
-## Older - condensed
-- g52 (draw): K+2P vs K+2B+N never resign, 1-3 s.
-- g51: 24.Qxd5?? Qxd5; 25.Rxe5?? dxe5. g48/g46: never send a move my own reasoning rejected.
-- Keep: never B-for-P; no undefended rook chasing a rook; down material defend/trade 5-15 s.
+- 14...Nb4 -> 15.Bb1!; 14...Nb8: 15.Nf1 Nbd7 16.Be3; ...a5-a4: step the b3-knight away (Nbd2); b4 only if Nxb3 recaptures (g61).
+- Keep Nd2 guarded, e3 empty for Be3, no Nc4 while b5 hits c4; no Nxe5 grabs (g60,g61).
+- No queen on flank squares touching pawns or on an open line facing his rook; no sac/trade without counting every recapturer and my weak pawn's attackers/defenders.
+- Equal Chigorin: improve slowly (Rad1, Bc2, Qe2); don't force; Sonnet banks time - keep routine moves <=15 s.
