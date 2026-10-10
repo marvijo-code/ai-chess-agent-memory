@@ -7,7 +7,7 @@
 - Refresh pins after either endpoint moves. Leaving one bishop ray may enter another behind the SAME screen. Relative pins permit moves that lose Q/R.
 - Before moving a screen, name BOTH endpoints and exposed targets. Attacking the pinning bishop does not stop it taking my queen.
 - Calculate FULL exchanges, including final KING recaptures and losses elsewhere. Attacking Q/R does not force retreat: test checks AND captures of the attacker.
-- Track pawn squares and forward AND capture-promotions. Blocked pawns attack diagonally; advancing a supporting pawn can abandon its target. Verify legal recaptures after cheaper captures.
+- Track pawn squares and forward AND capture-promotions. Blocked pawns attack diagonally; advancing a supporting pawn can abandon its target. Verify replacement guards on the final board.
 - After EVERY capture, refresh the capturer's attacks and lines vacated by its origin. Trust the board over commentary, wins and sparse marks.
 - When forked, compare saving the higher-value piece WITH defending the other target. Before king/Q moves, list guards and screens LOST, including back-rank entries.
 - Before a fork/discovered attack, test enemy checks FIRST. A centralized knight may be the only screen against a mating rook entry.
@@ -20,13 +20,12 @@
 - Use protected checks and restricted exits. Check stalemate after EVERY quiet move/capture; preserve pawn tempi against an immobilized king.
 
 ## White openings
-- T22 Classical Caro: dxe5 opens d-file; Qxd3 Rxd3 Nd5 attacks Bf4. Rd7?!/Rxb7?! missed an opportunity: examine c4 against Nd5 guarding Be7; no best replacement verified. Bf6?! exf6 wins B for P. ...c5 abandons d5: Rxd5. Rd8 needs Bg7 before Rh8#; Nf5 guards Bg7/h6, h5 bars g6.
-- T22 SF: ...Bh5 Qe2 Nc4 Ne5?? Bxe2 Rxe2 loses Q for B. Nf3 screened Bh5-g4-f3-e2; Qe2 did NOT unpin it. Answer ...Nc4's attack on Bd2 without exposing Q. No best replacement verified.
-- Finish: Bf4 Rd8 Nxf7?? Re1#. Ne5 screened Re6-e1; the fork of Qd6/Rd8 plus discovered Bf4-Qd6 attack could not answer mate. Own f2/g2/h2 denied flights.
+- T22 SF2 Sonnet, d3 Ruy: ...Nb4 Bb1 d5 e5!; Qd3 threatens Qh7#, but ...g6! answers it. ...Bxf3 Rxd8 Rxd8 gxf3! preserves Re1's e5 guard. ...Rd5? f4 Nd4 Be4! saves Bc2 with tempo. Bxd4?! Rxd4 Bxb7! permits ...Rb4/Rxb2; no verified better move. Bd5 guards a2: ...Rxa2 Bxa2 wins R. Finish: e6/Rf7+; e7 clears Ba2-f7, replacing the pawn's rook guard; e8=Q#.
+- T22 Classical Caro: dxe5 opens d-file; Qxd3 Rxd3 Nd5 attacks Bf4. Rd7?!/Rxb7?!: examine c4 against Nd5 guarding Be7; no best replacement verified. Bf6?! exf6 wins B for P. ...c5 abandons d5: Rxd5. Rh8# needs Bg7 guarding h8/h6, Nf5 guarding Bg7 and h5 barring g6.
+- T22 Stockfish: ...Bh5 Qe2 Nc4 Ne5?? Bxe2 Rxe2 loses Q for B. Nf3 still screened Bh5-e2. Answer the attack on Bd2 without exposing Q. Finish: Bf4 Rd8 Nxf7?? Re1#; Ne5 screened Re6-e1. Fork/discovered attack could not answer mate; f2/g2/h2 denied flights.
 - T21 d3 Ruy: ...d5 e5 Ne4 Nc3 Nxc3 bxc3! Nxe5! uncovers Bd7-c6-b5. Rxe5 Bxb5 exchanges N for B. Rxd5?? Qxd5 loses R: OWN d4 blocks Qd1-d5. Assess a safe rook retreat.
 - Ng5 g6 Ne4? Qxe4 Qxe4 Rxe4 loses N: Re8 backs Qd5's capture. Fork threats do not prevent capturing the knight.
 - Chigorin Nb3/Be3/Nbd2 and central exchanges kept material level. Bb1/e5 clears b1-h7; Qe4-h7 vacates its own screen. ...dxe5 allowed Qh7+ Kf8 Qh8#; no earlier forced win established.
-- ...a5 frees a6: d5 Nb4 Bb1 a5 a3 Na6 Nc5 does not trap N. Qc7/Rc8: Bc2?? Qxc2 Qxc2 Rxc2 loses B.
 
 ## Black openings
 - Caro Classical: dxe4 Nxe4 Bf5 Ng3 Bg6 h4 h6 h5 Bh7! Bd3 Bxd3 Qxd3 e6, then Nd7/Ngf6/Be7. h6 supplies h7 AND controls g5.
@@ -45,7 +44,7 @@
 
 ## Note files
 - notes/accelerated-dragon.md - Rook captures and g-file mate.
-- notes/berlin-endgame.md - Clearance, recaptures and king safety.
+- notes/berlin-endgame.md - d3 Ruy, bishop tempi and promotion guards.
 - notes/caro-kann-advance.md - A-file mate and queen screens.
 - notes/deepseek.md - Classical Caro, Dragon liquidation and stalemate.
 - notes/four-knights.md - Double attacks, screens and clocks.
