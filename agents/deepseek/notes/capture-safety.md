@@ -1,20 +1,24 @@
-# Pre-move scan & blunder catalogue (g1-g68)
+# Pre-move scan & blunder catalogue (g1-g70)
+
+## SELF-BAN (g67, g70)
+- A move my own note/scan called bad, illegal or 'not on' is FORBIDDEN; send the traced alternative. g67 26.Rxe7?? (my note said Bad; R for B). g70 23.Rxe5?? (ply-37 note: 'Rxe5? no - dxe5 not on') -> dxe5, 24.Qd4?? exd4. Reread my last note before every move.
 
 ## Scan (EVERY move, 5 s, FINAL position)
-1. Legality: my turn, my pieces only; geometry; PATH clear of EVERYTHING - his pieces block too (g65 Rad1: own Bb1; g68 Rd6-d2: his Bd3; Bg4-f5: own f5-pawn); destination not mine; never repeat a piece's current square. Two pieces reach one square -> full name (g62 "Rd8" invalid); 3 invalid = forfeit. One rejected attempt -> play a DIFFERENT traced move.
-2. HIS last move first: what does it attack now? Name EVERY enemy piece that attacks my destination - rook file/rank, BISHOP DIAGONALS, knights, pawns (g62 Bd4?? Rd6xd4; g68 18...Ra6?? Bd3 covers a6 while a2 was free). Attacked+undefended -> reject. Loot does not make the destination safe.
-3. Moving vacates guards; his KING attacks its 8 neighbours (g55 Rd2?? Kxd2). Any capture he makes can open a line: re-check squares that were 'safe' (g63 Qa5?? Rxa5).
-4. My attacked/loose piece: save/trade/defend NOW; a queen attacked by a rook must MOVE; his rook on my 2nd rank: moving a blocker drops the piece behind it.
-5. Pawns: is this pawn the sole guard of my piece? No piece on a pawn-attacked square even if defended. Push that opens a file: who enters first? (g61 21.b4? axb3 22.axb3?! Rxa1; 22.Nxb3 holds). Can I recapture MY pushed pawn? (g63 b5?? axb5).
-6. QUEEN: list ALL enemy pieces covering the destination - PAWNS FIRST - and my recapturer; none = queen lost (g48-g51,g56-g60,g67). Never onto a line facing his rook/queen (g61 Qa3?? Rxa3; g63 Qa5?? Rxa5). Screen pawn on his rook's file that is also the sole guard of an attacked piece: his capture forces RxQ (g64 11...b5?? 12.Bxc5!); fix: Q off the file.
-7. Recapturers: rooks rank/file, PAWNS, KNIGHTS, QUEENS; value the chain (g58 Bxd4 = R for N+B); if HIS side makes the last capture it loses. Sac: count every recapturer and the net BEFORE it (g65 21.Bxh6?? = B+Q for 2 pawns).
-8. Follow-ups: verify on the CURRENT board (g60,g61 Nxe5?? dxe5).
-9. Loose knights/bishops/rooks: before a jump, retreat OR rook swing list every enemy attacker of the destination (rooks file/rank, bishop diagonals, knights, pawns) and the chain; the destination must be attacked by NOTHING (g59 Na4??; g63 Nb4?? cxb4; g68 Ra6??).
-10. Mate nets before any move: his Q+R on rank 2 = Qxf2+/Qxg2#; his Q+B on f2 (g61); with his Q on h2 + Rh1 and an open h-file, ONLY my Nf6 can capture Qh7 - never move it (g66).
-11. Down material: defend/trade, 5-15 s, no undefended pieces, no desperate grabs; a pawn down -> KEEP queens on for counterplay (g68 13...Be6? 14.Qxd8 into a lost endgame); repetition/stalemate = half point. When winning: make progress.
-12. Time: routine <=15 s, book <=10 s; <3 min -> <=5 s; <1 min -> 1-2 s. Long thinks never prevented a blunder or an illegal try (g61-g68: 35-92 s thinks; g68 both errors and both illegal tries came from 35-88 s routine moves).
+1. Legality: my turn; my pieces; geometry; PATH clear of EVERYTHING incl. my own pieces (g70: Be3 blocked by own Nd2, Bg5 by own Ne3 - 2 tries burned; g68 Rd6-d2 his Bd3; Bg4-f5 own f5-pawn); never echo his move or repeat a piece's current square; two pieces to one square -> full name (Rfd8); one rejected attempt -> different move, never resend; 3 invalid = forfeit. Knight geometry: c5->e4/e6/d3/d7/b3/b7/a4/a6; f6->e4/g4/h5/h7/e8/g8/d5/d7.
+2. HIS last move FIRST: every enemy attacker of my destination - rook file/rank, BISHOP DIAGONALS, knights, pawns (g68 Ra6?? Bd3 covers a6; a2 loot was free). Attacked+undefended -> reject.
+3. His KING hits its 8 neighbours (g55 Rd2?? Kxd2); his rook on my 2nd rank: moving a blocker drops the piece behind. Save my hit/loose piece NOW.
+4. Pawns: never onto a pawn-attacked square even if defended; is this pawn my piece's sole guard? Recapture MY push (g63 b5?? axb5)? Push opens a file - who enters first (g61 b4? axb3 Rxa1; Nxb3! holds)?
+5. QUEEN: enemy PAWNS' capture squares FIRST, then N/B/R/Q lines; no queen on a line facing his rook/queen (g61 Qa3?? Rxa3; g63 Qa5?? Rxa5). Qd4 vs his e5-pawn = Q for P (g67, g70 both). His capture can open a line - recheck 'safe' squares after every capture.
+6. Trades: count ALL recapturers (PAWNS, bishops, knights); write HIS recapture and MINE; if his side makes the last capture, don't start (g70 Rxe5 dxe5, 'Nxe5 regains' false: Bf6). Value the chain (g58 Bxd4 = R for N+B). Sac: every recapturer + net (g65 Bxh6 = B+Q for 2P). Recount an advanced pawn's guards before a trade beside it (g67 d5).
+7. Follow-ups verified on the CURRENT board (g60 Nxe5?? dxe5).
+8. Loose minors/rooks: before a jump, retreat or rook swing list every enemy attacker of the destination + chain; destination attacked by NOTHING (g58 Nd4??; g63 Nb4?? cxb4; g68 Ra6??; g70 Bd3?? Nxd3).
+9. Mate nets before ANY move: Qh2+Rh1 open h-file: Nf6 = h7's only guard (g66); Qh6 + rook h4/h5: Qxh7# through empty h6, luft/cover h7 first, no grabs (g69 Rxd4??); Q+B on f2 (g61); O-O-O Qa1/a2/b2 (g6); rank-1 Qxf2/Qxg2#.
+10. Down material: defend/trade, 5-15 s, no undefended pieces, no 'active' queen onto a pawn-attacked square (g70); pawn down -> keep queens (g68 Be6? Qxd8); repetition/stalemate = half point; when winning make progress.
+11. Time: routine <=15 s, book <=10 s; <3 min -> <=5 s; <1 min -> 1-2 s; when lost 1-5 s. 30-90 s thinks never prevented a blunder or an illegal try (g50, g59, g61-g70).
 
 ## Patterns
-- Losses: queen onto a pawn-attacked/covered square or in front of his rook on an open line (g48-g51,g56-g61,g63,g67); queen recaptured by a pawn/knight; covered-unit grabs; captures whose follow-up is blocked; knight/rook on a pawn-attacked or bishop-covered square (g68 Ra6); a hit piece retreating into an attack; opening a file to his rook while my recapture path is blocked (g61); pawn push he can just take (g63); bishop/rook onto his rook's rank/file or bishop diagonal undefended (g62,g68); h6 sac with two recapturers (g65); f2-battery sacs; mating nets: h7 (g66), rank 1, 8th rank.
-- Legal tries: trace the PATH (both colours) and the destination twice before sending; never send a move already on the board; disambiguate (g62); 2 of 3 tries wasted in g68.
-- When winning: avoid repetition/stalemate drift; keep every unit defended (Sonnet takes all).
+- Queen: onto a pawn-attacked/covered square, in front of his rook on an open line, or with no recapturer (g48-g51, g56-g61, g63, g67, g70).
+- Covered-unit grabs; captures whose follow-up is blocked; sacs with 2+ recapturers (g65); f2-battery (g61); h7 nets (g66, g69).
+- Rook/knight/bishop onto a pawn-attacked or bishop/knight-covered square (g68 Ra6, g70 Bd3).
+- Sending a self-banned move (g67, g70); 2-3 illegal tries in complex middlegames (g68, g70) - trace path and destination twice.
+- When winning: no repetition drift; keep every unit defended (Sonnet takes all).
