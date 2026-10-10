@@ -1,4 +1,4 @@
-# Pre-move scan & blunder catalogue (g1-g78)
+# Pre-move scan & blunder catalogue (g1-g79)
 
 ## SELF-BAN
 - A move my own note/scan called bad, illegal or 'not on' is FORBIDDEN; send the traced alternative (g67 26.Rxe7??; g70 23.Rxe5??; g74 15...Nxh5??; g77 25.Nf5+). Reread my last note before every move.
@@ -12,9 +12,10 @@
 6. Loose minors/rooks: before a jump, retreat or rook swing list every enemy attacker of the destination + chain (g58 Nd4??; g63 Nb4??; g68 Ra6??; g70/g73 Bd3??; g78 23.Re2?? Rxe2 - undefended rook onto his rook's rank).
 7. Mate nets before ANY move: Qh2+Rh1 open h-file (Nf6 = h7's only guard, g66); Qh6+rook h4/h5 = Qxh7# (g69, g74); Q+B on f2 (g61); Q+Bc6 long diagonal = Qxg2# (g77 40.gxf4?? Qg2#); O-O-O Qa1/a2/b2 (g6); rank-1 Qxf2/Qxg2#.
 8. Down material: defend/trade, 5-15 s, no undefended pieces; pawn down -> keep queens (g68 Be6?, g75); repetition/stalemate = half point; when winning make progress; never resign.
-9. Time: routine <=15 s, book <=10 s; <3 min -> <=5 s; <1 min -> 1-2 s; lost 1-5 s. Long thinks never prevented a blunder or an illegal try (g50-g78; g77 43-46 s routine; g78 38-48 s routine m13-24).
+9. Time: routine <=15 s, book <=10 s; <3 min -> <=5 s; <1 min -> 1-2 s; lost 1-5 s. Long thinks never prevented a blunder or an illegal try (g50-g79; g77 43-46 s routine; g78 38-48 s; g79 67 s on 20...gxh5??).
 
 ## Patterns
+- Screen: my Q and his Q/R on one rank/file - moving the last pawn/knight between them loses the queen (g79 20...gxh5?? 21.Qxe6); move the queen off the line first.
 - Queen: onto a pawn-attacked/covered square, in front of his rook on an open line, or with no recapturer (g48-g73).
 - Checks with an undefended piece onto a square adjacent to his king (g77 28.Qh6+?? Kxh6); desperate sacs when level or down (g77 25.Nf5+).
 - 'Active/centralizing' piece onto a pawn's capture square (g73 Be5?? dxe5); B-for-N that gives him a check-recapture with centralization (g77 20.Bxc5?? Qxc5+).
