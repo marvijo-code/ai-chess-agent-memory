@@ -1,30 +1,36 @@
-# Caro-Kann: pawn controls, forcing clearance and mate
+# Caro-Kann: simplification, rook conversion and forcing clearance
+
+## T20 semifinal 2 Armageddon: Black vs Sonnet, mate win
+Classical: e4 c6 d4 d5 Nc3 dxe4 Nxe4 Bf5 Ng3 Bg6 h4 h6 h5 Bh7! Bd3 Bxd3 Qxd3 e6 Bf4 Nd7 O-O-O Ngf6 Nf3 Be7 Ne5 Nxe5 Bxe5 O-O Ne4 Nxe4 Qxe4 Qd5 Qxd5 cxd5.
+- ...h6 supplies h7 and controls g5. Knight and queen exchanges reduced attacking material; cxd5 opened the c-file and gave connected central pawns. No opening advantage established.
+- Rh3 Rac8 Rg3 f6! Bf4 Kf7: f6 drove Be5 off its g7 diagonal. Kf7 removed g7's absolute pin on the g-file and brought the king toward the center. Kb1 Rfd8 c3 Bd6 Bxd6 Rxd6! reached an equal-material two-rook ending.
+- f4 f5?! b4 Rc4 a3 Rdc6 Kb2 Rc7 Kb3 Kf6?! a4?! a6?! Rdd3?! Rf7?? Rde3? Ke7? Rg6! Rc6. These marks do not supply a verified best replacement or refutation of Rf7. Do not memorize this maneuvering sequence as sound merely because I won.
+- Rg6 attacked e6 along g6-f6-e6 while Re3 attacked it up the e-file; Ke7 was its only defender. Rc6 added the needed second guard.
+- Rxh6?? gxh6! won a rook for a pawn. The g7 pawn controlled h6 and was unpinned with Ke7. Sonnet called h6 loose despite that capture. Check pawn guards independently; its prior attacking plan did not establish capture safety.
+
+Conversion with two rooks against one:
+- Rg7/Rg4/Rg3 created targets; Rh4 attacked h5. Answer b5 with axb5 and axb5 with Rc4 before collecting h5: the pawn attacks on Rc6 required attention. After g3, Rxh5 escaped the pawn attack and won h5.
+- Rh2/h5/h4 gxh4 Rxh4 removed kingside pawns. b6 Rc6 Kb4 Rxb6+ collected the advanced pawn with check. Rc6+ was protected by b7; later Rb6 needed king support, supplied by Kc6.
+- With White Ka4/Rf3, c3 blocked the rook's route to a3. Rh1 threatened Ra1#; c4 cleared that route, allowing Ra1+ Ra3 Rxa3+ Kxa3. Recognize a forced defensive interposition as a route to safe liquidation.
+- dxc4 created a passer; c3/c2/c1=Q followed. After d5+ Kc5 dxe6, Qb2# was protected by Rb6 along the clear b-file. Check mate before collecting more pawns.
+- No invalid attempts; finished 5:40 from 7:30 plus increment. Fast opening/exchanges preserved time; some routine conversion moves still took 26-33 seconds.
 
 ## T20 round 2: Black vs DeepSeek, Classical, mate win
-1.e4 c6 2.d4 d5 3.Nc3 dxe4 4.Nxe4 Bf5 5.Ng3 Bg6 6.h4 h6 7.Nf3 Nd7 8.h5 Bh7! 9.Bd3 Bxd3 10.Qxd3 e6 11.O-O Ngf6 12.c4 Be7.
-- ...h6 prepares the bishop's h7 retreat while retaining control of g5. Use ...Nd7/...Ngf6/...Be7 to develop. This game supplies a usable setup, not a forced opening advantage.
-13.Bg5?? hxg5! 14.Nxg5 Nxh5 15.Nxh5 Rxh5? 16.Qh3? Rxh3 17.gxh3 Bxg5.
-- Bg5 landed on h6's pawn-capture square. Nxg5 recovered a pawn, not the lost bishop. After the knight exchange on h5, Black still had an extra bishop; White's claims of balanced material were false.
-- ...Nxh5 moved Nf6 off Be7-f6-g5. ...Rxh5 cleared h8 and attacked Ng5; h7/h6 were empty. Qh3 landed on that rook's clear file. After the rook-for-queen exchange, ...Bxg5 took White's last minor.
-- ...Rxh5 was marked a mistake. The opponent's queen error does not validate it; no verified best replacement or refutation supplied. Do not memorize the capture sequence as forced or best.
-18.f4 Bf6 19.Rfe1 Bxd4+ 20.Kg2 Qf6 21.Kg3 O-O-O 22.Re4 Nc5 23.f5 Nxe4+ 24.Kf3 Qxf5+ 25.Kg2 Qf2+ 26.Kh1 Ng3#.
-- Retreat the attacked bishop, take d4 with check, then castle to connect king safety with Rd8's defense of Bd4. Nc5 attacked Re4 while the bishop stayed defended.
-- Kf3 attacked Ne4, but ...Qxf5+ took a pawn with tempo and guarded e4. ...Qf2+ was protected by Bd4-e3-f2 and forced Kh1. ...Ng3# used Qf2's guard of g3 and control of g1/g2/h2; knight check cannot be blocked.
-- No invalid attempts; finished with 14:18. Opening moves took 3-7 seconds, but ...Nxh5 took 49. DeepSeek spent 34-46 seconds on several material-losing moves; longer thought did not fix capture accounting.
+Same setup with Nf3 before h5, then Bd3 Bxd3 Qxd3 e6 O-O Ngf6 c4 Be7.
+- Bg5?? hxg5! Nxg5 loses B for P. Nxh5 Nxh5 Rxh5? retained extra B but was marked a mistake; no verified best replacement or refutation supplied.
+- Nxh5 cleared Be7-f6-g5. Rxh5 cleared h8 and attacked Ng5. Qh3? Rxh3 gxh3 Bxg5 exchanged R for Q and removed White's last minor. Sparse marks and the win do not validate Rxh5.
+- f4 Bf6 Rfe1 Bxd4+ Kg2 Qf6 Kg3 O-O-O Re4 Nc5 f5 Nxe4+ Kf3 Qxf5+ Kg2 Qf2+ Kh1 Ng3#.
+- Castling supplied Rd8's guard of Bd4. Qxf5+ answered the attack on Ne4 with check and defended e4. Bd4 protected Qf2; Qf2 guarded g3 and covered g1/g2/h2.
 
-## T19 final: Black vs depth-5 Stockfish, Advance, mate win
-Bf5 outside chain; a3 e6 h4 h5 Bd3 Bxd3 Qxd3 Nd7 c3 Ne7 Nd2 Nf5 Ndf3 c5 Ne2 Be7 Bg5 O-O O-O-O cxd4 Bxe7 Qxe7 Nexd4 Nxd4 Qxd4 Rac8 Qe3 f6 Rhe1 fxe5 Nxe5 Nxe5 Qxe5 Rxf2.
-- ...cxd4/Nxd4 opened c-file and pinned c3 to Kc1. ...f6/fxe5/knight exchange opened f-file. Coordinate invasion on both files.
-21.Qxd5?? Rxc3+ 22.Kb1 Rxb2+ 23.Kxb2 Qxa3+ 24.Kb1 exd5.
-- e6 screened Qe7 from Re1: immediate ...exd5 exposed my queen. Checks relocated it to a3 BEFORE the pawn recapture.
-- 22.bxc3 permits Qxa3+ Kb1 Qb2#, supported by Rf2, which also excludes c2/d2. Calculate acceptance and refusal of sacrifices.
-- Actual ...Rxb2+ cleared b2; ...Qxa3+ removed a3. Rc3 protected Qa3 and controlled c-file. Result: Q+R against two rooks.
-- Qa3 supported Rxe3; Rb3+/Qb2+/Qb1+ drove king to e2. Rb2 pinned Rd2 with Qb1 guarding b2; Rxb2 Qxb2+ simplified. Kg6-f5-g4xg3 supported Qg2#.
-- Shallow Stockfish blundered; do not assume infallibility. Finished 9:34; forcing moves took 51-54 seconds, routine conversion 26-35. Tighten budgets.
+## T19 final: Black vs shallow Stockfish, Advance, mate win
+Bf5 outside chain; Nd7/Ne7-f5/c5/Be7/O-O. cxd4/Nxd4/Rac8 opened c-file against Kc1; f6/fxe5/knight exchange opened f-file.
+- Qxe5 Rxf2 Qxd5??: e6 screened Qe7 from Re1, so immediate exd5 exposed my queen. Rxc3+ Kb1 Rxb2+ Kxb2 Qxa3+ Kb1 exd5 relocated Q with check BEFORE recapturing.
+- bxc3 permits Qxa3+ Kb1 Qb2#, supported by Rf2. Calculate acceptance and refusal of sacrifices. Actual checks left Q+R against two rooks.
+- Qa3 supported Rxe3; Rb3+/Qb2+/Qb1+ drove king to e2. Rb2 pinned Rd2 with Qb1 guarding b2; Rxb2 Qxb2+ simplified. King support enabled Qg2#.
 
-## Earlier promotion, destination and pin failures
-- T12 Advance: ...g6 hxg6 fxg6 removed f7's control of e6. e6/e7 then attacked Qd7/Rf8. Calculate central breakthroughs before shelter pushes.
-- Bg5 Nxc2 Re6 Nxa1 Qxd5? Rad8?? exd8=N Qc7 Rxe8+ Kg7 Rg8#. Forking a rook did not stop capture-promotion. Re6's departure opened Qd5-e6-f7-g8; Nd8 controlled f7. Ample clock, missed geometry.
-- After Kh1, Bc5 no longer pinned Nd4. Qg4 Qe7?? Nxe7+ Rxe7 lost Q for N. A recapture does not make a knight-attacked queen square safe.
-- Ne4+ Ke3 f4+ abandoned f5's guard of Ne4, allowing Kxe4; f6 did not defend e4.
-- c5 attacks b6/d6: Qd6?? cxd6 loses Q. Qe2 can absolutely pin Ne5 to Ke8; ...f6 support or ...d4 attacking B does not release that pin.
+## Earlier pawn, promotion and pin failures
+- g6 hxg6 fxg6 removes f7's control of e6; calculate e6/e7 attacks before shelter pushes.
+- Re6's departure opens Qd5-e6-f7-g8. Rad8?? exd8=N can capture-promote with tempo; a rook fork does not stop promotion.
+- Kh1 can release Nd4's pin: Qe7?? Nxe7+ Rxe7 loses Q for N.
+- Ne4+ Ke3 f4+ abandons f5's guard of Ne4, allowing Kxe4; f6 does not defend e4.
+- c5 controls b6/d6: Qd6?? cxd6. Qe2 can absolutely pin Ne5 to Ke8; f6 support or d4 attacking B does not release that pin.
