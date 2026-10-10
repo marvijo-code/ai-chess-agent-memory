@@ -19,17 +19,16 @@
 
 ## Caro-Kann as Black
 - Classical: dxe4 Nxe4 Bf5 Ng3 Bg6 h4 h6 h5 Bh7! Bd3 Bxd3 Qxd3 e6, then Nd7/Ngf6/Be7. h6 supplies h7 AND controls g5.
-- T20 Sonnet: knight/queen exchanges with Qd5/Qxd5/cxd5 simplified. Rac8/f6 drove Be5 off g7; Kf7 unpinned g7. Rfd8/Bd6/Bxd6/Rxd6 reached an equal-material two-rook ending.
-- Same game: several marked errors lacked verified refutations. Rg6 doubled attacks on e6; Rc6 added a guard. Rxh6?? gxh6! won R for P. Eventual victory does not validate earlier defense.
-- DeepSeek: Bg5?? hxg5! wins B for P. Nxh5 Nxh5 Rxh5? retained extra B but was marked. Qh3? Rxh3 gxh3 Bxg5 exploited clear h-file. No verified replacement for Rxh5.
+- T20 Sonnet: Qd5/Qxd5/cxd5 simplified; Rac8/f6 drove Be5 off g7, Kf7 unpinned g7. Rg6/Re3 doubled attacks on e6; Rc6 added a guard. Rxh6?? gxh6 won R for P. Victory does not validate earlier defense.
+- DeepSeek: Bg5?? hxg5 wins B for P. Nxh5 Nxh5 Rxh5 retained extra B but was marked; no verified replacement. Qh3? Rxh3 gxh3 Bxg5 exploited clear h-file.
 - Advance: Bf5 outside chain, Nd7/Ne7-f5/c5/Be7/O-O; cxd4/Nxd4/Rac8 pressures c3, f6/fxe5/Nxe5 opens f-file. Setup, not forced win.
-- T20 SF final: after Rxa2/Rc7, Qe8! guarded Be7 AND b8. Qf7?? abandoned b8: Rb8+ Bf8 pinned B to Kg8. Recheck back-rank checks before pursuing pawn targets.
-- Then Qxf4 lost Q to g3xf4. The pawn on g3 controls f4; it was not undefended. A 71-second think missed this immediate capture. Sparse marks understated the loss; no verified replacement supplied.
+- T20 SF: Qe8 guarded Be7 AND b8. Qf7?? abandoned b8: Rb8+ Bf8 pinned B to Kg8. Then Qxf4 lost Q to g3xf4 after a 71-second think. Recheck back-rank checks and pawn captures before pursuing targets.
 - T19: Qxe5 Rxf2 Qxd5?? left e6 screening Qe7 from Re1. Rxc3+ Kb1 Rxb2+ Kxb2 Qxa3+ Kb1 exd5 moved Q with check BEFORE recapturing. bxc3 permits Qxa3+ Kb1 Qb2#, supported by Rf2.
 
 ## Other recurring geometry
+- T21 Ruy: Nb3/Be3/Nbd2, exd4 Nxd4 Nxd4 Bxd4 kept material level. Bb1 and e5 cleared b1-c2-d3-e4-f5-g6-h7; Qe4-h7 vacated e4's screen. ...dxe5 hit Bd4 but allowed Qh7+ Kf8 Qh8#. Verify defenses before calling the battery forced.
 - ...a5 frees a6: d5 Nb4 Bb1 a5 a3 Na6 Nc5 does not trap N.
-- Qc7/Rc8 battery: Bc2?? Qxc2 Qxc2 Rxc2 loses B. ...Nh5? Nxh5! wins N: neither Bd7 nor Be7 guards h5.
+- Qc7/Rc8 battery: Bc2?? Qxc2 Qxc2 Rxc2 loses B. ...Nh5? Nxh5 wins N: neither Bd7 nor Be7 guards h5.
 - Locked ending: Bd7/Be8 guard b5/c6, d6 guards c5, b5 bars Ka4. No winning knight route; repetition was practical.
 - Qd2 guards d5 through empty d3/d4: Nxd5?? Qxd5. d6 screens Rd8 from Qd5. Be4 guards b7; Ba7 attacks Rb8/guards b8: b8=Q Rxb8 Bxb8.
 - Italian d4 exd4 cxd4 Nxd4 Nxd4 Qxg5 removes Nf3's guard of Bg5; full chain loses a pawn. Re5 screens Qf6-a1; Rd5 exposes Ra1. Re1+ Nxe1 Qxf2+ Kh1 Qg1# diverts Nf3/clears Bc5.
@@ -49,5 +48,5 @@
 - notes/deepseek.md - Chigorin tactics and Dragon pawn order.
 - notes/four-knights.md - Double attacks, screens and clocks.
 - notes/qgd-exchange.md - Benoni screens and QGD defenders.
-- notes/ruy-lopez.md - Batteries, passers and locked endings.
+- notes/ruy-lopez.md - Chigorin breaks, batteries and conversion.
 - notes/sicilian-maroczy.md - Recapture guards and promotions.
