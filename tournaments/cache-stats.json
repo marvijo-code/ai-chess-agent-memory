@@ -679,24 +679,24 @@
      "warm_hit_rate": 0.9449
     },
     "Sonnet 5.5": {
-     "calls": 289,
-     "input": 6933819,
-     "cached": 6661836,
-     "output": 390404,
-     "warm_input": 6828099,
-     "warm_cached": 6597617,
-     "hit_rate": 0.9608,
-     "warm_hit_rate": 0.9662
+     "calls": 332,
+     "input": 8593131,
+     "cached": 8287210,
+     "output": 454346,
+     "warm_input": 8487411,
+     "warm_cached": 8222991,
+     "hit_rate": 0.9644,
+     "warm_hit_rate": 0.9688
     },
     "DeepSeek V4.1 Flash": {
-     "calls": 210,
-     "input": 1959504,
-     "cached": 989824,
-     "output": 49650,
-     "warm_input": 1903041,
-     "warm_cached": 955008,
-     "hit_rate": 0.5051,
-     "warm_hit_rate": 0.5018
+     "calls": 295,
+     "input": 3970326,
+     "cached": 2309760,
+     "output": 61558,
+     "warm_input": 3913863,
+     "warm_cached": 2274944,
+     "hit_rate": 0.5818,
+     "warm_hit_rate": 0.5813
     }
    }
   }
