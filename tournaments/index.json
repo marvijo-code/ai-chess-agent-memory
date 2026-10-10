@@ -170,6 +170,15 @@
    "finished": true,
    "champion": "GPT-6.1 Sol",
    "updated_at": "2026-10-10T13:41:32+00:00"
+  },
+  {
+   "number": 20,
+   "id": "aichess-0020-20261010-134348",
+   "title": "Chess Tournament but with AI Players #20",
+   "created_at": "2026-10-10T13:43:48+00:00",
+   "finished": false,
+   "champion": null,
+   "updated_at": "2026-10-10T13:43:48+00:00"
   }
  ]
 }
