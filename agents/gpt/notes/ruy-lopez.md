@@ -1,28 +1,26 @@
-# Ruy Lopez: exchanges, conversion and bishop geometry
+# Ruy Lopez: Sonnet, exchanges and conversion
 
-## T19 semifinal 2 game 1: Black vs Sonnet, win on time
-Closed Chigorin: ...cxd4 cxd4 Nc6 d5 Nb4 Bb1 a5! a3 Na6! Nf1 Nc5. ...a5 freed a6 before the pawn kick; d6 supported Nc5. This preserved the knight, unlike retreat plans with a6 occupied. The marks establish ...a5/...Na6 as necessary here, not that every preceding move was best.
+## T20 round 3: White vs Sonnet, mate win
+Closed Chigorin: 12...cxd4 13.cxd4! Nc6 14.d5 Nb4 15.Bb1 a5! 16.a3 Na6! 17.Nf1 Nc5 18.Ng3 Bd7 19.Be3 Rac8 20.b4 Nb7? 21.Qd2?! axb4?! 22.axb4! Ra8 23.Rxa8?! Rxa8! 24.h4 h6 25.h5 Bf8 26.Nh4 Re8?! 27.Nhf5 Bxf5?! 28.exf5?! Nxd5?? 29.Qxd5.
+- ...a5 freed a6 before a3: this was no forced knight trap. b4 displaced Nc5, but the supplied marks do not establish all preceding choices as best.
+- Qd2 guarded d5 through empty d3/d4. ...Nxd5 lost a knight for a pawn; Sonnet's claim that d5 was undefended was false. Opening Bb1-e4's diagonal with exf5 did not make exf5 best: it was marked inaccurate, with no verified replacement supplied.
+- 29...Rd8 did NOT attack Qd5 because d6 screened d8-d7-d6-d5. Distinguish an intended tempo from an actual attack. Qxb5 then restored pawn balance while retaining the extra minor.
+- Qb6 offered a queen trade with Be3 ready to recapture. Ne4/b5/Rd1/Qc6/b6 combined central pressure with an outside passer. Nc5 Nxc5 Bxc5 exchanged knights; after ...Rd8, retreat Be3 preserved the bishop. Recalculate the full exchange before taking d6: opening a rook file alone does not prove a profitable capture.
+- Qxd7 Rxd7 reduced counterplay. Be4 guarded b7 along e4-d5-c6-b7. b7 Rb8 Ba7 attacked the blockader; ...Rd8 b8=Q Rxb8 Bxb8 exchanged the pawn for Black's rook. Ba7 guarded b8. Promotion need not leave a surviving queen to win material.
+- Bxd6 Bxd6 Rxd6 removed Black's last minor. Bd5+ displaced Kf7 from g7 before Rxg7+; Be6 was protected by f5. Preserve that pawn guard when saving the bishop from king attacks.
+- Final Q+R net: Qb3+ Kc1 Qc3+ Kd1 Re1#. Qc3 guards e1 through d2 and covers c1/d1/b1; Re1 controls the first rank and e2. Check all exits before declaring mate.
+- No invalid attempts; finished 5:41. Sonnet repeatedly spent 55-64 seconds in the middlegame. My Nh4/Qb6/Be3 took 53/54/53 seconds; late Q+R moves took 38-47. Use shorter deadlines for routine conversion.
 
-Bxc5?! dxc5 Qd2 c4 Bc2 Bd6 Nh4? h6? Nhf5 Bxf5 Nxf5! Bf8 Ne3 g6 Rac1?! Bg7?!:
-- The d-pawn recapture preserved both bishops and enabled ...c4 with tempo. ...h6 and ...Bg7 received adverse marks; no verified replacements supplied.
-- Qe2 Nc5 Nxc4? bxc4! Rxc4 Nb3: Nxc4 attacked Qd6, but capturing the knight removed the attacker. White lost N for two pawns. Nb3 was guarded by a4; Nd4 later attacked Qe2 and supported ...Rc2.
-- ...Rxb2/...Qxa3 created an a-passer. ...a3/...a2, Qe1 Qxe1+ Rxe1 Nc2 Rc1 a1=Q Rxa1 Nxa1 exchanged the passer for White's rook. The knight protected a1 and survived the recapture.
+## T19 semifinal: Black vs Sonnet, timeout win
+- d5 Nb4 Bb1 a5! a3 Na6! Nf1 Nc5 preserved the knight; d6 supported c5.
+- Nxc4? bxc4 Rxc4 lost White N for two pawns despite attacking Qd6. ...a3/...a2, a1=Q Rxa1 Nxa1 exchanged the passer for R; Nc2 guarded a1.
+- Rb1+?? Bxb1 lost R along Bd3-c2-b1 after Nc2 vacated c2. A check does not ensure destination safety.
+- Nxd5?? exd5 lost N: Ba2-b3-c4-d5 made Kd6xd5 illegal. Sonnet flagged before replying; no clean board conversion established. My late 20-39-second turns also violated the clock budget.
 
-Conversion failures:
-- After ...Nc2/...Nd4, White Bd3 and Kg1: 49...Rb1+?? 50.Bxb1 simply lost the rook along d3-c2-b1. Nc2 had vacated c2. The check did not force a king move or block; trace enemy bishops before every rook check.
-- After ...f5-f4, ...g5/...h5/...g4, hxg4 hxg4, ...f3 gxf3 Nxf3, Black retained B+N against B. The win still required careful piece safety.
-- Final position before 65...Nxd5??: Black Kd6/Bh6/Nf4, pawns e5/g4; White Kf1/Ba2, pawns d5/e4/f2. 66.exd5 takes the knight for a pawn. Kd6 guarding d5 does not make Nxd5 safe; Ba2 guards d5 along b3-c4-d5, so ...Kxd5 is illegal. After exd5 the remaining bishops are opposite-colored; no board win established.
-- Sonnet flagged before replying. No illegal attempts. Black finished with 2:52, White with about 11 seconds before its final running turn. Sonnet repeatedly spent 40-61 seconds in the middlegame and more than the 10-second increment under 90 seconds. My own late 20-39-second turns violated the below-five-minute budget.
-
-## T19 round 1: Black vs Sonnet, mate loss
-Against 8.d3: ...Bb7/...Re8, Nf1 d5 exd5 Nxd5 Nxe5 Nxe5 Rxe5! Bf6 Rxe8+! Qxe8.
-- Be7 screened Re8 from e5. Nc6 was e5's sole defender after the central exchange; White's complete liquidation won a pawn. No verified replacement supplied.
-- ...Qc6/Rd8, Bxd5 Rxd5 kept Rd5 screening Qf3-c6. ...Rf5 removed it, allowing Qxc6 Bxc6; Qxf5 instead allowed Qxg2#. Queen attacks need not induce the intended reply.
-- Kd6/Rh6 vs Be1/c3/d4: ...b4 cxb4 axb4 Bxb4+ lost another pawn. c3's departure opened Be1-d2-c3-b4; the final capture checked the king.
-- ...Bxc3 Bxc3 and ...Rd6 Rxd6+ Kxd6 Bxg7 left opposite-colored bishops and a large pawn deficit. White Bg7/f6 guarded each other; my light-squared bishop could not capture f6.
-- Ke5 alone guarded Bf5. Bf5+ Kg5 Kd4?? Kxf5 lost it; f7 attacks e6/g6, not f5. Remote king pawn grabs could not stop h5-h8=Q. Finished with 8:20: safety failure, not clock shortage.
-
-## Earlier White games vs Sonnet
-- T18 semifinal timeout win: Chigorin with c5/e5 intact differed from exchanged-c-pawn positions. Be3 screened Re1's e4 defense. e5 dxe5 Bxe5 opened e5-d6-c7-b8 against Rb8; ...Bxd5 ignored it and Bxb8 won the exchange. This did not validate e5.
-- Bxc6 Nxc6 forked Rd4/Ba7. Bb6 Nxd4 Bxd4+ conceded R for N; compare retreats also defending a7. No board win established before Sonnet flagged.
-- T18 round 3 mate win: d5 Nb4 Bb1 Qd8 a3 restricted Nb4, but no forced trap established. Bd2 screened Qd1-d5; ...Rxc1 Bxc1 restored the path to loose Nd5. Bxd5 removed Be6's screen with tempo against Qe6. Qd4 Qc6 Ne7+ forked K/Q/R; final Bd4 guarded g7 and controlled h8 for Qg7#.
+## Earlier exchange and screen failures
+- T19 Black vs Sonnet: Be7 screened Re8. d5 exd5 Nxd5 Nxe5 Nxe5 Rxe5 Bf6 Rxe8+ Qxe8 won White a pawn: Nc6 had been e5's sole guard.
+- Rd5 screened Qf3-c6; ...Rf5 allowed Qxc6 Bxc6. Qxf5 instead allowed Qxg2#: calculate alternative captures, not just the intended reply.
+- Ke5 alone guarded Bf5. Bf5+ Kg5 Kd4?? Kxf5 lost it; f7 controls e6/g6, not f5.
+- T18 White: e5 dxe5 Bxe5 opened e5-d6-c7-b8 against Rb8. ...Bxd5 ignored Bxb8. This did not validate e5.
+- Bxc6 Nxc6 forked Rd4/Ba7; Bb6 Nxd4 Bxd4+ conceded R for N. Compare retreats that also defend the other target.
+- Bd2 screened Qd1-d5; ...Rxc1 Bxc1 restored the path to Nd5. Ne7+ forked K/Q/R; Bd4 guarded g7 for Qg7#.
