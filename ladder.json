@@ -1,7 +1,20 @@
 {
  "player": "Stockfish 19",
- "depth": 4,
+ "depth": 5,
  "start_depth": 4,
- "steps": [],
- "updated_at": null
+ "steps": [
+  {
+   "from": 4,
+   "to": 5,
+   "tournament": "aichess-0016-20261010-025717",
+   "number": 16,
+   "game": "r2b1",
+   "winner": "GPT-6.1 Sol",
+   "color": "white",
+   "played_at_depth": 4,
+   "termination": "checkmate",
+   "at": "2026-10-10T03:25:05+00:00"
+  }
+ ],
+ "updated_at": "2026-10-10T03:25:05+00:00"
 }
