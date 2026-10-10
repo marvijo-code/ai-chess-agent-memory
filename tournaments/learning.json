@@ -349,9 +349,9 @@
      "games": 5,
      "read_in_prompt": 5,
      "read_latest": 5,
-     "reflections": 3,
-     "memory_updates": 3,
-     "note_updates": 6,
+     "reflections": 4,
+     "memory_updates": 4,
+     "note_updates": 7,
      "rejected": 0,
      "errors": 1,
      "retries": 1
@@ -360,12 +360,12 @@
      "games": 5,
      "read_in_prompt": 5,
      "read_latest": 5,
-     "reflections": 4,
-     "memory_updates": 4,
-     "note_updates": 4,
+     "reflections": 5,
+     "memory_updates": 5,
+     "note_updates": 5,
      "rejected": 0,
      "errors": 0,
-     "retries": 0
+     "retries": 1
     },
     "Sonnet 5.5": {
      "games": 5,
@@ -382,8 +382,8 @@
   }
  },
  "last_written": {
-  "DeepSeek V4.1 Flash": "57deb50fd7c6",
+  "DeepSeek V4.1 Flash": "5df8d98d359c",
   "Sonnet 5.5": "65e9ba789a26",
-  "GPT-6.1 Sol": "621160c99871"
+  "GPT-6.1 Sol": "95d8b9bc112b"
  }
 }
