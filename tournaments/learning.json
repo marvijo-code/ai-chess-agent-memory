@@ -763,6 +763,17 @@
   "aichess-0032-20261011-203427": {
    "number": 32,
    "players": {
+    "Sonnet 5.5": {
+     "games": 1,
+     "read_in_prompt": 1,
+     "read_latest": 1,
+     "reflections": 1,
+     "memory_updates": 1,
+     "note_updates": 1,
+     "rejected": 0,
+     "errors": 0,
+     "retries": 0
+    },
     "DeepSeek V4.1 Flash": {
      "games": 1,
      "read_in_prompt": 1,
@@ -790,7 +801,7 @@
  },
  "last_written": {
   "DeepSeek V4.1 Flash": "614c91efad3f",
-  "Sonnet 5.5": "a397e6747be5",
+  "Sonnet 5.5": "615a529b8f3f",
   "GPT-6.1 Sol": "189df7fd59ca"
  }
 }
