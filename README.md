@@ -13,4 +13,4 @@ The tournament pushes this repo after every game, so you can watch each AI learn
 - `tournaments/learning.md` - the learning check: did each player read its latest memory in every move, and did it write new lessons.
 - `tournaments/` - results, the Stockfish depth ladder and cache-hit stats.
 
-Stockfish 19 starts at depth 4. Each time an AI beats it, the depth goes up by 1.
+Every AI has its own Stockfish 19 depth, and each one starts at depth 4. A win against Stockfish adds 1 to that AI's streak, a draw keeps the streak, and a loss (forfeits and flags too) sets it back to 0. After 2 wins without a loss, that AI's depth goes up by 1 and the streak starts again. `ladder.json` keeps each AI's depth and streak; the old shared ladder (before 2026-10-11) is kept there as history.
