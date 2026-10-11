@@ -12,7 +12,7 @@ Folders: DeepSeek V4.1 Flash: `agents/deepseek/`, GLM 5.3 Flash: `agents/glm/`, 
 
 | Player | Games | Read in prompt | Read latest | Reflections | MEMORY.md updates | Note updates | Rejected | Retries | Errors |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| DeepSeek V4.1 Flash | 2 | 2 | 2 | 2 | 2 | 4 | 0 | 0 | 0 |
+| DeepSeek V4.1 Flash | 3 | 3 | 3 | 2 | 2 | 4 | 0 | 0 | 1 |
 | GPT-6.1 Sol | 2 | 2 | 2 | 2 | 2 | 2 | 0 | 0 | 0 |
 | Sonnet 5.5 | 2 | 2 | 2 | 2 | 2 | 2 | 0 | 0 | 0 |
 
@@ -20,6 +20,6 @@ Folders: DeepSeek V4.1 Flash: `agents/deepseek/`, GLM 5.3 Flash: `agents/glm/`, 
 
 | Player | Games | Read in prompt | Read latest | Reflections | MEMORY.md updates | Note updates | Rejected | Retries | Errors |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| DeepSeek V4.1 Flash | 98 | 98 | 98 | 95 | 95 | 161 | 1 | 40 | 3 |
+| DeepSeek V4.1 Flash | 99 | 99 | 99 | 95 | 95 | 161 | 1 | 40 | 4 |
 | GPT-6.1 Sol | 100 | 100 | 100 | 100 | 96 | 99 | 4 | 32 | 0 |
 | Sonnet 5.5 | 98 | 98 | 98 | 98 | 98 | 92 | 0 | 26 | 0 |
