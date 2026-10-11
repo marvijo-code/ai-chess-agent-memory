@@ -1,29 +1,25 @@
-# Accelerated Dragon: liquidation, discoveries and queen safety
+# Accelerated Dragon: king exposure, liquidation and discoveries
 
-## T31 Final Armageddon: White vs Stockfish 19, mate loss
-1.e4 c5 2.Nf3 Nc6 3.d4 cxd4 4.Nxd4 g6 5.Nc3 Bg7 6.Be3 Nf6 7.Bc4 d6 8.f3 Bd7 9.Qd2 a6 10.O-O-O b5 11.Bb3 h5 12.Kb1 Na5 13.h4 Nc4 14.Bxc4 bxc4! 15.g4?! hxg4! 16.h5 Rxh5 17.Rxh5 Nxh5 18.fxg4 Bxg4! 19.Rg1 Bd7?!.
-- Same failed kingside liquidation as T10: my f/g/h pawns disappeared for Black's h-pawn. Two pawns down; exchanged rooks and B for N did not compensate. No verified move-15 replacement.
-- fxg4 attacked Nh5, but Bd7 took g4 through e6/f5 and attacked Rd1 through f3/e2. An attack on one piece does not force its retreat. Calculate captures by every other piece before launching the storm.
-20.Bh6 Bh8 21.Nd5 Nf6 22.Qe3?! Ng4?? 23.Qd2? Nxh6 24.Qxh6 Bxd4 25.Rd1 Be5.
-- Ng4 forked Qe3/Bh6 AND uncovered Bh8-g7-f6-e5-d4 against Nd4. Qd2 initially guarded h6 and d4, but Qxh6 abandoned d4. The final bishop capture left Q+R+N against Q+R+2B, still two pawns down.
-- Search captures of the forking knight before automatically retreating. 23.Rxg4 is legal, but Bd7 can recapture; calculate the resulting position rather than claiming a free knight. No verified best move 23 supplied.
-26.Qh7 Be6 27.Qg8+ Kd7 28.Nc7?? Qxg8 29.Nxa8 Qxa8.
-- Be6 vacated d7, answering the claimed Qg8 mate threat with a king flight. Nd5 screened Rd1-d7. Recheck flights after quiet defenses.
-- Kd7 removed the king from Qd8-e8-f8-g8, leaving Qg8 directly attacked. Nc7 forked Ra8/Be6 but ignored Qxg8. Qxa8 then captured the knight along the cleared eighth rank: Q+N lost for R. The fork did not force a reply; no adverse mark on Nc7 does not excuse the queen loss.
-- With R versus Q+2B, king raids supplied no established counterplay. Kxa6 Qa8+ Kb5 Qa5# ended the game. Scan checks and the resulting flights before advancing an exposed king.
-- No invalid attempts; finished 5:14. fxg4 took 117 seconds, Bh6 68. White started with ten minutes; these long thinks did not prevent tactical losses.
+## T32 round 3: White vs Stockfish 19, mate loss
+Short-castling branch: 8.O-O Ng4 9.Bb3?! Nxe3 10.fxe3! Ne5.
+- Distinguish this from my long-castling pawn storm. Bb3 was inaccurate; no verified replacement supplied. fxe3 was the correct recapture here, but conceding the bishop pair and later damaging more pawns required sustained king-safety attention.
+- Qe2/Rad1 met ...Bg4, directly attacking Qe2 through f3. Nf3! blocked the diagonal. After Qf2 and ...Nxf3+, gxf3! avoided Qxf3 Bxf3. ...Bh3 attacked Rf1; Rfe1! saved it. ...Bxc3 bxc3! preserved material but left doubled c-pawns and an open g-file beside Kg1.
+- Qh4?! provoked ...Bd7!, then Rd3?! allowed ...Rc5-h5 with tempo on the queen. A rook defending c3 did not solve king exposure. No verified replacements for Qh4/Rd3 established.
+- e5! improved my chances against ...a5?!, but ...Bc6! changed the central plan. My saved Rd5/Rxe5 idea assumed an immediate ...dxe5 and support from f4. Bc6 now attacked d5; e3-e4?! screened the bishop diagonal but also blocked Re1-e5. Later ...exf4 removed the f4 guard. Revalidate destinations, screens and support after the actual reply.
+- Bd5 did not force a favorable liquidation. After ...exf4, Rf3 and ...e5, the new e5 pawn defended f4: Rxf4 would face ...exf4. Qd2's support did not make that rook capture safe against a pawn.
+- Bxc6 Qxc6 removed the bishops, but Black retained Q+2R and active pawns. Qd5 offered a queen trade; ...Qc8 declined it. An offered exchange has no defensive effect until accepted.
+- Qxa5 took a remote pawn while Kg1, Rf3, Rh5 and the empty g-file remained. ...Qg4+ checked along g4-g3-g2-g1 AND attacked Rf3. Kf2 guarded the rook but permitted ...Rxh2+; Kf1 then met ...Qg2#, supported by Rh2. Calculate the next checks and flights before a pawn raid or king defense of a forked piece. No verified best move 29 supplied.
+- No invalid attempts; finished 11:08. Qd2/Bd5/Qxa5 took 46/56/41 seconds. Clock shortage did not cause the missed checking attack.
 
-## T16 round 2: White vs Stockfish, mate win after queen loss
-Same opening through 12.Kb1 Na5, then 13.Bh6?? Bxh6 14.Qxh6 Rxh6.
-- Black had not castled: Rh8 stood behind empty h7/h6 after ...h5. The intended queen recapture lost Q to the rook. An attacking purpose does not establish destination safety; inspect the final recapture board.
-- Later Nd5-f4 cleared Bb3's diagonal; Nxg6+ f7xg6 cleared f7 and Rxg6 removed that pawn. Bb3 then guarded g8 through c4/d5/e6/f7.
-- Doubled g-file rooks exploited ...Qf8??: Rg8+ Qxg8 Rxg8#. Bb3 prevented Kxg8 and Rh7 occupied h7. Opponent consolidation errors enabled the win; no earlier forced compensation established.
+## T31 Final Armageddon and T10: repeated storm failure
+Long castling, ...h5/...Na5/...Nc4, Bxc4 bxc4. T31 liquidation: 15.g4?! hxg4 16.h5 Rxh5 17.Rxh5 Nxh5 18.fxg4 Bxg4.
+- My f/g/h pawns disappeared for Black's h-pawn, leaving two pawns down. T10 repeated the same loss with different queenside exchanges. Count the complete liquidation before g4; no verified move-15 replacement established.
+- fxg4 attacked Nh5, but Bd7 captured g4 through e6/f5 and attacked Rd1 through f3/e2. An attacked piece need not retreat when another piece has a forcing capture.
+- ...Ng4 forked Qe3/Bh6 AND uncovered Bh8-g7-f6-e5-d4 against Nd4. Qd2 guarded h6/d4, but Qxh6 abandoned d4; ...Bxd4 won N. Search captures of the forking knight and all recaptures before retreating automatically.
+- Qh7 threatened Qg8#, but ...Be6 vacated d7. Nd5 screened Rd1-d7. After Qg8+ Kd7, Qd8 had a clear route to g8: Nc7?? Qxg8 Nxa8 Qxa8 lost Q+N for R. A fork did not answer the queen attack.
+- An exposed king raid later allowed ...Qa8+ and ...Qa5#. White started with ten minutes; fxg4/Bh6 consumed 117/68 seconds without preventing the tactical losses.
 
-## T10 semifinal Armageddon: White, mate loss
-12.h4 Na5 13.Kb1 Rc8 14.g4?! hxg4 15.h5 Nxb3 16.axb3 Rxh5 17.Rxh5 Nxh5 18.fxg4 Bxg4! 19.Rg1 Nf6.
-- Nh5 came from f6; g6 remained. The same two-pawn loss and Bd7-g4-d1 attack recurred in T31.
-- ...Qe6 directly attacked g4 through f5: Rg4?? Qxg4 lost R. After Bxe5+ dxe5, Qd6?? exd6 lost Q to the ORIGINAL e7 pawn; the pawn on e5 came from d6. Track pawn identities and diagonals despite sparse marks.
-
-## Retained Black rook lessons
-- ...Rb7/a5/Bxe4/Rxe4/Rxb6 worked only with the concrete ...Rxa1+ Re1 Rxe1# reply to axb6. After White relocated its rooks, ...Kg7?? axb6 Rxb6 lost R for P: the old mating defense no longer existed.
-- ...c5 Rf4! cxb4 Rdxf7+ Kg8 Rxf8+ captured Bf8. Rf4 guarded f8, preventing Kxf8. Attacking a rook did not stop forcing checks. Later repetition with White Q/R material gone was a conversion escape, not proof of a theoretical draw.
+## Other retained warnings
+- T16: Bh6?? Bxh6 Qxh6 Rxh6 lost Q. Black had not castled; ...h5 had cleared Rh8's path through h7/h6.
+- T10: ...Qe6 attacked g4 through f5, so Rg4?? Qxg4 lost R. Qd6?? exd6 lost Q to the original e7 pawn; the e5 pawn came from d6. Track pawn identities and diagonals.
+- A previous ...Rxa1+ Re1 Rxe1# answer to axb6 ceased to exist after White relocated its rooks. Do not reuse a mating defense from another board.
