@@ -2,16 +2,16 @@
 
 ## Record
 - W: Ruy DeepSeek 8 W, Sol 4 W 6 L 2 D (T30R1 D: 8.d3 line, piece down, drew); Ruy d3 v SF L; Sicilian DeepSeek 8 W; Caro Adv Sol 1-2, DeepSeek 4-1; Caro 3.Nc3 v Sol 0-2.
-- B v Sol: Chigorin 4 W 14 L 3 D; Breyer 0-1; 4.d3 1-1; Berlin 4.d3 L; QGD 3-1; Pianissimo 0-2. DeepSeek: Chigorin 16 W 1 D, QGD 8 W, Pianissimo 2 W, Scotch 1 W.
+- B v Sol: Chigorin 4 W 14 L 3 D; Breyer 0-1; 4.d3 1-1; Berlin 4.d3 L; QGD 3-1; Pianissimo 0-2. DeepSeek: Chigorin 16 W 1 D, QGD 9 W (T30R2), Pianissimo 2 W, Scotch 1 W.
 - B v SF 1.e4: 3.Nc3 9 L 5 D; Alapin 4 L 1 D; Ruy 6.d4 0-4; Caro Adv, 4.d4 Two Knights, French L; Berlin 4.O-O 1 D 3 L.
 
 ## Key lessons (read before EVERY move)
 - ATTACKER COUNT (T30R1 26.Nxe4?? Bxe4 27.Bxe4 Qxe4 = N for P; I wrote 'three attackers Nf3, Bb1, Ng3'): Nf3 does NOT hit e4 (it hits d2 d4 e1 e5 g1 g5 h2 h4). Before ANY capture list each attacker's real line/jump to the target square, then defenders INCLUDING x-rays (Re8 behind Qe7 behind e4, Bb7). My own pawn (e3) blocks Re1/Qf2. Recapture count to the last piece or don't take.
-- MATE FIRST (T29R3 30...Nfxd5? 31.Qh5! Qxh7#; T29F 18...Qe8? 19.Bh6! then Qxf6/Qg7#): after EVERY his move ask 'what mates if I pass?' - QUIET moves too (Bh6, Qh5, a pawn push opening a diagonal). Count guards of h7/g7/f7/f6. Mate threat = guard first (...h6/...g6/...Kg7), no capture.
+- MATE FIRST (T29R3 30...Nfxd5? 31.Qh5! Qxh7#; T29F 18...Qe8? 19.Bh6! then Qxf6/Qg7#): after EVERY his move ask 'what mates if I pass?' - QUIET moves too (Bh6, Qh5, a pawn push opening a diagonal). Count guards of h7/g7/f7/f6. Mate threat = guard first (...h6/...g6/...Kg7), no capture. Mine too: long diagonal b7/c6 to g2 once Nf3/Bd3 are gone (T30R2 Qd5+Bc6, 21...Qxg2#).
 - GUARD DUTY + TRAP (T29F): before a queen/knight leaves a square, name what it guards (Qd8 guarded f6 vs Qc3+Bh6). A 'trap' (Qxf6?? Qe1#) is no defence: test his best QUIET reply. After ...gxf6 g7/h6 are holes: Qd8 stays, ...Kg7/...Bd5.
 - KING GUARDS (T26SF2G1G1G1 20...Nxa4?? 24.Nh5!): name the SOLE guard of h7/g7/f7; before it moves or captures ask what then hangs.
-- ILLEGAL x3 = forfeit (T27R2, T28R3, T29R2 25...Qxe5 3x; T29SF2G1 26...Bxc3; T29F 13...Bxd4: own Ne5 blocks Bf6). Write the path square by square BEFORE sending; after ONE rejection redraw the board. A blocker hiding an x-ray MOVES (...Nd4!). Trace recaptures too (T28R1 17...Nxe4?? 18.Rxe4: own Be7 blocked Re8).
-- QUEEN CAPTURE SUM (T28R3 19.Bb1 Qxc1?? 20.Bxc1 Rxc1 21.Qxc1 = Q+R for R+B): total BOTH sides' points to the last recapture; my Q never takes a guarded rook.
+- ILLEGAL x3 = forfeit (T27R2, T28R3, T29R2 25...Qxe5 3x; T29SF2G1 26...Bxc3; T29F 13...Bxd4: own Ne5 blocks Bf6; T30R2 17...Qxe5 own e6 pawn). Write the path square by square BEFORE sending; after ONE rejection redraw the board. A blocker hiding an x-ray MOVES (...Nd4!). Trace recaptures too (T28R1 17...Nxe4?? 18.Rxe4: own Be7 blocked Re8).
+- CAPTURE SUM (T28R3 19.Bb1 Qxc1?? 20.Bxc1 Rxc1 21.Qxc1 = Q+R for R+B; T30R2 19...Rxd3? 20.Qxd3 = R for B: my 'trade the bishop' rook on d3 had NO guard, Bc6/Qe5 don't hit d3): total BOTH sides' points to the last recapture; ask 'who retakes MY capturer and what guards it?'. My Q never takes a guarded rook; my R never takes a minor unless guarded or the recapture is a rook.
 - PAWN RECAPTURE (T29R1 22.Qxe6?? fxe6; T27SF2G1G1 31.Qd1?? cxd1=Q+): before EVERY queen/rook move list his pawn captures and promotions. Won game: trade pieces, no pawn grabs.
 - SELF-BAN (T28R3 'watch Bb1' ignored; T28SF2G1 15...Qxf6? 16.Bc3 skewer Qf6+Rh8): a written warning is a ban; name his BEST reply and test it BEFORE the capture. Behind a queen on a long diagonal: what piece stands there?
 - KNIGHT FORKS: list his knight jumps vs my bishop + loose pawn before developing (T28R2 12.Be3 cxd4 13.Nxd4 Nc4!; T29F 14.Nc6!). Mine too: ...Nc2!
@@ -22,7 +22,7 @@
 - GUARD/GRAB (T25R1 13.Ba3??; T24R1 19.Nxf5??; T26R1 24...Nxh4? 25.Qd8+): the capturer never guards its landing square; before a pawn grab ask which line hits the grabber or my K with tempo.
 - DEVELOP (T27R2): Bc8/Ra8 stuck = +3.6 by 16. ...b6/...Bb7 or ...Bd7 before ...c5/castling.
 - SCAN every move: his last move; checks, discovered attacks, queen tempo, pawn breaks (e5!, d5, ...e4), promotions, b1-h7 batteries, Bh6/Qh6+Ng5, rays to a1/g2/h1/h8, knight jumps. As White vs Chigorin AVOID d5.
-- DOWN: SF repeats at +5..+9; mates K on e8/g1 or after ...h6/...Kh7. Queens ON v SF, no raids. DeepSeek hangs pieces when worse. Sol hangs rare ones BUT misplays queenless/minor-piece endings (T30R1: a piece down for a pawn, I traded queens + rooks, kept K active + passed h-pawn; Sol played 57...Bxg5?? and I won the a-pawn: draw B v K).
+- DOWN: SF repeats at +5..+9; mates K on e8/g1 or after ...h6/...Kh7. Queens ON v SF, no raids. DeepSeek hangs pieces when worse (T30R2 21.Qc3?? ignored Qxg2#). Sol hangs rare ones BUT misplays queenless/minor-piece endings (T30R1: a piece down for a pawn, I traded queens + rooks, kept K active + passed h-pawn; Sol played 57...Bxg5?? and I won the a-pawn: draw B v K).
 - LOST ENDING recipe (T30R1, B v 3 pawns): K on the pawn chain squares the B can't hit (d5/e6 on light squares v dark B), trade pawns to make a passed h-pawn, push it so the B must guard the queening square, Kxa5 last pawn, h8=Q Bxh8 = insufficient material. Keep the K from the passer's file until the bishop is overloaded.
 - UP: trade Q/R, guard list before each capture, no bait, stalemate check, 3-10 s moves (15 s with pawn on 6th/7th or mate threat); luft vs back rank; vary at the FIRST repeat. Mates: Qb2 + Rd1+ v Kg1 boxed by g2/h2; Rc7 + Ne6 v Kg8, Rd8#.
 
@@ -36,12 +36,12 @@
 - B Berlin v SF 4.O-O Nxe4 5.d4 Nd6 6.Bxc6 dxc6 7.dxe5 Nf5 8.Qe2 Qe7 ... 15.exf6: NOT Qxf6? 16.Bc3. Try 15...Qd7/Rxd2, ...O-O-O (note black-berlin-sf).
 - B v SF 4.d3 d6: ...Be7, ...O-O, ...Bd7, ...exd4! 9.cxd4 d5 10.e5 Ne4. Scotch: ...Nf6, ...bxc6, 6.e5 Qe7.
 - B 4N v SF 3.Nc3: 3...Nf6 4.Bb5 Bb4, never 3...Bc5; 9...dxc6 ONLY; think 3+ min at 10-11. French 3.Nc3: 9...b6/...Bb7 before ...c5. Alapin 3.exd5 Qxd5 4.Nf3 Nf6 5.d4 Nc6 ...Qa5.
-- B 3.Bc4: ...Nf6, d3, Be7, O-O, c3, d6, ...Be6; no ...a4. QGD Lasker (note): ...h6 Bh4 Ne4 Bxe7 Qxe7; 9.Nxe4 dxe4 10.Nd2 f5!; 9.Rc1 Nxc3 10.Rxc3 dxc4 11.Bxc4 b6!.
+- B 3.Bc4: ...Nf6, d3, Be7, O-O, c3, d6, ...Be6; no ...a4. QGD Lasker (note, 9 W v DeepSeek): ...h6 Bh4 Ne4 Bxe7 Qxe7; 9.Nxe4 dxe4 10.Nd2 f5! 11.f3 exf3 12.Nxf3 Nc6 ...Bd7 ...Rad8; 9.Rc1 Nxc3 10.Rxc3 dxc4 11.Bxc4 b6!. Keep the ...Bc6 + Q on d5/e4 battery vs g2.
 
 ## Opponents
-- DeepSeek (1 loss in 47): hangs N/Q/R/B when worse; illegal moves; 33-47 s quiet moves. Converts a free piece: never gift one.
+- DeepSeek (1 loss in 48): hangs N/Q/R/B when worse; illegal moves; 30-45 s quiet moves. Converts a free piece: never gift one.
 - SF 19 (depth 4-6): instant; punishes hanging pieces, skewers on long diagonals, pushes e5 when my pieces are tied; plays QUIET killers (Bh6, Qc3); picks 6.d4 Ruy and 9.Bd5.
 - Sol: W Ruy Chigorin/Breyer (Bb1+e5 battery h7, Qh5; Bh6 trade then Qxh6+Ng5; g4-g5 storms), 4.d3, 3.Bc4, 1.d4. As Black v my d3 Ruy: ...Re8, ...Bb7, ...Bf8, ...d5, then ...f5/...e4 pawn pushes; it takes every free piece, finds the combination (...e4, ...fxe4, ...Bxe4, ...Qxe4). Plays for h7 mate even a rook down. Misjudges queenless endings: trade queens when ahead; when down, queenless endings + passed pawns can draw.
 
 ## Notes (notes/*.md)
-white-open-sicilian-sf, white-closed-ruy, white-ruy-d3-caro, white-caro-adv-deepseek, black-ruy-chigorin (Chigorin, Breyer, SF 6.d4 incl. T29F), black-four-knights, black-qgd-lasker, black-berlin-sf.
+white-open-sicilian-sf, white-closed-ruy, white-ruy-d3-caro, white-caro-adv-deepseek, black-ruy-chigorin (Chigorin, Breyer, SF 6.d4 incl. T29F), black-four-knights, black-qgd-lasker (incl. T30R2), black-berlin-sf.
