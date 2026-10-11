@@ -1,30 +1,34 @@
-# Ruy Lopez: clearance, recaptures and conversion
+# Ruy Lopez: captures, clearance and guards
+
+## T28 final: White vs Stockfish 19, mate loss
+1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O b5 6.Bb3! Bc5 7.d3 d6 8.c3 h6 9.d4 Ba7 10.Re1 Bg4 11.h3 Bxf3! 12.Qxf3 exd4! 13.e5?! Nxe5! 14.Qg3 O-O 15.cxd4?! Bxd4!.
+- Nc6xe5 captured the advanced pawn AND attacked Qf3. Attacking Nf6 did not force that knight to move. d6 guarded Ne5, so Re1's clear file did not provide a cheap recovery.
+- Ba7's ray was a7-b6-c5-d4. cxd4 removed c3's pawn and placed it directly on that ray; Bxd4 captured it. White had lost c/d/e pawns against Black's e-pawn: two pawns down. Opening the c-file was no compensation established by calculation.
+- e5 and cxd4 were marked inaccurate; no verified best replacements supplied. Sparse marks do not establish the safety of later moves.
+16.Nc3 Nh5 17.Qh2 Re8 18.Be3 Nd3 19.Rf1 Bxc3 20.bxc3! Qf6 21.Bd4 Qg6 22.Rad1 Ndf4 23.Kh1 Ne2 24.g4 Nhf4 25.f3 c5 26.Be3 Rxe3.
+- Nh5 attacked Qg3. Nd3 then attacked Re1/f2. Track both knights after each move rather than describing general pressure.
+- At 18.Be3, f2 guarded e3; Ne5 also screened Re8's file. Ne5-d3-f4-e2 cleared that screen. f2-f3 removed the bishop's pawn guard, so returning Bd4-e3 allowed Re8xe3 through e7/e6/e5/e4. Re-audit a familiar square after intervening pawn and knight moves.
+27.Rd2 Rae8 28.Qg1?? Nxg1 29.Rxg1 Qg5 30.Rd5 Qh4 31.Rd2 Qxh3+ 32.Rh2 Qxf3+ 33.Rhg2 Nxg2 34.Rxg2 Qh3+ 35.Kg1 Re1+ 36.Kf2 Qe3#.
+- Ne2 attacked g1 directly. Rf1's protection of g1 merely enabled Rxg1 after losing Q for N. A defended destination is insufficient for a queen beside a cheaper capturer.
+- Rg2 screened Qf3-g2-h1. Nf4xg2 removed the interposing rook before Rxg2. Check every available capture of a defensive blocker.
+- Final Re1+ drove Kg1 to f2; Qe3# was supported by Re8 down the e-file. Earlier h3 luft had no value against this changed net.
+- No invalid attempts; 9:26 remained. e5/cxd4 each took 49 seconds, Qh2 70, Kh1 53, Qg1 42. Long thinks missed direct captures; use the deadline to run the destination and guard scan.
 
 ## T28 round 3: White vs Sonnet, mate win
-Closed Chigorin: 12.Nbd2 cxd4 13.cxd4! Nc6 14.Nf1 a5 15.Ng3 Bd7 16.Be3 Rac8 17.Rc1 h6 18.d5 Nb4 19.Bb1 Qxc1? 20.Bxc1 Rxc1 21.Qxc1.
-- Nf1 cleared d2, restoring Qd1's route to d4 and developing Bc1. Be3 still blocked Re1-e4: keep guard geometry separate from development plans.
-- Nb4 attacked Bc2. Bb1 saved it AND cleared c2, exposing Rc1-c7 against Black's queen. A retreat can uncover a stronger threat.
-- Qxc1 did not trade queens: White's queen stayed on d1. Be3 captured c1 through d2; after ...Rxc1, Qd1 recaptured horizontally. Black lost Q+R, White R+B: queen for bishop overall. Count both sides' surviving pieces rather than accepting a supposed equal liquidation.
-- Only ...Qxc1 received an adverse mark; this does not prove d5 or the opening setup forces an advantage. White's marked moves were Bb3 and cxd4.
-22.Qd2 Rc7 23.Rc1 Rxc1+ 24.Qxc1; a3 Na6/Nf5 Bxf5 exf5/Nxd5 Qd2 Nf6/Qxa5 Nc5/Qxb5 Nfe4/Bxe4 Nxe4/Qe8 Bf6/Qxf7 Ng5/Nxg5+ Bxg5.
-- Trade the remaining rook while ahead, then remove active minors safely. Qd2 attacked Nd5; queen activity recovered a5/b5/f7/d6. The minor trades left Q versus B, not a bare extra queen.
-- a4-a5-a6-a7-a8=Q converted the outside passer. Black's dark-square bishop could not control a8. ...e4 opened Bf6-b2, but losing b2 did not stop promotion.
-- 42.Qe6 Bg5 43.Qag8#: Qe6 protected g8 through f7 and covered h6; Qg8 covered h8/g7/g6 and checked Kh7. Verify support and flights before committing the checking queen.
-- No invalid attempts; 13:20 remained. Qe6 took 53 seconds despite two queens: use short verified conversion moves.
+Chigorin: 12.Nbd2 cxd4 13.cxd4 Nc6 14.Nf1 a5 15.Ng3 Bd7 16.Be3 Rac8 17.Rc1 h6 18.d5 Nb4 19.Bb1 Qxc1? 20.Bxc1 Rxc1 21.Qxc1.
+- Nf1 cleared d2 for Qd1-d4. Bb1 saved the attacked bishop and cleared c2, uncovering Rc1-c7 against Qc7.
+- Qxc1 Bxc1 Rxc1 Qxc1 cost Black Q+R against White R+B: queen for bishop. White's queen stayed on d1 until the final horizontal recapture. No forced opening advantage established.
+- Rc1 Rxc1+ Qxc1 removed the last rook. Safe minor trades and queen captures left Q versus B. Escorting a4-a8 created another queen; Black's dark bishop could not control a8.
+- Qe6/Bg5/Qag8#: Qe6 guarded g8 through f7 and covered h6. Verify queen support and flights; shorten routine conversion.
 
 ## T28 round 2: White vs Stockfish, repetition escape
-...Bc5/d3/d6/c3/h6/Re1/O-O/d4/Bb6/h3/Bb7/Be3/Na5/Bc2/Nc4/Nbd2/Nxb2/Qb1/Na4/Bxa4/bxa4/Qb4?! exd4 cxd4 Nxe4! Nxe4 Bxe4!
-- Be3 blocked Re1-e4; Bxa4 removed Bc2's support of e4. ...exd4 cleared Bb7-e4. Re1 could not recapture through Be3; Qxa4 recovered a pawn but Black retained an extra pawn and bishop pair.
-- Nd2 removed Nf3 from Bb7-g2. ...Qg6 threatened Qxg2#; g3?! stopped it but weakened h3 to ...Qf5. No verified replacements supplied.
-- Qxb5 axb5 opened Ra8-a2 and created a b-passer. Queen exchange reduced mating threats but conceded rook activity.
-- Kg2 created Ra2's absolute pin of Nd2; Kf1 released it. Re2 later sat behind Nd2 on the second rank. ...b4 cleared b5, and Ba6 guarded e2 through b5/c4/d3.
-- Ne4 Rxe2 Nxc3 Rxe3+ lost R+B for B: a full rook. Kxe2 was illegal because Ba6 guarded e2. Attacking Bc3 did not neutralize the opened rook ray.
-- Ne4/Nxc3/d5 took 54/56/57 seconds while badly worse. SF eventually repeated with Q+R versus bare K: practical escape, not a fortress.
+- Be3 blocked Re1-e4; Bxa4 removed Bc2's support of e4. ...exd4 cleared Bb7-e4, enabling ...Nxe4 Nxe4 Bxe4. Re1 could not recapture through Be3.
+- Nd2 removed Nf3 from Bb7-g2. ...Qg6 threatened Qxg2#; g3 weakened h3. Qxb5 axb5 opened Ra8-a2 and created a b-passer.
+- Kg2 pinned Nd2 to Ra2; Kf1 released it. Ne4 later opened Ra2-e2 while Ba6 guarded e2 through b5/c4/d3. ...Rxe2 Nxc3 Rxe3+ lost a full rook overall; Kxe2 was illegal.
+- SF eventually repeated with Q+R versus bare K. Practical escape, not a fortress; 54-57-second losing moves wasted time.
 
 ## Retained warnings
-- ...Bc5/O-O/d5: exd5 Nxd5 Nxe5 Bxf2+ Kxf2! Nxe5 Bxd5?? Nd3+! Kg1 Qxd5; later ...Nf2+ forks Kh1/Qd1. Avoiding Rxe5/...Qf6+ did not establish Bxd5's safety. No verified move-12 replacement.
-- Qg1 Re1! Qxe1 Qxe1+ loses Q for R. Luft does not solve a queen pin.
-- ...Qb6?? dxe5 uncovers Be3-b6. Qf3 abandons Qd1's b3 guard, permitting ...Nb3 against Ra1/Bd2.
-- Qg6/Nf5 versus Kg8/Qf7/g7/Nh7/Bf8: Nh6+! Kh8 Nxf7+ wins Q; Qxf7+ only trades.
-- b7/Rb8/Ra8 pins the blockader to Kg8; ...Rf8 Rxf8+ Nxf8 b8=Q removes it. c2 attacks b1/d1: Qd1?? cxd1=Q+.
-- Nbd2/Bd3 can block Qd1/Rd1 recaptures on d4/d5. Before g3/h4 calculate ...f5/...fxe4 and Qe7-f6-g5-h4+. Ra2?? b3xa2 loses R.
+- ...Bc5/O-O/d5: exd5 Nxd5 Nxe5 Bxf2+ Kxf2! Nxe5 Bxd5?? Nd3+! Kg1 Qxd5. Rxe5 also needs ...Qf6+ calculation; no verified move-12 replacement.
+- Qg1 Re1! Qxe1 Qxe1+ loses Q for R. ...Qb6?? dxe5 uncovers Be3-b6. Qf3 abandons b3 to ...Nb3 against Ra1/Bd2.
+- Qg6/Nf5 vs Kg8/Qf7/Nh7: Nh6+ Kh8 Nxf7+ wins Q; Qxf7+ only trades.
+- Pinned blockade: ...Rf8 Rxf8+ Nxf8 b8=Q. c2 attacks b1/d1. Ra2?? b3xa2 loses R.
