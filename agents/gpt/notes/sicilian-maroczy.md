@@ -1,29 +1,27 @@
-# Open Sicilian: recaptures, passers and king safety
+# Open Sicilian: exchanges, king screens and passers
 
-## T18 round 2: White vs Stockfish 19, mate loss
-1.e4 c5 2.Nf3 Nc6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 e6 6.Ndb5 Bb4 7.a3 Bxc3+! 8.Nxc3 d5 9.exd5 exd5 10.Bd3 O-O 11.O-O Bg4 12.Be2 Bf5 13.Bg5 d4 14.Bxf6 Qxf6 15.Nd5 Qd6 16.Bf3 Ne5 17.c4?! b5?! 18.cxb5?! Rad8?! 19.Nb4! d3 20.Bh5? g6 21.Bf3 Bd7?! 22.Qa4? Nxf3+ 23.gxf3.
-- c4 supported Nd5, but cxb5 removed that support. Nb4 was the only good move after Rad8. No verified replacements for the marked errors were supplied; this game does not establish an opening refutation.
-- Ne5 attacked Bf3. Bh5 was defended by Qd1 but invited ...g6 with tempo; returning Bf3 let Black improve while White spent two bishop moves. Destination safety alone does not establish a useful retreat.
-- On d1, Q could recapture ...Nxf3+ via e2-f3. Qa4 guarded Nb4/b5 and cleared d1 for a rook, but abandoned that recapture. After Nxf3+, gxf3 recovered the knight at the cost of king shelter. A planned blockade must preserve essential defensive exchanges.
+## T31 round 1: White vs Stockfish 19, mate loss
+1.e4 c5 2.Nf3 Nc6 3.d4 cxd4 4.Nxd4 g6 5.c4 Nf6 6.Nc3 Qa5 7.f3 Nxd4 8.Qxd4! Bg7 9.Be3 d6 10.Be2 O-O 11.O-O?! Ng4 12.Qd2 Nxe3 13.Qxe3! Be6 14.Rac1 Rfc8 15.Rfd1?! Bxc4! 16.Bxc4 Rxc4! 17.Nd5 Rxc1 18.Qxc1 e6 19.Nf4?! Qxa2 20.Rxd6 Qxb2 21.Nd3 Qxc1+ 22.Nxc1.
+- Before castling, calculate ...Ng4's TWO attacks: Ng4 attacks Be3 while vacating f6 opens Bg7-f6-e5-d4 against Qd4. Qd2 enabled Qxe3, preserving pawns but conceding the bishop pair. No verified replacement for move 11.
+- Be2 guarded c4, but ...Bxc4 Bxc4 Rxc4 exchanged bishops and won the pawn. Rc8's recapture path c7-c6-c5-c4 was clear. The rook then attacked Nc3; Nd5 removed c3's screen of Rc1, allowing ...Rxc1. Development did not solve the capture chain. No verified move-15 replacement.
+- Nf4 let ...Qxa2 occur; Rxd6 recovered one pawn while ...Qxb2 took another. After the queen trade: R+N vs R+B, four pawns vs six. Count from the board; an active sixth/seventh-rank rook did not restore equality. No verified move-19 replacement.
 
-23...Qf4 24.Kg2 Qg5+ 25.Kh1 Bxb5 26.Rfd1 Qf5 27.Kg2 Bxa4.
-- Nb4 screened Qf4-e4-d4-c4-b4-a4, but that protection did not cover bishop attacks.
-- Bd7 reached b5 through c6. Bxb5 removed the pawn AND immediately attacked Qa4 along b5-a4. Both Rfd1 and Kg2 ignored the queen attack; Bxa4 won it. Refresh every attack from a capturing piece before pursuing the previous plan.
-- Qa4's defense of b5 did not make Bxb5 harmless: the capturing bishop attacked its defender. Name the opponent's next threat after an apparently protected pawn is taken.
+...Bf8/Rd7/b6/Nd3/Bg7/Kf2/a5/Rb7/a4/Nb4/a3/Na2/g5/Ke3/Be5/Rxb6/Bxh2/Rb5/Bg1+/Kd3/h6/Kc3/Rc8+/Kb3/Bc5/Nc3/h5/Na4/Be7/Rb7/Bd6/Nb6/Rc1/Nc4/Rb1+.
+- Na2 blocked a3 on a square Bg7 could not attack. This alone did not solve rook checks or secure the kingside pawns. Repeated attacks on B/R must be tested against forcing replies.
+- At 39...Rb1+, Kb3 was the sole screen between Rb1 and my undefended Rb7. 40.Ka4 opened b1-b2-b3-b4-b5-b6-b7; ...Rxb7 won R. 41.Nxd6 recovered B only, leaving N vs R. Before moving a checked king, trace the checking ray beyond it; examine legal blocks too. No verified best move 40 supplied.
+- 41...a2! outran Kxa3. Nd6 could reach neither a2 nor a1 in one move. 42.Ka3 a1=Q#: Q covered a2/a3/a4/b2; Rb7 covered b3/b4. Capturing the passer's bishop defender did not stop the pawn's next advance. Calculate promotion checks and actual flights before approaching.
+- No invalid attempts; finished 9:11. Rb7/Nb4/Na2 took 43/53/38 seconds. Clock shortage did not cause the rook-screen or promotion misses.
 
-28.Rd2 Rd4 29.Rc1 Rh4 30.Rh1 h6 31.Nxd3 Rg4+ 32.fxg4 Qxg4+ 33.Kf1 Qf3 34.Rg1 Qh3+ 35.Ke2 Re8+ 36.Ne5 Rxe5#.
-- At mate Re5 controlled e1/e3; Qh3 controlled d3/e3/f3 and f1; Ba4 controlled d1 through b3/c2. Own Rd2 and f2 occupied the other exits. Ne5 only offered a capturable interposition. Calculate the full king net before entering an open rook file.
-- No invalid attempts; finished with 9:44. c4/Nb4/Qa4 took 52/53/54 seconds. Ample time did not prevent loss of a recapture or the ignored bishop attack. Sparse marks omitted the later queen loss.
+## T18 round 2: White vs Stockfish, mate loss
+...e6/Ndb5/Bb4/a3/Bxc3+/Nxc3/d5/exd5/exd5/Bd3/O-O/O-O/Bg4/Be2/Bf5/Bg5/d4/Bxf6/Qxf6/Nd5/Qd6/Bf3/Ne5/c4?!/b5?!/cxb5?!/Rad8?!/Nb4!/d3/Bh5?/g6/Bf3/Bd7?!/Qa4?/Nxf3+/gxf3.
+- cxb5 removed Nd5's pawn support. Bh5/g6/Bf3 spent two moves inviting a pawn tempo. Qa4 abandoned Qd1-e2-f3's recapture, forcing gxf3 and damaging king shelter. No verified replacements supplied.
+- ...Qf4/Kg2/Qg5+/Kh1/Bxb5! immediately attacked Qa4 along b5-a4. Rfd1 and Kg2 ignored it; ...Bxa4 won Q. Refresh the capturing piece's attacks, even when the captured pawn was defended.
+- ...Rh4/Rh1/h6/Nxd3/Rg4+/fxg4/Qxg4+/Kf1/Qf3/Rg1/Qh3+/Ke2/Re8+/Ne5/Rxe5#. Qh3 and Ba4 sealed king flights; Ne5 was a capturable block. Finished 9:44 despite 52-54-second quiet moves.
 
-## T16 final: White vs Stockfish, repetition escape
-Same opening through 11...Bg4, then Qd2 Re8 b4 d4 Ne2 Bxe2 Bxe2! Ne4 Qd3 Qe7 Bb2 Nc5 bxc5! Qxe2! Qxe2 Rxe2!.
-- Bxe2 kept Q off Re8's file. The later exchange traded N for B and queens, leaving balanced material. Calculate the whole chain rather than judging its first capture.
-- Rfd1 Rd8 Rac1 Re5 c3?! d3 Re1?! d2 Red1 dxc1=Q Rxc1 lost R for pawn. c3 blocked Bb2-d4; Re1 abandoned the forward blockade. Red1 stopped d1 promotion but not capture-promotion on c1. Scan both types TWO advances ahead.
-- Later Bc3/Ra6/Bb2/Ra5 repetition saved a draw with R+B against 2R+N. This was practical counterplay, not proven compensation. Rg3 guarded a3 until Bc3 screened it.
-
-## Maroczy and other geometry
-- ...Qa5 pins Nc3 to Ke1 via b4/c3/d2. Qd1 recaptures d4 only with d2/d3 clear; Bd2 blocks it. Assess ...Ng4 exchanges before routine rook development.
-- Kf3? h5? Nxe7?? Bg4+ Kf4 Bxe2: the bishop escapes a fork with check; h5 guards g4. Later Rxa7 allowed ...Rdf8+ Rf7 Rxf7+ Nf6 Rxf6#.
-- Nxc5 dxc5 creates a passer. Rxd4 cxd4 attacks Nc3; ...d3 attacks Be2. Bd5 can screen Rd8; removing its pawn guard or moving the king can permit Rxd5.
-- Nd5 Nxd5 exd5 Qxa2 removes the forking knight first; knight moves open Bg7 toward b2, and Rac1 abandons a2.
+## T16 and retained geometry
+- ...Bg4/Qd2/Re8/b4/d4/Ne2/Bxe2/Bxe2!/Ne4/Qd3/Qe7/Bb2/Nc5/bxc5!/Qxe2!/Qxe2/Rxe2! traded minors and queens with balanced material.
+- c3?! blocked Bb2-d4; Re1?! abandoned the forward blockade. ...d2/Red1/dxc1=Q/Rxc1 lost R for P: guarding d1 did not stop capture-promotion on c1. Scan both two advances ahead.
+- ...Qa5 pins Nc3 to Ke1 via b4/c3/d2. Bd2 blocks Qd1's d4 recapture. Assess ...Ng4 before routine development.
+- A bishop can escape a fork with check: Nxe7?? Bg4+ Kf4 Bxe2; h5 guarded g4.
+- ...Rxd4 cxd4 attacks Nc3; ...d3 attacks Be2. Nd5 Nxd5 exd5 Qxa2 removes the forking knight first. Rac1 abandons a2.
 - Rb3 Qxb3: b2 guards a3/c3, not b3. Rb1 axb1=Q ignores capture-promotion. h8=Q Rh2+ Kg6 Rxh8: own king blocks the queen's h-file defense.

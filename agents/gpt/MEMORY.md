@@ -6,6 +6,7 @@
 - PAWN DIAGONALS FIRST, then knights and complete sliding rays. Rb3?? a4xb3, Qe4?? d5xe4 and Qd5?? e6xd5: defending or attacking another piece never makes a heavy-piece destination safe. T30 DeepSeek: Ng5? hxg5 lost N for P despite no move mark; rook/bishop support cannot prevent a cheaper capturer.
 - Test Kxchecker first and name its actual defender. ...Qh2+?? Kxh2, Rh7+?? Kxh7 and ...Qxb2+?? Kxb2 lost heavy pieces. Check does not establish safety.
 - Name exact defenders, screens and LEGAL recapturers. Nd2 blocked Be3-c1, Rc1's sole guard. Be3 blocks Re1-e4; f7 blocks Rf8-f2; Qe3 cannot recapture c2. Audit friendly rays newly blocked as well as enemy rays opened.
+- T31 SF: Kb3 screened Rb1-b7. 39...Rb1+ 40.Ka4? opened ...Rxb7; 41.Nxd6 recovered only B for R. When answering a rook check, trace the line BEYOND the king and test interpositions as well as king moves. A checked king may be the sole screen of another piece.
 - T30 Final: ...Bc3 covered h8 through d4/e5/f6/g7, but 53...Kd4 blocked MY bishop, allowing h8=Q+. A king is also a screen. Guarding the bishop does not preserve its distant defense; retrace the entire promotion diagonal after every king move.
 - Count duties AFTER the last recapture. Re2?? Rxe2 Nxe2 removed BOTH e4 guards, Re1 and Ng3; ...Nxe4 won P. A locally equal trade can lose material elsewhere.
 - Refresh pins when endpoints move. ...Nd4?? Nxd4 cxd4 Rxd8+ exposed Qd8. Kb1 released Rd2; Kg2 pinned Nd2 to Ra2, Kf1 released it. A pinned rook can capture its pinning queen.
@@ -22,15 +23,19 @@
 - Name a target/break before shuffling. T29 Re2/Rb4/Rb3 took 36/54/28 seconds yet missed guards and pawn captures. T30 SF Bxb6/Rf1/Nb3 took 56/44/55 seconds, then f3/Qf2 missed a checking fork with over 11 minutes left. Use the time to calculate the opponent's forcing reply.
 - T30 Final: ...Rg8/Rh8/Rg8 took 43/54/45 seconds; later ...Ka3/Bb4/Kd4 took 48/43/38. No invalid attempts; finished 4:45. With queens off, long king/rook explanations still missed a rook capture and a blocked promotion defense. Spend calculation on replies, then enforce the cap.
 - T30 DeepSeek: book 3-5 seconds worked; when R+B+N faced only pawns, Ne4/Bxg5/Rxe6 took 43/54/42 seconds. Cap routine winning conversion at 10-15 seconds after checking captures, king safety and stalemate.
+- T31 SF: Rb7/Nb4/Na2 took 43/53/38 seconds; finished 9:11 with no invalid attempts. Knight attacks on B/R were temporary activity, not a solved blockade. Check the opponent's forcing rook replies before another chase.
 - Track TOTAL material through the last recapture and the actual reply. Qxc1 Bxc1 Rxc1 Qxc1 costs Q+R for R+B. Ne2+ Nxc1 Rxc1 wins the exchange. ...Nxe4 taking B is not a trade until Qxe4 occurs; f3 instead leaves the captured bishop lost.
 - Ahead: remove counterplay, simplify safely, preserve mating material. Check pawn guards and entry squares before queen trades. Worse: safe activity/repetition; later gifts do not validate earlier errors.
 - B+P conversion: preserve the LAST pawn with king support before using the bishop to stop a remote passer. A bishop alone cannot mate. Count the enemy king's route to the pawn and how many moves the passer gives you.
 - T30 vs Sonnet: Kd5/Be7/a5 vs Kb3/g5/h5, 57...Bxg5?? 58.Ka4! Bd8 59.h6! Kc4 60.h7! Bf6! 61.Kxa5 drew. Bd8 alone guarded a5; h7 forced it to guard h8 instead. The king arrived too late. ...Bf6 saved the draw, not the win; seek king support before the move-57 capture.
 - Escort passers; scan straight AND capture-promotions two advances ahead. c2 attacks b1/d1. Ba1 Rc1+ Kh2 Rxa1 removes a blockader. ...Rf8 Rxf8+ Nxf8 b8=Q removes a pinned blockader. T30 Final: Ka3 guarded a2, but Bc1+ Ka4 Rxa2+ deflected the escort and removed the passer. Calculate checks against the king before claiming the rook is tied down.
+- T31 SF: Nxd6 removed Ba3's defender but allowed ...a2! before Kxa3. Nd6 could reach neither a2 nor a1; Ka3 then allowed ...a1=Q#. Removing a passer's guard helps only if the capture/blockade occurs before its next advance. Include the promotion's check and rook-controlled king flights.
 - Verify mate support, all flights and stalemate. e5 clears Bb1-h7; ...Nf6xd5 can abandon h7. Qf2 supports Rd1# vs Kh1. Qg3/Ne4 supports Qxg3+ then Nf2#. T30 DeepSeek: Re7+ Kg8 h7+ Kh8 Bf6#; h7 controls g8, Re7 protects h7 and covers g7. T30 SF: h5 protected Qg4 at ...Qxg4# vs Kg5; Kh7 covered h6 and Rf7 covered f6. SF repetition with Q+R vs bare K proves no fortress.
 - T30 SF2: Bf5 supported Qh7+ Kf8 Qh8#; Re1 denied e7. A retained rook can matter through flight control even when the queen and bishop deliver the checks. ...Nd7 guarded f6/f8 but answered neither mating square.
 
 ## White openings
+- T31 Maroczy: e4/c5/Nf3/Nc6/d4/cxd4/Nxd4/g6/c4/Nf6/Nc3/Qa5/f3/Nxd4/Qxd4!/Bg7/Be3/d6/Be2/O-O. Before O-O?! calculate ...Ng4: Nf6 leaves Bg7-f6-e5-d4 open, attacking Qd4 while Ng4 attacks Be3. Qd2/Nxe3/Qxe3! preserved pawns but conceded the bishop pair. No verified move-11 replacement.
+- Same game: ...Be6/Rac1/Rfc8/Rfd1?! Bxc4! Bxc4 Rxc4! lost c4 and activated the rook against Nc3. Nd5 then cleared c3, allowing ...Rxc1 Qxc1. A bishop guard does not save a pawn when the attacking bishop has a rook behind it. Nf4?!/Qxa2/Rxd6/Qxb2/Nd3/Qxc1+/Nxc1 left R+N vs R+B, two pawns down; rook activity did not repay the queenside losses. No verified replacements for moves 15/19.
 - Classical Caro: h4/h5, Nf3/Bd3/Qxd3/Bf4/O-O-O/Kb1. Ne5 Nxe5 dxe5 opens Rd1 and attacks Nf6. T30 DeepSeek: ...Nd7?? Qxd7 Qxd7 Rxd7 wins N; ...Bf6 exf6 then wins B for P even without a move mark. e5 screens Qc7-f4 against ...Nxf4. No forced opening edge established.
 - Caro ...Nd5 Bd2 ...Nc7 Qe4; ...Bf6? exf6 Qxf6 Bc3 attacks Q and clears d2. ...Qxf2 Be1 guards Ng3 through f2; ...Qb6 Rd7 invades.
 - Chigorin: Nf1 restores Qd1-d4; Qf3 abandons b3 to ...Nb3. Rc1/Bb1's queen trap needs actual c-file geometry; ...Qb7 avoids it. ...Rac8/d5 Nb4/Bb1 a5/a3 Nc2 forced Bxc2 Qxc2 Qxc2 Rxc2: equal material, active enemy rook.
@@ -59,4 +64,4 @@
 - notes/four-knights.md - Opening branches, rook safety and promotion screens.
 - notes/qgd-exchange.md - Central guards and mating lines.
 - notes/ruy-lopez.md - Exchange duties, bishop screens and king nets.
-- notes/sicilian-maroczy.md - Recaptures and promotions.
+- notes/sicilian-maroczy.md - Maroczy exchanges, king screens and passers.
