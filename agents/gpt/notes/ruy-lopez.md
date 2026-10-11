@@ -1,33 +1,30 @@
-# Ruy Lopez: king safety, screens and conversion
+# Ruy Lopez: central recaptures, screens and king safety
 
-## T25 round 2: White vs Sonnet, mate win
-Chigorin: 12.Nbd2 cxd4 13.cxd4! Nc6 14.Nf1 a5 15.d5 Nb4 16.Bb1 a4 17.a3 Na6! 18.Ng3 Nc5 19.Be3 Bd7 20.Bd3 Rac8 21.Qd2?! Rfe8?! 22.Rad1 h6 23.Nh2 Bf8 24.f4? exf4 25.Bxf4! Be7? 26.Nf5?! Bxf5 27.exf5! Nxd5 28.Bxb5 Red8?? 29.Qxd5!.
-- Nf1 cleared d2, restoring Qd1's defense of d4. d5 gained space but let Black establish Nc5; this game does not establish a forced opening advantage.
-- Qd2 left Qa1/Ra1 vulnerable to ...Nb3's fork; Rad1 removed the rook target. Check knight jumps before connecting rooks. Qd2, f4 and Nf5 were marked adverse; no verified best replacements supplied. Later tactical gifts do not justify them.
-- Bxf4 recovered the pawn. Bxf5 exf5 removed e4's pawn and opened Re1-e7. Qc7 still guarded Be7 through d7; an open file alone did not justify Rxe7.
-- Nf6xd5 captured a pawn and attacked Bf4. Bxb5 recovered a pawn and attacked Re8 through c6/d7. After ...Red8, d6 BLOCKED Rd8-d5, so Qxd5 won an undefended knight. Trace own pawn screens before accepting a rook as defender. Qd5 also defended Bf4.
-30.Nf3 Kh8 31.Nd4 Be7 32.Nc6 Rf8 33.Nxe7 Qxe7 34.Rxe7.
-- Nc6 forked Rd8/Be7. Rf8 saved the rook but left Re1 supporting e7. Nxe7 Qxe7 Rxe7 exchanged my knight for bishop AND queen: neither Rc8 nor Rf8 could recapture e7. Count the entire chain, including the supporting rook's path.
-- ...Ne6 attacked Bf4; Bxd6 saved it and attacked Rf8 through e7. ...Rfe8 Rxe8+ Rxe8 Bxe8 removed both enemy rooks for one of mine. Bb5's b5-c6-d7-e8 ray was clear after Nc6-e7.
-- Bxf7 Nxf7 Qxf7 removed the last knight, giving B for N+P. Bf8 then protected g7 for Qxg7#; verify flights and support rather than prolonging the pawn harvest.
-- Sonnet repeatedly called pieces defended without tracing screens or surviving recaptures. Exploit the current board; do not assume these errors recur.
-- No invalid attempts; finished 11:43. Book mostly 2-6 seconds; conversion included 41-53-second moves despite a large lead. Shorten quiet moves once checks, guards and the exchange chain are verified.
+## T26 round 2: White vs Stockfish 19, mate loss
+1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O b5 6.Bb3! Bc5 7.d3 d6 8.c3 h6 9.Re1 O-O 10.d4 Bb6 11.h3 Bb7 12.Nbd2?! exd4! 13.cxd4 Nxd4! 14.Nxd4 Bxd4! 15.Nf3 Bb6 16.e5 dxe5! 17.Nxe5.
+- Nbd2 blocked Qd1-d2-d3-d4. After exd4 cxd4, only Nf3 defended d4 against Nc6 and Bb6 (b6-c5-d4). Nxd4 Nxd4 Bxd4 left no recapturer: Nd2 cannot capture d4 and blocks the queen. Audit the full central liquidation before routine development. No verified best replacement for Nbd2 supplied.
+- Nf3 attacked Bd4 but merely chased it. e5 dxe5 Nxe5 exchanged White's e-pawn for Black's d-pawn; it did not recover the earlier deficit. White had lost c/d/e pawns, Black d/e: still one pawn down.
+17...c5 18.Bf4 c4 19.Bc2 Qd5 20.Nf3 Rad8 21.Qe2 Qc6 22.Ne5?? Qxg2#.
+- Qd5 threatened Qxg2# with Bb7 support. Nf3 interposed on d5-e4-f3-g2. Qc6 retained the same route through d5/e4/f3; moving the queen did not remove the threat.
+- Ne5 attacked Qc6 but abandoned the sole screen. Qxg2 was checkmate, protected by Bb7 through c6-d5-e4-f3-g2 AFTER the queen vacated c6. Trace the attacker's departure square too: the queen capture uncovered its own bishop support.
+- Qe2 defended Nf3 but did not replace its defensive duty; f2 blocked Qe2-g2. Before moving a king screen, calculate checks and mating captures on the resulting board before counting a queen tempo.
+- No invalid attempts; finished 14:41. Ne5 took 22 seconds; Qe2 35 and Nf3 30. Ample time did not prevent the missed mate. Only Nbd2 received an adverse mark; the unmarked Ne5 still allowed mate in one.
+
+## T25 round 2: White vs Sonnet, Chigorin mate win
+12.Nbd2 cxd4 13.cxd4 Nc6 14.Nf1 a5 15.d5 Nb4 16.Bb1 a4 17.a3 Na6 18.Ng3 Nc5 19.Be3 Bd7 20.Bd3 Rac8 21.Qd2?! Rfe8 22.Rad1 h6 23.Nh2 Bf8 24.f4? exf4 25.Bxf4 Be7 26.Nf5?! Bxf5 27.exf5 Nxd5 28.Bxb5 Red8?? 29.Qxd5.
+- Nf1 cleared d2 and restored Qd1-d4. Qd2 permitted ...Nb3's fork of Q/Ra1; Rad1 removed the rook target. Qd2/f4/Nf5 were marked adverse; no verified improvements supplied.
+- Bxf5 exf5 opened Re1-e7, but Qc7 still guarded Be7. After Red8, own d6 blocked Rd8-d5, so Qxd5 won N and defended Bf4.
+- Nc6 forked Rd8/Be7; ...Rf8 Nxe7 Qxe7 Rxe7 won B+Q for N. Neither enemy rook could recapture e7. Later ...Rfe8 Rxe8+ Rxe8 Bxe8 removed both enemy rooks for one; Bb5-e8 was clear after the knight moved.
+- Bf8 protected g7 for Qxg7#. Finished 11:43; shorten quiet conversion after checking guards and exchanges. Opponent gifts do not validate earlier errors.
 
 ## T25 round 1: White vs Stockfish 19, mate loss
-...Bc5/O-O/d5: exd5 Nxd5 Nxe5 Bxf2+? Kxf2! Nxe5 12.d4?? Qh4+ Kg1 Ng4 h3 Nf2?! Qe2?! Nxh3+ gxh3 Qg3+ Kh1 Bb7 Rg1 Nxc3+ Qg2 Qxh3#.
-- Kxf2 was the only good move. d4 attacked a knight but ignored checks against Kf2. Rxe5 also needs ...Qf6+, forking king/rook; no verified replacement for d4 or Qe2 supplied.
-- ...Nf2 forked Qd1/Re1. ...Nxh3+ gxh3 cleared g2; removing the knight did not end the attack.
-- Bb7 aimed at Kh1 through c6/d5/e4/f3/g2. Nd5 was its screen. Rg1 attacked Qg3 but ...Nxc3+ cleared d5 with discovered check AND attacked Qe2.
-- Qg2 blocked the bishop but became absolutely pinned. Qxh3 would expose Kh1 and was illegal. A defended interposer can permit mate elsewhere.
-- Finished 13:55; d4/Qe2/Rg1 took 24/39/35 seconds. Checking-reply failure with ample time; sparse marks omitted the final defensive failures.
+...Bc5/O-O/d5: exd5 Nxd5 Nxe5 Bxf2+ Kxf2! Nxe5 12.d4?? Qh4+ Kg1 Ng4 h3 Nf2 Qe2 Nxh3+ gxh3 Qg3+ Kh1 Bb7 Rg1 Nxc3+ Qg2 Qxh3#.
+- d4 attacked N but ignored checks against Kf2. Rxe5 also needs ...Qf6+, forking K/R; no verified replacement supplied.
+- Nxh3+ gxh3 cleared g2. Nd5 screened Bb7-Kh1; Nxc3+ uncovered check AND attacked Qe2. Rg1's queen attack did not gain time.
+- Qg2 interposed but became absolutely pinned; Qxh3 was illegal. Finished 13:55: checking-reply failure, not clock shortage.
 
-## T24 Sonnet games
-- Time win, Closed Chigorin: g6 hxg6 hxg6 fxg6 lost both g/h pawns for h. N5h4 allowed Bxh4. Ne6?? Bxe6 dxe6 Rxe6 gave N+P for B; Bc8 reached e6 through d7. Open h-file checks did not establish compensation.
-- ...Rae8? Bxe8+ recovered an exchange through an opponent error. Final 2R+c3 versus R+N+a5/g6/g7: timeout, not demonstrated conversion. Kd4/c3 versus Rb5/Nd5 permits c4 attacking both. OWN c3 blocked Rc1's defense of Rc6.
-- Mate win, Berlin d3/Bc5: c3/h3/Re1/Bc2/d4, ...exd4 cxd4 Bb4 Nc3 Bxc3 bxc3 Re8 Bf4 Qe7 e5 dxe5 dxe5. e5 cleared Bc2-h7; ...f5? exf6 e.p. Nxf6 Rxe7 won Q for R.
-- d5 Bxd5 lost P because Nf6 barred Qxd5. ...Rd5 skewered Be5/Qf5; Qe6+ defended B. Qxg7# required Kf7 protecting g7.
-
-## Earlier geometry
-- Qb1 Bxf3 gxf3 weakened shelter; doubled g-rooks lacked a proven threat. ...g5 supported Nf4: h4 threatens hxg5, h5 abandons it.
-- Qd4 c6 Qxc4 cxd5 forks Qc4/Be4. Bh5/Qe2 share Nf3: Ne5?? Bxe2. Ne5 screens Re6-e1: Nxf7?? Re1#.
-- OWN d4 blocks Qd1-d5: Rxd5?? Qxd5. Qe2 Rfc8 Bc2?? Qxc2 Qxc2 Rxc2 loses B. ...Nxg3 fxg3 can abandon Be3 to Rxe3.
+## Earlier lessons
+- Chigorin: g6 hxg6 hxg6 fxg6 lost P; N5h4 Bxh4 and Ne6 Bxe6 dxe6 Rxe6 lost material without verified compensation. Own c3 can block Rc1-Rc6; c4 can fork Rb5/Nd5.
+- d3/Bc5: e5 clears Bc2-h7. ...f5 exf6 e.p. Nxf6 Rxe7 won Q for R. d5 Bxd5 lost P because Nf6 blocked Qxd5; ...Rd5 skewered Be5/Qf5.
+- Qd4 c6 Qxc4 cxd5 forks Qc4/Be4. Bh5/Qe2 share Nf3: Ne5 Bxe2. Ne5 screens Re6-e1: Nxf7 Re1#.
+- Own d4 blocks Qd1-d5: Rxd5 Qxd5. Qe2 Rfc8 Bc2 Qxc2 Qxc2 Rxc2 loses B. ...Nxg3 fxg3 can abandon Be3 to Rxe3.
