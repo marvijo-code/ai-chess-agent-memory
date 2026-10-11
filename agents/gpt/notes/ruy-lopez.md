@@ -1,32 +1,36 @@
-# Ruy Lopez: checks, guards and passers
+# Ruy Lopez: clearance, checks and passers
+
+## T27 semifinal 2 game 1: Black vs Sonnet, mate win after queen loss
+Chigorin: 12...cxd4 13.cxd4! Nc6 14.Nb3 a5 15.Be3 a4 16.Nbd2 Bb7 17.Rc1 Rac8 18.Bd3 Qb6?? 19.dxe5! Nxe5 20.Bxb6.
+- Qb6 defended b5 but sat on Be3-d4-c5-b6, screened only by White's d4 pawn. dxe5 removed that screen with tempo against Nc6. Test pawn clearances before putting Q on a latent bishop ray. No verified best replacement supplied for Qb6.
+- ...Nxe5 did not answer the queen attack. After Bxb6 Rxc1 Qxc1 Nxd3 Qc7 Rc8 Qxb7 Re8 Re3, the fork recovered Bd3 but failed to win Re1, and White took Bb7. Do not label threats compensation until every escape and recapture is counted.
+- ...Nxb2/Bd4/Nc4/Nxc4/bxc4/Bxf6/Bxf6 left White Q+R+N against R+B, Black one pawn ahead. ...c3 Nd4 Bxd4 Qxd4 c2 left White Q+R against R; Black remained lost in material.
+- 31.Qd1?? cxd1=Q+ captured the queen AND promoted. A c2 pawn threatens b1/d1 as well as c1. Qd1's control of c1 did not establish safety; White's e3 rook could not recapture on d1. This gift, not the earlier queen sacrifice, enabled the win.
+- Qd4/Rxe4/Rxe4/Qxe4 safely traded rooks into Q versus pawns. Kf8-e7-f6-f5-g4 and Kxg3 removed cover; Qf3+/Qf2+ restricted White to the first rank. Kf3-e3-d3-c3 supported Qb2#.
+- No invalid attempts; finished 11:43. Qb6 took 27 seconds; Nxe5/Rxc1/Rc8 took 54/53/53. Ample time did not replace clearance and full material scans.
 
 ## T27 round 3: White vs Sonnet, mate loss
-Closed Chigorin: c3/d4/h3/Nbd2, ...cxd4 cxd4! Nc6/Nf1/a5/d5/Nb4/Bb1/Bd7/Ng3/Rac8/a3/Na6/Be3/Nc5/Bg5/h6/Bd2/a4.
-- Nf1 restored Qd1-d4. With a4/Nc5, Qd1 also guarded b3 through empty c2. 25.Qf3?? abandoned that square: ...Nb3 forks Ra1/Bd2; Bb1 restricts the rook's rank retreats. The opponent postponed this threat, but the kingside plan did not solve it.
-- 22.Nh4?! Rfe8?! 23.Nhf5 Bxf5 24.Nxf5! Bf8 25.Qf3?? Be7?? 26.g4?? Nh7? 27.h4? Bf8?? 28.g5?? hxg5?! 29.hxg5 Be7?? 30.Qh5? Bf8?? 31.g6! fxg6 32.Qxg6 Qf7.
-- The pawn storm received several adverse marks; bishop shuffles gave later tactical chances. Do not certify g4/h4/g5 from the eventual opportunity. No verified replacements supplied for those earlier errors.
-- CRITICAL: 33.Nh6+! was available. Qg6 pins g7 to Kg8 along g6-g7-g8, so ...gxh6 is illegal. Bf8 cannot capture h6 through its own g7 pawn. Black's f8/f7/h7 squares are occupied, leaving only ...Kh8. Then 34.Nxf7+ wins Qf7 with another knight check.
-- Played 33.Qxf7+?? Kxf7! instead. This exchanged queens legally; it did NOT hang my queen. Both sides retained two rooks, three minors and five pawns. The blunder discarded a winning fork, not material in the exchange. Evaluate the actual board rather than opponent commentary.
-- 34.Bc3 Nb3 35.Ra2 g6 36.Ne3 Nf6 37.Bc2 Nd4 38.Bd3 Nf3+! 39.Kf1 Nxe1 40.Kxe1 lost the exchange. Before retreating Bc2, scan Nd4-f3+ against Kg1/Re1; an eventual king recapture does not save the rook's value.
-- 40...Rc5?! 41.b4? axb3 e.p. 42.Rb2 Rxc3: b2-b4 removed Bc3's sole pawn guard. En passant answered the rook attack while attacking Ra2, and the rook then captured the loose bishop. A tempo against a rook does not force its retreat.
-- 43.Bxb5 Re7 44.a4 Nd7 45.a5 Nc5 46.Ra2?? bxa2: the black pawn on b3 attacks a2/c2. Putting the rook behind my passer was irrelevant to destination safety. 47.Nc2 Rxc2 removed the a1 blockader; 48.a6 a1=Q#.
-- No invalid attempts; finished 9:05. Qxf7+ took 54 seconds, Rb2 56. Ample clock did not replace checks, guard audits or pawn-diagonal scans.
+Chigorin cxd4/cxd4/Nc6/Nf1/a5/d5/Nb4/Bb1/Bd7/Ng3/Rac8/a3/Na6/Be3/Nc5/Bg5/h6/Bd2/a4.
+- Nf1 restored Qd1-d4. Qd1 also guarded b3 through empty c2. Qf3?? abandoned it: ...Nb3 forks Ra1/Bd2; Bb1 restricts rook retreats. Opponent bishop shuffles postponed this threat, not removed it.
+- Nh4/Nhf5/Bxf5/Nxf5/Bf8/Qf3/Be7/g4/Nh7/h4/Bf8/g5/hxg5/hxg5/Be7/Qh5/Bf8/g6!/fxg6/Qxg6/Qf7. The pawn storm had several adverse marks; no verified replacements supplied.
+- CRITICAL: 33.Nh6+! pins g7 to Kg8 with Qg6, so ...gxh6 is illegal. Bf8 cannot capture through g7. f8/f7/h7 occupied: only ...Kh8, then Nxf7+ wins Qf7.
+- Played Qxf7+?? Kxf7 instead: a LEGAL queen trade leaving equal material, but discarding the winning fork. Do not misdiagnose it as hanging Q.
+- Bc3/Nb3/Ra2/g6/Ne3/Nf6/Bc2/Nd4/Bd3/Nf3+!/Kf1/Nxe1/Kxe1 lost the exchange. Scan Nd4-f3+ against Kg1/Re1 before Bd3.
+- ...Rc5 b4? axb3 e.p. Rb2 Rxc3: b2-b4 abandoned Bc3's pawn guard; en passant answered the rook attack while attacking Ra2. Later Ra2?? bxa2 ignored b3's capture diagonal. Nc2 Rxc2 removed a1's blockader; a6 a1=Q#.
+- Finished 9:05; Qxf7+/Rb2 took 54/56 seconds. Long thinks did not prevent these errors.
 
 ## T27 round 1: White vs Stockfish, mate loss
-...Bc5/Bb6/Bb7 against c3/d4/Re1/h3/a4/Be3; ...Na5-c4-b2-a4, Bxa4 bxa4 Rxa4.
-- Nxb2 forked Qd1/Ra1; Qb1 saved Q but allowed Nxa4. Bxa4 captured N. The full exchange traded B for N and lost White's a/b pawns for Black's b-pawn: one pawn down, with Black's a6 pawn remaining.
-- Kh2/Nf4/24.h4? f5: calculate the central break before a planned g3 knight kick. Qe7-f6-g5-h4 also threatens ...Qxh4+. ...fxe4 Rxe4 Nxd5 lost another pawn; ...Nf6/Re1/e4 forked Qd3/Nf3.
-- Rxe4 Nxe4 Qxe4 gave R for N+P. Bf5/Qb7 abandoned Nc4 to Qf7-e6-d5-c4; attacking Ra8 did not force retreat.
-- Final Kg5/Rg7/h6 vs Kd5/Ra1/Rf2: h7 Rg1+ Kh6 Rh2#. Rg1 covered g5/g6; own Rg7/h7 blocked flights. h7 also abandoned Rg7's pawn guard. No invalid attempts; 2:20 remained.
+- ...Na5-c4-b2-a4, Bxa4 bxa4 Rxa4 traded B for N and lost a/b pawns for Black's b-pawn: one pawn down.
+- Kh2/Nf4/h4? met ...f5. Before g3 calculate ...fxe4 Rxe4 Nxd5 and Qe7-f6-g5-h4+. ...Nf6/Re1/e4 forked Qd3/Nf3.
+- Bf5/Qb7 abandoned Nc4 to Qf7-e6-d5-c4. Final h7 allowed ...Rg1+ Kh6 Rh2# and abandoned Rg7's pawn guard.
 
 ## T26 final: Black vs Stockfish, mate loss
-Open Ruy d4/exd4/Re1/b5/Bb3/O-O/a4/Bb7/e5/Ne8/Bd5/d6; Nxd4! Bxb7! Rb8 Bxa6 dxe5 c3 Ne6?! Qxd8 Rxd8 Bxb5!.
-- Bxb7 bypassed recapturing Nd4. Ne6 allowed queen exchange/Bxb5, leaving a pawn deficit/outside a-passer. No verified replacement.
-- Rxb7 axb7 Rb8 Ra8 pinned Rb8 to Kg8. ...Rxb7 was illegal; ...Rf8 Rxf8+ Nxf8 b8=Q removed the blockader.
-- ...Nf2 left Kd4's guard; later ...Ke4/...Kd3 did not restore it and Qxf2 won N. Slow maneuvers gave no established compensation.
+- Open Ruy: Nxd4! Bxb7! Rb8 Bxa6 dxe5 c3 Ne6?! Qxd8 Rxd8 Bxb5! left pawn deficit/outside passer. No verified replacement.
+- Rxb7 axb7 Rb8 Ra8 pinned Rb8 to Kg8; ...Rxb7 illegal. ...Rf8 Rxf8+ Nxf8 b8=Q removed blockader.
+- ...Nf2 left Kd4's guard; later king moves did not restore it, and Qxf2 won N.
 
-## Earlier White patterns
-- Breyer Bh6/Qxh6/Ng5/Nh5: ...Nxh5 abandons h7, allowing Qxh7+ Kf8 Qh8#; own Re8 denies Ke8.
+## Earlier patterns
+- Bh6/Qxh6/Ng5/Nh5: ...Nxh5 abandons h7; Qxh7+ Kf8 Qh8#, own Re8 blocks Ke8.
 - Nbd2 blocks Qd1-d4: ...exd4 cxd4 Nxd4 Nxd4 Bxd4 wins P. Ne5 hitting Qc6 can clear ...Qxg2# with Bb7 support.
-- ...Bc5/O-O/d5: exd5 Nxd5 Nxe5 Bxf2+ Kxf2! Nxe5; d4?? Qh4+ Kg1 Ng4. Rxe5 needs ...Qf6+ calculation.
+- ...Bc5/O-O/d5: exd5 Nxd5 Nxe5 Bxf2+ Kxf2! Nxe5; d4?? Qh4+ Kg1 Ng4. Rxe5 requires ...Qf6+ calculation.
 - e5 clears Bc2-h7. d5 Bxd5 loses P when Nf6 blocks Qxd5. Bh5/Qe2 share Nf3; Ne5 Bxe2. Ne5 screens Re6-e1; Nxf7 Re1#. Own d4 blocks Qd1-d5.
