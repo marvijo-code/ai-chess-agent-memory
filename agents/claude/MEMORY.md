@@ -2,7 +2,7 @@
 
 ## Record
 - White: Closed Ruy DeepSeek 8 W, Sol 4 W 5 L 1 D; Ruy d3 v SF 1 L; Sicilian DeepSeek 8 W; Caro vs Sol: 3.Nc3 0-2, Advance 1 W 1 L.
-- Black vs Sol: Chigorin 2 W 10 L 3 D; 4.d3 d6 1 W 1 L; QGD 3 W 1 L; Pianissimo 2 L. DeepSeek: Chigorin 15 W 1 D, QGD 4 W, Pianissimo 2 W.
+- Black vs Sol: Chigorin 2 W 10 L 3 D; 4.d3 d6 1 W 1 L; QGD 3 W 1 L; Pianissimo 2 L. DeepSeek: Chigorin 15 W 1 D, QGD 5 W, Pianissimo 2 W.
 - Black vs SF 1.e4: 3.Nc3 9 L 5 D; Alapin 4 L 1 D; Ruy 6.d4 L; Caro Advance L; Berlin 1 D 1 L. SF as Black: Maroczy 2 D.
 
 ## Key lessons (read before EVERY move)
@@ -16,7 +16,7 @@
 - CLOCK: book 1-5 s; quiet 10-15 s; 45 s max at captures/breaks. Under 8:00 cap 15 s, under 4:00 cap 8, under 1:30 cap 3. Long thinks never fixed a bad plan (T24R1: 55-60 s each while a piece down). Armageddon Black: a draw wins.
 - EVERY MOVE: his last move first (T18 34...Bxd5?? 35.Bxb8); his queen tempo moves before a rook move (T20R2 25...Re8? 26.Qd3!); ILLEGAL (3 = forfeit): trace paths, list pins. Name a plan and HIS breaks. As White vs Chigorin AVOID d5.
 - DOWN: SF repeats at +5..+7 but mates a king stuck on e8 (T23R1) or g1 (T24R1: Qc6+Bb7 on the long diagonal); a rook down it mates. Keep queens ON (Sol offers trades when up). Q guards f4/h4/g7, K shuffles, f3+ to trade, no pawn moves. DeepSeek hangs things: stay solid, wait.
-- UP (T23R3: B up, mate 56): trade rooks, Kf2 unpins Bf1, push the a-pawn with the rook behind; no bait, stalemate check every ply, vary at the FIRST repeat.
+- UP (T23R3: B up, mate 56; T24R2 queen up, mate 29): trade rooks, Kf2 unpins Bf1, push the a-pawn with the rook behind; no bait, stalemate check every ply, vary at the FIRST repeat.
 
 ## Openings (details in notes)
 - W Yugoslav vs DeepSeek Dragon: 9.Bc4, O-O-O, h4/Kb1, Nde2, then Bh6/Qxh6/Ng5/Qh7#.
@@ -27,12 +27,12 @@
 - B Berlin vs SF: 10.Rd1 (=). NO ...Nd4. Try 10...O-O-O; Bf8+Rh8 out before ...h6/...Rd8.
 - B Chigorin: ...a5 FIRST, ...Bd7, ...Rac8, THEN ...Rfe8/...g6; count d4 after c3. Vs SF 6.d4: exd4 7.Re1 d6 8.Nxd4 Bd7.
 - B vs 3.Bc4: ...Nf6, d3, Be7, O-O, c3, d6, ...Be6; no ...a4.
-- B QGD 4.Bg5: ...Be7 O-O h6 Ne4; 10.Nd2 f5! 11.f3 exf3 12.Nxf3 Nc6 Bd7 Rad8 Nb4!; keep g6 guarded vs Ng6 fork.
+- B QGD 4.Bg5: ...Be7 O-O h6 Ne4; 10.Nd2 f5! 11.f3 exf3 12.Nxf3 Nc6 Bd7 Rad8/Rac8, Na5 vs Qb3, Qf6, Nxe5 Qxe5, Bc6 (T24R2 mate 29); Nb4!; keep g6 guarded vs Ng6 fork.
 - B vs SF 3.Nc3: 3...Nf6 4.Bb5 Bb4, never 3...Bc5; 5.O-O O-O 6.Nd5 Nxd5 7.exd5 e4! 8.dxc6 exf3 9.Qxf3 dxc6 ONLY; think 3+ min at 10-11.
 - B vs SF Alapin: 3.exd5 Qxd5 4.Nf3 Nf6 5.d4 Nc6 ...Qa5!. Caro Advance 4.h4 h5: try 4...h6, ...Qc7.
 
 ## Opponents
-- DeepSeek (0 losses in 36): hangs N/Q/R/B when worse or greedy, illegal moves; same QGD Lasker line every time.
+- DeepSeek (0 losses in 37): hangs N/Q/R/B when worse or greedy (T24R2 Qxb7?? into a guarded b7), illegal moves; same QGD Lasker line every time.
 - Stockfish 19 (depth 4-6): instant. White 1.e4 2.Nf3 3.Nc3 or 3.Bb5, Alapin; vs Caro 3.e5 4.h4. Black vs Ruy: ...b5, ...Bc5, ...h6, ...Bb6, ...d5, ...f5 (T24R1). Pounces on tactics; repeats vs a blockade.
 - Sol: White Ruy Chigorin (Bb1 + e5 + Q battery h7), 4.d3, 3.Bc4, 1.d4. Black Chigorin or Caro Advance (...f6 break); takes every free piece, trades queens when ahead, mates with Rh2#.
 
