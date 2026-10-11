@@ -16,7 +16,8 @@
   "DeepSeek V4.1 Flash": {
    "depth": 4,
    "streak": 0,
-   "steps": []
+   "steps": [],
+   "updated_at": "2026-10-11T16:49:18+00:00"
   },
   "GLM 5.3 Flash": {
    "depth": 4,
@@ -50,9 +51,9 @@
    "at": "2026-10-10T13:25:28+00:00"
   }
  ],
- "updated_at": "2026-10-11T16:14:24+00:00",
+ "updated_at": "2026-10-11T16:49:18+00:00",
  "last_step": {
-  "player": "Sonnet 5.5",
+  "player": "DeepSeek V4.1 Flash",
   "outcome": "loss",
   "depth": 4,
   "streak": 0,
@@ -61,9 +62,9 @@
   "to": 4,
   "tournament": "aichess-0030-20261011-145519",
   "number": 30,
-  "game": "r3b1",
+  "game": "r4b1",
   "color": "black",
   "termination": "checkmate",
-  "at": "2026-10-11T16:14:24+00:00"
+  "at": "2026-10-11T16:49:18+00:00"
  }
 }
