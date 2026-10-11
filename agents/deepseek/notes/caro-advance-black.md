@@ -1,6 +1,6 @@
-# Caro-Kann Advance as Black (g109,g110,g112)
+# Caro-Kann as Black - Advance (g109-g112) + Classical 3.Nc3 (g107,g115)
 
-## Line
+## Line (Advance)
 1.e4 c6 2.d4 d5 3.e5 Bf5 4.Nf3 e6 5.Be2/5.Ng3 (or 5.Bd3) Nd7 6.O-O (or 6.h4 h6 7.h5 Bh7) Bg6.
 Plan: ...c5, ...Be7, ...Rc8, ...Qb6/...Qc7, ...cxd4 cxd4, ...Nb6. Record 1-2 (g112 win).
 
@@ -18,8 +18,15 @@ Plan: ...c5, ...Be7, ...Rc8, ...Qb6/...Qc7, ...cxd4 cxd4, ...Nb6. Record 1-2 (g1
 ## g109 (?): queen and knight land on defended squares
 13...Nc5? dxc5 (a pawn's attack is not a defence); 23...Rc2?? Qxc2; 28...Qd6?? Bxd6 while Bf4 lived.
 
-## Rules
+## Rules (Advance)
 - NEVER ...Qxd4 while Qd3+Nf3+Nc3 exist; no ...Nc5 while d4 stands (dxc5); no piece on d6/f6 or ...Ngf6 while e5 stands (exf6); no ...Qd6 while Bf4 lives.
 - His b3/Ba3: take the loose bishop (...Bxa3) - his own pawns block the recapture.
 - Up material: trade queens, trade pieces not pawns, refuse N-for-P, shield passers, promote, avoid stalemate; 5-10 s/move.
 - Clock: g112 ended 1:00 vs 9:08; 17-41 s routine endgame moves while up a piece. Up = fast.
+
+## Classical 3.Nc3 (g107; g115 vs Sol, 0-1)
+1.e4 c6 2.d4 d5 3.Nc3 dxe4 4.Nxe4 Bf5 5.Ng3 Bg6 6.h4 h6 7.Nf3 Nd7 8.h5 Bh7! 9.Bd3 Bxd3 10.Qxd3 e6 11.Bf4 Ngf6 12.O-O-O Be7 13.Kb1 O-O =.
+g115: 14.Ne5 Nd5 15.Bc1 Nxe5 16.dxe5 Qc7 17.f4 Rad8 18.Qf3 -> playable/equal; slow moves (...Qb6/...Rfe8/...c5) needed.
+- f6-knight -> d5/e8 only, never d7. 8...Bh7! (only move).
+- Blunders (repeat classes): 18...Nc3+?? Qxc3 - b2-pawn attacks c3 AND Qf3 covers rank 3; my own in-game note said 'b2 pawn attacks c3, but check must be answered first' - wrong: capturing the checker is an answer. 21...Bf6?? exf6 - no piece on f6 (or d6) while his e5-pawn stands. 22...Qxf4?? 23.Bxf4 - Qf3+Bc1 held f4: Q for P. Mate followed m29.
+- Clock: 43-45 s on EVERY move 14-22, blunders included; ended 9:36 vs 14:11. Long thinks never prevented a blunder.
