@@ -809,24 +809,24 @@
    "number": 24,
    "players": {
     "Sonnet 5.5": {
-     "calls": 127,
-     "input": 2252253,
-     "cached": 2116691,
-     "output": 190282,
-     "warm_input": 2184088,
-     "warm_cached": 2075371,
-     "hit_rate": 0.9398,
-     "warm_hit_rate": 0.9502
+     "calls": 160,
+     "input": 3458853,
+     "cached": 3293301,
+     "output": 236981,
+     "warm_input": 3390688,
+     "warm_cached": 3251981,
+     "hit_rate": 0.9521,
+     "warm_hit_rate": 0.9591
     },
     "GPT-6.1 Sol": {
-     "calls": 153,
-     "input": 4374160,
-     "cached": 4110080,
-     "output": 71173,
-     "warm_input": 4233965,
-     "warm_cached": 3992320,
-     "hit_rate": 0.9396,
-     "warm_hit_rate": 0.9429
+     "calls": 187,
+     "input": 6199277,
+     "cached": 5837312,
+     "output": 93307,
+     "warm_input": 6059082,
+     "warm_cached": 5719552,
+     "hit_rate": 0.9416,
+     "warm_hit_rate": 0.944
     },
     "DeepSeek V4.1 Flash": {
      "calls": 217,
