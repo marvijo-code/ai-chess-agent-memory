@@ -726,12 +726,12 @@
    "number": 31,
    "players": {
     "GPT-6.1 Sol": {
-     "games": 5,
-     "read_in_prompt": 5,
-     "read_latest": 5,
-     "reflections": 5,
-     "memory_updates": 5,
-     "note_updates": 5,
+     "games": 6,
+     "read_in_prompt": 6,
+     "read_latest": 6,
+     "reflections": 6,
+     "memory_updates": 6,
+     "note_updates": 6,
      "rejected": 0,
      "errors": 0,
      "retries": 0
@@ -764,6 +764,6 @@
  "last_written": {
   "DeepSeek V4.1 Flash": "006bdf9539c7",
   "Sonnet 5.5": "a397e6747be5",
-  "GPT-6.1 Sol": "4a6dca120e8c"
+  "GPT-6.1 Sol": "e6d089621f14"
  }
 }
