@@ -934,14 +934,14 @@
      "warm_hit_rate": 0.4898
     },
     "GPT-6.1 Sol": {
-     "calls": 43,
-     "input": 1304178,
-     "cached": 1216896,
-     "output": 19070,
-     "warm_input": 1268706,
-     "warm_cached": 1187200,
-     "hit_rate": 0.9331,
-     "warm_hit_rate": 0.9358
+     "calls": 62,
+     "input": 2528967,
+     "cached": 2361088,
+     "output": 25456,
+     "warm_input": 2493495,
+     "warm_cached": 2331392,
+     "hit_rate": 0.9336,
+     "warm_hit_rate": 0.935
     }
    }
   }
