@@ -2,30 +2,34 @@
 
 Wins and sparse marks do not validate moves. Track material, defenders and blockers independently; exploit actual errors without expecting gifts.
 
+## T28 semifinal 1 game 1: White Classical Caro, mate win
+1.e4 c6 2.d4 d5 3.Nc3 dxe4 4.Nxe4 Bf5 5.Ng3 Bg6 6.h4 h6 7.Nf3 e6 8.h5 Bh7! 9.Bd3 Bxd3 10.Qxd3 Nd7 11.Bf4 Ngf6 12.O-O-O Be7 13.Kb1 O-O 14.Ne5 Nxe5 15.dxe5 Nd5 16.Bd2 Nc7?! 17.Qe4 Bf6? 18.exf6 Qxf6.
+- dxe5 attacked Nf6 and opened Rd1's file, initially screened by Bd2. Bd2 preserved the attacked bishop; Qe4 kept queens on. No forced opening advantage established.
+- Bf6 landed on e5's pawn-capture square. exf6 Qxf6 won B for P, not merely a central exchange. Later ...Qxf2 recovered another pawn; Black remained a piece down for two pawns.
+19.Bc3 Qxf2 20.Be1 Qb6 21.Rd7 Qxb2+ 22.Kxb2 Nd5 23.Rxb7 Rfb8 24.Rxb8+ Rxb8+ 25.Kc1 Nf6 26.Qxc6 Ne8 27.Rh4 Rb6 28.Qxe8+ Kh7 29.Rb4 Rb8 30.Rxb8 a5 31.Qh8#.
+- Bc3 attacked Qf6 through d4/e5 and cleared d2 for Rd1. Be1 attacked Qf2 and guarded Ng3 through f2 after the queen departed. Rd7 attacked Nc7 and pressured f7.
+- Qxb2+ was undefended: Kxb2 was legal. Nc7 did not guard b2; neither rook protected it. Always test capture of the checking piece first. Viewer marked only an inaccuracy, so severity must come from the board.
+- Rxb7/Rxb8+ removed a rook and pawn safely. Qxc6 answered Nf6's attack on Qe4 while taking another pawn. Rh4 activated the remaining rook toward b4.
+- Rb8 had guarded Ne8 horizontally through c8/d8. ...Rb6 abandoned that knight while attacking Qc6; Qxe8+ took it with check. Test the departing attacker's defensive duties before retreating.
+- Rb4 was supported by Be1 through d2/c3. ...Rb8 attacked Qe8, but Rxb8 captured the attacker safely: queen attacks do not force queen moves. The last rook disappeared.
+- Qh8# cleared e8 from Rb8-h8, so Rb8 protected the queen. Qh8 covered h7/g7/g8; White's h5 pawn controlled g6, and Black's g7/h6 pawns occupied remaining flights.
+- No invalid attempts; finished 13:16. Book 3-7 seconds worked; Rxb7/Rb4 took 41/33 despite a large advantage. Use shorter verified conversion moves.
+
 ## T28 round 1: Black Classical Caro, mate win
-1.e4 c6 2.d4 d5 3.Nc3 dxe4 4.Nxe4 Bf5 5.Ng3 Bg6 6.h4 h6 7.Nf3 Nd7 8.h5 Bh7! 9.Bd3 Bxd3 10.Qxd3 e6 11.Bf4 Ngf6 12.O-O Be7 13.c4 O-O 14.Rfe1 c5? 15.d5! exd5 16.cxd5? Re8 17.Bxh6?? gxh6! 18.Qg6+? fxg6 19.hxg6 Bf8.
-- White castled short and expanded with c4: distinguish this from O-O-O/Ne5. ...c5 was marked a mistake and d5 the only good reply; no verified better Black move supplied. Later tactical gifts do not certify the break.
-- Bxh6 offered B for P without a verified attack. gxh6 was the only good reply. Qg6+ landed on f7's pawn-capture square; checking did not prevent fxg6. Bf8 covered g7/h6 and prepared to capture the advanced g-pawn.
-20.Ne5 Nxe5 21.Rxe5 Rxe5 22.g7 Bxg7 23.Nf5 Rxf5 24.d6 Qxd6.
-- Nd7xe5 removed an attacker; Re8 could recapture on e5 through empty e7/e6. White's Rxe5 gave R for N. Then Bxg7 removed the passer, Rxf5 took the last knight and Qxd6 removed the other passer. Verify full paths and total material before each capture.
-25.Rb1 Qh2+?? 26.Kxh2 Rxf2 27.Kg1 Ne4 28.Rf1 Rxf1+ 29.Kxf1 Re8.
-- Qh2 was UNGUARDED; Kxh2 was legal. No bishop, knight or rook defended h2. Test Kxchecker before choosing every check, even with overwhelming material. This direct queen loss had no adverse viewer mark.
-- Before Qh2: Q+2R+B+N versus R, four pawns each. After Kxh2: 2R+B+N versus R; Rxf2 won P. The rook exchange left R+B+N and four pawns versus three pawns. Still winning, but the queen gift was needless.
-- Qh2 took 53 seconds with over 14 minutes left. Shorten verified forcing captures and conversion moves; extra time did not prevent the basic miss.
-30.Ke2 Ng3+ 31.Kf2 Nf5 32.g4 Nd4 33.g5 hxg5 34.Kg3 Re3+; ...Kf7-g6-h5-g4, ...Re2+ Kf1 Kf3 Kg1 Nc2 Kh1 Bd4 b3 Kg3 a3 Rh2#.
-- Ng3+ was double check: Ne4's departure opened Re8-e2 and Ng3 also attacked e2. Nd4 was protected by c5 and guarded e2. Re3 restricted the third rank while K approached.
-- Nc2 guarded e1 and cleared d4 from Bg7-f6-e5-d4. Bd4 then covered g1 through e3/f2; Kg3 protected h2 and controlled g2. Rh2# used actual king support and covered flights. No invalid attempts; finished about 10:30.
+White O-O/c4/Rfe1; ...c5? d5! exd5 cxd5? Re8 Bxh6?? gxh6 Qg6+? fxg6 hxg6 Bf8.
+- ...c5 was marked adverse; later gifts do not certify it. Bxh6 lacked a verified attack; Qg6+ lost Q to f7's pawn despite check.
+- Ne5 Nxe5 Rxe5 Rxe5 g7 Bxg7 Nf5 Rxf5 d6 Qxd6 removed attackers/passers. White's Rxe5 gave R for N; count the entire material deficit.
+- ...Qh2+?? Kxh2 lost MY unguarded queen. Before it: Q+2R+B+N versus R, four pawns each. After Rxf2 and the rook exchange: R+B+N and four pawns versus three, still winning. Qh2 took 53 seconds; ample time did not prevent the miss.
+- ...Ng3+ was double check, opening Re8-e2. ...Nd4 was pawn-protected and guarded e2. Later ...Nc2 cleared Bg7-d4; Bd4 covered g1, Kg3 protected h2, and Rh2# used actual king support.
 
 ## T27 round 2: Black Classical Caro, mate after queen loss
 White O-O-O/Ne5/Bg5??; ...Nxe5?! dxe5! Nd5?! Qxd5?? Bxg5+ Qd2 Bxd2+ Rxd2.
-- Nxe5/Nd5 were inaccurate; no verified replacements. Nd5 cleared Be7-f6-g5. Bxg5+ inserted check before recapturing and won Q for B+N overall.
-- ...Qg5 Nf5? exf5 Kb1 Qxg2 Rhd1 Qxf2?! Rxf2! lost MY queen. Rd2 captured horizontally through e2; Kb1 had released its pin. Rf8 could not recapture through f7.
-- Both sides then had two rooks, Black seven pawns versus five. ...Rad8 Rxf5? Rxd1# exploited a2/b2/c2 occupying flights. No queen advantage remained. Qxf2 took 25 seconds; clock shortage was irrelevant.
+- Nd5 cleared Be7-g5; the checking intermezzo won Q for B+N. The preceding Black moves were inaccurate, not validated by the gift.
+- ...Qxf2?! Rxf2 lost MY queen: Rd2 captured through e2, Kb1 had released its pin, and f7 blocked Rf8. Equal rooks remained; ...Rad8 Rxf5? Rxd1# exploited blocked flights.
 
-## White Classical Caro: retained patterns
-- Ne5 Nxe5 dxe5 opens Rd1 and attacks Nf6. ...Nd7?? Qxd7 Qxd7 Rxd7 wins N. Bc1/...Qc7/f4: ...Nxf4?? Bxf4 because e5 screens Qc7-f4.
-- Qf3/...Nc3+?? Qxc3 Rxd1 Rxd1 wins N; Rh1 recaptures through g1/f1/e1. Check complete liquidation.
-- Bf6 exf6 clears Bf4-e5-d6-c7-b8; Rxb7 Rb8 Bxb8 wins R with Rb7 guarding b8.
-- Rh7+?? Kxh7: f7 blocked Rb7-h7; Bd4 guarded g7/h8, not h7. Unmarked rook loss.
-- Nd7+ uncovers Bd4-h8 and attacks Rf8. Check alternative king replies; Nxf8 can still win R when f6 blocks B. Ng6 retains N with h5 support.
-- Nf6+ can block Rf1's guard of Rxf7, allowing Kxf7. Nf4 clears Qc4-e2; Bxf4 Qxe2 takes R before recovering B.
+## Retained White patterns
+- ...Nd7?? Qxd7 Qxd7 Rxd7 wins N. e5 screens Qc7-f4, so ...Nxf4?? Bxf4.
+- ...Nc3+ Qxc3 Rxd1 Rxd1 wins N; trace Rh1 through g1/f1/e1.
+- Bf6 exf6 clears Bf4-b8; Rxb7 Rb8 Bxb8 wins R with Rb7 supporting b8.
+- Rh7+?? Kxh7: f7 blocked Rb7-h7; Bd4 guarded g7/h8, not h7.
+- Nd7+ discovers Bd4-h8 and attacks Rf8. Nf6+ can instead block Rf1's support of Rxf7, allowing Kxf7. Nf4 clears Qc4-e2: Bxf4 Qxe2 takes R before recovering B.
