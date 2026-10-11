@@ -1,47 +1,29 @@
-# QGD as White (Lasker 0-11; Bxf6 h6 0-2; Exchange 0-1; Tartakower 0-1)
+# QGD as White (Lasker 0-12; Bf4-IQP 0-1; Bxf6 h6 0-2; Exchange 0-1; Tartakower 0-1)
 Openings give playable positions; every loss is one middle-game discipline miss.
 
-## Lasker (Nd7/Nf6/Be6/c6/Rad8) - g142 vs Sonnet (0-1, Qb7# m50)
-8.Bxe7 Qxe7 9.cxd5 Nxc3 10.bxc3 exd5 11.Bd3 Nd7 12.O-O Nf6 13.Re1 Be6 14.Qc2 c6 15.Ne5 Rad8 =.
-- 16.Ng6?? (forks Qe7+Rf8) fxg6! 17.Bxg6 Bf7 18.Bxf7+ Qxf7 = N for P: g6 is covered by the f7/h7 pawns; a bishop retaking the pawn does NOT restore the knight. Game lost here.
-- Conversion vs Sonnet: ...Ne4, ...Qf6, ...Qxf2+ Kh1, Qxf5 Rxf5, Rxf1+ Kxf1, Nxc3, Nxa2, Ke6-d5, d4-d1=Q, Q+K+N mate.
-- Down a piece vs Sonnet: fight (K marched to a7/b6 for pawns) but nothing saved it.
-- Clock: moves 8-18 took 23-43 s (Qc2 42, Ne5 43, Ng6 43) - IQP routine moves <=15 s.
-
-## Lasker 7...Ne4 - g141 vs Sonnet (0-1, Rxe1# m24)
-- Equal to 21...b6 (Qc5/Qxc5, Rxc5 fine). 22.Rxc6?? Rxc6 = R for P - the c6-pawn was guarded by Rc8, so no 'trade' existed (repeat of g111). Retreat Rc2. 23.Rc1?? Rxc1+ 24.Ne1 Rxe1# (Kg1 boxed by f2/g2/h2, rook covers f1-h1).
-- 'Up a pawn' after 22...Rxc6 was wrong: down R for P. Count BOTH sides to the last recapture after every capture.
-- 20.Qc5: 79 s incl. 1 illegal try; 15-23 mostly 35-79 s. Book <=10 s, routine <=15 s.
-
-## Lasker - g138 vs Sonnet (0-1, Qxg2# m21) - mate battery missed
-8.Bxe7 Qxe7 9.Nxe4 dxe4 10.Nd2 f5 11.f3 exf3 12.Nxf3 Nc6 13.Bd3 Bd7 14.O-O Rad8 15.Ne5?? Nxe5 16.dxe5 Bc6 17.Rc1 Qc5! 18.Qe2 Qxe5 19.c5 Rxd3 20.Qxd3 Qd5 21.Qc3?? Qxg2#.
-- 15.Ne5?? (SF ??): only TRADES knights; after 16.dxe5 the e5-pawn is loose - my e3-pawn BLOCKS Qe2's file guard; 17...Qc5 18...Qxe5. Name e5's defender before Ne5.
-- 20...Qd5 (he was up a pawn after giving R for B): attacks Qd3 on the open d-file AND starts Qxg2#: Bc6 backs g2 on c6-d5-e4-f3-g2; Rf1/h2-pawn don't guard g2; h1/f2 cover the flights.
-- MATE-FIRST: his queen onto my castled king's long diagonal + bishop behind it = net; reply must block (e4) or trade queens (Qxd5 exd5); 21.Qc3?? saved the queen but ignored the net.
-
-## Lasker book
+## Lasker book (Nd7/Nf6/Be6/c6/Rad8)
 ...Be7 O-O h6 Bh4 Ne4 Bxe7 Qxe7 Nxe4 dxe4 Nd2 f5 f3 exf3 Nxf3 Nc6 Bd3 Bd7 O-O Rad8 Qe2 Qf6 =.
-- g131 vs Sonnet (0-1, Rxe1# m27): 17.Ne5? Nxe5 18.dxe5 Qxe5 (e3 blocked Qe2/Re1) 19.Qh5 Qf6 20.Qxf5?? exf5 = Q for 2P.
-- g126 vs Sonnet (0-1, Rc1# m24): 15...c5! 16.dxc5 Nxc5 hits Bd3 (save Be4/Bc2), never 17.Rxc5?? = R for N (2 vs 3). No Nf5 while e6 stands; never Q on Bb7's diagonal (f3/g2).
-- g111: 21.c4?? removed d4's last guard -> ...Rxd4. 26.Rxc6?? Rxc6 = R for P (same as g141).
-- g98: 13.Be2? Qb4! pins Nd2 and hits b2; with Nd2+Ke1, Qc2 first.
+8.Bxe7 Qxe7 9.cxd5 Nxc3 10.bxc3 exd5 11.Bd3 Nd7 12.O-O Nf6 13.Re1 Be6 14.Qc2 c6 15.Ne5 Rad8 =.
+- g138 15.Ne5?? only trades knights; after 16.dxe5 the e5-pawn is loose (my e3 blocks Qe2's file guard) -> 17...Qc5 18...Qxe5. Name e5's defender before Ne5.
+- g142 16.Ng6?? 'forks' Qe7+Rf8 but fxg6! = N for P (g6 covered by f7/h7); 17.Bxg6 Bf7 does NOT restore the piece.
+- g138 20...Qd5! = Qxg2# battery: Bc6 backs g2 (c6-d5-e4-f3-g2); Rf1/h2-pawn defend nothing. Block e4, defend g2, or trade Qxd5.
+- g141 22.Rxc6?? Rxc6 = R for P (c6 guarded by Rc8); a 'trade' needs MY recapturer. 23.Rc1?? Rxc1+ 24.Ne1 Rxe1#.
+- g126 15...c5! then Nxc5 hits Bd3 (never 17.Rxc5?? = R for N); no Nf5 while e6 stands; never Q on Bb7's diagonal.
+- g131 17.Ne5? Nxe5 18.dxe5 Qxe5 19.Qh5 Qf6 20.Qxf5?? exf5 = Q for 2P. g111 21.c4?? removed d4's last guard -> Rxd4.
 
-## Pawn diagonals (g131, g133, g136)
-- Before EVERY queen move list enemy pawn captures: e6 hits d5/f5, d5 hits c4/e4, f7 hits e6/g6. 3 Q-for-p losses (Qxf5?? exf5; Qe4?? dxe4; Qd5?? exd5); 'defended' never saves.
+## Bf4-IQP 5.Bf4 O-O 6.e3 c5 7.Bd3 Nc6 8.O-O cxd4 9.exd4 dxc4 10.Bxc4 b6 11.Qd3 Bb7 12.Rfe1 Rc8 13.Rad1 - g143 vs Sol (0-1, Qe1# m23)
+- 13...Nb4! hits Qd3; 14.Qe2 keeps her on e2-d3-c4, the ONLY guard of Bc4. 14...Bxf3! forces the recapture: 15.gxf3! keeps the queen on post; 15.Qxf3?? left the diagonal and 15...Rxc4 won the whole bishop = the game. Before any queen recapture, list what she was defending.
+- After that: 17.a3 Nbd5 18.Nxd5 Nxd5; 19.Bd6?? simply hung (d4-pawn blocks Rd1); 20.Qxe6?? fxe6 = Q for P (f7 hits e6, and never grab when down); 23.Rd2?? Qe1# - make luft while Kg1 is boxed by f2/g2/h2, even in a lost position.
+- Plan: watch ...Nb4 (hits Qd3/c2), ...Na5/...Nd5 vs Bc4, the ...Bxf3/...Rxc4 trick, and keep c3+d4+Rc1 stable; IQP needs active pieces, not slow rook shuffles (7-13 took 20-39 s each).
 
-## Exchange 5.Bf4 - g133 vs Sol (0-1, Rd1# m23)
-7.cxd5 Nxd5 8.Nxd5 exd5 9.Bd3 Nc6 10.O-O Bg4 11.h3?! Bh5 12.Rc1?! cxd4 13.exd4 Bxf3 14.Qxf3! Nxd4 15.Qe4?? dxe4 16.Bxe4 Ne2+ 17.Kh2 Nxc1 18.Rxc1 Qd4 19.Rc4?? Qxc4.
-- 15.Qe4??: I checked Nd4 undefended but never the d5-pawn's diagonals; safe d1/d3/e3. 19.Rc4?? = Qxc4 (my attacker undefended). 22...Rad8 threatened Rd1#.
+## Pawn diagonals (g131,g133,g136,g143)
+- Before EVERY queen move list enemy pawn captures: e6 hits d5/f5, d5 hits c4/e4, f7 hits e6/g6. Q-for-P 4x: g131 Qxf5?? exf5; g133 Qe4?? dxe4; g136 Qd5?? exd5; g143 Qxe6?? fxe6. 'Defended' never saves.
+- Queen geometry: Qxc4 was legal from e2 (e2-d3-c4) and impossible from f3 (g143 illegal try). After she moves, re-list her lines.
 
-## Tartakower ...b6/...Bb7/...Nbd7 - g136 vs Sol (0-1, Nf2# m32)
-11.cxd5 Nxd5 12.Bxe7 Qxe7 13.Nxd5 Bxd5 14.dxc5 Nxc5 =.
-- 15.Ne5 (SF ??) 16.Nd7?? (SF ??): Qe7+Nc5 hit d7, 0 guards -> N for nothing. Count MY guards BEFORE the sortie.
-- 27.Qd5?? exd5; then Q+B vs Q: Sol traded rooks, gave B for N, mated. No piece onto a square he attacks with 0 of my guards.
-
-## Bxf6 h6 (0-2)
-- After ...cxd4/...dxc4/...b6/...Bb7 d4 is a target, not a gift; never a piece on d5 (e6-pawn) or d6 (Qd7); never Q-grab on d4 while his queen+bishop hold it.
-- g113 (m19): 14.Nd5?? cxd5; 18.Qc4 Qg5! threatens Qxg2# (play f3). g114 (m27): 14...Nxd4!; 16.Bd5?? exd5; 21.Nd6?? Qxd6.
+## Exchange / Tartakower / Bxf6 h6 (condensed)
+- Exchange g133 (0-1, Rd1# m23): 15.Qe4?? dxe4 (d5-pawn); 19.Rc4?? Qxc4 (my attacker undefended); 22...Rad8 forced Rd1#.
+- Tartakower g136 (0-1, Nf2# m32): 15.Ne5 16.Nd7?? (Qe7+Nc5 hit d7, 0 guards) = N for nothing; 27.Qd5?? exd5. No piece onto a square he attacks with 0 of my guards.
+- Bxf6 h6 (0-2, g113,g114): after ...cxd4/...dxc4/...b6/...Bb7 d4 is a target, not a gift; never a piece on d5 (e6-pawn) or d6 (Qd7); never Q-grab on d4 while his Q+B hold it; 14...Nxd4!.
 
 ## General
-His Qe7-b4/h4 swings hit pins and loose pawns: cover b2/a2 before Be2/O-O.
-- Routine <=15 s; book <=10 s; long thinks still blundered (g133,g136,g138,g141,g142).
+- Routine <=15 s, book <=10 s; long thinks still blundered (g133,g136,g138,g141,g142,g143); every loss is one destination/recapture miss, not the opening.

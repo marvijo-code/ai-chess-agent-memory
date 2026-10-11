@@ -3,7 +3,7 @@
 ## Move discipline
 - Apply stored warnings BEFORE choosing. Every candidate needs its own forcing scan; rejecting one blunder does not validate another. Repeated ...f6/...Qd6?? exd6 shows recognition alone fails.
 - Start with the enemy's last move: changed attacks, pawn controls, opened lines. Scan checks, captures, forks, promotions and mates; repeat on the proposed final board.
-- PAWN DIAGONALS FIRST, then knights and complete sliding rays. Rb3?? a4xb3, Qe4?? d5xe4 and Qd5?? e6xd5: defending or attacking another piece never makes a heavy-piece destination safe. T30 DeepSeek: Ng5? hxg5 lost N for P despite no move mark; rook/bishop support cannot prevent a cheaper capturer.
+- PAWN DIAGONALS FIRST, then knights and complete sliding rays. Rb3?? a4xb3, Qe4?? d5xe4 and Qd5?? e6xd5: defending or attacking another piece never makes a heavy-piece destination safe. T30 DeepSeek: Ng5? hxg5 lost N for P despite no move mark; rook/bishop support cannot prevent a cheaper capturer. T31: Qxe6 fxe6 lost the enemy queen despite no mark.
 - Test Kxchecker first and name its actual defender. ...Qh2+?? Kxh2, Rh7+?? Kxh7 and ...Qxb2+?? Kxb2 lost heavy pieces. Check does not establish safety.
 - Name exact defenders, screens and LEGAL recapturers. Nd2 blocked Be3-c1, Rc1's sole guard. Be3 blocks Re1-e4; f7 blocks Rf8-f2; Qe3 cannot recapture c2. Audit friendly rays newly blocked as well as enemy rays opened.
 - T31 SF: Kb3 screened Rb1-b7. 39...Rb1+ 40.Ka4? opened ...Rxb7; 41.Nxd6 recovered only B for R. When answering a rook check, trace the line BEYOND the king and test interpositions as well as king moves. A checked king may be the sole screen of another piece.
@@ -22,7 +22,7 @@
 - Deadline INCLUDING output: book/forced 1-5 seconds; quiet 10-15; critical 20-40. Below 5 minutes cap 15; below 90 seconds use 1-3. Long thinking never replaces a capture scan.
 - Name a target/break before shuffling. T29 Re2/Rb4/Rb3 took 36/54/28 seconds yet missed guards and pawn captures. T30 SF Bxb6/Rf1/Nb3 took 56/44/55 seconds, then f3/Qf2 missed a checking fork with over 11 minutes left. Use the time to calculate the opponent's forcing reply.
 - T30 Final: ...Rg8/Rh8/Rg8 took 43/54/45 seconds; later ...Ka3/Bb4/Kd4 took 48/43/38. No invalid attempts; finished 4:45. With queens off, long king/rook explanations still missed a rook capture and a blocked promotion defense. Spend calculation on replies, then enforce the cap.
-- T30 DeepSeek: book 3-5 seconds worked; when R+B+N faced only pawns, Ne4/Bxg5/Rxe6 took 43/54/42 seconds. Cap routine winning conversion at 10-15 seconds after checking captures, king safety and stalemate.
+- DeepSeek: T31 book/development mostly 4-12 seconds; ...Nb4 took 31, ...Bxf3 22, ...Re8 29. Finished 14:20 with no invalid attempts. This pace worked. T30 winning Ne4/Bxg5/Rxe6 took 43/54/42 seconds; cap routine conversion at 10-15 after checking captures, king safety and stalemate.
 - T31 SF: Rb7/Nb4/Na2 took 43/53/38 seconds; finished 9:11 with no invalid attempts. Knight attacks on B/R were temporary activity, not a solved blockade. Check the opponent's forcing rook replies before another chase.
 - Track TOTAL material through the last recapture and the actual reply. Qxc1 Bxc1 Rxc1 Qxc1 costs Q+R for R+B. Ne2+ Nxc1 Rxc1 wins the exchange. ...Nxe4 taking B is not a trade until Qxe4 occurs; f3 instead leaves the captured bishop lost.
 - Ahead: remove counterplay, simplify safely, preserve mating material. Check pawn guards and entry squares before queen trades. Worse: safe activity/repetition; later gifts do not validate earlier errors.
@@ -32,6 +32,7 @@
 - T31 SF: Nxd6 removed Ba3's defender but allowed ...a2! before Kxa3. Nd6 could reach neither a2 nor a1; Ka3 then allowed ...a1=Q#. Removing a passer's guard helps only if the capture/blockade occurs before its next advance. Include the promotion's check and rook-controlled king flights.
 - Verify mate support, all flights and stalemate. e5 clears Bb1-h7; ...Nf6xd5 can abandon h7. Qf2 supports Rd1# vs Kh1. Qg3/Ne4 supports Qxg3+ then Nf2#. T30 DeepSeek: Re7+ Kg8 h7+ Kh8 Bf6#; h7 controls g8, Re7 protects h7 and covers g7. T30 SF: h5 protected Qg4 at ...Qxg4# vs Kg5; Kh7 covered h6 and Rf7 covered f6. SF repetition with Q+R vs bare K proves no fortress.
 - T30 SF2: Bf5 supported Qh7+ Kf8 Qh8#; Re1 denied e7. A retained rook can matter through flight control even when the queen and bishop deliver the checks. ...Nd7 guarded f6/f8 but answered neither mating square.
+- T31 DeepSeek: ...Re8 Rxe8+ Qxe8 safely removed a rook. Rd2 then allowed ...Qe1#: f2/g2/h2 occupied all second-rank flights, and Rd2 could reach neither f1 nor capture e1. After simplification, scan direct mate before another trade or pawn grab.
 
 ## White openings
 - T31 Maroczy: e4/c5/Nf3/Nc6/d4/cxd4/Nxd4/g6/c4/Nf6/Nc3/Qa5/f3/Nxd4/Qxd4!/Bg7/Be3/d6/Be2/O-O. Before O-O?! calculate ...Ng4: Nf6 leaves Bg7-f6-e5-d4 open, attacking Qd4 while Ng4 attacks Be3. Qd2/Nxe3/Qxe3! preserved pawns but conceded the bishop pair. No verified move-11 replacement.
@@ -54,7 +55,8 @@
 - SF Ruy 6.d4: exd4/Re1 O-O/e5 Nd5/Nxd4 Nxd4/Qxd4 Nb6/Nc3 Nxa4/Qxa4 d6/exd6 Bxd6/Bf4 Be6 near equal. Rad1 Qf6/Bxd6 cxd6!; Qe7 lost d6.
 - Chigorin ...Qb6?? dxe5 uncovers Be3-b6. Open Ruy ...Ne6?! Qxd8 Rxd8 Bxb5 lost P. Berlin queens-on ...Be7?! Rd1: solve the open d-file before development.
 - Advance Caro: ...f6? Nf4!/...Qd6?? exd6 repeatedly loses Q. Earlier ...f6 BEFORE cxd4 worked with c3 screening Qb3-d3 and Nd2 blocking Rd1-d3; it validates neither later exchanges nor queenless ...f6/Rxf6/Ne5.
-- QGD: recount d4's guards. Qe2 displaced Qd1; ...Bxf3 Qxf3 removed Nf3 AND displaced Qd1, allowing ...Nxd4 with tempo. Nc3 does NOT attack d4. ...Bg4/Bh5 were inaccurate. T29 third place: 15.Ne5?? Rac8? missed punishment; 16.Nd7?? Nxd7 won N. No verified move-15 replacement. Develop with a tactical scan.
+- QGD: recount central guards after exchanges. Qe2 displaced Qd1; ...Bxf3 Qxf3 removed Nf3, allowing ...Nxd4 with tempo. Nc3 does NOT attack d4. ...Bg4/Bh5 were inaccurate. T29 third place: 15.Ne5?? Rac8? missed punishment; 16.Nd7?? Nxd7 won N. No verified move-15 replacement.
+- T31 QGD Bf4: ...c5/Nc6/cxd4 exd4/dxc4 Bxc4/b6/Qd3 Bb7/Rfe1 Rc8/Rad1 Nb4. Nb4 attacked Qd3 and cleared BOTH Rc8-c4 and Bb7-f3. Qe2 Bxf3 Qxf3?? Rxc4 won B: Nf3 was removed AND Qe2 left its c4 diagonal. gxf3 would retain Qe2's guard; the queen recapture enabled the win, not a forced opening edge. ...Rc8/a3 Nbd5/Nxd5 Nxd5 kept a blockade. Bd6 Bxd6 won another B because d4 blocked Rd1-d6. Check actual recapture paths before accepting an offered trade.
 
 ## Note files
 - notes/accelerated-dragon.md - Rook captures and g-file mate.
@@ -62,6 +64,6 @@
 - notes/caro-kann-advance.md - Breaks and queenless mate.
 - notes/deepseek.md - Classical Caro, d-file tactics and conversion.
 - notes/four-knights.md - Opening branches, rook safety and promotion screens.
-- notes/qgd-exchange.md - Central guards and mating lines.
+- notes/qgd-exchange.md - Central guards, c-file clearance and mating lines.
 - notes/ruy-lopez.md - Exchange duties, bishop screens and king nets.
 - notes/sicilian-maroczy.md - Maroczy exchanges, king screens and passers.
