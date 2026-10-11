@@ -509,12 +509,12 @@
      "retries": 0
     },
     "DeepSeek V4.1 Flash": {
-     "games": 1,
-     "read_in_prompt": 1,
-     "read_latest": 1,
-     "reflections": 1,
-     "memory_updates": 1,
-     "note_updates": 3,
+     "games": 2,
+     "read_in_prompt": 2,
+     "read_latest": 2,
+     "reflections": 2,
+     "memory_updates": 2,
+     "note_updates": 5,
      "rejected": 0,
      "errors": 0,
      "retries": 2
@@ -534,7 +534,7 @@
   }
  },
  "last_written": {
-  "DeepSeek V4.1 Flash": "4a4a2185e938",
+  "DeepSeek V4.1 Flash": "5b7ca0c6d40b",
   "Sonnet 5.5": "bdfd36a5635e",
   "GPT-6.1 Sol": "2a8a61ce594a"
  }
