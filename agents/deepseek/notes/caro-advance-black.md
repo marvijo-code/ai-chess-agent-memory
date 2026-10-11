@@ -1,8 +1,15 @@
-# Caro-Kann: Advance + Classical 3.Nc3 (B g107-g125; W g123,g127)
+# Caro-Kann: Advance + Classical 3.Nc3 (B g107-g128; W g123,g127)
 
 ## Advance plans (as Black)
 1.e4 c6 2.d4 d5 3.e5 Bf5 4.Nf3 e6 5.Be2/5.Bd3 Nd7 6.O-O Bg6; then ...c5, ...Be7, ...Rc8, ...Qb6/...Qc7, ...cxd4 cxd4, ...Nb6.
 Bf5 traded + Ng8 still home: NO kingside castling - the e8-king + c-file is the game (g124,g125).
+
+## g128 vs Sonnet, 5.Bd3 Bxd3 Qxd3 (0-1, Nc2# m53)
+1.e4 c6 2.d4 d5 3.e5 Bf5 4.Nf3 e6 5.Be2 Nd7 6.O-O Be7 7.c4 dxc4 8.Bxc4 Rc8 9.Nc3 Nb6 10.Bd3 Bxd3 11.Qxd3 c5 12.Be3 cxd4 13.Nxd4 Nc4 14.Bc1 Nxe5! 15.Qe4 Nc4 16.b3 Nd6 17.Qd3 Nf6 18.Bb2 Qb6 19.Rad1 O-O 20.Na4 Qa6 21.Qxa6 bxa6 22.Rc1 Rxc1 23.Rxc1 Rc8 24.Rxc8+ Nxc8 25.Nc6 Bd8??
+- 25...Bd8?? 26.Nxd8: the knight on c6 attacked e7 AND d8. A retreat from one square of a knight to ANOTHER square of the SAME knight is no retreat. ONLY 25...Bf8 keeps material (a7 falls, pawns level).
+- 26...Nxd8 illegal: my c8-knight cannot reach d8 (c8 -> a7/b6/d6/e7). Knight geometry first; no recapture existed.
+- Up a clean pawn (6 v 5, B+2N each) after the Nxe5 grab; the loss was one hung unit, not the opening. +1 pawn = trade/simplify carefully, never heroics.
+- Clock 30-39 s per middlegame move, the fatal move 39 s; routine <=15 s.
 
 ## g125 vs SF19, 4.h4 h5 5.Bd3 Bxd3 Qxd3 (0-1, Qb5# m43)
 ...e6 Nd7 c3 Be7 g3 c5 O-O Rc8 Re1 Qc7 Kg2 cxd4 cxd4 Nb6 Na3 Nc4 Nc2 Nb6 Ne3 Bg5?? 17.hxg5 f6 exf6 gxf6; 23...Qd6?? Rxd6+; 35...Rf8?? Qb4+ Qe7+ Qxf8; mate m43.
@@ -28,8 +35,9 @@ Bf5 traded + Ng8 still home: NO kingside castling - the e8-king + c-file is the 
 ## Rules (Advance)
 - NEVER ...Qxd4; no ...Nc5 while d4; nothing on d6/f6 or ...Ngf6 while e5; no ...Qd6 vs Bf4; his b3/Ba3 -> ...Bxa3!.
 - PAWN CAPTURES FIRST: h4-pawn takes g5 (g125); a queen onto a pawn-guarded or rook-ranked square = Q (g122,g123,g125).
+- Every piece under knight attack: retreat only to a square THAT knight cannot take (g128 25...Bd8?? Nxd8).
 - His Bg5+Rfc1 on the c-file is the main threat; no castling if Bf5 traded with Ng8 home.
-- Up: trade queens; 5-10 s. Routine <=15 s; long thinks still blundered (g120-g125: 30-72 s).
+- Up: trade queens; 5-10 s. Routine <=15 s; long thinks still blundered (g120-g128: 30-72 s).
 
 ## Classical 3.Nc3 - as White (g123,g127)
 ...Bxd3 Qxd3 e6 Bf4 Ngf6 O-O Be7 c4 O-O Rfe1 c5 15.d5! exd5 16.cxd5 Re8 = space edge.
@@ -43,4 +51,4 @@ Bf5 traded + Ng8 still home: NO kingside castling - the e8-king + c-file is the 
 ## Recurring
 - After a material swing STOP: mate nets before grabs (g123-g127).
 - Queen onto a pawn-guarded square, rook rank or bishop ray = Q (g122,g123,g125,g126,g127).
-- Clock <=15 s routine; long thinks still blundered (g120-g127).
+- Clock <=15 s routine; long thinks still blundered (g120-g128).
