@@ -1054,14 +1054,14 @@
    "number": 31,
    "players": {
     "GPT-6.1 Sol": {
-     "calls": 235,
-     "input": 7915263,
-     "cached": 7363456,
-     "output": 75925,
-     "warm_input": 7706228,
-     "warm_cached": 7215360,
-     "hit_rate": 0.9303,
-     "warm_hit_rate": 0.9363
+     "calls": 254,
+     "input": 8289374,
+     "cached": 7676800,
+     "output": 78763,
+     "warm_input": 8036665,
+     "warm_cached": 7493504,
+     "hit_rate": 0.9261,
+     "warm_hit_rate": 0.9324
     },
     "DeepSeek V4.1 Flash": {
      "calls": 311,
