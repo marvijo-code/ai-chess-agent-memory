@@ -1,8 +1,29 @@
 {
  "player": "Stockfish 19",
- "depth": 6,
  "start_depth": 4,
- "steps": [
+ "players": {
+  "Sonnet 5.5": {
+   "depth": 4,
+   "streak": 0,
+   "steps": []
+  },
+  "GPT-6.1 Sol": {
+   "depth": 4,
+   "streak": 0,
+   "steps": []
+  },
+  "DeepSeek V4.1 Flash": {
+   "depth": 4,
+   "streak": 0,
+   "steps": []
+  },
+  "GLM 5.3 Flash": {
+   "depth": 4,
+   "streak": 0,
+   "steps": []
+  }
+ },
+ "history": [
   {
    "from": 4,
    "to": 5,
