@@ -1,8 +1,15 @@
-# QGD as White (Lasker 0-10; Bxf6 h6 0-2; Exchange 0-1; Tartakower 0-1)
+# QGD as White (Lasker 0-11; Bxf6 h6 0-2; Exchange 0-1; Tartakower 0-1)
 Openings give playable positions; every loss is one middle-game discipline miss.
 
+## Lasker (Nd7/Nf6/Be6/c6/Rad8) - g142 vs Sonnet (0-1, Qb7# m50)
+8.Bxe7 Qxe7 9.cxd5 Nxc3 10.bxc3 exd5 11.Bd3 Nd7 12.O-O Nf6 13.Re1 Be6 14.Qc2 c6 15.Ne5 Rad8 =.
+- 16.Ng6?? (forks Qe7+Rf8) fxg6! 17.Bxg6 Bf7 18.Bxf7+ Qxf7 = N for P: g6 is covered by the f7/h7 pawns; a bishop retaking the pawn does NOT restore the knight. Game lost here.
+- Conversion vs Sonnet: ...Ne4, ...Qf6, ...Qxf2+ Kh1, Qxf5 Rxf5, Rxf1+ Kxf1, Nxc3, Nxa2, Ke6-d5, d4-d1=Q, Q+K+N mate.
+- Down a piece vs Sonnet: fight (K marched to a7/b6 for pawns) but nothing saved it.
+- Clock: moves 8-18 took 23-43 s (Qc2 42, Ne5 43, Ng6 43) - IQP routine moves <=15 s.
+
 ## Lasker 7...Ne4 - g141 vs Sonnet (0-1, Rxe1# m24)
-Equal to 21...b6 (Qc5/Qxc5, Rxc5 fine). 22.Rxc6?? Rxc6 = R for P - the c6-pawn was guarded by Rc8, so no 'trade' existed (repeat of g111). Retreat Rc2. 23.Rc1?? Rxc1+ 24.Ne1 Rxe1# (Kg1 boxed by f2/g2/h2, rook covers f1-h1).
+- Equal to 21...b6 (Qc5/Qxc5, Rxc5 fine). 22.Rxc6?? Rxc6 = R for P - the c6-pawn was guarded by Rc8, so no 'trade' existed (repeat of g111). Retreat Rc2. 23.Rc1?? Rxc1+ 24.Ne1 Rxe1# (Kg1 boxed by f2/g2/h2, rook covers f1-h1).
 - 'Up a pawn' after 22...Rxc6 was wrong: down R for P. Count BOTH sides to the last recapture after every capture.
 - 20.Qc5: 79 s incl. 1 illegal try; 15-23 mostly 35-79 s. Book <=10 s, routine <=15 s.
 
@@ -37,4 +44,4 @@ Equal to 21...b6 (Qc5/Qxc5, Rxc5 fine). 22.Rxc6?? Rxc6 = R for P - the c6-pawn w
 
 ## General
 His Qe7-b4/h4 swings hit pins and loose pawns: cover b2/a2 before Be2/O-O.
-- Routine <=15 s; book <=10 s; long thinks still blundered (g133,g136,g138,g141).
+- Routine <=15 s; book <=10 s; long thinks still blundered (g133,g136,g138,g141,g142).
