@@ -539,12 +539,12 @@
      "games": 1,
      "read_in_prompt": 1,
      "read_latest": 1,
-     "reflections": 0,
-     "memory_updates": 0,
-     "note_updates": 0,
+     "reflections": 1,
+     "memory_updates": 1,
+     "note_updates": 1,
      "rejected": 0,
      "errors": 0,
-     "retries": 0
+     "retries": 1
     },
     "GPT-6.1 Sol": {
      "games": 1,
@@ -573,7 +573,7 @@
  },
  "last_written": {
   "DeepSeek V4.1 Flash": "7944147a6a07",
-  "Sonnet 5.5": "693e49655ee4",
+  "Sonnet 5.5": "507b00c723ee",
   "GPT-6.1 Sol": "ca1699ef9d95"
  }
 }
