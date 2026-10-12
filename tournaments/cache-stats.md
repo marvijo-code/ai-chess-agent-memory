@@ -2,20 +2,19 @@
 
 Hit rate = cached input tokens / all input tokens of the move requests, read from every provider response (claude cache_read_input_tokens, codex cached_input_tokens, OpenAI-compatible prompt_tokens_details.cached_tokens). Warm = without each game's first 3 moves of the player.
 
-## Current tournament (aichess-0035-20261012-085617)
+## Current tournament (aichess-0036-20261012-121058)
 
 | Player | Requests | Input tokens | Cached | Hit rate | Warm hit rate |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| DeepSeek V4.1 Flash | 146 | 2237297 | 2059392 | 92.0% | 93.3% |
-| GLM 5.3 Flash | 154 | 2133853 | 1839808 | 86.2% | 86.9% |
-| GPT-6.1 Sol | 227 | 6567982 | 6031744 | 91.8% | 92.7% |
-| Sonnet 5.5 | 242 | 6314386 | 6045528 | 95.7% | 96.8% |
+| DeepSeek V4.1 Flash | 16 | 181176 | 132864 | 73.3% | 78.1% |
+| GLM 5.3 Flash | 29 | 321112 | 283264 | 88.2% | 89.3% |
+| Sonnet 5.5 | 15 | 238847 | 215305 | 90.1% | 94.7% |
 
 ## All tournaments
 
 | Player | Requests | Input tokens | Cached | Hit rate | Warm hit rate |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| DeepSeek V4.1 Flash | 8877 | 101185319 | 54144000 | 53.5% | 53.5% |
-| GLM 5.3 Flash | 288 | 3784493 | 3238848 | 85.6% | 86.3% |
+| DeepSeek V4.1 Flash | 8893 | 101366495 | 54276864 | 53.5% | 53.5% |
+| GLM 5.3 Flash | 317 | 4105605 | 3522112 | 85.8% | 86.5% |
 | GPT-6.1 Sol | 7424 | 217510756 | 202383104 | 93.0% | 93.5% |
-| Sonnet 5.5 | 7581 | 170536471 | 162856962 | 95.5% | 96.2% |
+| Sonnet 5.5 | 7596 | 170775318 | 163072267 | 95.5% | 96.2% |
