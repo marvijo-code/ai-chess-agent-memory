@@ -1204,14 +1204,14 @@
      "warm_hit_rate": 0.8688
     },
     "GPT-6.1 Sol": {
-     "calls": 220,
-     "input": 6326230,
-     "cached": 5852672,
-     "output": 52194,
-     "warm_input": 6060790,
-     "warm_cached": 5666176,
-     "hit_rate": 0.9251,
-     "warm_hit_rate": 0.9349
+     "calls": 227,
+     "input": 6567982,
+     "cached": 6031744,
+     "output": 55230,
+     "warm_input": 6302542,
+     "warm_cached": 5845248,
+     "hit_rate": 0.9184,
+     "warm_hit_rate": 0.9274
     },
     "DeepSeek V4.1 Flash": {
      "calls": 146,

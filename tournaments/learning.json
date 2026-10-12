@@ -889,15 +889,15 @@
      "retries": 1
     },
     "GPT-6.1 Sol": {
-     "games": 5,
-     "read_in_prompt": 5,
-     "read_latest": 5,
-     "reflections": 5,
+     "games": 6,
+     "read_in_prompt": 6,
+     "read_latest": 6,
+     "reflections": 6,
      "memory_updates": 3,
-     "note_updates": 5,
-     "rejected": 2,
+     "note_updates": 6,
+     "rejected": 3,
      "errors": 0,
-     "retries": 6
+     "retries": 8
     },
     "DeepSeek V4.1 Flash": {
      "games": 6,
