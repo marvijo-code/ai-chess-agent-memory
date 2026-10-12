@@ -1,10 +1,10 @@
-# Sicilian as Black - Alapin/Dragon/Taimanov (g28-g158)
+# Sicilian as Black - Alapin/Dragon/Taimanov (g28-g164)
 
-## Taimanov B vs 6.Nxc6/8.e5 clamp (g158 vs SF19, 0-1, Qxg7# m11)
-Book: 1.e4 c5 2.Nf3 e6 3.Nc3 Nc6 4.d4 cxd4 5.Nxd4 Nf6 6.Nxc6 bxc6 7.Bd3 Be7 8.e5 Nd5 (15 plies), 9.Qg4. My 8...Nd5! was right (SF's key move was his 9.Nxd4! earlier), but then 9...O-O?? 10.Bh6! Bb7?? 11.Qxg7#.
-- The mate: his Qg4 + Bh6 hit g7, whose ONLY guard is my king (Nd5 does not cover g7); two attackers vs one guard. Development was irrelevant.
-- Answer the clamp at once: ...d6 (hits e5, opens lines), or ...h6/...Nf6/...Nxc3 to remove the e5 support. NEVER O-O into Qg4 + Bd3.
-- My fastest loss: 2-11 s a move, no illegal tries - one unanswered mate question at move 9 decided it. Ask 'what mates if I pass?' from the moment e5 appears.
+## Taimanov B vs 6.Nxc6/8.e5 clamp (g158 vs SF19, 0-1, Qxg7# m11; g164 vs SF19, 0-1)
+Book: 1.e4 c5 2.Nf3 e6 3.Nc3 Nc6 4.d4 cxd4 5.Nxd4 Nf6 6.Nxc6 bxc6 7.Bd3 Be7 8.e5 Nd5 (15 plies), 9.Qg4. My 8...Nd5! was right (SF's key move was his 9.Nxd4! earlier).
+- g158: 9...O-O?? 10.Bh6! Bb7?? 11.Qxg7#. The mate: his Qg4 + Bh6 hit g7, whose ONLY guard is my king (Nd5 does not cover g7); two attackers vs one guard. Development was irrelevant.
+- g164: 9...d6? (SF ?) also loses: my king is on e8, so it does NOT guard g7 (a king guards only ADJACENT squares). 10.Qxg7 won that pawn and 11.Qxh8+ Bf8 took the loose h8 rook - the rook for nothing. ...d6 defends neither g7 nor h8.
+- Right reaction to 9.Qg4: cover g7 (...Bf8 or ...Kf8) or kick the queen off g4 (...h5 hits her) or counterplay (...Nxc3). NEVER castle, NEVER ...d6. Ask 'what mates/grabs if I pass?' the moment e5 appears.
 
 ## Taimanov B, quiet 6.Be2 (g103,g150,g152,g156)
 Book: 6.Be2 e6 7.O-O Be7 8.Be3 O-O 9.f4 a6 10.Kh1 Bd7 11.a4 Qc7 12.Bf3 Nxd4 13.Bxd4 (15 plies), then ...Rfe8/...Rad8. His Qe1-g3 + Bd4 battery threatens Qxg7#; my Nf6 is only a SCREEN. Trade the Bd4 or free f6 for ...f6/luft the moment Qg3 appears - never a passive rook shuffle.
@@ -23,7 +23,7 @@ Book: 6.Be2 e6 7.O-O Be7 8.Be3 O-O 9.f4 a6 10.Kh1 Bd7 11.a4 Qc7 12.Bf3 Nxd4 13.B
 
 ## Recurring
 - QUEEN: hit by anything -> she moves that move; 'defended' never counts. Enemy pawns: e6 hits d5/f5, d5 hits c4/e4, f7 hits e6/g6. Bishop diagonals to her landing square (g91, g156).
-- MATE FIRST, quiet moves too: Qg4/Bh6 (g158) and Qg3/Bd4 (g152,g156,g157) - count the guards of g7 BEFORE castling or shuffling. Break the e5 clamp with ...d6.
+- MATE FIRST, quiet moves too: Qg4/Bh6 (g158) and Qg3/Bd4 (g152,g156,g157) - count the guards of g7 BEFORE castling or shuffling. An e8-king guards NOTHING two ranks away (g164). Break the e5 clamp with ...d6 - but not when his queen already eyes g7.
 - SCREEN: a capture on the last screen of his queen/rook file = Q/R for P (g64,g79,g91,g148).
 - PIN: verify a recapturer is not pinned (g90). RECAPTURE != TRADE: name my recapturer on the destination.
-- Time: book <=10 s, routine <=15 s (g103/g156 36-38 s blunders); long thinks fixed nothing.
+- Time: book <=10 s, routine <=15 s (g103/g156 36-38 s blunders; g164 10...Nf4 1:43 in a lost game); long thinks fixed nothing.
