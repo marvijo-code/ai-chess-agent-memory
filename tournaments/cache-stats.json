@@ -1314,14 +1314,14 @@
      "warm_hit_rate": 0.9733
     },
     "GLM 5.3 Flash": {
-     "calls": 26,
-     "input": 293535,
-     "cached": 270656,
-     "output": 16858,
-     "warm_input": 279016,
-     "warm_cached": 261696,
-     "hit_rate": 0.9221,
-     "warm_hit_rate": 0.9379
+     "calls": 77,
+     "input": 1225730,
+     "cached": 1158912,
+     "output": 50310,
+     "warm_input": 1197164,
+     "warm_cached": 1141376,
+     "hit_rate": 0.9455,
+     "warm_hit_rate": 0.9534
     },
     "DeepSeek V4.1 Flash": {
      "calls": 69,
@@ -1334,14 +1334,14 @@
      "warm_hit_rate": 0.9606
     },
     "GPT-6 Astra": {
-     "calls": 97,
-     "input": 3976109,
-     "cached": 3844352,
-     "output": 18798,
-     "warm_input": 3946608,
-     "warm_cached": 3818752,
-     "hit_rate": 0.9669,
-     "warm_hit_rate": 0.9676
+     "calls": 148,
+     "input": 5261064,
+     "cached": 5063296,
+     "output": 25332,
+     "warm_input": 5199181,
+     "warm_cached": 5010176,
+     "hit_rate": 0.9624,
+     "warm_hit_rate": 0.9636
     }
    }
   }
