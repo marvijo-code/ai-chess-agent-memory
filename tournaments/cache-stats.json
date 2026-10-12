@@ -1294,14 +1294,14 @@
      "warm_hit_rate": 0.9364
     },
     "Fable 5.1": {
-     "calls": 115,
-     "input": 1813792,
-     "cached": 1671313,
-     "output": 93118,
-     "warm_input": 1750285,
-     "warm_cached": 1637029,
-     "hit_rate": 0.9214,
-     "warm_hit_rate": 0.9353
+     "calls": 150,
+     "input": 2556878,
+     "cached": 2372619,
+     "output": 132263,
+     "warm_input": 2470585,
+     "warm_cached": 2324205,
+     "hit_rate": 0.9279,
+     "warm_hit_rate": 0.9408
     },
     "Sonnet 5.5": {
      "calls": 251,
@@ -1324,24 +1324,24 @@
      "warm_hit_rate": 0.9367
     },
     "DeepSeek V4.1 Flash": {
-     "calls": 206,
-     "input": 4257207,
-     "cached": 3992320,
-     "output": 274325,
-     "warm_input": 4175842,
-     "warm_cached": 3940864,
-     "hit_rate": 0.9378,
-     "warm_hit_rate": 0.9437
+     "calls": 236,
+     "input": 4652753,
+     "cached": 4338560,
+     "output": 315100,
+     "warm_input": 4556970,
+     "warm_cached": 4278144,
+     "hit_rate": 0.9325,
+     "warm_hit_rate": 0.9388
     },
     "GPT-6 Astra": {
-     "calls": 273,
-     "input": 8476106,
-     "cached": 8079360,
-     "output": 58823,
-     "warm_input": 8299730,
-     "warm_cached": 7959168,
-     "hit_rate": 0.9532,
-     "warm_hit_rate": 0.959
+     "calls": 304,
+     "input": 9222185,
+     "cached": 8764672,
+     "output": 67220,
+     "warm_input": 9003832,
+     "warm_cached": 8610560,
+     "hit_rate": 0.9504,
+     "warm_hit_rate": 0.9563
     }
    }
   }

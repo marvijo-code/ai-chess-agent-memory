@@ -23,6 +23,7 @@ Notes:
 - Knights and rooks only where GUARDED. A queen's guard on a rook's file is NO guard. Rook onto a pawn-guarded square = R for P: T37R6 25.Rxc6?? bxc6 (b7-pawn). Before any rook CAPTURE walk the pawn recaptures of the destination.
 - Rook files/bishop rays own whole lines; attacked+undefended -> save NOW. Mate net before any grab. Long castled: cover c7.
 - A DEVELOPED PIECE WITH 0 GUARDS IS A GIFT: ask what recaptures it.
+- THE MOVING UNIT ABANDONS ITS GUARD: before ANY piece/pawn move name what it guarded where it stood. T37R7 13...Bxf6?? (SF ??) was the ONLY guard of my c5-knight (Be7 covered e7-d6-c5); then 14.Nxc6 bxc6 15.Bxc5 won the knight and 16.Bxf8 the exchange. A 'natural recapture' is no excuse.
 - A PIECE ON A SQUARE AN ENEMY PAWN ATTACKS = B for P.
 
 ## Rule 1b - MATE FIRST (after EVERY his move, quiet ones too)
@@ -70,6 +71,7 @@ Notes:
 - Open Sicilian W (Taimanov quiet 6.Be2): 1.e4 c5 2.Nf3 e6 3.d4 cxd4 4.Nxd4 Nc6 5.Nc3 a6 6.Be2 Be7 7.O-O Nf6 8.Be3 O-O; f4/Qd2/Rad1 central play. vs Dragon 7...d5 block ...Qa5+ with Bd2/Bd1, never Qd2??.
 - Taimanov B vs 8.e5 Nd5 9.Qg4: 1.e4 c5 2.Nf3 e6 3.Nc3 Nc6 4.d4 cxd4 5.Nxd4 Nf6 6.Nxc6 bxc6 7.Bd3 Be7 8.e5 Nd5. With king on e8 the g7-pawn has NO guard: never ...d6, never castle; cover g7 (...Bf8/Kf8) or kick the queen (...h5/...Nf6) at once.
 - vs 6.Be2 f4/e5: 11...Nd5! then 12...exd5; never a bishop on e5's capture square (14...Bf6?? exf6); after his castled Qh5+Bd3 kick her (...g6/...h6) or free h8.
+- vs 6.Be2 + 9.f4 d5 10.e5 Nd7 11.Qe1-g3 (T37R7 0-1): do NOT land a knight on c5 (11...Nc5?!) with no pawn guard - b7 hits a6/c6, NOT c5; c5's only guard was Be7 through d6. 13...Bxf6?? moved that guard, then 14.Nxc6 bxc6 15.Bxc5 won the knight, 16.Bxf8 the exchange. Recapture ...gxf6, or keep c5 covered. Down a piece, ...Qxb2/...Qxc2/...Qxe2 grabs are NOT counterplay.
 - Caro B 4.Be2 (0-4): 3.e5 Bf5 4.Be2 e6 5.Nc3 Nd7 6.Nf3 Ne7 7.Nh4 Bg6 8.O-O c5. Recapture ...hxg6, NEVER ...Nxg6?!.
 - QGD Bb4/5.Bg5 IQP B (0-1): 1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Nf3 Bb4 5.Bg5 O-O 6.e3 c5 7.Bxf6 Qxf6 8.Bd3. BANS: 12.Qd3?!, 14.Qg3??, 28.Qg2??, 31.f3??.
 - English as Black (WIN g162; DRAW g168): 1.c4 Nf6 2.Nc3 e6 3.Nf3 d5 4.cxd5 exd5 5.g3 Be7 6.Bg2 O-O 7.O-O c6 8.d4 (15 plies). Solid QGD-reversed; ...Nbd7 ...Re8 ...Bf8 ...Qc7, ...c5 break. TAKE undefended queenside pawns: g168 12...Bxb4! won a clean pawn. Convert by trading into a simple won ending.
@@ -79,4 +81,5 @@ Notes:
 - Fable 5.1: solid 6.Be2 + Qh5/Bd3 battery vs my castled king; converts Qxh7+/Bxf6/Qh8# the moment I leave a piece on an enemy pawn's capture square. Answer the battery FIRST.
 - Sonnet 5.5 (never beaten, now 0-1 in T37R6): banks clock; takes every free unit (25.Rxc6?? bxc6 = R for P) and every piece I drop onto a pawn's capture square (14.Bg5?? hxg5); builds Q+B batteries vs my castled king; converts a pawn/piece lead cleanly into a mating finish (28...Rd1#). Give him NO free unit and no pawn-hit square; keep a rank-1 blocker/luft.
 - GPT-6.1 Sol: fast; takes every free piece incl. a queen on any pawn OR bishop diagonal, and any UNGUARDED developed piece. Italian: ...d5 break, then ...Nf4/...Be6/...Bd4/...Qg5 g2-battery (...Qxg2#, T37R5). Answer a mate threat WITHOUT putting my queen on his bishop's line.
+- GPT-6 Astra (lost T37R7 as B, m31): plays the Open Sicilian 6.Be2 + f4/Qe1-g3 line and the Chigorin; takes every loose piece at once (15.Bxc5 knight, 16.Bxf8 exchange), converts cleanly, finishes with a Q+R battery (30.Qf7 31.Qxh7#). Give him no loose unit; keep every piece guarded.
 - GLM 5.3 Flash (I beat W; beat B g162; DREW g168): slow, sloppy, illegal tries, misstates material; hangs loose pawns and undefended pieces (g168 12...Bxb4 won a clean pawn). But defends a lost position actively - so CONVERT cleanly: no repetition, keep a simple won ending, guard every unit.
