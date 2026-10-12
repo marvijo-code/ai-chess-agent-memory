@@ -11,7 +11,7 @@ Notes:
 - notes/sicilian-yugoslav-black.md - Yugoslav B
 
 ## Rule 0 - legality & self-ban (3 invalid = forfeit)
-- O-O needs knight off home + f8/g8 empty. After O-O-O my king is on c8, so ...Rc8 is ILLEGAL. Before any bishop move its path AND destination must be empty. After ONE rejection NEVER resend: redraw, list every legal square, then choose. g160: an early bishop try was rejected - rechecking and picking a different move cost nothing.
+- O-O needs knight off home + f8/g8 empty. After O-O-O my king is on c8, so ...Rc8 is ILLEGAL. Before any bishop move its path AND destination must be empty. After ONE rejection NEVER resend: redraw, list every legal square, then choose. g160: an early bishop try was rejected - rechecking and picking a different move cost nothing; g161 13.Nc4/Nb3 try rejected, redrew cleanly.
 - A SQUARE I WANT MAY BE MINE ALREADY: clear the occupant before any ...f6/...e5/...c5 push; name the blocker.
 - SELF-BAN: a move my scan or note called bad is DEAD (Rc1; Qxe5; a piece on b6 while his bishop owns that diagonal). Reread the ban list before every knight, rook AND queen move.
 
@@ -21,6 +21,7 @@ Notes:
 - SCREENS: a piece between his bishop/rook and MY queen or king - when it moves, his attack lands. 18.e4?? kicked Nd5, the only screen on Be6-b3 (Qb3) -> ...Nf4! = Q for B. 17...Bg5?? traded the screen on his bishop's g5-d8 line -> 19.Bxd8. PAWN PUSHES end guard duty AND can be screens (9...f6?, 20.b3?? screened Bf6-a1).
 - Knights and rooks only where GUARDED: 17.Nc4?? 'defended' by Qd3 but Rc8 sat behind; 15...Nd7??; 21...Rc7??; 23...Nb7??. A queen's guard on a rook's file is NO guard (Qxc4 Qxc4 Rxc4).
 - Rook files/bishop rays own whole lines; attacked+undefended -> save NOW (23.Rc1??). Mate net before any grab (26...Nxd4??). Long castled: c7 is the escape square - cover it.
+- A DEVELOPED PIECE WITH 0 GUARDS IS A GIFT: 16.Bf4?? 'defended the e5-knight' but its OWN square was undefended and no white pawn recaptured f4 (g2-pawn hits f3/h3, not f4) -> 16...Nxf4 won a clean bishop. When placing a bishop/knight ask: if his knight/bishop takes it, WHAT OF MINE RECAPTURES? 'It defends another piece' is not a guard.
 
 ## Rule 1b - MATE FIRST (after EVERY his move, quiet ones too)
 - Ask 'what mates if I pass?' - 21...Qxg2# while I 'saved' my queen; 34.e5?? was the LAST screen -> 34...Qxg2#. His queen in front of my castled king + a bishop behind = mate net; block the diagonal or trade queens.
@@ -40,6 +41,7 @@ Notes:
 
 ## Rule 3 - captures
 - RECAPTURE != TRADE: say what I win AND what he wins back (22.Rxc6?? Rxc6 = R for P); 2 attackers vs 3 defenders = no. A 'trade' needs MY recapturer on the destination.
+- APPEARANCE OF LOOSE IS NOT LOOSE: 22.Qxb2?? took a bishop that 'looked free'; his Qf6 owned the clear f6-e5-d4-c3-b2 diagonal and recaptured = Q for B. Before ANY capture, trace HIS queens' and bishops' diagonals to the capture square; a bishop protected by a clear queen diagonal is not loose. When I trade queens I must first check HIS recapture is illegal or losing.
 - ONLY-QUEEN-GUARDED + MY SECOND ATTACKER = WIN THE QUEEN: 13...Bxd4! 14.Qxd4 Nxd4.
 - RECAPTURE CHOICE - keep the recapturer's OTHER guards: 15...Bxf6? moved e7 off c5's guard -> 16.Bxc5!; 14...Bxf3! 15.Qxf3?? lost the c4 guard -> 15...Rxc4, so 15.gxf3!.
 - Count EVERY recapturer - PAWNS FIRST, then rooks/queens behind the first defender. Trace MY recapture through MY OWN pieces. Broken chain, don't take.
@@ -53,6 +55,7 @@ Notes:
 - Time: book <=10 s, routine <=15 s, cap 20 s; <3 min <=5 s. Long thinks still blundered. SF19 instant; Sol 6-55 s; Sonnet 1-64 s; GLM slow.
 
 ## Openings (only the lines I actually play)
+- Italian Giuoco Pianissimo W (0-1, g161): 1.e4 e5 2.Nf3 Nc6 3.Bc4 Bc5 4.d3 Nf6 5.c3 O-O 6.O-O d6 7.Nbd2 a6 8.Re1 Ba7 (16 plies), then Bb3, d4, exd5 Nxd5, Nc4. Sound to move 12; the loss was 16.Bf4?? (unguarded piece, no recapture) and 22.Qxb2?? Qxb2. Keep the bishop off undefended squares; after exd5/cxd5 do not place a piece where his f5/d5 knight or a queen diagonal wins it.
 - Scotch Four Knights W (0-1): 1.e4 e5 2.Nf3 Nc6 3.d4 exd4 4.Nxd4 Nf6 5.Nc3 Bb4 6.Nxc6 bxc6 7.Bd3 d5 8.exd5 cxd5 (16 plies). Then castle, Bg5/Bf4, Re1. BANS: 13.b4?? (removed b2's guard of c3); 14.Bf5?? loose piece; 15.Re1?? left c3 loose.
 - Open Sicilian W (Taimanov quiet 6.Be2, WIN g155): 1.e4 c5 2.Nf3 e6 3.d4 cxd4 4.Nxd4 Nc6 5.Nc3 a6 6.Be2 Be7 7.O-O Nf6 8.Be3 O-O (16 plies); f4/Qd2/Rad1 central play; his d5/d7 pawns stayed loose. SF flags 11.Rad1?!, 12.Nd5?? (premature), 16.Bb3??.
 - Taimanov B vs 8.e5 Nd5 9.Qg4 (g158 SF19, Qxg7# m11): 1.e4 c5 2.Nf3 e6 3.Nc3 Nc6 4.d4 cxd4 5.Nxd4 Nf6 6.Nxc6 bxc6 7.Bd3 Be7 8.e5 Nd5 (16 plies). Do NOT castle/develop once Qg4 can be joined by Bh6; answer ...d6/...h6/...Nxc3 or trade queens BEFORE anything else; 10...Bb7?? ignored mate.
@@ -72,5 +75,5 @@ Notes:
 ## Opponents
 - SF19: instant; punishes loose units, passive retreats, queens on his ranks/rays/pawn diagonals, knights on pawn-hit squares; ...Nxd4! once my d4 recapture chain was short; kept my loose d5-pawn in view and took it with Qxd5; punished O-O into his Qg4/Bh6 battery (Qxg7#).
 - Sonnet 5.5 (never beaten): banks clock; takes every free unit; never misses a recapture; trades into simple winnable endings; builds Q+B batteries vs my castled king; punishes self-opened guard lines. g160: took the free a6-rook, and the instant his Be3 hit my Qb6 she was lost because I castled instead; a pawn-up quality ending was converted with zero risk. Never give her a screen, a free unit, or a trade whose recapture is illegal; move the queen the moment his bishop lands on her line.
-- GPT-6.1 Sol: fast (4-55 s); takes every free piece incl. a queen on any pawn OR BISHOP diagonal (16.Bxb6), and any piece his queen hits when my queen is the only guard with his rook behind on the file; converts by trading into R+B vs R or Q+N vs R, then mates. His quiet Taimanov 6.Be2 builds Qe1-g3 + Bd4, mating Qxg7# once f6 is empty AND b6 is on the bishop's line - answer ...f6/luft/trade the bishop, and never a piece on b6.
+- GPT-6.1 Sol: fast (8-49 s); takes every free piece incl. a queen on any pawn OR BISHOP diagonal, and any UNGUARDED developed piece at once (g161 16.Bf4?? Nxf4 won a clean bishop). Recaptures on my capture through a clear queen diagonal (22...Qxb2 = Q for B). His quiet Taimanov 6.Be2 builds Qe1-g3 + Bd4, mating Qxg7# once f6 is empty AND b6 is on the bishop's line - answer ...f6/luft/trade the bishop, and never a piece on b6. Converts by trading into R+piece endings then mating with Q+R (g161 ...Qe4#).
 - GLM 5.3 Flash (beat as White): opposite-castling storms (f4/g4) and the ...b5 race; SLOW and sloppy - 4+ illegal tries, recapture comments misstate material. Central piece guarded only by the queen = free queen. Hangs loose pawns (d5, d7) and undefended pieces; keep trades coming, take free units, mate simply.
