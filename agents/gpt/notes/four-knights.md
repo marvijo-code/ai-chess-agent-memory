@@ -1,28 +1,26 @@
-# Four Knights: king activity, pawn checks and recapture safety
+# Four Knights: forcing replies before consolidation
 
 ## Castled opening vs Stockfish 19
 5.O-O O-O 6.Nd5 Nxd5 7.exd5 e4 8.dxc6 exf3 9.Qxf3 dxc6.
-- Both sides lose both knights and their e-pawns; material equal. Qd4/Bg4/Bd6 and queen exchanges on g5/e3 repeatedly reached near equality. Distinguish Nd5 BEFORE castling; later tactical losses do not refute the opening.
+- Both sides lose both knights and their e-pawns; material equal. Qd4/Bg4/Bd6 and queen exchanges repeatedly reached near equality. Distinguish Nd5 BEFORE castling; later tactical losses do not refute the opening.
+
+## T36 final: Black, repetition from a lost ending
+- After Bd6, White d4?! allowed Qh4!, threatening Qxh2# with bishop support. g3 displaced the queen but allowed Qxd4!, winning the central pawn. Bg4/Bxf3 and White Bxd4 exchanged queens with an extra pawn. Retain this opportunity only on the matching board.
+- g6?! answered g4 by supporting f5 and screening Bc2-h7, but abandoned g7's guard of h6. gxf5/gxf5 opened the g-file. White Re6 invaded; Bxf3 took a pawn, but Rxh6+ and Ree6 established two active sixth-rank rooks. Extra pawns did not make this king safe.
+- With my Kg7, Rg8 was NOT check: my own king screened the rook from Kg1. Kf7+! actually uncovered the check. Check annotations and comments must follow occupied squares.
+- After Kf2 attacked Bf3, Bc6?? saved B on a b5-supported square but allowed Rhf6+. White Re6 supported Rf6, and Bf5 restricted flights. The rook checks drove Kg7/Kf7 shuffles. Scan checks by other pieces before a bishop retreat; pawn support proves only destination safety. No verified replacement supplied.
+- White Bg5 then faced Kg7/Rd8/Rg8/Bd6/Bc6 and Re6/Rf6/Bf5. Rdf8?! allowed Bh6+; Kh8 was forced, then Bxf8 took R. Bd6xf8 recaptured but removed the d6 screen, letting Re6xc6 take B. The whole chain cost R+B for B. Audit the checking bishop's ray through K and the recapturer's vacated square.
+- After Rxc6, White had 2R+B versus R+B, four pawns each. Later c/d passers removed White's bishop but fell; the supported a-passer eventually forced Rxa1/Kxa1. White still had h4 and Kf4: my Ka1 could not catch h5-h8. Removing a rook does not save a pawn ending when the remaining passer wins the race.
+- White promoted and eventually repeated Q versus bare K. The position was theoretically lost; central legal king escapes prolonged play, not a fortress. Use quick verified replies, preserve escapes and accept an available repetition without expecting one.
+- No invalid moves; finished 6:30. Bc6 took 46 seconds, Rdf8 58; both missed forcing replies. b5/c3+/Kb3 took 53/43/48. Book 4-6 and late king replies 4-9 worked; increments rebuilt the clock. Enforce quiet/critical caps before the late ending.
 
 ## T36 round 4: Black, mate loss
-- Qxe3/fxe3, Rae8/Be6/Rxe6/Rfe8 stayed balanced. g6 supported f5; c5 bxc5 Bxc5 removed the doubled pawn safely. T35's loose-f5 warning did not prohibit c5 on this different board. The position remained near equal through the kingside exchanges.
-- Kf6 stood behind White's Kf3 on the f-file. hxg4+ hxg4 fxg4+ Kxg4+ moved White's king off that file, discovering Rf1-f6 check. A king capture can uncover a rook check; inspect the departure square before choosing my escape.
-- Ke5 placed K beside Bc5 with White's pawn still on d3. d4+ checked K AND attacked B. Kd5? did not solve the second attack: dxc5 Kxc5 lost B for P. K could not take d4 because e3 guarded it. No verified replacement supplied. Inspect pawn checks against nearby pieces BEFORE centralizing K, not only after the check arrives.
-- Material afterward was White 2R+B versus my 2R, with four pawns each. My supported g-passer reached g2 and tied down Rg1, but did not force promotion or erase the missing bishop.
-- Bc3 changed the proposed rook trade. White Rd4 screened Bc3-d4-e5 against my Ke5; my rooks were g6/g8. Rg4?! Rxg4+ moved the screening rook and discovered Bc3-e5 check. Rg8 could geometrically capture g4, but that recapture would leave K in check. Ke6 Rxg8 lost both rooks. A rear rook's clear path is insufficient: test ALL checks on the board after the enemy capture.
-- No invalid moves; finished 6:58. hxg4+/Kd5/Rcg6 took 55/56/58 seconds without preventing the tactical failures. Critical time must inspect pawn checks and the legality of the last recapture.
+- Qxe3/fxe3 and Rae8/Be6/Rxe6/Rfe8 remained balanced. g6 supported f5; c5 bxc5 Bxc5 safely removed the doubled pawn. T35's loose-f5 warning did not prohibit c5 on this board.
+- Kf6 stood behind Kf3 on the f-file. Kingside exchanges moved White K off that file, discovering Rf1-f6 check. A king capture can uncover a rook check.
+- Ke5/Bc5 faced d4+, checking K and attacking B. Kd5? dxc5 Kxc5 lost B for P; e3 prevented Kxd4. Inspect pawn checks BEFORE centralizing K. No verified replacement supplied.
+- Bc3/Rd4 screened Bc3-e5 against Ke5. My Rg4/Rg8 could not meet Rxg4+ with Rxg4: the departing Rd4 discovered bishop check. Ke6 allowed Rxg8. Rear-rook support does not establish a legal recapture.
 
-## T35 final: Black, mate loss
-- Re6/Re8 did NOT guard f5. c5? ignored Rxf5+; Rf6 Rxf6+ Kxf6 left one rook each and White a pawn ahead. This was not T33's Kf7 blocking Rf8-f5. Name the current guard.
-- Ke5?! allowed Bc3+, checking through d4/e5 and skewering g7 BEYOND K. Kd5 Bxg7 lost another pawn. Test enemy bishop rays and pawn checks before king activity.
-- Kb4/Ka3 chased pawns into a mating net. Bc3 controlled b2/b4, b3 controlled a4, and c2 guarded b3. Ra1# controlled a2/a3; Be5 attacked Bc3 but did not prevent mate because Bc3 blocked Be5-a1.
-
-## T34 round 4: repetition escape
-- Kf6 guarded Re6; Re8 guarded it through e7. White e4 screened Re1-e6 and Rf1 pinned f5 to Kf6. Ke7?? abandoned the king guard AND blocked Re8-e6. exf5 attacked Re6/g6 and opened the rook file. Releasing a pin did not make the move safe.
-- Kxg7 still left White b/c/d/g versus my a/c/c. b5 beside a5 allowed en passant and an outside passer. Ke4 attacked d4, but Kc5 guarded it; Ke6 attacked d7, not d8. White promoted, then repeated despite winning: no fortress established.
-
-## Retained geometry
-- T33 Kf7 screened Rf8-f5, allowing Rxf5+. Rf4-f7+ discovered Bd2-g5. Remote raids did not stop connected passers.
-- Ke8 screened Rg8-b8; Kd7 entered Ra7's rank behind b7. b8=Q+ discovered Ra7-d7, making Rxb8 illegal.
-- Rf4 Bd2xf4 Bxf4 lost the exchange. Kxh6 abandoned Bf6. Bc3 guarded a5: Rxa5 lost R.
-- d4 clears Bc1-f4: Qf4 Bxf4 loses Q. Qe7 can guard Bb4 through d6/c5; Qd5 abandons it. Qe4 attacks a8 through d5/c6/b7. Rd3 cxd3 and Qf3 gxf3 lose heavy pieces.
+## Earlier failures
+- T35 Re6/Re8 did not guard f5: c5 ignored Rxf5+. Ke5 allowed Bc3+ skewering g7. Kb4/Ka3 entered Ra1# with bishop/pawn-controlled flights.
+- T34 Ke7 abandoned Kf6's guard of Re6 AND blocked Re8-e6; exf5 opened Re1's file and attacked Re6/g6. Releasing a pin did not make the move safe.
+- Kf7 can screen Rf8-f5. Ke8 can screen Rg8-b8; b8=Q+ can discover Ra7-d7, making Rxb8 illegal. b5 beside a5 permits en passant. Rf4 Bd2xf4 Bxf4 loses the exchange; Kxh6 abandons Bf6.
