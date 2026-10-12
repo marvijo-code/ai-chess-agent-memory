@@ -2,26 +2,24 @@
 
 Wins and sparse marks do not validate moves. Track material, defenders and blockers independently; exploit actual errors without expecting gifts.
 
+## T37 round 5: Black Italian, mate win
+- Quiet d3/c3/Nbd2/Re1/Bb3 met Bc5/Nf6/O-O/d6/a6/Ba7. Re8 supported the center; d5/exd5/Nxd5 activated N. c4? chased it to f4, supported by e5. Bc2?? was marked a blunder, but no verified punishment is supplied.
+- Be6? developed B but BLOCKED Re8-e5. Nxe5?? was White's next marked blunder; my Nxe5?! allowed Rxe5!, leaving White a pawn up. Neither Nf4 nor Be6 guarded e5. My proposed later Bxc4 would open the rook's file, but was not played and is not a verified repair. Test immediate central captures before placing B on my rook's file.
+- Bd4? attacked Re5; Re4! saved R and attacked Nf4. Qg5! was required: it guarded Nf4 diagonally and threatened Qxg2#, supported by that knight. The preceding errors are not justified by finding this resource.
+- Qg4?? attacked Qg5/Nf4 but landed on Be6-f5-g4. Bxg4 won Q for B after hxg4. A double attack does not answer a capture by a third piece; inspect every bishop diagonal before queen contact.
+- Qxg4 renewed mate. White correctly saw Bd4 was loose: Nf4 blocked Qg4-d4. Rxd4 nevertheless allowed Qxg2#. Scan mate before retreating or defending an attacked bishop. On g2, Q was knight-protected and covered f1/f2/g1/h1/h2; White's king had no flight or useful interposition.
+- Zero invalid attempts; finished 13:53. Book mostly 3-9 seconds. Nxe5 took 49 seconds and Bd4 31 despite faulty evaluation; Qg5 took 49 and found the required resource. Spend critical time on concrete replies, shorten verified exchanges. DeepSeek played the opening almost instantly but used 37 seconds on its queen blunder.
+
 ## T36 round 2: Black Italian, mate win
-- Quiet d3/c3/Nbd2/Re1/Bb3 met ...Bc5/Nf6/O-O/d6/a6/Ba7/h6. Against d4, ...exd4/...d5/...Nxd5 and ...Be6 established an IQP blockade. d4 was marked inaccurate, but no forced opening advantage established.
-- Nfe5?? abandoned Nf3's guard of d4. Ba7 and Nc6 both attacked that pawn, with Qd1 its remaining guard. Compare captures there through the last recapture before routinely exchanging the active knight. My ...Nxe5? took 49 seconds and was marked a mistake; no verified best alternative supplied. Long thought must inspect the departure square's lost duties.
-- Bf4?? was undefended: ...Nxf4 won B. Nd5's departure opened Bb3-c4-d5-e6, but Bxe6 could meet Nxe6 from f4. After g3, ...Nd5 returned to the blockade, supported by c6/Be6. Taking a free unit still requires a scan of the rays it opens.
-- ...Qf6 attacked Ne5. ...Bf5 hit Qe4; Qe2 abandoned d4, allowing ...Bxd4. A queen tempo can remove the sole defender of another target.
-- After Nf3, ...Bxb2 was supported by Qf6 through EMPTY e5/d4/c3. Qxb2 Qxb2 cost White Q for B: Ra1, Bb3 and Nf3 supplied no recapture on b2. Do not call a capture a queen trade without naming the final recapturer.
-- Nd4 attacked Bf5/c6 but landed on Qb2-c3-d4: ...Qxd4 removed N. Bxd5 cxd5 exchanged White's last bishop for my knight and made a central passer; it did not repair the queen deficit.
-- ...Rac8/Rxc8 reduced counterplay. ...Rc2 was supported by Bf5 through e4/d3. Re2 had no recapture after ...Rxe2. Kf3 attacked R, but ...Qe4# was supported by BOTH Re2 and Bf5; White's f2/g3 pawns occupied flights. Scan mate before retreating an attacked rook.
-- No invalid moves; finished 11:04. Opening mostly 8-19 seconds. ...Nxe5 took 49 and missed the tactical opportunity; routine winning captures often took 14-26. Shorten verified conversion. DeepSeek banked time with very fast moves, then made one illegal attempt before Nc4; speed did not imply tactical accuracy.
+- Against d4, exd4/d5/Nxd5 and Be6 established an IQP blockade. Nfe5 abandoned Nf3's guard of d4; Ba7/Nc6 attacked it, Qd1 remained. My Nxe5? took 49 seconds and missed a better opportunity; no verified replacement supplied.
+- Bf4 was undefended: Nxf4 won B. Nd5's departure opened Bb3-e6, but Bxe6 could meet Nxe6 from f4. After g3, Nd5 restored the blockade with c6/Be6 support.
+- Qf6 hit Ne5; Bf5 hit Qe4. Qe2 abandoned d4, allowing Bxd4. Nf3 then cleared Qf6-b2 through e5/d4/c3: Bxb2 Qxb2 Qxb2 won Q for B, with no white recapturer.
+- Nd4 landed on Qb2-c3-d4 and lost N. Bxd5 cxd5 did not repair the queen deficit. Rac8/Rxc8 reduced counterplay; Bf5 supported Rc2 through e4/d3. Rxe2 took an unguarded rook; Kf3 attacked it but Qe4# used Re2/Bf5 support and pawn-occupied flights.
+- Zero invalid moves; finished 11:04. Shorten routine winning captures; speed does not establish tactical accuracy.
 
-## Classical Caro wins: retained patterns
-- h4/h5, Bd3 Bxd3/Qxd3, Bf4/O-O-O/Kb1. Ne5 Nxe5 dxe5 opened Rd1-d7 and attacked Nf6. ...Nd7 allowed Qxd7 Qxd7 Rxd7, winning N with both recapture paths clear. No forced opening edge before the error established.
-- ...Bf6 repeatedly landed on e5's capture diagonal: exf6 won B for P. Sparse marks missed it. Bd2 saved B but screened Rd1; Bc3 cleared d2 with queen tempo; Be1 guarded Ng3 through f2.
-- Doubled rooks on d7/d1 could take both black rooks on d8 because the final capturer survived. Verify Ra8's b8/c8 path and the rear rook's entire file.
-- Ng5? hxg5 lost N for P despite Bf4/Rg6 support. Pawn diagonals precede imagined mating threats. No verified replacement supplied.
-- Re7+/h7+/Bf6# used Re7 protecting h7, h7 controlling g8 and the rook controlling g7. In another finish Qh8 cleared e8 so Rb8 supported h8.
-- ...Qxb2+ was undefended against Kb1: Kxb2 legal. Rb6 later abandoned Ne8's guard while attacking Q; Qxe8+ took N. Always test capture of the checker and newly abandoned guards.
-
-## Retained Black failures and geometry
-- ...c5? d5 was adverse; later Bxh6 gxh6/Qg6+ fxg6 gifts did not certify the setup. ...Qh2+ Kxh2 lost my unguarded queen after 53 seconds. ...Nc2 later cleared Bg7-d4, enabling supported Rh2#.
-- ...Qxf2 Rxf2 lost Q: Kb1 had released Rd2's pin and f7 blocked Rf8-f2. ...Rad8/Rxf5 ignored Rxd1# with blocked flights.
-- e5 screens Qc7-f4: ...Nxf4 can meet Bxf4. ...Nc3+ Qxc3 Rxd1 Rxd1 loses N; trace Rh1 through g1/f1/e1.
-- Bf6 exf6 clears Bf4-b8. Rh7+ Kxh7 fails when f7 blocks Rb7-h7; Bd4 guards g7/h8, not h7. Nd7+ can discover Bd4-h8 while forking Rf8; Nf6+ can instead block Rf1's support of Rxf7.
+## Classical Caro and retained geometry
+- Ne5 Nxe5 dxe5 opens Rd1-d7 and hits Nf6. Nd7 allows Qxd7 Qxd7 Rxd7, winning N. Bf6 repeatedly loses to exf6; sparse marks can miss plain pawn captures.
+- Bd2 screens Rd1; Bc3 clears d2 with queen tempo; Be1 guards Ng3 through f2. Doubled d-file rooks require clear final recapture paths. Ng5 hxg5 loses N despite imagined support.
+- Qxb2+ beside Kb1 was Kxb2. Rb6 abandoned Ne8 while attacking Q; Qxe8+ took N. Always test capture of the checker and abandoned guards.
+- Qh2+ Kxh2 lost my unguarded Q. Qxf2 Rxf2 lost Q after Kb1 released Rd2's pin; f7 blocked Rf8-f2. Rad8/Rxf5 ignored Rxd1#.
+- e5 screens Qc7-f4. Nc3+ Qxc3 Rxd1 Rxd1 loses N. Rh7+ Kxh7 fails with f7 blocking Rb7-h7; Bd4 guards g7/h8, not h7. Nf6+ can block Rf1's support of Rxf7.
