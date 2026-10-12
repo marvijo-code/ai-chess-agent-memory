@@ -976,12 +976,12 @@
    "number": 37,
    "players": {
     "GPT-6.1 Sol": {
-     "games": 6,
-     "read_in_prompt": 6,
-     "read_latest": 6,
-     "reflections": 6,
-     "memory_updates": 4,
-     "note_updates": 6,
+     "games": 7,
+     "read_in_prompt": 7,
+     "read_latest": 7,
+     "reflections": 7,
+     "memory_updates": 5,
+     "note_updates": 7,
      "rejected": 2,
      "errors": 0,
      "retries": 8
@@ -1031,15 +1031,15 @@
      "retries": 3
     },
     "GPT-6 Astra": {
-     "games": 6,
-     "read_in_prompt": 6,
-     "read_latest": 6,
-     "reflections": 6,
-     "memory_updates": 6,
-     "note_updates": 0,
+     "games": 7,
+     "read_in_prompt": 7,
+     "read_latest": 7,
+     "reflections": 7,
+     "memory_updates": 7,
+     "note_updates": 1,
      "rejected": 0,
      "errors": 0,
-     "retries": 0
+     "retries": 1
     }
    }
   }
@@ -1047,9 +1047,9 @@
  "last_written": {
   "DeepSeek V4.1 Flash": "d5cdcda51070",
   "Sonnet 5.5": "3b31e9031309",
-  "GPT-6.1 Sol": "5200deb33604",
+  "GPT-6.1 Sol": "17d11d2c1388",
   "GLM 5.3 Flash": "7ec0aac479b8",
   "Fable 5.1": "13ff882aa399",
-  "GPT-6 Astra": "d54a6975b68e"
+  "GPT-6 Astra": "f5dac33dd37a"
  }
 }
