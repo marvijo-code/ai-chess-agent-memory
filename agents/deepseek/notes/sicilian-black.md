@@ -1,33 +1,23 @@
-# Sicilian as Black - Alapin/Dragon/Taimanov (g28-g103)
+# Sicilian as Black - Alapin/Dragon/Taimanov (g28-g156)
 
-## Taimanov B - g34 vs GLM (1-0 m26)
-6.Bg5 e6 7.Qd2 Be7 8.O-O-O O-O 9.f4 a6 10.Be2 Bd7 11.g4 b5 - opposite castling; ...b5 is safe because White has NOT played a4. 12.Bxf6 Bxf6 13.g5 Bxd4! 14.Qxd4?? Nxd4 = Q for B: his d4-knight had ONE guard (the queen). Then ...Qc7/...f6/...gxf6/...Red8/...d5/...Bc6: trade along the d-file, keep the queen off pawn diagonals, no grabs.
-- 24...Qxf4+ took a pawn WITH check; 25.Kb1?? gave up Kc1's guard of d2 -> 25...Qxd2 26...Qe1#. Look for his king leaving a defensive square.
+## Taimanov B, quiet 6.Be2 (g103,g150,g152,g156)
+Book: 6.Be2 e6 7.O-O Be7 8.Be3 O-O 9.f4 a6 10.Kh1 Bd7 11.a4 Qc7 12.Bf3 Nxd4 13.Bxd4 (15 plies), then ...Rfe8/...Rad8. His Qe1-g3 + Bd4 battery threatens Qxg7#; my Nf6 is only a SCREEN. Trade the Bd4 (...Nxd4) or free f6 for ...f6/luft the moment Qg3 appears - never a passive rook shuffle.
+- g156 vs Sol (0-1, Qxg7# m22): 15...Qb6?? lost my QUEEN to 16.Bxb6: she 'attacked' the bishop while standing on that bishop's own d4-b6 diagonal. Before ANY queen move walk every enemy bishop diagonal to its end. 14...Rfe8?!, 14...Rad8?! were the shuffles that let 15.Qg3 come.
+- 18.e5 dxe5 19.fxe5 Nh5?? 20.Bxh5 - loose knight, a second gift; 21...Rxc3 was the only grab, then 22.Qxg7# (f6-pawn supporting). Never leave loose pieces when he is up a queen.
+- g152 (0-1, Qxg7# m19): 15...e5? screened only by a pawn: 16.fxe5 Nxe5 17.Nd5 Qd7?? 18.Bxe5! mate; only 18...f6 blocked (also hits his undefended e5 bishop). No ...Nd7/...e5 while the battery stands.
+- g103 vs Sol (0-1, m33): 12...Bd6?? guarded only by my queen - 13.Qxd6 Qxd6 14.Bxd6 = B+Q for B; 17...Bf5?? Rxf5 on the open f-file. Both 36-38 s thinks.
 
-## g103 vs Sol (0-1, Rf8# m33) - Taimanov: two free pieces
-1.e4 c5 2.Nf3 Nc6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 e6 6.Be2 Be7 7.O-O O-O 8.Be3 d6 9.f4 Nxd4 10.Bxd4 e5 11.fxe5 dxe5 12.Bxe5 Bd6?? 13.Qxd6 Qxd6 14.Bxd6 Nxe4 15.Nxe4 Be6 16.Bxf8 Rxf8 17.Bd3 Bf5?? 18.Rxf5: White R+R+B+N vs R+B, mate m33.
-- After 12.Bxe5 (hits Nf6, White +1 pawn) Black must free the knight: 12...Nxe4! 13.Nxe4 (pawns level) then ...f6/...Bd7 and hold. 12...Bd6?? loses B+Q for Q: 13.Qxd6 Qxd6 14.Bxd6 - a piece defended ONLY by my queen dies to Qx then his 2nd attacker (the e5-bishop). Write Qx + Bx before moving a piece onto a square his queen's line covers.
-- 17...Bf5?? Rxf5: quiet piece onto the open f-file (f2-f5 empty, Rf1; f7 blocks recapture) with no defender; it attacked only a Bd3-defended knight. Already down, every move passes the destination sweep (his rook files + bishop diagonals) FIRST.
-- Clock: 28-38 s book moves; both blunders took 36-38 s. Book <=10 s even in a 'solid' line.
+## Taimanov B, g34 vs GLM (1-0 m26)
+6.Bg5 e6 7.Qd2 Be7 8.O-O-O O-O 9.f4 a6 10.Be2 Bd7 11.g4 b5 is safe while White has no a4. 13...Bxd4! 14.Qxd4?? Nxd4 = Q for B (the knight had only the queen as guard). Then ...Qc7/...f6/...gxf6/...d5/...Bc6. 24...Qxf4+ 25.Kb1?? dropped Kc1's guard of d2 -> 25...Qxd2 26...Qe1#.
 
-## g95 vs Stockfish19 (0-1, Qe8# m28) - queen 'defended' on attacked d5
-1.e4 c5 2.c3 d5 3.exd5 Qxd5 4.Nf3 Nc6 5.d4 cxd4 6.cxd4 Nf6?! 7.Nc3! e6?? 8.Nxd5! exd5 9.Bb5 +8.85.
-- 6...Nf6?! (SF: 7.Nc3! only, +1.58). Before ...Nf6 be sure Nc3 cannot come with tempo. Better 6...e6 (or 5...e6: 6.dxc5 Qxd1+ 7.Kxd1 Bxc5 =) or 6...e5.
-- 7...e6?? 'defended' d5 with the e6-pawn; 8.Nxd5 exd5 = QUEEN for a knight. Defenders never save an attacked queen - she MOVES that move: ...Qd6/Qd8/Qa5. Same mistake g41/g91/g94 - 5th time.
-
-## g91 vs Stockfish19 (0-1, Qf7# m22) - bad recaptures, then Qxd6?? on his file
-1.e4 c5 2.c3 Nf6 3.e5 Nd5 4.d4 cxd4 5.Nf3 Nc6 6.cxd4 d6 7.Bc4 Nb6 8.Bb5 Bd7 9.Nc3 a6 10.Bxc6 Bxc6?! 11.d5! Bd7 12.O-O e6 13.Bg5 Be7 14.dxe6 fxe6?! 15.Bxe7 Kxe7 16.exd6+ Kf8 ... 19...Qxd6?? 20.Qxd6+ = Q for P.
-- 10...bxc6! not ...Bxc6?! (11.d5! kicks it); 14...Bxe6! not ...fxe6?! (16.exd6+ makes a passer behind my king).
-- 19...Qxd6??: his Qd1 and my Qd8 shared the open d-file; the d6-pawn was the last screen. Before any queen capture list Q/R on the destination's file/rank/diagonal, screens counted.
-
-## Alapin 4.c3 plans
-- 5.Qxd4 (g58,g63,g64): ...Nc6 ...g6 ...Bg7 ...O-O ...Nc5 =; no ...Nb4, no knight to d4 (12...Nd4?? 13.Rxd4), no ...b5 while Rd1 faces Qd8 (g64: 11...b5?? 12.Bxc5! dxc5 13.Rxd8 - d6-pawn was last screen AND Nc5's guard).
-- g59: 4...Nf6 order avoids 6.d5 with tempo; then ...Nc6/...g6/...Bg7/...O-O/...Nc5.
-- Pawn push: list recapturers first; a square safe before a capture may not be after (g63).
+## Alapin 4.c3
+- 5.Qxd4: ...Nc6/...g6/...Bg7/...O-O/...Nc5. No ...Nb4, no knight to d4 (12...Nd4?? 13.Rxd4), no ...b5 while Rd1 faces Qd8 (g64: 11...b5?? 12.Bxc5! dxc5 13.Rxd8).
+- g95 (0-1, Qe8# m28): 6...Nf6?! allows 7.Nc3!; after 3...d5 the queen MOVES off d5 when hit - 7...e6?? 8.Nxd5 exd5 = Q for N. Fifth 'defended queen' loss (g41,g91,g94,g95).
+- g91 (0-1, Qf7# m22): 10...bxc6! not ...Bxc6?! (11.d5! kicks it); 14...Bxe6! not ...fxe6?! (16.exd6+); 19...Qxd6?? 20.Qxd6+ - the d6-pawn was the last screen on the open d-file.
 
 ## Recurring
-- PIN (g90): verify a recapturer is not pinned before sending.
-- SCREEN (g91,g64,g79): a capture on the last screen of his queen's file = Q for P.
-- Queen: hit by anything -> she moves that move; 'defended' never counts (g95). Never Qx a flank pawn on a rook file.
-- His captures open lines: his rook enters first; recheck after every capture.
-- Time: routine <=15 s; long thinks never fixed anything (g50,g59,g63,g64,g90,g91,g95); down 1-5 s.
+- QUEEN: hit by anything -> she moves that move; 'defended' never counts. Enemy pawns: e6 hits d5/f5, d5 hits c4/e4, f7 hits e6/g6. Bishop diagonals to her landing square (g91 ...Qxd6??, g156 ...Qb6??).
+- SCREEN: a capture on the last screen of his queen/rook file = Q/R for P (g64,g79,g91,g148).
+- PIN: verify a recapturer is not pinned (g90). RECAPTURE != TRADE: name my recapturer on the destination.
+- His captures open lines; recheck after every capture. No mate-net grab (no ...Rxd4/...Bxd4/...Nxe4 while Qxh7# looms).
+- Time: book <=10 s, routine <=15 s (g103/g156 36-38 s blunders); long thinks fixed nothing.
