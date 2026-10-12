@@ -1,25 +1,29 @@
-# Ruy Lopez: screens, recaptures and conversion
+# Ruy Lopez: pawn forks, screens and passers
 
-## T33 Final: Black vs Sonnet, mate win
-- Chigorin ...Na5/...c5/...Qc7, then ...cxd4/cxd4/...Nc6 returned the knight before ...a5-a4 and ...Bd7/Rfc8. Distinguish this from leaving Na5 stranded. No forced opening edge established.
-- 18.Bc2?? was marked a blunder, but my ...Nb4? was also marked a mistake. The win does not validate it; no verified move-18 replacement supplied. Recheck central captures and opened files before choosing a knight attack.
-- 19.Bd3?? purported to offer Nxd3 Qxd3, but Nd2 blocked Qd1-d2-d3. ...Nxd3 won B outright and attacked Re1. Re2 saved R; ...Nf4 then escaped with attacks on Re2/Be3, supported by e5. Bxf4 exf4 retained the extra piece. A trade intention is irrelevant without a legal recapture.
-- ...Qc2/Qxb1 reduced counterplay. ...Rc2 invaded; exchanging both rook pairs preserved the extra bishop, reaching B+B+N versus N+N. Sonnet's comments called the rook trades material recovery; the board did not. ...Rc8 was supported by Bd7-c8, making the final exchange safe.
-- ...d5 opened central play. After e5, ...Ne4 offered a knight exchange; Nxe4 dxe4 attacked Nf3 and created a passer, leaving two bishops versus one knight. ...Bb7 guarded e4 before its advance.
-- ...e3 attacked Nd2 AND cleared Bb7-c6-d5-e4-f3-g2-h1. Nf1 attacked e3, but ...e2 advanced with tempo against that knight. Ne3 neither captured nor blockaded e2; ...e1=Q promoted. Successive attacks on the defender can outrun its capture plan.
-- After Nf5, Qh1# used Bb7's clear diagonal. Ne3 had vacated f1, so Qe1-h1 was open. Qh1 controlled h3/g1/g2; g3 was occupied by White's pawn, and h1 was bishop-protected. Rescan mate after promotion.
-- No invalid attempts; finished 14:12. Recaptures/promotion mostly 3-8 seconds; ...Qc2 took 37 and ...e3 54. Spend critical time on legal defenses and changed rays, shorten verified simplification.
+## T34 round 2: White vs Sonnet, mate win after losing a piece
+- Same Zaitsev structure as T33 through Nxe5/dxe5/Ng3, but Sonnet chose ...g6/Qd6. ...g6 stopped Nf5; Qd6 guarded c5/b4 and gained access to f4 if e5 moved. Earlier attacking plans no longer applied.
+- 21.f4?? exf4 forked Be3/Ng3. The pawn's departure from e5 opened Qd6-e5-f4, so Bxf4 Qxf4 lost the bishop: Qd1 did not guard f4. Ne2 saved N but ...fxe3 won B. Before a break, place the enemy capture, list its pawn attacks and verify the intended recapture's guards. No verified move-21 replacement supplied.
+- Qf4 guarded e3; ...Qf2+ forced queens off. Kxf2 removed the passer but did not recover the piece. Later axb5/axb5/Nxb5 won a pawn; Ba2/Nxa2/Rxa2 traded minors while retaining Black's extra bishop.
+- Active K and the d-pawn created practical pressure. e5?! blocked ...Bd6+ but was adverse; d6/e6 forced the rook blockade to change. Rf1+ drove Kf7 off e6, allowing Kxe6. No verified replacement for e5 supplied.
+- ...Rdd8?? was followed by my Ke7??; the win does not certify that king advance. Before entering beside a blockader, calculate every check, capture and forced retreat. No verified best replacement supplied.
+- ...Rc5 vacated c8, removing the rook's defense of Rd8. ...Rc7?? pinned d7 to Ke7 but put a friendly screen on Bb6-c7-d8. Kxd8! captured the now-undefended rook and escaped the pin. Inspect the entire defender ray after each move, including new friendly screens.
+- ...Bd8+ put another undefended piece beside my king. Kxd8 Rxd6 exchanged my knight for B; I now had two rooks against R+B, an exchange ahead. Sonnet's claim to be well ahead was wrong.
+- Ra7 supported d7 so Ke7 could clear d8. ...Bxg2 attacked Rf1; ...Bxf1?! took it but ignored Kxd6 against the rook blockader. Scan king captures before automatic promotion: removing R first preserved the pawn and avoided d8=Q Rxd8.
+- d8=Q+ vacated d7, discovering Ra7-g7 against Kg7. ...Bd7 blocked the rook check; Rxd7# was supported by Kd6/Qd8, with Qd8 covering the eighth rank and f6. Promotion needs a fresh scan of opened rays and flights.
+- No invalid moves; 5:05 remained. f4 took 44 seconds and Ne2 53; many routine moves took 28-55. Long thinking did not prevent the fork or Ke7 error. Shorten verified recaptures and save critical time for changed guards/checks.
 
-## T33 round 2: White vs Sonnet, mate win
-- Zaitsev ...Bb7/Re8/Bf8/h6, Bc2 and ...exd4/cxd4/...Nb4/Bb1/...c5/d5/...Nd7. Nxe5/dxe5 against ...Ne5 retained Qd1's d5 guard, unlike T32's Qxf3 branch. No forced opening edge.
-- axb5/axb5 opened Ra8-a1 while Bb1 blocked horizontal recapture. Rxa8 resolved contact immediately; ...Bxa8 kept Qd8 in place.
-- Bxh6? after Qg4/Qf6 underestimated ...Qg6!, which interposed on the g-file and released g7's pin. Be3 and ...Qxg4/hxg4 escaped with the pawn. The extra pawn did not prove the grab sound.
-- ...Bd6? was undefended: Nxd6 won B and attacked Re8. Later f4/exf4/Bxf4 cleared e5 and guarded Nd6; Nxb7 traded N for the remaining enemy B while preserving an extra minor.
-- Bc3 cleared Rd1's file; Bf4 supported d6. Bf5/Bxd7 removed Nd7's blockade, leaving R+B versus R. Kd4 temporarily screened Rd1-d6; Kc5 cleared it. Kc6 guarded d6 and covered c7/d7, freeing Bg5+. Re8+ Rd8 Rxd8# used Bg5-f6-e7-d8 support.
-- Finished 7:45. Rxa8/hxg4 took 4/3 seconds; Be3 took 93. Shorten verified replies.
+## T33 Final: Black vs Sonnet
+- Chigorin ...cxd4/cxd4/...Nc6 returned Na5 before ...a5-a4/...Bd7/Rfc8. ...Nb4? was adverse despite winning; no verified replacement.
+- Bd3?? hung B: Nd2 blocked Qd1-d3. ...Nxd3 attacked Re1; ...Nf4 escaped with attacks on Re2/Be3. Bxf4 exf4 retained the extra piece through queen and both rook-pair exchanges.
+- ...d5/e5/...Ne4/Nxe4/dxe4 created a passer with tempo, leaving two bishops versus N. ...Bb7 guarded e4; ...e3 hit Nd2 and cleared Bb7-h1; ...e2 hit Nf1. Ne3 neither captured nor blockaded. After promotion, Qh1# used Bb7 and the vacated f1 square.
 
-## Retained failures
-- T32 Qxf3?! abandoned d5; ...Bxd5 won P because exd5 opened ...Rxe1+ with Bb1 blocking Ra1-e1. Bf4?? allowed ...Bxe4 with tempo on Qf3 and removed Nf5's pawn guard; Nf5 also blocked Bf4-d6.
-- axb5/axb5 followed by Qe3?? lost Ra1; Bb1 blocked Rd1-a1. Earlier Bc1 blocked Re1-a1. Qe8+?? Rxe8 overlooked Re6-e8 and e4 blocking Re1's support.
-- ...Nb8 branch d5?/Bc2?! lost P to ...cxd5/exd5/...Bxd5; no verified replacements. Chigorin Na5 cannot jump to b4. Qe3/Ng4 allowed ...Nxg4/hxg4/...Bxg4, losing h-pawn; Nf5/Bxf5/exf5/...Nxd5 left two pawns down.
-- f6 hits Re7 and opens Bc2-h7. Compare fxe7 before automatic Qxf4 after ...Nxf4. Qxh6+ provoked ...Qh7?? Bxh7: Qh5 guarded h7 and Bg7 blocked Re7-h7. Gifts do not validate sacrifices.
+## T33 round 2: White vs Sonnet
+- Nxe5 against ...Ne5 retained d5's Qd1 guard. axb5/axb5 opened Ra8-a1 while Bb1 blocked recapture; Rxa8 resolved contact immediately.
+- Bxh6? underestimated ...Qg6!, releasing g7's pin. Be3 and hxg4 escaped; the pawn gain did not prove the grab sound. ...Bd6? then hung B to Nxd6.
+- Nxb7 traded N for B while keeping an extra minor; Bf5/Bxd7 removed the d-pawn blockader. Kd4 screened Rd1-d6; Kc5 cleared it. Kc6 supported d6, freeing Bg5+. Re8+ Rd8 Rxd8# used Bg5's guard of d8.
+
+## Retained warnings
+- Qxf3?! abandoned d5; ...Bxd5 won P because exd5 opened ...Rxe1+ with Bb1 blocking Ra1-e1. Bf4?? allowed ...Bxe4 with tempo on Qf3 and removed Nf5's pawn guard; Nf5 also blocked Bf4-d6.
+- Queen retreats after axb5/axb5 lost Ra1 behind Bb1/Bc1. Qe8+?? Rxe8 overlooked Re6-e8 and e4 blocking Re1.
+- ...Nb8 branch d5?/Bc2?! lost P to central exchanges; no verified replacements. Na5 cannot jump to b4.
+- f6 hits Re7 and opens Bc2-h7. Compare fxe7 before automatic Qxf4. Qxh6+ provoked ...Qh7?? Bxh7: Qh5 guarded h7 and Bg7 blocked Re7-h7. Gifts do not validate sacrifices.
