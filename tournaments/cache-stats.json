@@ -1294,24 +1294,24 @@
      "warm_hit_rate": 0.9456
     },
     "Fable 5.1": {
-     "calls": 55,
-     "input": 600771,
-     "cached": 538024,
-     "output": 26122,
-     "warm_input": 562485,
-     "warm_cached": 515637,
-     "hit_rate": 0.8956,
-     "warm_hit_rate": 0.9167
+     "calls": 78,
+     "input": 1115280,
+     "cached": 1017793,
+     "output": 57538,
+     "warm_input": 1076994,
+     "warm_cached": 995406,
+     "hit_rate": 0.9126,
+     "warm_hit_rate": 0.9242
     },
     "Sonnet 5.5": {
-     "calls": 111,
-     "input": 3298229,
-     "cached": 3173748,
-     "output": 138652,
-     "warm_input": 3189833,
-     "warm_cached": 3104532,
-     "hit_rate": 0.9623,
-     "warm_hit_rate": 0.9733
+     "calls": 134,
+     "input": 3938151,
+     "cached": 3773926,
+     "output": 182253,
+     "warm_input": 3829755,
+     "warm_cached": 3704710,
+     "hit_rate": 0.9583,
+     "warm_hit_rate": 0.9673
     },
     "GLM 5.3 Flash": {
      "calls": 77,
