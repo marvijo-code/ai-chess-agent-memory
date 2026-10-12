@@ -14,7 +14,7 @@ Notes:
 - 3 rejected tries on ONE move = forfeit; each try also burns clock. O-O needs knight off home + f8/g8 empty. After O-O-O my king is on c8, so ...Rc8 is ILLEGAL. Before any bishop move its path AND destination must be empty. After ONE rejection NEVER resend: redraw, list every legal square, choose.
 - g162 had 6 rejected tries, all geometry: 15...Ne4 (BOTH knights reach e4 - write Nfe4/Nde4), 40...Rxd4 and 44...Rxd4 (a rook on c7/c8 never reaches d4 - rooks move on ranks/files only), 58...Qg5+ (queen unguarded next to his king). Name the mover's FULL path and destination before sending.
 - A SQUARE I WANT MAY BE MINE ALREADY: clear the occupant before ...f6/...e5/...c5; name the blocker.
-- SELF-BAN: a move my scan or note called bad is DEAD (Rc1; Qxe5; a piece on b6 while his bishop owns that diagonal). Reread the ban list before every knight, rook AND queen move.
+- SELF-BAN: a move my scan or note called bad is DEAD (Rc1; Qxe5; Qe3 with a bishop on d4; a piece on b6 while his bishop owns that diagonal). Reread the ban list before every knight, rook AND queen move.
 
 ## Rule 1 - destination sweep (EVERY move, mine too)
 - His LAST move first (attacks, pawn controls, opened lines), then MY destination: 0 guards + his capture = gift; hitting two units is no safety (16.Nd7??; 16.Ng6?? taken by f7).
@@ -36,6 +36,7 @@ Notes:
 ## Rule 2 - the queen
 - HIT -> she moves THAT move, OFF every attacker ray; a retreat along the same line is still en prise (28.Qg2?? stayed on the g-file under Rg4 -> 28...Rxg2+). 'Defended' never counts; if queen AND another piece are attacked, the QUEEN moves first. A queen as sole guard of a piece his queen attacks loses it.
 - HIS BISHOP LANDS WITH TEMPO ON HER = she moves that move; no castling, no rook move (g160 14.Be3 hit my Qb6 and 14...O-O?? lost her to 15.Bxb6). Before she recaptures onto ANY square, trace every enemy bishop diagonal BOTH ways to its edge.
+- QUEEN NEVER LANDS ON AN ENEMY BISHOP'S DIAGONAL, 'with tempo' included: g165 15.Qe3?? meant to hit Bd4 but walked onto d4-e3-f2 -> 15...Bxe3 = Q for B. Before EVERY queen destination trace each enemy bishop ray to its edge; on it = dead move.
 - BEFORE every rook move list what that rook guards on its file - my queen included (23.Rc1?? left d1, the ONLY guard of Qd3). AFTER EVERY QUEEN MOVE write what she no longer guards and re-list her lines.
 - NEVER OFFER A 'TRADE' WHOSE RECAPTURE IS ILLEGAL OR LOSING: 17...Bg5?? - after 18.Bxg5 my recapture Qxg5 loses to Nxg5, so 19.Bxd8 took my queen.
 - PAWN DIAGONALS before every queen destination: e6 hits d5/f5, d5 hits c4/e4, f7 hits e6/g6, e5 hits d4/f4, g6 hits f5/h5. Q for a pawn 6x: exf5, dxe4, exd5, fxe6, fxe5, exf4. No capture on a defended square or ray; a check is only safe if K can't take and no pawn takes.
@@ -49,6 +50,7 @@ Notes:
 - Count EVERY recapturer - PAWNS FIRST, then rooks/queens behind the first defender. Trace MY recapture through MY OWN pieces. Broken chain, don't take.
 - A piece that cannot move is not lost: name the ATTACKER. PIN freezes a recapturer; blocked guard = no guard; a push abandons guard duty.
 - PAWN PUSH ABANDONS THE GUARD OF A PIECE: 13.b4?? moved b2 off c3 -> ...Bxc3! won the loose Nc3. Before ANY pawn push name the piece(s) it guarded (b2->c3, f7->e6/g6, h7->g6) and which line opens.
+- d4/e4 BREAK WITH ONE GUARD LOSES A PAWN: g165 11.cxd4 left d4 guarded only by Nf3, and 11...Nxd4! 12.Nxd4 Bxd4 (Nd2 blocked Qd1) = pawn down. Name the break's SECOND guard before pushing.
 - WINNING CAPTURE PATTERN (g162 win): his 17.Bxe4?? landed on e4 where my Bg6 covered it and my Nc5 attacked it, with NO white guard -> 17...Nxe4 won a clean piece. When his piece lands on a square two of mine hit and no piece of his defends it, TAKE IT at once.
 
 ## Rule 4 - material & clock
@@ -57,10 +59,10 @@ Notes:
 - QUEEN TRADE WITH MY KING AS THE RECAPTURER (g163): 10...Qa5+ 11.Qd2?? Qxd2+ 12.Kxd2 Bxd4! 13.Bxd4 Nxd4 and his knight then hit my loose Be2 = a clean piece gone from a level game. When a queen trade would leave my K on a central square with his knights still live, list his knight jumps onto my loose bishops/pawns BEFORE trading; block such a check with Bd2/Bd1 or keep queens. My Be3 was d4's ONLY guard - a lone guard breaks when his second attacker lands.
 - Up with big material: mate with checks on squares his king cannot take and that my pieces cover; drive him to the edge. g162 (R+B vs bare K) ended Qd4# - never a queen next to his king unguarded, never a stalemate.
 - Equal: mate net before any grab; NO piece-for-pawn sac. Re-count material FROM THE BOARD after every capture. When hopelessly down vs SF there is NO stalemate/perpetual rescue (g163 m23-m44) - the game was decided by the one-move piece loss, not by the long defence.
-- Time: book <=10 s, routine <=15 s, cap 20 s; <3 min <=5 s. Every long think in earlier games still blundered; g164 10...Nf4 burnt 1:43 in a lost position; g163 38-39 s on Rac1/Kd3 (both safe) while 2 illegal tries cost 39 s. SF19 instant; Sol 6-55 s; Sonnet 1-64 s; GLM slow.
+- Time: book <=10 s, routine <=15 s, cap 20 s; <3 min <=5 s. Every long think in earlier games still blundered; g164 10...Nf4 burnt 1:43 in a lost position; g163 38-39 s on Rac1/Kd3 (both safe) while 2 illegal tries cost 39 s. g165 13.Rb1 burnt 38 s and was still a mistake. SF19 instant; Sol 6-55 s; Sonnet 1-64 s; GLM slow.
 
 ## Openings (only the lines I actually play)
-- Italian Giuoco Pianissimo W (0-1, g161): 1.e4 e5 2.Nf3 Nc6 3.Bc4 Bc5 4.d3 Nf6 5.c3 O-O 6.O-O d6 7.Nbd2 a6 8.Re1 Ba7 (16 plies), then Bb3, d4, exd5 Nxd5, Nc4. Sound to move 12; loss was 16.Bf4?? (unguarded piece, no recapture) and 22.Qxb2?? Qxb2.
+- Italian Giuoco Pianissimo W (0-2, g161 g165): 1.e4 e5 2.Nf3 Nc6 3.Bc4 Bc5 4.d3 Nf6 5.c3 d6 6.O-O O-O 7.Nbd2 a6 8.Re1 Ba7 (16 plies), then Bb3, Bg5, d4. g165 Sonnet: 7...Be6 8.Bb3 Bb6 9.Re1 h6, then 10.d4?! exd4 11.cxd4 Nxd4! 12.Nxd4 Bxd4 = pawn down. BANS: 15.Qe3?? (Bd4xe3 = Q for B); g161 16.Bf4?? unguarded; 22.Qxb2?? Qxb2.
 - Scotch Four Knights W (0-1): 1.e4 e5 2.Nf3 Nc6 3.d4 exd4 4.Nxd4 Nf6 5.Nc3 Bb4 6.Nxc6 bxc6 7.Bd3 d5 8.exd5 cxd5 (16 plies). Then castle, Bg5/Bf4, Re1. BANS: 13.b4??; 14.Bf5??; 15.Re1??.
 - Open Sicilian W (Taimanov quiet 6.Be2, WIN g155): 1.e4 c5 2.Nf3 e6 3.d4 cxd4 4.Nxd4 Nc6 5.Nc3 a6 6.Be2 Be7 7.O-O Nf6 8.Be3 O-O (16 plies); f4/Qd2/Rad1 central play; his d5/d7 pawns stayed loose.
 - Open Sicilian W vs Dragon (7...d5, L g163): after the d5 exchange, c4 and his Qa5+ the position is level ONLY if I block the check with Bd2/Bd1; 11.Qd2?? Qxd2+ 12.Kxd2 Bxd4! 13.Bxd4 Nxd4 then N hits Be2 - a piece. Level queenless endings are fine; do not walk the king onto d2 with his knights alive.
@@ -71,6 +73,6 @@ Notes:
 
 ## Opponents
 - SF19: instant; punishes loose units, passive retreats, queens on his ranks/rays/pawn diagonals, knights on pawn-hit squares; ...Nxd4! once my d4 recapture chain was short; punished O-O into his Qg4/Bh6 battery (Qxg7#) and g164 9.Qg4 then Qxg7/Qxh8 won the exchange (my e8-king did not guard g7); g163 punished 11.Qd2?? with ...Qxd2+ then ...Bxd4!/...Nxd4 hitting my loose Be2 = a piece, and converted 2R vs R with ...Ra8#. No repetition or stalemate rescue when he is far ahead.
-- Sonnet 5.5 (never beaten): banks clock; takes every free unit; never misses a recapture; trades into simple winnable endings; builds Q+B batteries vs my castled king. g160: took the free a6-rook, and the instant his Be3 hit my Qb6 she was lost because I castled instead. Never give her a screen, a free unit, or a trade whose recapture is illegal.
+- Sonnet 5.5 (never beaten): banks clock; takes every free unit; never misses a recapture; trades into simple winnable endings; builds Q+B batteries vs my castled king. g160: took the free a6-rook, and the instant his Be3 hit my Qb6 she was lost because I castled instead. g165: punished 15.Qe3?? (queen on Bd4's d4-e3 diagonal) instantly with Bxe3 = Q for B, then converted with Qd4+/Qxd2 and Qe1#. Never give her a screen, a free unit, or a trade whose recapture is illegal; never leave a queen on a bishop's ray.
 - GPT-6.1 Sol: fast (8-49 s); takes every free piece incl. a queen on any pawn OR BISHOP diagonal, and any UNGUARDED developed piece at once (g161 16.Bf4?? Nxf4). Recaptures on my capture through a clear queen diagonal (22...Qxb2 = Q for B). His quiet Taimanov 6.Be2 builds Qe1-g3 + Bd4, mating Qxg7# once f6 is empty and b6 is on the bishop's line - answer ...f6/luft/trade the bishop, never a piece on b6.
 - GLM 5.3 Flash (beat as White; beat as Black g162): opposite-castling storms (f4/g4) and the ...b5 race; SLOW, sloppy, many illegal tries, misstates material. Hangs loose pawns (d5, d7) and undefended pieces (g162 17.Bxe4?? walked into Bg6+Nc5 with no guard); keep trades coming, take free units, mate simply.
