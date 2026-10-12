@@ -1,22 +1,25 @@
-# Ruy Lopez: guards, blockaders and conversion
+# Ruy Lopez: queen safety, guards and conversion
 
-## T37 round 2: White vs Sonnet, Chigorin, mate win
-- Nf1 cleared Qd1-d4. Against ...Bd7, d5 gained space but ...Nb4/Bb1/...a5/...Rac8 gave Black concrete c-file play. After a3, ...Nc2 was supported by Qc7 AND Rc8. Bxc2 and queen exchange traded my light bishop for N equally, leaving an active enemy rook. Unlike T36 Zaitsev Qd6/Rd8, this was not a knight gift. No forced opening edge established.
-- Rb1 defended b2; Red1 guarded d5. Nf5?! was exchanged by Bxf5, and exf5! retained d5's rook guard. Rdc1?! abandoned that sole guard to challenge Rc2; after rook exchange, Ne1 attacked the invading rook and Rd1 restored defense. Rook activity does not excuse leaving the center loose. No verified replacements for Nf5/Rdc1 supplied.
-- ...Nc5?? allowed defender removal. Bxc5?! dxc5 displaced the pawn that guarded e5. Nxe5! won P with tempo on Rc4; d6! then attacked Be7 and created a supported passer. Black's imagined Bxc5 was illegal because d6 blocked Be7-d6-c5. The opportunity was real, but my Bxc5 was inaccurate; no verified improvement supplied.
-- d7 tied Bd8 to the promotion square. Nc6 attacked B and guarded d8. Promotion forced Bxd8; Rxd8+ won B and retained rook activity. Nc6 was hit by b5, so Ne5 saved it after the forcing sequence. The passer disappeared but purchased an extra knight.
-- Nxf7 threatened Rh8 mate. ...g5 made luft; fxg6+?! removed my f5 restraint and let Kxg6! activate K with an attack on Nf7. En passant is optional: compare the enemy king's access before capturing. Ne5+! and Nd3! then saved N with tempo and challenged Rb2. No verified move-40 replacement supplied.
-- ...Rd2 relatively pinned Nd3 to Rd8. Rd7 supported N before further activity; when R left the file the pin ended. Rd5 supported Nxc5, and Ne4+ cleared the fifth rank for Rxb5. Use supported knight tempos to remove connected passers before remote king play.
-- Nc3 controlled a2. After Ra5/...Rc1, Rxa2 would expose Nc3 to Rxc3; Nxa2 instead removed the last passer with tempo on Rc1 and retained Ra5's support. A rook attack can abandon a pawn's guard: inspect captures by the attacked knight.
-- With queenside counterplay gone, Kg3-f3-f4 coordinated R/N and the kingside majority. g4/hxg4 removed Black's last pawn; king escort and rook checks drove K back. Ra8+ displaced Kf8 and won Rh8. Protect N before pushing the passer; promotion allowed Qc4#, supported by Ne5, with Kf6 guarding e5 and f2 controlling e3.
-- Zero invalid attempts; finished about 2:45. Book 3-6 seconds worked. Bxc5/Rxd8+/Rd7/Rd5/Ra5 took 47-55; late moves took 31-40 below five minutes. Shorten verified trades and routine conversion; opponent delays are not a clock plan.
+## T37 round 4: Black vs Astra, mate loss
+- Chigorin with ...Na5/c5/Qc7, central exchange and ...Nc6, then ...a5-a4/Bd7/Rac8. White used Nb3/Be3/Rc1/Bb1. Qb7 removed my queen from the rook's file before ...Bd8-b6; d5 then displaced Nc6. Nc4 was supported by b5 but b3 chased it back: pawn support does not make an outpost permanent.
+- After rook exchanges both sides had seven pawns; I had Q+2N against Q+B+N. a3 was marked inaccurate, b4 only good on its later board. These marks do not supply an earlier repair or establish an opening advantage.
+- Qc7 attacked Na5/d6. My 34...Qb6?? defended both and counterattacked Qc7, but 35.Qxb6 simply won Q. Neither Na5 nor Nf6 attacked b6, and no pawn recaptured there. A queen saving lesser pieces must still survive direct capture. Before offering queen contact name the final legal recapturer; attacking the enemy queen does not force a retreat.
+- 35...Nd7 attacked Qb6 but did NOT defend Na5. Qxa5 saved Q and won N, then Qxb4 removed the pawn. A later tempo cannot undo an unsupported queen offer. Recount the remaining pieces instead of calling it a trade. Qc7 itself was marked a mistake; no verified move-34 replacement supplied.
+- ...f5 exf5 cleared Bb1-c2-d3-e4-f5. ...gxf5 therefore allowed bishop-supported Nxf5+, followed by a Q+N king hunt and g4#. Pawn liquidation can activate a remote bishop while removing king shelter.
+- Zero invalid attempts; finished 13:54. Na5 took 53 seconds, Rxc1+ 38, Qb6 28. Time shortage did not cause the loss: the missing step was Qxqueen and the actual recapture scan.
 
-## T37 round 1: Fable, Chigorin win
-- After Nf1/...exd4, Nxd4?? allowed ...Nxd4/Qxd4 and exposed Bc2 on Qc7-c2. Both c-pawns were gone; the enemy knight's departure opened the remote attack. ...Be6?? missed Qxc2, allowing Bd3 to save B. No verified move-15 replacement supplied.
-- Bf4 reached c1 through empty e3/d2: ...Qc1+ was simply Bxc1. ...Nd5 then hung N to Qxd5. Qa8+ forced Bd8; Qxd8# exploited f7/g7/h7 occupying flights. Finished 15:04; speed did not validate the earlier central exchange.
+## T37 round 2: White vs Sonnet, Chigorin win
+- Nf1 cleared Qd1-d4. Against ...Bd7, d5 gained space but ...Nb4/Bb1/...a5/...Rac8 gave concrete c-file play. After a3, Nc2 had BOTH Qc7 and Rc8 support. Bxc2 and queen exchange traded B for N equally; unlike the Zaitsev Qd6/Rd8 board, this was not a knight gift.
+- Red1 guarded d5. Nf5 was inaccurate; Bxf5 exf5 retained its rook guard. Rdc1 was inaccurate because it abandoned that sole guard. After exchanges, Ne1 challenged the invading rook and Rd1 restored defense. No verified replacements supplied.
+- ...Nc5 allowed defender removal: Bxc5 dxc5 displaced d6's guard of e5. Nxe5 won P with tempo on Rc4; d6 attacked Be7 and made a supported passer. ...Bxc5 was impossible through d6. My Bxc5 was inaccurate despite the opportunity; no verified improvement supplied.
+- d7 tied Bd8 down; Nc6 guarded promotion and attacked B. Promotion forced Bxd8/Rxd8+, purchasing B. Save Nc6 from b5 after the forcing sequence.
+- Nxf7 threatened Rh8 mate. ...g5 fxg6+ was inaccurate: en passant freed Kxg6 with an attack on Nf7. Capture is optional. Ne5+/Nd3 saved N with tempo; Rd7 supported Nd3 under the relative pin to Rd8.
+- Rd5 supported Nxc5; Ne4+ cleared the fifth rank for Rxb5. With Nc3/Ra5, Nxa2 removed the last passer with tempo; Rxa2 would abandon Nc3 to Rxc3. Stop counterplay before king escort and promotion.
+- Finished about 2:45. Several verified trades/conversion moves took 47-55 seconds; late moves took 31-40 below five minutes. Enforce clock caps.
 
-## Earlier Zaitsev and retained geometry
-- With Qd6/Rd8, ...Nc2 lost outright to Bb1xc2; no black recapturer reached c2. h4-h5/...g5 freed Nf5, but g4/f3 were mistakes and Bc2/Rad1 inaccurate. f3 abandoned Be3; Nb4 could trade Bc2. Do not import plans between branches.
+## Retained geometry
+- T37 Fable: Nxd4 after Nf1/...exd4 exposed Bc2 on cleared Qc7-c2; ...Be6 missed Qxc2. Bf4 later reached c1 through e3/d2, so Qc1+ lost Q to Bxc1.
+- Zaitsev Qd6/Rd8: Nc2 loses to Bb1xc2 without a recapturer. h4-h5/...g5 freed Nf5, but g4/f3 were mistakes; f3 abandoned Be3. Do not import plans between branches.
 - f4 with Be3/Ng3 against g6/Qd6 loses to exf4, forking both; Bxf4 Qxf4 loses B. Be7 can block Re8-e5. Qb6 can lose to Be3-b6 despite c7 support.
-- Bb1 can clear Rc1-c7 and pin Nc6 to Qc7: d5 then wins N. Bd3 hangs with Nd2 blocking Qd1-d3. axb5/axb5 opens Ra8-a1 behind Bb1/Bc1; resolve rook contact before queen retreats.
-- Qxf3 abandons d5; exd5 can expose Rxe1+ without a rook recapture. Supported d6 ties blockaders; Kc5 clears Rd1-d6 and Kc6 supports d6. Re8+ Rd8 Rxd8# uses bishop support. Gifts do not validate sacrifices.
+- Bb1 clears Rc1-c7 and can pin Nc6 to Qc7. Bd3 hangs with Nd2 blocking Qd1-d3. axb5/axb5 opens Ra8-a1 behind Bb1/Bc1; resolve rook contact first.
+- Qxf3 abandons d5; exd5 can expose Rxe1+ without a recapture. Supported d6 ties blockaders; Kc5 clears Rd1-d6, Kc6 supports d6, and Re8+ Rd8 Rxd8# uses bishop support.
