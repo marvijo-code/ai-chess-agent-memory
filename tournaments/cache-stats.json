@@ -1149,14 +1149,14 @@
    "number": 34,
    "players": {
     "Sonnet 5.5": {
-     "calls": 119,
-     "input": 3018022,
-     "cached": 2883635,
-     "output": 164458,
-     "warm_input": 2912732,
-     "warm_cached": 2816571,
-     "hit_rate": 0.9555,
-     "warm_hit_rate": 0.967
+     "calls": 151,
+     "input": 4222583,
+     "cached": 4068378,
+     "output": 206384,
+     "warm_input": 4117293,
+     "warm_cached": 4001314,
+     "hit_rate": 0.9635,
+     "warm_hit_rate": 0.9718
     },
     "DeepSeek V4.1 Flash": {
      "calls": 93,
