@@ -1029,6 +1029,17 @@
      "rejected": 0,
      "errors": 0,
      "retries": 1
+    },
+    "GPT-6 Astra": {
+     "games": 1,
+     "read_in_prompt": 1,
+     "read_latest": 1,
+     "reflections": 1,
+     "memory_updates": 1,
+     "note_updates": 0,
+     "rejected": 0,
+     "errors": 0,
+     "retries": 0
     }
    }
   }
@@ -1038,6 +1049,7 @@
   "Sonnet 5.5": "2a6a28ec95d3",
   "GPT-6.1 Sol": "4566af34fe99",
   "GLM 5.3 Flash": "3f3865a05749",
-  "Fable 5.1": "df5adc6cfe10"
+  "Fable 5.1": "df5adc6cfe10",
+  "GPT-6 Astra": "8d66dbf13ecd"
  }
 }
