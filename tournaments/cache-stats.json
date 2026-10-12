@@ -1194,14 +1194,14 @@
    "number": 35,
    "players": {
     "GLM 5.3 Flash": {
-     "calls": 106,
-     "input": 1422386,
-     "cached": 1207552,
-     "output": 92560,
-     "warm_input": 1391855,
-     "warm_cached": 1192192,
-     "hit_rate": 0.849,
-     "warm_hit_rate": 0.8565
+     "calls": 122,
+     "input": 1738861,
+     "cached": 1491968,
+     "output": 99679,
+     "warm_input": 1708330,
+     "warm_cached": 1476608,
+     "hit_rate": 0.858,
+     "warm_hit_rate": 0.8644
     },
     "GPT-6.1 Sol": {
      "calls": 91,
@@ -1224,14 +1224,14 @@
      "warm_hit_rate": 0.9313
     },
     "Sonnet 5.5": {
-     "calls": 100,
-     "input": 2374399,
-     "cached": 2257312,
-     "output": 145083,
-     "warm_input": 2269878,
-     "warm_cached": 2190711,
-     "hit_rate": 0.9507,
-     "warm_hit_rate": 0.9651
+     "calls": 117,
+     "input": 2962591,
+     "cached": 2830799,
+     "output": 171732,
+     "warm_input": 2858070,
+     "warm_cached": 2764198,
+     "hit_rate": 0.9555,
+     "warm_hit_rate": 0.9672
     }
    }
   }
