@@ -963,12 +963,12 @@
      "games": 3,
      "read_in_prompt": 3,
      "read_latest": 3,
-     "reflections": 2,
-     "memory_updates": 1,
-     "note_updates": 2,
+     "reflections": 3,
+     "memory_updates": 2,
+     "note_updates": 3,
      "rejected": 1,
      "errors": 0,
-     "retries": 4
+     "retries": 5
     }
    }
   }
@@ -976,7 +976,7 @@
  "last_written": {
   "DeepSeek V4.1 Flash": "757b8e263b6c",
   "Sonnet 5.5": "b9e7df88f48d",
-  "GPT-6.1 Sol": "00a349e3e7e5",
+  "GPT-6.1 Sol": "73097fc24e77",
   "GLM 5.3 Flash": "6ba9c745200c"
  }
 }
