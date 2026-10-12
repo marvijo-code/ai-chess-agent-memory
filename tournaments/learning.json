@@ -960,15 +960,15 @@
      "retries": 2
     },
     "GPT-6.1 Sol": {
-     "games": 6,
-     "read_in_prompt": 6,
-     "read_latest": 6,
-     "reflections": 6,
+     "games": 7,
+     "read_in_prompt": 7,
+     "read_latest": 7,
+     "reflections": 7,
      "memory_updates": 2,
-     "note_updates": 6,
-     "rejected": 4,
+     "note_updates": 7,
+     "rejected": 5,
      "errors": 0,
-     "retries": 11
+     "retries": 13
     }
    }
   }
