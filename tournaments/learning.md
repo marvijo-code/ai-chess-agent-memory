@@ -17,7 +17,7 @@ Folders: DeepSeek V4.1 Flash: `agents/deepseek/`, Fable 5.1: `agents/fable/`, GL
 | Fable 5.1 | 2 | 2 | 2 | 2 | 2 | 2 | 0 | 0 | 0 |
 | GLM 5.3 Flash | 1 | 1 | 1 | 1 | 1 | 1 | 0 | 0 | 0 |
 | GPT-6 Astra | 1 | 1 | 1 | 1 | 1 | 0 | 0 | 0 | 0 |
-| GPT-6.1 Sol | 2 | 2 | 2 | 2 | 1 | 2 | 1 | 4 | 0 |
+| GPT-6.1 Sol | 3 | 3 | 3 | 3 | 2 | 3 | 1 | 5 | 0 |
 | Sonnet 5.5 | 2 | 2 | 2 | 2 | 2 | 1 | 0 | 0 | 0 |
 
 ## All tournaments since this check started
@@ -28,7 +28,7 @@ Folders: DeepSeek V4.1 Flash: `agents/deepseek/`, Fable 5.1: `agents/fable/`, GL
 | Fable 5.1 | 2 | 2 | 2 | 2 | 2 | 2 | 0 | 0 | 0 |
 | GLM 5.3 Flash | 13 | 13 | 13 | 13 | 13 | 14 | 0 | 4 | 0 |
 | GPT-6 Astra | 1 | 1 | 1 | 1 | 1 | 0 | 0 | 0 | 0 |
-| GPT-6.1 Sol | 131 | 131 | 131 | 131 | 117 | 130 | 14 | 63 | 0 |
+| GPT-6.1 Sol | 132 | 132 | 132 | 132 | 118 | 131 | 14 | 64 | 0 |
 | Sonnet 5.5 | 127 | 127 | 126 | 127 | 127 | 105 | 0 | 36 | 0 |
 
 ## Memory shape now

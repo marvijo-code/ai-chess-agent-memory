@@ -1284,34 +1284,34 @@
    "number": 37,
    "players": {
     "GPT-6.1 Sol": {
-     "calls": 100,
-     "input": 3732022,
-     "cached": 3503232,
-     "output": 25897,
-     "warm_input": 3643754,
-     "warm_cached": 3439744,
-     "hit_rate": 0.9387,
-     "warm_hit_rate": 0.944
+     "calls": 147,
+     "input": 5292939,
+     "cached": 4979072,
+     "output": 45005,
+     "warm_input": 5160535,
+     "warm_cached": 4880000,
+     "hit_rate": 0.9407,
+     "warm_hit_rate": 0.9456
     },
     "Fable 5.1": {
-     "calls": 45,
-     "input": 517329,
-     "cached": 468275,
-     "output": 23079,
-     "warm_input": 496227,
-     "warm_cached": 456319,
-     "hit_rate": 0.9052,
-     "warm_hit_rate": 0.9196
+     "calls": 55,
+     "input": 600771,
+     "cached": 538024,
+     "output": 26122,
+     "warm_input": 562485,
+     "warm_cached": 515637,
+     "hit_rate": 0.8956,
+     "warm_hit_rate": 0.9167
     },
     "Sonnet 5.5": {
-     "calls": 100,
-     "input": 3136730,
-     "cached": 3032706,
-     "output": 130942,
-     "warm_input": 3063518,
-     "warm_cached": 2985939,
-     "hit_rate": 0.9668,
-     "warm_hit_rate": 0.9747
+     "calls": 111,
+     "input": 3298229,
+     "cached": 3173748,
+     "output": 138652,
+     "warm_input": 3189833,
+     "warm_cached": 3104532,
+     "hit_rate": 0.9623,
+     "warm_hit_rate": 0.9733
     },
     "GLM 5.3 Flash": {
      "calls": 26,
