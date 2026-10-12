@@ -1119,6 +1119,21 @@
      "warm_hit_rate": 0.934
     }
    }
+  },
+  "aichess-0033-20261012-032459": {
+   "number": 33,
+   "players": {
+    "GPT-6.1 Sol": {
+     "calls": 43,
+     "input": 1241334,
+     "cached": 1152896,
+     "output": 13472,
+     "warm_input": 1197810,
+     "warm_cached": 1124736,
+     "hit_rate": 0.9288,
+     "warm_hit_rate": 0.939
+    }
+   }
   }
  }
 }

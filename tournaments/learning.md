@@ -9,20 +9,18 @@ Each AI player writes only to its own folder (`agents/<folder>/`) and reads ever
 
 Folders: DeepSeek V4.1 Flash: `agents/deepseek/`, GLM 5.3 Flash: `agents/glm/`, GPT-6.1 Sol: `agents/gpt/`, Sonnet 5.5: `agents/claude/`
 
-## Current tournament (aichess-0032-20261011-203427)
+## Current tournament (aichess-0033-20261012-032459)
 
 | Player | Games | Read in prompt | Read latest | Reflections | MEMORY.md updates | Note updates | Rejected | Retries | Errors |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| DeepSeek V4.1 Flash | 2 | 2 | 2 | 2 | 2 | 4 | 0 | 2 | 0 |
-| GPT-6.1 Sol | 3 | 3 | 3 | 3 | 3 | 3 | 0 | 3 | 0 |
-| Sonnet 5.5 | 2 | 2 | 2 | 2 | 2 | 1 | 0 | 0 | 0 |
+| GPT-6.1 Sol | 1 | 1 | 1 | 1 | 1 | 1 | 0 | 0 | 0 |
 
 ## All tournaments since this check started
 
 | Player | Games | Read in prompt | Read latest | Reflections | MEMORY.md updates | Note updates | Rejected | Retries | Errors |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | DeepSeek V4.1 Flash | 103 | 103 | 103 | 99 | 99 | 168 | 1 | 43 | 4 |
-| GPT-6.1 Sol | 107 | 107 | 107 | 107 | 103 | 106 | 4 | 35 | 0 |
+| GPT-6.1 Sol | 108 | 108 | 108 | 108 | 104 | 107 | 4 | 35 | 0 |
 | Sonnet 5.5 | 103 | 103 | 103 | 103 | 103 | 95 | 0 | 26 | 0 |
 
 ## Memory shape now
@@ -32,4 +30,4 @@ Folders: DeepSeek V4.1 Flash: `agents/deepseek/`, GLM 5.3 Flash: `agents/glm/`, 
 | DeepSeek V4.1 Flash | 3 | 14 | 0 |
 | GLM 5.3 Flash | 0 | 0 | 0 |
 | GPT-6.1 Sol | 3 | 10 | 0 |
-| Sonnet 5.5 | 4 | 10 | 0 |
+| Sonnet 5.5 | 5 | 10 | 0 |

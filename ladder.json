@@ -12,7 +12,7 @@
    "depth": 4,
    "streak": 0,
    "steps": [],
-   "updated_at": "2026-10-11T22:17:09+00:00"
+   "updated_at": "2026-10-12T03:38:09+00:00"
   },
   "DeepSeek V4.1 Flash": {
    "depth": 4,
@@ -52,7 +52,7 @@
    "at": "2026-10-10T13:25:28+00:00"
   }
  ],
- "updated_at": "2026-10-11T22:17:09+00:00",
+ "updated_at": "2026-10-12T03:38:09+00:00",
  "last_step": {
   "player": "GPT-6.1 Sol",
   "outcome": "loss",
@@ -61,11 +61,11 @@
   "stepped": false,
   "from": 4,
   "to": 4,
-  "tournament": "aichess-0032-20261011-203427",
-  "number": 32,
-  "game": "r3b2",
-  "color": "white",
+  "tournament": "aichess-0033-20261012-032459",
+  "number": 33,
+  "game": "r1b1",
+  "color": "black",
   "termination": "checkmate",
-  "at": "2026-10-11T22:17:09+00:00"
+  "at": "2026-10-12T03:38:09+00:00"
  }
 }
