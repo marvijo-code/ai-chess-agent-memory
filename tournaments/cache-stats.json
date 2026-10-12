@@ -1284,14 +1284,14 @@
    "number": 37,
    "players": {
     "GPT-6.1 Sol": {
-     "calls": 237,
-     "input": 7652702,
-     "cached": 7135360,
-     "output": 69735,
-     "warm_input": 7387817,
-     "warm_cached": 6933888,
-     "hit_rate": 0.9324,
-     "warm_hit_rate": 0.9386
+     "calls": 243,
+     "input": 7903793,
+     "cached": 7339520,
+     "output": 71936,
+     "warm_input": 7638908,
+     "warm_cached": 7138048,
+     "hit_rate": 0.9286,
+     "warm_hit_rate": 0.9344
     },
     "Fable 5.1": {
      "calls": 179,
@@ -1314,14 +1314,14 @@
      "warm_hit_rate": 0.9676
     },
     "GLM 5.3 Flash": {
-     "calls": 214,
-     "input": 4174524,
-     "cached": 3821312,
-     "output": 169420,
-     "warm_input": 4102654,
-     "warm_cached": 3779456,
-     "hit_rate": 0.9154,
-     "warm_hit_rate": 0.9212
+     "calls": 219,
+     "input": 4282228,
+     "cached": 3921152,
+     "output": 171727,
+     "warm_input": 4210358,
+     "warm_cached": 3879296,
+     "hit_rate": 0.9157,
+     "warm_hit_rate": 0.9214
     },
     "DeepSeek V4.1 Flash": {
      "calls": 236,

@@ -1,28 +1,26 @@
-# Open Sicilian: guards, batteries and exposed files
+# Open Sicilian: captures, guards and conversion
 
-## T36 Armageddon: White vs SF19, repetition; Black wins match
-- Against the Maroczy ...Qa5 pin, 7.f3 defended e4 before Be3. After ...Nxd4, Qxd4 was marked only good. Qd2/Be2/O-O avoided the earlier long-castling exposure, but did not establish an opening edge.
-- ...Ng4 attacked Be3 and cleared Bg7's diagonal. 14.Nd5?! emptied c3 and opened Qa5-d2. ...Qxd2! displaced Be3 to d2; ...Bxd5/exd5 then enabled ...Bd4+. My earlier b3 had emptied b2, so Bd4 checked Kg1 AND attacked Ra1 along d4-c3-b2-a1. Calculate this checking fork before moving the knight screen. No verified replacement for Nd5 supplied.
-- Kh1 was marked only good. ...Bxa1/fxg4 left me exchange down: taking Ng4 did not restore equality. Rf1 attacked Ba1 along the empty first rank, but ...Bb2 saved it.
-- 20.c5?! did not keep the c-file blocked: ...Rxc5 simply removed it. Then 21.Bc4?? defended d5 and had b3 support, but Black's b5 pawn captured B. bxc4 recovered only a pawn. A supported minor on a pawn capture square still loses; sparse marks omitted this obvious loss.
-- ...Rf7 attacked Bf4 through empty f6/f5. 32.Re1 ignored the attack and ...Rxf4 took my last bishop. f2 had blocked Rf1-f4, so the bishop had no rook guard. My comment about a pin replaced the actual capture scan. A bishop defending g5 is not thereby defended itself.
-- Active K/R removed Black's a-passer and escorted my a-pawn to a6. The final R versus 2R+B remained lost. Repetition was a match loss with White's must-win odds; counterplay does not validate the earlier sacrifices.
-- No invalid moves; finished 6:28 from ten minutes. Book mostly 3-8 seconds worked. Nd5/Kh1 took 38 each, c5 42; Bc4 took 10 and Re1 26. Late king replies mostly 3-10. Scan at every speed and shorten verified replies.
+## T37 round 7: White vs GLM, Taimanov, mate win
+- Be2/O-O/Be3/f4/Kh1/Bf3 against e6/Nc6/a6/Be7/Nf6/O-O/Qc7/b5/Bb7. Bf3 reinforced e4 before a possible b4 chase. e5 attacked Nf6; d6?? failed to move or exchange that knight. exf6 Bxf6 won N for P. Nxc6/Bxc6 simplified while retaining the surplus. No forced opening advantage established.
+- Bd4 invited an exchange, but e5 attacked B. fxe5 dxe5 left a black pawn on e5 attacking d4/f4; Be3 saved B. Bg5 then offered an unguarded bishop: Bxg5 won it. I now had B+N for one pawn; comments claiming two pawns were wrong.
+- CRITICAL MISS: after Rad1/Rd7, Qd5?? attacked Qe6 and Rd7, supported by Nc3 and Rd1. I treated queen contact as a forced exchange. Instead Rxd5! takes Q for R after either recapture; Black can keep Qe6 rather than continue the chain. Supporting Q with a cheaper piece does not make that exchange favorable. List EVERY enemy capture, cheapest first, and allow the opponent to stop exchanging.
+- Qxd5?? cooperated; Nxd5 preserved the extra minors. Re7 then landed on Nd5's capture square and Nxe7+ won R. Nc6 supported d8; Rd8/Rxd8/Nxd8 removed the final black rook. Black subsequently described a nonexistent Rf8: reconstruct the board independently.
+- Rxf7 was supported by Nd8. Re7 saved R before moving N; Ne6 supported Rxg7+ against Kh8. Bxh6 transferred g7's defense to B, freeing Nf8-g6#. Rg7 covered g8/h7, Bh6 protected Rg7, and Ng6 checked h8. Name which piece replaces a guard BEFORE moving its former defender.
+- Zero invalid attempts; finished 13:05. Qd5 took 25 seconds and still missed the cheaper capture. Rxg7+ took 53 despite huge material: verify support, replies and flights, then execute within the cap.
 
 ## T36 White vs GLM: Taimanov, mate win
-- Be2/O-O/Be3/f4/Kh1/Bf3 against e6/Nc6/a6/Nf6/Be7. Qe1 was inaccurate again; no verified replacement. The win does not establish an opening edge.
-- e5/dxe5/fxe5 opened the f-file and hit Nf6. Against Qxe5, compare immediate Qxe5: after Nc6 recaptures, Bf3 reaches b7. My Nxc6 detour was inaccurate and took 57 seconds.
-- Qxg3/hxg3/Bxc6/Bxc6 left an extra B. Black's b-pawn was already on b5, so bxc6 was illegal. Bc6 then hit Ra8 through empty b7. Track current pawn squares.
-- Be4 guarded c2 via d3. Rxc2+ Bxc2 won the last rook; Rd8# used f7/g7/h7 occupying flights. Finished 12:47; shorten routine conversion.
+- Same quiet setup; Qe1 was inaccurate again, with no verified replacement. e5/dxe5/fxe5 opened the f-file and hit Nf6.
+- Against Qxe5, compare immediate Qxe5: after Nc6 recaptures, Bf3 reaches b7. My Nxc6 detour was inaccurate and took 57 seconds.
+- Qxg3/hxg3/Bxc6/Bxc6 left extra B. Black's pawn was on b5, so bxc6 was illegal; Bc6 then hit Ra8 through empty b7. Be4 guarded c2 via d3; Rxc2+ Bxc2 won R. Rd8# used occupied flights.
 
 ## DeepSeek: battery and clearance
-- Nxd4 Bxd4 keeps the dark bishop active. Nf6 blocks Qg3's mating battery; Qg3 alone does not establish Qxg7#.
-- Qb6 may attack Bd4 yet lose to Bxb6 along d4-c5-b6, also attacking Rd8 through c7.
-- With f6 clear, Ne5 screens g7. Nd5 can exploit its duty; Bxe5 removes the screen while retaining g7 support. e5/dxe5/fxe5 opens Rd1 and hits Nf6. Nh5 can meet Bf3xh5 without moving Q; Bf6 exf6 supports mate. Rxc3 does not answer it.
+- Bxd4 after Nxd4 keeps B active. Nf6 blocks Qg3's mating battery. Qb6 can lose to Bxb6 through c5 and also expose Rd8 through c7.
+- With f6 clear, Ne5 screens g7. Bxe5 removes it while retaining bishop support. e5/dxe5/fxe5 opens Rd1 and hits Nf6. Bf6 exf6 supports mate; Rxc3 does not answer it.
 
-## Maroczy: long castling and last defenders
-- Qa5 before f3 pins Nc3 to Ke1; Be3 then leaves e4 without a legal guard. Nxc6/dxc6/Qd4/Nf6 did not recover the pawn.
-- O-O-O/Rhe1 makes Re1 the ray endpoint. Nc3 screens it; Rd1 guards it. Nxd5 removes the screen; Bd3/Bxd3/Rxd3 moves Re1's LAST guard, allowing Qxe1+.
-- Rd1 then blocks check but ties R to Kc1. Central exchanges empty the c-file, enabling Rfc8+ and captures of successive blockers.
-- With f3/Qxd4, Ng4 attacks Be3 AND uncovers Bg7 against Qd4. Rfd1 allowed Bxc4 Bxc4 Rxc4, losing P. Nd5 clears Rc8-c1; guarding d1 does not stop dxc1=Q.
+## Maroczy: pins and last defenders
+- Qa5 BEFORE f3 pins Nc3 to Ke1; Be3 leaves e4 without a legal guard. Nxc6/dxc6/Qd4/Nf6 did not recover P.
+- O-O-O/Rhe1 makes Re1 the ray endpoint. Nc3 screens it; Rd1 guards it. Nxd5 removes the screen; Bd3/Bxd3/Rxd3 moves Re1's LAST guard, allowing Qxe1+. Rd1 blocks check but ties R to Kc1; central exchanges can clear the c-file for Rfc8+.
+- With f3/Qxd4, Ng4 hits Be3 AND uncovers Bg7 against Qd4. Rfd1 allowed Bxc4 Bxc4 Rxc4, losing P. Nd5 clears Rc8-c1; guarding d1 does not stop dxc1=Q.
+- T36 short castling: Nd5?! cleared Qa5-d2. Queen exchange and Bxd5/exd5 enabled Bd4+, checking Kg1 and attacking Ra1 because b2 was empty. Taking Ng4 after Bxa1 did not restore equality. No verified Nd5 replacement.
+- c5 allowed Rxc5; supported Bc4 lost to b5xc4. Rf7 attacked Bf4 through empty f6/f5; Re1 ignored it. f2 blocked Rf1-f4. Late counterplay did not repair 2R+B versus R; repetition lost White's must-win match.
 - Retained geometry: Kb3 screens Rb1-b7; Ka4 exposes Rb7. a2 can outrun Kxa3. Bd2 blocks Qd1-d4. A bishop can escape a knight fork with check.
