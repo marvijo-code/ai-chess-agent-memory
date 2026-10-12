@@ -1,23 +1,19 @@
 # Open Sicilian as Black (notes)
 
-## T35 R3 v DeepSeek, L m50 (Taimanov: 5.Nc3 a6 6.Be2 quiet)
-Book: 1.e4 c5 2.Nf3 e6 3.d4 cxd4 4.Nxd4 Nc6 5.Nc3 a6 6.Be2 Be7 (12 plies). No opening problem. One illegal O-O while my Ng8 was still home - castle ONLY after both home squares are vacated and f8/g8 empty. Then 8.Be3 O-O 9.f4 Qc7 10.Qd2 b5 11.Rad1 Bb7 (10 plies).
-- THE LOSS: 14.Bf3 attacked my d5-pawn. I 'knew' Bb7 guarded d5, but MY OWN Nc6 sat on the b7-d5 diagonal -> 15.Bxd5 = pawn down. Third blocked-defender blunder (also T34 R4 18...Bd6??). New habit: when a plan depends on any bishop/rook guard, spell out every square of that line and check each is empty, mine included.
-- 15...Nb4?? hit the bishop, but 16.Bb3 simply retreated - attacking a piece's retreat square regains nothing unless I have a concrete capture, fork or mate there.
-- GOOD execution to copy: 18...Qxd7 (Q for Q) - I listed every defender of d7 on the real board first (Rd1 blocked by his own Nd4, Nf5 cannot reach d7) before taking. Destination sweep done properly saves games.
-- 24.cxd3 won my Nd3: I parked it on d3 because 'nothing attacks it', but his Rd8 was its only guard and the c3-pawn hit it. Before a piece lands, count HIS attackers including pawns one push away.
-- Endgame longest defense was fine (keep the rook, king activity, never axb4 while his a3-pawn defends b4). Illegal tries: Kf8 (his e7-PAWN attacks f8 diagonally - check king flights against pawn diagonals); Rd8 (two rooks reach d8 - name the disambiguation Rfd8); Rxe1+ rejected once, cause unclear - after ANY rejection redraw and choose a different idea.
+## T36 R5 v Sol, L m30 (Taimanov: 5.Nc3 a6 6.Be2)
+Line: 1.e4 c5 2.Nf3 e6 3.d4 cxd4 4.Nxd4 Nc6 5.Nc3 a6 6.Be2 Nf6 7.O-O Be7 (16 plies), then 8.O-O 9.f4 Qc7 10.Kh1 b5 11.Bf3 Bb7 12.Qe1 d6 13.Qg3 Kh8 (10 plies).
+- Opening fully solid. His plan: Be3, Qe1-g3 battery vs my kingside, Kh1, e5 break. The answer that WORKED: 13...Kh8 (g7 double-guarded; NEVER ...g6 vs a Q+B battery), then 14.e5 dxe5 15.fxe5 15...Qxe5! (only his Qg3 guarded e5) 16.Nxc6 16...Qxg3! 17.hxg3 Bxc6 - queens off, battery dead, clean extra pawn.
+- 18.Bxc6 Rab8: my b5-pawn can NEVER recapture c6 (b5 hits a4/c4 - pawns attack forward only); 1 illegal try bxc6. It was an even N-for-B trade, not a loss.
+- Simplification when up: 21...Bxf4 22.gxf4 -> R+R vs R+R, +1 pawn - correct plan.
+- THE LOSS: 23...Rbc8/25...Rc8 attacked c2, but his Be4 guarded c2 the whole game via e4-d3-c2 (d3 empty) - I logged 'c2 guards: none' without ever walking HIS bishop's diagonal. 26...Rxc2+?? 27.Bxc2 = rook for pawn. Before ANY capture, sweep the destination for HIS sliders, pawns and knights exactly as for a quiet move; 'is the target undefended' only describes HIS guards of HIS piece, never my survival on the square.
+- After losing the rook I shuffled Kg8/Kf8 with f7-g7-h7 and no luft; his Rd7 (hitting f7) -> 30.Rd8#. Rook on the 7th vs an un-lufted king mates next: play ...h6 at once (his Bc2 diagonal covers h7, not h6) or contest the d-file.
+- Material counting stayed correct all game (+1 pawn throughout) - the loss was pure geometry, not arithmetic.
 
-## T34 R4 v Sonnet, L m30 (Taimanov: 5.Nc3 a6 6.Be2)
-Book: 1.e4 c5 2.Nf3 e6 3.d4 cxd4 4.Nxd4 Nc6 5.Nc3 a6 6.Be2 Nf6 7.O-O Be7 (14 plies). His plan runs 8.Be3 O-O 9.f4 d6 10.Kh1 Qd7 11.Qe1 Qc7 12.Qg3 (12 plies) - Qg3 battery against my kingside; opening fully solid, losses were middlegame scans.
-- 16.e5 dxe5 17.fxe5 attacked my Nf6; 17...Qxe5?? = Q for P - a KNIGHT ON F6 NEVER ATTACKS E5 (real squares: e4 d5 d7 e8 g4 g8 h5 h7). Sound alternative: 17...Nd5 (18.Bxd5 cxd5 = a pawn down but safe), or meet 16.e5 with ...Ne8/...Nd5 ideas instead of 16...dxe5?!
-- 18...Bd6?? 'kicked' his queen but my Bd7 blocked Rd8's guard of d6 -> Qxd6. Never count a sliding guard without tracing the file/diagonal through my own pieces. When down, prefer trades over activity gestures.
-- 14.Nxc6: 14...Bxc6 keeps bishop-pair choice; 14...bxc6 opens the b-file but check c6's guards after any e5 break.
-- I hallucinated a positive narrative while down - recount material FROM THE BOARD after every capture before choosing a plan.
+## T35 R3 v DeepSeek, L m50 (Taimanov 6.Be2)
+Solid to move 14 (Be7/O-O vs Be3/f4/Qd2; ...Qc7/...b5/...Bb7). 14.Bf3 hit d5; I 'knew' Bb7 guarded it but MY Nc6 sat on the b7-d5 diagonal -> 15.Bxd5 = pawn down. Spell out every square of any guard line, my own pieces included. 15...Nb4?? attacked a retreating bishop - regain nothing without a concrete capture/fork/mate. GOOD: 18...Qxd7 - every defender listed on the real board first. 24.cxd3 won my Nd3 (his Rd8 + c3-pawn were the attackers). Illegal tries: Kf8 (his e7-PAWN hits f8); Rfd8 disambiguation; after ANY rejection redraw.
+
+## T34 R4 v Sonnet, L m30 (Taimanov 6.Be2)
+His plan: Be3 O-O f4 d6 Kh1 Qd7 Qe1-g3 battery. 16.e5 dxe5 17.fxe5 hit Nf6; 17...Qxe5?? = Q for P (Nf6 never hits e5; 17...Nd5 was safe). 18...Bd6?? - my Bd7 blocked Rd8's guard -> Qxd6. When down, prefer trades over activity gestures. After Nxc6, ...Bxc6 keeps the bishop pair.
 
 ## T34 R1 v Sol, L m24 (Scheveningen)
-Book: 1.e4 c5 2.Nf3 Nc6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 d6 6.Be2 e6 7.O-O Be7 (14 plies). His setup: 8.Be3 O-O 9.f4 a6 10.Kh1 Qc7 11.a4 (10 plies) - a4 comes early.
-- 14...b5? premature with a4 on: 15.axb5 and 15...Qb6?? left b5 AND c6 loose -> 16.bxc6! piece down. Rule: ...b5 vs a4 only if my c6-knight has traded (Nxd4 first) or is not the bxc6 target; otherwise ...Be6/...Rab8 and press the c-file without the push.
-- 23.exf6 opened Qxg7# (f6 supports). v White Kh1 + Qe1-g3 + f4: watch e5/f4-f6 breaks; answer f6 with ...Bxf6/...Nd7-type, keep g7 guarded twice.
-
-Next time as Black vs these Be2/f4 setups: the opening is safe; every loss so far was a guard-tracing or capture-destination failure between moves 14 and 24.
+His setup: Be3 O-O f4 a6 Kh1 Qc7, a4 comes early. 14...b5? premature vs a4 (15.axb5, 15...Qb6?? left b5+c6 loose -> 16.bxc6 = piece down). Rule: ...b5 vs a4 only after ...Nxd4 or with ...Be6/...Rab8 instead. v Kh1+Qe1-g3+f4: answer e5/f6 breaks with ...Bxf6/...Nd7, keep g7 guarded twice. Opening safe; losses were guard-tracing failures moves 14-24.

@@ -1259,24 +1259,24 @@
      "warm_hit_rate": 0.9425
     },
     "GLM 5.3 Flash": {
-     "calls": 150,
-     "input": 2454096,
-     "cached": 2254080,
-     "output": 105483,
-     "warm_input": 2397130,
-     "warm_cached": 2218880,
-     "hit_rate": 0.9185,
-     "warm_hit_rate": 0.9256
+     "calls": 165,
+     "input": 2721186,
+     "cached": 2480896,
+     "output": 121039,
+     "warm_input": 2664220,
+     "warm_cached": 2445696,
+     "hit_rate": 0.9117,
+     "warm_hit_rate": 0.918
     },
     "GPT-6.1 Sol": {
-     "calls": 155,
-     "input": 5091991,
-     "cached": 4718976,
-     "output": 36994,
-     "warm_input": 4914614,
-     "warm_cached": 4602752,
-     "hit_rate": 0.9267,
-     "warm_hit_rate": 0.9365
+     "calls": 170,
+     "input": 5543146,
+     "cached": 5127680,
+     "output": 40091,
+     "warm_input": 5365769,
+     "warm_cached": 5011456,
+     "hit_rate": 0.925,
+     "warm_hit_rate": 0.934
     }
    }
   }
