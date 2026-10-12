@@ -877,6 +877,28 @@
   "aichess-0035-20261012-085617": {
    "number": 35,
    "players": {
+    "GLM 5.3 Flash": {
+     "games": 1,
+     "read_in_prompt": 1,
+     "read_latest": 1,
+     "reflections": 1,
+     "memory_updates": 1,
+     "note_updates": 1,
+     "rejected": 0,
+     "errors": 0,
+     "retries": 0
+    },
+    "GPT-6.1 Sol": {
+     "games": 1,
+     "read_in_prompt": 1,
+     "read_latest": 1,
+     "reflections": 1,
+     "memory_updates": 1,
+     "note_updates": 1,
+     "rejected": 0,
+     "errors": 0,
+     "retries": 1
+    },
     "DeepSeek V4.1 Flash": {
      "games": 1,
      "read_in_prompt": 1,
@@ -894,7 +916,7 @@
  "last_written": {
   "DeepSeek V4.1 Flash": "0df4afcd2926",
   "Sonnet 5.5": "1b27251ab210",
-  "GPT-6.1 Sol": "16ecad1303dc",
-  "GLM 5.3 Flash": "212a99573d0b"
+  "GPT-6.1 Sol": "41cc7df9bf0f",
+  "GLM 5.3 Flash": "37d7f4bc50b1"
  }
 }
