@@ -1,18 +1,21 @@
 # English / Reversed Sicilian as White (notes)
 
-## T35 R4 v Sonnet, L m43 (Four Knights)
+## T36 R3 v DeepSeek, L m60 (900+10)
+Line: 1.c4 Nf6 2.Nc3 e6 3.g3 d5 4.cxd5 exd5 5.Bg2 Be7 6.Nf3 O-O 7.O-O c6 8.d4 (16 plies). Solid setup, no opening problem.
+- THE LOSS: 17.Bxe4?? (after 16.Nxe4 dxe4). I swept pawn and slider attackers of e4 but never listed enemy KNIGHT jumps - his Nc5 covers e4 (c5-knight: a4/a6/b3/b7/d3/d7/e4/e6) and 17...Nxe4 won my bishop. Destination sweep = pawns + sliders + KNIGHT GEOMETRY, for captures as much as for quiet moves.
+- Down B for P I defended well (no grabs, verified trades, queens off), but every further drop was the same miss: 31.Rc1?? left my boxed Bd2 to Rd8 - the queen was its ONLY guard and Rc1 did not replace her; keep the only-queen guard in place or add a second guard first. 44.Rc8+?? Bxc8 - his Be6 hit c8 on the empty e6-d7-c8 diagonal; before any rook CHECK trace every enemy bishop diagonal to the check square too.
+- Never fully box in my own bishop (Bd2 walled by Rc1/pawns/Re1): it cannot move, all guard duty falls on queen/rooks, and one reassignment loses it. Leave retreat squares when developing.
+- His conversion Q+R+B vs K was clean (guarded checks driving the king, a2-passer promotion); by then it was only lost material.
+
+## T35 R4 v Sonnet, L m43
 Line: 1.c4 e5 2.Nc3 Nf6 3.Nf3 Nc6 4.g3 Bb4 5.Bg2 O-O 6.O-O e4 (12 plies).
-- THE LOSS STARTED AT MOVE 7: 7.Nxe4?? Nxe4! - I verified 'Bb4's attack on d2 is harmless' but never checked whether Bg2 actually defended e4; MY OWN Nf3 blocked the diagonal. Fourth blocked-defender blunder, this time dressed up as a safe capture. With a fianchettoed bishop behind an undeveloped knight, treat the whole diagonal as UNDEFENDED. Meet 6...e4 with 7.d3 (or 7.Ng5/7.Nd2), never Nxe4.
-- 8.d3 Nf6 kept her a knight up for a pawn; 9.Bg5 h6 10.Bxf6 Qxf6 was fine, but 12...Qxb2 - she takes every loose pawn the move it becomes loose. 15.Qb3 Qxb3 16.Rxb3: queens off a piece up, correct play by her.
-- My pawn-hunt fantasy: at m15 I counted 'just one pawn down' (actually a knight down), so 18.Bxb7 Bxb7 19.Rxb7 chased pawns. 21.Rxa7?? - the rook was ALREADY attacked by Rfb8; I checked Rb8 and Bd6 for a7's safety and FORGOT Ra8, standing on the a-file. Rxa7 = a full rook. Rule: with two enemy rooks, name each one's lines; the rook on the square's own file is the easiest to forget.
-- 24.Rb1?? = the last rook: onto the b-file where Rb2 sat, zero guards. Before any rook move, sweep the destination file/rank for enemy rooks and count recapturers.
-- Good catch: 31.gxh4! - the g3-pawn took his Rh4 (Be3 covered g5/d4/f4, not h4). Pawn attackers are the cheapest swindle source; I found it because I scanned pawn captures. Keep that scan.
-- K+P vs R+B+P: king shuffles Kb8/c8 while his K walked to c6, Bb6/c7 guarded each other, Rd8#. No real defense once both rooks fell for nothing - the game was decided at moves 21 and 24, not in the ending.
+- 7.Nxe4?? Nxe4: Bg2's guard of e4 was blocked by MY OWN Nf3. Meet 6...e4 with 7.d3 (or Ng5/Nd2), never Nxe4.
+- 21.Rxa7?? forgot the OTHER rook Ra8 standing on the a-file itself; 24.Rb1?? walked onto Rb2's b-file = the last rook. Two-rook rule: name EACH rook's current file/rank/diagonal before any move.
+- Good: 31.gxh4! - the g3-pawn took the unguarded Rh4. Scan pawn captures every move; they are the cheapest swindle source.
 
 ## T35 R1 v Sol, L m23
-1.c4 e5 2.Nc3 Nf6 3.Nf3 Nc6 4.g3 d5 5.cxd5 Nxd5 6.Bg2 Nb6 7.O-O (14 plies), 7...Be7 8.d3 O-O 9.e4 Be6 10.Qe2 Qd7 11.Re1 Rad8 (10 plies) - clean reversed-Sicilian clamp; the loss was execution.
-- 12.Nd5 Nxd5 13.Rd1?? = piece down: my plan said 'Nxd5 Bxd5' (Bg2 covers d5) but the played move was Rd1. After any capture, the recapture IS the move unless I can name a forcing win on the final board.
-- 17.Qe3?? dxe3 = Q for P: I logged d4's DEFENDERS, never asked what d4 ATTACKS. Neighboring enemy pawns hit 2 squares each; check them before every queen move.
-- 19.Rdb1 Bxa1 while Q down: no new grabs when lost - trades and repetition only.
-- Illegal tries at m13: Rac1 (c1 occupied by my own Bc1), Qxd4 (Qe2 not on any line to d4) - a 3-second board redraw catches both.
-- Sol as Black: solid, no tricks, takes every gift, converts. Setup reusable; only the discipline was broken.
+Line: 1.c4 e5 2.Nc3 Nf6 3.Nf3 Nc6 4.g3 d5 5.cxd5 Nxd5 6.Bg2 Nb6 7.O-O (14 plies) - clean reversed-Sicilian clamp; the loss was execution.
+- 12.Nd5 Nxd5 13.Rd1?? = piece lost: the named recapture (Bxd5 via Bg2) must BE the move played unless I can name a concrete win on the final board.
+- 17.Qe3?? dxe3 = Q for P: I logged d4's DEFENDERS, never asked what d4 ATTACKS (neighboring pawns hit two squares each). 19.Rdb1 Bxa1 while already lost: no new grabs when down material.
+- Illegal tries at m13 (Rac1 - c1 occupied by my own bishop; Qxd4 - Qe2 not on any line to d4): a 3-second board redraw catches both.
+- Setup clean and reusable; losses were execution, not the opening.
