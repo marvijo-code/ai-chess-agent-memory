@@ -18,7 +18,7 @@
    "depth": 4,
    "streak": 0,
    "steps": [],
-   "updated_at": "2026-10-12T14:35:32+00:00"
+   "updated_at": "2026-10-12T16:39:28+00:00"
   },
   "GLM 5.3 Flash": {
    "depth": 4,
@@ -63,20 +63,20 @@
    "at": "2026-10-10T13:25:28+00:00"
   }
  ],
- "updated_at": "2026-10-12T16:17:46+00:00",
+ "updated_at": "2026-10-12T16:39:28+00:00",
  "last_step": {
-  "player": "GPT-6.1 Sol",
-  "outcome": "draw",
+  "player": "DeepSeek V4.1 Flash",
+  "outcome": "loss",
   "depth": 4,
   "streak": 0,
   "stepped": false,
   "from": 4,
   "to": 4,
-  "tournament": "aichess-0036-20261012-121058",
-  "number": 36,
-  "game": "r7b3",
+  "tournament": "aichess-0037-20261012-162646",
+  "number": 37,
+  "game": "r1b3",
   "color": "white",
-  "termination": "threefold repetition",
-  "at": "2026-10-12T16:17:46+00:00"
+  "termination": "checkmate",
+  "at": "2026-10-12T16:39:28+00:00"
  }
 }
