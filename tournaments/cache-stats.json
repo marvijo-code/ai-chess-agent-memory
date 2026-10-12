@@ -1169,14 +1169,14 @@
      "warm_hit_rate": 0.9152
     },
     "GPT-6.1 Sol": {
-     "calls": 106,
-     "input": 3003337,
-     "cached": 2768128,
-     "output": 30442,
-     "warm_input": 2872380,
-     "warm_cached": 2669696,
-     "hit_rate": 0.9217,
-     "warm_hit_rate": 0.9294
+     "calls": 150,
+     "input": 5149075,
+     "cached": 4862848,
+     "output": 38773,
+     "warm_input": 5018118,
+     "warm_cached": 4764416,
+     "hit_rate": 0.9444,
+     "warm_hit_rate": 0.9494
     },
     "GLM 5.3 Flash": {
      "calls": 84,
