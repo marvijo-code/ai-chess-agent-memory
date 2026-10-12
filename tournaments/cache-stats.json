@@ -1279,6 +1279,51 @@
      "warm_hit_rate": 0.9515
     }
    }
+  },
+  "aichess-0037-20261012-162646": {
+   "number": 37,
+   "players": {
+    "GPT-6.1 Sol": {
+     "calls": 23,
+     "input": 459445,
+     "cached": 396800,
+     "output": 3531,
+     "warm_input": 415223,
+     "warm_cached": 361216,
+     "hit_rate": 0.8637,
+     "warm_hit_rate": 0.8699
+    },
+    "Fable 5.1": {
+     "calls": 23,
+     "input": 230958,
+     "cached": 207909,
+     "output": 10807,
+     "warm_input": 224035,
+     "warm_cached": 204345,
+     "hit_rate": 0.9002,
+     "warm_hit_rate": 0.9121
+    },
+    "Sonnet 5.5": {
+     "calls": 27,
+     "input": 577569,
+     "cached": 540786,
+     "output": 22452,
+     "warm_input": 541271,
+     "warm_cached": 517596,
+     "hit_rate": 0.9363,
+     "warm_hit_rate": 0.9563
+    },
+    "GLM 5.3 Flash": {
+     "calls": 26,
+     "input": 293535,
+     "cached": 270656,
+     "output": 16858,
+     "warm_input": 279016,
+     "warm_cached": 261696,
+     "hit_rate": 0.9221,
+     "warm_hit_rate": 0.9379
+    }
+   }
   }
  }
 }

@@ -7,31 +7,31 @@ Each AI player writes only to its own folder (`agents/<folder>/`) and reads ever
 - Memory / note updates: reflections that changed MEMORY.md / a notes file. Rejected: edits over a cap or outside the player's folder (the player gets one retry to shorten them).
 - Lines: runs of 8+ consecutive moves in MEMORY.md (at most 6, none longer than 16 plies; a file over the limit must lose one line per reflection). Memory is for patterns, not long move sequences.
 
-Folders: DeepSeek V4.1 Flash: `agents/deepseek/`, GLM 5.3 Flash: `agents/glm/`, GPT-6.1 Sol: `agents/gpt/`, Sonnet 5.5: `agents/claude/`
+Folders: DeepSeek V4.1 Flash: `agents/deepseek/`, Fable 5.1: `agents/fable/`, GLM 5.3 Flash: `agents/glm/`, GPT-6 Astra: `agents/astra/`, GPT-6.1 Sol: `agents/gpt/`, Sonnet 5.5: `agents/claude/`
 
-## Current tournament (aichess-0036-20261012-121058)
+## Current tournament (aichess-0037-20261012-162646)
 
 | Player | Games | Read in prompt | Read latest | Reflections | MEMORY.md updates | Note updates | Rejected | Retries | Errors |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| DeepSeek V4.1 Flash | 6 | 6 | 6 | 6 | 6 | 2 | 0 | 5 | 0 |
-| GLM 5.3 Flash | 4 | 4 | 4 | 4 | 4 | 4 | 0 | 2 | 0 |
-| GPT-6.1 Sol | 7 | 7 | 7 | 7 | 2 | 7 | 5 | 13 | 0 |
-| Sonnet 5.5 | 6 | 6 | 6 | 6 | 6 | 1 | 0 | 1 | 0 |
+| GLM 5.3 Flash | 1 | 1 | 1 | 1 | 1 | 1 | 0 | 0 | 0 |
+| Sonnet 5.5 | 1 | 1 | 1 | 1 | 1 | 0 | 0 | 0 | 0 |
 
 ## All tournaments since this check started
 
 | Player | Games | Read in prompt | Read latest | Reflections | MEMORY.md updates | Note updates | Rejected | Retries | Errors |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | DeepSeek V4.1 Flash | 121 | 121 | 121 | 117 | 116 | 177 | 3 | 60 | 4 |
-| GLM 5.3 Flash | 12 | 12 | 12 | 12 | 12 | 13 | 0 | 4 | 0 |
+| GLM 5.3 Flash | 13 | 13 | 13 | 13 | 13 | 14 | 0 | 4 | 0 |
 | GPT-6.1 Sol | 129 | 129 | 129 | 129 | 116 | 128 | 13 | 59 | 0 |
-| Sonnet 5.5 | 125 | 125 | 124 | 125 | 125 | 104 | 0 | 36 | 0 |
+| Sonnet 5.5 | 126 | 126 | 125 | 126 | 126 | 104 | 0 | 36 | 0 |
 
 ## Memory shape now
 
 | Player | Lines in MEMORY.md | Longest run (plies) | Over the ply cap |
 | --- | ---: | ---: | ---: |
 | DeepSeek V4.1 Flash | 6 | 16 | 0 |
+| Fable 5.1 | 0 | 0 | 0 |
 | GLM 5.3 Flash | 5 | 8 | 0 |
+| GPT-6 Astra | 0 | 0 | 0 |
 | GPT-6.1 Sol | 2 | 8 | 0 |
 | Sonnet 5.5 | 6 | 16 | 0 |
