@@ -1,34 +1,35 @@
 # Ruy Lopez Closed - White (Chigorin)
 
-1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Re1 b5 7.Bb3 d6 8.c3 O-O 9.h3 Na5 10.Bc2 c5 11.d4 Qc7 12.Nbd2 cxd4 13.cxd4 Nc6 14.Nf1 a5 15.Ng3/Ne3 Bd7 16.Be3 (NOT Bd2) Rac8 17.Qd2/Rc1 Rfe8.
-Record: 0-6, all from middle-game discipline (broken recapture chains, loose pieces, rook grabs).
+Book: 1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Re1 b5 7.Bb3 d6 8.c3 O-O (16 plies). Then ...Na5, Bc2, ...c5, h3, d4, Nbd2, ...Qc7, ...cxd4/cxd4, ...Nc6, Nf1, ...a5 and 16.Be3 - NEVER 16.Bd2.
+Record: 0-7, every loss from middle-game discipline (broken recapture chains, pawn diagonals, loose pieces), not the opening.
+
+## g153 vs Sonnet (0-1, Qg1# m44) - Nf5 onto a pawn square, then Qxf4 into a pawn
+After the book it was level: 13.cxd4 Nc6 14.d5 Nb4 15.Bb1 a5 16.a3 Na6 17.b4 axb4 18.axb4 Bd7 (12 plies), then 19.Qb3 Rfc8 20.Bb2 Qb7 21.Nh4 g6.
+- 22.Nf5?? gxf5: the g6-pawn hits f5, and 21...g6 was played exactly to cover f5. A pawn that moves to block a square still attacks that square. Before any piece lands, name every enemy PAWN that hits it (g6 hits f5/h5, e5 hits f4/d4, b5 hits a4/c4, c6 hits b5/d5).
+- Then 24.Be4 Bc6 25.Bxd5 Bxd5 26.Qg3+ Kh8 27.Nf3 Bxf3 28.gxf3 Rc2 29.Ba3 Nxb4 30.Bxb4 Rxa1 31.Rxa1 Rc4 (16 plies). 33.f4 Rxf4 34.Qxf4?? exf4 = Q for R - the e5-pawn covers f4. Sixth Q-for-pawn: g131 exf5, g133 dxe4, g136 exd5, g143 fxe6, g144 fxe5, g153 exf4.
+- 35.Ra8+?? Qxa8: never give a check whose checker is undefended on the capture square; ask what captures the checker first.
+- Clock 14:28 vs 10:05 - material was level at move 33; two pawn-diagonal misses decided the game.
 
 ## g121 vs Sonnet (0-1, Qa4# m43) - Bd2 breaks the d4 recapture: piece down
-1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Re1 b5 7.Bb3 d6 8.c3 O-O 9.h3 Na5 10.Bc2 c5 11.d4 Qc7 12.Nbd2 cxd4 13.cxd4 Nc6 14.Nf1 a5 15.Ne3 Bd7 16.Bd2?! Rac8 17.Rc1 Rfe8 18.Nf5 Bxf5 19.exf5 exd4! 20.Nxd4?? Nxd4! 21.Bc3 Nxc2 22.Qxc2 Nd5 23.Qe4 Nxc3 24.bxc3 Bf8 ... Q vs R, mate m43.
-- 16.Bd2?! (SF ?!) blocks the d-file: after 19...exd4 the recapture 20.Nxd4 is met by 20...Nxd4 and my Qd1 can NEVER retake d4 (own Bd2 on d2). Piece for a pawn. Play 16.Be3 (guards d4 and leaves the d-file; SF's line) or at least verify the recapture chain before taking.
-- Rule: my own bishop/pawn on d2 kills Qd1's d-file recapture of d4. Before a central recapture name every recapturer AND trace its line through my own pieces.
-- 18.Nf5 Bxf5 19.exf5 was fine per SF, but it left d4 held only by Nf3, so ...exd4 came.
-- After the piece loss it never recovered: 25.Qxe8 Rxe8 26.Rxe8 Qd7 27.Rxf8+ Kxf8 = Q vs R, queen picked off every pawn (f5,h5,b4,f2,a4,b6), mate m43. Down a piece, a Q-for-2R trade is not a save.
-- Clock: 31-47 s on moves 8-24 (8.c3 31, 14.Nf1 46, 18.Nf5 46, 20.Nxd4 47, 21-24 ~45 s each) and the blunder came anyway; ended 6:33 vs 11:33. Routine <=15 s.
+Book to 16; 16.Bd2?! (SF ?!) blocks the d-file: after 19...exd4 the recapture 20.Nxd4 meets 20...Nxd4! and Qd1 can NEVER retake d4 (own Bd2 on d2) = piece for a pawn. Play 16.Be3 (guards d4, leaves the d-file).
+- Trace every recapturer's path THROUGH my own pieces. 18.Nf5 Bxf5 19.exf5 left d4 held only by Nf3 -> ...exd4. Down a piece it never recovered: Q vs R, mate m43.
 
 ## g104 vs Sonnet (0-1) - keep Rc1; no undefended knight jump
 16.Be3 Rac8 17.Qd2 Rfe8 18.Rac1 h6 19.Rcd1?? Bf8 20.Nh5??.
-- 19.Rcd1??: Rc1 guarded c2. Once it left, ...Nb4-...Nc2 + ...Rxc2 won a piece (22...Nb4 23.Bb1 Nc2 24.Qxc2 Qxc2 25.Bxc2 Rxc2, nothing recaptures on c2). Keep Rc1 while his Nc6/Na5, Qc7 and c8-rook are live; move the queenside rook only for a concrete reason.
-- 20.Nh5??: undefended knight onto a square his f6-knight attacks = piece for nothing. A 'trade offer' needs a defender or a legal recapturer.
-- Cascade after the loss: 26.Rd4?? exd4; 28.Rxe4?? Rxe4; 32.Be5?? dxe5 (bishop onto the d6-pawn's square). Clock 36-46 s on moves 13-20, ended 5:46 vs 14:35.
+- 19.Rcd1?? left c2 unguarded: ...Nb4-...Nc2 + ...Rxc2 won a piece. Keep Rc1 while his Nc6/Na5, Qc7 and c8-rook are live; move the queenside rook only for a concrete reason.
+- 20.Nh5?? an undefended knight on a square his f6-knight attacks = piece for nothing.
 
-## g84/g82/g78 (0-1 each) - knight geometry, queen squares, d4 defense
-- g84: 19.Qc2?? with Bd3 let ...Nb4! fork Qc2+Bd3; his f8-rook recaptured c8 (grab of a DEFENDED rook = Q+R for 2R). Sweep his knight's squares before ANY queen move: c2/d3 must not both be b4-knight squares.
-- g82: 17...exd4 18.Nxd4?? Nxd4 - d4 had ONE defender (Nf3); Qe2 does NOT cover d4 (only Qd1/Qd2 do), so no recapturer. 20.Nf5?? Bxf5 (d7-e6-f5 ray); 22.Rxe7??; 23.Qxd5?? (e7+f6 hit d5). Keep Qd1/Qd2 while ...Nc6/...exd4 loom: Nf1 BEFORE Qe2.
-- g78: 16.Bg5?? h6 17.Be3?? Nc4! 18.Nh5?? Nxe3! 19.fxe3 Qxc2! (Bc2 had one defender, rook second-attacked). After ...h6 do not return to e3; trade on f6 or play Bd2/Bf4.
+## g84/g82/g78 (0-1 each) - knight squares, d4 defense, queen squares
+- g84: 19.Qc2?? with Bd3 let ...Nb4! fork Qc2+Bd3. Sweep his knight's squares before ANY queen move.
+- g82: 17...exd4 18.Nxd4?? Nxd4 - d4 had ONE defender and Qe2 does NOT cover d4. 20.Nf5?? Bxf5 (d7-e6-f5 ray); 23.Qxd5?? (e7+f6 hit d5). Nf1 BEFORE Qe2.
+- g78: 16.Bg5?? h6 17.Be3?? Nc4! 18.Nh5?? Nxe3! 19.fxe3 Qxc2! (Bc2 had one defender).
 
 ## Older - condensed
-- g77: 13.d5 c4; 16...g6 takes f5 from both knights; 20.Bxc5?? B for N; 39...Bc6 aimed Qxg2#.
-- g73: 23.Be5?? dxe5 24.Qd2?? Rxd2; when his capture opens a file onto my queen, leave the FILE.
-- g67/g65/g61/g60: 26.Rxe7??; 21.Bxh6?? gxh6; 24.Qa3?? Rxa3; 21.Qxa4?? bxa4.
+- g77: 13.d5 c4; 16...g6 took f5 from both knights; 20.Bxc5?? B for N; 39...Bc6 aimed Qxg2#.
+- g73: 23.Be5?? dxe5 24.Qd2?? Rxd2; 20.Bxh6?? gxh6; 21.Qxa4?? bxa4; 26.Rxe7??.
 
 ## Working
-- 14...Nb4 -> 15.Bb1!; reroute Nf1-g3 only with d4 safe (Qd2/Nf3) and ...g6 off.
-- 16.Be3 keeps the d-file and guards d4; 16.Bd2 blocks my queen's recapture line.
-- No queen on d4 vs his e5-pawn; no undefended rook onto his rook's rank/file; count every recapturer.
-- Never Qc2 with Bd3 while ...Nb4 is possible (g84); equal Chigorin: improve slowly, keep Rc1, routine <=15 s.
+- 14...Nb4 -> 15.Bb1!; after d5 his only ideas are ...Nb4/...Na6, so a3 and b4 hit them; after axb4 keep the a-file and put Ra1/Qb3 on the b4 pawn.
+- 16.Be3 keeps the d-file and guards d4; 16.Bd2 blocks my queen's d-file recapture.
+- No queen on d4 vs his e5-pawn; no piece on a square his g6-pawn covers (f5/h5); no check he can simply capture.
+- Equal Chigorin: improve slowly, keep Rc1, routine <=15 s; the scan is worth more than any long think.
