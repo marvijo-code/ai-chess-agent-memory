@@ -23,7 +23,8 @@
   "GLM 5.3 Flash": {
    "depth": 4,
    "streak": 0,
-   "steps": []
+   "steps": [],
+   "updated_at": "2026-10-12T06:56:03+00:00"
   }
  },
  "history": [
@@ -52,10 +53,10 @@
    "at": "2026-10-10T13:25:28+00:00"
   }
  ],
- "updated_at": "2026-10-12T06:45:16+00:00",
+ "updated_at": "2026-10-12T06:56:03+00:00",
  "last_step": {
-  "player": "GPT-6.1 Sol",
-  "outcome": "draw",
+  "player": "GLM 5.3 Flash",
+  "outcome": "loss",
   "depth": 4,
   "streak": 0,
   "stepped": false,
@@ -63,9 +64,9 @@
   "to": 4,
   "tournament": "aichess-0034-20261012-050243",
   "number": 34,
-  "game": "r4b1",
-  "color": "black",
-  "termination": "threefold repetition",
-  "at": "2026-10-12T06:45:16+00:00"
+  "game": "r5b2",
+  "color": "white",
+  "termination": "checkmate",
+  "at": "2026-10-12T06:56:03+00:00"
  }
 }
