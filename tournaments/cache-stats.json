@@ -1359,34 +1359,34 @@
      "warm_hit_rate": 0.9377
     },
     "Sonnet 5.5": {
-     "calls": 76,
-     "input": 1579027,
-     "cached": 1478557,
-     "output": 84233,
-     "warm_input": 1473325,
-     "warm_cached": 1411174,
-     "hit_rate": 0.9364,
-     "warm_hit_rate": 0.9578
+     "calls": 97,
+     "input": 1957890,
+     "cached": 1839571,
+     "output": 98521,
+     "warm_input": 1816566,
+     "warm_cached": 1738240,
+     "hit_rate": 0.9396,
+     "warm_hit_rate": 0.9569
     },
     "GPT-6.1 Sol": {
-     "calls": 94,
-     "input": 2384192,
-     "cached": 2133504,
-     "output": 29556,
-     "warm_input": 2250124,
-     "warm_cached": 2044928,
-     "hit_rate": 0.8949,
-     "warm_hit_rate": 0.9088
+     "calls": 115,
+     "input": 2793532,
+     "cached": 2503680,
+     "output": 32444,
+     "warm_input": 2614846,
+     "warm_cached": 2379264,
+     "hit_rate": 0.8962,
+     "warm_hit_rate": 0.9099
     },
     "GLM 5.3 Flash": {
-     "calls": 106,
-     "input": 1877412,
-     "cached": 1579520,
-     "output": 111005,
-     "warm_input": 1833876,
-     "warm_cached": 1564160,
-     "hit_rate": 0.8413,
-     "warm_hit_rate": 0.8529
+     "calls": 136,
+     "input": 2267016,
+     "cached": 1903360,
+     "output": 139247,
+     "warm_input": 2209109,
+     "warm_cached": 1876480,
+     "hit_rate": 0.8396,
+     "warm_hit_rate": 0.8494
     }
    }
   }
