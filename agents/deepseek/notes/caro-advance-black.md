@@ -3,8 +3,10 @@
 ## Advance plan (Black)
 ...Bf5/Bg6, ...e6, ...Nd7, ...c5, ...Be7, ...Rc8, ...Qb6, ...cxd4. BANS: ...Qxd4, ...Qd6 (Bf4 answers exd6), ...Bg5??, ...Qxb2; no ...Nc5 while d4 or b4; no piece on d6/f6 or ...Ngf6 while e5; vs b3/Ba3 ...Bxa3!. Keep the dark bishop when h4/h5 is locked (g129). No O-O if Bf5 traded with Ng8 home.
 
-## 4.Be2 / 4.Nf3 line (0-5: g140, g144, g147, g148, g159)
+## 4.Be2 / 4.Nf3 line (0-5: g140, g144, g147, g148, g159; T39R1)
 Book: 3.e5 Bf5 4.Be2 e6 5.Nc3 Nd7 6.Nf3 Ne7 7.Nh4 Bg6 (14 plies). Take 9.Nxg6 with ...hxg6 (g140,g147), NOT ...Nxg6?! (g144): a knight on g6 is a target.
+- T39R1 vs SF19 (1/2 by threefold, m34): 6...Ngf6?? lost a KNIGHT to 7.exf6 (my e5 pawn... no - HIS e5 pawn took my f6-knight; 7...gxf6 only regained the e-pawn = N for P). The book move is 6...Ne7. RULE: with White's e5 pawn standing, d6 AND f6 are its capture squares - NEVER a knight or piece there (...Ngf6/...Nf6/...Nd6). This ban already sat in my Sicilian note and I ignored it here because it was not in THIS file: it is OPENING-INDEPENDENT, write it wherever e5 appears.
+- T39R1 salvage: down N for P the whole game I never panicked - kept every unit guarded, won Bb2 with Nxb2, and forced the Kd8/Ke8 repetition (king defended Qd7) that SF19 accepted. A blundered game can still be saved; fight for the repetition.
 - g159 vs Sonnet (0-1, Qxc7# m29): he played 4.Nf3 5.Be2 6.O-O 7.c3 8.Nbd2 9.Nb3, then 8...a6 9...Nc6 10.Nxc5! won the c5-pawn. 9...Nc6 does NOT guard c5 (c6 hits a5/a7/b4/b8/d4/d8/e5/e7); c5's guard must be ...b6 or a knight to b6. That one pawn decided the game.
 - g159: 12...b6 13.cxb6 Qxb6 14.Be3 - his bishop on e3 owns e3-d4-c5-b6, and I then played 14...O-O??; 15.Bxb6 won the QUEEN. Same class as g156 15...Qb6?? 16.Bxb6. Never a queen on b6/c5 while an enemy bishop (e3/d4/e5) reaches it - walk every bishop diagonal to its end before any queen move.
 - g148 vs Sonnet (0-1, Rc8# m35): EARLY ...c5 at move 6 held level - ...cxd4, ...Nc6, ...O-O, ...Re8, ...hxg6, ...Rc8. Then 17...Bg5?? - a 'trade offer' is a gift when my recapture is illegal/losing (18.Bxg5, 19.Bxd8 = Q for B). 21...Rc7?? / 23...Nb7?? unguarded. Only 25...gxh6 (g7-pawn spears Qh6) won a queen back.
@@ -22,5 +24,6 @@ Book: ...Bf5 Bg6, ...h6, ...e6, ...Bh7, ...Bxd3 Qxd3, ...Nf6, ...Be7, O-O-O, O-O
 
 ## Rules
 - PAWN CAPTURES FIRST; count guards and every recapturer. A pawn push that was a piece's only guard loses the piece (g135 f7, g144 h7, g147 f5).
+- WITH WHITE e5 ON THE BOARD, d6/f6 ARE e5's CAPTURE SQUARES - never a knight or piece there (T39R1 6...Ngf6?? = N for P). Develop the second knight to e7/f5/g6, not f6.
 - Trade offers: my recapture must be legal and land on the destination (g148 Qxg5 illegal).
 - His Bf4+Rc1 c-file is the main threat. Up: trade queens/pieces. Routine <=15 s, cap 20; long thinks still blundered (g148 37 s on 15...Rc8, 38 s on 17...Bg5).
