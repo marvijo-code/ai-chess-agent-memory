@@ -1,29 +1,23 @@
-# Ruy Lopez: destination safety, guards and blockades
+# Ruy Lopez: destinations, recapturer duties and blockades
 
-## T37 semifinal 2 game 1: Black vs Astra, Zaitsev loss
-- Bb7/Re8/Bf8 met a4/Bc2; exd4/Nb4/c5 and Nd7/f5 gave central counterplay. Rae3 reinforced e4; fxe4/Nxe4/Nxd5 won a pawn. N7f6 was inaccurate; Nxf6 was required after Nxf6+. No verified move-20 replacement supplied.
-- Rook exchanges left Q+2B+N against the same material, with my extra pawn. Ba2+ required c4, blocking the diagonal with tempo on Qd3. d5 was inaccurate despite creating connected passers; no verified improvement supplied. Nd4 established the blockade.
-- Bxe4 was White's marked inaccuracy; Qxe4 was required. Queen exchange reached my bishop pair and six pawns against B+N and five pawns. This favorable material balance did not survive my next move.
-- 33...Bc6?? tried to reinforce b5 but put Bb7 on an UNDEFENDED square attacked by Nd4. b5 guards a4/c4; d5 guards c4/e4; neither guards c6. Bc5 supplied no recapture either. Check the defender's destination before praising its new guard duty.
-- Nxc6! removed B outright. Bxe3 became legal because N had vacated d4, but fxe3 only exchanged the remaining bishops. I was left with six pawns against N+five pawns: down a knight for one extra pawn. It did not repair the first bishop loss.
-- Nd4/e3 and Kc3 blockaded c4/d5. My king supported the chain but could not dislodge the blockaders. Ne6+ gained tempo before Nxg7; a3 was met by bxa3 and Kb2 defended a3 against Ka4. The raid tied up my king while N returned via f5 and took h6.
-- After the kingside pawns fell, White's g4-pawn had a clear promotion route. My later d4 push allowed exd4; the c-pawn advanced only after g8=Q. Passers need a concrete breakthrough and a race count, not just king support.
-- Zero invalid attempts; finished 6:35. Bc6 took 43 seconds with 10:52 left. Bc5/Ne4 took 46/53; a3/Ka4 took 43/46. Long thought omitted the simple capture and spent time on ineffective counterplay. Opening mostly 2-7 seconds was adequate.
+## T38 round 5: White vs Sonnet, Chigorin mate loss
+- Black exchanged cxd4 and returned Nc6 BEFORE Qc7. My d5 met Nb4; Bb3 retained B and guarded d5. After a5/a3/Na6, Black routed N to c5 and fixed a3 with a4. Do not import an automatic Bb1 retreat or the later Rc1-Qc7 pin into this different board. Opening did not lose material.
+- Ng3/Be3/Qd2/Bh6 met g6/Rfe8. h4 was marked inaccurate; no verified replacement supplied. h5/Bxg7/hxg6 exchanged bishops and h-pawn for g-pawn but produced no verified forcing attack. fxg6 opened Black's f-file. Before a pawn storm name my attacking entry and the enemy file it opens.
+- Ng4 and doubled f-rooks created pressure on f2. With Qe3/Rf1, f2 had two guards. Bd3 invited Nxd3; Qxd3 was the only good recapture, but it REMOVED the queen's f2 guard. Rxf2 then won P. A seemingly simplifying minor exchange can deflect the required recapturer from another duty. Audit the final recapturer's old guards BEFORE offering it.
+- Rxf2 followed by Black's rear-rook recapture exchanged one rook each, NOT a whole-rook loss. After Qxc2 Rxc2, material was my R+N+5P against R+B+6P. Black's comments called the rook exchange a rook win; the actual board disagreed. Rb1 was marked inaccurate; no verified replacement supplied.
+- DECISIVE UNMARKED MISS: 39.Ne2 moved Ng3 onto Rc2's open second rank. Rc2-d2-e2 was clear; Rb1 and Kh2 did not guard e2. Rxe2 won N outright. The intention to centralize was irrelevant to destination safety. After queen exchange reconstruct every enemy rook ray before developing; sparse marks are not a full tactical audit.
+- Down B, passive rook shuffles let e5-e4-e3-e2 advance with B/R support. Bd3/Bc4 guarded e2; Rd1 attacked my blockading Re1. Rxd1 allowed exd1=Q, while Rxe2 allowed Bxe2. A stationary blockade needs a concrete answer to supporting-piece coordination and rook entry. No verified earlier defensive repair supplied.
+- Zero invalid attempts; finished 3:33. Ne2 took 55 seconds with 9:34 left; routine Rxf2 took 44. Rook shuffles consumed 40-54 seconds, and Rxe2 took 49 below four minutes. Long thought did not inspect the rook's direct capture. Use 10-15 seconds for quiet moves and the reduced cap below five minutes.
 
-## T37 round 4: Black vs Astra, Chigorin loss
-- Qb7 left the c-file and released Nc6 before d5. Bd8-b6 and Na5-c4 remained playable; b3 chased the pawn-supported knight. Before my queen blunder, material was equal. a3 was inaccurate; b4 was required later, without proving an earlier repair.
-- Qc7 hit Na5/d6 but was itself marked adverse. Qb6?? defended both and attacked Qc7, yet Qxb6 simply won Q: neither knight nor pawn recaptured. Nd7 then attacked Qb6 without defending Na5; Qxa5 escaped and won N. Name the actual recapturer before queen contact.
-- f5 exf5 cleared Bb1-c2-d3-e4-f5. gxf5 allowed bishop-supported Nxf5+ and a Q+N king hunt ending in g4#. Pawn liquidation opened a remote bishop while removing shelter.
-- Qb6 took 28 seconds; finished 13:54, zero invalid attempts. No verified move-34 replacement supplied.
+## T37 semifinal: Black vs Astra, Zaitsev loss
+- Bb7/Re8/Bf8, exd4/Nb4/c5 and Nd7/f5 gave central counterplay. N7f6 and d5 were inaccurate; Nxf6 after Nxf6+, c4 against Ba2+, and Qxe4 after Bxe4 were required on their boards. No verified earlier replacements supplied.
+- Queen exchange left bishop pair plus one pawn. Bc6 tried to reinforce b5 but landed undefended under Nd4: b5 guards a4/c4; d5 guards c4/e4. Nxc6 won B. Bxe3/fxe3 only exchanged the remaining bishops, leaving six pawns against N+five pawns.
+- Nd4/e3 and Kc3 blockaded c4/d5. My a3/Ka4 raid failed to draw K away while N took g7/h6. Later d4 allowed exd4; White's g-pawn promoted first. Connected passers need a breakthrough and race count, not merely king support. Bc6 took 43 seconds with 10:52 left.
 
-## T37 round 2: White vs Sonnet, Chigorin win
-- Nf1 cleared Qd1-d4. Nc2 had Qc7 AND Rc8 support; Bxc2 and queen exchange were equal, unlike the Zaitsev Qd6/Rd8 branch.
-- Red1 guarded d5; Rdc1 abandoned its sole guard. Bxc5 dxc5 displaced d6's guard of e5; Nxe5 won P and d6 made a supported passer. Bxc5 was still marked inaccurate; no verified replacement.
-- d7 tied Bd8 down; Nc6 guarded promotion, which bought B. Save N from b5 afterward. En passant fxg6 freed Kxg6 and hit Nf7; capture was optional.
-- Stop enemy passers before escorting mine. Finished about 2:45; repeated 31-55 second thinks violated clock caps.
-
-## Retained geometry
+## Other retained Ruy patterns
+- T37 Astra Chigorin: Qb7 released Nc6 before d5. Equal material before Qb6 hung Q to Qxb6; neither knight guarded b6. Qc7 was adverse despite attacking Na5/d6. After exf5/gxf5, Bb1's cleared diagonal supported Nxf5+.
+- T37 White vs Sonnet: Red1 guarded d5; Rdc1 abandoned its sole guard. Nc2 had Qc7/Rc8 support, unlike Qd6/Rd8. A supported d7 passer bought B; save its supporting N afterward. En passant fxg6 unnecessarily activated Kxg6 against Nf7.
 - Nd2 blocks Qd1-d3; Bd3 is loose. Bb1 can clear Rc1-c7 and pin Nc6 to Qc7.
-- Zaitsev Qd6/Rd8 cannot recapture Bb1xc2. f4 with Be3/Ng3 loses to exf4, forking both; Bxf4 Qxf4 loses B.
+- f4 with Be3/Ng3 loses to exf4, forking both; Bxf4 Qxf4 loses B when g6/Qd6 guards f4.
 - Be7 can screen Re8-e5. axb5/axb5 opens Ra8-a1 behind Bb1/Bc1; resolve rook contact first.
-- Qxf3 abandons d5; exd5 can expose Rxe1+ without a recapture. Supported d6 ties blockaders; Kc5 clears Rd1-d6 and Kc6 supports d6.
+- Qxf3 abandons d5; exd5 can expose Rxe1+ without a recapture. Kc5 clears Rd1-d6; Kc6 supports d6 and frees other pieces.
