@@ -18,6 +18,14 @@
 15. Before ANY check: what captures the checker? A check that offers my queen for a rook is a blunder unless forced/mating.
 16. Converting material: keep the queen AND every rook defended; a blocker on his bishop's diagonal is a guard - do not move it for free.
 
+## T40R2 vs SF19 (0-1, Qxh2# m18) - three pawn-square gifts
+Accelerated Dragon; his 8...Ng4 attacked Be3.
+- 9.Bf4?? took Be3 off d4, my Nd4's ONLY guard -> 9...Bxd4 = N for nothing. Keep Be3; answer ...Ng4 with Qd2/Rad1.
+- 11.Nf6+ on the e7-PAWN's grab square -> 11...exf6 = N for P (a check is NO shield).
+- 14.Qf4?? on the g5-PAWN's grab square -> 14...gxf4 = QUEEN for P.
+- 18...Qxh2# - no luft.
+Black pawn squares: e7 hits d6/f6; g5 hits f4/h4.
+
 ## T40R1 vs Sol (0-1, Re8# m28) - won Q for R, gave it back
 Taimanov 6.Be2 book to 20...Rac8 was level (…d5/…Nxd4/…Bxf6/…Qxf6/…Nc5/…Qd4+/…Bd7). 21.fxe6 Rxf3 22.Rxf3 won Q for R (good).
 - 24...Qe7: his 24.Bf5 attacked my queen on d7; Qe7 vacated d7, the ONLY blocker on the f5-c8 diagonal -> 25.Bxc8 won my loose Rac8. Keep the blocker or defend the rook.
