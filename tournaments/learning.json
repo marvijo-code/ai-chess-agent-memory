@@ -1072,12 +1072,12 @@
      "games": 1,
      "read_in_prompt": 1,
      "read_latest": 1,
-     "reflections": 0,
+     "reflections": 1,
      "memory_updates": 0,
-     "note_updates": 0,
-     "rejected": 0,
+     "note_updates": 1,
+     "rejected": 1,
      "errors": 0,
-     "retries": 0
+     "retries": 2
     }
    }
   }
