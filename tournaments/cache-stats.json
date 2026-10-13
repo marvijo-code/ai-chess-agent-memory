@@ -1494,34 +1494,34 @@
      "warm_hit_rate": 0.9588
     },
     "GPT-6.1 Sol": {
-     "calls": 62,
-     "input": 1739233,
-     "cached": 1531136,
-     "output": 17179,
-     "warm_input": 1650065,
-     "warm_cached": 1463808,
-     "hit_rate": 0.8804,
-     "warm_hit_rate": 0.8871
+     "calls": 92,
+     "input": 2455600,
+     "cached": 2163456,
+     "output": 22433,
+     "warm_input": 2321285,
+     "warm_cached": 2067968,
+     "hit_rate": 0.881,
+     "warm_hit_rate": 0.8909
     },
     "DeepSeek V4.1 Flash": {
-     "calls": 108,
-     "input": 2135293,
-     "cached": 2054016,
-     "output": 98632,
-     "warm_input": 2095220,
-     "warm_cached": 2028160,
-     "hit_rate": 0.9619,
-     "warm_hit_rate": 0.968
+     "calls": 150,
+     "input": 2918412,
+     "cached": 2784128,
+     "output": 189478,
+     "warm_input": 2859346,
+     "warm_cached": 2746240,
+     "hit_rate": 0.954,
+     "warm_hit_rate": 0.9604
     },
     "GLM 5.3 Flash": {
-     "calls": 74,
-     "input": 1388272,
-     "cached": 1253056,
-     "output": 52613,
-     "warm_input": 1348917,
-     "warm_cached": 1230016,
-     "hit_rate": 0.9026,
-     "warm_hit_rate": 0.9119
+     "calls": 117,
+     "input": 2177895,
+     "cached": 1948352,
+     "output": 97253,
+     "warm_input": 2119759,
+     "warm_cached": 1913472,
+     "hit_rate": 0.8946,
+     "warm_hit_rate": 0.9027
     }
    }
   }

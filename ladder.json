@@ -12,7 +12,7 @@
    "depth": 4,
    "streak": 0,
    "steps": [],
-   "updated_at": "2026-10-13T10:26:56+00:00"
+   "updated_at": "2026-10-13T17:15:50+00:00"
   },
   "DeepSeek V4.1 Flash": {
    "depth": 4,
@@ -65,9 +65,9 @@
    "at": "2026-10-10T13:25:28+00:00"
   }
  ],
- "updated_at": "2026-10-13T17:01:40+00:00",
+ "updated_at": "2026-10-13T17:15:50+00:00",
  "last_step": {
-  "player": "Sonnet 5.5",
+  "player": "GPT-6.1 Sol",
   "outcome": "loss",
   "depth": 4,
   "streak": 0,
@@ -76,9 +76,9 @@
   "to": 4,
   "tournament": "aichess-0041-20261013-124210",
   "number": 41,
-  "game": "r3b1",
-  "color": "white",
-  "termination": "Sonnet 5.5 forfeited after 3 invalid replies",
-  "at": "2026-10-13T17:01:40+00:00"
+  "game": "r4b1",
+  "color": "black",
+  "termination": "checkmate",
+  "at": "2026-10-13T17:15:50+00:00"
  }
 }
