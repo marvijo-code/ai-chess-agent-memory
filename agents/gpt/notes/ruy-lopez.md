@@ -1,28 +1,24 @@
-# Ruy Lopez: bishop paths, capture chains and king safety
+# Ruy Lopez: queen safety, capture chains and defensive barriers
 
-## T41 round 1: Black vs Sonnet, Zaitsev-like, mate loss
-- Bb7/Re8/Bf8 with exd4/Na5/c5 differed from the Chigorin Qc7 pin structure. White closed with d5 and kicked Nc4 with b3. Ne5/Nxe5/Rxe5/f4/Re8 retained material; h6?! was marked inaccurate. No verified opening repair supplied.
-- After g6/Bg7/Be3/Qc7, Qd2? offered a chance, but my Nxe4? and Rxe4?? failed. Nf6's departure opened Bg7-f6-e5-d4-c3-b2-a1. SEPARATELY, d5 still blocked Bb7-c6-d5-e4. An open diagonal for one bishop is not support from the other.
-- Ng3 could take Ne4 and Bc2 could take Re4. Be3 screened White's Re1-e4, but that did not remove those two capturers. The rook raid on a1 did not force White to abandon the central exchange.
-- After Nxe4/Rxe4/Bxe4/Bxa1/Rxa1, I had lost N+R+B and taken N+R+P: White was B ahead for P. My claim that Bxa1 restored balance and left an extra pawn forgot the bishop lost on a1. Ra8 could not recover Ra1 through a6. Recount both armies before selecting the next plan.
-- Re8/Bf3/f5 and c4/bxc4/bxc4 created counterplay, but Bd4 blockaded the passer. Bf6 was guarded by Qc3 and reached d8 through empty e7. Rd8 then allowed Bxd8 Qxd8, losing the exchange and leaving White a whole rook ahead. Queen support makes a recapture possible; it does not make R-for-B acceptable.
-- Qc7+ displaced K and Qxb7 removed the remaining bishop. Final Qxd6# checked Kg6 across e6/f6; Re7 covered f7/g7/h7, Bf3 covered h5, and my f5/g5/h6 pawns occupied other exits. White's d5 blocked Qd1-d6: trace the defender's entire path before claiming a block or capture.
-- Zero invalid, 4:36 remained. Nxe4/Rxe4 took 54/32 seconds; Rd8 took 60. Repeated 40-50 second moves while worse spent clock without finding simple captures. Use critical time for separate bishop paths and the full material count, then shorten routine defense.
+## T41 semifinal 2 game 1: Black Berlin vs Sonnet, repetition draw
+- Against Re1, Nd6/Be7/Nxe5/O-O/Bf6/Re8 led to a queens-on Berlin. Qxe8/Nf5/d5/c6/Be6/Rd8/c5 developed actively; no verified opening improvement supplied. Distinguish this from the queenless Berlin and Closed Ruy.
+- Bg5?! took 58 seconds and was inaccurate. Qxe6?? then assumed Qxe6 would permit Nxe6's fork, but f7xe6 simply won Q for B. The gift does not validate Bg5; inspect pawn captures before accepting a sacrifice narrative.
+- After Nd3/Qb5/Nxc5, my Qd7?? tried to defend e6/b7 but landed on Nc5's jump. Nxd7! Rxd7! left R+B each and White a pawn ahead. I surrendered Q for N while already having Q for B. A defensive queen move needs the same destination scan as a check or attack. Qd7 took 33 seconds; lack of time was not the cause.
+- a6 guarded b5. a5?! pushed that defender away, and Bxb5! won another pawn. Identify the pawn's OLD capture squares before a supporting push; a plan for b4 does not compensate automatically for losing b5.
+- Bh6! safely answered f4, but g6?!/a6?!/a5?!/g5?! were marked adverse. No verified replacements supplied. Kingside activity did not itself repair the deficit.
+- Bc1/Bb2 pressured c3. Rxh5! moved White's rook away from e5 before Bxc3, so dxc3 would no longer uncover Kxe5. Recheck a tactic when its target moves; the earlier central clearance threat had disappeared.
+- Ke3? allowed Rg7!, pressuring g3. Rg5 offered an exchange and Rxg5! was the only good move. hxg5+ Kxg5 removed both rooks and the checking pawn, leaving an opposite-colored bishop ending with White one pawn ahead.
+- Defensive roles: Bb4 guarded a5 and restricted queenside entry; Bc3 also guarded a5 and attacked d4. Kf6 held e6; Kg5 denied f4. White's light bishop could guard g4 but could not guard dark-square d4, so its king remained tied to d4. Preserve these duties before chasing the outside pawn.
+- Sonnet changed bishop squares but returned to earlier complete positions. Threefold arrived with Bf3/Bb4, Ke3/Kg5 and unchanged pawns. Count actual positions and side to move; a temporary variation does not reset history. Do not infer that every pawn-down opposite-bishop ending draws.
+- Zero invalid; 6:39 remained. Forced Rxd7/Bxg5/Kxg5 took 7/6/5 seconds. Routine waiting moves can be quick once the barrier and enemy breaks are verified.
 
-## T40 semifinal 2: Black Chigorin vs Sonnet, Re8# loss
-- Qb7 released Nc6 after Rc1; Bb1 did not create a queen pin. Against a3, Na5?!/Nc4?!/Rxc4?! were inaccurate. b5 support did not prevent Bd3's cheaper attack. No verified replacements supplied.
-- dxe5/Nxe4/Bxe4 required Qxe4!; later queen exchange left equal material and my bishop pair against B+N.
-- Bd7-c6?? defended b5 but SCREENED Rc8-c5 and ABANDONED e8. Bc6 does not guard e8. Bxc5 took B; immediate Rxc5 was illegal through Bc6. Bxf3/gxf3 cleared c6, but Rxc5 vacated the last rank-8 defender with Kg8 boxed by f7/g7/h7: Re8#.
-- Before exchanges name old mating-square guards, trace support through new blockers, then test mate AFTER the final rook recapture. Compare timely luft. Fatal Rxc5 took five seconds; earlier thought did not validate this board.
+## T41 round 1: Black Zaitsev-like vs Sonnet, mate loss
+- Bb7/Re8/Bf8 with exd4/Na5/c5 differed from the Chigorin c-file pin. d5/b3/Nxe5 met Rxe5/f4/Re8 without material loss; h6?! was inaccurate.
+- Nxe4? opened Bg7-a1, but d5 still blocked Bb7-e4. Ng3 could take Ne4 and Bc2 could take Re4 despite Be3 screening Re1. Rxe4?? lacked support from the OTHER bishop.
+- Central liquidation plus Bxa1/Rxa1 cost N+R+B for N+R+P: White B ahead for P. Ra8 could not recover Ra1 through a6. Recount both armies before claiming the raid restores balance.
+- Bd4 blockaded c4. Bf6, guarded by Qc3, reached d8 through e7; Rd8 allowed Bxd8 Qxd8, losing the exchange. Queen support does not make a cheaper bishop capture harmless.
 
-## T40 round 2: Black Chigorin vs Sonnet, queen loss
-- Qb7 released Nc6 before d5. Na5?!/Be6?! allowed Qe2-supported Bxb5/Bxa4. Qxb2/Qb4 and Bxb3/axb3/Nxb3/Qxb3 restored equal material.
-- Rec1 placed Qe2 behind Rc2. Ra2?? Rxa2 Qxa2 Qxa2 exchanged one rook each and lost my WHOLE Q: White's rook capture cleared rank 2 for its queen. Rb8 could not recapture. Sweep MY recapturer's destination after the enemy clears a line.
-- Sonnet traded pieces and escorted d-pawn promotion. fxe4 took its offered Q but d7 promoted immediately; compare promotion tempi before claiming recovery.
-
-## Earlier patterns
-- T39 Sonnet: Re3 Rxe3 Rxe3 Qxe3 lost BOTH rooks for ONE; Qd2 reached e3. Nc5 guarded Bb3; Nb7 abandoned B and Bxb3+ prevented Nxd6.
-- Be3 screens Re1-e4; Nc3 may be e4's sole guard. Bxc5 can force dxc5 if d6 blocks Be7, abandoning e5.
-- Qf6 attacked Bd6 but g7xf6 won Q: no king pin. Bd5 screened Qd6-d2; Rxe4 Bxe4 cleared Qxd2. c7 did not stop Qd4+ forking K/B.
-- Nd2 blocks Qd1-d3; Rdc1 can abandon d5. f4 with Be3/Ng3 loses to exf4/Bxf4/Qxf4 when g6/Qd6 guards f4. Be7 screens Re8-e5.
-- Astra: unsupported Bc6 fell to Nd4xc6; Nd4/e3/K blockaded c4/d5 while remote king raids failed.
+## T40 Chigorin losses
+- Qb7 released Nc6 after Rc1/Bb1. Against a3, Na5?!/Nc4?!/Rxc4?! were inaccurate; b5 support did not justify a rook square attacked by Bd3. Qxe4! after Bxe4 retained equality and bishop pair.
+- Bc6 defended b5 but blocked Rc8-c5 and abandoned e8. After Bxc5/Bxf3/gxf3, Rxc5 removed the last back-rank defender and allowed Re8#. Scan mate AFTER the final recapture.
+- With Qe2 behind Rc2, Ra2 Rxa2 Qxa2 Qxa2 lost my whole Q after trading one rook each. White's capture cleared rank 2 for its queen. Sweep the recapturer's destination on the resulting board.
