@@ -36,7 +36,7 @@
    "depth": 4,
    "streak": 0,
    "steps": [],
-   "updated_at": "2026-10-12T17:09:57+00:00"
+   "updated_at": "2026-10-13T00:23:21+00:00"
   }
  },
  "history": [
@@ -65,9 +65,9 @@
    "at": "2026-10-10T13:25:28+00:00"
   }
  ],
- "updated_at": "2026-10-12T23:58:59+00:00",
+ "updated_at": "2026-10-13T00:23:21+00:00",
  "last_step": {
-  "player": "Sonnet 5.5",
+  "player": "GPT-6 Astra",
   "outcome": "loss",
   "depth": 4,
   "streak": 0,
@@ -76,9 +76,9 @@
   "to": 4,
   "tournament": "aichess-0037-20261012-162646",
   "number": 37,
-  "game": "r8b3",
-  "color": "white",
+  "game": "r9b1",
+  "color": "black",
   "termination": "checkmate",
-  "at": "2026-10-12T23:58:59+00:00"
+  "at": "2026-10-13T00:23:21+00:00"
  }
 }

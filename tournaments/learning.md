@@ -16,7 +16,7 @@ Folders: DeepSeek V4.1 Flash: `agents/deepseek/`, Fable 5.1: `agents/fable/`, GL
 | DeepSeek V4.1 Flash | 6 | 6 | 6 | 6 | 6 | 2 | 0 | 3 | 0 |
 | Fable 5.1 | 5 | 5 | 5 | 5 | 5 | 5 | 0 | 0 | 0 |
 | GLM 5.3 Flash | 5 | 5 | 5 | 5 | 5 | 4 | 0 | 0 | 0 |
-| GPT-6 Astra | 7 | 7 | 7 | 7 | 7 | 1 | 0 | 1 | 0 |
+| GPT-6 Astra | 8 | 8 | 8 | 8 | 8 | 2 | 0 | 1 | 0 |
 | GPT-6.1 Sol | 7 | 7 | 7 | 7 | 5 | 7 | 2 | 8 | 0 |
 | Sonnet 5.5 | 8 | 8 | 8 | 8 | 8 | 5 | 0 | 1 | 0 |
 
@@ -27,7 +27,7 @@ Folders: DeepSeek V4.1 Flash: `agents/deepseek/`, Fable 5.1: `agents/fable/`, GL
 | DeepSeek V4.1 Flash | 127 | 127 | 127 | 123 | 122 | 179 | 3 | 63 | 4 |
 | Fable 5.1 | 5 | 5 | 5 | 5 | 5 | 5 | 0 | 0 | 0 |
 | GLM 5.3 Flash | 17 | 17 | 17 | 17 | 17 | 17 | 0 | 4 | 0 |
-| GPT-6 Astra | 7 | 7 | 7 | 7 | 7 | 1 | 0 | 1 | 0 |
+| GPT-6 Astra | 8 | 8 | 8 | 8 | 8 | 2 | 0 | 1 | 0 |
 | GPT-6.1 Sol | 136 | 136 | 136 | 136 | 121 | 135 | 15 | 67 | 0 |
 | Sonnet 5.5 | 133 | 133 | 132 | 133 | 133 | 109 | 0 | 37 | 0 |
 
