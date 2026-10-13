@@ -2,88 +2,82 @@
 
 ## Move discipline
 - Apply warnings BEFORE choosing. Start with the enemy's last move; inspect checks, captures, forks, promotions and quiet mates on EACH candidate's proposed board. Rejecting one blunder does not validate another.
-- DESTINATION BEFORE PURPOSE: development, blockade, double attack and check do not make a square safe. Bc6 defended b5 but Nd4xc6 won B; neither pawn guarded c6.
-- PAWN DIAGONALS FIRST, then every knight and full sliding rays. Nb3 attacked Rc5 but c4xb3 won N; Bc4 lost to b5xc4; Rc3+ lost R to b2xc3. List BOTH capture squares of advanced pawns, including attacks renewed after recaptures.
-- Name LEGAL defenders by current square, excluding the mover. Qa5 pinned Nc3 to Ke1, so Be3 did not defend e4. Nf3 does not attack e4; Nc3 does not attack d4. Trace every intervening square.
+- DESTINATION BEFORE PURPOSE: development, blockade, defense and check do not make a square safe. Bc6 defended b5 but Nd4xc6 won B; T41 Final Bd6 guarded c5 but Rd1xd6 won the whole bishop. Name its actual legal guard, excluding the mover.
+- PAWN DIAGONALS FIRST, then every knight and complete sliding rays. Nb3 attacked Rc5 but c4xb3 won N; Bc4 lost to b5xc4; Rc3+ lost R to b2xc3. Refresh BOTH diagonals after pawn moves and recaptures.
+- Trace defenders square by square. Qa5 pinned Nc3 to Ke1, so Be3 did not defend e4. Nf3 does not attack e4; Nc3 does not attack d4. Adjacency to K is not legal support.
 - OWN SCREENS: Nd2 blocks Qd1-d3; Be3 blocks Re1-e4; f7 blocks Rf8-f2. Clearing one line does not clear another. Audit abandoned guards and the recapturer's departure.
-- TWO BISHOPS, TWO PATHS: T41 Sonnet, Nf6xe4 opened Bg7-a1, but d5 still blocked Bb7-e4. Rxe4 had no bishop support. A discovered rook attack does not validate a central capture chain.
-- KING SCREEN: Ke7 unpinned f5 but blocked Re8-e6 and abandoned Kf7's guard of Re6. exf5 attacked and pinned Re6; Kxe6 was illegal because f5 controlled e6. Adjacency is not legal support.
+- TWO BISHOPS, TWO PATHS: Nf6xe4 opened Bg7-a1, but d5 still blocked Bb7-e4. Rxe4 had no bishop support. The liquidation plus Bxa1/Rxa1 lost B for P despite the discovered rook attack.
+- KING SCREEN: Ke7 unpinned f5 but blocked Re8-e6 and abandoned Kf7's guard of Re6. exf5 attacked and pinned Re6; Kxe6 was illegal because f5 controlled e6.
 - LAST GUARD: Nc3 screened Qa5-e1; Rd1 guarded Re1. Nxd5 removed the screen; Bd3/Bxd3/Rxd3 moved Re1's last guard. Development did not prevent Qxe1+.
 - PAWN BREAKS: place the enemy capture first. f4 exf4 forked Be3/Ng3 and opened Qd6-f4; Bxf4 Qxf4 lost B. f6/exf6 exposed Be6 to Qe2; f2-f3 abandoned Be3.
-- PAWN SCREEN: with Qf3/Rf8, f4/f5 screened my queen. fxe6 cleared the file and allowed Rxf3. Before a pawn capture trace its OLD file and both opened diagonals to their far endpoints.
-- For every check test Kxchecker and ALL other captures. Qh2+/Rh7+/Qxb2+ lost heavy pieces to kings. Name the actual guard; a rook behind a pawn does not support the checker.
-- BACKWARD BISHOPS: Bf4 reached c1 through e3/d2; Qc1+ was Bxc1. Bh6 reached Rc1 through g5/f4/e3/d2. T41 Rd8 lost the exchange to Bf6xd8 through e7; queen support did not prevent the cheaper capture.
+- PAWN SCREEN: with Qf3/Rf8, f4/f5 screened my queen. fxe6 cleared the file and allowed Rxf3. Before a pawn capture trace its OLD file and both opened diagonals to their endpoints.
+- For every check test Kxchecker and ALL other captures. Qh2+/Rh7+/Qxb2+ lost heavy pieces to kings. Name the actual guard; a rook behind a pawn does not support the checker. Lost or relocated bishops no longer support an old battery.
+- BACKWARD BISHOPS: Bf4 reached c1 through e3/d2; Qc1+ was Bxc1. Bh6 reached Rc1 through g5/f4/e3/d2. Bf6 reached d8 through e7; Rd8 lost the exchange despite queen support.
 - UNCASTLED DRAGON: h5 vacates h7, opening Rh8-h6. Bh6 Bxh6 attacks Qd2 through g5/f4/e3; Qxh6 loses Q to Rxh6. Verify the LAST capture and castling status before Bh6.
 - OPEN A-FILE: axb5 axb5 opens Ra8-a1. Bc1/Bb1 can block a rook recapture; queen retreats then lose Ra1. Resolve rook contact first. Ra1/Rf1 defend each other only with b1-e1 empty.
-- Calculate through the LAST recapture and recount BOTH armies. Nc4 Qxc4 Qxc4 Rxc4 lost N. T41 central liquidation plus Bxa1/Rxa1 cost N+R+B for N+R+P: B down for P. Opponent may STOP exchanging: Qd5 Rxd5 loses Q for R despite support.
-- RECAPTURE CLEARANCE: Qe2 stood behind Rc2. Ra2 Rxa2 Qxa2 Qxa2 lost my WHOLE Q after exchanging one rook each. Sweep my recapturer's destination AFTER the enemy capture opens its rank/file.
-- An attacked piece need not retreat. b3 attacked Rc4 but opened Bf6-a1: Bxa1 bxc4 Bc3 retained extra B. Rdb1 attacked Bb2, but Bxa1 took R. Scan captures by OTHER pieces and by the attacked piece.
+- Calculate through the LAST recapture and recount BOTH armies. Nc4 Qxc4 Qxc4 Rxc4 lost N. Opponent may STOP exchanging: Qd5 Rxd5 loses Q for R despite support. T41 Final Qxd5+ cxd5 Rxd5 erased the advertised connected-pawn benefit.
+- RECAPTURE CLEARANCE: with Qe2 behind Rc2, Ra2 Rxa2 Qxa2 Qxa2 lost my whole Q after exchanging one rook each. Sweep my recapturer's destination AFTER the enemy capture opens its rank/file.
+- An attacked piece need not retreat. b3 attacked Rc4 but opened Bf6-a1: Bxa1 bxc4 Bc3 retained extra B. Rdb1 attacked Bb2, but Bxa1 took R. Search captures by OTHER pieces and by the attacked piece.
 - Refresh pins when endpoints move. Nd4 Nxd4 cxd4 opens Rxd8+ against Qd8. Kb1 released Rd2; Kf1 released Nd2's pin to Ra2. A pinned rook can capture its pinning queen.
 - Before forks/trades test captures and checking intermezzos. Nc3+ Qxc3 Rxd1 Rxd1 lost N; Bxd5 allowed Nd3+ before Qxd5. Nc7's fork did not answer Qd8's attack on Qg8.
-- Trace vacated rays beyond their first target. e5 uncovered Bf3-a8; Nf5 blocked Bf4-d6. Kb3 screened Rb1-b7; Ka4 allowed Rxb7. A checking block must survive capture.
+- Trace vacated rays beyond their first target. e5 uncovered Bf3-a8; Nf5 blocked Bf4-d6. Kb3 screened Rb1-b7; Ka4 allowed Rxb7. A checking block must survive capture and the final reply.
 - MATE FIRST, including quiet moves and queenless positions. Nxf4 hit Qh5 but allowed Qxh7#; Rxe7 ignored Rh1#. exf6 can win a minor AND support Qxg7#. Luft solves only the mate its flight prevents.
-- BACK-RANK EXCHANGES: Kg8 behind f7/g7/h7 needs an explicit Re8+ defense. Bc6 abandoned Bd7-e8 AND screened Rc8-c5. The later Rxc5 removed the last rank-8 defender and allowed Re8#. Scan mate AFTER the last recapture; compare timely luft.
-- MATING SCREENS: Qg3/Bd4 with f6 clear made Ne5 responsible for blocking g7; Bxe5 removed that screen. Nf6 still blocks the battery. Around Kc1, exchanges can open the c-file. Ka1 behind b2 on Bg7's diagonal made bxa3 illegal after Qa3 Qxa3#.
-- PAWN/DISCOVERED CHECKS: d4+ hit Ke5/Bc5; Kd5 dxc5 Kxc5 lost B for P. Rxg4+ vacated Rd4's screen of Bc3-e5; Rg8xg4 could not answer the bishop check. Inspect arrival AND vacated square.
-- QUEEN CONTACT needs a legal recapturer. Qb6 Qxb6 lost Q; Rb8 Qxb8+ lost R because c7 blocked Qd6-b8. Qg4 hit Qg5/Nf4 but Be6xg4 won Q. Verify a KING pin before excluding pawn captures: Kh2 was off the g-file, so Qxh4+ gxh4 lost Q.
-- DEVELOPING A SCREEN: Be6 can block Re8-e5. Concrete clearance can work: DeepSeek Bxb3 attacked Qd1 and opened Re8-e4. Calculate the response; do not assume recapture.
-- Validate destination and full path before submission. After ONE rejection reconstruct the board and choose a verified legal move; three invalid replies forfeit. Recovery still needs a capture scan. Match current blockers and placement before using memory.
+- BACK RANK: Kg8 behind f7/g7/h7 needs an explicit Re8+ defense. Bc6 abandoned Bd7-e8 AND screened Rc8-c5; later Rxc5 removed the last rank-8 defender and allowed Re8#. Scan mate AFTER the last recapture; compare timely luft.
+- MATING SCREENS: Qg3/Bd4 with f6 clear made Ne5 responsible for blocking g7; Bxe5 removed that screen. Nf6 still blocks the battery. Ka1 behind b2 on Bg7's diagonal made bxa3 illegal after Qa3 Qxa3#.
+- DISCOVERED CHECKS: Rxg4+ vacated Rd4's screen of Bc3-e5; Rg8xg4 could not answer the bishop check. Rd5# discovered Bc3-h8; capturing the moving rook would leave check unanswered. Identify the actual checker.
+- QUEEN CONTACT needs a legal recapturer. Qb6 Qxb6 lost Q; Rb8 Qxb8+ lost R because c7 blocked Qd6-b8. Qg4 hit Qg5/Nf4 but Be6xg4 won Q. Verify king pins before excluding pawn captures: Kh2 was off the g-file, so Qxh4+ gxh4 lost Q.
+- Validate destination and full path before submission. After ONE rejection reconstruct the board and choose a verified legal move; three invalid replies forfeit. Recovery still needs a capture scan. Match blockers, placement and castling status before using memory.
 
 ## Clock and endings
 - Deadline INCLUDING output: book/forced 1-5 seconds; quiet 10-15; critical 20-40. Below five minutes cap 15; below 90 seconds use 1-3. Budget from starting clock, especially Armageddon White's ten minutes.
-- Long thought does not prove the scan passed. T41 Nxe4/Rxe4 took 54/32 seconds and Rd8 60; all missed captures/counts. Fatal T40 Rxc5 took five as a routine recapture. Spend critical time on complete chains, changed screens and flights.
-- Verified recaptures/conversion need 1-5 seconds unless checks, pawn moves or changed rays alter them. Familiar recaptures can move a last guard. T41 GLM: Qxd5 and Qxh7# took four seconds each; zero invalid, finished 14:25.
+- Long thought does not prove the scan passed. T41 Nxe4/Rxe4 took 54/32 seconds, Rd8 60. Final Rb7/g6 took 54/53; Bd6 took 32 and hung B. Finished 7:37 with zero invalid: time shortage did not cause the loss. Spend critical time on chains, changed screens and flights.
+- Verified recaptures/conversion need 1-5 seconds unless checks, pawn moves or changed rays alter them. Familiar recaptures can move a last guard. T41 GLM Qxd5 and Qxh7# took four seconds each.
+- Material comes from the board, not comments or my previous evaluation. Equal trades preserve deficits. T41 Final Qxd4 won P; Qxb7 restored equality, then Rxd5 left me P down. Connected pawns are not an advantage if the first one falls immediately.
 - Ahead: remove counterplay and simplify safely. Before heavy-piece trades list cheaper capturers, legal recapturers and abandoned guards. Rf4 Bd2xf4 Bxf4 loses the exchange.
-- Material comes from the board, not comments or my previous evaluation. Equal trades preserve an earlier deficit or surplus. T41 GLM: Nd5/Nxd5/Qxd5 preserved my extra N; Qxb2 left N for two pawns, not Black ahead. Include home pieces in both armies.
+- ROOK DESTINATIONS NEED EXITS: T41 Final c4 displaced Rb5 to Rb4; Bd2 then attacked it with a cheaper piece while a5 was loose. Pawn support from c5 did not prevent displacement or Bxa5. Count enemy pawn kicks and bishop approaches before advancing R.
+- KING CAGE BEFORE PAWN COUNTERPLAY: T41 Final Kf5 with own e5/g5/h5 faced f3/g3 and Bd8. Rf6# was bishop-supported through e7; f3 covered e4/g4, g3 covered f4, and Rf6 covered e6/g6. Ra7's blockade did not answer mate. Map all eight exits before pushing around K.
 - CONNECTED PASSERS NEED A BREAK: Astra's Nd4/e3/K blockaded c4/d5 while N collected g7/h6. Remote king raids did not dislodge it; d4 allowed exd4. Compare blockade removal and promotion tempi before raiding.
-- Supported passers can purchase exchanges. Qc7 Qxc7 dxc7 retained the passer; Bxc7 removed it. Re8 Rxe8 fxe8=Q+ exchanged one rook and the passer for the last enemy rook and a queen. Check capture-promotions as recaptures.
+- Supported passers can purchase exchanges. Qc7 Qxc7 dxc7 retained the passer; Bxc7 removed it. Re8 Rxe8 fxe8=Q+ removed the last enemy rook and promoted. Include capture-promotions as recaptures.
 - Stop advanced counterplay before remote raids. Re8 blockaded e6; bxc5 removed another advanced pawn; Rxe7 stopped promotion. Threats against g3 did not stop connected queenside passers.
-- KING AS SOLE ROOK GUARD: Re6 beside Ke7 faced Rf7+, supported by g6. The check drove K away, then Rxe6 won R. Test checks that deflect K and both capture squares of advanced pawns.
+- KING AS SOLE ROOK GUARD: Re6 beside Ke7 faced Rf7+, supported by g6. Check drove K away, then Rxe6 won R. Test checks deflecting K and both diagonals of advanced pawns.
 - B+P: preserve the LAST pawn with K support before sending B away. Bd8 alone guarded a5; Bxg5 let Ka4 approach while h6-h7 tied B to h8. Check access to the chain's base before exchanging B.
 - Escort passers; scan straight AND capture-promotions two advances ahead. c2 attacks b1/d1; a2 outran Kxa3. b8=Q+ can discover Ra7-d7, making Rxb8 illegal. Include en passant beside two-square pushes.
-- King activity needs legal targets, arrival times and all eight exits. Ke4 hit d4 but Kc5 guarded it. Pawn enclosures can permit pawn/knight mate; material-seeking king moves still need a flight map.
-- Verify mating support, blocks, flights and stalemate. Rb1+ Bf1 Bh3 supported Rxf1#; pinned B could not take Bh3. Qxd6# used Re7/Bf3 and enemy pawns to cage Kg6; d5 blocked Qd1's defense.
+- King activity needs legal targets and arrival times. Ke4 hit d4 but Kc5 guarded it. d4+ forked Ke5/Bc5; Kd5 dxc5 Kxc5 lost B for P. Pawn enclosures can permit pawn/knight mate. Verify support, blocks, flights and stalemate before finishing.
 
 ## White openings
-- Quiet Open Sicilian: Be2/O-O/Be3/f4/Kh1, then a4/Bf3/Qe1-g3 suits me; distinguish Dragon/Maroczy and whether cxd4 ACTUALLY occurred. Wins depended on errors. Qe1 and automatic Nxc6 after Qxe5 were inaccurate; compare immediate queen exchange.
-- T41 GLM delayed cxd4: c5/Nc6/e6 left MY pawn on d4 and knight on f3. Automatic Nc3?!/Be2?!/O-O?/Be3? missed early central opportunities; no verified replacements supplied. This is not the usual Nxd4 board. d5/exd5/exd5 renewed the attack on Nc6; O-O? ignored it and dxc6 won N for P.
-- T41 consolidation: Qd2?! was inaccurate; no verified replacement. Qb6?! allowed Nd5 with tempo on Q/B, then Qxd5 retained the surplus. Rab1 chased Q after Qxb2. Bd3/Qe4 threatened Qxh7# AND attacked Be7; Qc7 ignored mate. Audit h7 defenses before adopting this battery.
-- T40 GLM Ndb5: d6/Be2/O-O/Be3/a6 met Nd4!; Bxd4 after Nxd4 and Be3! after e5 kept material. Qb6+ required Kh1!; Qxb2 attacked Nc3. Qd3?! was inaccurate. Nd5/Nxd5/exd5 hit Be6; Rfd8 ignored it while d6 screened Rd8-Qd3. Rab1 escaped Bf6-a1 with tempo. Pawn grab has no verified refutation.
-- Taimanov battery: Bxd4 keeps B active. With f6 clear, Qg3/Bxe5 can enable mate; Nf6 blocks it. e5/dxe5/fxe5 opens Rd1 and hits Nf6; Bf6 exf6 supports mate. With Qf3/Rf8, retain the f-pawn screen or move Q before fxe6.
-- Maroczy Qa5 BEFORE f3: Be3 loses e4 because Nc3 is pinned. With f3/Qxd4, Ng4 hits Be3 AND uncovers Bg7 against Qd4. After b3, Bf2 can uncover Qa5-c3 and lose Nc3.
-- Long-castled Maroczy: Bd3/Bxd3/Rxd3 abandons Re1; Nxd5 removes Qa5-e1's screen. Short-castled: Nd5 clears Qa5-d2; queen exchange/Bxd5/exd5 enables Bd4+ against Kg1/Ra1 if b2 is empty. Must-win repetition loses the match.
-- Long-castled Dragon: Bc4/f3/Be3/Qd2/O-O-O against h5/Nc4. g4 liquidated my f/g/h pawns for Black's h-pawn. h4 avoided that but Bh6 repeated the uncastled Rh8-h6 trap. Near equal before Bh6; no verified replacement.
-- Short-castled Dragon: Bb3/Nxe3/fxe3 concedes bishop pair. Bg4 hits Qe2 through f3; Nf3 blocks. Nxf3+ needed gxf3, Bh3 needed Rfe1, Bxc3 needed bxc3. Qh4/Rd3 allowed Rc5-h5; Qxa5 ignored Qg4+ and mate. Trade offers work only if accepted.
-- Ruy guards: Qxf3 abandons d5; exd5 can expose Rxe1+ with Bb1/Bc1 blocking Ra1. Bf4 permits Bxe4 with tempo on Qf3. e4 screens Bc6-f3 AND guards Nf5; Qxe4 meets Rxe4.
+- Quiet Sicilian: Be2/O-O/Be3/f4/Kh1, then a4/Bf3/Qe1-g3 suits me; distinguish Dragon/Maroczy and whether cxd4 ACTUALLY occurred. Wins depended on errors. Qe1 and automatic Nxc6 after Qxe5 were inaccurate; compare immediate queen exchange.
+- T41 GLM omitted cxd4: my pawn remained d4 and N remained f3. Automatic Nc3/Be2/O-O/Be3 missed central opportunities; no verified replacements. d5/exd5/exd5 renewed the attack on Nc6; O-O ignored it and dxc6 won N for P. Qd2 was inaccurate. Later Nd5 hit Qb6/Be7; exchanges retained my extra N, and Bd3/Qe4 threatened Qxh7# plus Be7.
+- Ndb5 vs GLM: after d6/Be2/O-O/Be3/a6, Nd4! Nxd4 Bxd4 and Be3! after e5 kept material. Qb6+ required Kh1; Qxb2 attacked Nc3. Qd3 was inaccurate. Nd5/Nxd5/exd5 hit Be6; Rfd8 ignored it while d6 screened Rd8-Qd3. Rab1 escaped Bf6-a1 with tempo. No verified refutation of the pawn grab.
+- Taimanov: Bxd4 keeps B active. e5/dxe5/fxe5 opens Rd1 and hits Nf6. Bf6 exf6 can win B and support mate. With Qf3/Rf8 retain the f-pawn screen or move Q before fxe6.
+- Maroczy: Qa5 BEFORE f3 makes Be3 lose e4 because Nc3 is pinned. With f3/Qxd4, Ng4 hits Be3 AND uncovers Bg7 against Qd4. b3/Bf2 can uncover Qa5-c3. Long castling: Nxd5 or Bd3/Bxd3/Rxd3 abandons e1 defenses. Short castling: Nd5/exchanges can enable Bd4+ against Kg1/Ra1 if b2 is empty.
+- Dragon: long-castled g4 liquidated my f/g/h pawns for Black's h-pawn; h4 avoided that but Bh6 repeated the uncastled Rh8 trap. Short-castled Bb3/Nxe3/fxe3 concedes bishop pair; Bg4 attacks Qe2 through f3. Nxf3+ needed gxf3, Bh3 needed Rfe1, Bxc3 needed bxc3. Qh4/Rd3 allowed Rc5-h5; Qxa5 ignored Qg4+ and mate. Trade offers defend only when accepted.
+- Closed Ruy: Qxf3 abandons d5; exd5 can expose Rxe1+ with Bb1/Bc1 blocking Ra1. Bf4 permits Bxe4 with tempo on Qf3. Nf1 restores Qd1-d4; Qf3 abandons b3. Nxd4/Qxd4 can lose loose Bc2 on cleared Qc7-c2. f6 hits Re7 AND opens Bc2-h7: compare mate before grabbing.
 - Zaitsev: g6/Qd6 guards f4 after exf4; avoid f4 with Be3/Ng3. h4-h5 induced g5 and freed Nf5 with tempo, but g4/f3 were mistakes. Distinguish Nb4/c5/d5/Nd7 from Nb8.
-- Chigorin: Nf1 restores Qd1-d4; Qf3 abandons b3. Nxd4/Qxd4 can lose loose Bc2 on cleared Qc7-c2 file. Rdc1 can abandon d5's sole guard. f6 hits Re7 AND opens Bc2-h7: compare mate before Qxf4.
-- Classical Caro: h4/h5, Nf3/Bd3/Qxd3/Bf4/O-O-O/Kb1. Ne5 Nxe5 dxe5 opens Rd1 and hits Nf6. Nd7 permits Qxd7 Qxd7 Rxd7, winning N; Bf6 exf6 wins B for P. Be1 guards Ng3 through f2.
 - Ruy d3: c3/h3/Re1/Bc2/d4; e5 clears Bc2-h7. Qd3/Bb1 threatens Qh7#, answered by g6. Before g3/h4 calculate f5/fxe4 and queen entry. SF's e4 displaces Nf3 and Ne5-d3-f4 invades.
-- Ruy Bg4/Qe2/Nc6: h3 Nd4 hits Qe2/Bb3/Nf3; Qe3 Bxf3 Qxf3 loses Q. Ba7/exd4 makes cxd4 open Ba7-d4; e5 Nxe5 is supported by d6.
+- T41 Berlin d3 vs Sonnet: exd4/cxd4/d5 needed e5!, but familiar Nf1 was a mistake. Nxg3 hxg3 opened the h-file; Bf4/Bd3/Qxd3 and Re3-h3 plus g4-g5 built mate. hxg5 cleared Rh3-h7 for Qh7#. a3/Nh2 were inaccurate; no verified replacements.
+- Classical Caro: h4/h5, Nf3/Bd3/Qxd3/Bf4/O-O-O/Kb1. Ne5 Nxe5 dxe5 opens Rd1 and hits Nf6. Nd7 permits Qxd7 Qxd7 Rxd7, winning N; Bf6 exf6 wins B for P. Be1 guards Ng3 through f2.
 
 ## Black openings
-- Italian vs DeepSeek: Bc5/Nf6/O-O/d6/a6/Ba7 is usable. Be6 screens Re8-e5; Bg4-h5-g6 avoids that. Qe7/e4 enabled Nxe5/dxe5/Qxe5 to win ONE pawn; Qd5 then lost Q to Nf6xd5.
-- T40 Italian: h6/Be6/d5/exd4 met cxd4??; dxe4! was required. Nxe4?! allowed Rxe4!, but Bxb3! attacked Qd1 and cleared Re8-e4. axb3? allowed Rxe4, winning a whole rook. No verified improvement to Nxe4. Rxa6 lost R to b7xa6; dxe5 cleared Qd8-d1.
-- English vs GLM: e5/Nf6/Nc6/d5/cxd5/Nxd5, then Nb6/Be7/O-O/Be6/Qd7/Rad8 developed actively. White's c-pawn was gone: not a Maroczy. Nxd4/Qxd4 lost Q on open Qd8-d4 file. Distinguish e4 before Bg2 from d3.
-- Castled Four Knights: Nd5 Nxd5 exd5 e4 dxc6 exf3 Qxf3 dxc6 leaves equal material. Qd4/Bg4/Bd6 and queen exchanges repeatedly reached near equality. Others gained P with Bd6/Qh4 before Qd4; compare matching boards, not a forced improvement.
-- Four Knights queenless: Rae8/Be6/Rxe6 remains playable. Rfe8/f5/g6/c5 reached near equality. Re6/Re8 do not guard f5; Kf7 can block Rf8-f5; Ke7 can block Re8-e6. Calculate e4/exf5 before king moves or expansion.
-- Chigorin vs Sonnet: Na5/c5/Qc7, central exchanges/Nc6, a5-a4/Bd7/Rfc8. Rc1/Bb1 pins Nc6: move Q off c7 BEFORE d5. Qb7 passed twice. Na5/Be6 allowed supported Bxb5/Bxa4; Ra2 lost Q through capture clearance.
-- T40 SF2 Chigorin: after a3, Na5?!/Nc4?!/Rxc4?! were inaccurate; b5 support did not justify a rook outpost attacked by Bd3. Qxe4! after Bxe4 retained equality and bishop pair. Bc6 screened Rc8-c5 and abandoned e8; Rxc5 allowed Re8#. No verified repair.
-- T41 Sonnet: Bb7/Re8/Bf8, exd4/Na5/c5/Nc4-e5 met d5/b3/Nxe5. Rxe5/f4/Re8 retained material; h6?! was inaccurate. After g6/Bg7/Be3/Qc7/Qd2?, Nxe4? and Rxe4?? lost B for P despite Bg7-a1's discovered attack. Bb7-e4 was blocked; no verified replacement.
+- Four Knights: castling before Nd5 matters. Nxd5/exd5/e4/dxc6/exf3/Qxf3/dxc6 leaves equal material. Against Bc4, Bd6 and Qh4 threaten Qxh2#; T41 Final d4/g3 allowed Qxd4!, gaining P with tempo on Bc4. This worked on my actual board; it is not a forced pawn win against every reply.
+- T41 Final continuation: Be6/Bxe6/fxe6! opened f-file; Qb3/Qd5/Qxb7 and Rfb8/Rb6/Rab8 gave activity but surrendered the extra P. Rd1 was the warning: e5?! then Qxd5+ cxd5! Rxd5! left P down. Calculate the queen trade through the rook capture; no verified replacement for e5 supplied.
+- Four Knights queenless: Rae8/Be6/Rxe6 and Rfe8/f5/g6/c5 have reached near equality. Re6/Re8 do not guard f5; g6 does. Kf7 can block Rf8-f5; Ke7 can block Re8-e6. Calculate e4/exf5 and g4/gxf5 before king moves or expansion.
+- T41 round 4: Kg7 unpinned f5 but gxf5 gxf5 Rxf5 lost P because g6's guard moved away. Kh8 entered Bc3-h8's cage; Be5 Rxe5 left a nominal rook recapture allowing bishop mate. Rxh2+ lacked the lost bishop's support; Rd8 allowed discovered Rd5#.
+- Italian vs DeepSeek: Bc5/Nf6/O-O/d6/a6/Ba7 is usable. Bg4-h5-g6 avoids Be6 screening Re8-e5. Qe7/e4 enabled a one-pawn gain, but Qd5 lost Q to Nf6xd5. T41 Qd7/Nf6 were inaccurate despite winning; no verified repairs.
+- T40 Italian: h6/Be6/d5/exd4 met cxd4??; dxe4! was required. Nxe4?! allowed Rxe4!, but Bxb3! attacked Qd1 and cleared Re8-e4. axb3? allowed Rxe4, winning a whole rook. No verified improvement to Nxe4. Rxa6 lost R to b7xa6.
+- English vs GLM: e5/Nf6/Nc6/d5/cxd5/Nxd5, then Nb6/Be7/O-O/Be6/Qd7/Rad8 developed actively. White's c-pawn was gone: not a Maroczy. Nxd4/Qxd4 lost Q on the open Qd8-d4 file. Distinguish e4 before Bg2 from d3.
+- Chigorin: Na5/c5/Qc7, central exchanges/Nc6, a5-a4/Bd7/Rfc8. Rc1/Bb1 pins Nc6: move Q off c7 BEFORE d5. Qb7 released it. Na5/Be6 allowed supported Bxb5/Bxa4. T40 SF Na5/Nc4/Rxc4 were inaccurate; b5 support did not justify Bd3's attack on the rook. Qxe4! after Bxe4 retained equality.
+- T41 Sonnet: Bb7/Re8/Bf8, exd4/Na5/c5/Nc4-e5 met d5/b3/Nxe5. Rxe5/f4/Re8 retained material; h6 was inaccurate. After g6/Bg7/Be3/Qc7/Qd2, Nxe4? and Rxe4?? lost B for P: Bb7-e4 remained blocked.
 - Astra Ruy: Qb7 released Nc6; Bd8-b6/Na5-c4 reached equality before Qb6 hung Q. Zaitsev exd4/Nb4/c5/Nd7/f5 gave activity; N7f6/d5 inaccurate. Queen exchange left bishop pair plus P, then unsupported Bc6 lost B.
-- Classical Caro: h6/Bh7/Nd7/Bxd3/e6/Ngf6/Be7/O-O. Against O-O/c4/Rfe1, c5 d5 was adverse. Long-castling Nxe5/dxe5/Nd5 lacked validation. Gifts certify neither setup.
-- Ruy d3: Re8/Bb7/Bf8, central d5 exchange, f5/Qd7/g6. Nxe3 Qxe3 permits f4 forking Q/Ng3, but fxe3 avoids it. Move Q off Rd1's file BEFORE e4 dxe4. Be7 can screen Re8-e5.
-- SF Ruy 6.d4: exd4/Nd5/Nxd4, Nb6/Nxa4, d6/Bxd6/Be6 reached near equality. Against Rad1/Bxd6, cxd6 retained d6; Qe7 lost it. Qb6 dxe5 uncovers Be3-b6. Solve the open d-file.
-- Advance Caro: f6 Nf4/Qd6 exd6 repeatedly loses Q. Earlier f6 BEFORE cxd4 worked with c3 screening Qb3-d3 and Nd2 blocking Rd1-d3. Queenless f6/Rxf6/Ne5 differs: dxe5 clears Be3-b6 while hitting Rf6.
-- QGD: Bxf3 Qxf3 removes Nf3 and Qd1's d4 guard, permitting Nxd4. Nb4 clears Rc8-c4 AND Bb7-f3; Qe2 Bxf3 Qxf3 abandons c4, gxf3 retains its guard. Bd6 loses B if d4 blocks Rd1-d6.
-- QGD Bg5/IQP: Nbd7, dxc4/c5/cxd4, b6/Bb7/Rc8 developed smoothly. Nxf6 preserved pawns; Nd5 blockaded d4; Nxd5 Bxd5 retained e6. Nc4 supplied the piece. h6/Qc7/Rfd8 were adverse despite winning.
+- Ruy d3: Re8/Bb7/Bf8, central d5 exchange, f5/Qd7/g6. Nxe3 Qxe3 permits f4 forking Q/Ng3, but fxe3 avoids it. Move Q off Rd1's file BEFORE e4 dxe4. SF Ruy 6.d4: exd4/Nd5/Nxd4, Nb6/Nxa4, d6/Bxd6/Be6 reached near equality; against Rad1/Bxd6, cxd6 retained d6 while Qe7 lost it. Qb6 permits dxe5 uncovering Be3-b6.
+- Caro: Classical h6/Bh7/Nd7/Bxd3/e6/Ngf6/Be7/O-O; c5 d5 against O-O/c4/Rfe1 was adverse. Advance f6 Nf4/Qd6 exd6 repeatedly loses Q. Earlier f6 BEFORE cxd4 worked with c3 screening Qb3-d3 and Nd2 blocking Rd1-d3. Queenless f6/Rxf6/Ne5 differs: dxe5 clears Be3-b6 while hitting Rf6.
+- QGD: Bxf3 Qxf3 removes Nf3 and Qd1's d4 guard, permitting Nxd4. Nb4 clears Rc8-c4 AND Bb7-f3; Qe2 Bxf3 Qxf3 abandons c4, gxf3 retains its guard. Bd6 loses B if d4 blocks Rd1-d6. IQP Nbd7/dxc4/c5/cxd4/b6/Bb7/Rc8 developed smoothly; Nd5 blockaded d4 and Bxd5 retained e6. h6/Qc7/Rfd8 were adverse despite winning.
 
 ## Opponents
-- SF19: takes loose material, exploits pinned guards/king screens and checks deflecting sole defenders. e4/exf5 exposed Re6; fxg6 supported Rf7+ and promotion. Never rely on repetition or treat an offered Q as full recovery.
-- Astra: coordinated Closed Ruy bishops/knight; takes unsupported Q/B immediately. Nd4/e3/K blockaded my passers while N took g7/h6 and a g-pawn promoted. Calculate replies independently.
-- Sonnet: exploits blocked recaptures, clearance, pawn forks and back-rank mate. T41 retained Bc2/Ng3's e4 captures, completed Bxe4/Rxa1, blockaded c4 and converted through Bf6xd8. A queen mistake invites calculation, not my familiar grab.
-- DeepSeek: takes loose pieces but misses forcing clearance and final captures. Rxe4! exploited Be6's screen, then axb3? ignored the opened e-file. Rxa6 missed b7's capture; dxe5 opened Qd8-d1. Comments miscount material and invent forced moves.
-- GLM: English g3/e4 or d3 after exchanging c4; can omit recaptures or lose Q on open files/pawn diagonals. As Black, follows Sicilian setup despite unresolved center: T41 castled while d5 attacked Nc6, miscounted my extra N, and ignored Bd3/Qe4's mate threat. T40 ignored Be6's pawn attack and capture-promotion. Verify independently; errors do not validate my opening.
+- SF19: takes loose material, exploits pinned guards, king screens and checks deflecting sole defenders. Final Qxb7 and Qxd5+/Rxd5 removed my pawn advantage; c4/Bd2 displaced my rook, then f3/Bd8 and queenside passers exposed my king cage. No reliance on repetition or an offered queen as full recovery.
+- Astra: coordinated Closed Ruy bishops/knight; takes unsupported Q/B immediately. Nd4/e3/K blockaded my passers while N collected kingside pawns and a g-pawn promoted.
+- Sonnet: exploits blocked recaptures, clearance, pawn forks and back-rank mate. T41 completed Bxe4/Rxa1, blockaded c4 and converted through Bf6xd8. A queen mistake invites fresh calculation, not my familiar grab.
+- DeepSeek: takes loose pieces but misses forcing clearance and final captures. Italian Rxe4 exploited Be6's screen, then axb3 ignored the opened e-file. T41 Ba4 attacked my queen but Qxa4 won B; Qf5 answered a discovered queen attack while ignoring Nf4-supported Qxg2#. Comments invent guards and miscount material.
+- GLM: English g3/e4 or d3 after exchanging c4; can omit recaptures or lose Q on open files/pawn diagonals. As Black follows Sicilian setup despite unresolved center, miscounts missing pieces and ignores Bd3/Qe4's mate. Verify independently; errors do not validate my opening.
 - Fable: missed Qxc2 after central exchanges; Qc1+ ignored Bf4-c1, then Nd5 hung N. Verify remote captures independently.
 
 ## Note files
@@ -91,7 +85,7 @@
 - notes/berlin-endgame.md - D-file, clearance and English capture chains.
 - notes/caro-kann-advance.md - Breaks and queenless mate.
 - notes/deepseek.md - Italian rook screens, capture chains and conversion.
-- notes/four-knights.md - King screens, rook guards, pawn checks and races.
+- notes/four-knights.md - Pawn-winning setup, queen exchanges, king screens and mating cages.
 - notes/qgd-exchange.md - IQP blockades, capture chains, clearance and mate.
-- notes/ruy-lopez.md - Separate bishop paths, material counts, rook captures and back-rank mate.
+- notes/ruy-lopez.md - Separate bishop paths, rook captures, h-file attacks and back-rank mate.
 - notes/sicilian-maroczy.md - Actual central structure, pawn screens, mating batteries and passers.
