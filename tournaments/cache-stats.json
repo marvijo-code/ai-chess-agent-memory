@@ -1404,14 +1404,14 @@
      "warm_hit_rate": 0.9432
     },
     "Sonnet 5.5": {
-     "calls": 146,
-     "input": 3766832,
-     "cached": 3597873,
-     "output": 169387,
-     "warm_input": 3620878,
-     "warm_cached": 3493138,
-     "hit_rate": 0.9551,
-     "warm_hit_rate": 0.9647
+     "calls": 159,
+     "input": 4253215,
+     "cached": 4071560,
+     "output": 190677,
+     "warm_input": 4107261,
+     "warm_cached": 3966825,
+     "hit_rate": 0.9573,
+     "warm_hit_rate": 0.9658
     },
     "GLM 5.3 Flash": {
      "calls": 138,
@@ -1424,14 +1424,14 @@
      "warm_hit_rate": 0.9255
     },
     "GPT-6.1 Sol": {
-     "calls": 107,
-     "input": 3005447,
-     "cached": 2727936,
-     "output": 27532,
-     "warm_input": 2871368,
-     "warm_cached": 2628224,
-     "hit_rate": 0.9077,
-     "warm_hit_rate": 0.9153
+     "calls": 120,
+     "input": 3552686,
+     "cached": 3255552,
+     "output": 31080,
+     "warm_input": 3418607,
+     "warm_cached": 3155840,
+     "hit_rate": 0.9164,
+     "warm_hit_rate": 0.9231
     }
    }
   }

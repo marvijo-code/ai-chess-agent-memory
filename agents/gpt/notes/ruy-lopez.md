@@ -1,26 +1,29 @@
-# Ruy Lopez: capture safety, promotion and guard duties
+# Ruy Lopez: current guards, pawn captures and clearance
 
-## T38 semifinal: Black vs Sonnet, Chigorin loss
-- Nb3/Be3 met Bd7/Rac8, then d5. Na5 was marked inaccurate; Nxa5 required Qxa5. White's d5 was also inaccurate: neither annotation supplies a verified alternative. Queen and rook exchanges reached equal minor pieces; the opening did not lose material.
-- Bb4 aimed at d6, relatively pinned to Ke7. Kf8 was a mistake: Bc7 already guarded d6, and retreating the king surrendered central activity to free a pawn's defense of e5 without an immediate capture. Count attackers and legal capture chains before treating a relative pin as an emergency. No verified replacement supplied.
-- g6/Ne8/f5 opened central counterplay. Nf6 hit Be4; e4 was required against Bf3. Nxg4 was inaccurate, though hxg4/Bxg4+ gained a pawn. Against f3, exf3+ and Bd7 were required; Bd7 retained a4's guard. Do not turn the later promotion into proof that Nxg4 was best.
-- White's N contained h-pawn through f3/h2, but Kxf4 and h2 created promotion pressure. Ne6+ forked Kf4/Bc7; after Kg3/Nxc7/h1=Q/Nxb5 I had given BOTH bishops for a queen. Qxd5/Nxd6 left Q+2P versus B+N+P. Promotion achieved a substantial material gain; the bishop losses were accounted for.
-- DECISIVE MISS: Qb3+ was supported by a4 and drove Kc3 to d2. Qxb4+ then took Bb4 but a3xb4 won Q for B. a3 and Bb4 guarded each other; moving K did not remove the pawn guard. a3 was not pinned to Kd2. Support on b3 did not support b4. Check enemy pawn diagonals FIRST on every new queen square, including checking captures after promotion.
-- After axb4 I had a4/g6 against N+b4. K contained a-pawn, N held g-pawn while K escorted b-pawn. My king shuffles did not stop the supported passer. Do not rely on two remote pawns to repair a lost queen; calculate the knight's blockade squares and king arrival times.
-- Zero invalid attempts; Sonnet had one Rc1 attempt through Bb1. Finished 1:23 versus 0:40. Kf8/g6/e4/Nxg4 took 52-56 seconds; Qxb4+ took four with over four minutes left. Below five minutes I still used 22-37 seconds on routine king moves. Use the clock caps and spend critical time naming enemy captures.
+## T39 round 4: White vs Sonnet, Chigorin mate loss
+- Black exchanged on d4 and returned Nc6 BEFORE Qc7. My d5 met Nb4/Bb3/a5/a3/Na6, then Nc3/Be3. Match this early branch; there was no Rc1-Qc7 pin to import. The opening did not lose material.
+- Nc5 was marked a Black blunder, but Ba2 was also a blunder. Nc5/Nf6 both attacked e4; Nc3 was its sole guard because Be3 blocked Re1. Nfxe4 Nxe4 Nxe4 would trade knights and win P. Saving the attacked bishop did not answer the central threat. Black's a4 missed that chance.
+- Bxc5 forced dxc5: Be7 could not recapture through its own d6 pawn. This removed e5's pawn guard. Nxe5 gained P but was marked inaccurate; no verified replacement supplied. Do not equate a safe capture with the best move.
+- Nc6 and dxc6 were required after Bd6/Bxc6. Nd5 was inaccurate; Bxd5 was required after Nxd5 and kept c6 supported. The passer gave pressure, not a forced win.
+- DECISIVE: Qf6 attacked Bd6 but g7xf6 won Q. The pawn was not pinned; neither rook was on the g-file. Inspect enemy pawn diagonals on EVERY queen destination before calculating the attack. Black's preceding Bd6 inaccuracy did not make my reply safe.
+- Re3/Rc1 faced Bd6. f4 was unguarded: Re3 attacks f3, not f4. Bxf4 hit Re3 AND Rc1 behind e3/d2. Rec3 saved the front rook and connected the rooks, but Bxc1 Rxc1 still lost the exchange. A defended rook remains an attractive target for a bishop.
+- Bd5 screened Qd6 from Rd1. Rd2 preserved the same d-file dependence. Rxe4 induced Bxe4, clearing d5 for Qxd2. Name the bishop's screen duty before accepting a rook capture.
+- c7 allowed Qd4+, forking Kg1/Be4. Qxe4 removed B; c8=Q Rxc8 removed the passer. A promotion threat does not stop a checking capture, and promotion into an available rook capture adds no lasting material.
+- Zero invalid moves; finished 7:14. Qf6 took 46 seconds with over eleven minutes left; Nd5/Rac1 took 59/70. Time shortage did not cause the loss. Shorten routine play and use critical time for pawn captures, old-square rays and the final recapture.
 
-## T38 round 5: White vs Sonnet, Chigorin loss
-- Nc6 returned BEFORE Qc7. d5 met Nb4/Bb3/a5/a3/Na6-c5; a4 fixed a3. Do not import automatic Bb1 or a later Rc1-Qc7 pin. Opening did not lose material.
-- h4 was inaccurate. h5/Bxg7/hxg6 opened Black's f-file without a verified attack. Name my entry and the enemy file a storm opens.
-- Bd3 invited Nxd3/Qxd3; the required queen recapture abandoned f2. Rf1 alone faced both f-rooks, so Rxf2 won P. Audit the final recapturer's OLD guards before offering a trade.
-- Rxf2/rear-rook recapture exchanged one rook each. Queen exchange left R+N+5P versus R+B+6P, not a rook deficit.
-- Ne2 moved Ng3 onto Rc2-d2-e2 with no guard from Rb1/Kh2. Rxe2 won N. Centralization did not justify the destination; the viewer omitted this decisive miss. Ne2 took 55 seconds.
-- Supported e-pawn then reached e2; Bd3/Bc4 guarded it and Rd1 attacked blockading Re1. Rxd1 allowed exd1=Q; Rxe2 allowed Bxe2. A blockade needs an answer to the supporting pieces.
+## T38 White Chigorin vs Sonnet
+- Nc6 BEFORE Qc7; d5 met Nb4/Bb3/a5/a3/Na6-c5 and a4. Opening preserved material. h4 was inaccurate; h5/Bxg7/hxg6 opened Black's f-file without a verified attack.
+- Bd3 invited Nxd3/Qxd3; Q's departure abandoned f2 to doubled rooks. Queen exchange left R+N+5P versus R+B+6P, not a rook deficit.
+- Ne2 landed undefended on Rc2's rank; Rxe2 won N despite my centralization plan. Supported e2 then tied down Re1 while Rd1 and B threatened its removal.
+
+## T38 Black Chigorin vs Sonnet
+- Equal minor-piece ending after exchanges. Kf8 was a mistake: Bc7 already guarded d6; retreating K surrendered central activity without an immediate capture to prevent. Count the actual chain before treating a relative pin as an emergency.
+- Nxg4 was inaccurate despite gaining P. Later h2/h1=Q purchased a queen for BOTH bishops; Qxd5/Nxd6 left Q+2P versus B+N+P.
+- Qb3+ was supported by a4, but Qxb4+ lost Q to a3xb4. a3 and Bb4 guarded each other; Kd2 did not pin a3. The queen's new square needed a fresh pawn scan.
 
 ## Retained patterns
-- T37 Astra Zaitsev: Bb7/Re8/Bf8, exd4/Nb4/c5 and Nd7/f5 gave play. N7f6/d5 were inaccurate. Queen exchange left bishop pair plus pawn; Bc6 reinforced b5 but neither b5 nor d5 guarded c6. Nxc6/Bxe3/fxe3 left six pawns against N+five pawns.
-- Nd4/e3/K blockaded c4/d5 while N collected kingside pawns. a3/Ka4 raids failed to distract K; d4 allowed exd4. Connected passers need a breakthrough and race count.
-- Qb7 releases Nc6 before d5. Qb6 can hang Q to Qxb6 despite attacking Qc7. Nd2 blocks Qd1-d3; Bd3 is loose. Bb1 can clear Rc1-c7 and pin Nc6 to Qc7.
-- Rdc1 abandons d5 if Red1 is its sole guard. En passant fxg6 can unnecessarily activate Kxg6 against Nf7.
+- Astra Zaitsev: Bc6 reinforced b5 but neither b5 nor d5 guarded c6. Nxc6/Bxe3/fxe3 left six pawns against N+five pawns. Nd4/e3/K blockaded c4/d5 while N collected kingside pawns; a3 raids failed and d4 allowed exd4.
+- Qb7 releases Nc6 before d5. Qb6 can hang Q to Qxb6 despite attacking Qc7. Bb1 can clear Rc1-c7 and pin Nc6 to Qc7; Nd2 blocks Qd1-d3 and leaves Bd3 loose.
+- Rdc1 abandons d5 if Red1 is its sole guard. Optional en passant fxg6 can activate Kxg6 against Nf7.
 - f4 with Be3/Ng3 loses to exf4; Bxf4 Qxf4 fails when g6/Qd6 guards f4. Be7 screens Re8-e5.
 - axb5/axb5 opens Ra8-a1 behind Bb1/Bc1. Qxf3 abandons d5; exd5 can expose Rxe1+ without a recapture. Kc5 clears Rd1-d6; Kc6 supports d6 and frees other pieces.
