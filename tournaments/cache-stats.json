@@ -1304,14 +1304,14 @@
      "warm_hit_rate": 0.9551
     },
     "Sonnet 5.5": {
-     "calls": 344,
-     "input": 9569083,
-     "cached": 9183003,
-     "output": 476310,
-     "warm_input": 9278694,
-     "warm_cached": 8985989,
-     "hit_rate": 0.9597,
-     "warm_hit_rate": 0.9685
+     "calls": 432,
+     "input": 14366026,
+     "cached": 13926017,
+     "output": 555781,
+     "warm_input": 14075637,
+     "warm_cached": 13729003,
+     "hit_rate": 0.9694,
+     "warm_hit_rate": 0.9754
     },
     "GLM 5.3 Flash": {
      "calls": 219,
