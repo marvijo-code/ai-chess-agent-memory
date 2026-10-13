@@ -46,6 +46,7 @@ Notes:
 - NEVER OFFER A 'TRADE' WHOSE RECAPTURE IS ILLEGAL OR LOSING.
 - PAWN DIAGONALS before every queen destination.
 - ROOK DESTINATION: never park a rook where his pawn or bishop hits it.
+- QUEEN + ENEMY ROOK, CHECK AVAILABLE = DEFLECTION: T38R1 19...Re1+ (20.Qxe1 Nxe1) won my QUEEN for a ROOK. Before any queen move, list enemy rook checks on her rank/file and the piece left to recapture after them.
 
 ## Rule 3 - captures
 - RECAPTURE != TRADE. A 'trade' needs MY recapturer on the destination.
@@ -55,6 +56,7 @@ Notes:
 - Count EVERY recapturer - PAWNS FIRST.
 - PAWN PUSH ABANDONS GUARD DUTY.
 - WINNING CAPTURE PATTERN: his piece lands on a square two of mine hit with no guard -> take it.
+- TRACE THE CAPTURE CHAIN TO THE END BEFORE ACCEPTING: T38R1 15.Nxe5?? looked like 'my e-file rook defends e5', but after ...Nxe5 Rxe5 ...Rxe5 I had NO fourth recapturer = N for P (the d6-pawn guarded e5). Count every recapturer, INCLUDING his replies, not just mine.
 
 ## Rule 4 - material & clock
 - Down: keep queens only while SAFE; NO grabs; loose pieces first. Up: trade pieces not pawns; escort passers; promote; stalemate-check.
@@ -62,12 +64,10 @@ Notes:
 - Before ANY rook check/capture ask 'can his king take my piece?'. Do NOT castle while a central piece is lashed by two attackers.
 - WINNING ENDGAME = NO REPETITION: g168 up R+B+N I let GLM claw back to B+N vs bare K, then shuffled into a threefold repetition = DRAW. In a won position EVERY move must make progress; before repeating ask 'have I had this exact position twice?'. Trade into a simple KNOWN finish; keep a PAWN alongside if I cannot demonstrate B+N mate.
 - WHEN HUGELY AHEAD, SLOW DOWN: g168 SF blunders 17...Nxd2??, 18...Qb6??, and I hung a rook with 32...Re5??. Keep every unit guarded, no loose rook, trade into a simple winning ending.
-- Time: book <=10 s, routine <=15 s, cap 20 s; <3 min <=5 s. T37R5: 27 s on 12.c4?, 37 s on 17.Qg4?? - long thinks still blundered. T37R6: 12 s on 19.Qxd5! (good), but 8 s on 14.Bg5?? (blunder) - the written scan, not the clock, is the check.
+- Time: book <=10 s, routine <=15 s, cap 20 s; <3 min <=5 s. T37R5: 27 s on 12.c4?, 37 s on 17.Qg4?? - long thinks still blundered. T37R6: 12 s on 19.Qxd5! (good), but 8 s on 14.Bg5?? (blunder) - the written scan, not the clock, is the check. T38R1: 1:00 on 15.Nxe5?? and 0:50 on 16.Bb3 - long thinks still blundered.
 
 ## Openings (only the lines I actually play)
-- Italian Giuoco Pianissimo W (0-4): 1.e4 e5 2.Nf3 Nc6 3.Bc4 Bc5 4.d3 Nf6 5.c3 d6 6.O-O O-O 7.Nbd2 (14 plies). Sol plays 7...a6 8.Re1 Ba7; Sonnet T37R6 played 7...Be6 8.Bb3 Bb6 9.Re1 h6.
-  - 10.d4?! exd4 11.cxd4 Nxd4! 12.Nxd4 Bxd4 = down a PAWN even after 13.Nf3 Bb6: with Nbd2 home, Qd1 does NOT guard d4. Only break with d4 when d4 has a second guard or the queen's d-file is clear.
-  - 14.Bg5?? hxg5: after 9...h6 the h6-pawn ATTACKS g5 - never forking a bishop there. BANS: 10.d4?!, 14.Bg5??, 25.Rxc6?? (bxc6); T37R5: 12.c4?, 13.Bc2??, 14.Nxe5??, 15.Qe3??, 16.Bf4??, 22.Qxb2??, 17.Qg4??. ...Nf4/...Be6/...Bd4/...Qg5 g2-battery stays the main danger.
+- Italian Giuoco Pianissimo W (0-5): 1.e4 e5 2.Nf3 Nc6 3.Bc4 Bc5 4.d3 Nf6 5.c3 d6 6.O-O O-O 7.Nbd2 (14 plies). Then Bc2/Nf1-g3/h3, or Re1 with ...Be6/...Bb6/...h6 (Sonnet T37R6) or 7...a6 8.Re1 Ba7 (Sol). 10.d4?! exd4 11.cxd4 Nxd4! loses a PAWN (Qd1 does NOT guard d4 while Nbd2 is home). BANS: 10.d4?!, 14.Bg5?? (h6 ATTACKS g5), 15.Nxe5?? when the e5-pawn is guarded by d6 and my recapture chain dead-ends (N for P), 25.Rxc6?? bxc6. T37R5: 12.c4?, 13.Bc2??, 14.Nxe5??, 15.Qe3??, 17.Qg4??, 22.Qxb2??. ...Nf4/...Be6/...Bd4/...Qg5 g2-battery stays the main danger.
 - Open Sicilian W (Taimanov quiet 6.Be2): 1.e4 c5 2.Nf3 e6 3.d4 cxd4 4.Nxd4 Nc6 5.Nc3 a6 6.Be2 Be7 7.O-O Nf6 8.Be3 O-O; f4/Qd2/Rad1 central play. vs Dragon 7...d5 block ...Qa5+ with Bd2/Bd1, never Qd2??.
 - Taimanov B vs 8.e5 Nd5 9.Qg4: 1.e4 c5 2.Nf3 e6 3.Nc3 Nc6 4.d4 cxd4 5.Nxd4 Nf6 6.Nxc6 bxc6 7.Bd3 Be7 8.e5 Nd5. With king on e8 the g7-pawn has NO guard: never ...d6, never castle; cover g7 (...Bf8/Kf8) or kick the queen (...h5/...Nf6) at once.
 - vs 6.Be2 f4/e5: 11...Nd5! then 12...exd5; never a bishop on e5's capture square (14...Bf6?? exf6); after his castled Qh5+Bd3 kick her (...g6/...h6) or free h8.
@@ -79,7 +79,7 @@ Notes:
 ## Opponents
 - SF19: instant; punishes loose units, passive retreats, queens on his ranks/rays/pawn diagonals, knights on pawn-hit squares. Give him NO loose unit; resolve central tension BEFORE castling.
 - Fable 5.1: solid 6.Be2 + Qh5/Bd3 battery vs my castled king; converts Qxh7+/Bxf6/Qh8# the moment I leave a piece on an enemy pawn's capture square. Answer the battery FIRST.
-- Sonnet 5.5 (never beaten, now 0-1 in T37R6): banks clock; takes every free unit (25.Rxc6?? bxc6 = R for P) and every piece I drop onto a pawn's capture square (14.Bg5?? hxg5); builds Q+B batteries vs my castled king; converts a pawn/piece lead cleanly into a mating finish (28...Rd1#). Give him NO free unit and no pawn-hit square; keep a rank-1 blocker/luft.
+- Sonnet 5.5 (never beaten, T38R1 another 0-1): banks clock; takes every free unit and every piece on a pawn's capture square; builds Q+B batteries vs my castled king; deflects with a rook check (T38R1 19...Re1+ 20.Qxe1 Nxe1 = Q for R) and forks (17...Nxd3 hitting Re1/Bc1); converts a lead cleanly into mate (28...Qf2#). Give him NO free unit, no pawn-hit square; keep a rank-1 blocker/luft; before any queen move list his rook checks.
 - GPT-6.1 Sol: fast; takes every free piece incl. a queen on any pawn OR bishop diagonal, and any UNGUARDED developed piece. Italian: ...d5 break, then ...Nf4/...Be6/...Bd4/...Qg5 g2-battery (...Qxg2#, T37R5). Answer a mate threat WITHOUT putting my queen on his bishop's line.
 - GPT-6 Astra (lost T37R7 as B, m31): plays the Open Sicilian 6.Be2 + f4/Qe1-g3 line and the Chigorin; takes every loose piece at once (15.Bxc5 knight, 16.Bxf8 exchange), converts cleanly, finishes with a Q+R battery (30.Qf7 31.Qxh7#). Give him no loose unit; keep every piece guarded.
 - GLM 5.3 Flash (I beat W; beat B g162; DREW g168): slow, sloppy, illegal tries, misstates material; hangs loose pawns and undefended pieces (g168 12...Bxb4 won a clean pawn). But defends a lost position actively - so CONVERT cleanly: no repetition, keep a simple won ending, guard every unit.
