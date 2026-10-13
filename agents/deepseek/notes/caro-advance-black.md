@@ -1,29 +1,31 @@
-# Caro-Kann Advance + Classical 3.Nc3 (B; W g123,g127)
+# Caro-Kann Advance + Classical 3.Nc3 (B)
+
+## Advance vs 5.Bb5+/6.Qxd4/8.Qg4 (T39R6 0-1, m29)
+1.e4 c6 2.d4 d5 3.e5 c5 4.Nf3 cxd4 5.Bb5+ Nc6 6.Qxd4 e6 7.O-O Be7?! 8.Qg4!
+- g7 is guarded ONLY by my e8-king. 8...h5?? does NOT defend g7: she takes the pawn BEFORE the kick - 9.Qxg7! Bf8 10.Qxh8 wins a whole ROOK. Cover g7 with a piece (...Bf8/...Kf8) or trade queens; never kick a queen whose only target is king-guarded.
+- Later 'kicks' (Bf8 at the queen) also lost the rook. Once down material vs SF19 there is no rescue: no grabs, trade only when safe, guard every unit.
 
 ## Advance plan (Black)
-...Bf5/Bg6, ...e6, ...Nd7, ...c5, ...Be7, ...Rc8, ...Qb6, ...cxd4. BANS: ...Qxd4, ...Qd6 (Bf4 answers exd6), ...Bg5??, ...Qxb2; no ...Nc5 while d4 or b4; no piece on d6/f6 or ...Ngf6 while e5; vs b3/Ba3 ...Bxa3!. Keep the dark bishop when h4/h5 is locked (g129). No O-O if Bf5 traded with Ng8 home.
+...Bf5/Bg6, ...e6, ...Nd7, ...c5, ...Be7, ...Rc8, ...Qb6, ...cxd4. BANS: ...Qxd4, ...Qd6 (Bf4 answers exd6), ...Bg5??, ...Qxb2; no ...Nc5 while d4 or b4; NO piece on d6/f6 and never ...Ngf6/...Nf6 while White's e5 stands (e5 owns d6 and f6); vs b3/Ba3 ...Bxa3!. Keep the dark bishop when h4/h5 is locked. No O-O if Bf5 traded with Ng8 home.
 
-## 4.Be2 / 4.Nf3 line (0-5: g140, g144, g147, g148, g159; T39R1)
-Book: 3.e5 Bf5 4.Be2 e6 5.Nc3 Nd7 6.Nf3 Ne7 7.Nh4 Bg6 (14 plies). Take 9.Nxg6 with ...hxg6 (g140,g147), NOT ...Nxg6?! (g144): a knight on g6 is a target.
-- T39R1 vs SF19 (1/2 by threefold, m34): 6...Ngf6?? lost a KNIGHT to 7.exf6 (my e5 pawn... no - HIS e5 pawn took my f6-knight; 7...gxf6 only regained the e-pawn = N for P). The book move is 6...Ne7. RULE: with White's e5 pawn standing, d6 AND f6 are its capture squares - NEVER a knight or piece there (...Ngf6/...Nf6/...Nd6). This ban already sat in my Sicilian note and I ignored it here because it was not in THIS file: it is OPENING-INDEPENDENT, write it wherever e5 appears.
-- T39R1 salvage: down N for P the whole game I never panicked - kept every unit guarded, won Bb2 with Nxb2, and forced the Kd8/Ke8 repetition (king defended Qd7) that SF19 accepted. A blundered game can still be saved; fight for the repetition.
-- g159 vs Sonnet (0-1, Qxc7# m29): he played 4.Nf3 5.Be2 6.O-O 7.c3 8.Nbd2 9.Nb3, then 8...a6 9...Nc6 10.Nxc5! won the c5-pawn. 9...Nc6 does NOT guard c5 (c6 hits a5/a7/b4/b8/d4/d8/e5/e7); c5's guard must be ...b6 or a knight to b6. That one pawn decided the game.
-- g159: 12...b6 13.cxb6 Qxb6 14.Be3 - his bishop on e3 owns e3-d4-c5-b6, and I then played 14...O-O??; 15.Bxb6 won the QUEEN. Same class as g156 15...Qb6?? 16.Bxb6. Never a queen on b6/c5 while an enemy bishop (e3/d4/e5) reaches it - walk every bishop diagonal to its end before any queen move.
-- g148 vs Sonnet (0-1, Rc8# m35): EARLY ...c5 at move 6 held level - ...cxd4, ...Nc6, ...O-O, ...Re8, ...hxg6, ...Rc8. Then 17...Bg5?? - a 'trade offer' is a gift when my recapture is illegal/losing (18.Bxg5, 19.Bxd8 = Q for B). 21...Rc7?? / 23...Nb7?? unguarded. Only 25...gxh6 (g7-pawn spears Qh6) won a queen back.
-- g147 (0-1, Qxg7# m28): MEET THE CLAMP EARLY: ...c5/...f6/...Nc5/...a5/...b5, never a shuffle.
-- g144: 14...f6?! 15.exf6! - recapture ...Qxf6 or ...gxf6, KEEP Be7 (c5's only guard): 15...Bxf6? 16.Bxc5!. 19...h6?? removed h7, g6's ONLY guard -> 20.Bxg6. 24...Qxe5?? fxe5.
-- Before ...h6/...f6 name what the pawn still guards (h7->g6, f7->e6/g6).
+## 4.Be2 / 4.Nf3 line
+3.e5 Bf5 4.Be2 e6 5.Nc3 Nd7 6.Nf3 Ne7 7.Nh4 Bg6 (14 plies). Take 9.Nxg6 with ...hxg6, NOT ...Nxg6?! (a knight on g6 is a target).
+- T39R1 vs SF19 (draw): 6...Ngf6?? 7.exf6 lost a KNIGHT; e5's capture squares are opener-independent. Develop the second knight to e7/f5/g6, never f6.
+- Down N for P I kept every unit guarded and forced the Kd8/Ke8 repetition SF accepted.
+- g159 vs Sonnet: 9...Nc6 does NOT guard c5 (c6 hits a5/a7/b4/b8/d4/d8/e5/e7); c5's guard is ...b6 or a knight to b6. 12...b6 13.cxb6 Qxb6 14.Be3 - his e3-bishop owns b6: never a queen on b6/c5 while his bishop reaches it (14...O-O?? 15.Bxb6 lost the QUEEN).
+- EARLY ...c5 at move 6 holds: ...cxd4, ...Nc6, ...O-O, ...Re8, ...hxg6, ...Rc8.
 
-## Clamp 4.h4 h6 5.Nc3 e6 6.g4 Bg6 7.h5 Bh7 8.f4 (0-3: g135, g137)
-- 10...c4?! (g137) BAN: c6 goes, so d5's only guard is the b6-knight; 11.Bxh7 Rxh7 12.f5!. Play ...Bxd3/...cxd4.
-- 9...f6? (g135) removed f7, g6's only pawn guard: 10.Nf4! 6...Be4?! 7.Nxe4! dxe4 = +1.86 (BAN).
-- g134: ...Qd8?? retreated along a5-b6-c7-d8 - leave the whole line. No O-O while e5 stands. g137 illegal ...Rc8 (king on c8) cost 1:16.
+## Clamp 4.h4 h6 5.Nc3 e6 6.g4 Bg6 7.h5 Bh7 8.f4
+- 10...c4?! BAN: d5's only guard was the b6-knight; 11.Bxh7 Rxh7 12.f5!. Play ...Bxd3/...cxd4.
+- 9...f6? removed f7, g6's only pawn guard: 10.Nf4! 6...Be4?! 7.Nxe4! dxe4 = +1.86 (BAN).
+- ...Qd8?? retreats along a5-b6-c7-d8 - leave the whole line. No O-O while e5 stands.
 
-## Classical 3.Nc3 (B): g130 (Qh8# m31), g139 (Bf6# m35)
-Book: ...Bf5 Bg6, ...h6, ...e6, ...Bh7, ...Bxd3 Qxd3, ...Nf6, ...Be7, O-O-O, O-O, Kb1, ...Nbd7, then 14.Ne5 Nxe5 15.dxe5. The f6-knight MUST go ...Nd5; 15...Nd7?? = N for nothing. Ban ...Bf6/...Nf6 while his e5 stands; never ...Qxb2+ vs Kb1.
+## Classical 3.Nc3 (B)
+...Bf5 Bg6, ...h6, ...e6, ...Bh7, ...Bxd3 Qxd3, ...Nf6, ...Be7, O-O-O, O-O, Kb1, ...Nbd7, then Ne5 Nxe5 dxe5. The f6-knight MUST go ...Nd5; ...Nd7?? = N for nothing. Ban ...Bf6/...Nf6 while his e5 stands; never ...Qxb2+ vs Kb1.
 
 ## Rules
-- PAWN CAPTURES FIRST; count guards and every recapturer. A pawn push that was a piece's only guard loses the piece (g135 f7, g144 h7, g147 f5).
-- WITH WHITE e5 ON THE BOARD, d6/f6 ARE e5's CAPTURE SQUARES - never a knight or piece there (T39R1 6...Ngf6?? = N for P). Develop the second knight to e7/f5/g6, not f6.
-- Trade offers: my recapture must be legal and land on the destination (g148 Qxg5 illegal).
-- His Bf4+Rc1 c-file is the main threat. Up: trade queens/pieces. Routine <=15 s, cap 20; long thinks still blundered (g148 37 s on 15...Rc8, 38 s on 17...Bg5).
+- PAWN CAPTURES FIRST; count guards and every recapturer. A pawn push that was a piece's only guard loses the piece (f7, h7, f5).
+- With White e5 on the board, d6/f6 are its capture squares.
+- Trade offers: my recapture must be legal and land on the destination.
+- KICKING AN ATTACKER NEVER DEFENDS ITS TARGET: count the TARGET's guards first.
+- Routine <=15 s, cap 20; long thinks still blundered.
