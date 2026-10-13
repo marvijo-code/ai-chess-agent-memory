@@ -1,27 +1,26 @@
-# DeepSeek: Italian screens, clearance and conversion
+# DeepSeek: Italian tactics and conversion
 
-Wins do not certify every move. Count actual material and calculate beyond the first recapture.
+Wins do not certify every move. Count material from the board and finish capture chains.
 
-## T40 third place: Black, mate win
-- Bc5/Nf6/O-O/d6/a6/Ba7/Re8 met h3; h6/Be6/d5 challenged the center. This differs from T39's Bg4-h5-g6 route. Be6 screened Re8's file: development alone did not make that rook an actual defender.
-- After d4/exd4, cxd4?? required dxe4! White's Ng3 captured e4; Nf3 cannot reach e4. My Nf6xe4?! was inaccurate, and Rxe4! was White's correct response. The later win does not establish this knight exchange as best; no verified replacement supplied.
-- Bxb3! removed Be6 from the e-file AND attacked Qd1 along b3-c2-d1. White's c-pawn had left c2. This tempo mattered: the screen could leave before I captured Re4. axb3? removed the bishop but allowed Re8xe4, winning the undefended rook. Do not call the whole combination forced before White's inaccurate reply.
-- White claimed Rxe4 won a knight and axb3 retained that surplus. Both knights on e4 had already been exchanged; bishop capture/recapture then traded bishops. After Rxe4, I was a rook ahead with equal pawns. Derive material from occupants, never the opponent's explanation.
-- Rxa6 took a pawn but landed on b7's capture diagonal. bxa6 won White's last rook; Ba7 blocking Ra8 was irrelevant because the pawn could capture. Pawn diagonals before slider support.
-- Ne5 attacked Nc6/f7 but allowed Nc6xe5. White's d4 pawn still screened Qd8-d1; dxe5 vacated it and allowed Qxd1+. A fork does not prevent capture, and a pawn recapture can uncover a queen loss. Qxc1 then removed White's last piece.
-- Against e6, Qf4+ drove Kg1 and Re1# finished. Qf4 covered h2; Re1 controlled rank 1, while f2/g2/h3 restricted flights. The passer did not answer the forcing mate. Verify flights and blocks before executing.
-- Zero invalid; finished 13:09. Book mostly 4-13 seconds. d5/dxe4/Nxe4 took 29/24/25; exd4 took 53 without ensuring best play. Late Qxc1/Qf4+ took 28/25 despite overwhelming material. Spend critical time comparing capture chains; shorten checked conversion.
+## T41 round 5: Black, mate win
+- Bc5/Nf6/O-O/d6/a6/Ba7, then h6/Re8 and d5 against Nf1 gave active development. Unlike T40, my bishop never screened Re8 from e5. exd5/Nxd5 exchanged one pawn each; Bg4/Bxf3/Qxf3 exchanged B for N and left material equal.
+- Qxf3! was White's only good recapture. My Nf6?! and later Qd7?! were inaccurate; no verified replacements supplied. A successful central queen and eventual win do not certify those choices.
+- Bb3?! attacked Qd5 through c4; Qd7 escaped. After Rad1, Na5 challenged Bb3. Ba4?? attacked Qd7 through b5/c6 but had no defender. Qxa4! was the only good reply and won B. An attacked queen can capture its attacker: inspect contact captures before retreating. Neither rook could reach a4; d3 blocked Qe2's diagonal toward b5.
+- After Qxa4 I had B+2N against B+N, with equal pawns: an extra minor. My comment 'extra bishop' did not describe the actual piece difference. Recount rather than repeating the label.
+- Qc6 guarded b7 and offered a queen exchange; White declined. Nd5 was supported by Qc6 and e5. Against Qe4, Nf4 vacated d5 and uncovered Qc6-d5-e4 against White's queen. It ALSO guarded g2, threatening Qxg2# along c6-d5-e4-f3-g2. The knight move combined a discovered attack with mate.
+- Qf5 answered only the queen attack. Qxg2# was protected by Nf4; Kg1 had no legal capture or flight. f2/h3 held White pawns; f1/h1 were queen-controlled. Ng3 could not capture g2, and adjacent queen check could not be blocked. A queen retreat is insufficient if it leaves the second threat.
+- Zero invalid; finished about 12:50. Opening mostly 3-8 seconds. Na5/Nd5/Nf4 took 41/46/40; final mate 14. Spend critical time verifying captures and both threats, then execute a checked finish faster.
 
-## T39 third place: different Italian branch
-- Bc2 preceded d5; Bg4-h5-g6 developed without screening Re8-e5. Bxe3 fxe3 opened White's f-file. Qe7 reinforced e5; against d4, e4 hit Nf3.
-- Ne5? allowed Nxe5! dxe5 Qxe5!, exchanging knights and winning ONE pawn. Qd5? then landed on Nf6's capture square; Nxd5 Bxd5 Qxd5 won Q+B for N. A queen trade offer must survive cheaper capturers and the final capture.
-- Rad8/c5 displaced Nd4; Rxd1 Rxd1 safely exchanged a rook pair. Qxe3+ forked K/Nc5; Qxc5 removed the last minor. e3 cleared Bg6's diagonal, and queen-supported e2/e1=Q# finished. White's b2 blocked its attempted Rb1.
+## T40: e-file clearance, mate win
+- h6/Be6/d5 differed from the earlier Bg4-h5-g6 route. Be6 screened Re8-e5. After d4/exd4, cxd4?? required dxe4!; Ng3 could capture e4, Nf3 could not.
+- Nf6xe4?! allowed Rxe4!, and no verified replacement was supplied. Bxb3! then removed the e-file screen AND attacked Qd1 through empty c2. axb3? allowed Re8xe4, winning a whole rook. The combination was not forced before White's mistaken reply.
+- The knights on e4 and the bishops on b3 had already been exchanged; after Rxe4 I was R ahead with equal pawns. White's claimed extra knight was imaginary.
+- Rxa6 landed on b7's capture diagonal; bxa6 won White's last rook. Ne5 allowed Nc6xe5; dxe5 then cleared Qd8-d1 for Qxd1+. Pawn recaptures can uncover queen losses.
+- Qf4+ followed by Re1# used Q's h2 control and White's pawn-restricted flights. The e6 passer did not answer mate. Finished 13:09; long capture thinks did not establish best play.
 
-## T39 round 5: surplus squandered, ending recovered
-- b7-b5 cleared Ra7-c7; Rxc7 Rxc7 won a WHOLE ROOK. Later Rc3+?? lost that surplus to b2xc3 despite checking K and attacking B. Neither Rd4 nor Bg6 guarded c3; Rd3+ had bishop support. Pawn diagonals first.
-- Be6 beside Kd6 had only its e-file rook as guard. Rxe3+ Kxe3 removed that guard, allowing Kxe6. Reassess adjacent pieces AFTER trades. Extra B then enabled king invasion and h-promotion; remove enemy promotion counterplay after queening.
-
-## Retained traps
-- Be6 without independent e5 support can concede P by screening Re8. c4/Bc2 after d5/Nxd5 allowed Nf4/Nxd3/Bxd3/Qxd3, but Nf4 itself was inaccurate.
-- d3-d4 removed Nc4's sole pawn guard; Nxe3/Qxe3/Bxc4 won N. Qg5/Nf4 threatened Qxg2#; Qg4 lost Q to Be6. Qh5 lost Q to Bf7-g6-h5.
-- Qf3+ lost Q to g2xf3; Qxb2+/Qh2+ were king captures. Qxf2 Rxf2 lost Q after Kb1 released Rd2, with f7 screening Rf8-f2. Supported checks still require every pawn and king capture.
+## Earlier patterns
+- Bg4-h5-g6 avoids screening Re8. Qe7/e4 enabled Nxe5/dxe5/Qxe5 to win ONE pawn; Qd5 then lost Q to Nf6xd5. A queen trade must survive cheaper captures.
+- b5 cleared Ra7-c7 and won R through Rxc7/Rxc7, but Rc3+ lost it to b2xc3. Rd3+ had bishop support; Rc3 did not. Check pawn diagonals even when checking.
+- Rxe3+ deflected the rook guarding Be6; adjacency to Kd6 did not make Be6 safe from Kxe6 afterward.
+- d3-d4 abandoned Nc4's sole guard. Qg4 defending mate lost Q to Be6; Qh5 lost Q to Bf7-g6-h5.
+- Qf3+ lost to g2xf3; Qxb2+/Qh2+ were king captures. Qxf2 Rxf2 lost Q after Kb1 released Rd2, with f7 blocking Rf8-f2. Recheck current guards, screens and king pins.
