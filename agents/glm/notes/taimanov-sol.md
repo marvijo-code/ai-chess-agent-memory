@@ -1,12 +1,16 @@
-# Taimanov as Black vs Sol's 6.Be2/f4/Kh1 plan
+# Taimanov as Black vs Sol's 6.Be2 plan
+
+## T38 R3, L m30 (Qe1/Qg3 battery)
+Line: 1.e4 c5 2.Nf3 e6 3.d4 cxd4 4.Nxd4 Nc6 5.Nc3 a6 6.Be2 Nf6 7.O-O Be7 8.O-O (16 plies); then 9.f4 Qc7 10.Kh1 b5 11.Bf3 Bb7 12.Qe1! Rfe8 13.Qg3 h6 14.e5! (10 plies).
+- 12.Qe1 (!-marked ?! by the engine, but strong) IS a real plan: Qg3 battery + e5 break. Same opening as T37R7, different queen route. The common danger in both his games: the e5 break vs my f6-knight.
+- 14.e5 with his Q ALREADY on g3: ...Nxe5 FAILS (15.fxe5, e5-knight hit by Qg3); ...Nd5 15.Nxd5 exd5 leaves d5 loose. The ONLY real answer: move Nf6 BEFORE e5 - 12...Nd7 right after Qe1 (or 13...Ne8). 14...d6?? ignored his e5-pawn's OTHER capture square f6: 15.exf6 = N for P.
+- THE BLUNDER, 21...Kf8??: my plan '21.Nxf6+ gxf6, even trade' never checked the g-file pin (Qg3-g7-g8, squares empty). gxf6 ILLEGAL -> Kf8 -> 22.Nxe8, rook for pawn swing. Rule: after any trade-offer or check, trace the slider(s) behind the pawn I want to recapture with BEFORE recalculation stops.
+- GOOD: 16...Bxc6! (not Qxc6 - his Bf3's diagonal f3-e4-d5-c6 was OPEN, e4 gone); 18...Qd7! same reason. The ray-sweep on his Bf3 is the recurring check in this line.
+- After Nxf6+ his Bd4-Bf6 queen fork (25.Bf6) won my queen; queens off, then Qxd8+ took my last rook. Q+R vs K+6P: mate came Rg3+ Kh7 Qg8# at m30. Down huge: start pawn counterplay EARLY (my f5 came at m28), make luft early, keep the king OFF the rim.
+- Clock: healthy (13:40 at m28), 0 illegal, discipline rules worked; both fatal moves were 'planned recapture does not exist'.
 
 ## T37 R7, L m35
-Line: 1.e4 c5 2.Nf3 e6 3.d4 cxd4 4.Nxd4 Nc6 5.Nc3 a6 6.Be2 Be7 7.O-O Nf6 8.O-O (16 plies).
-Then 9.f4 Qc7 10.Kh1 b5 11.Bf3 Bb7 12.e5 (8 plies).
-
-- 12.e5! is HIS standard break vs this setup: it attacks my f6-knight, and a PAWN captures regardless of guards (g7 + Be7 were both 'guarding' f6). 12...d6?? was containment that neither moves nor trades the knight: 13.exf6 Bxf6 14.Nxc6 Bxc6 15.Bxc6 Qxc6 = down N for P, and 16.Bd4 then hit my c6/b6 structure. Real answer: 12...Nxe5 (the c6-knight recaptures; 13.fxe5 Qxe5 with real activity) - or keep a flight/trade plan for Nf6 the moment his f4+Bf3+Qf3 shaping appears.
-- THE GAME-BLUNDER, 23...Qxd5??: his 23.Qd5?? was his own mistake, but my line '24.Nxd5 Rxd5 25.Rxd5 exd5 = equal' ended with a pawn recapture the e5-pawn cannot make (e5 hits d4/f4; black pawns capture downward). His Nd5 was guarded by Rd1 and ESCAPED via 25.Nxe7+ after my Re7. Net: I lost Q+R for N while believing I had won a piece. Recapture chains must name the FINAL capturer as one of the pawn's two forward squares - verify direction from the board.
-- 19...Bxe3-pattern again: 19...Bg5?? attacked Be3 guarded by Qf3, no recapturer on g5 = B for nothing. Same as T37R1 14...Bc5?? vs Sonnet. Attacking a guarded piece is no move.
-- Down N+P from m15 my defense style was right (keep everything guarded, offer piece trades, no grabs) but the piece sitting on d5 with Rd1 behind it generated every threat, and after 28...Kg8 I left f7 unguarded: 29.Rxf7. After any king move name each shield pawn's current guard; play ...h6 luft BEFORE his rook reaches the 7th.
-- Sol profile update: in this line he played f4/Kh1/Bf3 and the e5 push - the Qe1-g3 battery I feared never appeared; queen went Qf3-d5. He was also careless once (23.Qd5??). Punish by counting HIS piece's guards at the moment he commits it - and by knowing exactly which pawn can recapture where.
-- Clock: healthy throughout (13:00+ at m28). The loss was one wrong recapture fantasy at a moment I was fully lost - the sweep rules, not speed, were the problem.
+- His plan (a): f4/Kh1/Bf3 then Qf3-d5 with Rd1 support. 12.e5! break: answer 12...Nxe5! (c6-knight recaptures) or move Nf6 FIRST - never 12...d6.
+- 23...Qxd5??: my line ended '25...exd5 = equal' but black e5-pawns capture DOWN (e5 hits d4/f4, never d5); his Nd5 was guarded by Rd1. Lost Q+R for N.
+- 19...Bg5?? attacked Be3 guarded by Qf3 = B for nothing.
+- After 28...Kg8 f7 was unguarded: 29.Rxf7. Play ...h6 luft BEFORE his rook reaches the 7th.
