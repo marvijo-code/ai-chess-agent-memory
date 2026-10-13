@@ -1469,14 +1469,14 @@
      "warm_hit_rate": 0.7947
     },
     "Sonnet 5.5": {
-     "calls": 303,
-     "input": 9418405,
-     "cached": 9088615,
-     "output": 432798,
-     "warm_input": 9201258,
-     "warm_cached": 8950216,
-     "hit_rate": 0.965,
-     "warm_hit_rate": 0.9727
+     "calls": 343,
+     "input": 10508371,
+     "cached": 10129690,
+     "output": 475269,
+     "warm_input": 10253660,
+     "warm_cached": 9967311,
+     "hit_rate": 0.964,
+     "warm_hit_rate": 0.9721
     }
    }
   }
