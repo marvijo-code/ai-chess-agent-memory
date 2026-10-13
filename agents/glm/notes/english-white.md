@@ -1,39 +1,27 @@
 # English / Reversed Sicilian as White (notes)
 
-## T40 R1 v Sonnet, L m35 (English 4K)
+## T40R5 v SF19, L m26 (...Nf6/...e6/...d5)
+Line: 1.c4 Nf6 2.Nc3 e6 3.g3 d5 4.cxd5 exd5 5.Bg2 d4! 6.Nb5 c6 7.Nc3?? dxc3 8.bxc3 Bd6 (16 plies); then 9.Nf3 O-O 10.O-O Re8 11.d4 Na6 12.e4 Nxe4 13.Ng5 Nxg5 14.Bxg5 Qxg5 (12 plies).
+- 5...d4! is SF's answer to my g3 clamp: the pawn pushes WITH TEMPO on my knight. My 6.Nb5 calculated only ...a6; his 6...c6 did BOTH jobs (kick + re-guard d4). 7.Nc3?? = N for P: the d4-pawn captures on c3. The retreat square is picked against the CURRENT pawn diagonals (candidates to verify next time: 6.Nce2/6.Na4; the whole raid is dubious - Nxd4?? fails to ...exd4, Bg2 does NOT cover d4).
+- 15.Qd2?? UNGUARDED = full queen: Rf1 still on f1 (covers rank 1/f-file, not d2) and Bg2's a8-h1 diagonal has NO d2. Before parking a queen, name the guard's LINE square by square.
+- 19.g4 (blunting Qh6) opened Bxh2+; then Qd1+ Bf1 Qxg4+ Kh1 Qh4+ Kg1 Qh2#. Down Q+R+B: pawn shield and luft only, no gestures.
+- ROOK BOOKKEEPING: after 16.Rfd1, f1 is EMPTY - Rfe1/f1e1 both illegal (2 tries). After any rook move, redraw both rooks' squares before writing SAN.
+
+## T40R1 v Sonnet (English 4K), L m35
 Line: 1.c4 e5 2.Nc3 Nf6 3.Nf3 Nc6 4.g3 Bb4 5.Bg2 O-O 6.O-O e4 7.Ng5 Bxc3 8.dxc3 Qe7 (16 plies); then 9.f3 exf3 10.exf3 h6 11.Nh3 d6 12.Bf4 Nh5 13.Bg5?? hxg5 (10 plies).
-- Sonnet's plan: ...e4 break, ...Bxc3 to smash my structure, ...Qe7 guards e4 AND f7, ...h6 kick, ...Nh5 hits Bf4. Level to m12 (7...Bxc3! his only good mark). 9.f3! exf3 10.exf3 was fine.
-- THE BLUNDER, 13.Bg5?? = B for P: 'safe from the knight' - but his h6-PAWN (since m10) hit g5. Pawn diagonals run against the CURRENT board; a push 3 moves old is still armed. Correct: 13.Bd2 or Be3 with a guard check.
-- 14.Nxg5?? 'regains a pawn': g5 guarded by NOTHING (Qd1 blocked by my own f3-pawn, Bg2 blocked) - ...Qxg5. Recapture into an attacked square needs a NAMED guard.
-- 17.h3 attacked his Bg4 but ABANDONED g3: 19...Nxg3! two moves later.
-- 20.Kh2, 'his Ng3 is free, king takes it': the ATTACKED knight captures first - 20...Nxf1+ took my rook with check. List the 8 jumps of any knight I attack before a slow capture.
-- Illegal tries: 9.d3 (after dxc3 my d-pawn is on c3 - stored opening moves die to my own recaptures), 15.Nf4 (my knight was already traded - after any capture REDRAW the armies).
-- Down 2 pieces the rest was lost; his mating net (Rd2/Rc2/Be4 vs bare K) was clean.
+- Level to m12. 13.Bg5?? = B for P: his h6-PAWN (m10) hit g5 - pawn diagonals stay armed the whole game. 14.Nxg5?? unguarded -> ...Qxg5. 17.h3 attacked Bg4 but ABANDONED g3 -> 19...Nxg3. 20.Kh2: the ATTACKED knight captures first (Nxf1+).
+- Illegal tries: 9.d3 (my d-pawn was on c3 after dxc3), 15.Nf4 (knight already traded) - stored opening moves die to my own recaptures; REDRAW armies after captures.
+- His mating net vs bare K (Rd2/Rc2/Be4) was clean; my 2-piece-down defense gave nothing.
 
-## T38 R4 v Sonnet, L m16 (English 4K)
-- Up a piece after 7...Bxc3! 8.dxc3, but 9.h3?? let ...h6 kick Ng5 - a quiet move with no sweep, even while winning.
-- THE LOSS, 13.Qxd7??: his BISHOP stood on d7, his queen on e6 - I took a DEFENDED piece with my queen = Q for P. Before ANY capture name from the BOARD (a) WHO OCCUPIES the square, (b) who recaptures. A remembered placement is not a board.
-- MATERIAL COUNT DRIFTED 'up B+P' -> 'down Q for P': every capture write W x / B y from the BOARD before planning.
-- Engine's 10.Nxe4! worked only because Bg2's g2-f3-e4 ray was OPEN - verify the recapturer's ray.
+## T38R4 v Sonnet (English 4K), L m16
+- Up a piece after 7...Bxc3 8.dxc3, but 9.h3?? no sweep. THE LOSS 13.Qxd7?? = Q for P: his BISHOP stood on d7 - name WHO OCCUPIES before any capture. Material count drifted 'up B+P' -> 'down Q for P'.
+- Engine 10.Nxe4! worked only because Bg2's g2-f3-e4 ray was OPEN - verify the recapturer's ray.
 
-## T38 R2 v DeepSeek, L m60 (QGD-reversed ...e6/...d5)
-- Opening near-equal to m25; all losses were execution. 15.Nxe5?? (his Qc7 + Nd7 = 2 attackers v d4's one guard).
-- THE LOSS, 25.dxc6?? while his 24...Qa6 hit my Qd3 (a6-b5-c4-d3 all empty) = Q for B. Walk his queen's EVERY ray against ALL my pieces on his turn; my capture plan dies if my queen is hit.
-- Down R+B defense was good: 32.Bxb7! (his Rb7 guarded by nothing), 44.Kxf5! (Rf5 off Bf8's true diagonal), connected pawns, no grabs.
+## T38R2 v DeepSeek (QGD-reversed), L m60
+- Near-equal to m25; 15.Nxe5?? (Qc7+Nd7 = 2 attackers). THE LOSS 25.dxc6?? while his 24...Qa6 hit my Qd3 (a6-b5-c4-d3 empty) = Q for B. Down R+B defended well: 32.Bxb7! (unguarded Rb7), 44.Kxf5! (off Bf8's true diagonal), no grabs.
 
-## T37 R6 v SF19, L m22 (symmetrical c5)
-- 5...d4! is his space plan vs my d3/g3 setup; do not fight it with Nd5 tricks.
-- 8.Nxe5?? (the c6-knight still hits e5), 12.Be3?? (onto the d4-pawn's capture square), 17.Qxc5?? (...c5 is a knight square) - quiet developing moves obey the same sweep; list ALL CURRENT attackers.
-
-## T36 R4 v Sonnet, L m42
-- THE LOSS, 7.d3?? after 6...e4: g3 no longer guards f3 and Qd1 is blocked by my own e2-pawn - 7...exf3 = N for P. Meet ...e4 with 7.Nd2/Ne1.
-- R-vs-B endgame: the bishop lives OFF every line the rook uses; blockade with the KING, not bishop bait (33.Bd6??, 38.Bd4?? onto Ra4's rank).
-
-## T36 R3 v DeepSeek, L m60
-- 17.Bxe4?? skipped his Nc5 hitting e4. 31.Rc1?? boxed Bd2 (no moves) -> Rxd2; leave retreat squares when developing.
-- GOOD: 36.exd4! won B+R for 2 pawns - down-material defense works until one untraced move kills it.
-
-## T35 R4 v Sonnet, L m43
-- 7.Nxe4?? Nxe4: Bg2's guard of e4 blocked by MY Nf3. Meet ...e4 with 7.Nd2/Ne1, never Nxe4 and never d3. Sonnet repeats ...Bb4/...O-O/...e4.
-- Two-rook rule: name EACH rook's file/rank/diagonal before any move (21.Rxa7??, 24.Rb1??).
-- GOOD: 31.gxh4! took the unguarded Rh4 - pawn captures are the cheapest swindle source.
+## Older condensed
+- T37R6 v SF19: his 5...d4! vs my d3/g3; 8.Nxe5?? (c6-knight hits e5), 12.Be3?? (d4-pawn's square), 17.Qxc5?? (...c5 knight square) - quiet developing moves obey the same sweep.
+- T36R4 v Sonnet: meet ...e4 with 7.Nd2/Ne1, never 7.d3 (g3 no longer guards f3, Qd1 blocked by my e2-pawn) and never Nxe4. R-vs-B: bishop lives OFF the rook's lines; blockade with the KING (33.Bd6??, 38.Bd4?? onto Ra4's rank).
+- T36R3 v DeepSeek: 17.Bxe4?? skipped his Nc5; 31.Rc1?? boxed my own Bd2 -> Rxd2 (leave retreat squares when developing). GOOD: 36.exd4! won B+R for 2P.
+- T35R4 v Sonnet: ...e4 again - 7.Nxe4?? Nxe4 (Bg2's guard blocked by MY Nf3). Two-rook rule: name EACH rook's file/rank/diagonal (21.Rxa7??, 24.Rb1??). GOOD: 31.gxh4! took the unguarded Rh4.

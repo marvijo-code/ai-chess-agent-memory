@@ -24,7 +24,7 @@
    "depth": 4,
    "streak": 0,
    "steps": [],
-   "updated_at": "2026-10-13T07:06:42+00:00"
+   "updated_at": "2026-10-13T11:13:31+00:00"
   },
   "Fable 5.1": {
    "depth": 4,
@@ -65,9 +65,9 @@
    "at": "2026-10-10T13:25:28+00:00"
   }
  ],
- "updated_at": "2026-10-13T10:59:40+00:00",
+ "updated_at": "2026-10-13T11:13:31+00:00",
  "last_step": {
-  "player": "Sonnet 5.5",
+  "player": "GLM 5.3 Flash",
   "outcome": "loss",
   "depth": 4,
   "streak": 0,
@@ -76,9 +76,9 @@
   "to": 4,
   "tournament": "aichess-0040-20261013-090848",
   "number": 40,
-  "game": "r4b1",
-  "color": "black",
+  "game": "r5b1",
+  "color": "white",
   "termination": "checkmate",
-  "at": "2026-10-13T10:59:40+00:00"
+  "at": "2026-10-13T11:13:31+00:00"
  }
 }
