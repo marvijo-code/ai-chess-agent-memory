@@ -9,25 +9,25 @@ Each AI player writes only to its own folder (`agents/<folder>/`) and reads ever
 
 Folders: DeepSeek V4.1 Flash: `agents/deepseek/`, GLM 5.3 Flash: `agents/glm/`, GPT-6.1 Sol: `agents/gpt/`, Sonnet 5.5: `agents/claude/`
 
-## Current tournament (aichess-0039-20261013-051801)
+## Current tournament (aichess-0040-20261013-090848)
 
 | Player | Games | Read in prompt | Read latest | Reflections | MEMORY.md updates | Note updates | Rejected | Retries | Errors |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| DeepSeek V4.1 Flash | 6 | 6 | 6 | 6 | 6 | 4 | 0 | 3 | 0 |
-| GLM 5.3 Flash | 4 | 4 | 4 | 4 | 4 | 3 | 1 | 3 | 0 |
-| GPT-6.1 Sol | 6 | 6 | 6 | 6 | 0 | 6 | 6 | 12 | 0 |
-| Sonnet 5.5 | 6 | 6 | 6 | 6 | 6 | 4 | 0 | 3 | 0 |
+| DeepSeek V4.1 Flash | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+| GLM 5.3 Flash | 1 | 1 | 1 | 1 | 1 | 1 | 0 | 0 | 0 |
+| GPT-6.1 Sol | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Sonnet 5.5 | 1 | 1 | 1 | 1 | 1 | 0 | 0 | 1 | 0 |
 
 ## All tournaments since this check started
 
 | Player | Games | Read in prompt | Read latest | Reflections | MEMORY.md updates | Note updates | Rejected | Retries | Errors |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| DeepSeek V4.1 Flash | 139 | 139 | 139 | 134 | 133 | 186 | 3 | 69 | 4 |
+| DeepSeek V4.1 Flash | 140 | 140 | 140 | 134 | 133 | 186 | 3 | 69 | 4 |
 | Fable 5.1 | 5 | 5 | 5 | 5 | 5 | 5 | 0 | 0 | 0 |
-| GLM 5.3 Flash | 25 | 25 | 25 | 25 | 25 | 24 | 1 | 9 | 0 |
+| GLM 5.3 Flash | 26 | 26 | 26 | 26 | 26 | 25 | 1 | 9 | 0 |
 | GPT-6 Astra | 8 | 8 | 8 | 8 | 8 | 2 | 0 | 1 | 0 |
-| GPT-6.1 Sol | 148 | 148 | 148 | 148 | 121 | 147 | 27 | 91 | 0 |
-| Sonnet 5.5 | 146 | 146 | 145 | 146 | 146 | 118 | 0 | 42 | 0 |
+| GPT-6.1 Sol | 149 | 149 | 149 | 148 | 121 | 147 | 27 | 91 | 0 |
+| Sonnet 5.5 | 147 | 147 | 146 | 147 | 147 | 118 | 0 | 43 | 0 |
 
 ## Memory shape now
 
@@ -36,4 +36,4 @@ Folders: DeepSeek V4.1 Flash: `agents/deepseek/`, GLM 5.3 Flash: `agents/glm/`, 
 | DeepSeek V4.1 Flash | 6 | 16 | 0 |
 | GLM 5.3 Flash | 3 | 8 | 0 |
 | GPT-6.1 Sol | 2 | 8 | 0 |
-| Sonnet 5.5 | 2 | 9 | 0 |
+| Sonnet 5.5 | 3 | 10 | 0 |

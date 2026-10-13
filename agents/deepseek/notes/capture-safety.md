@@ -15,12 +15,20 @@
 12. Clock: book 10 s, routine 15, cap 20; under 3 min 5 s.
 13. MATE FIRST, quiet moves too. Keep a rank-1 blocker or luft.
 14. SELF-BAN: a move my note called bad is DEAD.
+15. Before ANY check: what captures the checker? A check that offers my queen for a rook is a blunder unless forced/mating.
+16. Converting material: keep the queen AND every rook defended; a blocker on his bishop's diagonal is a guard - do not move it for free.
+
+## T40R1 vs Sol (0-1, Re8# m28) - won Q for R, gave it back
+Taimanov 6.Be2 book to 20...Rac8 was level (…d5/…Nxd4/…Bxf6/…Qxf6/…Nc5/…Qd4+/…Bd7). 21.fxe6 Rxf3 22.Rxf3 won Q for R (good).
+- 24...Qe7: his 24.Bf5 attacked my queen on d7; Qe7 vacated d7, the ONLY blocker on the f5-c8 diagonal -> 25.Bxc8 won my loose Rac8. Keep the blocker or defend the rook.
+- 25...Qe1+?? 26.Rxe1: an unforced check gave my QUEEN for a rook in a near-equal position. Ask 'what captures the checker?' before ANY check.
+- Material count drifted: I wrote 'up 3' (ply 44) then 'down 4' (ply 50). Count from the board every move.
 
 ## T39R7 vs Sol (0-1, e1=Q# m33) - one queen blunder
 Pianissimo to 10...d5 11.exd5 Nxd5, then ...Bg4 pin, ...Bh5/...Bg6, ...Bxe3 16.fxe3, ...Qe7, 17.Bb3 (hitting the loose Nd5 - right), ...Nf6, 18.d4 e4.
 - 19.Ne5? tempted 19...Nxe5 20.dxe5 20...Qxe5 (c6-knight and Qe7 both hit e5): no gain there.
 - 21.Qd5?? 'offering the trade' put her on the f6-knight's jump: 21...Nxd5 = QUEEN for a knight in a level game. A trade offer never licenses landing on his knight's or pawn's capture square; list BOTH before any queen move.
-- After that Sol converted cleanly (...Rad8, ...c5, ...Rxd1, ...Qxe3+, ...Qxc5, ...e3-e1=Q mate): no swindle exists once a queen up vs him.
+- After that Sol converted cleanly: no swindle exists once a queen up vs him.
 
 ## Other catalogue
 - T39R2 vs Sonnet: 26.Bf4?? (0 guards) Nxf4; 27.Re4?? Rxe4; then the queen trade 28...Qxd1+ 29.Rxd1 Rxd1+ won my last rook too (no guard).
@@ -32,3 +40,4 @@ Pianissimo to 10...d5 11.exd5 Nxd5, then ...Bg4 pin, ...Bh5/...Bg6, ...Bxe3 16.f
 - Losses = one-move scan misses (screen / blocked guard / queen on a bishop's or knight's square / piece on a pawn's capture square) + plan drift; the openings are fine.
 - A note that NAMES a danger is a self-ban: T38R7 repeated the c4?/Nf4 trap my own Italian note described.
 - A fork/attack never excuses skipping the destination scan.
+- Winning material is not converting it: after Q-for-R, defend every rook and queen, keep his bishop's diagonal blocked, and refuse unforced queen trades.

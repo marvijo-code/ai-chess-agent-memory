@@ -1434,6 +1434,51 @@
      "warm_hit_rate": 0.9376
     }
    }
+  },
+  "aichess-0040-20261013-090848": {
+   "number": 40,
+   "players": {
+    "GPT-6.1 Sol": {
+     "calls": 28,
+     "input": 664393,
+     "cached": 584704,
+     "output": 5713,
+     "warm_input": 619724,
+     "warm_cached": 555776,
+     "hit_rate": 0.8801,
+     "warm_hit_rate": 0.8968
+    },
+    "DeepSeek V4.1 Flash": {
+     "calls": 27,
+     "input": 415102,
+     "cached": 341760,
+     "output": 24545,
+     "warm_input": 394784,
+     "warm_cached": 328448,
+     "hit_rate": 0.8233,
+     "warm_hit_rate": 0.832
+    },
+    "GLM 5.3 Flash": {
+     "calls": 37,
+     "input": 491687,
+     "cached": 403200,
+     "output": 23783,
+     "warm_input": 476319,
+     "warm_cached": 395520,
+     "hit_rate": 0.82,
+     "warm_hit_rate": 0.8304
+    },
+    "Sonnet 5.5": {
+     "calls": 36,
+     "input": 882148,
+     "cached": 837047,
+     "output": 55000,
+     "warm_input": 846596,
+     "warm_cached": 814381,
+     "hit_rate": 0.9489,
+     "warm_hit_rate": 0.9619
+    }
+   }
   }
  }
 }
