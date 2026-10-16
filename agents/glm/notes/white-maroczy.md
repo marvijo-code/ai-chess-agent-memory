@@ -1,10 +1,11 @@
-# White Maroczy (Open Sicilian v ...g6) (notes)
+# Maroczy as White vs ...g6 Sicilian
 
-## T34 R5 v SF19, L m48
-Line: 1.e4 c5 2.Nf3 Nc6 3.d4 cxd4 4.Nxd4 g6 5.c4 Nf6 6.Nc3 (6 plies), then 6...Qa5 7.Nb5?! a6 8.Nc7+ Qxc7 (7 plies).
-- The Nb5/Nc7+ 'trap' dreams of Kd8 Nxa8. VERIFY FIRST: Qa5 guards c7 along a5-b6-c7 (b6 empty). A knight check that his QUEEN can take is not a fork - before any check or fork, list every slider diagonal to the check square. After 7...a6 the knight must just go back (8.Nc3, lost tempo). Plain 7.Be2/7.Be3 + O-O instead; no c7 raid while Qa5 stands.
-- ...Qa5 themes I flagged all game: ...Nxd4-...Nxe4 tricks after trades. At depth 4 none materialized - keep c4/e4 guarded and play normal development.
-- Down N for P from move 8, the executed plan was fine: O-O, Be3, Bh6/Bxg7 bishop trade, queens off, Nd5 (e4-guarded) trade offers, rook trades, b3 guarding c4, h3 vs ...g5. SF conceded nothing in 40 moves; passive solidity is not a drawing method vs SF - it only avoids faster losses.
-- Material recount drifted repeatedly during defense: I believed B-for-2P, then N-down, then B-down; the truth was N for P from move 8 onward. COUNT FROM THE BOARD after every capture before choosing a plan.
-- Late stage: Nd5 held c4 AND e4 (one guard, two points); ...Be6/Bxc4 broke it with tempo, then Bxd3+ and Rc1+->Rxd1# (Kf1: e1/e2 covered, back rank sealed). When a single piece carries all my defensive duties, expect it to break - trade it off rather than shielding two points.
-- 2 illegal tries (Nxe6+ with the knight on c3; ambiguous Rc2): legality rules live in MEMORY.md.
+## T42R5 v SF19, L m22 (Bxf4#) - the setup survived; the scans did not
+Line: 1.e4 c5 2.c4 d6 3.Nc3 Nc6 4.Be2 g6 5.Nf3 Bg4 6.h3 Bxf3 7.Bxf3 e6 8.O-O (16 plies); then 9.Re1 Nge7 10.Qb3 Nd4 11.Qd1 Nec6 (6 plies).
+- 6.h3 meeting ...Bg4 was FINE (his mark, eval +0.35): even N-for-B, g2 still guards f3, structure intact. PLAY THIS AGAIN.
+- 10.Qb3?? parks the queen on a knight's ARRIVAL square: d4's jumps include b3 (also b5, c2, c6, e2, e6, f3, f5). ...Nd4 answered with tempo and the level game became +1.4. Develop Be3/d3 first; no queen runs to rank 3 while his central knight can still land there.
+- 1 illegal: exd4?? - PAWNS NEVER CAPTURE STRAIGHT (e4 takes d5/f5).
+- 12.Ne2? 'kick with tempo': 12...Nxf3+ 13.gxf3 (his best) was an EVEN trade that removed my bishop AND opened my g-file for Ne5/Qh4. A trade can be even and still wreck the king's cover - choose by the resulting cover, not material parity.
+- THE NET: Ne5 + Qh4 + Nd3 hit f2, b2 AND c1 from two pieces; f2 was under king-only cover after gxf3. I evaluated each square singly, never the union. RULES with open f/g-pawns, recited EVERY move: (1) f2's CURRENT guards; (2) which knight jump joins his queen; (3) which RANK-1 pieces fall silent when MY queen moves - e1 was guarded by Qd1, and after Qa4 the rook was alone.
+- 17...Qxf2+! Kh1 Qxe1+ won R for check. My own note one move earlier said 'his Qf2 attacks Re1 through the empty e2-d1 line, e1 undefended' - then I played a king move. A SPOTTED DANGER IS A TASK, not a weather report.
+- Mating net: Qf1+ Kh2 Be5+ f4?? Bxf4# - my check-blocker was simply captured. A block must survive the checker or her partner taking IT; a king-only trap with three flight squares (g2/h1/h2) and 4+ check-landings needs named second guards on f2/h2, or the counter-threat (Qxd3 regains the knight) BEFORE his check, not after.
