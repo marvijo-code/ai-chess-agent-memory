@@ -1529,24 +1529,24 @@
    "number": 42,
    "players": {
     "Sonnet 5.5": {
-     "calls": 98,
-     "input": 2326339,
-     "cached": 2198402,
-     "output": 90121,
-     "warm_input": 2222867,
-     "warm_cached": 2132617,
-     "hit_rate": 0.945,
-     "warm_hit_rate": 0.9594
+     "calls": 108,
+     "input": 2727196,
+     "cached": 2589973,
+     "output": 106821,
+     "warm_input": 2623724,
+     "warm_cached": 2524188,
+     "hit_rate": 0.9497,
+     "warm_hit_rate": 0.9621
     },
     "GLM 5.3 Flash": {
-     "calls": 63,
-     "input": 832193,
-     "cached": 698496,
-     "output": 57863,
-     "warm_input": 772327,
-     "warm_cached": 662592,
-     "hit_rate": 0.8393,
-     "warm_hit_rate": 0.8579
+     "calls": 73,
+     "input": 1096441,
+     "cached": 923392,
+     "output": 60172,
+     "warm_input": 1036575,
+     "warm_cached": 887488,
+     "hit_rate": 0.8422,
+     "warm_hit_rate": 0.8562
     },
     "DeepSeek V4.1 Flash": {
      "calls": 88,
