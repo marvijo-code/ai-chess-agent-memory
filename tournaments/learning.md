@@ -13,20 +13,20 @@ Folders: DeepSeek V4.1 Flash: `agents/deepseek/`, GLM 5.3 Flash: `agents/glm/`, 
 
 | Player | Games | Read in prompt | Read latest | Reflections | MEMORY.md updates | Note updates | Rejected | Retries | Errors |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| DeepSeek V4.1 Flash | 3 | 3 | 3 | 3 | 3 | 3 | 0 | 1 | 0 |
+| DeepSeek V4.1 Flash | 4 | 4 | 4 | 4 | 4 | 4 | 0 | 2 | 0 |
 | GLM 5.3 Flash | 2 | 2 | 2 | 0 | 0 | 0 | 0 | 1 | 2 |
-| GPT-6.1 Sol | 2 | 2 | 2 | 2 | 1 | 2 | 1 | 4 | 0 |
+| GPT-6.1 Sol | 3 | 3 | 3 | 3 | 1 | 3 | 2 | 6 | 0 |
 | Sonnet 5.5 | 2 | 2 | 2 | 2 | 2 | 1 | 0 | 1 | 0 |
 
 ## All tournaments since this check started
 
 | Player | Games | Read in prompt | Read latest | Reflections | MEMORY.md updates | Note updates | Rejected | Retries | Errors |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| DeepSeek V4.1 Flash | 154 | 154 | 154 | 148 | 147 | 196 | 3 | 74 | 5 |
+| DeepSeek V4.1 Flash | 155 | 155 | 155 | 149 | 148 | 197 | 3 | 75 | 5 |
 | Fable 5.1 | 5 | 5 | 5 | 5 | 5 | 5 | 0 | 0 | 0 |
 | GLM 5.3 Flash | 35 | 35 | 35 | 33 | 33 | 33 | 1 | 14 | 2 |
 | GPT-6 Astra | 8 | 8 | 8 | 8 | 8 | 2 | 0 | 1 | 0 |
-| GPT-6.1 Sol | 163 | 163 | 163 | 163 | 129 | 162 | 34 | 113 | 0 |
+| GPT-6.1 Sol | 164 | 164 | 164 | 164 | 129 | 163 | 35 | 115 | 0 |
 | Sonnet 5.5 | 162 | 162 | 161 | 162 | 162 | 126 | 0 | 52 | 0 |
 
 ## Memory shape now

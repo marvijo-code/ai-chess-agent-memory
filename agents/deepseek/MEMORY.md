@@ -20,6 +20,7 @@ Notes:
 - QUIET, 'TEMPO' AND RETREAT MOVES GET THE SAME SWEEP: T39R2 26.Bf4?? 0 guards -> 27...Nxf4; T41R5 20.Ba4?? chased the d7-queen -> 20...Qxa4 won a BISHOP; T42R2 14.Nd6?? 'forked' Re8 with 0 guards beside Qd7 -> 15...Qxd6.
 - RETREATING AN ATTACKED PIECE OBEYS THE SAME SWEEP: T42R3 14...Bg5?? 'saving the bishop from Nd5's fork' landed on g5 with 0 guards - Bc1 AND Nf3 hit it -> 15.Bxg5, and the new bishop's clear diagonal g5-f6-e7-d8 struck my queen -> 16.Bxd8. When a piece lands on a diagonal, walk it to the END.
 - PAWN ATTACKS on EVERY destination: g6<-f7/h7, b6<-a7/c7, d6<-c7/e7, c5<-b4/d4, e5<-d4/f4, e6<-f7, h6<-g7 (so ...h6 ATTACKS g5), g6 hits f5/h5, d4<-c5/e5, f4<-e5/g5, f5<-g6/e6, f6<-e5. A PAWN THAT MOVED TO ATTACK STILL ATTACKS.
+- N-FOR-P IS A LOSS EVEN WITH THE RECAPTURE: never land a knight where an enemy pawn takes it. T42R4 18.Ne5?? met 18...dxe5 - the d6-pawn took my knight and I only won the pawn back. My own note said 'if Nxe5 dxe5 I win back the d6-pawn' - recovering the PAWN is not recovering the PIECE.
 - KNIGHT/BISHOP LANDINGS: walk his queen's AND both bishops' diagonals AND every knight jump. T41R4 13...Nd3?? sat on Qc2-d3's diagonal -> 14.Qxd3; T42R2 14.Nd6?? on the square his queen attacked.
 - WHITE e5 PAWN OWNS d6 AND f6 - NO-GO for EVERY piece. WITH MY KING CASTLED, Qg3 also PINS g7, so a piece on f6 is worse: T40R5 15...Bf6?? exf6 (gxf6 ILLEGAL - pinned g7).
 - A KNIGHT ON c6 IS HIT BY HIS d5-PAWN: when his d-pawn reaches d5 the c6-knight dies for a pawn (T40R6 16.dxc6). Move it or hold d5 first.
@@ -47,17 +48,18 @@ Notes:
 - RECAPTURE != TRADE: my recapturer must reach the destination in ONE move (T38R6 12...Rg8?? my KING two squares away - 13.Qxg8+). THE RECAPTURER NEEDS ITS OWN GUARD AFTER IT LANDS.
 - ONLY-QUEEN-GUARDED + MY SECOND ATTACKER = WIN THE QUEEN. Count EVERY recapturer, PAWNS FIRST; TRACE THE CHAIN TO THE END.
 - AN 'UNDEFENDED PIECE' IS NOT FREE IF HIS ANSWER COMES WITH TEMPO: T40R7 16.Rxe4?? 'wins a knight' - 16...Bxb3 hit my QUEEN. NEVER TRADE R FOR B OR P.
+- AFTER A CAPTURE THAT WINS A PIECE, RESCAN FOR MY OWN LOOSE UNIT: the winner may hang. T42R4 16.Nxe4! won a knight, but 17.axb3?? left it on e4 and 17...Rxe4 took it back. The next move must SAVE the winner (17.Nxc6! escaped and won more) before recapturing.
 - After ANY trade re-count the guards of ALL my units and his.
 
 ## Rule 4 - material, conversion, clock
 - MATERIAL FROM THE BOARD, EVERY MOVE (count pieces, never prose; T42R2 wrote '+N' while LEVEL).
 - NO GRABS WHEN LEVEL OR BEHIND: T42R2 level at m18, then 14.Nd6?? and 19.Qxb4?? handed N then Q. When not clearly better, defend and develop.
 - CONVERTING: model T40R3 - +Q for B+P -> guard every unit, trade rooks evenly, two-rook ladder, Ra8# - no repetition, every move progress. Down: queens only while SAFE; NO grabs; loose pieces first. Up: trade pieces not pawns; escort passers; stalemate-check.
-- LEVEL MINOR-PIECE ENDGAME (T41R2): a pawn pushed with only my KING as guard dies when his king covers the square. Guard pawns with PIECES.
-- Time: book <=10 s, routine <=15 s, cap 20 s; <3 min <=5 s. Long thinks produced every blunder (T42R3 42 s on ...f6?, 43 s on ...Bg5??). The written scan, not the clock, is the check.
+- LEVEL MINOR-PIECE ENDGAME (T41R2): a pawn pushed with only my KING as guard dies when his king covers the square. Guard pawns with PIECES. T42R4: I won a knight on m16, then threw it back (17.axb3??, 18.Ne5??) and lost - a win must be CONSOLIDATED, not just found.
+- Time: book <=10 s, routine <=15 s, cap 20 s; <3 min <=5 s. Long thinks produced every blunder (T42R3 42 s on ...f6?, 43 s on ...Bg5??; T42R4 62 s on 18.Ne5??). The written scan, not the clock, is the check.
 
 ## Openings (only the lines I actually play)
-- Italian Giuoco Pianissimo W: 1.e4 e5 2.Nf3 Nc6 3.Bc4 Bc5 4.d3 Nf6 5.c3 d6 6.O-O O-O 7.Nbd2 Be6 8.Bb3 Bb6 (16 plies). BANS: 10.d4?!, 12.c4?, 13.Bc2??, 14.Bg5??, 15.Nxe5??, 24.Qh5??. No queen on d5 while his f6-knight lives. T42R2 vs Sonnet (0-1): level to m18, then 14.Nd6?? and 19.Qxb4?? = N then Q lost - the grabs, not the opening.
+- Italian Giuoco Pianissimo W: 1.e4 e5 2.Nf3 Nc6 3.Bc4 Bc5 4.d3 Nf6 5.c3 d6 6.O-O O-O 7.Nbd2 Be6 8.Bb3 Bb6 (16 plies). BANS: 10.d4?!, 12.c4?, 13.Bc2??, 14.Bg5??, 15.Nxe5??, 24.Qh5??. No queen on d5 while his f6-knight lives. T42R2 vs Sonnet (0-1): level to m18, then 14.Nd6?? and 19.Qxb4?? = N then Q lost - the grabs, not the opening. T42R4 vs Sol (0-1): won a knight with Nxe4 on m16, but 17.axb3?? left it loose (17...Rxe4 recovered) and 18.Ne5?? fell to 18...dxe5 (N for P); after the d4 break, meet ...Nxe4 by a knight ESCAPE that keeps the material.
 - Open Sicilian W vs 3...Nxd4 4...e5: 1.e4 c5 2.Nf3 Nc6 3.d4 Nxd4 4.Nxd4 e5 5.Nb5 a6 6.N5c3 Nf6 7.Be2 Be7 8.O-O O-O (15 plies); Be3/Qd2/Nd5/f4. T40R3 (1-0): keep the c4-bishop safe after the d5 space edge.
 - Open Sicilian W (Taimanov 6.Be2): 1.e4 c5 2.Nf3 e6 3.d4 cxd4 4.Nxd4 Nc6 5.Nc3 a6 6.Be2 Be7 7.O-O Nf6 8.Be3 O-O (16 plies); f4/Qd2/Rad1. vs Dragon block ...Qa5+ with Bd2/Bd1, never Qd2??. Accelerated Dragon: keep Be3 - it is the d4-knight's guard.
 - Taimanov B vs 8.e5 Nd5 9.Qg4: 1.e4 c5 2.Nf3 e6 3.Nc3 Nc6 4.d4 cxd4 5.Nxd4 Nf6 6.Nxc6 bxc6 7.Bd3 Be7 8.e5 Nd5 (15 plies). With my king on e8 g7 has NO guard: never ...d6, never castle; COVER g7 or kick ...h5 ONLY if g7 is guarded. NEVER ...Nf6 (9...Nf6?? 10.exf6).
@@ -70,6 +72,6 @@ Notes:
 - SF19: instant; punishes loose units, passive retreats, queens on his rays/pawn diagonals/KNIGHT squares, and the retreat square of a forked piece. Resolve central tension BEFORE castling; give him NO loose unit. When a piece down, aim for a repetition (T39R1, T41R1). T40R2 takes any piece on a pawn's square. T42R3: his Bxf5/Nxd5! exploited my ...f6?/...Bg5?? - the push loosened the centre and the d5-fork had no good bishop retreat.
 - Fable 5.1: solid 6.Be2 + Qh5/Bd3 battery vs my castled king; converts the moment I leave a piece on an enemy pawn's capture square.
 - Sonnet 5.5 (never beaten): banks clock; takes every free unit and every UNGUARDED piece (T41R2 45.Nf5?? Kxf5; T42R2 19.Qxb4?? Qxb4). No free unit, no pawn-hit square, no lone-guarded queen; keep a rank-1 blocker. T41R2 ground a DEAD-LEVEL knight endgame - hold such endings.
-- GPT-6.1 Sol: fast; takes every free piece incl. a queen on any pawn OR bishop diagonal OR knight square. Italian ...a6/...Ba7/...h6/...Re8, ...d5/...Nxd5 hits c3; his Nf4 + queen on c6-g2 = Qxg2#. T40R1 Bf5-c8 diagonal won my loose Rac8.
+- GPT-6.1 Sol: fast; takes every free piece incl. a queen on any pawn OR bishop diagonal OR knight square, and any loose recapture/winner. Italian ...a6/...Ba7/...h6/...Re8, ...d5/...Nxd5 hits c3; his Nf4 + queen on c6-g2 = Qxg2#. T40R1 Bf5-c8 diagonal won my loose Rac8. T42R4: after I won a knight, my blunder (17.axb3?? leaving the e4-knight loose) let him recover it, then he converted +P to Rh2# (m32) with R+N+Q.
 - GPT-6 Astra: Open Sicilian 6.Be2 + f4/Qe1-g3 and the Chigorin; takes every loose piece. Give him no loose unit.
 - GLM 5.3 Flash: slow, illegal tries, miscounts material; hangs queens/rooks/undefended pieces when worse. Convert cleanly, guard every unit, don't stalemate. But he punishes MY loose knight jumps. T42R1: he FORFEITED at m10 - keep playing solid, guarded moves.
