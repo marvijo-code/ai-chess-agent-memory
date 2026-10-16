@@ -1,16 +1,18 @@
-# Taimanov as Black vs Sol's 6.Be2 plan
+# Taimanov as Black vs Sol's 6.Be2 plans
 
-## T38 R3, L m30 (Qe1/Qg3 battery)
-Line: 1.e4 c5 2.Nf3 e6 3.d4 cxd4 4.Nxd4 Nc6 5.Nc3 a6 6.Be2 Nf6 7.O-O Be7 8.O-O (16 plies); then 9.f4 Qc7 10.Kh1 b5 11.Bf3 Bb7 12.Qe1! Rfe8 13.Qg3 h6 14.e5! (10 plies).
-- 12.Qe1 (!-marked ?! by the engine, but strong) IS a real plan: Qg3 battery + e5 break. Same opening as T37R7, different queen route. The common danger in both his games: the e5 break vs my f6-knight.
-- 14.e5 with his Q ALREADY on g3: ...Nxe5 FAILS (15.fxe5, e5-knight hit by Qg3); ...Nd5 15.Nxd5 exd5 leaves d5 loose. The ONLY real answer: move Nf6 BEFORE e5 - 12...Nd7 right after Qe1 (or 13...Ne8). 14...d6?? ignored his e5-pawn's OTHER capture square f6: 15.exf6 = N for P.
-- THE BLUNDER, 21...Kf8??: my plan '21.Nxf6+ gxf6, even trade' never checked the g-file pin (Qg3-g7-g8, squares empty). gxf6 ILLEGAL -> Kf8 -> 22.Nxe8, rook for pawn swing. Rule: after any trade-offer or check, trace the slider(s) behind the pawn I want to recapture with BEFORE recalculation stops.
-- GOOD: 16...Bxc6! (not Qxc6 - his Bf3's diagonal f3-e4-d5-c6 was OPEN, e4 gone); 18...Qd7! same reason. The ray-sweep on his Bf3 is the recurring check in this line.
-- After Nxf6+ his Bd4-Bf6 queen fork (25.Bf6) won my queen; queens off, then Qxd8+ took my last rook. Q+R vs K+6P: mate came Rg3+ Kh7 Qg8# at m30. Down huge: start pawn counterplay EARLY (my f5 came at m28), make luft early, keep the king OFF the rim.
-- Clock: healthy (13:40 at m28), 0 illegal, discipline rules worked; both fatal moves were 'planned recapture does not exist'.
+## T43R1, L on time m29 (f4/Kh1/Be3 battery, then Bf3 vs my d5-pawn)
+Setup: ...Qc7/...a6/...Nf6/...Be7/...O-O. Stored line WORKED, play again: 9.f4 O-O 10.Kh1 Nxd4 11.Bxd4 Bc5 12.e5 Nd5! 13.Nxd5 exd5 14.Bxc5 Qxc5 = equal (12 plies).
+- ORDER KILL: 15.Bf3 hit d5, guarded once (Qc5). Play ...Bb7 FIRST - it double-guards d5 AND blocks his f3-b7-a8 diagonal; THEN ...b5. I pushed 15...b5?! first: the push vacated b7, opening HIS Bf3/Qd1 ray to my bare Ra8; 16.Qxd5! 16...Qxc2? counted only MY grab - her next capture on the opened diagonal was 17.Qxa8 (+R). The plain queen trade (16...Qxd5 17.Bxd5) was -1 pawn only. RULE: every pawn push - walk the lines it opens for HIS sliders, name the furthest piece; put the blocking piece on the diagonal before the push.
+- Defense that worked: 18...Qxa2 trimmed to R v 3P; 20...h6 luft; 21...d6! killed his Bb7/Rc8 tricks and the f5-break; ...Bd7 blockaded the d6-passer. Still lost: doubled rooks, Rxc8 twice, d7-d8=Q. Down heavy: blockade the passer with KING or rook-from-behind and count his second attackers; and GRIND at 5-10 s - I burned 8:51 and 9:26 on single moves and lost on time at m29.
+- 1 illegal (23...Bxb1): my d7-bishop cannot reach b1. After a hit, spell the CURRENT square's real diagonals/files before replying; after ONE rejection redraw and pick a different idea.
 
-## T37 R7, L m35
-- His plan (a): f4/Kh1/Bf3 then Qf3-d5 with Rd1 support. 12.e5! break: answer 12...Nxe5! (c6-knight recaptures) or move Nf6 FIRST - never 12...d6.
-- 23...Qxd5??: my line ended '25...exd5 = equal' but black e5-pawns capture DOWN (e5 hits d4/f4, never d5); his Nd5 was guarded by Rd1. Lost Q+R for N.
-- 19...Bg5?? attacked Be3 guarded by Qf3 = B for nothing.
-- After 28...Kg8 f7 was unguarded: 29.Rxf7. Play ...h6 luft BEFORE his rook reaches the 7th.
+## T38R3, L m30 (Qe1/Qg3 battery)
+His plan: 9.f4 Qc7 10.Kh1 11.Bf3 12.Qe1!-Qg3, then 14.e5! vs my Nf6 (7 plies).
+- The e5 break vs my f6-knight is THE danger in all his 6.Be2 games: move Nf6 BEFORE e5 (12...Nd7 right after Qe1, or 13...Ne8). ...Nxe5 15.fxe5 fails (Qg3 hits the knight); ...d6?? 15.exf6 = N for P.
+- 21...Kf8?? after 21.Nxf6+: the planned gxf6 ignored the g-file pin (Qg3-g7-g8, squares empty). Trace the slider BEHIND the pawn I want to recapture with BEFORE recalculating stops.
+- GOOD: 16...Bxc6! and 18...Qd7 - the ray-sweep on his Bf3 (f3-e4-d5-c6 open) is the recurring check. Down huge: start pawn counterplay EARLY, luft early, king OFF the rim.
+
+## T37R7, L m35 (plan a: f4/Kh1/Bf3, Qf3-d5)
+- 12.e5! break: answer 12...Nxe5! (c6-knight recaptures) or move Nf6 FIRST - never 12...d6.
+- 23...Qxd5??: black e5-pawns capture DOWN (e5 hits d4/f4, never d5). 19...Bg5?? attacked Be3 guarded by Qf3 = B for nothing.
+- Play ...h6 luft BEFORE his rook reaches the 7th.

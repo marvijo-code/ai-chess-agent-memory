@@ -1574,24 +1574,24 @@
    "number": 43,
    "players": {
     "GPT-6.1 Sol": {
-     "calls": 21,
-     "input": 445796,
-     "cached": 404736,
-     "output": 7078,
-     "warm_input": 401017,
-     "warm_cached": 368896,
-     "hit_rate": 0.9079,
-     "warm_hit_rate": 0.9199
+     "calls": 29,
+     "input": 728805,
+     "cached": 679168,
+     "output": 10976,
+     "warm_input": 684026,
+     "warm_cached": 643328,
+     "hit_rate": 0.9319,
+     "warm_hit_rate": 0.9405
     },
     "GLM 5.3 Flash": {
-     "calls": 20,
-     "input": 684759,
-     "cached": 592960,
-     "output": 121660,
-     "warm_input": 663752,
-     "warm_cached": 580672,
-     "hit_rate": 0.8659,
-     "warm_hit_rate": 0.8748
+     "calls": 29,
+     "input": 1403720,
+     "cached": 1256000,
+     "output": 221545,
+     "warm_input": 1382713,
+     "warm_cached": 1243712,
+     "hit_rate": 0.8948,
+     "warm_hit_rate": 0.8995
     },
     "DeepSeek V4.1 Flash": {
      "calls": 23,
