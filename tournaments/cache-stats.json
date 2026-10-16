@@ -1619,14 +1619,14 @@
      "warm_hit_rate": 0.9677
     },
     "Haiku 5.5": {
-     "calls": 79,
-     "input": 2121768,
-     "cached": 1974545,
-     "output": 92473,
-     "warm_input": 2086089,
-     "warm_cached": 1953031,
-     "hit_rate": 0.9306,
-     "warm_hit_rate": 0.9362
+     "calls": 93,
+     "input": 2327481,
+     "cached": 2147927,
+     "output": 114065,
+     "warm_input": 2274115,
+     "warm_cached": 2115512,
+     "hit_rate": 0.9229,
+     "warm_hit_rate": 0.9303
     },
     "Sonnet 5.5": {
      "calls": 211,
@@ -1639,24 +1639,24 @@
      "warm_hit_rate": 0.9442
     },
     "GLM 5.3 Flash": {
-     "calls": 108,
-     "input": 5139105,
-     "cached": 3768832,
-     "output": 584594,
-     "warm_input": 5080272,
-     "warm_cached": 3733504,
-     "hit_rate": 0.7334,
-     "warm_hit_rate": 0.7349
+     "calls": 122,
+     "input": 5340717,
+     "cached": 3932032,
+     "output": 603505,
+     "warm_input": 5262241,
+     "warm_cached": 3884736,
+     "hit_rate": 0.7362,
+     "warm_hit_rate": 0.7382
     },
     "DeepSeek V4.1 Flash": {
-     "calls": 96,
-     "input": 4137086,
-     "cached": 3331200,
-     "output": 1004371,
-     "warm_input": 4055009,
-     "warm_cached": 3275392,
-     "hit_rate": 0.8052,
-     "warm_hit_rate": 0.8077
+     "calls": 99,
+     "input": 4184905,
+     "cached": 3366656,
+     "output": 1091323,
+     "warm_input": 4102828,
+     "warm_cached": 3310848,
+     "hit_rate": 0.8045,
+     "warm_hit_rate": 0.807
     }
    }
   }
