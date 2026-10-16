@@ -386,6 +386,15 @@
    "finished": false,
    "champion": null,
    "updated_at": "2026-10-16T16:00:20+00:00"
+  },
+  {
+   "number": 44,
+   "id": "aichess-0044-20261016-161517",
+   "title": "Chess Tournament but with AI Players #44",
+   "created_at": "2026-10-16T16:15:17+00:00",
+   "finished": false,
+   "champion": null,
+   "updated_at": "2026-10-16T16:15:17+00:00"
   }
  ]
 }
