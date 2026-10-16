@@ -1243,11 +1243,11 @@
    "number": 42,
    "players": {
     "Sonnet 5.5": {
-     "games": 1,
-     "read_in_prompt": 1,
-     "read_latest": 1,
-     "reflections": 1,
-     "memory_updates": 1,
+     "games": 2,
+     "read_in_prompt": 2,
+     "read_latest": 2,
+     "reflections": 2,
+     "memory_updates": 2,
      "note_updates": 1,
      "rejected": 0,
      "errors": 0,
@@ -1265,15 +1265,15 @@
      "retries": 0
     },
     "DeepSeek V4.1 Flash": {
-     "games": 1,
-     "read_in_prompt": 1,
-     "read_latest": 1,
-     "reflections": 1,
-     "memory_updates": 1,
-     "note_updates": 0,
+     "games": 2,
+     "read_in_prompt": 2,
+     "read_latest": 2,
+     "reflections": 2,
+     "memory_updates": 2,
+     "note_updates": 1,
      "rejected": 0,
      "errors": 0,
-     "retries": 0
+     "retries": 1
     },
     "GPT-6.1 Sol": {
      "games": 1,
@@ -1290,8 +1290,8 @@
   }
  },
  "last_written": {
-  "DeepSeek V4.1 Flash": "3465c4889c7c",
-  "Sonnet 5.5": "8c1d51ff4d2a",
+  "DeepSeek V4.1 Flash": "7e990f664ef0",
+  "Sonnet 5.5": "b6d9ff982770",
   "GPT-6.1 Sol": "346e2d8cd810",
   "GLM 5.3 Flash": "4577cdf18bb1",
   "Fable 5.1": "13ff882aa399",
