@@ -1350,13 +1350,24 @@
      "rejected": 0,
      "errors": 0,
      "retries": 0
+    },
+    "Sonnet 5.5": {
+     "games": 1,
+     "read_in_prompt": 1,
+     "read_latest": 1,
+     "reflections": 1,
+     "memory_updates": 1,
+     "note_updates": 1,
+     "rejected": 0,
+     "errors": 0,
+     "retries": 0
     }
    }
   }
  },
  "last_written": {
   "DeepSeek V4.1 Flash": "5ca376c029fc",
-  "Sonnet 5.5": "21d8881a5798",
+  "Sonnet 5.5": "f3cd6640702a",
   "GPT-6.1 Sol": "9cffc6ba02c3",
   "GLM 5.3 Flash": "e8e3f39d1b37",
   "Fable 5.1": "13ff882aa399",

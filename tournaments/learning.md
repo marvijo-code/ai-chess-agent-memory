@@ -15,6 +15,7 @@ Folders: DeepSeek V4.1 Flash: `agents/deepseek/`, GLM 5.3 Flash: `agents/glm/`, 
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | GPT-6.1 Sol | 1 | 1 | 1 | 1 | 0 | 0 | 1 | 2 | 0 |
 | Haiku 5.5 | 1 | 1 | 1 | 1 | 1 | 1 | 0 | 0 | 0 |
+| Sonnet 5.5 | 1 | 1 | 1 | 1 | 1 | 1 | 0 | 0 | 0 |
 
 ## All tournaments since this check started
 
@@ -26,7 +27,7 @@ Folders: DeepSeek V4.1 Flash: `agents/deepseek/`, GLM 5.3 Flash: `agents/glm/`, 
 | GPT-6 Astra | 8 | 8 | 8 | 8 | 8 | 2 | 0 | 1 | 0 |
 | GPT-6.1 Sol | 168 | 168 | 168 | 168 | 131 | 166 | 37 | 121 | 0 |
 | Haiku 5.5 | 1 | 1 | 1 | 1 | 1 | 1 | 0 | 0 | 0 |
-| Sonnet 5.5 | 164 | 164 | 163 | 164 | 164 | 126 | 0 | 52 | 0 |
+| Sonnet 5.5 | 165 | 165 | 164 | 165 | 165 | 127 | 0 | 52 | 0 |
 
 ## Memory shape now
 
