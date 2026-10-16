@@ -365,9 +365,18 @@
    "id": "aichess-0041-20261013-124210",
    "title": "Chess Tournament but with AI Players #41",
    "created_at": "2026-10-13T12:42:10+00:00",
+   "finished": true,
+   "champion": "Stockfish 19",
+   "updated_at": "2026-10-16T11:09:38+00:00"
+  },
+  {
+   "number": 42,
+   "id": "aichess-0042-20261016-110957",
+   "title": "Chess Tournament but with AI Players #42",
+   "created_at": "2026-10-16T11:09:57+00:00",
    "finished": false,
    "champion": null,
-   "updated_at": "2026-10-16T11:09:38+00:00"
+   "updated_at": "2026-10-16T11:09:57+00:00"
   }
  ]
 }
