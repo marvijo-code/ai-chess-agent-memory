@@ -18,6 +18,12 @@
 15. Before ANY check: what captures the checker, the KING included?
 16. An 'undefended' capture is real only if no enemy move with tempo clears its guard.
 17. A retreat/recapture landing on a diagonal: walk that diagonal to the end (own queen behind it included).
+18. A CHECK IS A MOVE: list every legal reply, captures of the checker included (not just the king).
+
+## T44R1 vs GLM (0-1 win on time) - queen check captured
+English as Black. Reached a piece up after 16...Nxg5 (his g5-knight undefended). Then with +Q+R, 24...Qd1+?? walked the queen onto the open first rank: 25.Rxd1 (rook a1) won her. Next 25...Be4?? put the bishop on e4 where Bg2xe4 won it, returning to level. The win came only on his flag.
+- Before ANY check: list every enemy unit that can capture the checker (rooks/queens along rank/file, bishops, knights, pawns), not just the king.
+- Up huge material: no checks that can be captured; trade pieces, guard every unit, quiet consolidation.
 
 ## T42R4 vs Sol (0-1, Rh2# m32) - won a knight, gave it back, hung the queen
 Italian Pianissimo, level to m13. Sol blundered 14...Nxe4??; 16.Nxe4! won the knight.
@@ -36,3 +42,4 @@ Caro Advance: 14.Nxd5 forked my f6-bishop; 14...Bg5?? landed on g5 with 0 guards
 ## Patterns
 - Losses = one-move scan misses (screen / blocked guard / queen on a bishop or knight square / piece on a pawn's capture square / wrong recapturer) + plan drift; the openings are fine.
 - Winning material is not converting it: re-guard the new piece, trade evenly, mate with a rook ladder (T40R3).
+- A check is not forcing if the checker can be captured: always list every legal reply before checking.
