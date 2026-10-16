@@ -1529,14 +1529,14 @@
    "number": 42,
    "players": {
     "Sonnet 5.5": {
-     "calls": 28,
-     "input": 574971,
-     "cached": 538383,
-     "output": 28679,
-     "warm_input": 541621,
-     "warm_cached": 517257,
-     "hit_rate": 0.9364,
-     "warm_hit_rate": 0.955
+     "calls": 39,
+     "input": 972027,
+     "cached": 924854,
+     "output": 43155,
+     "warm_input": 938677,
+     "warm_cached": 903728,
+     "hit_rate": 0.9515,
+     "warm_hit_rate": 0.9628
     },
     "GLM 5.3 Flash": {
      "calls": 10,
