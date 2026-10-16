@@ -1619,23 +1619,23 @@
      "warm_hit_rate": 0.9432
     },
     "Haiku 5.5": {
-     "calls": 33,
-     "input": 890204,
-     "cached": 832307,
-     "output": 36614,
+     "calls": 35,
+     "input": 897411,
+     "cached": 835489,
+     "output": 36984,
      "warm_input": 882077,
      "warm_cached": 827629,
-     "hit_rate": 0.935,
+     "hit_rate": 0.931,
      "warm_hit_rate": 0.9383
     },
     "Sonnet 5.5": {
-     "calls": 87,
-     "input": 4897093,
-     "cached": 4618963,
-     "output": 193138,
+     "calls": 89,
+     "input": 4920878,
+     "cached": 4630199,
+     "output": 193210,
      "warm_input": 4861741,
      "warm_cached": 4596435,
-     "hit_rate": 0.9432,
+     "hit_rate": 0.9409,
      "warm_hit_rate": 0.9454
     },
     "GLM 5.3 Flash": {
