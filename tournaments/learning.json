@@ -1254,15 +1254,15 @@
      "retries": 1
     },
     "GLM 5.3 Flash": {
-     "games": 1,
-     "read_in_prompt": 1,
-     "read_latest": 1,
+     "games": 2,
+     "read_in_prompt": 2,
+     "read_latest": 2,
      "reflections": 0,
      "memory_updates": 0,
      "note_updates": 0,
      "rejected": 0,
-     "errors": 1,
-     "retries": 0
+     "errors": 2,
+     "retries": 1
     },
     "DeepSeek V4.1 Flash": {
      "games": 3,
@@ -1276,15 +1276,15 @@
      "retries": 1
     },
     "GPT-6.1 Sol": {
-     "games": 1,
-     "read_in_prompt": 1,
-     "read_latest": 1,
-     "reflections": 1,
+     "games": 2,
+     "read_in_prompt": 2,
+     "read_latest": 2,
+     "reflections": 2,
      "memory_updates": 1,
-     "note_updates": 1,
-     "rejected": 0,
+     "note_updates": 2,
+     "rejected": 1,
      "errors": 0,
-     "retries": 2
+     "retries": 4
     }
    }
   }
