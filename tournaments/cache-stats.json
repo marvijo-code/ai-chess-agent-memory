@@ -1604,6 +1604,41 @@
      "warm_hit_rate": 0.8572
     }
    }
+  },
+  "aichess-0044-20261016-161517": {
+   "number": 44,
+   "players": {
+    "GPT-6.1 Sol": {
+     "calls": 33,
+     "input": 840029,
+     "cached": 799232,
+     "output": 8892,
+     "warm_input": 794778,
+     "warm_cached": 767104,
+     "hit_rate": 0.9514,
+     "warm_hit_rate": 0.9652
+    },
+    "Haiku 5.5": {
+     "calls": 33,
+     "input": 890204,
+     "cached": 832307,
+     "output": 36614,
+     "warm_input": 882077,
+     "warm_cached": 827629,
+     "hit_rate": 0.935,
+     "warm_hit_rate": 0.9383
+    },
+    "Sonnet 5.5": {
+     "calls": 36,
+     "input": 1657889,
+     "cached": 1515948,
+     "output": 104402,
+     "warm_input": 1622537,
+     "warm_cached": 1493420,
+     "hit_rate": 0.9144,
+     "warm_hit_rate": 0.9204
+    }
+   }
   }
  }
 }
