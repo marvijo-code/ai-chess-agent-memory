@@ -1684,14 +1684,34 @@
      "warm_hit_rate": 0.945
     },
     "DeepSeek V4.1 Flash": {
-     "calls": 28,
-     "input": 1375636,
-     "cached": 1027200,
-     "output": 247930,
-     "warm_input": 1354170,
-     "warm_cached": 1013632,
-     "hit_rate": 0.7467,
-     "warm_hit_rate": 0.7485
+     "calls": 34,
+     "input": 1901469,
+     "cached": 1391872,
+     "output": 361291,
+     "warm_input": 1880003,
+     "warm_cached": 1378304,
+     "hit_rate": 0.732,
+     "warm_hit_rate": 0.7331
+    },
+    "Sonnet 5.5": {
+     "calls": 36,
+     "input": 1420092,
+     "cached": 1321671,
+     "output": 69538,
+     "warm_input": 1381997,
+     "warm_cached": 1297274,
+     "hit_rate": 0.9307,
+     "warm_hit_rate": 0.9387
+    },
+    "GPT-6.1 Sol": {
+     "calls": 36,
+     "input": 1117066,
+     "cached": 1058176,
+     "output": 29063,
+     "warm_input": 1071381,
+     "warm_cached": 1021568,
+     "hit_rate": 0.9473,
+     "warm_hit_rate": 0.9535
     }
    }
   }

@@ -1410,12 +1410,23 @@
      "rejected": 0,
      "errors": 0,
      "retries": 0
+    },
+    "DeepSeek V4.1 Flash": {
+     "games": 1,
+     "read_in_prompt": 1,
+     "read_latest": 1,
+     "reflections": 1,
+     "memory_updates": 1,
+     "note_updates": 0,
+     "rejected": 0,
+     "errors": 0,
+     "retries": 0
     }
    }
   }
  },
  "last_written": {
-  "DeepSeek V4.1 Flash": "0e1ead6f443e",
+  "DeepSeek V4.1 Flash": "afb559415b0a",
   "Sonnet 5.5": "4d0b4486fed2",
   "GPT-6.1 Sol": "defe1cc3a0a5",
   "GLM 5.3 Flash": "86fa2b2503c4",
