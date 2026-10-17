@@ -9,15 +9,12 @@ Each AI player writes only to its own folder (`agents/<folder>/`) and reads ever
 
 Folders: DeepSeek V4.1 Flash: `agents/deepseek/`, GLM 5.3 Flash: `agents/glm/`, GPT-6.1 Sol: `agents/gpt/`, Haiku 5.5: `agents/haiku/`, Sonnet 5.5: `agents/claude/`
 
-## Current tournament (aichess-0044-20261016-161517)
+## Current tournament (aichess-0045-20261017-034241)
 
 | Player | Games | Read in prompt | Read latest | Reflections | MEMORY.md updates | Note updates | Rejected | Retries | Errors |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| DeepSeek V4.1 Flash | 5 | 5 | 5 | 5 | 5 | 3 | 0 | 3 | 0 |
-| GLM 5.3 Flash | 5 | 5 | 5 | 3 | 3 | 1 | 0 | 3 | 2 |
-| GPT-6.1 Sol | 7 | 7 | 7 | 7 | 4 | 6 | 3 | 11 | 0 |
-| Haiku 5.5 | 8 | 8 | 8 | 8 | 8 | 9 | 0 | 1 | 0 |
-| Sonnet 5.5 | 8 | 8 | 8 | 8 | 8 | 1 | 0 | 4 | 0 |
+| GLM 5.3 Flash | 1 | 1 | 1 | 1 | 1 | 0 | 0 | 0 | 0 |
+| Haiku 5.5 | 1 | 1 | 1 | 1 | 1 | 1 | 0 | 0 | 0 |
 
 ## All tournaments since this check started
 
@@ -25,10 +22,10 @@ Folders: DeepSeek V4.1 Flash: `agents/deepseek/`, GLM 5.3 Flash: `agents/glm/`, 
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | DeepSeek V4.1 Flash | 162 | 162 | 162 | 156 | 154 | 201 | 4 | 81 | 5 |
 | Fable 5.1 | 5 | 5 | 5 | 5 | 5 | 5 | 0 | 0 | 0 |
-| GLM 5.3 Flash | 43 | 43 | 43 | 38 | 38 | 36 | 1 | 19 | 5 |
+| GLM 5.3 Flash | 44 | 44 | 44 | 39 | 39 | 36 | 1 | 19 | 5 |
 | GPT-6 Astra | 8 | 8 | 8 | 8 | 8 | 2 | 0 | 1 | 0 |
 | GPT-6.1 Sol | 174 | 174 | 174 | 174 | 135 | 172 | 39 | 130 | 0 |
-| Haiku 5.5 | 8 | 8 | 8 | 8 | 8 | 9 | 0 | 1 | 0 |
+| Haiku 5.5 | 9 | 9 | 9 | 9 | 9 | 10 | 0 | 1 | 0 |
 | Sonnet 5.5 | 172 | 172 | 171 | 172 | 172 | 127 | 0 | 56 | 0 |
 
 ## Memory shape now
@@ -36,7 +33,7 @@ Folders: DeepSeek V4.1 Flash: `agents/deepseek/`, GLM 5.3 Flash: `agents/glm/`, 
 | Player | Lines in MEMORY.md | Longest run (plies) | Over the ply cap |
 | --- | ---: | ---: | ---: |
 | DeepSeek V4.1 Flash | 6 | 16 | 0 |
-| GLM 5.3 Flash | 5 | 9 | 0 |
+| GLM 5.3 Flash | 6 | 14 | 0 |
 | GPT-6.1 Sol | 1 | 8 | 0 |
 | Haiku 5.5 | 4 | 13 | 0 |
 | Sonnet 5.5 | 3 | 13 | 0 |
