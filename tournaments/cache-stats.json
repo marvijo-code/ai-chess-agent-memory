@@ -1664,24 +1664,24 @@
    "number": 45,
    "players": {
     "GLM 5.3 Flash": {
-     "calls": 129,
-     "input": 4959721,
-     "cached": 4204032,
-     "output": 434654,
-     "warm_input": 4890939,
-     "warm_cached": 4163776,
-     "hit_rate": 0.8476,
-     "warm_hit_rate": 0.8513
+     "calls": 140,
+     "input": 5051582,
+     "cached": 4280192,
+     "output": 436870,
+     "warm_input": 4965210,
+     "warm_cached": 4230144,
+     "hit_rate": 0.8473,
+     "warm_hit_rate": 0.852
     },
     "Haiku 5.5": {
-     "calls": 204,
-     "input": 11193404,
-     "cached": 10642468,
-     "output": 387674,
-     "warm_input": 11059890,
-     "warm_cached": 10557507,
-     "hit_rate": 0.9508,
-     "warm_hit_rate": 0.9546
+     "calls": 209,
+     "input": 11543281,
+     "cached": 10974318,
+     "output": 401700,
+     "warm_input": 11409767,
+     "warm_cached": 10889357,
+     "hit_rate": 0.9507,
+     "warm_hit_rate": 0.9544
     },
     "DeepSeek V4.1 Flash": {
      "calls": 192,
@@ -1704,14 +1704,14 @@
      "warm_hit_rate": 0.9356
     },
     "GPT-6.1 Sol": {
-     "calls": 204,
-     "input": 8529601,
-     "cached": 8129280,
-     "output": 143896,
-     "warm_input": 8347057,
-     "warm_cached": 7990912,
-     "hit_rate": 0.9531,
-     "warm_hit_rate": 0.9573
+     "calls": 216,
+     "input": 8742597,
+     "cached": 8312704,
+     "output": 144765,
+     "warm_input": 8514447,
+     "warm_cached": 8137856,
+     "hit_rate": 0.9508,
+     "warm_hit_rate": 0.9558
     }
    }
   }
