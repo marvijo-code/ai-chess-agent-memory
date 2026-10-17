@@ -1,27 +1,19 @@
-# DeepSeek: Italian central play, clearance and conversion
+# DeepSeek: Taimanov tactics and safe conversion
 
-Wins and sparse marks do not certify my moves. Count from the board and check forcing alternatives before routine recaptures.
+## T45 round 2: White, 60+10, mate win
+- Be2/O-O/Be3/f4/Kh1 against e6/Nc6/a6/Be7/Nf6/O-O/d6 suited me. Nxd4 met Bxd4; after e5, fxe5! removed the pawn attacking B. dxe5! was Black's only good move, then Bxe5 took P. A queen exchange on d1 was safe because Ra1 could recapture along the empty first rank. Match this d6 structure before borrowing the pawn grab.
+- Nd5?? then landed on Qd1's open file. Qxd5! Qxd5 Nxd5 won N while trading queens; e4xd5 was another legal recapture. The queen exchange did not make Black's knight sacrifice sound. Inspect captures of a central challenger before moving the attacked piece.
+- Nc7 forked Ra8/Be6. Rac8 saved R but Nxe6 attacked Rf8; fxe6 opened my f-file. Rxf8+/Rxf8 removed one rook pair. Rd7 invaded; Rf7 allowed Rxf7/Kxf7, leaving two bishops and six pawns against five pawns. Extra B+P, not merely a pawn ending advantage.
+- g3/Kg2/Kf3 activated K. c3 supported Bd4, which blocked Bc5+ and offered a safe trade. Bxd4+ cxd4 left B+6P versus 5P with connected central pawns. Black's claim that K recapture was forced was false.
+- After e5, d5 made a protected passer and denied e6. Kd3-c4-c5 escorted it before Kb6/Kxa6 collected queenside material. e4 guarded d5, tying Black K to the blockade. Against b4-b3, axb3 removed counterplay; doubled pawns were acceptable.
+- The b-passer then supplied the second front. Kc5 supported d6; b6+ cleared b5, and Kc6 supported b7/d7. Black repeatedly claimed distant king control of promotion routes; king control reaches only adjacent squares. Calculate arrival times and actual guards independently.
+- d8=Q+ offered a temporary queen; Kxd8 allowed b8=Q+. Losing that promoted queen was a deflection securing the other promotion, not a failed escort. Finish the whole promotion chain before evaluating.
+- Qd6+/Bc4+ coordinated the mating net. Qf8+ forced Kh7; Qg8# was bishop-supported along c4-d5-e6-f7-g8, while Black's h6 pawn occupied a flight. Verify every flight and capture before contact mate.
+- No White moves marked adverse; win still relied on Nd5??. Zero invalid moves; Black two. Finished 58:19. Mostly 3-25 seconds per move worked. fxe5 took 45 seconds and late Qd6+ 35; keep extra time tied to a concrete capture chain. Black spent several minutes on settled pawn defenses without finding resistance.
 
-## T44 round 2: Black, 60+10, mate win
-- Bc5/Nf6/O-O/d6/a6/Ba7/Re8, then Be6 met Bxe6/fxe6. After Be3, Bxe3/Rxe3 removed both bishop pairs. This differs from earlier positions where Be6 screened Re8 and Bxb3 supplied a clearance tempo.
-- d5 challenged the center; dxe4/Nxe4/Nxe4/Rxe4 removed the knights on g3/f6. Rxe4! was White's correct recapture. exd4/cxd4 removed my doubled e-pawn and left White's central d-pawn against e6.
-- Qd5 attacked Re4; Re3 allowed Rad8, adding pressure on d4. Ne5?! abandoned Nf3's guard of d4, and Nxd4 won P. The knight on d4 did NOT attack Re3: its concrete targets included f3/b3, while Qd5 attacked Ne5. Name actual attacks rather than importing the old clearance story.
-- Nf3 allowed Nxf3+; Qxf3! answered the check. Qxf3! was my only good move, exchanging queens while preserving the extra pawn and active rooks. White recaptured Rxf3, despite announcing gxf3. Derive all legal recapturers independently of commentary.
-- Rd2 invaded the second rank. Rb3 attacked b7 while guarding b2; b5 moved the target safely. Rc1?! attacked c7; c5 offered that pawn on a square the rook could take.
-- After Rxc5?!, Rd1# followed. Kg1 was boxed by f2/g2/h2; d1-e1-f1-g1 was clear. Rc1 had been White's sole first-rank defender. Its pawn capture abandoned d1; Rb3 could neither capture Rd1 nor interpose on e1/f1. The offered pawn removed a remote mate defender without a recapture on c5. It was not a forced pawn sacrifice against every reply.
-- Both sides had zero invalid moves. Finished 56:32. Rad8 took 142 seconds, Nxd4 79, despite ample time; critical calculation needs a specific question. Qxf3 and Rd1# took four seconds each. White spent eight minutes on Rxc5 and still missed mate: thinking duration is not evidence of safety.
-
-## T42 round 4: clearance gamble, then recovery
-- Be6 screened Re8-e4. Nxe4?? allowed Nxe4!, winning my knight. Bxb3 cleared the e-file but did NOT attack Qd2; unlike T40's Qd1, it supplied no queen tempo.
-- White had Nf6+, forking Kg8/Qd7/Re8, before recapturing Bb3. axb3?? instead allowed Rxe4, recovering N. Material was then equal in pieces with Black ONE PAWN ahead.
-- Ne5?? landed on d6's pawn diagonal. dxe5/dxe5/Rxe5 left Black N+P ahead. Recovering the pawn does not recover the knight.
-- Bf4 attacked Re5; Rxe1+ vacated e4 and cleared Qd7-d2. Qxd2 Bxd2 Rxd2 traded queens and took B because Rd8 backed Q down the file. Finish the last rook capture.
-- Nc6xe7 later took White's last rook. Ba7 supported Rxf2 through b6/c5/d4/e3. Ng4+ drove K toward h3; Rf2/Rh2# used knight support, rook cutoff and White's own h4 pawn. Recompute actual flights after pawn moves.
-
-## Earlier patterns
-- T41: Ba4 attacked Qd7 but Qxa4 took the loose bishop. Nf4 uncovered Qc6-e4 AND supported Qxg2#; Qf5 answered only the queen attack.
-- T40: Nxe4?! allowed Rxe4!; Bxb3! cleared Re8's screen AND attacked Qd1. axb3? then allowed Rxe4, taking a ROOK. In T42 the unit on e4 was a KNIGHT and Q stood on d2.
-- Bg4-h5-g6 avoids screening Re8. Qe7/e4 gained P, but Qd5 lost Q to Nf6xd5.
-- Checks still need pawn/king scans: Rc3+ lost R to b2xc3; Rd3+ had bishop support.
-- d3-d4 abandoned Nc4's sole guard. Qg4 lost Q to Be6; Qh5 lost Q to Bf7-g6-h5.
-- Qxf2 Rxf2 lost Q after Kb1 released Rd2, with f7 blocking Rf8-f2. Refresh pins, guards and screens.
+## Italian patterns from earlier games
+- T44: bishop exchanges and d5/dxe4 activated pieces. Ne5 abandoned Nf3's guard of d4; Nxd4 won P but did NOT attack Re3. Nxf3+ Qxf3! exchanged queens while retaining P. White could recapture Rxf3 despite announcing gxf3.
+- Rd2 invaded; b5 saved b7. c5 offered a pawn to Rc1. Rxc5 abandoned d1, allowing Rd1#: Kg1 boxed by f2/g2/h2, d1-e1-f1 clear, and Rb3 could not interpose. The pawn offer exploited a remote defender; it was not forced against every reply.
+- Be6 screens Re8-e4. T40 Nxe4?! allowed Rxe4!; Bxb3! cleared the file AND attacked Qd1. T42 Nxe4?? allowed Nxe4!; Bxb3 did NOT attack Qd2. White had Nf6+ against Kg8/Qd7/Re8 before recapturing Bb3; axb3?? instead allowed Rxe4. Match queen placement and the unit on e4.
+- T42 Ne5 landed on d6's pawn diagonal; dxe5/dxe5/Rxe5 left N+P ahead. Bf4 attacked Re5, but Rxe1+ cleared Qd7-d2. Qxd2/Bxd2/Rxd2 completed the gain with Rd8 behind Q.
+- Checks still need capture scans: Rc3+ lost R to b2xc3. Qg4 lost Q to Be6; Qh5 lost Q to Bf7. Qxf2/Rxf2 lost Q after Kb1 released Rd2 while f7 blocked Rf8-f2. Wins do not validate earlier gifts.
