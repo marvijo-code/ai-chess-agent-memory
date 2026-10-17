@@ -1609,14 +1609,14 @@
    "number": 44,
    "players": {
     "GPT-6.1 Sol": {
-     "calls": 292,
-     "input": 12147556,
-     "cached": 11659264,
-     "output": 146400,
-     "warm_input": 11875607,
-     "warm_cached": 11468544,
-     "hit_rate": 0.9598,
-     "warm_hit_rate": 0.9657
+     "calls": 316,
+     "input": 13714663,
+     "cached": 13161216,
+     "output": 185826,
+     "warm_input": 13442714,
+     "warm_cached": 12970496,
+     "hit_rate": 0.9596,
+     "warm_hit_rate": 0.9649
     },
     "Haiku 5.5": {
      "calls": 182,
@@ -1629,14 +1629,14 @@
      "warm_hit_rate": 0.9497
     },
     "Sonnet 5.5": {
-     "calls": 269,
-     "input": 12591311,
-     "cached": 11805923,
-     "output": 512746,
-     "warm_input": 12365934,
-     "warm_cached": 11661944,
-     "hit_rate": 0.9376,
-     "warm_hit_rate": 0.9431
+     "calls": 293,
+     "input": 14229204,
+     "cached": 13285874,
+     "output": 645354,
+     "warm_input": 14003827,
+     "warm_cached": 13141895,
+     "hit_rate": 0.9337,
+     "warm_hit_rate": 0.9385
     },
     "GLM 5.3 Flash": {
      "calls": 203,
