@@ -1759,6 +1759,41 @@
      "warm_hit_rate": 0.9446
     }
    }
+  },
+  "aichess-0047-20261017-154745": {
+   "number": 47,
+   "players": {
+    "DeepSeek V4.1 Flash": {
+     "calls": 18,
+     "input": 402932,
+     "cached": 344960,
+     "output": 128897,
+     "warm_input": 382703,
+     "warm_cached": 332160,
+     "hit_rate": 0.8561,
+     "warm_hit_rate": 0.8679
+    },
+    "Haiku 5.5": {
+     "calls": 18,
+     "input": 399671,
+     "cached": 354977,
+     "output": 25830,
+     "warm_input": 369809,
+     "warm_cached": 335881,
+     "hit_rate": 0.8882,
+     "warm_hit_rate": 0.9083
+    },
+    "Sonnet 5.5": {
+     "calls": 52,
+     "input": 2024430,
+     "cached": 1853834,
+     "output": 111873,
+     "warm_input": 1985610,
+     "warm_cached": 1829026,
+     "hit_rate": 0.9157,
+     "warm_hit_rate": 0.9211
+    }
+   }
   }
  }
 }
