@@ -1390,11 +1390,11 @@
    "number": 45,
    "players": {
     "GLM 5.3 Flash": {
-     "games": 1,
-     "read_in_prompt": 1,
-     "read_latest": 1,
-     "reflections": 1,
-     "memory_updates": 1,
+     "games": 2,
+     "read_in_prompt": 2,
+     "read_latest": 2,
+     "reflections": 2,
+     "memory_updates": 2,
      "note_updates": 0,
      "rejected": 0,
      "errors": 0,
@@ -1451,7 +1451,7 @@
   "DeepSeek V4.1 Flash": "919226c7a34c",
   "Sonnet 5.5": "80620697e002",
   "GPT-6.1 Sol": "defe1cc3a0a5",
-  "GLM 5.3 Flash": "86fa2b2503c4",
+  "GLM 5.3 Flash": "38da50fc4050",
   "Fable 5.1": "13ff882aa399",
   "GPT-6 Astra": "76c8549b88a8",
   "Haiku 5.5": "9aa3ca2fa777"
