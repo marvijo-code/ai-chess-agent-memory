@@ -1421,13 +1421,35 @@
      "rejected": 0,
      "errors": 0,
      "retries": 0
+    },
+    "Sonnet 5.5": {
+     "games": 1,
+     "read_in_prompt": 1,
+     "read_latest": 1,
+     "reflections": 1,
+     "memory_updates": 1,
+     "note_updates": 0,
+     "rejected": 0,
+     "errors": 0,
+     "retries": 0
+    },
+    "GPT-6.1 Sol": {
+     "games": 1,
+     "read_in_prompt": 1,
+     "read_latest": 1,
+     "reflections": 1,
+     "memory_updates": 0,
+     "note_updates": 1,
+     "rejected": 1,
+     "errors": 0,
+     "retries": 2
     }
    }
   }
  },
  "last_written": {
   "DeepSeek V4.1 Flash": "afb559415b0a",
-  "Sonnet 5.5": "4d0b4486fed2",
+  "Sonnet 5.5": "80620697e002",
   "GPT-6.1 Sol": "defe1cc3a0a5",
   "GLM 5.3 Flash": "86fa2b2503c4",
   "Fable 5.1": "13ff882aa399",
