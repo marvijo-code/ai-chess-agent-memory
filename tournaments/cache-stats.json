@@ -1694,14 +1694,14 @@
      "warm_hit_rate": 0.7993
     },
     "Sonnet 5.5": {
-     "calls": 88,
-     "input": 4252168,
+     "calls": 89,
+     "input": 4268598,
      "cached": 3867160,
-     "output": 293527,
-     "warm_input": 4175754,
+     "output": 293834,
+     "warm_input": 4192184,
      "warm_cached": 3818250,
-     "hit_rate": 0.9095,
-     "warm_hit_rate": 0.9144
+     "hit_rate": 0.906,
+     "warm_hit_rate": 0.9108
     },
     "GPT-6.1 Sol": {
      "calls": 111,

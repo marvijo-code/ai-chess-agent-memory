@@ -10,7 +10,7 @@ Hit rate = cached input tokens / all input tokens of the move requests, read fro
 | GLM 5.3 Flash | 61 | 2682315 | 2441472 | 91.0% | 91.4% |
 | GPT-6.1 Sol | 111 | 5029810 | 4754560 | 94.5% | 95.0% |
 | Haiku 5.5 | 62 | 2222248 | 2072277 | 93.3% | 93.9% |
-| Sonnet 5.5 | 88 | 4252168 | 3867160 | 90.9% | 91.4% |
+| Sonnet 5.5 | 89 | 4268598 | 3867160 | 90.6% | 91.1% |
 
 ## All tournaments
 
@@ -22,4 +22,4 @@ Hit rate = cached input tokens / all input tokens of the move requests, read fro
 | GPT-6 Astra | 456 | 15632539 | 14922624 | 95.5% | 95.9% |
 | GPT-6.1 Sol | 9858 | 304091279 | 283437952 | 93.2% | 93.7% |
 | Haiku 5.5 | 386 | 18648040 | 17822549 | 95.6% | 95.9% |
-| Sonnet 5.5 | 10254 | 261260136 | 249498471 | 95.5% | 96.2% |
+| Sonnet 5.5 | 10255 | 261276566 | 249498471 | 95.5% | 96.2% |
