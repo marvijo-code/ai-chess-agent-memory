@@ -1,33 +1,27 @@
 # English / reversed QGD as White
 
-## T41R4 v DeepSeek, L m85 (Qf2#) - a WINNING position thrown away
-Line: 1.c4 Nf6 2.Nc3 e6 3.g3 d5 4.cxd5 exd5 5.Bg2 Be7 6.Nf3 O-O 7.O-O c6 8.d4 (16 plies); then 9.e3 Re8 10.Qc2 Bf8 11.Bd2 c5 12.dxc5 Nxc5 13.b4! Nd3 14.Qxd3 (12 plies).
-- 13.b4! vs his Nc5: ...Na4 loses to Qxa4; ...Nd3?? lost the knight (his d5-pawn blocked his own queen). Clean piece up. 14...Bxb4 (my Bd2 blocked by Nc3) -> up N for P; 20.Nxd5 -> up N for 2P.
-- THE THREE KILLS, all 'natural' moves: 25.Qa6?? bxa6! - the b7-pawn's OTHER forward diagonal; my note even said 'b7 has zero defenders' while the PAWN stood there. 40.Rxe5?? fxe5! - the f6-pawn's diagonal, grabbed while up R+2P; this rook grab decided the game. 44.Bd7?? Kxd7! - parked unguarded beside his Ke7 (adjacency never listed). Then 63.e7?? Bxe7 - Bc5-d6-e7 empty and unwalked. The opening was perfect; the scans were not.
-- 21.Qc3?? attacking Qb2: he answered 21...Qb5 counter-hitting my Nd5 - Bg2's d5-diagonal was blocked by MY OWN Nf3, so the knight stood alone. An attack on his piece obeys the same counts; I got nothing from the check-style attack.
-- 24.Qc6?? on the OPEN c-file with his Rc8 staring back, then Qa6 - my own 'open file = free' rule, violated while a piece up.
-- Recovery was real: 29.Bxe5! won his queen (she had attacked my Bc3 on the long diagonal), 39.Rxd5! won a bishop - up R+2P at m39. Then the grabs resumed and lost everything. UP MATERIAL = TRADE AND IMPROVE.
-- Endgame: opposite bishops, my all-light-square fortress idea was sound (his bishop can never touch e3/f2/g3/h5), but I burned all 3 illegal tries: Bf3 (my own Nf3 there), Kb5 (a6-pawn's capture square), Kd6 (his Bd6 occupied) - one more = forfeit. In the race his Bc5 covered e7 (c5-d6-e7) - I pushed e7 anyway and lost the bishop, then the race.
-- Play this exact setup again vs DeepSeek. The only fix is the scan: pawn diagonals both colours, slider lines walked, king-adjacent squares.
+## T44R5 v Sol, DRAW m57 (my flag while winning R+2P then R+P)
+Line: 1.c4 e5 2.Nc3 Nf6 3.Nf3 Nc6 4.g3 d5 5.cxd5 Nxd5 6.Bg2 Nb6 7.O-O (14 plies); then 8.d3, ...O-O both, 9.Re1 e6, 10.Be3 Qd7 - playable, marks ?!-level only.
+- HIS TRADE BATTERS: 13...Bh3 was a queen-recapture-backed probe; my 14.Bxh3 priced ONLY the first capture ('nothing defends h3'), then the chain Bxh3/Qxh3/Nh4/Bxh4/gxh4/Qxh4 handed him a pawn. Rule: his bishop's vacated square had opened the Qd7-g4-h3 diagonal - re-open every line through the piece's OLD square before pricing any capture; a 'undefended' call still needs her queen's next landing listed.
+- 19...Qxf2?? handed me Q+N+1P; I then bled it: 27.Nxe5?? fxe5! (HIS f6-PAWN eats e5 - third e5-death: T41R4 Rxe5??, this game). Fix standing: before ANY piece lands on e5/d4/f4-adjacent squares, list BOTH capture diagonals of every pawn two ranks around, mine and his, FROM THE BOARD.
+- GOOD: 32.Kh1!, 36.Rxg4! - the two fastest moves of the game. Engine-?! elsewhere but nothing fatal until the clock.
+- THE FLAG: the conversion plan was pre-written and CORRECT (push passers a5/b4/b6 with responses handled, rook NEVER leaves the d-file while his d/e-pawns stand - it is the pillar vs any king recapture, Kf4 guards e3) - and every move m41-54 cost 1-5 minutes (max 5:24 on 50.b5). PRE-WRITTEN PLAN = 10 s a move: verify legality, run his forcing scan, submit. He flagged as a draw only because he cannot checkmate.
+- vs a king that will not mate: trade nothing by obligation, never feed pawns, keep the rook behind the passer.
 
-## T41R2 v SF19, L m57 (...e5/...Bb4/...e4)
-- 5.Ng5 was OK but 7.Nf3?? walked onto the e4-pawn's capture square (e4 hits d3/f3) = exf3! N for P. Retreats: 7.Nh3 or 7.Nxf7. Pick the retreat from the PAWN CAPTURE MAP, not by habit.
-- 17.Qd4?? = Q for N: his c6-KNIGHT jumps to d4 (c6: a5/a7/b4/b8/d4/d8/e5/e7). A queen trade offer needs ALL his attackers on the destination, knights included.
-- COUNTING: army lists omitted the UNDEVELOPED Bc1 - believed 'equal' while down N for P from m7. Count a1-h8 INCLUDING home pieces after every capture.
-- 1 illegal: 56.d6 - HIS d6-pawn occupied the square.
+## T41R4 v DeepSeek, L m85 (Qf2#) - winning position thrown away
+Line: 1.c4 Nf6 2.Nc3 e6 3.g3 d5 4.cxd5 exd5 5.Bg2 Be7 6.Nf3 O-O 7.O-O c6 8.d4, then 13.b4! Nd3 14.Qxd3 = a piece up.
+- The three kills were all 'natural' moves: 25.Qa6?? bxa6 (the b7-pawn's OTHER forward diagonal, while my own note said zero defenders); 40.Rxe5?? fxe5 (f6-pawn - the kills recur); 44.Bd7?? Kxd7 (parked beside his king). 21.Qc3?? attacking Qb2 answered with a COUNTER-attack on my Nd5 (its Bg2 guard blocked by MY OWN Nf3): attacks on his pieces obey the same two counts. 24.Qc6?? on an open file with his rook staring back.
+- Recovery was real: 29.Bxe5! won his queen (she had attacked my Bc3 on her line), 39.Rxd5! - but the grabs resumed. UP A PIECE: trade and improve, no second wins.
+- Endgame: opposite bishops, all-light fortress sound, but burned all 3 illegal tries in the race (Bf3 own knight; Kb5 his a-pawn's capture square; Kd6 HIS bishop stood there) - one more = forfeit. His Bc5 covered e7 through d6: I pushed anyway and lost the bishop.
 
-## T40R5 v SF19, L m26 (...Nf6/...e6/...d5)
-- 5...d4! is SF's answer to my g3 clamp: tempo on Nc3. 6.Nb5 ...c6 did BOTH jobs (kick + re-guard d4); 7.Nc3?? = N for P. The raid fails: Nxd4?? ...exd4; Bg2 does NOT cover d4. 15.Qd2?? UNGUARDED = full Q. 19.g4 opened Bxh2+ -> Qh2#. After Rfd1 f1 is EMPTY.
+## T41R2 v SF19 (...e5/...Bb4/...e4)
+5.Ng5 fine; 7.Nf3?? = exf3 (the e4-pawn's square - same kill as T44R4's Ned5-idea); 17.Qd4?? = Q for N (c6-knight's jump). Counts omitted home Bc1: believed 'equal' down N for P from m7.
 
-## T40R1 v Sonnet (English 4K), L m35
-- 13.Bg5?? = B for P (his h6-PAWN); 14.Nxg5?? unguarded; 17.h3 abandoned g3 -> 19...Nxg3. Redraw armies after my own captures (9.d3 illegal after dxc3).
+## T40R5 v SF19
+5...d4! is his answer to the g3 clamp (tempo on Nc3); the raid fails (Nxd4 exd4). 7.Nc3?? = N for P; 15.Qd2?? unguarded = full Q; 19.g4 opened Bxh2+; after Rfd1, f1 is EMPTY.
 
-## T38 condensed
-- T38R4 v Sonnet L m16: 13.Qxd7?? = Q for P (his BISHOP stood there). 10.Nxe4! worked - Bg2's ray was open; verify it.
-- T38R2 v DeepSeek L m60: 15.Nxe5?? (Qc7+Nd7 = 2 attackers); 25.dxc6?? while his Qa6 hit my Qd3 = Q for B. GOOD: 32.Bxb7!, 44.Kxf5!.
+## T40R1 v Sonnet (4K)
+13.Bg5?? = B for P (his h6-pawn); 17.h3 abandoned g3 - Nxg3. Redraw armies after my own captures.
 
-## Older condensed
-- T37R6 v SF19: 8.Nxe5?? (c6-knight hits e5), 12.Be3?? (d4-pawn's square), 17.Qxc5?? (...c5 knight square).
-- T36R4 v Sonnet: meet ...e4 with 7.Nd2/Ne1, never 7.d3 or Nxe4. R-vs-B: bishop lives OFF rook lines; blockade with the KING.
-- T36R3 v DeepSeek: 17.Bxe4?? skipped his Nc5; 31.Rc1?? boxed my own Bd2. GOOD: 36.exd4! won B+R for 2P.
-- T35R4 v Sonnet: 7.Nxe4?? (Bg2's guard blocked by MY Nf3). GOOD: 31.gxh4! took unguarded Rh4.
+## T38/T37/T36 condensed
+13.Qxd7?? = Q for P (his bishop stood there); 15.Nxe5?? (Qc7+Nd7 double); 17.Bxe4?? skipped his Nc5; 7.Nxe4?? (Bg2's guard blocked by MY Nf3); GOOD 31.gxh4! unguarded Rh4; 8.Nxe5?? (c6-knight hits e5); meet early ...e4 with 7.Nd2/Ne1, never d3 nor a capture; R-v-B: bishop lives OFF rook lines, blockade with the KING; 12.Be3?? (d4-pawn's square).

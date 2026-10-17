@@ -1,28 +1,23 @@
-# Open games and English: files, capture chains and mate
+# English and Berlin: checks, guards and capture chains
 
-## T39 round 3: Black vs GLM, English, mate win
-1.c4 e5 2.Nc3 Nf6 3.Nf3 Nc6 4.g3 d5 5.cxd5 Nxd5!
-- Nxd5 was the only good move. White played e4?! BEFORE Bg2; Nb6/Be7/O-O retained pressure on d4. This differs from its earlier d3 setup. The c-pawn was gone, so this was not a Maroczy.
-- White's d4 met exd4. Nxd4?? allowed my Nc6xd4; Qxd4 then lost Q to Qd8xd4. The original d-pawn had disappeared and d7/d6/d5 were empty. Nc3 did NOT defend d4. A named first recapture can still fail at the final capture. Do not describe the queen win as forced before White's mistake.
-- Qd8 safely answered Be3's attack. Nxd5/exd5 removed the remaining knights; Bd6 blockaded the passer. Bg4 attacked Rd1 through f3/e2. Bf4 attacked my OTHER bishop but did not answer that threat: Bxd1 Rxd1 Bxf4 gxf4 gained the exchange while trading both bishops for R+B. Count the entire liquidation.
-- Qd6 blockaded d5 and Rae8 activated the rook. Be4 tried to strengthen d5 but landed on Re8's clear e-file with no guard: Rxe4 won B. Rd4 attacked that rook but Rxd4 took White's last rook. An attack does not force retreat; the attacked piece may capture its attacker.
-- With only enemy pawns left, Rd1+ displaced K and Qxd5+ removed the passer. After f3, Qd2+ Kg3 Rg1+ Kh4 Qg5# followed. Rg1 protected Qg5 through empty g2/g3/g4 and sealed the g-file; Q controlled h5/h3. White's f3/h3 pawns restricted its king. Earlier h3 luft did not answer this net.
-- Zero invalid moves; GLM had one c4 attempt after its c-pawn was gone. Finished 11:10. Book mostly 7-11 seconds; central captures 18-30. Rd1+/Qxd5+/Qd2+ took 44/30/57 despite overwhelming material. Verify the support and flights explicitly, then execute the known finish quickly.
+## T44 round 5: Black vs GLM, 60+10, flag draw
+- English d3 branch: e5/Nf6/Nc6/d5, cxd5/Nxd5!, then Nb6/Be7/O-O/Be6/Qd7/Rad8. a5 stopped a4-a5. Bh3 met Bxh3/Qxh3!; GLM's claim that h3 had no defender ignored Qd7-e6-f5-g4-h3 after Be6 moved.
+- Nh4 allowed Bxh4/gxh4, damaging White's shield. Qxh4?! and Nd4? were marked adverse; no verified replacements supplied. Bxd4/Rxd4 activated R without proving the earlier moves sound.
+- CRITICAL: Nc5 vacated e4, then Qxf2+?? allowed Kxf2. My f7 pawn blocked Rf8-f2; Rd4 and Nb6 did not guard f2. I planned Kh1/Rh4 without checking the king capture. An enemy knight abandoning a square does not remove the king's capture of an unsupported checker.
+- Active resistance: Rf4+ was protected by e5; h5 supported Rg4+. Nd5/Nf4 offered threats. White Qxf4 lost Q to Rg4xf4; e5xf4 was also available. This returned its queen FOR my knight, not for nothing. White still had N until Nxe5?! fxe5! removed it. Result: two rooks each, White FIVE pawns against my FOUR. Recount before calling recovery conversion.
+- Rf2+ now WAS supported: f7 had moved to f6 then e5, clearing Rf8-f2. Same destination, different screen. R8f6?! and Rbg2? were adverse; no verified improvements supplied. Rg6+ bought a tempo against Rab1, then doubling on g-file depended on Rg6 guarding Rg2.
+- SECOND LOSS: with Kh1, Rg2/Rg6 and enemy Rf4, R6g4? attacked Rf4 but removed Rg2's only guard. Rxg4! hxg4 Kxg2 lost BOTH rooks for one. Evaluate each legal recapturer separately; a pawn on g4 did not guard g2. Do not describe this as an even rook trade or compensation from an advanced pawn. No engine-verified replacement stored.
+- Ke6?!/e4? also worsened the ending. After losing rooks, central pawns prolonged resistance. White d6 was NOT passed: c7xd6 removed it. My king intercepted a6/b6 and took both; b6 did not defend a6. These opponent errors did not restore equality against R.
+- White eventually took d5 and e4, leaving my bare K. Its flag therefore drew through insufficient mating material. A clock advantage cannot turn bare K into a win; retain viable mating material when possible without inventing tactical compensation.
+- Zero invalid moves; GLM two. Finished 52:23 while it flagged. Qxf2+ took 45 seconds and R6g4 41: time was ample, but immediate king captures and abandoned guards went unchecked. GLM spent repeated minutes on simple ending moves. Use forcing scans, not rumination.
 
-## T35 round 1: distinguish GLM's d3 branch
-- Same central opening, then Nb6/Be7/O-O/Be6/Qd7/Rad8 gave active development. No forced opening advantage established.
-- Nd5 Nxd5 Rd1 omitted White's pawn recapture; Nf6 saved my extra piece. Be6 could have recaptured exd5, so the gift did not prove Nd5 itself lost material. Bg5 did not pin Nf6 to Qd7.
-- Nd4 Nxd4 exd4 retained the extra piece. Qe3 landed on d4's capture diagonal: dxe3 won Q for P.
-- Bxb2 attacked Ra1; Rdb1 attacked B, but Bxa1 won R outright. Rxb7 did not capture Ba1. Count actual recaptures, not intended exchanges.
-- Rb1+ forced Bf1; Bh3 supported Rxf1# through g2. Bf1 could not leave the rank, Kxf1 was bishop-controlled and K had no flight. Ra8's trade offer did not answer mate. Finished 12:05; Rb1+/Bh3 took 46/42 seconds unnecessarily.
+## Earlier English patterns
+- T39 e4 BEFORE Bg2 differed from d3. White d4/exd4/Nxd4 allowed Nc6xd4; Qxd4 lost Q to Qd8xd4 on the cleared file. Nc3 never guarded d4. White c-pawn was gone, so not a Maroczy.
+- Bg4 hit Rd1 through f3/e2. Bf4 attacked my other bishop, but Bxd1/Rxd1/Bxf4/gxf4 gained exchange. Be4 later landed undefended on Re8's file; Rxe4 won B, and Rd4 was answered by Rxd4.
+- T35 Nd5/Nxd5/Rd1 omitted White's pawn recapture; Nf6 saved extra N. Bg5 did not pin Nf6 to Qd7. Qe3 landed on d4's pawn diagonal. Rdb1 attacked Bb2, but Bxa1 took R. Rh-file mating support must be traced on the current board.
 
-## T24 final: queens-on Berlin vs SF19, loss
-- After the usual central exchanges, Qe2/Be7/Rd1 left Qd8 attacked on the empty d-file. Nd4 hit Qe2 and blocked the file but Nf3 could take it. The c6 pawn was relatively pinned: cxd4 would allow Rxd8+ Bxd8, losing Q for R. I abandoned N with Qd5. No verified replacement supplied; distinguish queenless Berlin.
-- Be6 relied on f7 while e5 screened Qe2-e6. f6 removed the guard; exf6 removed the screen. Bxf6 did not defend Be6, so Qxe6+ won B. Place the enemy capture before choosing a break.
-- Qh5 supported e8 through g6/f7. Re8+ Rxe8 Qxe8# deflected the back-rank rook. Kg8 released g7's pin but did not answer mate.
-
-## Retained geometry
-- OWN d4 blocked Qd1-d5: Rxd5 Qxd5 lost R. Re1 was legal, not verified best.
-- K screens can be driven away: Ke3/Rf2 faced Bc5+; Ke2 Bxf2 Kxf2 gave R for B.
-- Italian Re1+ Nxe1 Qxf2+ Kh1 Qg1# diverted Nf3 and cleared Bc5-g1. Nd4 Nxd4 exd4 can open the e-file; an attack on Re3 does not stop checks.
-- Kf4/Nf3 versus Kd5 and enclosing pawns allowed e4+ Kc4 Ne5#. Test pawn/knight checks and all exits before entering a pawn enclosure.
+## Berlin and retained geometry
+- T24 queens-on Berlin: Rd1 attacked Qd8. Nd4 blocked and hit Qe2, but Nf3 could take it; c6xd4 would permit Rxd8+ Bxd8, losing Q for R. A relative pin can invalidate a recapture.
+- Be6 depended on f7 while e5 screened Qe2-e6. f6 abandoned the guard; exf6 removed the screen. Bxf6 did not guard Be6, so Qxe6+ won B.
+- Qh5 supported e8 through g6/f7: Re8+ Rxe8 Qxe8# deflected the back-rank rook.
+- Own d4 blocked Qd1-d5. Kf4/Nf3 against Kd5 and enclosing pawns allowed e4+ and Ne5#. Test pawn/knight checks before king entry.
