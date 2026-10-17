@@ -6,8 +6,8 @@ Hit rate = cached input tokens / all input tokens of the move requests, read fro
 
 | Player | Requests | Input tokens | Cached | Hit rate | Warm hit rate |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| DeepSeek V4.1 Flash | 147 | 8158104 | 6551040 | 80.3% | 80.5% |
-| GLM 5.3 Flash | 104 | 3507128 | 3130176 | 89.3% | 89.9% |
+| DeepSeek V4.1 Flash | 172 | 10071449 | 8234752 | 81.8% | 81.9% |
+| GLM 5.3 Flash | 129 | 4959721 | 4204032 | 84.8% | 85.1% |
 | GPT-6.1 Sol | 204 | 8529601 | 8129280 | 95.3% | 95.7% |
 | Haiku 5.5 | 158 | 8723080 | 8350471 | 95.7% | 96.1% |
 | Sonnet 5.5 | 187 | 9246554 | 8607848 | 93.1% | 93.6% |
@@ -16,9 +16,9 @@ Hit rate = cached input tokens / all input tokens of the move requests, read fro
 
 | Player | Requests | Input tokens | Cached | Hit rate | Warm hit rate |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| DeepSeek V4.1 Flash | 10671 | 143039486 | 90919296 | 63.6% | 63.7% |
+| DeepSeek V4.1 Flash | 10696 | 144952831 | 92603008 | 63.9% | 64.0% |
 | Fable 5.1 | 179 | 3913645 | 3703873 | 94.6% | 95.5% |
-| GLM 5.3 Flash | 1749 | 38578180 | 33024768 | 85.6% | 86.2% |
+| GLM 5.3 Flash | 1774 | 40030773 | 34098624 | 85.2% | 85.7% |
 | GPT-6 Astra | 456 | 15632539 | 14922624 | 95.5% | 95.9% |
 | GPT-6.1 Sol | 9951 | 307591070 | 286812672 | 93.2% | 93.8% |
 | Haiku 5.5 | 482 | 25148872 | 24100743 | 95.8% | 96.2% |
