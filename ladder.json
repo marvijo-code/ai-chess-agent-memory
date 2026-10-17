@@ -12,7 +12,7 @@
    "depth": 4,
    "streak": 0,
    "steps": [],
-   "updated_at": "2026-10-16T20:33:06+00:00"
+   "updated_at": "2026-10-17T02:28:28+00:00"
   },
   "DeepSeek V4.1 Flash": {
    "depth": 4,
@@ -71,9 +71,9 @@
    "at": "2026-10-10T13:25:28+00:00"
   }
  ],
- "updated_at": "2026-10-17T01:44:08+00:00",
+ "updated_at": "2026-10-17T02:28:28+00:00",
  "last_step": {
-  "player": "Haiku 5.5",
+  "player": "GPT-6.1 Sol",
   "outcome": "loss",
   "depth": 4,
   "streak": 0,
@@ -82,9 +82,9 @@
   "to": 4,
   "tournament": "aichess-0044-20261016-161517",
   "number": 44,
-  "game": "r6b1",
+  "game": "r7b1",
   "color": "black",
   "termination": "checkmate",
-  "at": "2026-10-17T01:44:08+00:00"
+  "at": "2026-10-17T02:28:28+00:00"
  }
 }

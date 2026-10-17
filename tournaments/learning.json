@@ -1330,15 +1330,15 @@
    "number": 44,
    "players": {
     "GPT-6.1 Sol": {
-     "games": 6,
-     "read_in_prompt": 6,
-     "read_latest": 6,
-     "reflections": 6,
+     "games": 7,
+     "read_in_prompt": 7,
+     "read_latest": 7,
+     "reflections": 7,
      "memory_updates": 4,
-     "note_updates": 5,
-     "rejected": 2,
+     "note_updates": 6,
+     "rejected": 3,
      "errors": 0,
-     "retries": 9
+     "retries": 11
     },
     "Haiku 5.5": {
      "games": 6,

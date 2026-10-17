@@ -1,26 +1,28 @@
-# Four Knights: recapture guards and king cages
+# Four Knights: extra pawn, rook entry and king safety
 
-## Castled opening vs Stockfish 19
-5.O-O O-O 6.Nd5 Nxd5 7.exd5 e4 8.dxc6 exf3 9.Qxf3 dxc6.
-- Both sides lose both knights and e-pawns; material equal. Distinguish Nd5 BEFORE castling. Immediate Qd4/Bg4/Bd6 and queen exchanges have reached near equality.
+## Opening that has worked
+- Castle before resolving Nd5. After Nxd5/exd5, e4 attacks Nf3; complete exf3 and dxc6 rather than stopping at an intermediate material count. Both sides lose both knights and e-pawns; material equal.
+- Against Bc4/d4, Bd6/Qh4!/Qxd4! won the d-pawn after g3 answered Qxh2#. This has worked repeatedly; it does not certify the ending.
+- T44: Bg4 attacked Qf3 with Qd4 supporting B. Be3 counterattacked Qd4; Bxf3/Bxd4 traded queens while retaining the extra pawn.
 
-## T41 Final: Black vs SF19, mate loss
-- Against Bc4/d4, Bd6/Qh4!/Qxd4! won the d-pawn after g3 answered Qxh2#. This pawn-winning branch is now actually played; it does not certify the later ending.
-- Be6/Bxe6/fxe6! opened the f-file. Qb3 attacked e6; Qd5 blocked and offered exchange. Qxb7 restored equal pawns. Rfb8/Rb6/Rab8 chased Q through Qa6! to d3 while White gained Rd1 on the d-file. Rook tempos did not retain the extra pawn.
-- With c6/e6 guarding Qd5, e6-e5?! abandoned d5. Qxd5+ cxd5! Rxd5! left Black a pawn down. Before the push, exd5 would leave c6 guarding the recapturing pawn; afterward cxd5 had no pawn guard. Bd6 did NOT defend d5. Evaluate a pawn break through the enemy's last capture, not the attractive connected pawns after my recapture. No verified best replacement supplied.
-- Rb5/Rxb5/Rxb5! traded rooks evenly, preserving the pawn deficit. a6 supported Rb5; c5 later supported Rb4. a5 was itself loose. Bd2 attacked Rb4 through c3, forcing a response before Bxa5. A supported rook does not defend every pawn near it; inspect a bishop tempo that displaces the rook and opens a second capture.
-- After Rd1, Be7 escaped the attack on Bd6. Returning Be7-d6 later to guard c5 put B back on the clear d-file with NO defender. Rxd6 won a whole bishop. Kf5 was too far away; Rf7 did not guard d6. A defensive purpose cannot make the destination safe.
-- Kf5 was enclosed by own e5/g5 and enemy f3/g3: e4/g4 were pawn-controlled, f4 was controlled by g3 and Ke3. After Rxd6, Ra7 moved Rf7, the last possible capturer of Rf6, away to blockade a5. Rf6# used Bd8-e7-f6 support against Kxf6 and rook control of e6/g6. An advancing passer does not outrank immediate mate; map all eight king exits before relocating the final defender.
-- Zero invalid; finished 7:37. e5 took 33 seconds, Rb7 54, g6 53, Bd6 32 and Ra7 29. Time shortage did not cause the loss. Spend thought on recapture guards, cheap captures and actual flights.
+## T44 Final: Black vs SF19, Rc8# loss
+- Rfe8 developed while Ra8 guarded a7. After c3, Bd5 centralized B; Be3/a6?!/Rfd1?!/Be6/Bxe6/Rxe6 preserved the extra pawn without doubled e-pawns. a6 was marked inaccurate; no verified replacement supplied.
+- b5 challenged c4; b3 retained White's chain. Rd8 developed the second rook and guarded Bd6. c5 displaced B: Be7! allowed Rxd8+ Bxd8!, safely completing the rook trade. These correct moves did not settle back-rank safety.
+- Rd1! gained the open file; Be7 cleared d8 and Rd7 invaded. Re5? attacked c5 while leaving c7 available. I calculated pawn recovery after Rxc7! instead of checking the resulting king position.
+- Fatal chain: 26...Bxc5 27.Bxc5 Rxc5 28.Rc8#. My final recapture retained an extra pawn on paper, but Kg8 remained boxed by f7/g7/h7. Rc8 checked across d8/e8/f8 to g8.
+- CRITICAL SCREEN: my OWN pawn on c6 blocked Rc5-c8. The rook could not capture the checker through it. With B gone there was no interposition on d8/e8/f8, and no king flight. Before a rook capture, trace its actual return path rather than assuming the rook can defend its file.
+- Start this audit when Rd1/Rd7 creates entry, before committing to Re5 and the liquidation. Secure a flight or retain a concrete back-rank defense; no engine-verified best replacement stored. Do not turn this into an automatic pawn-push prescription.
+- Zero invalid moves; finished 59:18 in 60+10. Be7 took 45 seconds, Re5 22, final Rxc5 two. Fast recaptures are appropriate only after checking the opponent's NEXT forcing move. Sparse marks omitted the terminal recapture's consequence; audit the whole finish.
 
-## T41 round 4: queenless mate loss
-- Rae8/Be6/Rxe6, f5/g6/a6/Rfe8/Kf7/c5 stayed near equal. Re6/Re8 did NOT support f5; g6 did. Kg7 unpinned f5 but gxf5 gxf5 Rxf5 won P: the recapturing g-pawn had abandoned its old guard square.
-- Rh6 allowed Rg1+; Kh8 stepped onto Bc3-h8 with g7/g8 rook-controlled and h7 occupied. Be5 blocked but Rxe5 removed B; Rxe8xe5 would permit Bc3xe5#. Supported interpositions must survive the final recapture.
-- Rxh2+ Kxh2 lost R because the former Bd6-h2 bishop support had disappeared. Rd5# vacated Re5, discovering Bc3-h8 while blocking Rd8-d4; Rxd5 could not answer the bishop check. Finished 10:57 despite four 52-55 second defensive thinks.
+## T41 Final: Black vs SF19, Rf6# loss
+- Be6/Bxe6/fxe6 opened f-file. Qb3/Qd5/Qxb7 restored equal pawns despite rook tempos chasing Q. With Rd1 pressuring d5, e5?! abandoned Qd5's e6-pawn guard. Qxd5+ cxd5 Rxd5 left P down; the final pawn on d5 lacked a pawn guard. Bd6 did not defend d5.
+- Rb5 exchanges preserved the deficit. c5 supported Rb4 but a5 was loose. Bd2 displaced the rook before Bxa5: support did not protect every nearby pawn.
+- Returning Be7-d6 to guard c5 put B undefended on Rd1's file; Rxd6 won it. Purpose did not validate destination.
+- Kf5 was enclosed by own e5/g5 and enemy f3/g3. Ra7 moved Rf7, the last potential capturer of Rf6, away to blockade a5. Rf6# used Bd8 support; rook sealed e6/g6 and pawns covered e4/f4/g4. Map all eight exits before remote blockade.
 
-## T40 and retained geometry
-- Ke7 unpinned f5 but blocked Re8-e6. exf5 attacked Re6; Kxe6 was illegal because f5 controlled e6. Later g6 supported Rf7+, driving the sole king guard away before Rxe6 won R.
-- Kb5 attacked Ra4 but allowed c4#: own a6/c5 and enemy rook controls enclosed K. Map flights before king raids.
+## Queenless screens and retained geometry
+- Re6/Re8 do not guard f5; g6 does. Kg7 unpinned f5 but gxf5 gxf5 Rxf5 won P. Ke7 can unpin f5 while blocking Re8-e6; Kxe6 is illegal with enemy pawn f5.
+- Kh8 entered Bc3-h8's cage. Be5 blocked but Rxe5 removed it; the rook recapture exposed bishop mate. Rd5# later vacated Re5, discovering Bc3-h8; Rxd5 could not answer bishop check.
+- Rxh2+ Kxh2 lost R after its former bishop support disappeared. Refresh support after exchanges.
 - Rb8 Qxb8+ lost R because c7 blocked Qd6-b8. Rdf8/Bh6+/Bxf8/Bxf8 cleared d6 and exposed Bc6 to Rxc6.
-- d4+ forked Ke5/Bc5. Rxg4+ cleared Rd4's screen of Bc3-e5; Rg8xg4 could not answer the discovered check.
-- b8=Q+ can discover Ra7-d7 and prevent Rxb8. Include en passant and capture-promotions in races.
+- d4+ forked Ke5/Bc5. Rxg4+ cleared Rd4's screen of Bc3-e5; a rook recapture did not answer discovered check. Promotion checks can also uncover a rook line; include capture-promotions and en passant.
