@@ -1844,14 +1844,14 @@
      "warm_hit_rate": 0.8614
     },
     "DeepSeek V4.1 Flash 1017": {
-     "calls": 157,
-     "input": 6216006,
-     "cached": 5564672,
-     "output": 1088869,
-     "warm_input": 6154086,
-     "warm_cached": 5524480,
-     "hit_rate": 0.8952,
-     "warm_hit_rate": 0.8977
+     "calls": 164,
+     "input": 6903710,
+     "cached": 6205568,
+     "output": 1177510,
+     "warm_input": 6841790,
+     "warm_cached": 6165376,
+     "hit_rate": 0.8989,
+     "warm_hit_rate": 0.9011
     },
     "GLM 5.3 Flash": {
      "calls": 114,
