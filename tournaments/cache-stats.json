@@ -1819,14 +1819,14 @@
    "number": 48,
    "players": {
     "DeepSeek V4.1 Flash 1017": {
-     "calls": 52,
-     "input": 3027658,
-     "cached": 2784256,
-     "output": 346912,
-     "warm_input": 3020120,
-     "warm_cached": 2779392,
-     "hit_rate": 0.9196,
-     "warm_hit_rate": 0.9203
+     "calls": 66,
+     "input": 3245150,
+     "cached": 2960896,
+     "output": 401443,
+     "warm_input": 3227900,
+     "warm_cached": 2949760,
+     "hit_rate": 0.9124,
+     "warm_hit_rate": 0.9138
     }
    }
   }
