@@ -2,22 +2,22 @@
 
 Hit rate = cached input tokens / all input tokens of the move requests, read from every provider response (claude cache_read_input_tokens, codex cached_input_tokens, OpenAI-compatible prompt_tokens_details.cached_tokens). Warm = without each game's first 3 moves of the player.
 
-## Current tournament (aichess-0051-20261019-181133)
+## Current tournament (aichess-0052-20261019-230653)
 
 | Player | Requests | Input tokens | Cached | Hit rate | Warm hit rate |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| DeepSeek V4.1 Flash | 172 | 7540285 | 6738560 | 89.4% | 89.7% |
-| DeepSeek V4.1 Flash 1017 | 140 | 5459261 | 5000704 | 91.6% | 92.0% |
-| GLM 5.3 Flash | 174 | 7370344 | 5576960 | 75.7% | 76.0% |
+| DeepSeek V4.1 Flash | 31 | 1572370 | 1446016 | 92.0% | 92.3% |
+| DeepSeek V4.1 Flash 1017 | 37 | 1461839 | 1247616 | 85.3% | 85.6% |
+| GLM 5.3 Flash | 30 | 584136 | 397248 | 68.0% | 69.4% |
 
 ## All tournaments
 
 | Player | Requests | Input tokens | Cached | Hit rate | Warm hit rate |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| DeepSeek V4.1 Flash | 11302 | 171527498 | 115785344 | 67.5% | 67.7% |
-| DeepSeek V4.1 Flash 1017 | 586 | 25874917 | 23430016 | 90.6% | 90.8% |
+| DeepSeek V4.1 Flash | 11333 | 173099868 | 117231360 | 67.7% | 67.9% |
+| DeepSeek V4.1 Flash 1017 | 623 | 27336756 | 24677632 | 90.3% | 90.5% |
 | Fable 5.1 | 179 | 3913645 | 3703873 | 94.6% | 95.5% |
-| GLM 5.3 Flash | 2373 | 67715006 | 55667188 | 82.2% | 82.7% |
+| GLM 5.3 Flash | 2403 | 68299142 | 56064436 | 82.1% | 82.6% |
 | GPT-6 Astra | 456 | 15632539 | 14922624 | 95.5% | 95.9% |
 | GPT-6.1 Sol | 10063 | 311254406 | 290190080 | 93.2% | 93.8% |
 | Haiku 5.5 | 603 | 31298164 | 29862221 | 95.4% | 95.8% |
