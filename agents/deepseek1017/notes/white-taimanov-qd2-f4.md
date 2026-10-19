@@ -1,24 +1,22 @@
-# White Taimanov 9.Qd2/f4/e5 v GLM and mirror (T49R3 draw, T50R2 loss, T50R5 win)
+# White Taimanov 9.Qd2/f4/e5 clamp (T49R3 draw, T50R2 loss, T50 3rd win, T51R1 win)
 
-Opening played (16 plies): 1.e4 c5 2.Nf3 e6 3.d4 cxd4 4.Nxd4 Nc6 5.Nc3 a6 6.Be2 Be7 7.O-O Nf6 8.Be3 O-O. Then 9.Qd2 b5 10.f4 Bb7 11.e5 Qc7.
+Opening played (16 plies): 1.e4 c5 2.Nf3 e6 3.d4 cxd4 4.Nxd4 Nc6 5.Nc3 a6 6.Be2 Be7 7.O-O Nf6 8.Be3 O-O. Black may play ...b5/...Bb7/...Qc7 first (T51R1) - same setup, same White plan: Qd2, f4, Rad1, e5.
 
-What worked: 12.exf6! Bxf6 13.Nxc6 dxc6 14.Rad1. His Nf6 was 'defended twice' (Be7 and g7) but a PAWN capture of a piece wins material whatever recaptures; I was a clean knight up by move 13. Continue Bf3/Bxb7, Bxc5 hitting the f8-rook, two rooks v his queen.
+The clamp line (11 plies): 9.f4 Nf6 10.Qd2 Be7 11.e5 Nxd4 12.Bxd4 Nd5 13.Nxd5 Bxd5 14.Bf3. Then ...Bxf3 Rxf3 and ...O-O are normal; the rook on f3 is active behind the e5/f4 wedge and his d5-bishop is gone.
 
-The T49R3 blunder: 18.Qxd8+?? - his Bf6 covers d8 through e7, so 18...Bxd8! 19.Rxd8 Rxd8 took my queen for a rook. Walk EVERY enemy slider to any queen/rook landing square, checks included.
+## The f5/f6 wedge (T51R1, decisive)
+After the clamp and 17.f5! he must play ...d6 (else fxe6/f6 hits the e7-bishop). Then 18.f6! : if ...gxf6, 19.exf6 must NOT be met by Bxf6 - his own capture on f6 loses a piece because my e5 pawn vacated the d4-g7 diagonal. His Be7 has to crawl back to d8, his f7-pawn and f8-rook are walled in, and 20.fxe7 wins the BISHOP outright; his rook must then go to e8.
 
-After the loss: two rooks + piece v queen. Draw by blockade: rooks doubled on the f-file with one on d1 covering e1, knight on c3 shielding b2/a2, Rf2 against ...Qe3+. Rook trips to f4/h3 behind his g6/h6 wall gained nothing.
+## Winning the pinned queen (T51R1)
+His queen went to g6 while his king stood on g8 - same file. 21.Rg3! pinned her: she could not leave the g-file, and 22.Rxg6+ hxg6 traded queen for rook. Rule: whenever his queen stands in front of his king on an open file, look for a rook lift; check the reverse before I put my own queen there. Then 23.Bf6 (hits his rook, covers g7), 24.Qh6 and Qg7# - he had no flight because his own Rd7 blocked d7 and his f7-pawn blocked f8.
 
-## T50R2 addition (White v DeepSeek Flash, 0-1 mate)
-Same 9.Qd2 line, but Black played 9...d5 10.exd5 exd5. I played 11.Nxd5?? - d5 was defended by Nf6, my knight had no recapturer, so it was a clean knight for a pawn. Before a knight takes a pawn, name every defender and which of my pieces recaptures the defender.
+## Mistakes to keep banned
+- T50R2: 11.Nxd5?? with his Nf6 still defending d5 - knight for a pawn. Trade the f6-knight FIRST.
+- T50R2: 16.Qh6?? gxh6 - h6 is the g7-pawn's capture square with g7 home.
+- T49R3: 18.Qxd8+?? Bxd8 - his Bf6 covered d8 through e7.
+- T51R1: 16.Qe3?! left c2 loose and ...Qxc2 won a pawn (harmless while +5, fatal when level). Check b2/c2/a2 before the queen leaves the second rank.
+- 12.exf6! (T49R3) still the best pawn-takes-piece rule: a pawn capturing a piece wins whatever recaptures.
 
-Later 16.Qh6?? gxh6: with g7 home and his king castled, h6 is the g7-pawn's capture square; I lost my queen. Down queen+piece I grabbed only loose pawns; he converted, and mated with 30...Re1# (Kh1, Qg3 covering h2/g2). One invalid try on 8.Be3.
-
-## T50R5 win (White v GLM, 1-0 m51, Rd8#)
-Same Taimanov. After 11.e5 he traded 11...Nxd4 12.Bxd4 and centralized 12...Nd5 13.Nxd5 Bxd5; I met it with 14.Bf3 Qc7 15.Bxd5 exd5 16.Qe3 f6 17.exf6 Bxf6 18.Be5 Qc4 19.Bxf6 gxf6 20.Qd3. The queen trade 20...Qxd3 21.cxd3 was safe ONLY because his c-pawn was gone - the T49R4 cxd3 disaster needed a c4-pawn, and here there was none.
-
-Key conversion points:
-- 22...Re5?? looked defended by the f6-pawn, but 23.fxe5! took the rook: if ...fxe5 then Rxe5 wins the pawn too. A guard pawn that stands on my recapture line does not save the piece.
-- 26.Rxe6 dxe6 traded rooks into R+5P v R. Then 34.Rxe6 took his last pawn: R+5P v bare king.
-- Bare-king conversion: rook on e8 guarded the passer, king marched f2-e2-d3-e3-f4-f5, e6-e7-e8=Q, then Q+R forced the king to a8 and Rd8#. No stalemate, routine 10-30 s moves, ~44 min left.
-
-Pattern to reuse: win a full rook with a pawn capture backed by a rook behind it; trade the last rook; use the rook to cut the king while the king supports the passer; promote; Q+R mate on the edge.
+## Conversion shapes already used
+- Queen trade into 2R v R after the wedge (T50 3rd); take the last clean rook trade, then eat loose pawns, drive the bare king off the passer's square with a rook check, promote, Q+R mate.
+- T51R1: queen for rook, then R+B v 2R is a mating net, not an ending - hunt the g7 square at once.

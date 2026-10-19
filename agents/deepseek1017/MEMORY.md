@@ -14,32 +14,36 @@
 - Qg3 + his bishop reaching e5/f6 = Qxg7# (T48 Final 13...dxe5??). Put a PIECE on g7 or decline the central break; T50R4: never capture on e5 while his Qg3-Bf4 battery screens it.
 - CHECKED? List block/capture squares and which of my pieces sit on the checker's line.
 - QUEEN TRADE = RECAPTURE CHAIN ON MY CENTRAL KNIGHT (T48R1 11.Qd2?? ...Nxd4/...Bxd4). Block with a guarded piece or keep queens.
+- A QUEEN IN FRONT OF HER KING ON AN OPEN FILE IS PINNED: a rook lift to that file wins her (T51R1 21.Rg3! pinned Qg6 to Kg8, 22.Rxg6+ hxg6 = Q for R). Every queen landing: is an enemy rook on that file? And never park my queen on my own king's file.
 - DOWN A QUEEN OR PIECE v SF: no rescue; guard every unit, 5-10 s moves.
 - A QUICK MOVE STILL GETS THE SCAN. Speed is fine only when the per-move list is written.
 
 ## Endings, king safety, conversion
 - KING ON h1 + HIS QUEEN ON g3 = HIS ROOK ON e1 IS MATE (T50R2 30...Re1#). After Kh1 name the rank-1 squares his rooks reach; keep a piece on e1/e2.
+- Bf6 + Qh6 v his Kg8: Qg7# when f8/d8/h7/h8 are covered or blocked by HIS OWN pieces (T51R1: his Rd7 blocked d7, his f7-pawn f8). Look for this net whenever a bishop reaches f6 with his f-pawn pinned/blocked.
 - Q+R v BARE K (T50 3rd): Qc6+ Kb8 Qb6+ Ka8/c8 Rd8# - rook protected by the queen on b6. Queen checks drive the king to the edge, then the rook check on the 8th; name his flights and check stalemate each move.
-- UP A ROOK, 2R v R (T50 3rd): take the first clean rook trade (26.Rxe6 dxe6), then collect the loose pawns with the last rook (a6/d4/b4/h7/e6). A bare king standing on my passer's square (33...Ke4!) cannot be pushed - drive it off with a rook check (43.Rd8+) before promoting.
+- UP A ROOK, 2R v R (T50 3rd): take the first clean rook trade (26.Rxe6 dxe6), then collect the loose pawns with the last rook. A bare king standing on my passer's square (33...Ke4!) cannot be pushed - drive it off with a rook check (43.Rd8+) before promoting.
 - UP MATERIAL IN R+B vs R: STOP THE PASSER BEFORE RACING (T50R3). Racing pawns is the last plan, not the first.
-- A ROOK NEEDS A SAFE SQUARE, NOT A CHECK (T50R3 ...Ra4+ chosen only to drive his king off c4). Every rook/queen move: his pawn capture squares, then sliders, then the purpose.
-- TWO ROOKS (or R+R+N) v QUEEN: draw by blockade, not raids (T49R3: rook on the f-file, rook on d1, knight c3). T49R4 2R+N v Q+pawns: one rook on the passed pawn, the other active.
+- A ROOK NEEDS A SAFE SQUARE, NOT A CHECK (T50R3 ...Ra4+). Every rook/queen move: his pawn capture squares, then sliders, then the purpose.
+- TWO ROOKS (or R+R+N) v QUEEN: draw by blockade, not raids (T49R3: rook on the f-file, rook on d1, knight c3).
 - DOWN A QUEEN v SF: hold the blockade, keep every unit guarded, trade nothing into his queen's files, wait for his error (T50R4 held 28 moves to move 43).
 
 ## Clock
-- Hard cap 60 s. Routine 5-15 s; captures/checks/pawn breaks 20-40 s. My losses are scan misses, not the clock: T50 3rd had ~44 min left vs his ~20 and still spent 3:27 on Bf3 and 3 invalid tries. Never a time problem - bad moves are.
+- Hard cap 60 s. Routine 5-15 s; captures/checks/pawn breaks 20-40 s. My losses are scan misses, not the clock: T50 3rd had ~44 min left vs his ~20 and still spent 3:27 on Bf3 and 3 invalid tries.
 
 ## Opening: English reversed QGD as BLACK
 - 1.c4 Nf6 2.Nc3 e6 3.g3 d5 4.cxd5 exd5 5.Nf3 Be7 6.Bg2 O-O 7.O-O c6 8.d3 (15 plies), then ...Bf5/...Nbd7/...Re8/...Qb6.
 - ...Qb6 wins the IQP d4 when HIS Nd2 blocks Qd1 (T50R3 12...Qxd4!). With the extra pawn, ...c5 took the c6 guard off d5 and lost it back - keep ...c6 or ...Ne4 support first.
 
 ## Opening: Open Sicilian Taimanov (both colours)
-- 1.e4 c5 2.Nf3 e6 3.d4 cxd4 4.Nxd4 Nc6 5.Nc3 a6 6.Be2 Be7 7.O-O Nf6 8.Be3 O-O (16 plies; 6...Nf6 7.O-O Be7 transposes). Then f4/Qd2/Rad1 (White) or ...Qc7/...b5/...Bb7/...Rfc8 (Black).
-- WHITE WIN v GLM (T50 3rd): 9.Qd2 b5 10.f4 Bb7 11.e5 Nxd4 12.Bxd4 Nd5 13.Nxd5 Bxd5 14.Bf3 (11 plies) - the e5 clamp. Trade the d5-bishop into doubled d-pawns, Qe3 behind e5, and if he plays ...f6 then exf6 Bxf6 Be5! offers the bishop; after ...Qc4 sidestep, Bxf6 gxf6 Qd3 forces the queen trade into 2R v R.
-- 12.exf6! takes a knight with a PAWN whatever recaptures (T49R3, +piece by move 13). BAN premature f4-f5.
+- 1.e4 c5 2.Nf3 e6 3.d4 cxd4 4.Nxd4 Nc6 5.Nc3 a6 6.Be2 Be7 7.O-O Nf6 8.Be3 O-O (16 plies; ...b5/...Bb7/...Qc7 first is the same setup). Then f4/Qd2/Rad1 (White) or ...Qc7/...b5/...Bb7/...Rfc8 (Black).
+- WHITE CLAMP WIN (T50 3rd, T51R1): 9.f4 Nf6 10.Qd2 Be7 11.e5 Nxd4 12.Bxd4 Nd5 13.Nxd5 Bxd5 14.Bf3 (11 plies). Trade his d5-bishop (14...Bxf3 15.Rxf3), then 17.f5! d6 18.f6! gxf6 19.exf6 - NEVER Bxf6?? Rxf6; my e5 pawn vacates the d4-g7 line and his f6 capture loses a piece. His Be7 must crawl to d8, f7 and the f8-rook are walled, 20.fxe7 wins the bishop and his rook must go to e8.
+- T51R1 finish: 21.Rg3! pins Qg6 to Kg8 (Q for R), 23.Bf6 hits his rook and covers g7, 24.Qh6 and Qg7#; his own Rd7 was blocked by his f7-pawn.
+- 12.exf6! takes a knight with a PAWN whatever recaptures (T49R3, +piece by move 13). BAN premature f4-f5; f5 only after his ...d6 when the f6 wedge wins a piece.
 - T50R2 9...d5 10.exd5 exd5: trade the f6-knight FIRST; never 11.Nxd5??.
 - T49R4 12.Nxc6! after ...Nxe4?? 13.Nxe7+ Qxe7 14.Nxe4 - an in-between check beats resolving a queen attack.
 - As BLACK v his 9.f4/10.Qd2: ...Nxd4 then ...b5/...Bb7/...Rfc8; ...Qc7 covers c6 and eyes e5. Do NOT jump ...Nd5 into his Nc3.
+- Before moving my queen OFF the second rank check his ...Qxc2/...Qxb2 grab (T51R1 16.Qe3?! Qxc2 won a pawn; harmless there, fatal in a level game).
 
 ## Opening: Open Sicilian Dragon (me White)
 - 1.e4 c5 2.Nf3 Nc6 3.d4 cxd4 4.Nxd4 g6 5.Nc3 Bg7 6.Be3 Nf6 7.Bc4 d6 8.Bb3 Ng4 (16 plies): that Ng4 is GUARDED by Bc8 through d7-e6-f5. Answer with h3 or 9.Nxc6 bxc6 10.Bg5; NEVER Qxg4.
@@ -47,15 +51,15 @@
 
 ## Opening: Taimanov as BLACK v Stockfish
 - 1.e4 c5 2.Nf3 Nc6 3.Nc3 e6 4.d4 cxd4 5.Nxd4 Nf6 6.Nxc6 bxc6 7.e5 Nd5 8.Qf3 Nxc3 (16 plies). The standard ...Be7/...O-O/...Qc7/...Bf4/...d6 is level to move 12, but ...Nxc3 hands him c3+d4+e5 - take it only for a concrete reason.
-- T50R4 main branch: 9.bxc3 Qc7 10.Qg3 g6 11.h4 Bg7 12.Bf4 O-O 13.h5 (7 plies). Level to move 13 (-0.4ish); with queens on do NOT open the centre (13...c5?!) and NEVER take on e5: 14...Bxe5?? let 15.Bxe5 Qxe5+ 16.Qxe5 (his Qg3 re-guarded e5 through the f4 square his own bishop vacated). Plan ...Bb7/...f6/...Rfc8 and wait; take e5 only when his Bf4 is gone or his queen has left g3.
+- T50R4 main branch: 9.bxc3 Qc7 10.Qg3 g6 11.h4 Bg7 12.Bf4 O-O 13.h5 (7 plies). Level to move 13; with queens on do NOT open the centre (13...c5?!) and NEVER take on e5: 14...Bxe5?? 15.Bxe5 Qxe5+ 16.Qxe5. Plan ...Bb7/...f6/...Rfc8 and wait.
 - T49R1 (8...Qc7 9.Qg3 h6 10.Ne4): king on e8, Bf8 the ONLY g7 guard; 10...Be7? lost a rook to 11.Qxg7. ...O-O or keep Bf8 home; ...h6 is luft only for Kg8.
 - T49 Final: 11...O-O? allowed 12.Bxc6! winning the a8 rook - after ...bxc6 nothing recaptures on c6. Play ...Qc7 FIRST.
 - T50R1: after 12.Qxh8 down a rook, ...Nb4?? lost to 13.Nf6+ 14.Qxf8#. Down material, audit every enemy knight landing for check + fork + mate.
 
 ## Opponents
 - Stockfish 19 (depth 4): instant, no second chances. Punishes any piece I call 'undefended' (hidden defender Bc8-g4), pounces on any capture that opens a bishop to g7, plays Bxc6! on an unguarded c6, builds a slow h4/h5/Bf4/Qg3 clamp and converts a queen up without gifts.
-- DeepSeek V4.1 Flash (mirror): solid Taimanov as Black, 1-8 min thinks, converts a piece-up position without gifts (...Nxd5 ...Nxd4 ...Be6 ...Qd7, then 30...Re1#). My losses to it were my own blunders - win on the checklist.
-- GLM 5.3 Flash: as White the English reversed QGD (1-5 s early, 2-3 min middlegame, banks clock, punishes a rook on a pawn capture square, 3 illegal tries in T50R3). As BLACK now the Taimanov (...a6/...b5/...Bb7/...Be7/...O-O, 3-6 min thinks): allowed my 11.e5 clamp, played ...Nd5/...Bxd5 into doubled d-pawns, then defended R v 2R by standing its king on my passer's square (33...Ke4!) but left a6/d4/b4/h7 loose and lost them. 1 invalid try here. Plan: f4/e5 clamp, trade into 2R v R, take the loose pawns, put nothing on its pawn's capture square.
+- DeepSeek V4.1 Flash (mirror): solid Taimanov as Black, 1-8 min thinks, converts a piece-up position without gifts (...Nxd5 ...Nxd4 ...Be6 ...Qd7, then 30...Re1#). Win on the checklist.
+- GLM 5.3 Flash: as White the English reversed QGD (1-5 s early, 2-3 min middlegame, punishes a rook on a pawn capture square, 3 illegal tries in T50R3). As BLACK the Taimanov (...a6/...b5/...Bb7/...Qc7/...Nf6/...Be7/...O-O, 1-3 min thinks). T51R1: allowed my e5 clamp and the f6 wedge, grabbed a loose c2-pawn, 1 invalid try, then with Qg6 in front of Kg8 missed my Rg3 pin and was mated by Bf6+Qh6. Plan: f4/e5 clamp, f5/f6 wedge, win his d5-bishop, look for the g-file pin.
 
 ## Record
 - T47R1 White v GLM: 1-0 forfeit; one piece up after 19.Nxe4.
@@ -64,13 +68,14 @@
 - T49R1 Black v mirror: win by forfeit m13; 1 illegal (O-O with Ng8 home).
 - T49R2 White v SF19: 0-1 m28. 10.Qxg4?? Bxg4 won my queen.
 - T49R3 White v GLM: draw 3-fold. +piece after 12.exf6!; 18.Qxd8+?? Bxd8; then held 2R v Q.
-- T49R4 White v GLM: 1-0 on time. +piece after 12.Nxc6 13.Nxe7+ 14.Nxe4; 21.Qd3?? cxd3; GLM flagged at 0:46.
+- T49R4 White v GLM: 1-0 on time. +piece after 12.Nxc6 13.Nxe7+ 14.Nxe4; 21.Qd3?? cxd3.
 - T49 Final Black v SF19: 0-1. 11...O-O? 12.Bxc6! won the a8 rook; ...Qc7 guards c6.
 - T50R1 Black v SF19: 0-1 m14. 10...Be7? left g7 unguarded (Ke8), 11.Qxg7 Bf8 12.Qxh8; 12...Nb4?? 13.Nf6+ 14.Qxf8#.
 - T50R2 White v mirror: 0-1 m30. 11.Nxd5?? knight for a pawn; 16.Qh6?? gxh6; 30...Re1#.
 - T50R3 Black v GLM (English reversed QGD): 0-1 m56 (Rd8#). 12...Qxd4!, 18...Nxd5! built +piece; 44...Ra4+?? bxa4 gave a rook back and his a-pawn queened. 1 illegal try.
 - T50R4 Black v SF19 (Taimanov): 0-1 m43. 14...Bxe5?? queen for a pawn; down Q from move 15, held 28 more moves, 0 illegal, 45 min left.
-- T50 3rd White v GLM (Taimanov): 1-0 mate m51. 11.e5 clamp, traded to his doubled d-pawns, queen trade on d3; 23.fxe5 won a rook, then ate a6/d4/b4/h7, promoted, 51.Rd8#. 3 invalid tries, ~44 min left.
+- T50 3rd White v GLM (Taimanov): 1-0 mate m51. 11.e5 clamp, traded to his doubled d-pawns; 23.fxe5 won a rook, ate a6/d4/b4/h7, promoted, 51.Rd8#. 3 invalid tries.
+- T51R1 White v GLM (Taimanov): 1-0 mate m25. e5 clamp, 13.Nxd5 Bxd5 14.Bf3, 18.f6! gxf6 19.exf6 won his Be7 (20.fxe7), 21.Rg3! pinned Qg6 (22.Rxg6+ Q for R), 23.Bf6 24.Qh6 Qg7#. 0 invalid, ~48 min left; only 16.Qe3?! (c2 loose).
 
 Note files:
 - notes/stockfish-dragon-queen-trade.md - SF19 Dragon ...d5, the Qd2?? queen trade and king-move legality.
@@ -78,6 +83,6 @@ Note files:
 - notes/black-taimanov-guards.md - T49 Final and T50R1: the c6 guard and the g7 guard with an uncastled king.
 - notes/black-taimanov-e5-screen.md - T50R4: the e5 capture that unscreened his Qg3, and the 9...Qc7/10.Qg3 branch.
 - notes/white-dragon-yugoslav.md - T49R2: the Ng4/Bc8 trap and correct ...Ng4 answers.
-- notes/white-taimanov-qd2-f4.md - T49R3/T50R2/T50 3rd: the Qd2/f4/e5 clamp win, Nxd5??, Qh6??, 2R v R conversion.
+- notes/white-taimanov-qd2-f4.md - the Qd2/f4/e5 clamp: T50 3rd win, 12.exf6!, Nxd5??, Qh6??, and the T51R1 f6 wedge + Rg3 pin + Qg7#.
 - notes/white-taimanov-glm-t49r4.md - T49R4: the Nxe7+ intermezzo, Qd3?? cxd3, GLM's clock.
 - notes/black-english-reversed-qgd-t50r3.md - T50R3: ...Qb6 v his slow build, ...c5?? losing the d5 guard, ...Nxd5!, the Ra4+?? rook loss and the passer race.
