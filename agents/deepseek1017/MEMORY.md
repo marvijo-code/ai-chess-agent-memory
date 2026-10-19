@@ -4,7 +4,7 @@
 - LEGALITY FIRST: 3 rejected tries on ONE move forfeit. T50 3rd had 3 invalid tries (moves 20/30/32), each recovered by a DIFFERENT legal move. T51S2G1 1 invalid at 17...Qxe2, recovered. Before sending list the piece's CURRENT square, destination and path; before CASTLING check king and rook unmoved and the two squares empty. After ONE rejection redraw a different move, never resend.
 - ANY OF MY PIECES ON HIS PAWN'S CAPTURE SQUARE IS LOST - CHECKS INCLUDED. T50R3 44...Ra4+?? bxa4!; T49R4 21.Qd3?? cxd3; T49R2 10.Qxg4?? Bxg4. List every enemy pawn's two capture squares FROM THE BOARD before landing; a pawn 'defender' does not make the square safe.
 - A LANDING SQUARE IS A CAPTURE SQUARE, CHECKS TOO: 16.Nd6?? Bxd6; 12...Nd5?! into Nc3; T51R2 15.Nf6+?? exf6 - f6 is covered by his e7 AND g7 PAWNS, so a 'fork of king and rook' gave a knight for nothing. List every enemy capturer of the arrival square, pawns first, before any knight check.
-- A CAPTURE THAT UNSCREENS A LINE RE-ARMS THE PIECE BEHIND IT. T50R4 14...Bxe5?? 15.Bxe5 Qxe5+ 16.Qxe5! In any 2+ capture chain redraw after EACH capture and name HIS last capturer and the line it now uses.
+- A CAPTURE THAT UNSCREENS A LINE RE-ARMS THE PIECE BEHIND IT. T50R4 14...Bxe5?? 15.Bxe5 Qxe5+ 16.Qxe5!; T51 Final 14...f6?? 15.exf6! opened Bf4-c7 to my Qc7, 16.Bxc7 won the queen (his PAWN left e5). In any 2+ capture chain redraw after EACH capture and name HIS last capturer and the line it now uses.
 - HIS PIECE GUARDED ONLY BY HIS QUEEN IS FREE IF MY OTHER PIECE COVERS THE RECAPTURE SQUARE (T50R3 18...Nxd5! won a bishop). Name each defender AND who covers the square after my capture.
 - A CAPTURE THAT LEAVES HIM A PIECE AHEAD IS A SAC (T50R2 11.Nxd5??). Write 'W pieces / B pieces' after every chain; never NxP on a defended square without a named recapture.
 - A PAWN LOST IS GONE - NEVER 'BALANCE' WITH A QUEEN GRAB. T51R3 12...Qxc2?? his Qd1 guarded c2 and nothing of mine recaptured: queen for a pawn, mated 17 moves later. The mirror of it: his queen LEAVING the c2 guard makes c2 free (T51S2G1 16.Qxd4 16...Qxc2 won a pawn). Check where his queen stands NOW, not where it started.
@@ -56,13 +56,13 @@
 
 ## Opening: Taimanov as BLACK v Stockfish
 - 1.e4 c5 2.Nf3 Nc6 3.Nc3 e6 4.d4 cxd4 5.Nxd4 Nf6 6.Nxc6 bxc6 7.e5 Nd5 8.Qf3 Nxc3 (16 plies). The standard ...Be7/...O-O/...Qc7/...Bf4/...d6 is level to move 12, but ...Nxc3 hands him c3+d4+e5 - take it only for a concrete reason.
-- T50R4 main branch: 9.bxc3 Qc7 10.Qg3 g6 11.h4 Bg7 12.Bf4 O-O 13.h5 (7 plies). Level to move 13; with queens on do NOT open the centre (13...c5?!) and NEVER take on e5: 14...Bxe5?? 15.Bxe5 Qxe5+ 16.Qxe5. Plan ...Bb7/...f6/...Rfc8 and wait.
+- T50R4 main branch: 9.bxc3 Qc7 10.Qg3 g6 11.h4 Bg7 12.Bf4 O-O 13.h5 (7 plies). Level to move 13; with queens on do NOT open the centre (13...c5?!) and NEVER take on e5: 14...Bxe5?? 15.Bxe5 Qxe5+ 16.Qxe5. Plan ...Bb7/...Rfc8 and wait; ...f6 only with his Bf4 off the c7 diagonal and his e5 pawn unable to capture (T51 Final 14...f6?? 15.exf6! Rxf6 16.Bxc7 won my queen).
 - T49R1 (8...Qc7 9.Qg3 h6 10.Ne4): king on e8, Bf8 the ONLY g7 guard; 10...Be7? lost a rook to 11.Qxg7. ...O-O or keep Bf8 home; ...h6 is luft only for Kg8.
 - T49 Final: 11...O-O? allowed 12.Bxc6! winning the a8 rook - after ...bxc6 nothing recaptures on c6. Play ...Qc7 FIRST.
 - T50R1: after 12.Qxh8 down a rook, ...Nb4?? lost to 13.Nf6+ 14.Qxf8#. Down material, audit every enemy knight landing for check + fork + mate.
 
 ## Opponents
-- Stockfish 19 (depth 4): instant, no second chances. Punishes any piece I call 'undefended' (hidden defender Bc8-g4), pounces on any capture that opens a bishop to g7, plays Bxc6! on an unguarded c6, plays ...Nxe3! on a kicked Ng4, takes a knight check with a PAWN (...exf6), builds a slow h4/h5/Bf4/Qg3 clamp and converts a piece up without gifts.
+- Stockfish 19 (depth 4): instant, no second chances. Punishes any piece I call 'undefended' (hidden defender Bc8-g4), pounces on any capture that opens a bishop to g7, plays Bxc6! on an unguarded c6, plays ...Nxe3! on a kicked Ng4, takes a knight check with a PAWN (...exf6), builds a slow h4/h5/Bf4/Qg3 clamp and converts a piece up without gifts. Also punishes ...f6 by exf6 opening Bf4-c7 to my queen.
 - DeepSeek V4.1 Flash (mirror): solid Taimanov both colours, 1-8 min thinks, converts without gifts (...Nxd5 ...Nxd4 ...Be6 ...Qd7, then 30...Re1#). T51R3: took my loose b5 with Nxb5!, then converted +Q for a pawn with zero gifts while I hung the queen on c2. T51S2G1 (as White, 6.Be2 clamp): 7:09 on 20.h3, 7:04 on 25.Rxf5, 0 illegal, but 17.Nc5?? let Qxe2 and 27.Qe3?? walked into Qxg2#. Win on the checklist, not on its clock.
 - GLM 5.3 Flash: as White the English reversed QGD (1-5 s early, 2-3 min middlegame, punishes a rook on a pawn capture square, 3 illegal tries in T50R3). As BLACK the Taimanov (...a6/...b5/...Bb7/...Qc7/...Nf6/...Be7/...O-O, 1-3 min thinks). T51R1: allowed my e5 clamp and the f6 wedge, grabbed a loose c2-pawn, 1 invalid try, then with Qg6 in front of Kg8 missed my Rg3 pin and was mated by Bf6+Qh6. Plan: f4/e5 clamp, f5/f6 wedge, win his d5-bishop, look for the g-file pin.
 
@@ -84,6 +84,7 @@
 - T51R2 White v SF19 (Dragon): 0-1 m37 (Qxf3#). 9.h3?! Nxe3! (B for N, doubled e-pawns, ...Bxb2 won a pawn); 15.Nf6+?? exf6 gave a knight for nothing. 1 invalid try at 17.Bd5.
 - T51R3 Black v mirror (Taimanov): 0-1 m29 (Qf6#). 12...Qxc2?? queen for a pawn (c2 guarded by Qd1) after 12.Nxb5! took my loose b5 (...a6/...Bb7 first). 0 invalid.
 - T51S2G1 Black v mirror (Taimanov): 0-1 WIN, Qxg2# m27. 11...b5 with a6 guarding, 16.Qxd4 16...Qxc2 won a pawn, 17...Qxe2 won a bishop; 12...Ne8 let his Nd7/Nb6 hit a8+c8 (Rf7?? did not solve it) but he could not convert; 27.Qe3?? into Qxg2# (Bb7). 1 invalid at 17...Qxe2.
+- T51 Final Black v SF19 (Taimanov): 0-1 m22 (Qg7#). 14...f6?? 15.exf6! Rxf6 16.Bxc7! queen for bishop (his e5 pawn vacated Bf4-c7); 12...O-O?! 13...Bb7 into his h5 clamp. 0 invalid.
 
 Note files:
 - notes/stockfish-dragon-queen-trade.md - SF19 Dragon ...d5, the Qd2?? queen trade and king-move legality.
