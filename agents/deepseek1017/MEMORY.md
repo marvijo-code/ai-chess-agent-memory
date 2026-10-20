@@ -35,7 +35,7 @@
 - TWO ROOKS (or R+R+N) v QUEEN: draw by blockade, not raids (T49R3). DOWN A QUEEN v SF: guard everything, trade nothing into her files (T50R4 held 28 moves).
 
 ## Clock
-- Hard cap 60 s. Routine 5-15 s; captures/checks/pawn breaks 20-40 s. My losses are scan misses, not the clock. T52 Final burned 2:17 on a plain recapture. T53R1 used ~11 min in 28 moves, worst 2:32 on 16.Bxd4 and 1:42 on 15.Nb3 - already a piece up, so 10-20 s was enough; spend long thinks only on a concrete question.
+- Hard cap 60 s. Routine 5-15 s; captures/checks/pawn breaks 20-40 s. My losses are scan misses, not the clock. T52 Final burned 2:17 on a plain recapture. T53R1 used ~11 min in 28 moves, worst 2:32 on 16.Bxd4 and 1:42 on 15.Nb3 - already a piece up, so 10-20 s was enough; spend long thinks only on a concrete question. T53R2 14.Qe2 took 2:10 in a lost king-safety position; a 10 s scan of ...Bxh2+/...Qh4 was what the position needed.
 
 ## Opening: English reversed QGD as BLACK
 - 1.c4 Nf6 2.Nc3 e6 3.g3 d5 4.cxd5 exd5 5.Nf3 Be7 6.Bg2 O-O 7.O-O c6 8.d3 (15 plies), then ...Bf5/...Nbd7/...Re8/...Qb6.
@@ -56,6 +56,7 @@
 - 1.e4 c5 2.Nf3 Nc6 3.d4 cxd4 4.Nxd4 g6 5.Nc3 Bg7 6.Be3 Nf6 7.Bc4 d6 8.Bb3 Ng4 (16 plies): his Ng4 is GUARDED by Bc8 through d7-e6-f5; answer 9.Nxc6! bxc6 10.Bg5, NEVER Qxg4 (T49R2 queen for a knight).
 - After ...Qa5/...Rb8 finish king safety first; no f4 while his knight reaches h5/f4; no a7 grab with his knight in my camp (T52 Final 18.Bxa7? Rb4/Bxc3!/Rxe4+ won my queen). 9.h3?! met ...Nxe3! (T51R2).
 - Rook check in my camp: block on a rank without my queen (T52 Final 21.Be3? stood on my queen's rank: Rxe3+ then Rxc3).
+- T53R2 v SF19: 10.O-O?! allowed 10...Be5! 11.Bd4? Bxh2+! 12.Kh1 e5! 13...Qh4 14...Bg1+! 15.Kxg1 Qh2#. His dark bishop on e5 + queen reaching h4 = h2 mate net against short castling; before O-O or moving Be3 count ...Bxh2+ and the ...Bg1+ deflection. Keep the king flexible, answer ...Be5 with a concrete h2 guard/luft, and do not put Bd4 on the h2-bishop's sac line.
 
 ## Opening: Taimanov as BLACK v Stockfish
 - 1.e4 c5 2.Nf3 Nc6 3.Nc3 e6 4.d4 cxd4 5.Nxd4 Nf6 6.Nxc6 bxc6 7.e5 Nd5 8.Qf3 Nxc3 (16 plies). ...Nxc3 hands him c3+d4+e5 - take it only for a concrete reason; otherwise ...Be7/...O-O/...Qc7.
@@ -65,7 +66,7 @@
 - King on e8 makes Bf8 g7's only guard: ...Be7?? Qxg7 (T49R1); ...h6 is luft only for Kg8. ...O-O?? before ...Qc7 allows Bxc6! winning a8 (T49 Final). Down material, audit every enemy knight landing (12.Qxh8 ...Nb4?? Nf6+/Qxf8#).
 
 ## Opponents
-- Stockfish 19 (depth 4): instant, no second chances. Punishes loose pieces, hidden defenders (Bc8-g4), captures that open a bishop to g7, an unguarded c6 (Bxc6!), a kicked Ng4 (...Nxe3!), a retreat onto his e5-pawn's capture square (f6), and ...Be7/...f6 met by exf6 opening Bf4-c7. Builds the h4/h5/Bf4/Qg3 clamp and converts a piece up - but takes a threefold when his checks repeat (T52 Final, down Q+R).
+- Stockfish 19 (depth 4): instant, no second chances. Punishes loose pieces, hidden defenders (Bc8-g4), captures that open a bishop to g7, an unguarded c6 (Bxc6!), a kicked Ng4 (...Nxe3!), a retreat onto his e5-pawn's capture square (f6), and ...Be7/...f6 met by exf6 opening Bf4-c7. Builds the h4/h5/Bf4/Qg3 clamp and converts a piece up - but takes a threefold when his checks repeat (T52 Final, down Q+R). T53R2: in the Dragon, ...Be5 followed by ...Bxh2+ and ...Qh4/...Bg1+ mated my short-castled king.
 - DeepSeek V4.1 Flash (mirror): solid Taimanov both colours, converts without gifts, never resigns, 1-3 illegal tries/game. T52R3 (I won): punished my loose Nd7 with 21.Rxd7!, then 25.Ra3?? sat on my b4 pawn's capture square. T52 Arm (I won on time): as White Alapin hung a knight to 8...Nxd4??, but 22...Rxd3 won its queen when it chased a bishop on a rook's file.
 - GLM 5.3 Flash: as White the English reversed QGD (slow, punishes a rook on a pawn capture square); as Black the Taimanov with a sound ...a6/...b5/...Bb7/...Qc7 build but careless with the f6-knight and queen: T53R1 12...Ne8? (my 13.Ne4/14.Nc5 only helped him: 14...Bxc5 15.Nb3 Bd4), then 16...Rfd8?? exf6, 20...Kg7?? Bxc7, 22.Nxc6! Bxd8 free. T52R2 18.Qc2?? Qxc2! lost his queen. Vs GLM: sound 10-20 s moves, e5 clamp, take every loose unit and queen, let its clock run (1-8 min on quiet moves).
 
@@ -76,6 +77,7 @@
 - T51R1 W v GLM 1-0 (21.Rg3! pin, Qg7#). T51R2 W v SF19 0-1 (9.h3?! Nxe3!). T51R3 B v mirror 0-1 (12.Nxb5!, 12...Qxc2??). T51S2G1 B v mirror WIN Qxg2#. T51 Final B v SF19 0-1 (14...f6??).
 - T52R2 B v GLM WIN Qxf1#. T52R3 B v mirror WIN Qg1# m70 (bxa3! +R, a1=Q, lost the rook to Kxb6, K+Q mate). T52S2G1 W v mirror draw (18.Qd2?! Qxb2/Qc3; phantom rook win). T52S2 Arm B v mirror WIN on time. T52 Final B v SF19 draw threefold (7.Ndb5 Qb8!, 10...Be7? e5!). T52 Final Arm W v SF19 0-1 (16.f4? Nh5).
 - T53R1 W v GLM 1-0 checkmate m28: Taimanov, 12.e5 clamp, 17.exf6! (his 16...Rfd8??), 20.Bxd8, 21.Bxc7 (his 20...Kg7??), 22.Nxc6! then Bxd8 free, 28.Bd5#. 0 invalid.
+- T53R2 W v SF19 0-1 Qh2# (Dragon; 10.O-O?! Be5!, 11.Bd4? Bxh2+! and the ...Qh4/...Bg1+ net).
 
 Note files:
 - notes/stockfish-dragon-queen-trade.md - SF19 Dragon ...d5, the Qd2?? queen trade and king-move legality.
