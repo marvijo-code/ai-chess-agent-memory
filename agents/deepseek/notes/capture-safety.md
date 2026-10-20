@@ -4,7 +4,7 @@
 1 LEGALITY: name the piece's ACTUAL square, the destination's occupant and every path square, MY pieces too; two-step pawn transit empty; O-O needs f8/g8 (f1/g1) empty. Three rejected tries on ONE move = FORFEIT; an EMPTY reply is the same failure (T49R1 m14, T49R2 m13, T49R3, T49R4, T49R5 m16). T49R5: 4 invalid tries on book moves 10.Qd2/11.Rad1/14.fxe5 - read the square off the BOARD, not the plan. One rejection = redraw, pick a DIFFERENT piece/idea.
 2 WHEN THE POSITION TURNS (I just won a piece, a pawn lost, his move forces an answer) the reply is ONE listed move: write the recapture/legal move and SEND it within 15 s. T49R5: +N for P after 15.exf6!, 52 min left, empty reply. Never re-derive from scratch.
 3 HIS LAST MOVE first, then MY destination: 0 guards + his capture = gift. Quiets, retreats and 'tempo' moves get the same sweep.
-4 PAWN CAPTURES (a moved pawn still attacks): g6<-f7/h7, b6<-a7/c7, d6<-c7/e5, c5<-b4/d4, e5<-d4/f4, f5<-e6/g6, f6<-e5. A pawn's NEXT PUSH hits too.
+4 PAWN CAPTURES (a moved pawn still attacks): g6<-f7/h7, b6<-a7/c7, d6<-c7/e5, c5<-b4/d4, a3/c3<-b4, e5<-d4/f4, f5<-e6/g6, f6<-e5. A pawn's NEXT PUSH hits too.
 5 KNIGHT JUMPS, all eight of every enemy knight; a central jump needs EVERY recapturer counted.
 6 SCREENS: a piece leaving a square opens the line behind it onto my queen/king; walk every landing to the end. HIS screen is no shield: T45R4 20...Qc7?? only his own Bc5 blocked Qc2-c7; 21.Bxf8 and 22.Qxc7 won my queen.
 7 CAPTURES: list every recapturer from the board, pawns first, each reaching in ONE move and guarded after landing; count HIS recapture too (T45R7 25.Qc3?? Rc8 recaptured).
@@ -17,6 +17,7 @@
 14 SELF-BAN: a move my note called bad is DEAD.
 
 ## Cases
+- T52R3 v mirror (0-1 m70): Taimanov W; 25.Ra3?? landed on the b4-pawn's capture square (b4xa3) and lost a whole rook, turning a level/pawn-up position into a lost one. 19.f5?! had 2 invalid tries but was not the loss. List a3/c3 whenever a rook/queen goes to the third rank.
 - T49R5 v GLM (0-1 forfeit m16): Taimanov 6.Be2, 9.f4 b5 10.Qd2?! Bb7 11.Rad1?! d6 12.Nxc6 Bxc6 13.e5 dxe5 14.fxe5 Qc7?? 15.exf6! = +N for P. Four invalid tries on routine moves (Qd2 x3, Rad1, fxe5 x2), then an EMPTY reply while ahead. Qd2/Rad1 marked inaccurate (...b4 hits Nc3).
 - T49R2 v GLM (0-1 forfeit m13): 11...c5?! 12.dxc5 Nxc5 13.Qxd5 won a pawn (d5 had only Qd8); three EMPTY replies.
 - T49R1 v DeepSeek1017: Taimanov 6.Be2 level to m13; 6:07 on 12.e5, then empty replies.
