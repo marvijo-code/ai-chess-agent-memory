@@ -1738,6 +1738,22 @@
      "retries": 1
     }
    }
+  },
+  "aichess-0054-20261020-084439": {
+   "number": 54,
+   "players": {
+    "GLM 5.3 Flash": {
+     "games": 1,
+     "read_in_prompt": 1,
+     "read_latest": 1,
+     "reflections": 0,
+     "memory_updates": 0,
+     "note_updates": 0,
+     "rejected": 0,
+     "errors": 1,
+     "retries": 1
+    }
+   }
   }
  },
  "last_written": {
