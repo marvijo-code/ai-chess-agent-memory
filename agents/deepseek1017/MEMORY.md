@@ -36,6 +36,7 @@
 ## Opening: English reversed QGD as BLACK
 - 1.c4 Nf6 2.Nc3 e6 3.g3 d5 4.cxd5 exd5 5.Nf3 Be7 6.Bg2 O-O 7.O-O c6 8.d3 (15 plies), then ...Bf5/...Nbd7/...Re8/...Qb6.
 - ...Qb6 wins the IQP d4 when HIS Nd2 blocks Qd1 (T50R3 12...Qxd4!). With the extra pawn, ...c5 took the c6 guard off d5 and lost it back - keep ...c6 or ...Ne4 support first.
+- T52R2 v GLM: same reversed QGD; 17.Qd2 left b3 loose (17...Qxb3 won a pawn) and 18.Qc2?? put his queen on my Qb3-c2 diagonal with NO c2 defender: 18...Qxc2! won her. Converted Q+N up with queen raids and knight checks to Qxf1# m33; 0 invalid, his 3 illegal. Whenever his queen lands on my queen's line, count his recapturers and take.
 
 ## Opening: Open Sicilian Taimanov (both colours)
 - 1.e4 c5 2.Nf3 e6 3.d4 cxd4 4.Nxd4 Nc6 5.Nc3 a6 6.Be2 Be7 7.O-O Nf6 8.Be3 O-O (16 plies; ...b5/...Bb7/...Qc7 first is the same setup). Then f4/Qd2/Rad1 (White) or ...Qc7/...b5/...Bb7/...Rfc8 (Black).
@@ -64,7 +65,7 @@
 ## Opponents
 - Stockfish 19 (depth 4): instant, no second chances. Punishes any piece I call 'undefended' (hidden defender Bc8-g4), pounces on any capture that opens a bishop to g7, plays Bxc6! on an unguarded c6, plays ...Nxe3! on a kicked Ng4, takes a knight check with a PAWN (...exf6), builds a slow h4/h5/Bf4/Qg3 clamp and converts a piece up without gifts. Also punishes ...f6 by exf6 opening Bf4-c7 to my queen.
 - DeepSeek V4.1 Flash (mirror): solid Taimanov both colours, 1-8 min thinks, converts without gifts (...Nxd5 ...Nxd4 ...Be6 ...Qd7, then 30...Re1#). T51R3: took my loose b5 with Nxb5!, then converted +Q for a pawn with zero gifts while I hung the queen on c2. T51S2G1 (as White, 6.Be2 clamp): 7:09 on 20.h3, 7:04 on 25.Rxf5, 0 illegal, but 17.Nc5?? let Qxe2 and 27.Qe3?? walked into Qxg2#. Win on the checklist, not on its clock.
-- GLM 5.3 Flash: as White the English reversed QGD (1-5 s early, 2-3 min middlegame, punishes a rook on a pawn capture square, 3 illegal tries in T50R3). As BLACK the Taimanov (...a6/...b5/...Bb7/...Qc7/...Nf6/...Be7/...O-O, 1-3 min thinks). T51R1: allowed my e5 clamp and the f6 wedge, grabbed a loose c2-pawn, 1 invalid try, then with Qg6 in front of Kg8 missed my Rg3 pin and was mated by Bf6+Qh6. Plan: f4/e5 clamp, f5/f6 wedge, win his d5-bishop, look for the g-file pin.
+- GLM 5.3 Flash: as White the English reversed QGD (1-5 s early, 2-3 min middlegame, punishes a rook on a pawn capture square, 3 illegal tries in T50R3). As BLACK the Taimanov (...a6/...b5/...Bb7/...Qc7/...Nf6/...Be7/...O-O, 1-3 min thinks). T51R1: allowed my e5 clamp and the f6 wedge, grabbed a loose c2-pawn, 1 invalid try, then with Qg6 in front of Kg8 missed my Rg3 pin and was mated by Bf6+Qh6. T52R2: same White English; 18.Qc2?? Qxc2! (c2 undefended) won his queen after 17...Qxb3; he made 3 illegal tries; I converted Q+N up 0 invalid, Qxf1# m33. When his queen steps onto my queen's line under pressure, take it.
 
 ## Record
 - T47R1 White v GLM: 1-0 forfeit; one piece up after 19.Nxe4.
@@ -85,6 +86,7 @@
 - T51R3 Black v mirror (Taimanov): 0-1 m29 (Qf6#). 12...Qxc2?? queen for a pawn (c2 guarded by Qd1) after 12.Nxb5! took my loose b5 (...a6/...Bb7 first). 0 invalid.
 - T51S2G1 Black v mirror (Taimanov): 0-1 WIN, Qxg2# m27. 11...b5 with a6 guarding, 16.Qxd4 16...Qxc2 won a pawn, 17...Qxe2 won a bishop; 12...Ne8 let his Nd7/Nb6 hit a8+c8 (Rf7?? did not solve it) but he could not convert; 27.Qe3?? into Qxg2# (Bb7). 1 invalid at 17...Qxe2.
 - T51 Final Black v SF19 (Taimanov): 0-1 m22 (Qg7#). 14...f6?? 15.exf6! Rxf6 16.Bxc7! queen for bishop (his e5 pawn vacated Bf4-c7); 12...O-O?! 13...Bb7 into his h5 clamp. 0 invalid.
+- T52R2 Black v GLM (English reversed QGD): 1-0 WIN, Qxf1# m33. 17...Qxb3 won a pawn after 17.Qd2; 18.Qc2?? Qxc2! won his queen (c2 undefended). Converted Q+N up with 0 invalid (his 3 illegal).
 
 Note files:
 - notes/stockfish-dragon-queen-trade.md - SF19 Dragon ...d5, the Qd2?? queen trade and king-move legality.
@@ -94,4 +96,4 @@ Note files:
 - notes/white-dragon-yugoslav.md - the Ng4/Bc8 trap, h3/...Nxe3, the f6 pawn-capture check (T49R2, T51R2).
 - notes/white-taimanov-qd2-f4.md - the Qd2/f4/e5 clamp: T50 3rd win, 12.exf6!, Nxd5??, Qh6??, and the T51R1 f6 wedge + Rg3 pin + Qg7#.
 - notes/white-taimanov-glm-t49r4.md - T49R4: the Nxe7+ intermezzo, Qd3?? cxd3, GLM's clock.
-- notes/black-english-reversed-qgd-t50r3.md - T50R3: ...Qb6 v his slow build, ...c5?? losing the d5 guard, ...Nxd5!, the Ra4+?? rook loss and the passer race.
+- notes/black-english-reversed-qgd-t50r3.md - T50R3/T52R2: ...Qb6 v his slow build, ...c5?? losing the d5 guard, ...Nxd5!, the Ra4+?? rook loss, and the Qxc2 queen win.
