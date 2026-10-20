@@ -18,7 +18,7 @@
 - COUNT EVERY DEFENDER BEFORE ANY CAPTURE, full diagonals both ways (T49R3 18.Qxd8+?? Bf6).
 - A PAWN-ATTACKED PIECE MUST MOVE; defending it does not save it. HIS KNIGHT IN MY CAMP = no pawn grabs, no quiet pushes (T52 Final 16.f4? Nh5; 18.Bxa7? Rb4/Bxc3!/Rxe4+).
 - A ROOK CHECK NEAR MY KING: block on a DIFFERENT rank from my queen (T52 Final 20...Rxe4+ 21.Be3? Rxe3+ 22.Kd1 Rxc3).
-- Qg3 + his bishop on e5/f6 = Qxg7#; never capture on e5 then (T48 Final 13...dxe5??).
+- Qg3 + his bishop on e5/f6 = Qxg7#; never capture on e5 then (T48 Final 13...dxe5??). ANY bishop that can reach h6 or e5 with his queen on g3 is the same net: ...h6?? met 12.Bxh6! Qxg7# (T54R3 m13).
 - QUEEN TRADE = recapture chain on my central knight (T48R1 11.Qd2??). A queen in front of her king on an open file is pinned (T51R1 21.Rg3!); keep my queen off that file.
 - DOWN A QUEEN OR PIECE v SF: guard every unit, 5-10 s, fortress and king shuttle (T52 Final held a threefold down Q+R; T53 Final stayed solid 30 moves down an exchange; T54R1's 60-move fortress still lost m67 to a king walk and a passer - hunt ONE freeing trade or pawn break early).
 
@@ -63,10 +63,11 @@
 ## Opening: Taimanov as BLACK v Stockfish
 - 1.e4 c5 2.Nf3 Nc6 3.Nc3 e6 4.d4 cxd4 5.Nxd4 Nf6 6.Nxc6 bxc6 7.e5 Nd5 8.Qf3 Nxc3 (16 plies). ...Nxc3 hands him c3+d4+e5 - take it only for a concrete reason.
 - 7.Ndb5 Qb8! only good retreat. 8...a6 9.Nxd4 Qxd4 then ...Be7? loses to e5!. With queens on, do NOT open the centre and never take on e5 (14...Bxe5?? 15.Bxe5 Qxe5+ 16.Qxe5). ...f6 only with his Bf4 off the c7 diagonal.
+- T54R3 v SF19 (L m13): 8.Qf3 9.Ne4 10.Bd3 11.Qg3 - my ...cxd4/...Nf6/...e6/...Be7/...O-O/...Qc7 was level, but 11...h6?? 12.Bxh6! (g7 guarded only by the king) 13.Qxg7#. With his queen on g3 and a bishop that reaches h6, ...h6 is a mating hook: play ...f5, ...Nf6 (a g7 guard must be a PIECE), or invite the queen trade. ...h6 is luft only when no enemy bishop can take it.
 - King on e8 makes Bf8 g7's only guard: ...Be7?? Qxg7 (T49R1); ...O-O?? before ...Qc7 allows Bxc6! winning a8 (T49 Final). T53 Final (L m47): 11...Qxb2?? (see Move discipline); down the exchange my ...Bxa3/...Nd7/...Nc5/...Nxd3/...Bb2 kept me solid 30 moves - correct style, but no gifts.
 
 ## Opponents
-- Stockfish 19 (depth 4): instant, no second chances. Punishes loose pieces, hidden defenders, unguarded c6 (Bxc6!), a kicked Ng4 (...Nxe3!), f6 on his e5-pawn's capture square, and ...Be7/...f6 met by exf6 opening Bf4-c7. Builds the h4/h5/Bf4/Qg3 clamp and converts a piece up; takes a threefold when his checks repeat. T53R2 Dragon: ...Be5/...Bxh2+/...Qh4 mated me. T53 Final: 11...Qxb2?? met 12.Nb5! instantly.
+- Stockfish 19 (depth 4): instant, no second chances. Punishes loose pieces, hidden defenders, unguarded c6 (Bxc6!), a kicked Ng4 (...Nxe3!), f6 on his e5-pawn's capture square, ...Be7/...f6 met by exf6 opening Bf4-c7, and ...h6 met by Bxh6 when his queen eyes g7. Builds the h4/h5/Bf4/Qg3 clamp and converts a piece up; takes a threefold when his checks repeat. T53R2 Dragon: ...Be5/...Bxh2+/...Qh4 mated me. T53 Final: 11...Qxb2?? met 12.Nb5! instantly. T54R3: Qg3+Ne4+Bd3 vs 11...h6?? = Qxg7# m13.
 - DeepSeek V4.1 Flash (mirror): solid Taimanov both colours, converts without gifts, never resigns, up to 8 illegal tries/game. T52R3 I punished Nd7 with 21.Rxd7!; T53R3 it took Bf5 and Qe6 at once; T53S2G1 it burned 5-9 min and handed me rook and queen. T54R1 it handed me NOTHING - up a bishop from m12 it walked Kf2-e3-d4-e5 and mated N+B at m67. Vs mirror: gift nothing, expect no return gift when down.
 - GLM 5.3 Flash: as White the English - reversed QGD or the 1.c4 e5 reversed Sicilian (T54R2: its ...Nd5/...Be6/...Qd7/...Bf5 play got cramped and it left c7 to Nxc7); as Black the Taimanov with a sound ...a6/...b5/...Bb7/...Qc7 build but careless with the f6-knight and queen: T53R1 12...Ne8? 16...Rfd8?? exf6, 20...Kg7?? Bxc7; T52R2 18.Qc2?? Qxc2!. Vs GLM: sound 10-20 s moves, e5 clamp, take every loose unit and queen, let its clock run (T54R2 it finished with 20 min to my 50).
 
@@ -80,4 +81,4 @@
 - T51R1 W v GLM 1-0 (21.Rg3!, Qg7#); R2 W v SF19 0-1 (9.h3?! Nxe3!); R3 B v mirror 0-1 (12...Qxc2??); S2G1 B v mirror WIN Qxg2#; Final B v SF19 0-1 (14...f6??).
 - T52R2 B v GLM WIN Qxf1#; R3 B v mirror WIN Qg1# m70; S2G1 W v mirror draw; Arm B v mirror WIN on time; Final B v SF19 draw threefold (10...Be7? e5!); Final Arm W v SF19 0-1 (16.f4? Nh5).
 - T53R1 W v GLM 1-0 m28 (17.exf6!, 28.Bd5#); R2 W v SF19 0-1 Qh2#; R3 B v mirror 0-1 m24 (14...Bf5?? Rxf5; 17...Qe6?? dxe6); S2G1 B v mirror WIN Qbe1# m46; Final B v SF19 0-1 m47 (11...Qxb2??).
-- T54R1 B v mirror 0-1 m67 (11...Bc5?? Qxc5; 60-move fortress, no gifts). T54R2 W v GLM 1-0 m39 (reversed Sicilian; 18.Nxc7! won R+P; Qe8#), 1 illegal try.
+- T54R1 B v mirror 0-1 m67 (11...Bc5?? Qxc5; 60-move fortress, no gifts). T54R2 W v GLM 1-0 m39 (reversed Sicilian; 18.Nxc7! won R+P; Qe8#), 1 illegal try. T54R3 B v SF19 0-1 m13 (11...h6?? Bxh6! Qxg7#; sound Taimanov to 11...Qc7).
