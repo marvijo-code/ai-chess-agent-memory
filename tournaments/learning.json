@@ -1743,15 +1743,15 @@
    "number": 54,
    "players": {
     "DeepSeek V4.1 Flash": {
-     "games": 4,
-     "read_in_prompt": 4,
-     "read_latest": 4,
-     "reflections": 4,
-     "memory_updates": 4,
+     "games": 5,
+     "read_in_prompt": 5,
+     "read_latest": 5,
+     "reflections": 5,
+     "memory_updates": 5,
      "note_updates": 0,
      "rejected": 0,
      "errors": 0,
-     "retries": 1
+     "retries": 2
     },
     "DeepSeek V4.1 Flash 1017": {
      "games": 4,
@@ -1779,7 +1779,7 @@
   }
  },
  "last_written": {
-  "DeepSeek V4.1 Flash": "0b673e3ab18f",
+  "DeepSeek V4.1 Flash": "eb57af78fd10",
   "Sonnet 5.5": "351e26bf75be",
   "GPT-6.1 Sol": "9c91d450e53c",
   "GLM 5.3 Flash": "bccf0a82c6cb",
