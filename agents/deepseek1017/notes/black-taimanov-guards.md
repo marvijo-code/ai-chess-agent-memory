@@ -6,9 +6,12 @@ Core guards: after ...bxc6 the c6 pawn has no recapturer (b7 empty), so ...Qc7 f
 
 b5 needs ...a6 first and a checked ...Bb7 path; else Nxb5!. A queen sortie never answers a lost pawn: ...Qxc2?? lost the queen when his Qd1 covered c2.
 
-With queens on, stop e5 before castling (...d6 or ...Qc7). When his e5 hits Nf6, ...Ne8 is a trap (Nc7 forks a8/e8; later Nxd7/Nb6); play ...Nd5 only if e6 recaptures, or ...Nh5. Never put Nf6 on the e5-pawn's capture square f6.
+With queens on, stop e5 before castling (...d6 or ...Qc7). When his e5 hits Nf6, ...Ne8 is a trap (Nc7 forks a8/e8); ...Nd5 only if e6 recaptures, or ...Nh5. Never put Nf6 on the e5-pawn's capture square f6.
 
-T53R3 loss v mirror: level after 13...dxe5 and 15...Nxd5, then 14...Bf5?? lost a bishop to 17.Rxf5 (his Rf1 owned the open f-file); 17...Qe6?? lost the queen to 18.dxe6 because e6 is the d5-pawn's capture square. With his passed d5, ban c6/e6 for every piece AND the queen; ...Qd6 blockade is fine. Develop ...Bd7/...Rd8 first.
+## T54R1 loss v mirror (m67): the 'queen-guarded' bishop
+Order ...cxd4/...Nf6/...e6/...Be7/...O-O/...Qc7/...a6, 10...Nxd4 11.Qxd4: level, sound. Then 11...Bc5?? - I wrote 'c5 is guarded by my Qc7', but his Qd4 takes c5 anyway: 12.Qxc5 and if I recapture Qxc5 13.Bxc5 the queens come off and I am simply a BISHOP down. A piece guarded only by the queen is lost to his queen. After that: 60 moves of correct fortress (Bd7 blockading d6, ...f5, ...Rb6/...Ra6 rook shuffles, ...b5/...a5) gave him nothing - but he gave nothing back either, walked Kf2-e3-d4-e5, made a passed d-pawn, won my pawns and mated with N+B. Lesson: no bishop/rook sortie onto a square his queen attacks; and down a piece, spend the fortress moves looking for one freeing trade, not 60 moves of waiting.
+
+T53R3 loss v mirror: level after 13...dxe5 and 15...Nxd5, then 14...Bf5?? lost a bishop to 17.Rxf5 (his Rf1 owned the open f-file); 17...Qe6?? lost the queen to 18.dxe6 because e6 is the d5-pawn's capture square. With his passed d5, ban c6/e6 for every piece AND the queen; ...Qd6 blockade is fine.
 
 T53S2G1 win: Qc7 covering e5/d6 held all game; ...Bc5 traded with check (...Qxe3), then the ...d6 break; ...Nd5 is safe because e6 recaptures on d5, ...Nxf4 won his Qf4, Qe4+ forked K+R, and Qbe1# finished.
 
