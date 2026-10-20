@@ -1,4 +1,4 @@
-# White Taimanov 9.Qd2/f4/e5 clamp (T49R3 draw, T50R2 loss, T50 3rd win, T51R1 win)
+# White Taimanov 9.Qd2/f4/e5 clamp (T49R3 draw, T50R2 loss, T50 3rd win, T51R1 win, T52S2G1 draw)
 
 Opening played (16 plies): 1.e4 c5 2.Nf3 e6 3.d4 cxd4 4.Nxd4 Nc6 5.Nc3 a6 6.Be2 Be7 7.O-O Nf6 8.Be3 O-O. Black may play ...b5/...Bb7/...Qc7 first (T51R1) - same setup, same White plan: Qd2, f4, Rad1, e5.
 
@@ -15,8 +15,10 @@ His queen went to g6 while his king stood on g8 - same file. 21.Rg3! pinned her:
 - T50R2: 16.Qh6?? gxh6 - h6 is the g7-pawn's capture square with g7 home.
 - T49R3: 18.Qxd8+?? Bxd8 - his Bf6 covered d8 through e7.
 - T51R1: 16.Qe3?! left c2 loose and ...Qxc2 won a pawn (harmless while +5, fatal when level). Check b2/c2/a2 before the queen leaves the second rank.
+- T52S2G1: 18.Qd2 did NOT guard b2 because my own c2 pawn stood between; 18...Qxb2 won a pawn. Trace Qd2-c2-b2 with c2 occupied. His ...d4 kicked my Be3 and Bf2 was right, but the queen had no b2 guard.
 - 12.exf6! (T49R3) still the best pawn-takes-piece rule: a pawn capturing a piece wins whatever recaptures.
 
 ## Conversion shapes already used
 - Queen trade into 2R v R after the wedge (T50 3rd); take the last clean rook trade, then eat loose pawns, drive the bare king off the passer's square with a rook check, promote, Q+R mate.
 - T51R1: queen for rook, then R+B v 2R is a mating net, not an ending - hunt the g7 square at once.
+- T52S2G1: after ...d6/...fxe5/...exf4 the R+B v R+B ending was equal; d6 was defended by rook+bishop, so Bxd6/Bxd6/Rxd6 was a dead draw. Repetition was fair, but do not repeat for 20 moves when the king can try d4/d5 first.
