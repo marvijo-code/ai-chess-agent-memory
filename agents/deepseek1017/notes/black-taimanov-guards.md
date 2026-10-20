@@ -1,6 +1,6 @@
 # Taimanov as Black - guards and traps
 
-Opening pattern (14 plies): 1.e4 c5 2.Nf3 Nc6 3.Nc3 e6 4.d4 cxd4 5.Nxd4 Nf6 6.Nxc6 bxc6 7.e5 Nd5; then 8.Qf3/Be3 with his queen aiming at f6/g3.
+Opening pattern (14 plies): 1.e4 c5 2.Nf3 Nc6 3.Nc3 e6 4.d4 cxd4 5.Nxd4 Nf6 6.Nxc6 bxc6 7.e5 Nd5; then 8.Qf3/Be3 with his queen aiming at f6/g3. The 7.Bd3 Be7 8.e5 Nd5 9.Qg4 order transposes and forces ...Kf8.
 
 Core guards: after ...bxc6 the c6 pawn has no recapturer (b7 empty), so ...Qc7 first, then castle; ...O-O too early allows Bxc6! winning a8. With my king on e8, Bf8 is g7's only guard: ...Be7?? Qxg7. ...h6 is luft only for Kg8.
 
@@ -8,15 +8,16 @@ b5 needs ...a6 first and a checked ...Bb7 path; else Nxb5!. A queen sortie never
 
 With queens on, stop e5 before castling (...d6 or ...Qc7). When his e5 hits Nf6, ...Ne8 is a trap (Nc7 forks a8/e8); ...Nd5 only if e6 recaptures, or ...Nh5. Never put Nf6 on the e5-pawn's capture square f6.
 
-## T54R1 loss v mirror (m67): the 'queen-guarded' bishop
-Order ...cxd4/...Nf6/...e6/...Be7/...O-O/...Qc7/...a6, 10...Nxd4 11.Qxd4: level, sound. Then 11...Bc5?? - I wrote 'c5 is guarded by my Qc7', but his Qd4 takes c5 anyway: 12.Qxc5 and if I recapture Qxc5 13.Bxc5 the queens come off and I am simply a BISHOP down. A piece guarded only by the queen is lost to his queen. After that: 60 moves of correct fortress (Bd7 blockading d6, ...f5, ...Rb6/...Ra6 rook shuffles, ...b5/...a5) gave him nothing - but he gave nothing back either, walked Kf2-e3-d4-e5, made a passed d-pawn, won my pawns and mated with N+B. Lesson: no bishop/rook sortie onto a square his queen attacks; and down a piece, spend the fortress moves looking for one freeing trade, not 60 moves of waiting.
+## PAWN CAPTURE SQUARES - the two-move self-destruction of T54S1G1
+After 7.Bd3 Be7 8.e5 Nd5 9.Qg4 I played ...Kf8 (the right g7 guard) and 10...Nxc3. Then:
+- 11...Bd6?? - my own note one move earlier said 'his e5 pawn owns d6'. 12.exd6 took the bishop for a pawn (+9.5).
+- 12...Qc7?? - after 12.exd6 HIS NEW d6 PAWN owns c7 and e7. 13.dxc7 took the QUEEN.
+- 20.Qd8#: my Rh8-h7 had 'given air' but emptied f8; a g8 king behind f7/g7/h7 with the 8th rank open is mated by any heavy piece reaching it. Keep one of f8/e8 occupied or the rook on the 8th.
+Rule to apply mechanically: after EVERY enemy pawn push or capture, say aloud 'his pawn on X owns Y and Z', and ban both squares for every piece of mine, queen and bishop included, for the rest of the game.
 
-T53R3 loss v mirror: level after 13...dxe5 and 15...Nxd5, then 14...Bf5?? lost a bishop to 17.Rxf5 (his Rf1 owned the open f-file); 17...Qe6?? lost the queen to 18.dxe6 because e6 is the d5-pawn's capture square. With his passed d5, ban c6/e6 for every piece AND the queen; ...Qd6 blockade is fine.
-
-T53S2G1 win: Qc7 covering e5/d6 held all game; ...Bc5 traded with check (...Qxe3), then the ...d6 break; ...Nd5 is safe because e6 recaptures on d5, ...Nxf4 won his Qf4, Qe4+ forked K+R, and Qbe1# finished.
-
-T52 Final v SF19: 7.Ndb5 Qb8! only retreat; 8...a6 9.Nd4 Qxd4 then ...Be7? loses to e5!; his Nf6 has no safe square (d5 drops a pawn, h5 g4, e8 forked, f6 is the e5-pawn's capture square). Down material, guard every unit and keep the king shuttle.
-
-T51R3: ...b5 before ...a6 lost to Nxb5!; 12...Qxc2?? Qxc2! lost my queen. ...Ne8 twice allowed Nc7/Nb6 forks.
-
-T52R3: 20...Bb7?? left Nd7 to Rxd7; 25.Ra3?? stood on my b4-pawn's capture square, bxa3! won a rook. Open file + his rook + empty squares = my piece there is free.
+## Other losses and wins
+- T54R1 loss v mirror (m67): 11...Bc5?? 'guarded by my Qc7' met 12.Qxc5 - a piece guarded only by the queen is lost to his queen. Then 60 moves of correct fortress gave him a K walk, a passed d-pawn and N+B mate: down a piece, hunt one freeing trade early.
+- T53R3 loss v mirror: 14...Bf5?? Rxf5 (his Rf1 owned the open f-file); 17...Qe6?? dxe6 because e6 is the d5-pawn's capture square. With his passed d5, c6/e6 are banned for every piece AND the queen.
+- T53S2G1 win: Qc7 covering e5/d6 held; ...Bc5 with check and the ...d6 break; ...Nd5 safe because e6 recaptures; ...Nxf4 won his Qf4; Qe4+ forked K+R; Qbe1#.
+- T51R3: ...b5 before ...a6 lost to Nxb5!; 12...Qxc2?? Qxc2! lost my queen. ...Ne8 twice allowed Nc7/Nb6 forks.
+- T52R3: 20...Bb7?? left Nd7 to Rxd7; 25.Ra3?? stood on my b4-pawn's capture square, bxa3! won a rook.
