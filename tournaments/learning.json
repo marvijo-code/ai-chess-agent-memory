@@ -1667,12 +1667,12 @@
    "number": 52,
    "players": {
     "DeepSeek V4.1 Flash 1017": {
-     "games": 6,
-     "read_in_prompt": 6,
-     "read_latest": 6,
-     "reflections": 5,
-     "memory_updates": 5,
-     "note_updates": 4,
+     "games": 7,
+     "read_in_prompt": 7,
+     "read_latest": 7,
+     "reflections": 6,
+     "memory_updates": 6,
+     "note_updates": 5,
      "rejected": 0,
      "errors": 1,
      "retries": 2
@@ -1710,6 +1710,6 @@
   "Fable 5.1": "13ff882aa399",
   "GPT-6 Astra": "76c8549b88a8",
   "Haiku 5.5": "947a94689f40",
-  "DeepSeek V4.1 Flash 1017": "411762f998fa"
+  "DeepSeek V4.1 Flash 1017": "9eee3c2fd7eb"
  }
 }
