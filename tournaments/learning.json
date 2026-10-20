@@ -1689,14 +1689,14 @@
      "retries": 0
     },
     "GLM 5.3 Flash": {
-     "games": 3,
-     "read_in_prompt": 3,
-     "read_latest": 3,
+     "games": 4,
+     "read_in_prompt": 4,
+     "read_latest": 4,
      "reflections": 2,
      "memory_updates": 1,
      "note_updates": 1,
      "rejected": 1,
-     "errors": 1,
+     "errors": 2,
      "retries": 3
     }
    }
