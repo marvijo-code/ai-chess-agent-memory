@@ -1700,6 +1700,33 @@
      "retries": 3
     }
    }
+  },
+  "aichess-0053-20261020-044445": {
+   "number": 53,
+   "players": {
+    "DeepSeek V4.1 Flash 1017": {
+     "games": 1,
+     "read_in_prompt": 1,
+     "read_latest": 1,
+     "reflections": 1,
+     "memory_updates": 1,
+     "note_updates": 0,
+     "rejected": 0,
+     "errors": 0,
+     "retries": 1
+    },
+    "GLM 5.3 Flash": {
+     "games": 1,
+     "read_in_prompt": 1,
+     "read_latest": 1,
+     "reflections": 0,
+     "memory_updates": 0,
+     "note_updates": 0,
+     "rejected": 0,
+     "errors": 1,
+     "retries": 0
+    }
+   }
   }
  },
  "last_written": {
@@ -1710,6 +1737,6 @@
   "Fable 5.1": "13ff882aa399",
   "GPT-6 Astra": "76c8549b88a8",
   "Haiku 5.5": "947a94689f40",
-  "DeepSeek V4.1 Flash 1017": "9eee3c2fd7eb"
+  "DeepSeek V4.1 Flash 1017": "6260d01ba78a"
  }
 }

@@ -9,22 +9,21 @@ Each AI player writes only to its own folder (`agents/<folder>/`) and reads ever
 
 Folders: DeepSeek V4.1 Flash: `agents/deepseek/`, DeepSeek V4.1 Flash 1017: `agents/deepseek1017/`, GLM 5.3 Flash: `agents/glm/`
 
-## Current tournament (aichess-0052-20261019-230653)
+## Current tournament (aichess-0053-20261020-044445)
 
 | Player | Games | Read in prompt | Read latest | Reflections | MEMORY.md updates | Note updates | Rejected | Retries | Errors |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| DeepSeek V4.1 Flash | 6 | 6 | 6 | 6 | 6 | 2 | 0 | 0 | 0 |
-| DeepSeek V4.1 Flash 1017 | 7 | 7 | 7 | 6 | 6 | 5 | 0 | 2 | 1 |
-| GLM 5.3 Flash | 5 | 5 | 5 | 3 | 2 | 2 | 1 | 3 | 2 |
+| DeepSeek V4.1 Flash 1017 | 1 | 1 | 1 | 1 | 1 | 0 | 0 | 1 | 0 |
+| GLM 5.3 Flash | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 1 |
 
 ## All tournaments since this check started
 
 | Player | Games | Read in prompt | Read latest | Reflections | MEMORY.md updates | Note updates | Rejected | Retries | Errors |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | DeepSeek V4.1 Flash | 192 | 192 | 192 | 185 | 183 | 211 | 4 | 87 | 6 |
-| DeepSeek V4.1 Flash 1017 | 25 | 25 | 25 | 24 | 24 | 25 | 0 | 11 | 1 |
+| DeepSeek V4.1 Flash 1017 | 26 | 26 | 26 | 25 | 25 | 25 | 0 | 12 | 1 |
 | Fable 5.1 | 5 | 5 | 5 | 5 | 5 | 5 | 0 | 0 | 0 |
-| GLM 5.3 Flash | 69 | 69 | 69 | 56 | 54 | 46 | 3 | 30 | 13 |
+| GLM 5.3 Flash | 70 | 70 | 70 | 56 | 54 | 46 | 3 | 30 | 14 |
 | GPT-6 Astra | 8 | 8 | 8 | 8 | 8 | 2 | 0 | 1 | 0 |
 | GPT-6.1 Sol | 181 | 181 | 181 | 181 | 137 | 179 | 44 | 144 | 0 |
 | Haiku 5.5 | 14 | 14 | 13 | 14 | 14 | 14 | 0 | 3 | 0 |
@@ -35,5 +34,5 @@ Folders: DeepSeek V4.1 Flash: `agents/deepseek/`, DeepSeek V4.1 Flash 1017: `age
 | Player | Lines in MEMORY.md | Longest run (plies) | Over the ply cap |
 | --- | ---: | ---: | ---: |
 | DeepSeek V4.1 Flash | 6 | 16 | 0 |
-| DeepSeek V4.1 Flash 1017 | 5 | 16 | 0 |
+| DeepSeek V4.1 Flash 1017 | 4 | 16 | 0 |
 | GLM 5.3 Flash | 6 | 15 | 0 |
