@@ -3,11 +3,12 @@
 ## Move discipline (check every move)
 - LEGALITY FIRST: 3 rejected tries on ONE move forfeit. Before sending, list the piece's CURRENT square, destination and path; before castling check king+rook unmoved and the two squares empty. After ONE rejection redraw a DIFFERENT move, never resend.
 - ANY OF MY PIECES ON HIS PAWN'S CAPTURE SQUARE IS LOST - CHECKS AND ROOKS INCLUDED. The mirror wins games: T52R3 25...bxa3 took his whole Ra3 (b4's capture square) and 30...fxe6 his Be6 (f7's square); T50R3 44...Ra4+?? bxa4 lost mine; T49R2 10.Qxg4?? Bxg4. Sweep every enemy pawn's two capture squares FROM THE BOARD before landing.
-- A SQUARE COVERED BY HIS PAWNS IS NO FORK: 12...Nd5?! into Nc3; T51R2 15.Nf6+?? exf6 (his e7 and g7 pawns). List every enemy capturer of the arrival square, pawns first, before any knight check.
+- A SQUARE COVERED BY HIS PAWNS IS NO FORK: 12...Nd5?! into Nc3; T51R2 15.Nf6+?? exf6 (his e7 and g7 pawns). T52 Arm 16...Qe5?? let Nf3xe5 win my queen. List every enemy capturer of the arrival square, pawns and knights first, before any knight check or queen landing.
 - THE MOVING PIECE ABANDONS ITS DUTY: T52R3 20...Bb7?? left my Nd7 loose on the d-file that ...dxc5 had just opened - 21.Rxd7 won a knight; 38...Rb2?? ignored his Kc5 hitting my Bc6 - 39.Kxc6 won the bishop. Before any quiet or developing move name what it guarded, what is loose on an open line, and answer any attacked piece that move.
 - A CAPTURE THAT UNSCREENS A LINE RE-ARMS THE PIECE BEHIND IT. T50R4 14...Bxe5?? 15.Bxe5 Qxe5+ 16.Qxe5!; T51 Final 14...f6?? 15.exf6! (his e5 pawn left the Bf4-c7 line) 16.Bxc7 won my queen. In any 2+ capture chain redraw after EACH capture and name HIS last capturer.
 - HIS PIECE GUARDED ONLY BY HIS QUEEN IS FREE IF MY OTHER PIECE COVERS THE RECAPTURE SQUARE (T50R3 18...Nxd5! won a bishop). A CAPTURE THAT LEAVES HIM A PIECE AHEAD IS A SAC (T50R2 11.Nxd5??): write 'W pieces / B pieces' after every chain.
 - A RECAPTURE IS NOT A GAIN: COUNT THE PIECE LIST, NOT THE LABEL. T52S2G1 I wrote 'Rxc4 = +R / wins a whole rook' after 28.Rdxc4 Rxc4 29.Rxc4 - that was an EVEN rook trade; material stayed level and I had to hold. Before writing +P/+R/+piece list both armies square by square.
+- MY OWN PIECE ON THE RECAPTURE LINE = NO RECAPTURE: T52 Arm 8...Nxd4?? counted on ...Qxd4, but my Nd5 stood on d5 between Qd6 and d4; 9.Nxd4 won a knight for a pawn. Before any capture trace the recapture path square by square with MY OWN blockers first.
 - A PAWN LOST IS GONE - NEVER 'BALANCE' WITH A QUEEN GRAB. T51R3 12...Qxc2?? (Qd1 guarded c2) = queen for a pawn, mated. Mirror: his queen LEAVING a guard frees that square (T51S2G1 16.Qxd4 then ...Qxc2). Check where his queen stands NOW.
 - A 'DEFENDED' PAWN STILL FALLS IF HIS QUEEN TAKES AND FORCES A TRADE: T52S2G1 18.Qd2?! 'covers b2' but 18...Qxb2 19.Rfb1 Qc3! 20.Qxc3 dxc3 = pawn down. When a pawn is his target name every attacker AND the queen trade after the take.
 - A WARNING I WRITE IS AN ORDER FOR THE NEXT MOVE (T49R1, T50R3). Re-read the last comment before choosing.
@@ -36,6 +37,7 @@
 
 ## Clock
 - Hard cap 60 s. Routine 5-15 s; captures/checks/pawn breaks 20-40 s. My losses are scan misses, not the clock: T52R3 used ~38 min; T52S2G1 drew using 43 min (16:54 left) but spent 6:57 on 27.Rc3 and 5:28 on 30.Rd4. Quiet rook/knight shuffles: 15-30 s, the written list is the check.
+- ARMAGEDDON AS BLACK: draw odds. After an early material loss, fortify and use his clock; T52 Arm I was a knight down at m9, then a queen down at m17, but he flagged at 0:23 while I had 4:47. No 'active' queen into knight jumps.
 
 ## Opening: English reversed QGD as BLACK
 - 1.c4 Nf6 2.Nc3 e6 3.g3 d5 4.cxd5 exd5 5.Nf3 Be7 6.Bg2 O-O 7.O-O c6 8.d3 (15 plies), then ...Bf5/...Nbd7/...Re8/...Qb6.
@@ -67,7 +69,7 @@
 
 ## Opponents
 - Stockfish 19 (depth 4): instant, no second chances. Punishes any piece I call 'undefended' (hidden defender Bc8-g4), any capture opening a bishop to g7, an unguarded c6 (Bxc6!), a kicked Ng4 (...Nxe3!), a knight check taken by a PAWN (...exf6); builds the h4/h5/Bf4/Qg3 clamp and converts a piece up without gifts. Also punishes ...f6 by exf6 opening Bf4-c7 to my queen.
-- DeepSeek V4.1 Flash (mirror): solid Taimanov both colours, 20 s-6 min thinks, converts without gifts, never resigns. T51S2G1: 17.Nc5?? let Qxe2 and 27.Qe3?? walked into Qxg2#. T52R3 (I won): it played f4/Qd2, the Rf3-h3 rook lift, 21.Rxd7! to punish my loose Nd7, then 25.Ra3?? on my b4 pawn's capture square; 2 illegal tries. T52S2G1 (draw): as Black ...Qc7/...a6/...Nf6/...Bb4 (before ...Be7), 3 illegal tries (7...Nf6, 19...Qc3 x2), gave c3/c4 back but took b2/e5/f4 and held R+B vs R+B with ...g5/...Ra8 accurately - no gifts in endings.
+- DeepSeek V4.1 Flash (mirror): solid Taimanov both colours, 20 s-6 min thinks, converts without gifts, never resigns. T51S2G1: 17.Nc5?? let Qxe2 and 27.Qe3?? walked into Qxg2#. T52R3 (I won): it played f4/Qd2, the Rf3-h3 rook lift, 21.Rxd7! to punish my loose Nd7, then 25.Ra3?? on my b4 pawn's capture square; 2 illegal tries. T52S2G1 (draw): as Black ...Qc7/...a6/...Nf6/...Bb4 (before ...Be7), 3 illegal tries (7...Nf6, 19...Qc3 x2), gave c3/c4 back but took b2/e5/f4 and held R+B vs R+B with ...g5/...Ra8 accurately - no gifts in endings. T52 Arm (I won on time): as White it played Alapin 2.c3/3.e5, won my knight after 8...Nxd4??, then 20.Qd3?? sat on my Rfd8 file and 22...Rxd3 won her; it flagged 0:23 vs my 4:47, 1 illegal. It leaves its queen on a rook's file when chasing a bishop - check that capture.
 - GLM 5.3 Flash: English reversed QGD as White (2-3 min middlegame, 3 illegal tries, punishes a rook on a pawn capture square); Taimanov as Black. T52R2: 18.Qc2?? Qxc2! lost his queen; I converted Q+N up, Qxf1# m33.
 
 ## Record
@@ -92,6 +94,7 @@
 - T52R2 B v GLM: WIN Qxf1# m33; 17...Qxb3, 18.Qc2?? Qxc2!.
 - T52R3 B v mirror (Taimanov): WIN Qg1# m70. 18...dxc5 opened the d-file; 20...Bb7?? hung Nd7 to Rxd7, 21...Bc6! forked and recovered it; 25...bxa3 won a whole rook; a3-a1=Q; lost the rook to Kxb6 but mated with K+Q. 0 invalid (his 2).
 - T52S2G1 W v mirror (Taimanov): draw by repetition. 18.Qd2?! Qxb2/Qc3 pawn down; 28-29 Rxc4 recaptured a TRADED rook (I miscounted +R); held R+B v R+B by Ra5/Rd5 repetition; 0 invalid (his 3).
+- T52S2 Arm B v mirror (Alapin): WIN on time (0-1). 8...Nxd4?? lost N for P because my Nd5 blocked Qd6-d4; 16...Qe5?? Nf3xe5 won my queen; 20.Qd3?? Rxd3 won his queen; he flagged 0:23 v my 4:47. 0 invalid (his 1).
 
 Note files:
 - notes/stockfish-dragon-queen-trade.md - SF19 Dragon ...d5, the Qd2?? queen trade and king-move legality.
