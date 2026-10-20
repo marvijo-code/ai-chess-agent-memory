@@ -18,7 +18,7 @@
    "depth": 4,
    "streak": 0,
    "steps": [],
-   "updated_at": "2026-10-20T05:49:13+00:00"
+   "updated_at": "2026-10-20T10:37:25+00:00"
   },
   "GLM 5.3 Flash": {
    "depth": 4,
@@ -77,10 +77,10 @@
    "at": "2026-10-10T13:25:28+00:00"
   }
  ],
- "updated_at": "2026-10-20T09:00:28+00:00",
+ "updated_at": "2026-10-20T10:37:25+00:00",
  "last_step": {
-  "player": "GLM 5.3 Flash",
-  "outcome": "loss",
+  "player": "DeepSeek V4.1 Flash",
+  "outcome": "draw",
   "depth": 4,
   "streak": 0,
   "stepped": false,
@@ -88,9 +88,9 @@
   "to": 4,
   "tournament": "aichess-0054-20261020-084439",
   "number": 54,
-  "game": "r1b2",
-  "color": "black",
-  "termination": "checkmate",
-  "at": "2026-10-20T09:00:28+00:00"
+  "game": "r2b1",
+  "color": "white",
+  "termination": "threefold repetition",
+  "at": "2026-10-20T10:37:25+00:00"
  }
 }
