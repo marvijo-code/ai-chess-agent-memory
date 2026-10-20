@@ -1781,26 +1781,26 @@
    "number": 55,
    "players": {
     "DeepSeek V4.1 Flash": {
-     "games": 1,
-     "read_in_prompt": 1,
-     "read_latest": 1,
-     "reflections": 1,
+     "games": 2,
+     "read_in_prompt": 2,
+     "read_latest": 2,
+     "reflections": 2,
      "memory_updates": 1,
      "note_updates": 0,
-     "rejected": 0,
+     "rejected": 1,
      "errors": 0,
-     "retries": 1
+     "retries": 3
     },
     "GLM 5.3 Flash": {
-     "games": 1,
-     "read_in_prompt": 1,
-     "read_latest": 1,
-     "reflections": 1,
+     "games": 2,
+     "read_in_prompt": 2,
+     "read_latest": 2,
+     "reflections": 2,
      "memory_updates": 1,
      "note_updates": 0,
-     "rejected": 0,
+     "rejected": 1,
      "errors": 0,
-     "retries": 0
+     "retries": 2
     },
     "DeepSeek V4.1 Flash 1017": {
      "games": 2,
