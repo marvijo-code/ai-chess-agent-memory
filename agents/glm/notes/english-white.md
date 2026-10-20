@@ -1,33 +1,29 @@
 # English / reversed QGD as White
 
-## T53R5 v DS-4.1, L m22 (Qd1#) - checks written between moves, none executed at the board
-Symmetric rev-QGD, his d5-pawn file-guarded: 6.Nxd5?? - his Qd8 guard ran down the EMPTY d-file (d7/d6), my Qd1 was boxed by MY d2-pawn = knight for pawn. DEVELOP (g3/Bg2/O-O/d3/Rc1) before any exchange on d5.
-- 10.Qc2?? 'double pressure' - the QUEEN had zero defenders; 11.a3?? kick attempt, 11...Nxc2 anyway.
-- 12.d4?? parked: ...Nxa1; 13.e4 his Nf6 hit it.
-- 16.Ng5?? my own move note said 'Verify after move' - never ran it. ...Nxc1 hit my Bc1, the g5-knight's ONLY guard; 17.Rxc1?? took the offered bishop and removed my own guard: 17...Bxg5 = a full piece, both directions uncounted.
-- 19.Rxc7?? - c7 was defended by Qd8 AND Ra8; my 'DO NOT grab' note came after the move. Down Q+2R+2B: Kf1/Ke2 shuffle gave Qc1+/Qd2+/Qd1#.
+## T54R3 v DS-4.1, W ON TIME m56 - FIRST on-board win v him
+Stored 15-ply line; then 9.Re1 Nbd7 10.Nd4! hit his loose Bf5 (every defender checked), 11.e4 (after dxe4 Nxe4 twice guarded), 12.Nf3! RETREATED when d4 was unguarded (Qd1 blocked by MY d3-pawn) - the T53R5 discipline EXECUTED. 13.h3 luft; 14.b3 BEFORE Be3 (Bc1 guards b2 vs ...Qb6).
+- PAWN-BANKING, each grab VERIFIED BY NAME: 18.exd5! (d5: Qc7/Be7/Bg6/Nd7/rooks ALL fail), 19.Nxd5 cxd5 20.Bxd5, 21.Bxb7 (nothing guards b7), 23.bxa4 (third pawn, Qd1 behind). Queens OFF at +3: 25.Qb3 Qxb3 26.axb3; 27.Red1 hit his Bxd3.
+- SLIP 1: the sequence 24.Nb5 / queens off let 26...Bxd3 + 27...Bxb5-Rxb5 shave +3 to +1 (N-for-B even, two pawns gone); 28.axb5 was the best recovery, 29.Rd3! held b3 (Be3 backs through empty c3).
+- STALE FEN x2 (moves 29-30): board ran one ply behind - RE-READ THE MOVES LIST, never resend (4 invalid tries, ~6 min).
+- SLIP 2: 35.b4?? while his Bf6 hit my Rd4: 'Bxd4 wins him nothing' = FALSE, R for B = the exchange (+1 -> -1). Move the rook or hit his loose unit first.
+- THE WIN: 37.Be5! (f4 guards it; hits his loose rook), 38.Kf3-39.Ke4! attacked his loose Rd5 -> ...Rc5 -> 40.bxc5! my PAWN took the rook (-1 -> +4). 42.Bb8 + 45.Rb8! forced the c8-blockade trade (his rook unguarded; Ba7 guards mine). 47.Rb7+ 49.Rxf7 50.Rxg7 - his pawns defend DOWN, g7 bare once f7 falls = R+3P v R+1P. 51.f5! froze his Rh8 (sole defender of h7). f-convoy: king escorts each push (Ke5 guards f6/f7/f8), before every push verify HIS king cannot take the pawn; rook checks answered by king steps OFF that rank.
+- 44.Bxc8?? ILLEGAL - bishops never capture on their own rank (2nd shape error). NEVER c8=Q unguarded (Kb7 guard or rook NOT behind the pawn).
+- CLOCK: he burned 7:32/7:13/3:41 thinks and flagged at 1:07; I finished 7:08 after two 3-5 min ending thinks - won endings go 20-40 s.
 
 ## T53R3 v SF19, DRAW threefold m42 DOWN Q+R
-Stored build; his 5...d4!? -> 6.Nb1! again (+0.55; his ...c5/...O-O/...Nc6/...Nd5 build).
-- 11.Qxc5?? = Q for B: 'd8 queen and e7 bishop don't see c5' - e7-d6-c5 EMPTY between: walk every bishop/queen diagonal SQUARE BY SQUARE TO THE EDGE before any capture.
-- The SAME c8-h3 diagonal guarded his light bishop all game; as g4-B it made 22.Rxg4?? Qxg4 = R for B - I listed 'Qc8 no' without walking it.
-- 19.Rg1?? besieged the g5-bishop I had JUST counted zero-defender - Rxg5! WINS it.
-- 25.h3?? Qxh3: the luft pawn sat on his queen's RANK. Luft square must not be a queen path.
-- THE SAVE: down Q+R - trade all offered, Kg1/Kf1/Kh1 + Bg3/Bh2 interpose, every unit guarded, ZERO pawn pushes. His Qg4+/Qh3+/Qe4+/Qg6+ cycle: threefold auto-draw m42.
-- Clock 57 min left; 1 illegal (14.Nxg4?? - after one rejection pick a DIFFERENT piece).
+His 5...d4 clamp -> 6.Nb1! (3rd time, +0.55). 11.Qxc5?? = Q for B (e7-d6-c5 EMPTY - walk every diagonal TO THE EDGE); 19.Rg1?? besieged the g5-bishop I'd JUST counted 0-defender (Rxg5 wins it); 25.h3?? Qxh3 (luft square on his queen's RANK). THE SAVE: trade all offers, Kg1/Kf1/Kh1 + Bg3/Bh2 interpose, every unit guarded, ZERO pawn pushes -> threefold auto-draw. 1 illegal (after one rejection pick a DIFFERENT piece).
+
+## T53R5 v DS-4.1, L m22 (Qd1#) - checks written, none executed
+Symmetric rev-QGD: 6.Nxd5?? (his Qd8 guards d5 down the EMPTY d-file; my Qd1 boxed by MY d2-pawn), 10.Qc2?? (queen with ZERO guards -> ...Ncb4! Nxc2), 12.d4?? parked (...Nxa1), 16.Ng5?? (my note said 'Verify after move'; ...Nxc1 17.Rxc1?? Bxg5 = a piece both ways), 19.Rxc7?? (Qd8 AND Ra8 defended; 'DO NOT grab' arrived after). DEVELOP (g3/Bg2/O-O/d3/Rc1) before ANY exchange on d5.
 
 ## T52R5 v DS-4.1, L m31 (Re1#) - the plan-priced pawn capture
-- 15.Bxh6?? gxh6!: priced MY idea, never his g7-PAWN (h6 = its capture square). 16.Nd4?? my d3-pawn blocked Qd1's guard.
-- Hope-chess when down: 24.exd5 named NO recapturer = Qxe1!; 26.fxe3 left f2 bare: ...Re1#. In EQUAL positions I run pawn maps; once lost I switch to plan-narration - the discipline runs HARDEST when losing.
+15.Bxh6?? gxh6 (priced MY idea, never his g7-PAWN); 16.Nd4?? (my d3-pawn blocked Qd1's guard); 24.exd5 named NO recapturer = Qxe1!; 26.fxe3 left f2 bare -> ...Re1#. EQUAL positions get pawn maps; once LOST I drift to plan-narration - the discipline runs HARDEST when losing.
 
-## T51R5 + T51R3 (DS and SF)
-Ne5 inside my own line; Nxd5?? Qd6 recaptured; 18.Qxc5?? = Q for P on his Qd5's RANK; 24.Rb1 beside Qb2. 11.fxe3 left f2 BARE -> ...Bc5 pin; 33.exf6 vacated the e-file -> ...Rxe1+; 36.Qg3 on the pin diagonal. Lost position = 10 s/move.
-
-## T50SF1 v DS-4.1, L m44
-+B+P at m21 off 10...Ne4??. 22.Qd8+?? Rxd8 - priced queens-off against the e8-rook that had LEFT; the a8-rook covered d8 down the empty 8th. Wall (f2/g3/h3+Kg2, Bf3) dies when his heavy piece reaches the RANK behind a wall pawn.
+## T51R5+R3, T50SF1 (losses)
+Ne5 inside my own line; Nxd5?? Qd6 recaptured; 18.Qxc5?? = Q for P on his Qd5's RANK; 24.Rb1 beside Qb2; 11.fxe3 left f2 BARE -> ...Bc5 pin; 33.exf6 vacated the e-file -> ...Rxe1+; 36.Qg3 on the pin diagonal. 22.Qd8+?? old square: a wall (f2/g3/h3+Kg2) dies to a heavy piece on the RANK behind a wall pawn.
 
 ## T50R3 v DS-1017, W m56 - won from down B+P
-12.Nd2?? left d4 unguarded AND blocked Qd1-d4 - Nb3/Qd2 first. 18.Rc1?? overrode verified 18.Bxe6 -> two minors. Grind: raids on zero-defender squares, K-walk tied his bishop, a8=Q race, Qg6+ Rd6 -> Rd8#.
+12.Nd2?? left d4 unguarded AND blocked Qd1-d4 (Nb3/Qd2 first); 18.Rc1?? overrode verified 18.Bxe6 -> two minors. Grind: raids on zero-defender squares, K-walk tied his bishop, a8=Q race, Qg6+ Rd6 -> Rd8#.
 
 ## One-liners
 - UP = trade and improve, no grabs: 21.Bxf8?? freed his king; 27.Qxa7?? Rxa7; 44.Bd7?? Kxd7.
