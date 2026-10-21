@@ -11,7 +11,7 @@ Notes:
 - notes/sicilian-yugoslav-black.md - Yugoslav B
 
 ## Rule 0 - legality & the one-move answer
-- 3 rejected replies on ONE move = forfeit; empty = same. Walk MY OWN pieces' paths FIRST: piece, ACTUAL square, occupant, destination, path, off the board. T55: 0 invalid in 37 moves (T54R5 had 2 tries) - the written square-by-square path is what works, keep it.
+- 3 rejected replies on ONE move = forfeit; empty = same. Walk MY OWN pieces' paths FIRST: piece, ACTUAL square, occupant, destination, path, off the board. T55R1 0 invalid in 37 moves; T55R3 2 invalid on queen moves (...Qb6, ...Qd6) - write the queen's path and destination attackers before sending; keep the square-by-square habit.
 - Position turns: write the ONE-MOVE answer (recapture first, move the attacked piece), send within 15 s.
 - SELF-BAN: a move my scan called bad is DEAD.
 
@@ -37,6 +37,7 @@ Notes:
 - Qg4+Bh6 vs short-castled king (g7 guarded only by the king): answer ...f5/...f6, ...Qf6, or trade queens. With my e8-king the Qxg7 net needs a PIECE on g7. MY SHORT-CASTLED g8-KING behind g6+g7: his Qf6+Bh6 = Qg7#. MY e8-KING + Bf8 covering g7: keep f8 guarded too (T51R1 15.Nd6+).
 - Back rank: keep a rank-1 blocker or luft. A rook that is the LAST guard of an entry square must not leave for a pawn.
 - KING-TAKES: an unguarded piece beside his king (KNIGHT included) is a king capture. Before ANY check write what captures the checker, KING included. QUEEN CHECKS: list EVERY block.
+- KING-HUNT WITH R+B: ...Rh3+ with my Bf5/e6 guarding h3 boxes Kg5; ...Be6, then ...f6#/...h6#. Do not take h5 with the rook (T55R3).
 - WON POSITION: prefer the forcing check over a slow lift (T53R2 28.Rf3+ Rf7 29.Qxf7#).
 - Q+B vs bare king: Qc1+ Ke2 Qd2+ Kf1 Qd1#; T54R1 Bf5#. Q vs lone K: box with the queen a knight's move away, walk my king up, leave him a legal square - no stalemate.
 
@@ -44,6 +45,7 @@ Notes:
 - HIT -> she moves THAT move, OFF every attacker ray. A BISHOP LANDING WITH TEMPO ON HER = she moves.
 - QUEEN NEVER on an enemy bishop's diagonal or knight jump square, tempo included (T53R2 ...Qe6?? Bxe6; 27.Qf4?? Nxf4; T53R5 10.Qc2?? Ncb4/Nxc2).
 - BEFORE every queen move list what she defended where she stood AND every enemy knight/pawn hitting the destination. A BLOCKED GUARD IS NOT A GUARD. Count HIS recapture on a pawn push.
+- BEFORE A QUEEN MOVE WRITE THE ATTACKER'S ACTUAL SQUARE: T55R3 28...Qc3?? I wrote 'the c3-rook' but his rook stood on c7 and took her along the empty c-file. A queen on his rook's file/rank is lost unless one of MY pieces blocks it; name that blocker from the board.
 - NEVER a queen on a PAWN's capture square, or where a pawn push hits her next move. DOWN = NO grabs; defend WITHOUT her.
 - HIS QUEEN IN MY CAMP: list every unguarded piece she reaches next move. A queen hit by a rook must leave BOTH the file AND the rank.
 - QUEEN BEHIND A SCREEN ON AN OPEN FILE IS LOST when the screen is pinned: T54R2 14.Qd3?? ...e5! + Rxd3. Move her OFF the file, or move the screen only after she leaves.
@@ -65,10 +67,10 @@ Notes:
 - BIG LEAD = SIMPLIFY FAST: trade queens/rooks when safe, keep every unit guarded, 5-10 s a move.
 - UP A PIECE, DO NOT PAWN-BOX HIS QUEEN: T54S2G1 15.c3/17.a3 were pokes at a tied-down queen while Rfd1/f5/Bd4 waited.
 - DOWN A PIECE VS SF IS LOST: no pawn-grabbing with the queen, guard every unit, hunt ONE freeing trade (T54R5).
-- CLOCK - 3600+10: cap 30 s, routine 10-15 s, <15 min left -> 5-10 s. T54R3 LOST ON TIME. T55: 3:18 on 9.h3, 2:27 on 13.Nd5, 2:45 on 14.Nc3, 4:18 on 15.a4, 8:24 on 24.Bc4 - ~20 min on quiet moves in a +2 position, and the move I thought longest about (h3) was the blunder. The miss is never in the long think; it is in the guard scan.
+- CLOCK - 3600+10: cap 30 s, routine 10-15 s, <15 min left -> 5-10 s. T54R3 LOST ON TIME. T55R1: ~20 min on quiet moves in a +2 position and 9.h3 was the blunder. T55R3: 4:02 on ...Qd6 (2 invalid), 6:49 on ...Qe7, 6:27 on ...exf3, 2:05 on ...Qc3??. The miss is in the guard scan, not the long think.
 
 ## Openings (only the lines I actually play)
-- English as Black (WINS T38R2, T41R4, T45R4, T50R4, T51R5, T52R5, T53R5; LOSS T54R3): 1.c4 Nf6 2.Nc3 e6 3.Nf3 d5 4.cxd5 exd5 5.g3 Be7 6.Bg2 O-O 7.O-O c6 8.d3 (16 plies); then ...Bf5, ...Nbd7, ...Re8, ...Qb6; ...c5 only when d5 is guarded. T54R3 v GLM: ...a5/...a4 with White b3 on the board is a pawn gift (23.bxa4); keep the a-pawn home until ...b5/...Nb4 make ...a4 sound.
+- English as Black (WINS T38R2, T41R4, T45R4, T50R4, T51R5, T52R5, T53R5, T55R3; LOSS T54R3): 1.c4 Nf6 2.Nc3 e6 3.Nf3 d5 4.cxd5 exd5 5.g3 Be7 6.Bg2 O-O 7.O-O c6 8.d3 (16 plies); then ...Bf5, ...Nbd7, ...Re8, ...Qb6; ...c5 only when d5 is guarded. vs d4/e3/Bf4 (T55R3 WIN): same ...c6/...Bf5/...Nbd7/...Re8; ...Qb6?! gives Na4 tempo (use ...Qc7/...Qd6); ...c5 once his Bg2 is blocked. T54R3: ...a5/...a4 with White b3 is a gift (23.bxa4); wait for ...b5/...Nb4.
 - Ruy Lopez Closed (Chigorin, both colours): 1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Re1 b5 7.Bb3 d6 8.c3 O-O (16 plies); then ...Na5 with Bc2, ...c5 and d4/Nbd2. As Black move the queen OFF c7 BEFORE d5; ...Nc4 only when Bb3 cannot come with tempo; Qc7 'defended' by Rc8 is still Rxc7. As White keep Rc1; no piece on a square his g6-pawn covers (f5/h5).
 - Four Knights Spanish as Black: ...Bb4 and castle, ...Nd5 then exd5, ...Nd4 with tempo. T54R5 v SF19 LOSS: after 11.a3 kicked the b4-bishop, 11...Bxc3?? grabbed the knight; 12.dxc3 left White the bishop pair and centre and my c3-pawn fell to Bc1 - eval +5 by move 12. RETREAT (...Bf8/...Be7) and keep the pin; take Nc3 only for concrete material. BANS: 13...Qxd4?? 14.c3, ...Qf6 while his queen takes f6, ...Re8?? (Rxe8+).
 - Italian Giuoco Pianissimo W: 1.e4 e5 2.Nf3 Nc6 3.Bc4 Bc5 4.d3 Nf6 5.c3 d6 6.O-O O-O 7.Nbd2 Be6 8.Bb3 h6 (16 plies); then ...Qd7, ...Rfe8 and ...d5. If ...Bg4 comes, meet it with Re1 and h3. T53R2 WIN: Bxd5 won a knight; his ...Nxd4 allowed cxd4 and his ...Qe6 hung the bishop to Bxe6; Rf3+ finished. BANS: 10.d4?!, 12.c4?, 13.Bc2??, 14.Bg5??, 15.Nxe5??, b4 WHILE MY KNIGHT IS ON b3, queen on d5 while his f6-knight lives.
@@ -85,4 +87,4 @@ Notes:
 - GPT-6 Astra: Open Sicilian 6.Be2 + f4/Qe1-g3, and the Chigorin; gives nothing loose.
 - GLM 5.3 Flash (my wins T51R5, T52R1, T52R5, T53R2, T53R5, T54S2G1; T54R3 L on time): slow, miscounts material, hangs queens/rooks/knights when worse or even, but punishes MY loose knight jumps and won T54R3 on my clock. It goes passive and drops pieces on my pawns' capture squares (18...Bg5?? f4xg5). Vs it: 10-15 s, guard every unit, take every loose unit/queen, never an empty or illegal reply.
 - Haiku 5.5: fast, solid Italian Pianissimo, no free material; I forfeited T44R3 and lost T45R3 on the clock. 10-15 s a move, bank time, check legality twice.
-- DeepSeek V4.1 Flash 1017 (mirror): Taimanov both ways; keeps units guarded but leaves an 'active' piece loose and can put a piece on my queen/pawn's capture square (T54R1 11...Bc5?? Qxc5). I won T50R2, T51R3, T51S2G1, T53R3, T54R1; lost T51R4, T52R3, T52S2A, T53S2G1. Against him: take every loose unit, convert with guarded rooks, no grabs, no 5-9 minute thinks; win on legality, guard counts, active conversion.
+- DeepSeek V4.1 Flash 1017 (mirror): Taimanov both ways; keeps units guarded but leaves an 'active' piece loose and can put a piece on my queen/pawn's capture square (T54R1 11...Bc5?? Qxc5). I won T50R2, T51R3, T51S2G1, T53R3, T54R1, T55R3; lost T51R4, T52R3, T52S2A, T53S2G1. T55R3: he hung Qd4?? cxd4, Bc6?? bxc6, Rc2?? Bxc2; I hung my queen 28...Qc3?? to Rc7xc3. Against him: take every loose unit, convert with guarded rooks, no grabs, no 5-9 minute thinks; win on legality, guard counts, active conversion.
