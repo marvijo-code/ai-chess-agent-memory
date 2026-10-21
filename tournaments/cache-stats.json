@@ -2044,34 +2044,34 @@
    "number": 55,
    "players": {
     "DeepSeek V4.1 Flash": {
-     "calls": 112,
-     "input": 5954081,
-     "cached": 5148800,
-     "output": 1070857,
-     "warm_input": 5896513,
-     "warm_cached": 5107200,
-     "hit_rate": 0.8648,
-     "warm_hit_rate": 0.8661
+     "calls": 131,
+     "input": 6404700,
+     "cached": 5449856,
+     "output": 1195717,
+     "warm_input": 6326671,
+     "warm_cached": 5407488,
+     "hit_rate": 0.8509,
+     "warm_hit_rate": 0.8547
     },
     "GLM 5.3 Flash": {
-     "calls": 116,
-     "input": 4932999,
-     "cached": 3912948,
-     "output": 468012,
-     "warm_input": 4872686,
-     "warm_cached": 3876572,
-     "hit_rate": 0.7932,
-     "warm_hit_rate": 0.7956
+     "calls": 140,
+     "input": 5376405,
+     "cached": 4239476,
+     "output": 492997,
+     "warm_input": 5297320,
+     "warm_cached": 4192220,
+     "hit_rate": 0.7885,
+     "warm_hit_rate": 0.7914
     },
     "DeepSeek V4.1 Flash 1017": {
-     "calls": 102,
-     "input": 4790160,
-     "cached": 4256896,
-     "output": 598650,
-     "warm_input": 4734663,
-     "warm_cached": 4221568,
-     "hit_rate": 0.8887,
-     "warm_hit_rate": 0.8916
+     "calls": 121,
+     "input": 5185933,
+     "cached": 4544896,
+     "output": 674078,
+     "warm_input": 5108856,
+     "warm_cached": 4494976,
+     "hit_rate": 0.8764,
+     "warm_hit_rate": 0.8798
     }
    }
   }
