@@ -2,7 +2,7 @@
 
 Notes:
 - notes/capture-safety.md - pre-move scan + blunder catalogue
-- notes/caro-advance-black.md - Caro Advance B: e6/f7 guard, f5 break
+- notes/caro-advance-black.md - Caro Advance B: e6/f7 guard, f5 break, Bb2-e5/Qg7 net
 - notes/qgd-white.md - QGD W
 - notes/ruy-lopez-black.md - Chigorin/Breyer B
 - notes/ruy-lopez-white.md - Chigorin W
@@ -11,17 +11,17 @@ Notes:
 - notes/sicilian-yugoslav-black.md - Yugoslav B
 
 ## Rule 0 - legality & clock
-- 3 rejected replies on ONE move = forfeit; empty = same. Walk MY OWN pieces' paths FIRST: piece, ACTUAL square, occupant, destination, path, off board. T56R5 2 illegal: knight 'd7-d6' (d7 jumps only b6/b8/c5/e5/f6/f8). ONE rejection = redraw a DIFFERENT move, never resend the idea.
+- 3 rejected replies on ONE move = forfeit; empty = same. Walk MY OWN pieces' paths FIRST: piece, ACTUAL square, occupant, destination, path, off board. ONE rejection = redraw a DIFFERENT move, never resend the idea.
 - Position turns: write the ONE-MOVE answer (recapture first, move the attacked piece), send within 15 s.
 - SELF-BAN: a move my scan called bad is DEAD.
-- CLOCK: routine 10-15 s, cap 30 s; DOWN MATERIAL 5-10 s. T56R5 spent 1:24/3:20/3:01/4:19/5:45/4:02 on RETREATS while two pawns down and still played ...f6?! and ...Qc5??; ended 26 min vs his 66. The written list is the check, not the think.
+- CLOCK: routine 10-15 s, cap 30 s; DOWN MATERIAL 5-10 s. T56R5 spent 1:24/3:20/3:01/4:19/5:45/4:02 on RETREATS while two pawns down and still blundered; ended 26 min vs his 66. T57R1 4:10 on ...Qb6? still lost to Bxg7!. The written list is the check, not the think.
 - His last move first, then MY destination: 0 guards + his capture = gift; two attackers is not safety. Quiet, retreat and 'tempo' moves get the same sweep.
 
 ## Rule 1 - destination sweep
 - HITTING HIS QUEEN IS NOT AN ANSWER WHEN IT OPENS A CHECK: T55 Final 15...Be7 16.Bg6+! Kd8 17.Qxh8+ Bf8 18.Qxf8#. Before any tempo hit on his queen, list HIS checks on the NEW board.
 - OPEN FILE WITH HIS ROOK BEHIND IS DEATH: T56R3 14...exf5 15.gxf5 Bxf5 16.Rxf5. Before a capture/recapture on an open file, name his rook on it and the guards of MY landing square.
 - WHITE f4+g4 vs MY Bg6: f4-f5 hits g6 AND e6. Retreat the bishop BEFORE f5 (h7-class; h5 is the g4-pawn's square) or meet f5 with ...f6; ...c5 does not stop it (T56R3 13...c5?! 14.f5!).
-- A PAWN THAT LEAVES ABANDONS ITS POST. T56R5: 11...f6?! vacated f7, e6's ONLY guard (his bishop had already traded itself off on d3) - 12.exf6 Bxf6 13.dxc5 14.d4 15.Re1 O-O?? 16.Rxe6! (0.8 -> +5.5). In the Caro never ...f6 while my king is on e8/uncastled and e6 has no PIECE guard; meet e5 with ...Nf5/...Qc7/...c5.
+- A PAWN THAT LEAVES ABANDONS ITS POST. T56R5: 11...f6?! vacated f7, e6's ONLY guard; exf6/Bxf6/dxc5/d4/Rxe6 followed. In the Caro never ...f6 while my king is on e8/uncastled and e6 has no PIECE guard; meet e5 with ...Nf5/...Qc7/...c5.
 - A PINNED PAWN IS NOT A GUARD. His own piece between his heavy piece and my destination is no shield; MY guard is void if my own piece stands between.
 - HIS ATTACKING BISHOP WITH NO GUARD IS FREE; count its guards before retreating. A knight landing hitting a loose piece is answered first; a pawn kick is not an answer. Before ...Ng4/...Nf5/...Nd4/...Nc4 list the guards of EVERY piece it hits.
 - PAWN ATTACKS on EVERY destination: g6<-f7/h7, b6<-a7/c7, d6<-c7/e5, c5<-b4/d4, a3/c3<-b4, e5<-d4/f4, f5<-e6/g6, g5<-f4/h4, d4<-c5/e5, h6<-g7, f4<-e5/g5. A moved pawn still attacks; its NEXT PUSH hits too.
@@ -40,6 +40,7 @@ Notes:
 - TWO ROOKS GUARDING EACH OTHER on f2+f3 stop ...Qh2+/...Qg2+ nets.
 - g3 WITH MY KING ON g2/h2 AND HIS BISHOP ABLE TO REACH e5: g3 is PINNED (e5-h2) = a hook for ...h5-h4 and ...Qh4+.
 - Qg4+Bh6 vs short-castled king: answer ...f5/...f6, ...Qf6, or trade queens. With my e8-king the Qxg7 net needs a PIECE on g7; if Bf8 sits on g7 then f8 must stay guarded too.
+- King g8 + rook f8 + g7 GONE: his Re8+ ...Rf8 block is Qg7# if his bishop covers g7/h8 (T57R1). Keep the g7-pawn or do not allow that bishop.
 - Back rank: keep a rank-1 blocker or luft. A rook that is the LAST guard of an entry square must not leave for a pawn.
 - KING-TAKES: an unguarded piece beside his king (KNIGHT included) is a king capture. Before ANY check write what captures the checker, KING included. QUEEN CHECKS: list EVERY block.
 - KING-HUNT WITH R+B: ...Rh3+ with my Bf5/e6 guarding h3 boxes Kg5; ...Be6, then ...f6#/...h6#.
@@ -69,7 +70,7 @@ Notes:
 - UP A QUEEN + ROOK vs R+B: trade his last rook first, then mate with Q+R; T56 lost exactly there (32.Qd7??).
 - CONVERTING UP: guard every unit, trade pieces not pawns, escort passers, stalemate-check, 5-15 s a move. BIG LEAD = SIMPLIFY FAST. A clearance pawn move can open my bishop to his rook (T56R4 ...d3! cleared f6-a1, Bxa1).
 - DOWN A PIECE VS SF IS LOST: no pawn-grabbing with the queen, guard every unit, hunt ONE freeing trade, 5-10 s a move. T56R5 at -2 pawns from move 14: 4-6 min thinks on retreats changed nothing; the 10 s move and the guard scan are what matter.
-- 3600+10: cap 30 s, routine 10-15 s, <15 min left -> 5-10 s. T54R3 LOST ON TIME; T56R5 burned 33 min and blundered anyway.
+- 3600+10: cap 30 s, routine 10-15 s, <15 min left -> 5-10 s. T54R3 LOST ON TIME; T56R5 burned 33 min and blundered anyway; T57R1 4:10 on ...Qb6? changed nothing.
 
 ## Openings (only the lines I actually play)
 - English as Black (WINS T38R2, T41R4, T45R4, T50R4, T51R5, T52R5, T53R5, T55R3, T56R4; LOSS T54R3): 1.c4 Nf6 2.Nc3 e6 3.Nf3 d5 4.cxd5 exd5 5.g3 Be7 6.Bg2 O-O 7.O-O c6 8.d3 (16 plies); then ...Bf5, ...Nbd7, ...Re8, ...Qb6; ...c5 only when d5 is guarded. vs d4/e3/Bf4 (T55R3 WIN): same build; ...Qb6?! gives Na4 tempo (use ...Qc7/...Qd6); ...c5 once his Bg2 is blocked. T56R4 vs 8.d4 Bf4 Ne5 Qd4: ...c5! kicked the queen; after 14.Qe3?? ...d4! forked Qe3+Nc3. Then trade pieces, no grabs, convert. T54R3: ...a5/...a4 with White b3 is a gift (23.bxa4).
@@ -80,10 +81,10 @@ Notes:
 - Taimanov W vs mirror T56R1 (LOSS): 16.Bd4?? left the d5-bishop on the c6-pawn's square, ...cxd5 won it; 30.Qxe4 won his queen (Q+R v R+B) but 32.Qd7?? Bxd7 returned her, 37.Ra6?? bxa6 the rook. Up a queen: trade the last rook, queen off every diagonal.
 - Open Sicilian vs ...Nc6/...g6 with Bc3/Bc4 (T55 L v SF19): 5.Nc3 Bg7 6.Be3 Nf6 7.Bc4 d6 8.O-O, then f3/Qd2 or Qd2/Rf2. THE OPENING WAS FINE (+0.3); the loss was 9.h3?? letting ...Nxe3. If ...Ng4 comes defend/move e3 FIRST (Qd2, Bd4, or trade with a recapture), kick with h3 only when e3 is guarded twice.
 - Taimanov B: 1.e4 c5 2.Nf3 e6 3.Nc3 Nc6 4.d4 cxd4 5.Nxd4 Nf6 6.Nxc6 bxc6 7.Bd3 Be7 8.e5 Nd5 (16 plies); 9.Qg4. With my king on e8 g7 has NO guard - never ...d6, never castle, never ...Nf6; cover g7 with a PIECE (...Bf8); never ...f5 while exf6 opens lines. T50R3: 11...g6?? 15.Qf6 won h8, 17.Bh6 Qxf8#. T51R1: 14...Qe7?? screened Bf8 from d6 - 15.Nd6+!. T49R4: ...a6 BEFORE White's Nb5. T55 Final: 12...f6?? lost to 13.Nxd5/14.exf6/15.Qxf6.
-- Caro B (T56R5 LOSS m40): 3.e5 Bf5/Bg6, ...e6, ...Nd7-f5, ...Be7, O-O. His bishop traded itself off (Bd3/Bxd3) - then e6's ONLY guard was f7, so 11...f6?! was already fatal: 12.exf6 Bxf6 13.dxc5 14.d4 15...O-O?? 16.Rxe6. Retreat to h7 vs f4-f5 or meet f5 with ...f6 only when e6 has a PIECE guard and my king is off the e-file. NEVER recapture ...Bxf5 on the open f-file (T56R3 14...exf5 15.gxf5 Bxf5?? 16.Rxf5 = mate in 22); recapture ...hxg6, never ...Nxg6?!; ...Be4 loses to Nxe4; no ...Ngf6 while e5 stands.
+- Caro B (T56R5 LOSS m40; T57R1 L m29 v SF19): 1.e4 c6 2.d4 d5 3.e5 Bf5 4.Be2 e6 5.Nc3 c5 6.Bb5+ Nc6 7.Bxc6+ bxc6 8.Nge2 Be7 (16 plies); then ...cxd4/...Bc5/...Bb6/...Ne7/O-O. T57R1: keep the queen off d6 when his Bb2 can land e5 (21.Be5 hit Qd6+g7); 19...b5?! 20.a4! b4 21.Be5! 22...Qb6? 23.Bxg7! hit Rf8. With king g8, rook f8 and g7 gone, 28.Re8+ forced ...Rf8 and 29.Qg7# (his b2-bishop covered g7/h8). T56R5: never ...f6 while e6 has no PIECE guard and my king is on e8/uncastled; 11...f6?! was fatal (exf6, Bxf6, dxc5, d4, Rxe6). Retreat the bishop before f4-f5 or meet f5 with ...f6 only then; never recapture ...Bxf5 on the open f-file (T56R3 ...Bxf5?? 16.Rxf5, mate 22); recapture ...hxg6, never ...Nxg6?!; ...Be4 loses to Nxe4; no ...Ngf6 while e5 stands.
 
 ## Opponents
-- SF19: instant, zero errors, never repeats while progressing. Punishes loose units, passive retreats, queens on his rays/pawn diagonals/knight squares, and every voluntary pawn loosening. T54R2: up Q+R v B it took a threefold only when its rook was attacked every move. T55 Final: level Taimanov, then 13.Nxd5!/14.exf6/15.Qxf6 off 12...f6??. T56R3: Caro Advance +0.4, then 14.f5! broke through, mate 22. T56R5: punished 11...f6?! (loose e6) with exf6/Rxe6, and every unit I left hanging after that. Give him no pawn break and no loose unit; 10-15 s.
+- SF19: instant, zero errors, never repeats while progressing. Punishes loose units, passive retreats, queens on his rays/pawn diagonals/knight squares, and every voluntary pawn loosening. T54R2: up Q+R v B it took a threefold only when its rook was attacked every move. T55 Final: level Taimanov, then 13.Nxd5!/14.exf6/15.Qxf6 off 12...f6??. T56R3: Caro Advance +0.4, then 14.f5! broke through, mate 22. T56R5: punished 11...f6?! (loose e6) with exf6/Rxe6, and every unit I left hanging after that. T57R1: Caro Advance fine to 18...Qd6; 19...b5?! and 22...Qb6? (4:10) let 23.Bxg7! and Qg7# after Re8+ ...Rf8. Give him no pawn break and no loose unit; no queenside pawn push while a4/a5 is available; queen off d6 when Bb2-e5 is possible; 10-15 s.
 - Fable 5.1: solid 6.Be2 + Qh5/Bd3 battery vs my castled king; converts the moment I leave a piece on an enemy pawn's capture square.
 - Sonnet 5.5 (never beaten): banks clock, quiet space moves, then takes every UNGUARDED unit. 10-15 s from move 1, assume 60+ moves, keep a rank-1 blocker.
 - GPT-6.1 Sol: fast; takes every free piece incl. a queen on any pawn/bishop diagonal or knight square, and any loose recapture.
