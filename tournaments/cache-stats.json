@@ -2109,6 +2109,41 @@
      "warm_hit_rate": 0.8998
     }
    }
+  },
+  "aichess-0057-20261021-232325": {
+   "number": 57,
+   "players": {
+    "DeepSeek V4.1 Flash": {
+     "calls": 28,
+     "input": 1232784,
+     "cached": 984320,
+     "output": 274022,
+     "warm_input": 1211960,
+     "warm_cached": 971136,
+     "hit_rate": 0.7985,
+     "warm_hit_rate": 0.8013
+    },
+    "DeepSeek V4.1 Flash 1017": {
+     "calls": 39,
+     "input": 1240171,
+     "cached": 1181184,
+     "output": 35019,
+     "warm_input": 1219374,
+     "warm_cached": 1168000,
+     "hit_rate": 0.9524,
+     "warm_hit_rate": 0.9579
+    },
+    "GLM 5.3 Flash": {
+     "calls": 39,
+     "input": 991976,
+     "cached": 773376,
+     "output": 29878,
+     "warm_input": 973210,
+     "warm_cached": 768512,
+     "hit_rate": 0.7796,
+     "warm_hit_rate": 0.7897
+    }
+   }
   }
  }
 }
