@@ -1,10 +1,10 @@
 # Chess memory - DeepSeek V4.1 Flash 1017
 
 ## Move discipline (check every move)
-- LEGALITY FIRST: 3 rejected tries on ONE move forfeit; 3 total ends the game. T55R1 spent all three in a won position; T55R5.2 two more (Qxd5 with my own d2 pawn on the d-file; Nf4 from the wrong square). Before sending: piece, its ACTUAL square, destination, and walk its line through MY OWN pieces. After ONE rejection pick a DIFFERENT move/idea.
+- LEGALITY FIRST: 3 rejected tries on ONE move forfeit; 3 total ends the game. T55R1 spent all three in a won position; T55R5.2 two more (Qxd5 with my own d2 pawn on the d-file; Nf4 from the wrong square); T55R5.3 one (15.e4 with my own Be3 still on e3). Before sending: piece, its ACTUAL square, destination, and walk its line through MY OWN pieces. After ONE rejection pick a DIFFERENT move/idea.
 - HIS PAWN TWO SQUARES FROM MY BACK RANK IS A FORK MACHINE (T55R2 8...d3 9.O-O? ...Bg4 10.Ne1?? dxe2! forked Qd1+Rf1, 11...exf1=R+, mate m13). Name that pawn's two capture squares every move.
 - A PIECE GUARDED ONLY BY MY QUEEN IS LOST TO HIS QUEEN (T54R1 11...Bc5?? Qxc5). Name a recapturer that is NOT my queen.
-- 'MY QUEEN GUARDS IT' IS A LIE WHEN MY OWN PIECE BLOCKS THE LINE: T55S2G1 12...Bc5?? - my Nc6 stood between Qc7 and c5, zero recapturers, 13.Bxc5. Same class: my d2 pawn blocked Rxd5 after 26...Qxd5 (T55R5.2).
+- 'MY QUEEN GUARDS IT' IS A LIE WHEN MY OWN PIECE BLOCKS THE LINE: T55S2G1 12...Bc5?? - my Nc6 stood between Qc7 and c5, zero recapturers, 13.Bxc5. Same class: my d2 pawn blocked Rxd5 after 26...Qxd5 (T55R5.2); his own c7-pawn blocked his Rd7's guard of b7 (T55R5.3 27.Rxb7).
 - ANY OF MY PIECES ON HIS PAWN'S CAPTURE SQUARE IS LOST, CHECKS AND ROOKS INCLUDED (T50R3 44...Ra4+?? bxa4). A PAWN I ATTACK TWICE STILL CAPTURES (T55R3 24.Qd4?? cxd4).
 - A PAWN THAT JUST ADVANCED OR CAPTURED OWNS ITS NEW SQUARES (T54S1G1 ...Bd6?? exd6, ...Qc7?? dxc7). His b7/c7/d7 cover c6/d6/e6 (T55R3 34.Bc6?? bxc6).
 - AN OPEN FILE + HIS ROOK = MY PIECE THERE IS FREE (T53R3 14...Bf5?? Rxf5); the mirror wins for me (T55 27...Nxc4! R for N).
@@ -23,7 +23,9 @@
 - DOWN A PIECE OR MORE v SF: guard every unit, fortress, hunt ONE freeing trade early (T54R1's 60-move fortress still lost m67).
 
 ## Endings, king safety, conversion
-- UP A QUEEN OR MORE: PROGRESS EVERY MOVE, NEVER A REPETITION. T55R5.2 I was Q+2R+B against a rook and gave a run of queen checks until his king shuffled back to g1 - THREEFOLD DRAW, half a point thrown away. With rooks still on: lift one to the 7th/8th, bring my king to a mating net, keep the queen covering his flight. Count the position (pieces AND side to move) I am about to repeat a third time; a check I can repeat is not progress.
+- UP A QUEEN OR MORE: PROGRESS EVERY MOVE, NEVER A REPETITION, AND NO PAWN GRABS WITH HER. T55R5.2 I was Q+2R+B against a rook and gave a run of queen checks until his king shuffled back to g1 - THREEFOLD DRAW, half a point thrown away. With rooks still on: lift one to the 7th/8th, bring my king to a mating net, keep the queen covering his flight. Count the position (pieces AND side to move) I am about to repeat a third time; a check I can repeat is not progress.
+- h6 IS BANNED WHILE HIS g7-PAWN IS HOME: T55R5.3 19.Qxg5 won her for free (she stood on my Qd2's ray - the classic GLM gift) and one move later 20.Qxh6?? gxh6 gave her back for a pawn, the same square as T50R2 16.Qh6??. Up a queen v R+B: trade a rook first, then take only pawns no unit guards.
+- A PAWN THAT TAKES A PIECE IS THE CHEAPEST ROOK ON THE BOARD: T55R5.3 down a bishop, 29.cxd7! took his rook with my c-pawn, 30.d8=Q was safe (his c7-rook could not reach d8), 31.Qxd6 - GLM flagged at 1:47 while I had 11 min. Short of material v GLM: pawn captures, rook grabs of loose pawns (Rxa7, Rxb7), keep the game going.
 - MY Kg8 WITH AN EMPTY f8/e8 = BACK-RANK MATE (T54S1G1 20.Qd8#). Keep a rook home or play h6.
 - HIS Qf6 + A BISHOP REACHING f2, MY Kg1 AND f2 HOME = ...Qxf2# (T55R2 m13). Once queens are on and my f1-rook has traded, f2 needs a second guard.
 - A CHECK ON THE DIAGONAL THROUGH HIS KING HITS A PIECE BEHIND IT: walk both directions to the edge (T53S2G1 42...Qe4+ won Rb1).
@@ -36,10 +38,11 @@
 - LEVEL R+B v R+B: the repetition draw is fair. TWO ROOKS v QUEEN: draw by blockade, not raids (T49R3).
 
 ## Clock
-- Hard cap 60 s. Routine 5-15 s; captures/checks/pawn breaks 20-40 s. My losses are scan misses, not the clock. T55S2G1 39 min left at m41 while down a piece. T55R2: 1:48 and 2:39 on the two blunders. Long thinks only for a concrete question (T54R2's 2-min 17.Nb5 found the fork).
+- Hard cap 60 s. Routine 5-15 s; captures/checks/pawn breaks 20-40 s. My losses are scan misses, not the clock. T55S2G1 39 min left at m41 while down a piece. T55R2: 1:48 and 2:39 on the two blunders. T55R5.3: 10-27 s a move, 11 min left at m31 while GLM flagged with 1:47. Long thinks only for a concrete question (T54R2's 2-min 17.Nb5 found the fork).
 
 ## Opening: English (W v 1...e5; B v 1...Nf6 reversed QGD)
 - W: 1.c4 e5 2.Nc3 Nf6 3.g3 d5 4.cxd5 Nxd5 5.Bg2 (9 plies) - the squeeze setup.
+  - vs ...Nxc3/...Bd6 symmetric (T55R5.3 WIN v GLM on time): bxc3, Nf3, O-O, d4, Be3, Qd2, Rad1 = two bishops and a broad centre; 15.d5?! kicked his Nc6 to the strong e5 (Bf4 Nxf3+ exf3 was only equal) - build Qd2/Re1 first, d5 later.
   - vs ...Nb6 (T54R2 WIN v GLM): Nf3, Nc6, O-O, Be7, d3, then Be3/Qd2/Rc1/Rfd1; his c7 is a fork target once his queen leaves c7/d7 (17.Nb5! Nxc7 forked Qe6 and Ra8).
   - vs ...Nxc3/...Bd6 Boleslavsky (T54 3rd WIN v GLM): bxc3, Nf3, O-O, d4, Be3, Re1; then d5! Ne7, Bf4 Ng6, Bxd6 cxd6, Nd4; h3 Bh5 g4! - his bishop has no retreat (own Ng6, own f7-pawn): 18...Bxg4 19.hxg4 = piece up.
 - B reversed QGD: 1.c4 Nf6 2.Nc3 e6 3.g3 d5 4.cxd5 exd5 5.Nf3 Be7 6.Bg2 O-O 7.O-O c6 8.d3 (15 plies), then ...Bf5/...Nbd7/...Re8/...Qb6.
@@ -73,7 +76,7 @@
 
 ## Opponents
 - Stockfish 19 (depth 4): instant. Punishes loose pieces, hidden defenders, unguarded c6 (Bxc6!), a kicked Ng4, f6 on his e5-pawn's capture square, ...f6 met by exf6, ...h6 met by Bxh6. T53R2 Dragon ...Be5/...Bxh2+ mated me; T54S1G1 took a bishop and a queen off pawn capture squares, then mated on the open 8th. T55R2: 5...d4 / 8...d3 clamp, ...Bg4 on a once-guarded knight, the dxe2 pawn fork, ...Qxf2# m13.
-- GLM 5.3 Flash: as White the English, as Black the Taimanov; sound build but careless with queen and f6-knight (T53R1 16...Rfd8?? exf6; T52R2 18.Qc2?? Qxc2!). NEW: T55R5.2 11.Qc2?? let my Bg6 take her for a bishop; it plays pawn pushes into the fire and its clock runs out (T55R1 flagged 0:34 at m39). Vs GLM: 10-20 s sound moves, take every loose unit and queen, let its clock run - then CONVERT with rooks and king progress, never with repeatable checks.
+- GLM 5.3 Flash: as White the English, as Black the Taimanov; sound build but careless with queen and f6-knight (T53R1 16...Rfd8?? exf6; T52R2 18.Qc2?? Qxc2!). T55R5.2 11.Qc2?? let my Bg6 take her for a bishop; T55R5.3 18...Qxg5?? put her on my Qd2's ray for free. It plays pawn pushes into the fire, takes illegal tries (3 again), and its clock runs out (T55R1 flagged 0:34 at m39; T55R5.3 flagged with 1:47 while I had 11 min). Vs GLM: 10-20 s sound moves, take every loose unit and queen, never give the queen back with a pawn grab, let its clock run - then CONVERT with rooks, pawn-captures and king progress, never with repeatable checks.
 - DeepSeek V4.1 Flash (mirror): solid Taimanov/English both colours, converts without gifts, up to 8 illegal tries/game. T54R1 up a bishop from m12 it walked Kf2-e3-d4-e5 and mated N+B at m67. T55R3 beat me 0-1 m47 off my 24.Qd4?? cxd4. T55S2G1 kept the Qd5 pin with ...Ne7/...b5/...Nc6 and converted R+B v B without a gift. Vs mirror: gift nothing, no 'active' undefended piece, expect no gift back when down.
 
 ## Notes
@@ -92,3 +95,4 @@
 - T55R3 0-1 v mirror m47 (W English Carlsbad): 24.Qd4?? cxd4 lost my queen, 34.Bc6?? bxc6 the bishop. Zero illegal.
 - T55S2G1 0-1 v mirror m41 (B Taimanov): 12...Bc5?? Bxc5 (Nc6 blocked Qc7's recapture); defended R+B v B for 28 moves, 41.Rxh4#.
 - T55R5.2 draw v GLM (B reversed QGD): won his QUEEN 11...Bxc2, then Q+2R+B v R - and repeated the position three times to a draw instead of mating. 2 illegal.
+- T55R5.3 1-0 v GLM on time (W English symmetric): level to m18, 18...Qxg5?? gave her on my Qd2's ray, 19.Qxg5 +8, but 20.Qxh6?? gxh6 returned her. Recovered: Rxa7/Rxb7, 29.cxd7! pawn-takes-rook, d8=Q, Qxd6; GLM flagged m31 (1:47) with my 11 min. 1 illegal (15.e4, own Be3 on e3).
