@@ -3,7 +3,7 @@
 ## Move discipline (check every move)
 - LEGALITY FIRST: 3 rejected tries on ONE move forfeit; 3 total ends the game. Before sending: piece, its ACTUAL square, destination, and MY OWN occupant of every path square. After ONE rejection pick a DIFFERENT move/idea.
 - HIS PAWN TWO SQUARES FROM MY BACK RANK IS A FORK MACHINE (T55R2 8...d3 9.O-O? ...Bg4 10.Ne1?? dxe2! forked Qd1+Rf1, mate m13). Name that pawn's two capture squares every move.
-- A PIECE GUARDED ONLY BY MY QUEEN IS LOST TO HIS QUEEN, AND 'MY QUEEN GUARDS IT' IS A LIE WHEN MY OWN PIECE BLOCKS THE LINE: T54R1 11...Bc5?? Qxc5; T55S2G1 12...Bc5?? - my Nc6 stood between Qc7 and c5; T55R5.2 my d2 pawn blocked Rxd5.
+- A PIECE GUARDED ONLY BY MY QUEEN IS LOST TO HIS QUEEN, AND MY QUEEN GUARDS IT IS A LIE WHEN MY OWN PIECE BLOCKS THE LINE: T54R1 11...Bc5?? Qxc5; T55S2G1 12...Bc5?? - my Nc6 stood between Qc7 and c5; T55R5.2 my d2 pawn blocked Rxd5.
 - ANY OF MY PIECES ON HIS PAWN'S CAPTURE SQUARE IS LOST, CHECKS AND ROOKS INCLUDED (T50R3 44...Ra4+?? bxa4; T56R1 37...bxa6 won his rook for a pawn). A PAWN I ATTACK TWICE STILL CAPTURES (T55R3 24.Qd4?? cxd4). T56R3: his Ne6?? fxe6, Be4?? dxe4, Qxd5+?? cxd5 all lost pieces to my pawns.
 - A PAWN THAT JUST ADVANCED OR CAPTURED OWNS ITS NEW SQUARES (T54S1G1 ...Bd6?? exd6, ...Qc7?? dxc7). His b7/c7/d7 cover c6/d6/e6; his e5 covers d6/f6.
 - AN OPEN FILE + HIS ROOK = MY PIECE THERE IS FREE (T53R3 14...Bf5?? Rxf5); the mirror wins for me (T55 27...Nxc4! R for N).
@@ -16,12 +16,13 @@
 - A ROOK CHECK NEAR MY KING: block on a DIFFERENT rank from my queen (T52 Final 21.Be3? Rxe3+).
 - Qg3 + a bishop reaching e5/f6/h6 = Qxg7#: never take on e5 then (T48 Final 13...dxe5??); ...h6?? met 12.Bxh6! (T54R3).
 - A QUEEN MOVE ONTO A SQUARE HIS QUEEN ATTACKS NEEDS A NAMED RECAPTURER OF MINE THERE: T56R1 29...Qe4?? 30.Qxe4; T52R2 18.Qc2?? Qxc2. Mirror: HIS queen unguarded on an open line is free (T56R1 32...Bxd7). My queen in front of her king on an open file is pinned (T51R1 21.Rg3!).
+- A QUEEN ON d4/e3 IN FRONT OF HIS c5-PAWN MUST SEE THE ...d4 PUSH: it forks her with my Nc3. T56S2G1 12.Qd4?! ...c5 14.Qe3?? ...d4! won the c3-knight; the d4 pawn hits d4/e3/c3. Before Qd4/Qe3/Qc4 list his ...c5, ...cxd4 and ...d4; keep an exit square.
 - A ROOK PINNED ON A DIAGONAL TO MY KING IS FREED BY HITTING THE PINNER (T55S2G1 ...Ne7 attacked Qd5).
 - DOWN A PIECE OR MORE v SF: guard every unit, fortress, hunt ONE freeing trade early (T54R1's 60-move fortress still lost m67).
 
 ## Endings, king safety, conversion
 - UP A QUEEN OR MORE: PROGRESS EVERY MOVE, NEVER A REPETITION, AND NO PAWN GRABS WITH HER. T55R5.2 queen checks until his king shuffled back = THREEFOLD DRAW. Count the position (pieces AND side to move) I am about to repeat a third time. T56R1 closed it right: rook check cut the file, 51...Qd7 covering a7/b7/c8, Rc8#. T56R3 Q+2R v bare K: Qf1+/Qf2+ drove Kh1, Qg3 covered g1/g2/h2, bishops cleared the f-file, Rf1#.
-- MATE LABEL: do not write '#' until the move is actually CHECK. T56R3 27...Qxg3 vs Kh1 was not check (it covered g1/g2/h2); Rf1# came later. Before a mate claim name the checking line and every flight.
+- MATE LABEL: do not write '#' until the move is actually CHECK. T56R3 27...Qxg3 vs Kh1 was not check (it covered g1/g2/h2); Rf1# came later. Before a mate claim name the checking line and every flight. T56S2G1 my opponent's R+B+3P v bare K: checks from a defended rook, box the king, promote far from it - no gift.
 - h6 IS BANNED WHILE HIS g7-PAWN IS HOME: T55R5.3 20.Qxh6?? gxh6; same square as T50R2 16.Qh6??.
 - A PAWN THAT TAKES A PIECE IS THE CHEAPEST ROOK ON THE BOARD: T55R5.3 29.cxd7! took his rook with my c-pawn, 30.d8=Q safe.
 - MY Kg8 WITH AN EMPTY f8/e8 = BACK-RANK MATE (T54S1G1 20.Qd8#). Keep a rook home or play h6.
@@ -36,20 +37,20 @@
 - LEVEL R+B v R+B: the repetition draw is fair. TWO ROOKS v QUEEN: draw by blockade, not raids (T49R3).
 
 ## Clock
-- Hard cap 60 s. Routine 5-15 s; captures/checks/pawn breaks 20-40 s. My losses are scan misses, not the clock. T56R2: 15-40 s a move, 55 min left at mate - the clamp loss was positional.
+- Hard cap 60 s. Routine 5-15 s; captures/checks/pawn breaks 20-40 s. My losses are scan misses, not the clock. T56R2: 15-40 s a move, 55 min left at mate - the clamp loss was positional. T56S2G1: 6:52 on 12.Qd4 (marked ?!) then 3 s on the fatal 14.Qe3 - long thinks on quiet queen moves buy nothing.
 
 ## Opening: English (W v 1...e5; B v 1...Nf6 reversed QGD)
 - W: 1.c4 e5 2.Nc3 Nf6 3.g3 d5 4.cxd5 Nxd5 5.Bg2 (9 plies) - the squeeze setup.
   - vs ...Nxc3/...Bd6 symmetric (T55R5.3 WIN v GLM on time): bxc3, Nf3, O-O, d4, Be3, Qd2, Rad1 = two bishops and a broad centre; 15.d5?! kicked his Nc6 to e5 - build Qd2/Re1 first, d5 later.
   - vs ...Nb6 (T54R2 WIN v GLM): Nf3, Nc6, O-O, Be7, d3, then Be3/Qd2/Rc1/Rfd1; his c7 is a fork target (17.Nb5!).
-- W v SF's reversed-QGD clamp: 1.c4 Nf6 2.Nc3 e6 3.g3 d5 4.cxd5 exd5 5.Nf3 d4 6.Nb1 Be7 7.Bg2 O-O 8.O-O c5 (16 plies). 6.Nb1 is right, but T56R2 showed the follow-up b3/Bb2/Nbd2/e3 fails: 11...Nc3! (fork Qd1+e2) forced Qe1, then ...Nd5/...Nb4!/...Nc2!/...Nxe3/...Nxg2 - a knight tour in my camp won pawns AND my Bg2. Fix: play e3 EARLY (before b3) to fix the pawn, meet ...Nc3 with Qe1 then hit it, and never trade Bg2 for a knight.
-- B reversed QGD: 1.c4 Nf6 2.Nc3 e6 3.g3 d5 4.cxd5 exd5 5.Nf3 Be7 6.Bg2 O-O 7.O-O c6 8.d3 (15 plies), then ...Bf5/...Nbd7/...Re8/...Qb6.
+- Reversed QGD build (both colours): 1.c4 Nf6 2.Nc3 e6 3.g3 d5 4.cxd5 exd5 5.Nf3 Be7 6.Bg2 O-O 7.O-O c6 8.d3 (15 plies), then ...Bf5/...Nbd7/...Re8/...Qb6.
   - ...Qb6 wins the IQP d4 when HIS Nd2 blocks Qd1 (T50R3 12...Qxd4). Keep ...c6 (or ...Ne4) before ...c5.
   - T56R3 WIN v GLM: same build; 9.Nd4 hit Bf5, ...Bg6 retreat held. His loose knight on e6 fell to fxe6; his Be4 to dxe4; his Qxd5+ to cxd5. Keep taking pawn-square gifts, then convert simply.
+  - W v SF's clamp (5...d4): 6.Nb1 right, but then play e3 EARLY before b3 to fix the pawn, meet ...Nc3 with Qe1 then hit the knight, and never trade Bg2 for a knight (T56R2: ...Nc3/...Nb4/...Nc2/...Nxe3/...Nxg2 tour won pawns AND Bg2). Do NOT push d4 myself into his ...c5: T56S2G1 8.d4 gave ...Bf5/...Nbd7/...Nxe5 with tempo and the ...d4 fork.
 
 ## Opening: Open Sicilian Taimanov (both colours)
-- 1.e4 c5 2.Nf3 e6 3.d4 cxd4 4.Nxd4 Nc6 5.Nc3 a6 6.Be2 Be7 7.O-O Nf6 8.Be3 O-O (16 plies), then f4/Qd2/Rad1 (White) or ...Qc7/...b5/...Bb7/...Rfc8 (Black).
-- AS BLACK the build is sound: ...cxd4/...Nf6/...e6/...Be7/...O-O/...Qc7/...a6, then ...b5/...Bb7/...Rfc8; ...d5 only when e6 recaptures. T56R1: 10...Nd5 11...exd5 correct, then 12...f6?? let 13.Bxd5+ Kh8 14.exf6 and I was a pawn down; the f6 strike needs d5 defended AND g7 covered - use ...Bf8, ...g6/...f5 prep or the queen trade first.
+- 1.e4 c5 2.Nf3 e6 3.d4 cxd4 4.Nxd4 Nc6 5.Nc3 a6 6.Be2 Be7 7.O-O Nf6 8.Be3 O-O (16 plies), then f4/Qd2/Rad1 (White) or as Black ...cxd4/...Nf6/...e6/...Be7/...O-O/...Qc7/...a6 then ...b5/...Bb7/...Rfc8.
+- AS BLACK the build is sound; ...d5 only when e6 recaptures. T56R1: 10...Nd5 11...exd5 correct, then 12...f6?? let 13.Bxd5+ Kh8 14.exf6 and I was a pawn down; the f6 strike needs d5 defended AND g7 covered - use ...Bf8, ...g6/...f5 prep or the queen trade first.
 - AS BLACK ...b5 needs a guard first (...a6/...Bb7), else Nxb5! (T51R3). His e5 hitting Nf6: never ...Ne8 with my a8-rook home (Nc7 forks) - ...Nd5 (count guards) or ...Nh5.
 - AS BLACK keep the f6-knight and the queen guarded (T53R1 16...Rfd8?? exf6; 20...Kg7?? Bxc7).
 - T53R3: with HIS d-pawn passed on d5, c6/e6 are banned for every piece AND the queen; ...Qd6 blockade is fine.
@@ -71,7 +72,7 @@
 ## Opponents
 - Stockfish 19 (depth 4): instant. Punishes loose pieces, hidden defenders, unguarded c6 (Bxc6!), a kicked Ng4, f6 on his e5-pawn's capture square, ...f6 met by exf6, ...h6 met by Bxh6. T53R2 Dragon ...Be5/...Bxh2+ mated me; T54S1G1 took a bishop and a queen off pawn capture squares, then mated on the open 8th. T55R2: 5...d4 / 8...d3 clamp, ...Bg4 on a once-guarded knight, the dxe2 pawn fork, ...Qxf2# m13. T56R2: the early ...d4 clamp plus a knight tour (...Nc3/...Nb4/...Nc2/...Nxe3/...Nxg2) won pawns and my Bg2 - his clamp is a real plan, not just a pawn.
 - GLM 5.3 Flash: as White the English, as Black the Taimanov; sound build but careless with piece safety. T56R3 (my 1-0 as Black, English): Ne6?? fxe6, Be4?? dxe4, Qxd5+?? cxd5, Rxd7?? Qxd7, Re1?? Qxe1 - it hands pieces to pawn captures and to the queen, with 57 min left at mate. T53R1 16...Rfd8?? exf6; T52R2 18.Qc2?? Qxc2; T55R5.2 11.Qc2?? Bg6; T55R5.3 18...Qxg5?? Qd2. Vs GLM: 10-20 s sound moves, take every loose unit and queen, never give her back with a pawn grab; its clock can run out, but T56R3 shows it can also self-destruct early - so convert without waiting.
-- DeepSeek V4.1 Flash (mirror): solid Taimanov/English both colours, converts without gifts, up to 8 illegal tries/game. T54R1 up a bishop it walked Kf2-e3-d4-e5 and mated N+B at m67; T55R3 beat me 0-1 m47 off my 24.Qd4?? cxd4; T55S2G1 kept the Qd5 pin and converted R+B v B. T56R1 (my 1-0 as Black): its 32.Qd7?? Bxd7 and 37.Ra6?? bxa6 gave the game back. Vs mirror: gift nothing, no 'active' undefended piece; it DOES hand back a loose queen under pressure.
+- DeepSeek V4.1 Flash (mirror): solid Taimanov/English both colours, converts without gifts, up to 8 illegal tries/game. T54R1 up a bishop it walked Kf2-e3-d4-e5 and mated N+B at m67; T55R3 beat me 0-1 m47 off my 24.Qd4?? cxd4; T55S2G1 kept the Qd5 pin and converted R+B v B. T56R1 (my 1-0 as Black): its 32.Qd7?? Bxd7 and 37.Ra6?? bxa6 gave the game back. T56S2G1: as Black in the reversed QGD it played ...Bf5/...Nbd7/...Nxe5/...Nb6/...c5, then 14...d4! forked Qe3+Nc3, and converted R+B+3P v bare K with no gift (5 illegal tries). Expect the ...c5/...d4 fork whenever my queen sits on d4/e3.
 
 ## Notes
 - notes/black-english-reversed-qgd-t50r3.md; notes/black-taimanov-guards.md; notes/stockfish-dragon-queen-trade.md; notes/taimanov-black-g7-battery.md; notes/white-dragon-yugoslav.md; notes/white-taimanov-glm-t49r4.md; notes/white-taimanov-qd2-f4.md; notes/white-english-reversed-sicilian.md
@@ -82,3 +83,4 @@
 - T56R1 1-0 v mirror (B Taimanov): 12...f6?? cost a pawn but his 32.Qd7?? Bxd7 and 37.Ra6?? bxa6 returned the game; 52...Rc8#.
 - T56R2 0-1 v SF19 m33 (W English ...d4 clamp): 6.Nb1 right, then b3/Bb2/e3 allowed the ...Nc3/...Nb4/...Nc2/...Nxe3/...Nxg2 tour; 18.Re1? traded Bg2 and opened my king. 55 min left - not clock.
 - T56R3 1-0 v GLM (B English reversed QGD): his Ne6??, Be4??, Qxd5+??, Rxd7??, Re1?? gave knight, bishop, queen and rook; Q+2R converted to Rf1# after a false 'Qxg3#' note.
+- T56S2G1 0-1 v mirror (W English reversed QGD): 8.d4 into his ...c5, 12.Qd4?! (6:52), 14.Qe3?? ...d4! forked Q+N; down a piece the king walk lost to R+B+3P at m56. Play e3 early and keep the queen off d4/e3 while his c5-pawn lives.
