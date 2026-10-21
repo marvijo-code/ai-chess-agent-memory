@@ -1,6 +1,6 @@
 # Caro-Kann Advance + Classical 3.Nc3 (B)
 
-## Advance ...Ne7-f5 (T39R6,T40R5,T40R6 0-1; T41R1 D; T42R3 L20; T42R6 L28; T52R2 L32)
+## Advance ...Ne7-f5 (T39R6,T40R5,T40R6 0-1; T41R1 D; T42R3 L20; T42R6 L28; T52R2 L32; T56R3 L36)
 - ...Ne7-f5 covers g7 BEFORE ...Be7; vs 7...Be7?! 8.Qg4! g7 is king-guarded only: 8...h5?? 9.Qxg7! Bf8 10.Qxh8. Cover g7 with a PIECE or trade queens; no piece on d6/f6 while e5 stands; never ...Ngf6.
 - T42R6 11...Nxe5?? f5 does NOT hit e5 (f5: d4,d6,e3,e7,g3,g7,h4,h6) and his Re1 owns the e-file: 12.Rxe5 won a knight. Before any knight capture write the landing square, its guards and the recapturer's real JUMP.
 - T42R3: ...f6 loosened the centre -> Nxd5 forked my f6-bishop; ...Bg5?? landed with 0 guards -> Bxg5, Bxd8. No ...f6 while the f5-knight is g7's only cover; a retreat gets the FULL sweep.
@@ -11,6 +11,12 @@
 - 6...Ngf6?? 7.exf6 lost a KNIGHT; develop the second knight to e7/f5/g6. Take Nxg6 with ...hxg6, never ...Nxg6?!.
 - T52R2 v SF19 (0-1 m32): 12.f4 c5 13.g4! hits Bf5 - play ...Bg6/...Bxf5 FIRST; 13...cxd4?! 14.Nxd5! exd5 15.gxf5 left his d6/e6 pawns rolling and my Qd8+Be7 passive. 15...Nc5 met 16.b4 (+2.8); 7:14 on 17...Qd7, then 18.c4/19.cxd5 took d5; ...Bd8/...Rf7 could not stop e8=Q+/dxe8=Q#. 2 illegal: 'Nc3' (no jump from c5), 'Qxd3' (his d5-pawn blocks d7-d3).
 - 9...Nc6 does NOT guard c5; c5's guard is ...b6 or a knight on b6; never a queen on b6/c5 while his e3-bishop reaches it. Early ...c5 at move 6 held.
+
+## T56R3 v SF19 (0-1, Qxf8# m36) - the f5 break
+Same 16-ply line as above. Then: 13.g4 c5?! 14.f5! exf5 15.gxf5 Bxf5?? 16.Rxf5 (8 plies to the capture).
+- 13...c5?! (0:48) does not stop f4-f5. With his f4+g4 and Rf1, f5 hits Bg6 AND e6; ...exf5 takes the e6-pawn off f5's only guard, so ...Bxf5 lands a bishop on the open f-file with his rook behind: 16.Rxf5, +0.4 -> lost.
+- Better: retreat the bishop BEFORE f5 (h7-class; h5 is the g4-pawn's capture square) or meet f5 with ...f6. Never a capture/recapture on an open file without naming his rook and my landing square's guards.
+- After that no counterplay: 19.Nxd5, 20.Nxe7+, 21.Nxc8; SF mated m36. 2:25-2:34 thinks on ...Rde8/...Re6 fixed nothing. The opening itself was fine (+0.14 at move 8).
 
 ## Advance plan (Black)
 ...Bf5/Bg6, ...e6, ...Nd7, ...c5, ...Be7, ...Rc8, ...Qb6, ...cxd4. BANS: ...Qxd4, ...Qd6, ...Bg5??, ...Qxb2; no ...Nc5 while d4/b4 (T52R2 16.b4); no piece on d6/f6; no ...Ngf6 while e5 stands; vs b3/Ba3 ...Bxa3!. No O-O if Bf5 traded with Ng8 home.
