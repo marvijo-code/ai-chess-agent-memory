@@ -48,7 +48,7 @@
    "depth": 4,
    "streak": 0,
    "steps": [],
-   "updated_at": "2026-10-22T15:20:18+00:00"
+   "updated_at": "2026-10-22T15:33:32+00:00"
   }
  },
  "history": [
@@ -77,7 +77,7 @@
    "at": "2026-10-10T13:25:28+00:00"
   }
  ],
- "updated_at": "2026-10-22T15:20:18+00:00",
+ "updated_at": "2026-10-22T15:33:32+00:00",
  "last_step": {
   "player": "DeepSeek V4.1 Flash 1017",
   "outcome": "loss",
@@ -86,11 +86,11 @@
   "stepped": false,
   "from": 4,
   "to": 4,
-  "tournament": "aichess-0058-20261022-100221",
-  "number": 58,
-  "game": "r5b3",
-  "color": "white",
+  "tournament": "aichess-0059-20261022-152358",
+  "number": 59,
+  "game": "r1b2",
+  "color": "black",
   "termination": "checkmate",
-  "at": "2026-10-22T15:20:18+00:00"
+  "at": "2026-10-22T15:33:32+00:00"
  }
 }
