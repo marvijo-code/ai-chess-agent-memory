@@ -1,7 +1,7 @@
 # Chess memory - DeepSeek V4.1 Flash 1017
 
 ## Move discipline (check every move)
-- LEGALITY FIRST: 3 rejected tries on ONE move forfeit; before sending walk piece, ACTUAL square, destination, MY OWN occupants. After ONE rejection pick a DIFFERENT move. T58 Final: 5 illegal tries in queen-check chains. T58 Arm: 0 illegal when every piece was named. T59R3: 1 invalid try on 25.Qc2.
+- LEGALITY FIRST: 3 rejected tries on ONE move forfeit; before sending walk piece, ACTUAL square, destination, MY OWN occupants. After ONE rejection pick a DIFFERENT move. T58 Final: 5 illegal tries in queen-check chains. T58 Arm: 0 illegal when every piece was named. T59S2G1: 2 invalid tries (13.Rb1, 31.Nd4).
 - AMBIGUOUS ROOK CAPTURES: with two rooks able to take on one square write Raxa7/cxa7 - plain Rxa7 was rejected once (T59 29.Raxa7).
 - QUEEN GRABS: name the piece on the landing square and walk HIS queen/bishop/rook lines and pawn captures to it. T58R3 22.Qxb5?? b5 was a PAWN. T58 Final 22...Qxb2?? 23.Rb1! T58S2G1 16...Qxe5?? left me down B for P. Count material after the forced queen trade BEFORE the grab. HIS grab onto my rook's rank/file is lost (T59R3 22...Qxd3?? 23.Rxd3 = Q+B for R).
 - A SQUARE MY PAWN JUST VACATED REOPENS A LINE: T59 22...Qxd6?? - exd6 emptied e5, his Qg3 saw g3-f4-e5-d6.
@@ -9,6 +9,7 @@
 - ANY OF MY PIECES ON HIS PAWN'S CAPTURE SQUARE IS LOST, checks and rooks included (T50R3 44...Ra4+?? bxa4; T56R1 37...bxa6). A PAWN I ATTACK TWICE STILL CAPTURES (T55R3 24.Qd4?? cxd4). T58 Arm 23.Qg6?? hxg6.
 - WITH HIS e5-PAWN ALIVE, f6 AND d6 ARE ITS CAPTURE SQUARES: T59 11...Nf6?? from +0.1 to +6.6 (m26). An attacked d5-knight retreats to b4/e7/b6/c7, NEVER f6.
 - A QUEEN OR PIECE GUARDED ONLY BY ONE MINOR/QUEEN IS LOST: T57R3 15...Qc5?? 16.Bxc5; T54R1 11...Bc5?? Qxc5; T57R4 28...Bb7 'covered' by Qa7/Qb8: 30.Qxb7!.
+- A PAWN IS A GUARD TOO: my b2-pawn guarded Nc3; 12...Qxb2 removed it and 13...Qxc3 won the knight (T59S2G1). After any enemy pawn capture list the squares that pawn guarded. A BISHOP CAN GUARD A PROMOTION SQUARE: my Be2 covered d1 against the d2-passer; 32.Bxd3 vacated e2 and allowed 32...d1=Q+.
 - MINOR PIECES NEED THE KNIGHT-JUMP SWEEP TOO: T58 Arm 15.Be4?? Nxe4!. Before ANY bishop/knight/rook move list every enemy knight jump onto the destination.
 - HIS KNIGHT IN MY CAMP: attack it with PIECES; no pawn pushes that open lines, no side grabs. T58 Arm 19...Ne1! 20...Nxf3+; T58R2 14.a3?! Nb4-d3!; 17.Nb3?? Qxb3.
 - HIS PAWN TWO SQUARES FROM MY BACK RANK IS A FORK MACHINE (T55R2 8...d3 ...Bg4 10.Ne1?? dxe2! m13).
@@ -35,7 +36,8 @@
 - UP A ROOK / 2R v R: take the first clean rook trade; rank-2/3 checks drive his king off his pawns, never take a pawn his king guards, no check a pawn takes (...Ra4+?? bxa4).
 - UP R+B v BARE KING: rook freezes his pawns, bishop escorts the passer. LEVEL R+B v R+B: repetition draw is fair. TWO ROOKS v QUEEN: draw by blockade, not raids (T49R3).
 - UP MATERIAL WITH QUEENS ON: every unit guarded by a PIECE, not only the queen (T57R4 Bb7).
-- AFTER A BIG BLUNDER THAT ONLY LEVELS MATTER, PLAY ON: T59 16.dxe5?? gave back the queen edge but the position was only level - keep the rooks active, collect the frozen pawns. Down a queen v the mirror, his clock does not save it (T58R3 m57 with 3:32 left); T59 v GLM it did, 0:24 v my ~1:00:00.
+- AFTER A BIG BLUNDER THAT ONLY LEVELS MATTER, PLAY ON: T59 16.dxe5?? gave back the queen edge but the position was only level - keep the rooks active, collect the frozen pawns. Down a queen, keep playing: T58R3 v mirror he had 3:32 and mated; T59S2G1 his flag saved me at 3:15 (I was down Q for R); T59 v GLM 0:24 v my ~1:00:00. Never resign, never plan on the flag.
+- A ROOK BLOCKADING A PASSED PAWN ON d1 IS A KNIGHT FORK TARGET: T59S2G1 27...Nxf2+ 28.Kg2 Nxd1; his Ne2 covered g1. When his knight stands on e2/g4 and my rook blockades d1, count ...Nxf2+.
 
 ## Clock
 - Hard cap 60 s. Routine 5-15 s; captures/checks/pawn breaks 20-40 s. My losses are scan misses, not the clock. T56-T59: 37-64 min left at the end every time. Never rely on his flag; never buy a scan with a long think.
@@ -51,6 +53,7 @@
   - W v SF's clamp: 1.c4 Nf6 2.Nc3 e6 3.g3 d5 4.cxd5 exd5 5.Nf3 d4 6.Nb1 Be7 7.e3 dxe3 8.fxe3 Na6 (16 plies). Then Bg2/O-O/d3; meet ...Nc3 with Qe1, never trade Bg2 for a knight, no d4 while ...c5 lives, answer ...Nb4 with a piece move, never a pawn kick. Do NOT push d4 into his ...c5 (T56S2G1, T58R2). No knight on e1/d1 while Qd1 and Rf1 share the rank (T57R2).
   - T58 Arm (LOSS m30): 11...Nb4 outpost; 15.Be4?? Nxe4! (e4 is the f6-knight's square), 16...Nxd3, 19...Ne1! 20...Nxf3+ cost the exchange; 23.Qg6?? hxg6 the queen. The two destinations were the whole game.
   - T58R3 v mirror (LOSS m57): 12.Ne5 Nxe5 13.Bxe5! won a piece (his Nbd7 undefended), 18.exd5/19.dxe6! won a bishop; then 22.Qxb5?? threw it all.
+  - T59S2G1 v mirror (1-0 on time): 9.Bf4/10.Nd4 hit Bf5, but 11.Rc1 Qb6! 12.Nf3 Qxb2 13.Rb1 Qxc3 won Nc3 (b2 was its guard). Recovered +P+exchange, then ...Ne2/...Nxf2+/...Nxd1 won my d1-blockading rook and ...d1=Q; his flag saved me. Defend b2 or trade queens before Rc1.
 
 ## Opening: Open Sicilian Taimanov (both colours)
 - W line: 1.e4 c5 2.Nf3 e6 3.d4 cxd4 4.Nxd4 Nc6 5.Nc3 a6 6.Be2 Be7 7.O-O Nf6 8.Be3 O-O (16 plies), then f4/Qd2/Rad1. As Black the mirror build is sound; ...d5 only when e6 recaptures.
@@ -69,7 +72,7 @@
 ## Opponents
 - Stockfish 19 (depth 4): instant. Punishes loose pieces, hidden defenders, unguarded c6 (Bxc6!), a kicked Ng4, any piece on his e5-pawn's f6/d6 square, ...f6 met by exf6, ...h6 met by Bxh6. T55R2: 5...d4/8...d3 clamp, ...Bg4, the dxe2 pawn fork, ...Qxf2# m13. T57R2: 5...d4 again; 10.Ne1?!/11.dxe3?? lost my queen to ...Qxd1. T57 Final: 9.Qg4! punished 9...O-O?? with 10.Bh6! T58 Final: its 12.Bh6/15.Bg5 won my d8-rook; down a queen it accepted a threefold. T58 Arm: ...d4 clamp and ...Nb4/...Be6; took 15.Be4 with Nxe4. T59: 11.c4! against my d5-knight, then Nxf6+ and Qxd6. Give it no loose unit, no pawn break, no piece on a knight square or on his e5-pawn's squares.
 - GLM 5.3 Flash: as White the English/reversed QGD, as Black the Taimanov; sound build but careless with piece safety, and ITS CLOCK SELF-DESTRUCTS. My five 1-0s: T56R3, T56R5.2, T57R1, T58R1 (forfeited 5:43 v my 55:51), T59R2 (forfeited 0:24 v my ~1:00:00). It hands knight, bishop, queen and rook to plain captures and to pawn takes (Ne6?? fxe6, Bc5?? Bxc5, Rxa2?? Bxa2, 17.Qd2?? Nxd2). T59R2: 13...h6?? let 14.Bxe7 win its queen, then it burned 20:05 on 28...Be4. Take every loose unit, convert without queen grabs, never an empty or illegal reply - and never count on the flag.
-- DeepSeek V4.1 Flash (mirror): solid Taimanov/English both colours, converts without gifts, up to 8 illegal tries/game. T54R1 up a bishop it walked Kf2-e3-d4-e5 and mated N+B m67; T55R3 beat me off my 24.Qd4?? cxd4; T56S2G1 ...c5/...d4! forked Qe3+Nc3. T56R1 (my 1-0 as Black): its 32.Qd7?? Bxd7 and 37.Ra6?? bxa6 gave the game back. T57R3 (my 0-1): my 15...Qc5?? queen for bishop. T57R4 (my 1-0 on time): 28...Bb7 fell to 30.Qxb7. T58R3 (my 0-1 as White): 22.Qxb5?? lost my queen, mated m57 while he had 3:32. T58S2G1 (my 1-0 on time): 16...Qxe5?? left me down B for P. T59R3 (my 1-0 as White, mate): it offered bishop trades (...Be5), then 22...Qxd3?? onto my Rd1's rank lost queen+bishop for a rook, and 35...Re8?? hung a rook to Qxe8+. It grabs any unit on his queen's line or a pawn's capture square; its clock can collapse but do not rely on it.
+- DeepSeek V4.1 Flash (mirror): solid Taimanov/English both colours, converts without gifts, up to 8 illegal tries/game. T56S2G1 ...c5/...d4! forked Qe3+Nc3. T56R1 (my 1-0 as Black): its 32.Qd7?? Bxd7 and 37.Ra6?? bxa6 gave the game back. T57R3 (my 0-1): my 15...Qc5?? queen for bishop. T58R3 (my 0-1 as White): 22.Qxb5?? lost my queen, mated m57 while he had 3:32. T59R3 (1-0 mate): 22...Qxd3?? onto my Rd1's rank lost Q+B for R; 35...Re8?? hung a rook. T59S2G1 (my 1-0 on time): reversed QGD; 11...Qb6/12...Qxb2/13...Qxc3 won my Nc3 off b2's guard; later ...Ne2/...Nxf2+/...Nxd1 won my d1-rook and ...d1=Q. It burned 9:31 on 25...d2 and flagged with 3:15 left while a queen up - its clock can collapse even when winning; do not rely on it, but keep playing. It grabs any unit on his queen's line or a pawn's capture square.
 - Expect the ...c5/...d4 fork when my queen sits on d4/e3. NEVER a queen grab while HIS queen covers the landing square, and never a piece on an enemy knight's jump square (T58 Arm 15.Be4).
 
 ## Notes
@@ -78,4 +81,4 @@
 ## Record (condensed)
 - v SF19: T59 0-1 (B Taimanov, m26: 11...Nf6?? dropped a knight, 22...Qxd6?? the queen); T58 Final 1/2 (down a queen, threefold); T58 Arm 0-1; losses T53 Final, T54R1/R3/S1G1, T55R2/R3/S2G1, T57 Final, T58R2/R3.
 - v GLM 1-0: T55R5.3, T56R3, T57R1, T58R1 (forfeit), T59R2 (forfeit). T59R2: after 14.Bxe7 won its queen I gave it back with 16.dxe5?? Rd8xd2, then won with two rooks v R+B and its flag.
-- v mirror: 1-0 T56R1, T57R4, T58S2G1 (on time), T59R3 (mate); 0-1 T57R3, T58R3.
+- v mirror: 1-0 T56R1, T57R4, T58S2G1 (on time), T59R3 (mate), T59S2G1 (on time); 0-1 T57R3, T58R3.
