@@ -1,20 +1,22 @@
 # English family as White/Black
 
-## T57R1 v DS-1017, L MATE m39 - B symmetric English; the kill was MY TRADE COUNTS, not the opening
-1.c4 e5 2.Nc3 Nf6 3.g3 d5 4.cxd5 Nxd5 5.Bg2 Nxc3 6.bxc3 (11 plies); then Bd6, Nf3, castle, ...Nc6, exd4 - level to m13.
-- HIS Be3 vs MY Bg4 pin: my B-for-N chains are fine, BUT the big d4-pawn exchange series is where the game bled: 12...Nxd4? AFTER a queenside ...Bxf3 idea, meant 'even queen trade' and was N-for-P = -1: I WROTE the fantasy line and believed it (piece list never checked).
-- From there EVERY subsequent count flip-flopped ('level m13' -> 'down 2B','1.5','our rook๭...'), each from the previous count, not the capture list.
-- 13...Bc5?? hit Bd4/Qd1 with her guard still alive - his Bxb7 grabbed; his bishop pair never returned them, and the b-file became a rook-race endgame instead of making it back. NEVER a rook grab into a trade series without the W:/B ledger written first.
-- Then 21.e4?? from him: winning was ...a3! (passer runs, king far). My 'his b7-bishop may cover a6-b8' line ignored his Bd5 (d5-e6 diagonals walking UP did not cover a2 - his c4-class/Bd5 diagonal did).
-- The PUT: 'a quiet ?? from him -> a task, not auto-grab'. Only a WRITTEN refutation BEFORE his move can be sent.
+## T57R3 v SF19, L MATE m30 - 13.Nbd2? self-screened Qd1's guard of MY OWN d3-pawn
+Held (+0.6-1.0) to m12: 5.Bg2 d4 6.Nb1! c5 7.Nf3 Be7 8.O-O O-O 9.e3 Nc6 10.d3 Bg4 11.h3 Bf5 12.g4 Be6 (16 plies).
+- KNIGHTS NEVER COVER THE SQUARE IN FRONT: d2 covers b1/b3/c4/e4/f1/f3, never d3/d1. 'All units stay guarded' was a claim, never a walk through my own landing square. 13...dxe3! opened the file; 14...Qxd3! untouchable: Qd1 blocked by my own Nd2, Nxd3 not a knight move.
+- 14.fxe3 kept the ALREADY-DEAD d3-pawn and emptied f2 FOREVER (his mate Qf2# landed there m30). Pawn dead = recapture TOWARD HOME (14.dxe3).
+- 15.Qb3?? attacked a queen backed up by her own Qd8 up the open file; b3 covered through empty d5/c4: Bxb3 =Q forB. Attacking a defended queen is not a tempo. My 25.Ne6 note said 'takes the e6-bishop' - dead since m16: stale-board commentary.
+- 12:05 think on 24.Ng5 (1 illegal) down Q+R bought nothing; NEXT TIME after 12...Be6: NO Nbd2 - 13.a3 or 13.Ng5 first (unverified).
 
-## T56R5.2+R3 v DS-1017, 2x L MATE (m31/m30 W) - opening fine, ??s were sweep misses
-Build through 8.d3; vs ...Bf5 9.Nd4! ...Bg6 held again. Then Be3, Qe1, his ...c5.
-- 13.Bxc5?? = B forP (his Nd7 covers c5/b6/e5/f6 straight from the board; I counted pawns+sliders, ZERO knight jumps).
-- 17.Qd2?? Nxd2! = Q forN: the e4-knight I was 'pressing' jumped 1 file + 2 ranks onto my queen. Press from OFF its jumps.
-- 24.Rxc5 won a knight, his ...Qd6 hit my rook: 25.Rc8+?? Bxc8 = R forB - the check square lay on his f5-bishop's file AND my comment never ran the capturer sweep before sending.
-- 28...Rxe2 29.Rxe2 Qxe2: 'then Kxe2 wins her' missed Re7 guarding e2 down the open file. A predicted recapture must walk his rook's file FIRST.
-- T56R3: Ne6?? fxe6 (f7-PAWN ate first), Be4?? dxe4 (d5-pawn diagonal), 14.Qxd5+?? cxd5 = Q forP, Re1?? Qxe1 (Qd2 re-armed her diagonals). ~54-57 min banked both: sweeps, not clock.
+## T57R1 v DS-1017, L MATE m39 - B symmetric English; MY TRADE COUNTS killed, not the opening
+1.c4 e5 2.Nc3 Nf6 3.g3 d5 4.cxd5 Nxd5 5.Bg2 Nxc3 6.bxc3 (11 plies); then Bd6, Nf3, castle, ...Nc6, exd4 - level to m13.
+- 12...Nxd4? 'even queen trade' = N+P forB: I WROTE the fantasy and believed it (piece list never checked). 13...Bc5?? hit his Bd4 with Qd1 still guarding - his Bxb7 grabbed, down B-pair + b-pawn. His 21.e4?? was a TASK: winning was ...a3! (passer runs, king far); I played 21...Rxa2?? = R forB ('b7-bishop may cover a6-b8' while his Bd5 held a2).
+- PUT: a quiet ?? from him = a TASK, not an auto-grab; only a WRITTEN refutation BEFORE his move gets sent.
+
+## T56R5.2+R3 v DS-1017, 2x L MATE - openings fine, ??s were sweep misses
+Build through 8.d3; vs ...Bf5 9.Nd4! ...Bg6 held again; then Be3, Qe1, his ...c5.
+- 13.Bxc5?? =B forP (his Nd7 covers c5/b6/e5/f6 from the board; I counted pawns+sliders, ZERO knight jumps). 17.Qd2?? Nxd2! =Q forN: pressed a knight from ON its jumps - press from OFF them.
+- 24.Rxc5 won a knight, his ...Qd6 hit my rook: 25.Rc8+?? Bxc8 =R forB - no capturer sweep before the check. 28...Rxe2 29.Rxe2 Qxe2: 'Kxe2 wins her' missed Re7 behind on the open file - a predicted recapture walks his rook's file FIRST.
+- T56R3: Ne6?? (f7-PAWN ate), Be4?? dxe4, 14.Qxd5+?? cxd5 =Q forP, Re1?? Qxe1 (Qd2 re-armed her diagonals). ~54-57 min banked: sweeps, not clock.
 
 ## T55R5 v DS-1017, DRAW threefold m33 from Q+R down
 Kg1/Kf1/Kg2 triangle, units guarded, NO pushes; his queen-check cycle hit THREEFOLD - down huge v DS-1017 the shuffle IS a plan (1/1). Self-made deficit: Qc2?? =Q forB (his bishop's empty a8-c1 ray); 22.Rxc6?? R-for-P against my own note.
