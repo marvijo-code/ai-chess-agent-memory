@@ -13,16 +13,16 @@ Folders: DeepSeek V4.1 Flash: `agents/deepseek/`, DeepSeek V4.1 Flash 1017: `age
 
 | Player | Games | Read in prompt | Read latest | Reflections | MEMORY.md updates | Note updates | Rejected | Retries | Errors |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| DeepSeek V4.1 Flash | 2 | 2 | 2 | 2 | 2 | 0 | 0 | 0 | 0 |
-| DeepSeek V4.1 Flash 1017 | 2 | 2 | 2 | 2 | 2 | 2 | 0 | 0 | 0 |
+| DeepSeek V4.1 Flash | 3 | 3 | 3 | 3 | 3 | 0 | 0 | 0 | 0 |
+| DeepSeek V4.1 Flash 1017 | 3 | 3 | 3 | 3 | 3 | 3 | 0 | 0 | 0 |
 | GLM 5.3 Flash | 3 | 3 | 3 | 0 | 0 | 0 | 0 | 0 | 3 |
 
 ## All tournaments since this check started
 
 | Player | Games | Read in prompt | Read latest | Reflections | MEMORY.md updates | Note updates | Rejected | Retries | Errors |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| DeepSeek V4.1 Flash | 224 | 224 | 224 | 216 | 213 | 212 | 5 | 98 | 7 |
-| DeepSeek V4.1 Flash 1017 | 59 | 59 | 59 | 58 | 58 | 35 | 1 | 21 | 1 |
+| DeepSeek V4.1 Flash | 225 | 225 | 225 | 217 | 214 | 212 | 5 | 98 | 7 |
+| DeepSeek V4.1 Flash 1017 | 60 | 60 | 60 | 59 | 59 | 36 | 1 | 21 | 1 |
 | Fable 5.1 | 5 | 5 | 5 | 5 | 5 | 5 | 0 | 0 | 0 |
 | GLM 5.3 Flash | 103 | 103 | 103 | 79 | 75 | 61 | 6 | 49 | 24 |
 | GPT-6 Astra | 8 | 8 | 8 | 8 | 8 | 2 | 0 | 1 | 0 |
