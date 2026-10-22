@@ -1,10 +1,10 @@
 # Chess memory - DeepSeek V4.1 Flash 1017
 
 ## Move discipline (check every move)
-- LEGALITY FIRST: 3 rejected tries on ONE move forfeit; 3 total ends the game. Before sending: piece, its ACTUAL square, destination, and MY OWN occupant of every path square. After ONE rejection pick a DIFFERENT move/idea. T57R3: illegal Rxf4 blocked by my own d4-pawn.
+- LEGALITY FIRST: 3 rejected tries on ONE move forfeit; 3 total ends the game. Before sending: piece, its ACTUAL square, destination, and MY OWN occupant of every path square. After ONE rejection pick a DIFFERENT move/idea. T57R3: illegal Rxf4 blocked by my own d4-pawn. T57R4: 4 illegal tries, all on quiet QUEEN retreats (Qc7/Qa7 tried twice each) - a rejected square stays dead; walk the queen's own path and destination occupancy.
 - A QUEEN DEFENDED BY ONLY ONE MINOR IS LOST TO A MINOR: queen for bishop, no compensation. T57R3 15...Qc5?? 16.Bxc5! Bxc5 17.Qxc5. Before any queen move list his attackers of the square AND their piece value.
 - HIS PAWN TWO SQUARES FROM MY BACK RANK IS A FORK MACHINE (T55R2 8...d3 9.O-O? ...Bg4 10.Ne1?? dxe2! forked Qd1+Rf1, mate m13). Name that pawn's two capture squares every move.
-- A PIECE GUARDED ONLY BY MY QUEEN IS LOST TO HIS QUEEN, AND MY QUEEN GUARDS IT IS A LIE WHEN MY OWN PIECE BLOCKS THE LINE (T54R1 11...Bc5?? Qxc5; T55S2G1 12...Bc5?? my Nc6 stood between Qc7 and c5).
+- A PIECE GUARDED ONLY BY MY QUEEN IS LOST TO HIS QUEEN - AND SO IS IT WHEN HIS PIECE ALSO GUARDS THE RECAPTURE SQUARE (T54R1 11...Bc5?? Qxc5; T55S2G1 12...Bc5?? my Nc6 stood between Qc7 and c5; T57R4 28...Bb7 'covered' by Qa7/Qb8: 30.Qxb7! Qxb7 31.Nxb7 = bishop for a pawn). Before trusting a one-queen guard, name HIS guards of the recapture square.
 - ANY OF MY PIECES ON HIS PAWN'S CAPTURE SQUARE IS LOST, CHECKS AND ROOKS INCLUDED (T50R3 44...Ra4+?? bxa4; T56R1 37...bxa6 won his rook). A PAWN I ATTACK TWICE STILL CAPTURES (T55R3 24.Qd4?? cxd4). A PAWN THAT JUST ADVANCED OR CAPTURED OWNS ITS NEW SQUARES.
 - AN OPEN FILE + HIS ROOK = MY PIECE THERE IS FREE (T53R3 14...Bf5?? Rxf5); the mirror wins for me (T55 27...Nxc4! R for N).
 - ROOK TAKES A PAWN: WALK EVERY ENEMY BISHOP DIAGONAL TO THAT PAWN'S SQUARE, even remote (T57R1 21...Rxa2?? 22.Bxa2 - Bd5 covered a2).
@@ -35,9 +35,10 @@
 - UP A ROOK / 2R v R: take the first clean rook trade, then eat loose pawns; a rook needs a SAFE square, not a check (...Ra4+?? bxa4).
 - UP R+B v BARE KING: rook freezes his pawns, bishop escorts the passer, promote with the rook still covering g1.
 - LEVEL R+B v R+B: the repetition draw is fair. TWO ROOKS v QUEEN: draw by blockade, not raids (T49R3).
+- UP MATERIAL WITH QUEENS ON: every unit guarded by a PIECE, not only the queen; his queen+minor battery takes queen-guarded pieces off (T57R4 Bb7).
 
 ## Clock
-- Hard cap 60 s. Routine 5-15 s; captures/checks/pawn breaks 20-40 s. My losses are scan misses, not the clock. T56R2: 15-40 s a move, 55 min left at mate. T57R3 57 min left at mate; long thinks on quiet queen moves buy nothing.
+- Hard cap 60 s. Routine 5-15 s; captures/checks/pawn breaks 20-40 s. My losses are scan misses, not the clock. T56R2: 15-40 s a move, 55 min left at mate. T57R3 57 min left at mate; long thinks on quiet queen moves buy nothing. T57R4: 5-20 s a move, 47 min left when he flagged at 2 min - banking clock won a game where I was down material; the 4 illegal tries, not time, were the real risk.
 
 ## Opening: English (W v 1...e5; B v 1...Nf6 reversed QGD)
 - W: 1.c4 e5 2.Nc3 Nf6 3.g3 d5 4.cxd5 Nxd5 5.Bg2 (9 plies) - the squeeze setup.
@@ -52,6 +53,7 @@
 ## Opening: Open Sicilian Taimanov (both colours)
 - 1.e4 c5 2.Nf3 e6 3.d4 cxd4 4.Nxd4 Nc6 5.Nc3 a6 6.Be2 Be7 7.O-O Nf6 8.Be3 O-O (16 plies), then f4/Qd2/Rad1 (White) or as Black ...cxd4/...Nf6/...e6/...Be7/...O-O/...Qc7/...a6 then ...b5/...Bb7/...Rfc8.
 - AS BLACK the build is sound; ...d5 only when e6 recaptures. T56R1: 12...f6?? let 13.Bxd5+ and exf6; the f6 strike needs d5 defended AND g7 covered. T57R3: build fine to 14...Bb7, then 15...Qc5?? put her on Bd4's square = queen for bishop; a queen defended by one bishop is a queen lost.
+- T57R4 (WIN on time v mirror): ...Nb4/...Bc5 hitting Be3 worked (13...Bc5! 14.Bxd5?? Bxe3+ won a piece) but 12...Nb4? was loose once his Nf5 arrived; with a4+b5 tension ...bxa4?! hands him the a-file and an active rook. THE c8-BISHOP ON b7 WITH QUEENS ON IS A TARGET: keep a PIECE on b7 or leave the bishop home.
 - AS BLACK ...b5 needs a guard first (...a6/...Bb7), else Nxb5! (T51R3). His e5 hitting Nf6: never ...Ne8 with my a8-rook home (Nc7 forks) - ...Nd5 or ...Nh5.
 - AS BLACK keep the f6-knight and the queen guarded (T53R1 16...Rfd8?? exf6; 20...Kg7?? Bxc7).
 - T53R3: with HIS d-pawn passed on d5, c6/e6 are banned for every piece AND the queen; ...Qd6 blockade is fine.
@@ -71,7 +73,8 @@
 ## Opponents
 - Stockfish 19 (depth 4): instant. Punishes loose pieces, hidden defenders, unguarded c6 (Bxc6!), a kicked Ng4, f6 on his e5-pawn's capture square, ...f6 met by exf6, ...h6 met by Bxh6. T55R2: 5...d4 / 8...d3 clamp, ...Bg4, the dxe2 pawn fork, ...Qxf2# m13. T56R2: the early ...d4 clamp plus a knight tour (...Nc3/...Nb4/...Nc2/...Nxe3/...Nxg2) won pawns and Bg2. T57R2: 5...d4 again; 10.Ne1?!/11.dxe3?? lost my queen to ...Qxd1.
 - GLM 5.3 Flash: as White the English/reversed QGD, as Black the Taimanov; sound build but careless with piece safety. T56R3/R5.2/T57R1 (my three 1-0): it hands knight, bishop, queen and rook to plain captures and to pawn takes (Ne6?? fxe6, Bc5?? Bxc5, Rxa2?? Bxa2, 17.Qd2?? Nxd2), shuffles in lost endings; 57 min left at mate. Take every loose unit and queen; its clock can run out, but convert without waiting.
-- DeepSeek V4.1 Flash (mirror): solid Taimanov/English both colours, converts without gifts, up to 8 illegal tries/game. T54R1 up a bishop it walked Kf2-e3-d4-e5 and mated N+B m67; T55R3 beat me off my 24.Qd4?? cxd4; T56S2G1 played ...c5/...d4! forking Qe3+Nc3. T56R1 (my 1-0 as Black): its 32.Qd7?? Bxd7 and 37.Ra6?? bxa6 gave the game back. T57R3 (my 0-1 as Black): level Taimanov, then my 15...Qc5?? walked her onto his Bd4 (queen for bishop) and Q+2R mated 26.Qc8#. Expect the ...c5/...d4 fork when my queen sits on d4/e3.
+- DeepSeek V4.1 Flash (mirror): solid Taimanov/English both colours, converts without gifts, up to 8 illegal tries/game. T54R1 up a bishop it walked Kf2-e3-d4-e5 and mated N+B m67; T55R3 beat me off my 24.Qd4?? cxd4; T56S2G1 played ...c5/...d4! forking Qe3+Nc3. T56R1 (my 1-0 as Black): its 32.Qd7?? Bxd7 and 37.Ra6?? bxa6 gave the game back. T57R3 (my 0-1 as Black): level Taimanov, then my 15...Qc5?? walked her onto his Bd4 (queen for bishop) and Q+2R mated 26.Qc8#. T57R4 (my 1-0 as Black on time): level Taimanov, ...Bc5!/...Bxe3+ won a piece, then I handed the b7-bishop back to 30.Qxb7; he flagged 2 min vs my 47 - bank clock, guard every unit by a PIECE, no illegal concern remains my own.
+- Expect the ...c5/...d4 fork when my queen sits on d4/e3.
 
 ## Notes
 - notes/black-english-reversed-qgd-t50r3.md; notes/black-taimanov-guards.md; notes/stockfish-dragon-queen-trade.md; notes/taimanov-black-g7-battery.md; notes/white-dragon-yugoslav.md; notes/white-taimanov-glm-t49r4.md; notes/white-taimanov-qd2-f4.md; notes/white-english-reversed-sicilian.md
@@ -86,3 +89,4 @@
 - T57R1 1-0 v GLM (W English symmetric): his Nxd4?? Bxd4, Bc5?? Bxc5, Rxa2?? Bxa2; B+B converted with e-pawn, king walk, g/f wedge, Qh6#. 64 min left.
 - T57R2 1/2 v SF19 (W English, 5...d4 clamp): 6.Nb1/e3 correct, then 10.Ne1?! screened Rf1-d1 and 11.dxe3?? Qxd1; down a queen I forced a threefold with Bb8/Be5 vs Rd7/Rd5.
 - T57R3 0-1 v mirror (B Taimanov): sound to 14...Bb7; 15...Qc5?? on Bd4's square = queen for bishop, then his Q+2R mated 26.Qc8#. One illegal Rxf4 through my own d4-pawn. A queen defended by one minor is lost.
+- T57R4 1-0 v mirror (B Taimanov, he flagged): ...Bc5!/...Bxe3+ won a piece, but 28...Bb7 was indefensible with queens on (30.Qxb7) and 4 illegal tries on quiet queen retreats. Won on clock 47 min v 2.
