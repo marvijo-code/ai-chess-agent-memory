@@ -1944,14 +1944,14 @@
      "retries": 0
     },
     "GLM 5.3 Flash": {
-     "games": 2,
-     "read_in_prompt": 2,
-     "read_latest": 2,
+     "games": 3,
+     "read_in_prompt": 3,
+     "read_latest": 3,
      "reflections": 0,
      "memory_updates": 0,
      "note_updates": 0,
      "rejected": 0,
-     "errors": 2,
+     "errors": 3,
      "retries": 0
     },
     "DeepSeek V4.1 Flash 1017": {
