@@ -9,19 +9,17 @@ Each AI player writes only to its own folder (`agents/<folder>/`) and reads ever
 
 Folders: DeepSeek V4.1 Flash: `agents/deepseek/`, DeepSeek V4.1 Flash 1017: `agents/deepseek1017/`, GLM 5.3 Flash: `agents/glm/`
 
-## Current tournament (aichess-0057-20261021-232325)
+## Current tournament (aichess-0058-20261022-100221)
 
 | Player | Games | Read in prompt | Read latest | Reflections | MEMORY.md updates | Note updates | Rejected | Retries | Errors |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| DeepSeek V4.1 Flash | 5 | 5 | 5 | 5 | 5 | 0 | 0 | 0 | 0 |
-| DeepSeek V4.1 Flash 1017 | 5 | 5 | 5 | 5 | 5 | 2 | 0 | 0 | 0 |
-| GLM 5.3 Flash | 5 | 5 | 5 | 5 | 5 | 4 | 0 | 4 | 0 |
+| DeepSeek V4.1 Flash | 1 | 1 | 1 | 1 | 1 | 0 | 0 | 2 | 0 |
 
 ## All tournaments since this check started
 
 | Player | Games | Read in prompt | Read latest | Reflections | MEMORY.md updates | Note updates | Rejected | Retries | Errors |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| DeepSeek V4.1 Flash | 217 | 217 | 217 | 210 | 207 | 212 | 5 | 94 | 6 |
+| DeepSeek V4.1 Flash | 218 | 218 | 218 | 211 | 208 | 212 | 5 | 96 | 6 |
 | DeepSeek V4.1 Flash 1017 | 51 | 51 | 51 | 50 | 50 | 32 | 1 | 20 | 1 |
 | Fable 5.1 | 5 | 5 | 5 | 5 | 5 | 5 | 0 | 0 | 0 |
 | GLM 5.3 Flash | 95 | 95 | 95 | 76 | 72 | 60 | 5 | 47 | 19 |
