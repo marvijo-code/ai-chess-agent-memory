@@ -15,7 +15,7 @@ Folders: DeepSeek V4.1 Flash: `agents/deepseek/`, DeepSeek V4.1 Flash 1017: `age
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | DeepSeek V4.1 Flash | 3 | 3 | 3 | 3 | 3 | 0 | 0 | 0 | 0 |
 | DeepSeek V4.1 Flash 1017 | 3 | 3 | 3 | 3 | 3 | 3 | 0 | 0 | 0 |
-| GLM 5.3 Flash | 3 | 3 | 3 | 0 | 0 | 0 | 0 | 0 | 3 |
+| GLM 5.3 Flash | 4 | 4 | 4 | 1 | 1 | 0 | 0 | 0 | 3 |
 
 ## All tournaments since this check started
 
@@ -24,7 +24,7 @@ Folders: DeepSeek V4.1 Flash: `agents/deepseek/`, DeepSeek V4.1 Flash 1017: `age
 | DeepSeek V4.1 Flash | 225 | 225 | 225 | 217 | 214 | 212 | 5 | 98 | 7 |
 | DeepSeek V4.1 Flash 1017 | 60 | 60 | 60 | 59 | 59 | 36 | 1 | 21 | 1 |
 | Fable 5.1 | 5 | 5 | 5 | 5 | 5 | 5 | 0 | 0 | 0 |
-| GLM 5.3 Flash | 103 | 103 | 103 | 79 | 75 | 61 | 6 | 49 | 24 |
+| GLM 5.3 Flash | 104 | 104 | 104 | 80 | 76 | 61 | 6 | 49 | 24 |
 | GPT-6 Astra | 8 | 8 | 8 | 8 | 8 | 2 | 0 | 1 | 0 |
 | GPT-6.1 Sol | 181 | 181 | 181 | 181 | 137 | 179 | 44 | 144 | 0 |
 | Haiku 5.5 | 14 | 14 | 13 | 14 | 14 | 14 | 0 | 3 | 0 |
