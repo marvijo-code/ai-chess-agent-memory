@@ -14,7 +14,7 @@
 - A ROOK CHECK NEAR MY KING: block on a DIFFERENT rank from my queen (T52 Final 21.Be3? Rxe3+).
 - THE PIECE I MOVE MAY BE g7's ONLY GUARD (T49R1 10...Be7? Qxg7).
 - HIS KNIGHT IN MY CAMP: attack it with pieces; no pawn pushes that open lines to my king, no side grabs (T52 Final 16.f4? Nh5; T56R2 17.Qc1? ...Nxe3!).
-- Qg3 + a bishop reaching e5/f6/h6 = Qxg7#: never take on e5 then (T48 Final 13...dxe5??); ...h6?? met 12.Bxh6! (T54R3).
+- Qg3 OR Qg4 + a bishop reaching e5/f6/h6 = Qxg7#: never take on e5 then (T48 Final 13...dxe5??); ...h6?? met 12.Bxh6! (T54R3). AND ...O-O?? is the same hook when his queen is on g4: g7 is PINNED to Kg8, so ...gxh6 is illegal and 10.Bh6! Qxg7# (T57 Final 9...O-O?? 10...Qc7?? 11.Qxg7#). Keep the king on e8, meet Qg4 by removing her g-file aim, and never castle until g7 has a PIECE guard and her queen is off g4.
 - A QUEEN MOVE ONTO A SQUARE HIS QUEEN ATTACKS NEEDS A NAMED RECAPTURER: T56R1 29...Qe4?? 30.Qxe4. Mirror: HIS queen unguarded on an open line is free (T56R1 32...Bxd7). My queen in front of her king on an open file is pinned (T51R1 21.Rg3!).
 - BEFORE ANY QUEEN MOVE, WALK EVERY ENEMY KNIGHT JUMP AND EVERY BISHOP/PAWN CAPTURE SQUARE ONTO HER DESTINATION: T56R5.2 17.Qd2?? Nxd2; T57R3 15...Qc5?? Bxc5.
 - A QUEEN ON d4/e3 IN FRONT OF HIS c5-PAWN MUST SEE THE ...d4 PUSH: T56S2G1 12.Qd4?! ...c5 14.Qe3?? ...d4! forked Qe3+Nc3. Before Qd4/Qe3/Qc4 list ...c5, ...cxd4, ...d4; keep an exit square.
@@ -52,7 +52,7 @@
 
 ## Opening: Open Sicilian Taimanov (both colours)
 - 1.e4 c5 2.Nf3 e6 3.d4 cxd4 4.Nxd4 Nc6 5.Nc3 a6 6.Be2 Be7 7.O-O Nf6 8.Be3 O-O (16 plies), then f4/Qd2/Rad1 (White) or as Black ...cxd4/...Nf6/...e6/...Be7/...O-O/...Qc7/...a6 then ...b5/...Bb7/...Rfc8.
-- AS BLACK the build is sound; ...d5 only when e6 recaptures. T56R1: 12...f6?? let 13.Bxd5+ and exf6; the f6 strike needs d5 defended AND g7 covered. T57R3: build fine to 14...Bb7, then 15...Qc5?? put her on Bd4's square = queen for bishop; a queen defended by one bishop is a queen lost.
+- AS BLACK the build is sound; ...d5 only when e6 recaptures. T56R1: 12...f6?? let 13.Bxd5+ and exf6; the f6 strike needs d5 defended AND g7 covered.
 - T57R4 (WIN on time v mirror): ...Nb4/...Bc5 hitting Be3 worked (13...Bc5! 14.Bxd5?? Bxe3+ won a piece) but 12...Nb4? was loose once his Nf5 arrived; with a4+b5 tension ...bxa4?! hands him the a-file and an active rook. THE c8-BISHOP ON b7 WITH QUEENS ON IS A TARGET: keep a PIECE on b7 or leave the bishop home.
 - AS BLACK ...b5 needs a guard first (...a6/...Bb7), else Nxb5! (T51R3). His e5 hitting Nf6: never ...Ne8 with my a8-rook home (Nc7 forks) - ...Nd5 or ...Nh5.
 - AS BLACK keep the f6-knight and the queen guarded (T53R1 16...Rfd8?? exf6; 20...Kg7?? Bxc7).
@@ -68,10 +68,11 @@
 ## Opening: Taimanov as BLACK v Stockfish
 - 1.e4 c5 2.Nf3 e6 3.Nc3 Nc6 4.d4 cxd4 5.Nxd4 Nf6 6.Nxc6 bxc6 7.Bd3 Be7 8.e5 Nd5 (16 plies; 7.e5 Nd5 8.Qf3 transposes). ...Nxc3 hands him c3+d4+e5 - only for a concrete reason.
 - 7.Ndb5 Qb8! is the only good retreat. With queens on, do NOT open the centre and never take on e5; ...f6 only with his Bf4 off the c7 diagonal.
+- T57 Final (L m11): in the 7.Bd3 Be7 8.e5 Nd5 line, 9.Qg4! is the sting. Do NOT answer ...O-O: 9...O-O?? 10.Bh6! Qc7?? 11.Qxg7#. The g7-pawn is PINNED to Kg8 by Qg4, so ...gxh6 is illegal. Meet Qg4 by removing her g-file aim and keep the king on e8; no castle until g7 has a PIECE guard and her queen is off g4.
 - T54S1G1 (L m20): 11...Bd6?? exd6 and 12...Qc7?? dxc7 handed bishop AND queen, 20.Qd8#. T54R3 (L m13): 11...h6?? 12.Bxh6! With his queen on g3 and a bishop reaching h6, ...h6 is a mating hook: ...f5, a PIECE on g7, or the queen trade. King on e8 makes Bf8 g7's only guard.
 
 ## Opponents
-- Stockfish 19 (depth 4): instant. Punishes loose pieces, hidden defenders, unguarded c6 (Bxc6!), a kicked Ng4, f6 on his e5-pawn's capture square, ...f6 met by exf6, ...h6 met by Bxh6. T55R2: 5...d4 / 8...d3 clamp, ...Bg4, the dxe2 pawn fork, ...Qxf2# m13. T56R2: the early ...d4 clamp plus a knight tour (...Nc3/...Nb4/...Nc2/...Nxe3/...Nxg2) won pawns and Bg2. T57R2: 5...d4 again; 10.Ne1?!/11.dxe3?? lost my queen to ...Qxd1.
+- Stockfish 19 (depth 4): instant. Punishes loose pieces, hidden defenders, unguarded c6 (Bxc6!), a kicked Ng4, f6 on his e5-pawn's capture square, ...f6 met by exf6, ...h6 met by Bxh6. T55R2: 5...d4 / 8...d3 clamp, ...Bg4, the dxe2 pawn fork, ...Qxf2# m13. T56R2: the early ...d4 clamp plus a knight tour (...Nc3/...Nb4/...Nc2/...Nxe3/...Nxg2) won pawns and Bg2. T57R2: 5...d4 again; 10.Ne1?!/11.dxe3?? lost my queen to ...Qxd1. T57 Final: after ...bxc6/...Be7/...Nd5, 9.Qg4! punished 9...O-O?? with 10.Bh6! 11.Qxg7# (g7 pinned).
 - GLM 5.3 Flash: as White the English/reversed QGD, as Black the Taimanov; sound build but careless with piece safety. T56R3/R5.2/T57R1 (my three 1-0): it hands knight, bishop, queen and rook to plain captures and to pawn takes (Ne6?? fxe6, Bc5?? Bxc5, Rxa2?? Bxa2, 17.Qd2?? Nxd2), shuffles in lost endings; 57 min left at mate. Take every loose unit and queen; its clock can run out, but convert without waiting.
 - DeepSeek V4.1 Flash (mirror): solid Taimanov/English both colours, converts without gifts, up to 8 illegal tries/game. T54R1 up a bishop it walked Kf2-e3-d4-e5 and mated N+B m67; T55R3 beat me off my 24.Qd4?? cxd4; T56S2G1 played ...c5/...d4! forking Qe3+Nc3. T56R1 (my 1-0 as Black): its 32.Qd7?? Bxd7 and 37.Ra6?? bxa6 gave the game back. T57R3 (my 0-1 as Black): level Taimanov, then my 15...Qc5?? walked her onto his Bd4 (queen for bishop) and Q+2R mated 26.Qc8#. T57R4 (my 1-0 as Black on time): level Taimanov, ...Bc5!/...Bxe3+ won a piece, then I handed the b7-bishop back to 30.Qxb7; he flagged 2 min vs my 47 - bank clock, guard every unit by a PIECE, no illegal concern remains my own.
 - Expect the ...c5/...d4 fork when my queen sits on d4/e3.
@@ -90,3 +91,4 @@
 - T57R2 1/2 v SF19 (W English, 5...d4 clamp): 6.Nb1/e3 correct, then 10.Ne1?! screened Rf1-d1 and 11.dxe3?? Qxd1; down a queen I forced a threefold with Bb8/Be5 vs Rd7/Rd5.
 - T57R3 0-1 v mirror (B Taimanov): sound to 14...Bb7; 15...Qc5?? on Bd4's square = queen for bishop, then his Q+2R mated 26.Qc8#. One illegal Rxf4 through my own d4-pawn. A queen defended by one minor is lost.
 - T57R4 1-0 v mirror (B Taimanov, he flagged): ...Bc5!/...Bxe3+ won a piece, but 28...Bb7 was indefensible with queens on (30.Qxb7) and 4 illegal tries on quiet queen retreats. Won on clock 47 min v 2.
+- T57 Final 0-1 v SF19 m11 (B Taimanov): 8...Nd5 9.Qg4! 9...O-O?? 10.Bh6 Qc7?? 11.Qxg7#; g7 was pinned to Kg8 so ...gxh6 illegal. Keep king e8, remove her g-file aim, g7 piece-guarded before castling.

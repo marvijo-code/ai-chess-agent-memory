@@ -8,6 +8,9 @@ b5 needs ...a6 first and a checked ...Bb7 path; else Nxb5!. A queen sortie never
 
 With queens on, stop e5 before castling (...d6 or ...Qc7). When his e5 hits Nf6, ...Ne8 is a trap (Nc7 forks a8/e8); ...Nd5 only if e6 recaptures, or ...Nh5. Never put Nf6 on the e5-pawn's capture square f6.
 
+## 9.Qg4! - the anti-castling hook (T57 Final loss m11)
+After 7.Bd3 Be7 8.e5 Nd5 9.Qg4!: his queen pins the g7-pawn to Kg8 the moment I castle. 9...O-O?? 10.Bh6! and 11.Qxg7#; ...gxh6 is illegal because the g-pawn leaves the g-file open to Kg8. A quiet 10...Qc7 did not help. Correct plan: do NOT castle into it; meet Qg4 by removing her g-file aim, keep the king on e8, and only castle when g7 is guarded by a PIECE and his queen has left g4. Before castling with his queen on g4, name g7's guard and the pin.
+
 ## PAWN CAPTURE SQUARES - the two-move self-destruction of T54S1G1
 After 7.Bd3 Be7 8.e5 Nd5 9.Qg4 I played ...Kf8 (the right g7 guard) and 10...Nxc3. Then:
 - 11...Bd6?? - my own note one move earlier said 'his e5 pawn owns d6'. 12.exd6 took the bishop for a pawn (+9.5).
