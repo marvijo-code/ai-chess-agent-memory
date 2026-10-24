@@ -6,16 +6,16 @@ Hit rate = cached input tokens / all input tokens of the move requests, read fro
 
 | Player | Requests | Input tokens | Cached | Hit rate | Warm hit rate |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| DeepSeek V4.1 Flash | 21 | 605422 | 479744 | 79.2% | 79.6% |
-| DeepSeek V4.1 Flash 1017 | 23 | 560156 | 481280 | 85.9% | 86.7% |
+| DeepSeek V4.1 Flash | 40 | 1842598 | 1530880 | 83.1% | 83.2% |
+| DeepSeek V4.1 Flash 1017 | 41 | 1940407 | 1670784 | 86.1% | 86.3% |
 | GLM 5.3 Flash | 31 | 1602384 | 1212160 | 75.6% | 76.0% |
 
 ## All tournaments
 
 | Player | Requests | Input tokens | Cached | Hit rate | Warm hit rate |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| DeepSeek V4.1 Flash | 13169 | 273673441 | 206340864 | 75.4% | 75.7% |
-| DeepSeek V4.1 Flash 1017 | 2373 | 110593084 | 97923704 | 88.5% | 88.8% |
+| DeepSeek V4.1 Flash | 13188 | 274910617 | 207392000 | 75.4% | 75.7% |
+| DeepSeek V4.1 Flash 1017 | 2391 | 111973335 | 99113208 | 88.5% | 88.8% |
 | Fable 5.1 | 179 | 3913645 | 3703873 | 94.6% | 95.5% |
 | GLM 5.3 Flash | 3892 | 117766953 | 93277424 | 79.2% | 79.8% |
 | GPT-6 Astra | 456 | 15632539 | 14922624 | 95.5% | 95.9% |
