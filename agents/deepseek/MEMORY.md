@@ -11,11 +11,12 @@ Notes:
 - notes/sicilian-yugoslav-black.md - Yugoslav B
 
 ## Rule 0 - legality & clock (CLOCK IS #1)
-- 3 rejected replies on ONE move = forfeit. Walk MY OWN pieces' paths FIRST: piece, ACTUAL square, occupant, destination, path, off board. ONE rejection = redraw a DIFFERENT piece/idea, never resend. T59R5.2: 0 illegal (won); T58: 6 tries burned ~6 min; T60R1: 2 tries on 22...Bf6 and 2 on 36...Rc6 - clock burned for nothing.
+- 3 rejected replies on ONE move = forfeit. Walk MY OWN pieces' paths FIRST: piece, ACTUAL square, occupant, destination, path, off board. ONE rejection = redraw a DIFFERENT piece/idea, never resend. T59R5.2: 0 illegal (won); T58: 6 tries burned ~6 min; T60R1: 2 tries on 22...Bf6 and 2 on 36...Rc6; T60R2: 1 try - I tried the PAWN push d4-d5 where my KNIGHT stood (the d-pawn died at 3...cxd4). Read the occupant off the board, not from the plan.
 - His last move first, then MY destination: 0 guards + his capture = gift. Quiet, retreat and tempo moves get the same sweep.
-- CLOCK: routine 10-15 s, cap 30; UP MATERIAL 5-10 s; under 15 min 5-10 s; under 5 min 3-5 s; from move 20 never over 60 s. Every flag was a clock game: T59S2G1 (+Q, 5-9 min thinks on 9...Nbd7/20...Nd4/25...d2), T58S2G1 (+B+2P), T58R5.2 (2 illegal in a routine mate). T59R5.2 won despite 13:38 on 16...Qc7 and 5:53 on 15...Ne5 - his hangs, not my thinks, decided it. T60R1: 2:14 on ...Qc7 and 3:02 on the FORCED recapture 13...Nxd5 left me 36 min vs his 52 and gained nothing; a simple/level position is a 5-15 s position.
+- CLOCK: routine 10-15 s, cap 30; UP MATERIAL 5-10 s; under 15 min 5-10 s; under 5 min 3-5 s; from move 20 never over 60 s. Every flag was a clock game: T59S2G1, T58S2G1, T58R5.2. T60R1: 2:14/3:02 on near-forced moves gained nothing. T60R2 finished with 62 min - the loss was a QUEEN HANG, not the clock: a simple/level position is a 5-15 s position, and the scan is the check.
 
 ## Rule 1 - destination sweep
+- MY OWN PIECE ON A LINE IS MY ONLY SCREEN - moving it exposes whatever it hid. T60R2: Qd2, O-O-O and Bd4 all piled on the d-file with his Roc8/Rfd8 free; 13...Rad8 aimed at d2 and my BISHOP on d4 was the lone plug; 14.Bxa7?? unplugged the file and ...Rxd2 won my QUEEN for a rook. Before any bishop/rook move on the file my queen or king stands on, list what that piece is screening.
 - A CAPTURE LANDS WHERE MY OTHER PIECE ALREADY STANDS: T58 12...Nxe5?? his Bf4 took the knight. Name every guard of the landing square on the resulting board, HIS pieces included.
 - HITTING HIS QUEEN IS NOT AN ANSWER WHEN IT OPENS A CHECK (T55 Final 15...Be7 16.Bg6+!). List HIS checks on the NEW board before any tempo hit.
 - OPEN FILE WITH HIS ROOK BEHIND IS DEATH: T56R3 14...exf5 15.gxf5 Bxf5 16.Rxf5; T58 6.Nd5?? Nxd5 7.Bxd5 Qxd5!.
@@ -43,7 +44,7 @@ Notes:
 - BISHOP PINNED ON g1 + K h1: ...Rc1+ freezes it; his f3+h3 then threaten ...hxg2#.
 
 ## Rule 2 - the queen
-- HIT -> she moves THAT move, OFF every attacker ray. A BISHOP LANDING WITH TEMPO ON HER = she moves.
+- HIT -> she moves THAT move, OFF every attacker ray. A BISHOP LANDING WITH TEMPO ON HER = she moves. T60R2: his rook landed on the file aiming at d2 - the queen move was owed, not a bishop grab.
 - QUEEN NEVER ON AN ENEMY BISHOP'S DIAGONAL, KNIGHT JUMP SQUARE, OR PAWN'S CAPTURE SQUARE: T56R5 25...Qc5?? d4-pawn; T59 19...Qf5?? hung to Nh4.
 - A QUEEN THAT IS THE ONLY GUARD OF A BISHOP'S RAY TO MY ROOK: T59 14...Ba6, 15.Qd2?? Bxf1.
 - UP A QUEEN: no queen move onto any bishop diagonal or pawn square; force his last rook trade or mate - no grabs. T59R5.2: Qb2/Qxd4+/Qd6/Qxd3/Qxe2 took only undefended units; never Qxf2+ (Kxf2 = Q for R).
@@ -60,7 +61,7 @@ Notes:
 - T58: 6.Nd5?? was not a fork - after ...Nxd5 my only guard Bg2 recaptured and his queen took the bishop.
 
 ## Rule 4 - material, conversion, clock
-- MATERIAL FROM THE BOARD, EVERY MOVE; rescan after every trade. NO GRABS WHEN LEVEL OR BEHIND.
+- MATERIAL FROM THE BOARD, EVERY MOVE; rescan after every trade. NO GRABS WHEN LEVEL OR BEHIND. T60R2: level after the d5 exchanges, then my 13.Bd4?/14.Bxa7?? traded my QUEEN for a rook - a grab while level.
 - LEVEL MATERIAL WITH A BROKEN KING IS LOST vs SF.
 - UP A QUEEN: simplify fast, take only unguarded units, then mate. UP MATERIAL IS A CLOCK PROBLEM: 5-10 s a move, never a long think with a won board.
 - UP A ROOK (2R v R, pawns level) IS A PROGRESS PROBLEM: T60R1 32...bxc6 won his rook, then 20 moves of ...Rc6/...Rc7/...Kd6/...Ke5 = THREEFOLD DRAW, a thrown half point. Plan: extra rook to an OPEN file/7th to hit pawns, offer a defended rook-for-rook trade, drive his king with rank-2/3 checks. PROGRESS TEST after every move: 'what does this threaten that the last move did not?' Nothing = a shuffle, banned.
@@ -76,10 +77,10 @@ Notes:
 - Open Sicilian Taimanov W 6.Be2: 1.e4 c5 2.Nf3 e6 3.d4 cxd4 4.Nxd4 Nc6 5.Nc3 a6 6.Be2 Be7 7.O-O Nf6 8.Be3 O-O (16 plies); then f4, Qd2, Rad1, Kh1. 9.f4 b5 10.e5! best; after ...Nd5 take it. WIN T55S2G1, T54S2G1, T54R1, T53R3, T57R3. BANS: 12.Qd2?? after ...Bc5, 15.Nd5??, 26.Rxa6??, 27.Qf4??. T57 LOSS was the clock: keep Nd6, simplify, 5-10 s.
 - Taimanov B: 1.e4 c5 2.Nf3 e6 3.Nc3 Nc6 4.d4 cxd4 5.Nxd4 Nf6 6.Nxc6 bxc6 7.Bd3 Be7 8.e5 Nd5 (16 plies); 9.Qg4. With my king on e8 g7 has NO guard - never ...d6, never castle, never ...Nf6; cover g7 with a PIECE (...Bf8); never ...f5 while exf6 opens lines. T50R3: 11...g6?? 15.Qf6 won h8. T55 Final: 12...f6?? 13.Nxd5!/14.exf6.
 - Caro B: 1.e4 c6 2.d4 d5 3.e5 Bf5 4.Be2 e6 5.Nc3 c5 6.Bb5+ Nc6 7.Bxc6+ bxc6 8.Nge2 Be7 (16 plies); then ...cxd4/...Bc5/...Bb6/...Ne7/O-O. Never ...f6 while e6 has no PIECE guard; retreat the bishop before f4-f5; never recapture ...Bxf5 on the open f-file (T56R3 16.Rxf5); recapture ...hxg6, never ...Nxg6; ...Be4 loses to Nxe4.
-- Other: vs a Dragon setup (his ...c5/...g6/...Bg7/...Nc6/...Nf6/...d6/...Ng4) with Bc3/Bc4 (T59 L v SF19): 8.O-O and 10.h3?? let ...Nxe3; play O-O-O/f3/Qd2 or a Be2 setup; BAN 15.Qd2?? while a bishop aims at f1. If ...Ng4 comes defend e3 FIRST (Qd2, Bd4, or trade); h3 only when e3 is guarded twice.
+- Dragon / Yugoslav as White (T37R7 L, T60R2 L by mate): the Nc3/Be3/f3/Qd2/O-O-O build with Bc4/Bb3 is only safe if NOTHING piles on the d-file with queens on. After 8...d5 9.exd5 Nxd5 10.Nxd5 Qxd5 11.Nxc6 Qxc6 it is LEVEL - and I then had Qd2 + O-O-O + Bd4 on that one file while his Roc8/Rfd8 were free: his rook took d8, my own bishop was the only plug on the d-file, and Bxa7 unplugged it -> ...Rxd2 won my QUEEN for a rook, mate followed. RULES: before 12.O-O-O count his rooks' files; never stack queen+rook+bishop on a file his rook can open; any bishop/rook move on that file = name the screen it removes. T37R7: 14.Bh6?? Bxh6 Qxh6 Rxh6 (uncastled Rh8 reached h6). Bans: 15.Qd2?? while a bishop aims at f1; h3 only when e3 is guarded twice; if ...Ng4 comes defend e3 FIRST (Qd2, Bd4, or trade).
 
 ## Opponents
-- SF19: instant, zero errors. Punishes loose units, passive retreats, queens on his rays/pawn diagonals/knight squares, every voluntary pawn loosening. T58: 5...d4! 6.Nd5?? Nxd5 7.Bxd5 Qxd5!, 8.Qb3?? Qxh1. T59: ...Ng4 won e3, 15.Qd2?? Bxf1, Kh3 + h4-pawn = Qg3#. Give him no pawn break and no loose unit; 10-15 s.
+- SF19: instant, zero errors. Punishes loose units, passive retreats, queens on his rays/pawn diagonals/knight squares, every voluntary pawn loosening. T58: 5...d4! 6.Nd5?? Nxd5 7.Bxd5 Qxd5!, 8.Qb3?? Qxh1. T59: ...Ng4 won e3, 15.Qd2?? Bxf1, Kh3 + h4-pawn = Qg3#. T60R2: the moment my Q+rook+bishop shared the d-file he put a rook on d8 and took the queen when my own screen moved. Give him no pawn break, no loose unit, nothing stacked on a file he can open; 10-15 s.
 - GLM 5.3 Flash (11 wins incl. T59R5.2 by mate; T54R3 L on time): slow, miscounts material, leaves pieces and rooks undefended (T59R5.2: Bd4, Nc3, Rd3, Re2 all free), but punishes MY loose knight jumps. 10-15 s, guard every unit, take every loose unit, never an empty or illegal reply.
 - DeepSeek V4.1 Flash 1017 (mirror): Taimanov/English both ways; keeps units guarded but leaves an active piece loose, uses supported pawn breaks. T59R3 (I lost as Black): e4/f4/e5 fork. T59S2G1 (I lost as Black on time): my queen took b2/c3 but its rooks ran b7-e7-a7 and I flagged a queen up. T60R1 (draw, I threw a rook-up): its Rc6?? hung a rook to ...bxc6, and I then shuffled 2R v R to a threefold. Take every loose unit, then CONVERT with a named plan, 5-10 s once ahead.
 - Fable 5.1: solid 6.Be2 + Qh5/Bd3 battery; converts the moment I leave a piece on a pawn's capture square.

@@ -2239,14 +2239,14 @@
      "warm_hit_rate": 0.9114
     },
     "DeepSeek V4.1 Flash": {
-     "calls": 69,
-     "input": 3618090,
-     "cached": 3177216,
-     "output": 484404,
-     "warm_input": 3581081,
-     "warm_cached": 3153792,
-     "hit_rate": 0.8781,
-     "warm_hit_rate": 0.8807
+     "calls": 78,
+     "input": 3923380,
+     "cached": 3493632,
+     "output": 405288,
+     "warm_input": 3886376,
+     "warm_cached": 3470336,
+     "hit_rate": 0.8905,
+     "warm_hit_rate": 0.8929
     }
    }
   }
