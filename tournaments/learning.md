@@ -13,7 +13,7 @@ Folders: DeepSeek V4.1 Flash: `agents/deepseek/`, DeepSeek V4.1 Flash 1017: `age
 
 | Player | Games | Read in prompt | Read latest | Reflections | MEMORY.md updates | Note updates | Rejected | Retries | Errors |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| DeepSeek V4.1 Flash | 2 | 2 | 2 | 2 | 2 | 1 | 0 | 1 | 0 |
+| DeepSeek V4.1 Flash | 3 | 3 | 3 | 3 | 3 | 2 | 0 | 2 | 0 |
 | DeepSeek V4.1 Flash 1017 | 3 | 3 | 3 | 3 | 3 | 0 | 0 | 0 | 0 |
 | GLM 5.3 Flash | 3 | 3 | 3 | 3 | 3 | 2 | 0 | 1 | 0 |
 
@@ -21,7 +21,7 @@ Folders: DeepSeek V4.1 Flash: `agents/deepseek/`, DeepSeek V4.1 Flash 1017: `age
 
 | Player | Games | Read in prompt | Read latest | Reflections | MEMORY.md updates | Note updates | Rejected | Retries | Errors |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| DeepSeek V4.1 Flash | 234 | 234 | 234 | 226 | 223 | 215 | 5 | 105 | 7 |
+| DeepSeek V4.1 Flash | 235 | 235 | 235 | 227 | 224 | 216 | 5 | 106 | 7 |
 | DeepSeek V4.1 Flash 1017 | 70 | 70 | 70 | 69 | 69 | 39 | 1 | 23 | 1 |
 | Fable 5.1 | 5 | 5 | 5 | 5 | 5 | 5 | 0 | 0 | 0 |
 | GLM 5.3 Flash | 113 | 113 | 113 | 89 | 85 | 69 | 6 | 53 | 24 |
