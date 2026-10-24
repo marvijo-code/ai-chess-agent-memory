@@ -1,34 +1,30 @@
 # Pre-move scan & blunder catalogue
 
 ## Every move
-1 LEGALITY: name the piece's ACTUAL square, the destination's occupant and every path square, MY pieces too; two-step pawn transit empty; O-O needs f8/g8 (f1/g1) empty. Three rejected tries on ONE move = FORFEIT; an EMPTY reply is the same failure (T49R1 m14, T49R2 m13, T49R3, T49R4, T49R5 m16). T49R5: 4 invalid tries on book moves 10.Qd2/11.Rad1/14.fxe5 - read the square off the BOARD, not the plan. One rejection = redraw, pick a DIFFERENT piece/idea.
-2 WHEN THE POSITION TURNS (I just won a piece, a pawn lost, his move forces an answer) the reply is ONE listed move: write the recapture/legal move and SEND it within 15 s. T49R5: +N for P after 15.exf6!, 52 min left, empty reply. Never re-derive from scratch.
-3 HIS LAST MOVE first, then MY destination: 0 guards + his capture = gift. Quiets, retreats and 'tempo' moves get the same sweep.
-4 PAWN CAPTURES (a moved pawn still attacks): g6<-f7/h7, b6<-a7/c7, d6<-c7/e5, c5<-b4/d4, a3/c3<-b4, e5<-d4/f4, f5<-e6/g6, f6<-e5. A pawn's NEXT PUSH hits too.
-5 KNIGHT JUMPS, all eight of every enemy knight; a central jump needs EVERY recapturer counted.
-6 SCREENS: a piece leaving a square opens the line behind it onto my queen/king; walk every landing to the end. HIS screen is no shield: T45R4 20...Qc7?? only his own Bc5 blocked Qc2-c7; 21.Bxf8 and 22.Qxc7 won my queen.
-7 CAPTURES: list every recapturer from the board, pawns first, each reaching in ONE move and guarded after landing; count HIS recapture too (T45R7 25.Qc3?? Rc8 recaptured).
-8 ROOK/CHECK: 'can his king just take it?'; never a rook on his rook's line or where his rook captures it while MY OWN piece blocks my recapturer (T45R6 13...Re8?? 14.Rxe8+).
-9 QUEEN: hit -> she moves that move, off every attacker ray; never on an enemy pawn's capture square or a bishop's diagonal.
-10 A won piece must be re-guarded; an attacked piece needs an answer BEFORE any quiet move elsewhere.
+1 LEGALITY: piece's ACTUAL square, destination's occupant, every path square, MY pieces too; two-step pawn transit empty; O-O needs f8/g8 (f1/g1) empty. Three rejected tries on ONE move = FORFEIT (T60R4 34.Re3 x3, 54.Rb6 x3); an EMPTY reply is the same failure. One rejection = redraw a DIFFERENT piece/idea; after the second the piece AND the idea change.
+2 WHEN THE POSITION TURNS (I just won a piece, a pawn lost, his move forces an answer) the reply is ONE listed move: write the recapture/legal move, SEND it within 15 s.
+3 HIS LAST MOVE first, then MY destination: 0 guards + his capture = gift; quiets and retreats get the same sweep.
+4 PAWN CAPTURES: g6<-f7/h7, b6<-a7/c7, d6<-c7/e5, c5<-b4/d4, e5<-d4/f4, f5<-e6/g6, f6<-e5; a pawn's NEXT PUSH hits too. MY piece on HIS pawn's square is lost (T60R4 30.Qxc5?? dxc5 = Q for B); HIS piece on MY pawn's square is free (T60R4 56...Rxb7?? 57.axb7 won a rook).
+5 KNIGHT JUMPS: all eight; a knight in my camp keeps hitting (T60R4 11...Nxb3 hit c1 AND d4; 12.d4?? let ...Nxc1 take my bishop - recapture it or move what it attacks).
+6 SCREENS: a piece leaving a square opens the line behind it to my queen/king. HIS screen is no shield (T45R4 20...Qc7?? only his own Bc5 blocked Qc2-c7).
+7 CAPTURES: every recapturer, pawns first, reaching in ONE move and guarded after landing; count HIS too. RECAPTURE != TRADE.
+8 ROOK/CHECK: can his king just take it? MY OWN piece often blocks my recapturer (T45R6 13...Re8?? 14.Rxe8+).
+9 QUEEN: hit -> she moves that move, off every ray; never on an enemy pawn's capture square, bishop diagonal or knight square. A piece 'attacking' her from a pawn-defended square is bait (T60R4 ...Bc5 tempted 30.Qxc5).
+10 A won piece is re-guarded; an attacked piece needs an answer BEFORE any quiet move.
 11 MATE FIRST, quiet moves too; keep a rank-1 blocker or luft.
-12 Material FROM THE BOARD after every capture; a recapture is not a gain.
-13 CLOCK: routine 10-15 s, cap 30; book and forced recaptures <=10 s; under 15 min 5-10 s. Long thinks produced flags, blunders and forfeits; the clock is not the failure mode, empty replies are.
-14 SELF-BAN: a move my note called bad is DEAD.
+12 Material FROM THE BOARD after every capture.
+13 CLOCK: routine 10-15 s, cap 30; book/forced <=10 s; under 15 min 5-10 s. Long thinks produced flags and blunders; empty replies are worse.
 
 ## Cases
-- T52R3 v mirror (0-1 m70): Taimanov W; 25.Ra3?? landed on the b4-pawn's capture square (b4xa3) and lost a whole rook, turning a level/pawn-up position into a lost one. 19.f5?! had 2 invalid tries but was not the loss. List a3/c3 whenever a rook/queen goes to the third rank.
-- T49R5 v GLM (0-1 forfeit m16): Taimanov 6.Be2, 9.f4 b5 10.Qd2?! Bb7 11.Rad1?! d6 12.Nxc6 Bxc6 13.e5 dxe5 14.fxe5 Qc7?? 15.exf6! = +N for P. Four invalid tries on routine moves (Qd2 x3, Rad1, fxe5 x2), then an EMPTY reply while ahead. Qd2/Rad1 marked inaccurate (...b4 hits Nc3).
-- T49R2 v GLM (0-1 forfeit m13): 11...c5?! 12.dxc5 Nxc5 13.Qxd5 won a pawn (d5 had only Qd8); three EMPTY replies.
-- T49R1 v DeepSeek1017: Taimanov 6.Be2 level to m13; 6:07 on 12.e5, then empty replies.
-- T45R7 v Sonnet: 14.Bf4?? exf4; 15.cxd4? IQP; 19.d5? ...Ne5; flagged.
-- T45R3 v Haiku: same Bf4??/exf4; flagged while ahead.
-- T44R5 v Sonnet: Caro 12...f6? 13.exf6 Rxf6 14.Qg3; 24.exd6 opened the g-file -> mate.
-- T45R6 v SF19: 13...Re8?? 14.Rxe8+ = a whole rook.
+- T60R4 W v GLM (1-0 m78): Italian Pianissimo. 11.Nb3 Nxb3 12.d4?? let ...Nxc1 take Bc1 (the b3-knight hit c1 and d4). Later won Q for B (16.Ba4 Qxa4), handed it back (30.Qxc5?? dxc5), then won by rook play: 44.d6 tied a rook to the blockade, 50.Rxa6 plus a4-a5-a6-Rb7, 56...Rxb7?? 57.axb7, 58.b8=Q+, king to f6, 78.Qg7#. 5 illegal tries; 50 min left.
+- T52R3 v mirror (0-1 m70): 25.Ra3?? landed on the b4-pawn's capture square (b4xa3) - a whole rook.
+- T49R5 v GLM (0-1 forfeit m16): 15.exf6! = +N for P, then invalid tries (Qd2 x3, Rad1, fxe5 x2) and an EMPTY reply.
+- T45R7 v Sonnet: 14.Bf4?? exf4; 19.d5? ...Ne5; flagged.
+- T45R6 v SF19: 13...Re8?? 14.Rxe8+ = a rook.
 - T42R4: 16.Nxe4! won a knight, 17.axb3?? left it loose -> Rxe4.
 
 ## Patterns
-- Losses = one-move scan misses (screen / blocked guard / queen on a bishop or knight square / piece on a pawn's capture square / unguarded rook landing / illegal try / EMPTY reply) plus plan drift; the openings are fine.
+- Losses = one-move scan misses (screen / blocked guard / queen on a pawn or knight square / unguarded rook landing / illegal try / EMPTY reply) plus plan drift; the openings are fine.
 - SUBMISSION: write the list, send the first sound move; a think over 30 s produces illegal or EMPTY replies.
-- One enemy pawn on TWO of my pieces = double attack: count my pieces on every capture-square pair before a pawn push.
-- Winning material is not converting it: re-guard, trade evenly, rook ladder, then let his clock run.
+- One enemy pawn on TWO of my pieces = double attack.
+- Winning material is not converting it: re-guard, trade evenly, then let his clock run.
