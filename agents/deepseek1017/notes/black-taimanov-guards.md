@@ -2,6 +2,11 @@
 
 Opening: 1.e4 c5 2.Nf3 Nc6 3.Nc3 e6 4.d4 cxd4 5.Nxd4 Nf6 6.Nxc6 bxc6 7.e5 Nd5 (or 7.Bd3 Be7 8.e5 Nd5). The c6-pawn has no recapturer (b7 empty): ...Qc7 first, then castle; ...O-O too early allows Bxc6! winning a8. With my king on e8, Bf8 is g7's only guard: ...Be7?? Qxg7.
 
+## T61R4 v SF19 (loss m39) - 13...Qxe5?? queen for a pawn
+Same book to 8...Nd5, then 9.Qg4 g6 10.O-O O-O 11.Bh6. After ...O-O nothing but Kg8 'guards' Be7 - and Kg8 does not reach e7 - so Bxf8 wins the exchange. 11...Qc7?! (hitting e5 along c7-d6-e5) ignored that: the inaccuracy that set up the loss. Priority is the bishop (retreat/trade it) before any pawn chase; no ...d6/...f6 while his e5-pawn lives.
+12.Bxf8 Kxf8 13.Qe2 and then 13...Qxe5??: the pawn stood on the open e-FILE under his Qe2, and NONE of my pieces reached e5 (Nd5 no, Be7 no, no d6/f6 pawn), so 14.Qxe5 was Q for P, +1.0 -> +8.1. My comment said 'if he trades queens' - a capture is not a trade unless I name MY recapturer on the new board.
+Resistance model down a queen: B+7P v Q+R+N, kept the c6/c4/e6 chain, captured only after tracing the recapture (Nxa2, Nxc2, Bxc1, dxc4), and forced SF to find 37.Qxf7+ 38.Qe8+ 39.Rf7# at move 39 - 26 moves without resigning.
+
 ## T59 loss v SF19 (mate m26) - 11...Nf6?? threw a knight
 Position after 8.Qf3 Be7 9.Ne4 Qc7 10.Qg3 g6: SF played 11.c4!, hitting my d5-knight. I retreated 11...Nf6?? 'attacking the undefended e4-knight'.
 - f6 belongs to his e5-pawn: 12.Nxf6+ and my ...Bxf6 recapture loses the bishop to 13.exf6. So 12...Kd8 was forced and I was a clean knight down at move 12 (SF +6.6).

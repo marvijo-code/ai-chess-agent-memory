@@ -2254,14 +2254,14 @@
    "number": 61,
    "players": {
     "DeepSeek V4.1 Flash 1017": {
-     "calls": 88,
-     "input": 3865229,
-     "cached": 3260160,
-     "output": 729265,
-     "warm_input": 3802430,
-     "warm_cached": 3219328,
-     "hit_rate": 0.8435,
-     "warm_hit_rate": 0.8467
+     "calls": 127,
+     "input": 6047062,
+     "cached": 5233408,
+     "output": 1053811,
+     "warm_input": 5961381,
+     "warm_cached": 5177600,
+     "hit_rate": 0.8654,
+     "warm_hit_rate": 0.8685
     },
     "DeepSeek V4.1 Flash": {
      "calls": 124,
