@@ -2299,24 +2299,24 @@
      "warm_hit_rate": 0.8198
     },
     "DeepSeek V4.1 Flash 1017": {
-     "calls": 181,
-     "input": 11746649,
-     "cached": 10501376,
-     "output": 1536563,
-     "warm_input": 11660064,
-     "warm_cached": 10445568,
-     "hit_rate": 0.894,
-     "warm_hit_rate": 0.8958
+     "calls": 219,
+     "input": 14996896,
+     "cached": 13422464,
+     "output": 1878558,
+     "warm_input": 14910311,
+     "warm_cached": 13366656,
+     "hit_rate": 0.895,
+     "warm_hit_rate": 0.8965
     },
     "DeepSeek V4.1 Flash": {
-     "calls": 119,
-     "input": 5640620,
-     "cached": 4989826,
-     "output": 959481,
-     "warm_input": 5559169,
-     "warm_cached": 4938718,
-     "hit_rate": 0.8846,
-     "warm_hit_rate": 0.8884
+     "calls": 156,
+     "input": 8058109,
+     "cached": 7220994,
+     "output": 1092206,
+     "warm_input": 7976658,
+     "warm_cached": 7169886,
+     "hit_rate": 0.8961,
+     "warm_hit_rate": 0.8989
     }
    }
   }

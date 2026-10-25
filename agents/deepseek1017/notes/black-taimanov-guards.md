@@ -1,32 +1,30 @@
-# Taimanov as Black - guards and traps
+# Taimanov as Black - guards, traps and recaptures
 
-Opening: 1.e4 c5 2.Nf3 Nc6 3.Nc3 e6 4.d4 cxd4 5.Nxd4 Nf6 6.Nxc6 bxc6 7.e5 Nd5 (or 7.Bd3 Be7 8.e5 Nd5). The c6-pawn has no recapturer (b7 empty): ...Qc7 first, then castle; ...O-O too early allows Bxc6! winning a8. With my king on e8, Bf8 is g7's only guard: ...Be7?? Qxg7.
+Book: 1.e4 c5 2.Nf3 Nc6 3.Nc3 e6 4.d4 cxd4 5.Nxd4 Nf6 6.Nxc6 bxc6 7.e5 Nd5 (or 7.Bd3 Be7 8.e5 Nd5). The c6-pawn has no recapturer (b7 empty): ...Qc7 first; ...O-O too early allows Bxc6! winning a8. With my king on e8, Bf8 is g7's only guard.
+
+## T62S2G1 v the mirror (loss m52) - his f4/Qd2/Rad1 clamp, my queen on the d-file
+Book to 8...O-O, then 9...d6 10...Bd7 11...Qc7 12.e5 dxe5 13.fxe5 Nxe5 (fine). The drift: 14...Bc6?! (prefer ...Nd7/...Bf6), 15...Ne4?? 'forking' Qd2/Bg5/Nc3 - 16.Nxe4 Bxe4 17.Qe3! hit my bishop with tempo, and the pawn-up game turned defensive (17...Bf5: 4:55, 2 illegal tries).
+18.Bf4 Bd6 19.Bg3 Nc6 20.Bxd6 Qxd6??: my queen recaptured onto the open d-file facing his Rd1 with only my Nd4 between; 21.Nxc6 bxc6 cleared d4 and 22.Rxd6 took her. Rule: before a queen recapture name every occupant between her and his rook and which of his moves removes it; a screen is not a defence. ...Qxd6 only while d4 stays filled.
 
 ## T61R4 v SF19 (loss m39) - 13...Qxe5?? queen for a pawn
-Same book to 8...Nd5, then 9.Qg4 g6 10.O-O O-O 11.Bh6. After ...O-O nothing but Kg8 'guards' Be7 - and Kg8 does not reach e7 - so Bxf8 wins the exchange. 11...Qc7?! (hitting e5 along c7-d6-e5) ignored that: the inaccuracy that set up the loss. Priority is the bishop (retreat/trade it) before any pawn chase; no ...d6/...f6 while his e5-pawn lives.
-12.Bxf8 Kxf8 13.Qe2 and then 13...Qxe5??: the pawn stood on the open e-FILE under his Qe2, and NONE of my pieces reached e5 (Nd5 no, Be7 no, no d6/f6 pawn), so 14.Qxe5 was Q for P, +1.0 -> +8.1. My comment said 'if he trades queens' - a capture is not a trade unless I name MY recapturer on the new board.
-Resistance model down a queen: B+7P v Q+R+N, kept the c6/c4/e6 chain, captured only after tracing the recapture (Nxa2, Nxc2, Bxc1, dxc4), and forced SF to find 37.Qxf7+ 38.Qe8+ 39.Rf7# at move 39 - 26 moves without resigning.
+Book to 8...Nd5; 9.Qg4 g6 10.O-O O-O 11.Bh6, and ...O-O left only Kg8 'guarding' Be7, so Bxf8 wins the exchange - fix the bishop FIRST, no ...d6/...f6 while his e5-pawn lives. 13...Qxe5??: his Qe2 owned the open e-file and none of my pieces reached e5 = Q for P. A capture is not a trade unless I name MY recapturer on the new board. Down a queen I held 26 moves (B+7P v Q+R+N) and made SF find 37.Qxf7+ 38.Qe8+ 39.Rf7#.
 
 ## T59 loss v SF19 (mate m26) - 11...Nf6?? threw a knight
-Position after 8.Qf3 Be7 9.Ne4 Qc7 10.Qg3 g6: SF played 11.c4!, hitting my d5-knight. I retreated 11...Nf6?? 'attacking the undefended e4-knight'.
-- f6 belongs to his e5-pawn: 12.Nxf6+ and my ...Bxf6 recapture loses the bishop to 13.exf6. So 12...Kd8 was forced and I was a clean knight down at move 12 (SF +6.6).
-- The knight's retreat squares were b4/e7/b6/c7. NEVER f6 (or d6) while his e5-pawn lives.
-- Then 13...c5 14...Bb7 15...Bf8 16...d6 17...Qc6 18...Kc8 was already hopeless. 21.Nxd6+ Bxd6 (Qxd6?? exd6) 22.exd6 Qxd6?? - the second miss: exd6 emptied e5, so his Qg3 saw d6 through f4-e5-d6; 23.Qxd6 won my queen. Walk his queen's diagonal to any square before a queen recapture.
+11.c4! hit my Nd5; 11...Nf6?? 'attacking his e4-knight' - f6 belongs to his e5-pawn (12.Nxf6+ and ...Bxf6 exf6), so a clean knight down at move 12. Retreat squares b4/e7/b6/c7 only; never f6/d6 while e5 lives. Later 22.exd6 opened e5, his Qg3 saw d6 through f4-e5-d6: 23.Qxd6 won my queen.
 
-## 9.Qg4! - the anti-castling hook (T57 Final loss m11)
-After 7.Bd3 Be7 8.e5 Nd5 9.Qg4!: 9...O-O?? 10.Bh6! and 11.Qxg7#; ...gxh6 is illegal (the g-pawn leaves the g-file open to Kg8). Plan: do NOT castle into it; meet Qg4 by removing her g-file aim, keep the king on e8, castle only when g7 has a PIECE guard and she has left g4. Before castling with his queen on g4, name g7's guard and the pin.
+## 9.Qg4! - the anti-castling hook (T57 Final, mate m11)
+After 7.Bd3 Be7 8.e5 Nd5 9.Qg4!: 9...O-O?? 10.Bh6! Qxg7#; ...gxh6 is illegal. Keep the king on e8; castle only with a PIECE on g7 and her off g4.
 
-## PAWN CAPTURE SQUARES - T54S1G1
-11...Bd6?? 12.exd6 took the bishop; 12...Qc7?? - the new d6-pawn owns c7 and e7, 13.dxc7 took the QUEEN. 20.Qd8#: Rh8-h7 had emptied f8; keep f8/e8 occupied or the rook on the 8th. Mechanically: after EVERY enemy pawn push or capture say 'his pawn on X owns Y and Z', and ban both squares for every piece of mine. A piece on a pawn's capture square is lost, checks included.
+## PAWN CAPTURE SQUARES (T54S1G1)
+11...Bd6?? 12.exd6; 12...Qc7?? - the d6-pawn owns c7/e7, 13.dxc7 took the QUEEN. 20.Qd8#: Rh8-h7 emptied f8. After EVERY enemy pawn push say 'his pawn on X owns Y and Z' and ban both for every piece of mine.
 
 ## T58 Final draw v SF (down a queen)
-9...g6! 10...O-O-O is playable and better than ...O-O. But 12.Bh6! 15.Bg5 hit d8: before O-O-O check Bg5/Bh6 to d8. I lost that rook to 16.Bxd8. Then 22...Qxb2?? 23.Rb1 24.Rxb2 lost my queen. Down a queen, king and bishop mutually defended plus legal shuffles held threefold at +8.4.
+9...g6! 10...O-O-O beats ...O-O, but 12.Bh6!/15.Bg5 hit d8 (16.Bxd8) - check Bg5/Bh6 to d8 before O-O-O. 22...Qxb2?? 23.Rb1 lost her. Down a queen, defended K+B plus legal shuffles held threefold at +8.4.
 
-## Other losses and wins
-- T54R1 loss v mirror (m67): 11...Bc5?? 'guarded by my Qc7' met 12.Qxc5. Down a piece, hunt one freeing trade early.
-- T53R3 loss v mirror: 14...Bf5?? Rxf5 (my piece on his open f-file); 17...Qe6?? dxe6 (the d5-pawn's capture square).
-- T57R4 win on time: ...Nb4/...Bc5 hitting Be3 worked, but ...Bb7 with queens on is a target (30.Qxb7).
-- T51R3: ...b5 before ...a6 lost to Nxb5!; ...Ne8 twice allowed Nc7/Nb6 forks.
-- T52R3: 20...Bb7?? left Nd7 to Rxd7; 25.Ra3?? stood on my b4-pawn's capture square, bxa3! won a rook.
-
-When his e5 hits Nf6, ...Ne8 is a trap (Nc7 forks a8/e8); ...Nd5 only if e6 recaptures, or ...Nh5. A queen sortie never answers a lost pawn (...Qxc2?? lost the queen).
+## Other
+- T54R1: 11...Bc5?? 'guarded by Qc7' met 12.Qxc5.
+- T53R3: 14...Bf5?? Rxf5; 17...Qe6?? dxe6.
+- T57R4: ...Nb4/...Bc5 hit Be3 well; ...Bb7 with queens on is a target (30.Qxb7).
+- T51R3: ...b5 before ...a6 lost to Nxb5!; ...Ne8 allowed Nc7/Nb6 forks.
+- T52R3: 20...Bb7?? left Nd7 to Rxd7.
+- His e5 hits Nf6: ...Nd5 only if e6 recaptures, or ...Nh5; never ...Ne8 (Nc7 forks). A queen sortie never answers a lost pawn.
