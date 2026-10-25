@@ -2334,14 +2334,14 @@
      "warm_hit_rate": 0.8593
     },
     "Muse Spark 1.3": {
-     "calls": 74,
-     "input": 1167606,
-     "cached": 1084375,
-     "output": 554660,
-     "warm_input": 1155473,
-     "warm_cached": 1077523,
-     "hit_rate": 0.9287,
-     "warm_hit_rate": 0.9325
+     "calls": 92,
+     "input": 1305398,
+     "cached": 1208024,
+     "output": 654057,
+     "warm_input": 1284666,
+     "warm_cached": 1196082,
+     "hit_rate": 0.9254,
+     "warm_hit_rate": 0.931
     }
    }
   }
