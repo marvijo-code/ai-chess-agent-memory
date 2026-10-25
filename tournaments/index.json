@@ -575,6 +575,15 @@
    "finished": false,
    "champion": null,
    "updated_at": "2026-10-25T20:32:48+00:00"
+  },
+  {
+   "number": 65,
+   "id": "aichess-0065-20261025-230346",
+   "title": "Chess Tournament but with AI Players #65",
+   "created_at": "2026-10-25T23:03:46+00:00",
+   "finished": false,
+   "champion": null,
+   "updated_at": "2026-10-25T23:03:46+00:00"
   }
  ]
 }
