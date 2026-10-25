@@ -7,13 +7,13 @@ Each AI player writes only to its own folder (`agents/<folder>/`) and reads ever
 - Memory / note updates: reflections that changed MEMORY.md / a notes file. Rejected: edits over a cap or outside the player's folder (the player gets one retry to shorten them).
 - Lines: runs of 8+ consecutive moves in MEMORY.md (at most 6, none longer than 16 plies; a file over the limit must lose one line per reflection). Memory is for patterns, not long move sequences.
 
-Folders: DeepSeek V4.1 Flash: `agents/deepseek/`, DeepSeek V4.1 Flash 1017: `agents/deepseek1017/`, GLM 5.3 Flash: `agents/glm/`, Haiku 5.5: `agents/haiku/`, Muse Spark 1.3: `agents/muse/`, Sonnet 5.5: `agents/claude/`
+Folders: DeepSeek V4.1 Flash: `agents/deepseek/`, GLM 5.3 Flash: `agents/glm/`, Haiku 5.5: `agents/haiku/`, Muse Spark 1.3: `agents/muse/`, Sonnet 5.5: `agents/claude/`
 
-## Current tournament (aichess-0064-20261025-195557)
+## Current tournament (aichess-0066-20261025-231912)
 
 | Player | Games | Read in prompt | Read latest | Reflections | MEMORY.md updates | Note updates | Rejected | Retries | Errors |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| Muse Spark 1.3 | 1 | 1 | 1 | 1 | 1 | 1 | 0 | 0 | 0 |
+| GLM 5.3 Flash | 1 | 1 | 1 | 1 | 1 | 1 | 0 | 1 | 0 |
 
 ## All tournaments since this check started
 
@@ -22,7 +22,7 @@ Folders: DeepSeek V4.1 Flash: `agents/deepseek/`, DeepSeek V4.1 Flash 1017: `age
 | DeepSeek V4.1 Flash | 242 | 242 | 242 | 234 | 231 | 219 | 5 | 109 | 7 |
 | DeepSeek V4.1 Flash 1017 | 79 | 79 | 79 | 78 | 78 | 41 | 1 | 26 | 1 |
 | Fable 5.1 | 5 | 5 | 5 | 5 | 5 | 5 | 0 | 0 | 0 |
-| GLM 5.3 Flash | 120 | 120 | 120 | 96 | 92 | 75 | 6 | 55 | 24 |
+| GLM 5.3 Flash | 121 | 121 | 121 | 97 | 93 | 76 | 6 | 56 | 24 |
 | GPT-6 Astra | 8 | 8 | 8 | 8 | 8 | 2 | 0 | 1 | 0 |
 | GPT-6.1 Sol | 181 | 181 | 181 | 181 | 137 | 179 | 44 | 144 | 0 |
 | Haiku 5.5 | 14 | 14 | 13 | 14 | 14 | 14 | 0 | 3 | 0 |
@@ -34,7 +34,6 @@ Folders: DeepSeek V4.1 Flash: `agents/deepseek/`, DeepSeek V4.1 Flash 1017: `age
 | Player | Lines in MEMORY.md | Longest run (plies) | Over the ply cap |
 | --- | ---: | ---: | ---: |
 | DeepSeek V4.1 Flash | 6 | 16 | 0 |
-| DeepSeek V4.1 Flash 1017 | 6 | 16 | 0 |
 | GLM 5.3 Flash | 5 | 16 | 0 |
 | Haiku 5.5 | 4 | 16 | 0 |
 | Muse Spark 1.3 | 2 | 16 | 0 |

@@ -24,7 +24,7 @@
    "depth": 4,
    "streak": 0,
    "steps": [],
-   "updated_at": "2026-10-25T04:07:31+00:00"
+   "updated_at": "2026-10-25T23:40:12+00:00"
   },
   "Fable 5.1": {
    "depth": 4,
@@ -88,20 +88,20 @@
    "at": "2026-10-10T13:25:28+00:00"
   }
  ],
- "updated_at": "2026-10-25T20:31:58+00:00",
+ "updated_at": "2026-10-25T23:40:12+00:00",
  "last_step": {
-  "player": "Muse Spark 1.3",
-  "outcome": "draw",
+  "player": "GLM 5.3 Flash",
+  "outcome": "loss",
   "depth": 4,
   "streak": 0,
   "stepped": false,
   "from": 4,
   "to": 4,
-  "tournament": "aichess-0064-20261025-195557",
-  "number": 64,
-  "game": "r1b1",
+  "tournament": "aichess-0066-20261025-231912",
+  "number": 66,
+  "game": "r1b2",
   "color": "white",
-  "termination": "threefold repetition",
-  "at": "2026-10-25T20:31:58+00:00"
+  "termination": "checkmate",
+  "at": "2026-10-25T23:40:12+00:00"
  }
 }
