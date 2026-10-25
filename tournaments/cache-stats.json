@@ -2344,6 +2344,21 @@
      "warm_hit_rate": 0.931
     }
    }
+  },
+  "aichess-0064-20261025-195557": {
+   "number": 64,
+   "players": {
+    "Muse Spark 1.3": {
+     "calls": 37,
+     "input": 506778,
+     "cached": 472819,
+     "output": 243881,
+     "warm_input": 496961,
+     "warm_cached": 466961,
+     "hit_rate": 0.933,
+     "warm_hit_rate": 0.9396
+    }
+   }
   }
  }
 }
