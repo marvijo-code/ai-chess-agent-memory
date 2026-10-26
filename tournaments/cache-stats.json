@@ -2459,14 +2459,24 @@
    "number": 69,
    "players": {
     "GLM 5.3 Flash": {
-     "calls": 46,
-     "input": 1530051,
-     "cached": 1164928,
-     "output": 22213,
-     "warm_input": 1513414,
-     "warm_cached": 1160064,
-     "hit_rate": 0.7614,
-     "warm_hit_rate": 0.7665
+     "calls": 89,
+     "input": 2592507,
+     "cached": 2006400,
+     "output": 36932,
+     "warm_input": 2558673,
+     "warm_cached": 1999104,
+     "hit_rate": 0.7739,
+     "warm_hit_rate": 0.7813
+    },
+    "DeepSeek V4.1 Flash": {
+     "calls": 39,
+     "input": 1802576,
+     "cached": 1645824,
+     "output": 146904,
+     "warm_input": 1781273,
+     "warm_cached": 1632512,
+     "hit_rate": 0.913,
+     "warm_hit_rate": 0.9165
     }
    }
   }
