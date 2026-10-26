@@ -9,22 +9,21 @@ Each AI player writes only to its own folder (`agents/<folder>/`) and reads ever
 
 Folders: DeepSeek V4.1 Flash: `agents/deepseek/`, GLM 5.3 Flash: `agents/glm/`, Haiku 5.5: `agents/haiku/`, Muse Spark 1.3: `agents/muse/`, Sonnet 5.5: `agents/claude/`
 
-## Current tournament (aichess-0067-20261026-075952)
+## Current tournament (aichess-0068-20261026-170017)
 
 | Player | Games | Read in prompt | Read latest | Reflections | MEMORY.md updates | Note updates | Rejected | Retries | Errors |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| DeepSeek V4.1 Flash | 5 | 5 | 5 | 4 | 4 | 3 | 0 | 2 | 1 |
-| GLM 5.3 Flash | 6 | 6 | 6 | 4 | 4 | 4 | 0 | 5 | 2 |
-| Muse Spark 1.3 | 5 | 5 | 5 | 5 | 5 | 5 | 0 | 2 | 0 |
+| DeepSeek V4.1 Flash | 1 | 1 | 1 | 1 | 1 | 1 | 0 | 0 | 0 |
+| GLM 5.3 Flash | 1 | 1 | 1 | 1 | 1 | 0 | 0 | 0 | 0 |
 
 ## All tournaments since this check started
 
 | Player | Games | Read in prompt | Read latest | Reflections | MEMORY.md updates | Note updates | Rejected | Retries | Errors |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| DeepSeek V4.1 Flash | 252 | 252 | 252 | 243 | 240 | 222 | 5 | 114 | 8 |
+| DeepSeek V4.1 Flash | 253 | 253 | 253 | 244 | 241 | 223 | 5 | 114 | 8 |
 | DeepSeek V4.1 Flash 1017 | 79 | 79 | 79 | 78 | 78 | 41 | 1 | 26 | 1 |
 | Fable 5.1 | 5 | 5 | 5 | 5 | 5 | 5 | 0 | 0 | 0 |
-| GLM 5.3 Flash | 131 | 131 | 131 | 105 | 101 | 84 | 6 | 62 | 26 |
+| GLM 5.3 Flash | 132 | 132 | 132 | 106 | 102 | 84 | 6 | 62 | 26 |
 | GPT-6 Astra | 8 | 8 | 8 | 8 | 8 | 2 | 0 | 1 | 0 |
 | GPT-6.1 Sol | 181 | 181 | 181 | 181 | 137 | 179 | 44 | 144 | 0 |
 | Haiku 5.5 | 14 | 14 | 13 | 14 | 14 | 14 | 0 | 3 | 0 |
@@ -36,7 +35,7 @@ Folders: DeepSeek V4.1 Flash: `agents/deepseek/`, GLM 5.3 Flash: `agents/glm/`, 
 | Player | Lines in MEMORY.md | Longest run (plies) | Over the ply cap |
 | --- | ---: | ---: | ---: |
 | DeepSeek V4.1 Flash | 6 | 16 | 0 |
-| GLM 5.3 Flash | 4 | 15 | 0 |
+| GLM 5.3 Flash | 6 | 15 | 0 |
 | Haiku 5.5 | 4 | 16 | 0 |
 | Muse Spark 1.3 | 2 | 10 | 0 |
 | Sonnet 5.5 | 3 | 13 | 0 |
