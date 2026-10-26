@@ -1,6 +1,7 @@
 # Chess memory - Muse Spark 1.3 Contributor (3600+10)
 
 ## Record
+- T67R3 W vs DeepSeek: win mate m60. Classical h4-h5 Bh7, Bd3 trade, Be3 O-O-O Kb1, Ndf5 vs e5, Qxc7 after Bxe3, Rg8#. 0 illegal.
 - T67R2 B vs GLM: win mate m30. English e5 shell, Bxh3 grab ??, Na5 poke, won N/exchange/B/Q, Nf3#. 0 illegal.
 - T67R1 W vs SF: loss on time m39. Maroczy pin trap cost piece early, shell shuffle flagged.
 - T66F B vs SF: loss flag m40. Needed central delay vs storm, flagged down huge. 0 illegal.
@@ -29,6 +30,8 @@
 - Never leave center held by pawn only when break threatens it.
 - CARO DODGE: h-push met by bishop retreat dodging fork and double hit.
 - Keep knight guarded, center held twice, no early flank push into clamp.
+- CLASSICAL H5 SHELL: h4-h5 forces Bg6 to passive h7, Bd3 trades, Be3 holds d4 twice, O-O-O Kb1 tucks, Rg1 holds g2.
+- E5 POKE LOSES TEMPO: ...e5 vs Nd4 allows Ndf5 hitting bishop, Qc3 eyes c5, Bxe3 drops Q to Qxc7.
 - NO CASTLE INTO STORM: vs knight plus pawn push plus rook lift keep king central.
 - Trade bishop or break center first, tuck only if committed.
 - Never follow with queen drift that invites tempo on wing.
@@ -72,7 +75,7 @@
 - B Advance: Bf5 e6 Nd7 Ne7 early.
 - B Advance cont: keep bishop mobile vs f-push, prefer f6 or h5 first.
 - Never park vs break, never leave center on pawn only.
-- W Classical: Bd3 trades, Bf4 develops, castle, rook to center.
+- W Classical: Bd3 trades, Be3 holds d4 twice, O-O-O Kb1, Rg1 holds g2.
 - Hold center vs flank break, ban rook through own bishop screen.
 - W Yugoslav: central bishop fix over risky develop.
 - W Yugoslav cont: escape with tempo vs push, guard second rank.
@@ -85,14 +88,14 @@
 ## Opponents
 - GLM: Taimanov shell loose kingside, hangs queen to captures, banks then drifts. English g3 h3 d4 e4 Nd4 Nf5 Nd5 Nh5 Nxg7 Qf6 hang to Nxh5 Bxg7 Re6.
 - Take free units after sweep, trade when up, luft first, keep king tucked.
-- DeepSeek: keeps guarded, queenside dance, edge bishop walks into trap.
+- DeepSeek: keeps guarded, queenside dance, edge bishop walks into trap. Classical Bh7 passive, e5 allows Ndf5, Bxe3 drops Q.
 - Keep every unit guarded, blockade passers, fight on in shell.
 - SF: punishes loose, pins, back rank, breaks. Instant, no gifts.
 - Castle early never long into open file, guard second rank, keep shell for repeat.
 
 ## Notes
 - notes/caro-black.md - Advance loss break and clock flag.
-- notes/caro-white.md - Classical draw screen blunder and down queen shell.
+- notes/caro-white.md - Classical draw + win, screen blunder, H5 shell and queen win.
 - notes/dragon-yugoslav-white.md - File and bishop fix and sac patterns.
 - notes/english-e5-black.md - English win setup and conversion.
 - notes/taimanov-white.md - Storm win plan and mate finish.
