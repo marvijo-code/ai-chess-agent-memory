@@ -1,22 +1,15 @@
-# Four Knights as Black v SF19 (0-6; opening LEVEL every game, my kills decide)
+# Italian/Four-Knights-ish openings vs SF19 as Black
 
-## T62S1G1 (Semi1 G1), L MATE m25 - queen parked on his rook's file; pawn-guarded queen mate
-Book to 12...g6 (12.Qh5 kick; Bxh2+ refuted by Kxh2, g6 correct). 13.Qg4 13...Re8? passive - let 14.Bxd4/15.f4 build tempi on my coming e-file queen.
-- KILL 1: 15...Qe7? put her ON the e-file; 16.Rae1; 17.Bxf5 17...Bc5?? 'hits the undefended Bd4' while Re1 ALREADY aimed at Qe7 - my in-game note caught Re1's aim ONE PLY AFTER the move: 18.Rxe7 Bxd4+ 19.Kh1 Rxe7 = Q for R+B. RULE: with my queen on a file his rook occupies or reaches in one, SHE moves before ANY other move; sweep HER square vs his sliders every move, quiet included.
-- KILL 2 / MATE: 22...Re5! was right (gxf5 loses to ...Rxe5-class tricks; only 23.g4 held) but 23.fxg6+ Ke8 24.gxh7 Re7?? 25.Qg8#. The h7-PAWN GUARDS g8: my sweep priced h8 promotion (Bf6 covers h8) and never named g8 as a QUEEN LANDING PROTECTED BY HIS PAWN. After gxh7: cover g8 (Rg7-class) BEFORE her landing; a his-pawn in my camp GUARDS its forward diagonals - defended landing pads for his queen.
-- CLOCK: 3:09 (Re5, a real calculation - the one justified think), then 1:50/1:14 while already lost. Lost = 5-15 s.
+## T66R4.1 (Semi1 G1), L MATE m18 - a fork with his defender unlisted; a trade offer he declines
+Line: 1.e4 e5 2.Nf3 Nf6 3.Nc3 Bc5 4.Nxe5 d6 5.Nf3 O-O (10 plies). THE 4th: 4.Nxe5! grabs e5 with tempo back (d6 5.Nf3); the e5-pawn is GONE, so my ...Nxe5 recapture was an illegal ghost (5 illegal tries total).
+- KILL 6...Nxe4?? marked ?: my d6-pawn 'forks' Nc5/Bf4 after 7.Nxe4 d5, but 8.Nxc5! Qd6 9.d4! defends c5 - Qxc5 fails 10.dxc5. A fork only works if BOTH targets cannot be guarded; his extra central pawn supplies the guard. RULE: before a knight-take-on-e4 tactic, list HIS defenders of BOTH fork targets and the pawn recapture chain (the four-knights ...Bb4 line freed c8/king so it leveled there - the DIAGNOSTIC is always 'can he guard one of the two with tempo?').
+- 8...Qd6?? hit the c5-knight through nothing (it was guarded by d4 next move): +9.8 for him, a bishop for a pawn. Losing = quiet trade plans only.
+- 11...Qf4 offered the queen trade; he DECLINED: 12.Qxd5! grabbed more, then 13.Bxf4 took her flat (my Re8+ did not matter, 14.Kxe2). A trade offer is only a trade if he accepts; name what he wins if he does not.
+- 15...g6 with the queen on d5 and his Ng5 coming: 17.Qxf7+! (my h6 lacked the h-file note) Kh8 18.Qh7#. The h6-g6 shell does NOT stop Qf7/Qh7 when his knight/g-pieces own f7-h7 entries - guard f7 and h7 BY NAME before any queen reaches d5.
 
-## T62R3, L MATE m40
-12...cxd5?! +0.9 (his Qxd5 returned it with tempo on loose units). 15...Qe7?? landed on his rook's file: 16.Rxe7 = Q for R. Then Bxh7+ Kxh7, Bxd4, Bxf6 = down Q for R+3P. 'Bc8 guards Rb8' - bishop guards ONLY diagonals: 34.Qxb8. 39...Rd8?? vacated the h-file under his Qg3 aim: 40.Rh4#. Shell m18-m39 held. RULE: while my king sits on the h/g-file under his queen, sweep his ROOK LIFTS every move and never move the last blocker off a file his rook reaches with check.
+## Four Knights v SF (T62S1G1/R3, 0-2) - queen on his rook's file; his PAWN guards g8
+Stored: 4.Bb5 Bb4 5.O-O O-O 6.Nd5 Nxd5 7.exd5 Nd4! 8.Nxd4 exd4 = even; 10.Bd3 his d3-h7 diagonal EXISTS: Kf8 or Ne5-class kick AT ONCE. NEVER 12...c5; 13...bxc6! IS the recapture. v 12.Qh5: ...g6!.
+- T62S1G1: 15...Qe7?? ON his Re1's file = Q for R+B; 24.gxh7 then 25.Qg8# - his h7-PAWN guarded g8; after gxh7 cover g8 (Rg7-class) at once. T62R3: 15...Qe7?? same file; 'Bc8 guards Rb8' lie; 39...Rd8?? vacated the h-file -> 40.Rh4#.
 
-## T61R1, L MATE m28 - HIS capture's victim never named
-12...c5 'second defender' was a FANTASY BOARD: 13.dxc6! ate my Nc6 (bxc6 never listed); the c-passer then ate d7 and c8=B while my tally said even. 27.Bxh6! took a pawn ON MY OWN luft square beside my king - priced defenders, never coverage: 28.Qxg7#. RULES: after HIS capture name the dead unit by square; recount BOTH armies; a passer inside my camp eats SIDEWAYS.
-
-## T60R1, L MATE m13 - threat verified at the WRONG square
-11.Qg4 hit h7; sweep said 'h7 guarded', I played 11...cxd5??; 12.Qh5 kept the SAME d3-h7 diagonal, 13.Qxh7#. RULES: name her landings one regroup away that KEEP the aim; every his slider ALREADY on the ray; queen beside my castled king with a backed slider = ...Kf8 or f5/Ne5-class kick FIRST.
-
-## Older kills (opening level each time)
-- T57SF1: 6...Nxd5! dropped Nc6's guards of e5 AND Bb4 (9.Nxe5!, 14.cxb4); 17...Qe6?? dxe6; lost-king walk died to Qd4+ Qe5# - sweep her ONE-MOVE check squares, not her current ray.
-- T55SF1: 12...Rxe5?? R+P for N; 16...Qxe5?? Bxe5; 22.Bxf6! killed the Qg7# blockader and BECAME g7's guard - only ...gxf6! recaptures.
-- T55R3 DRAW stalemate: 10...Re8?? removed the f8-rook from f7's guards; grind = queens OFF at once, ...h6 luft, king behind my rook. K + one blocked pawn inside his net = STALEMATE (twice). NEVER resign; never swap into K+P. Stored strike 6.Nd5 Nxd5 7.exd5 e4! 8.dxc6 exf3 9.Qxf3 dxc6 = even; KEEP.
-- T53SF1: 8...O-O?? 9.exd5 - my d5-knight had ZERO guards (Qd8 blocked by my own d7-pawn); 15...Rd8 with NO luft -> Qxd8#. Luft before back-rank-heavy moves.
+## Older
+- T55SF1: 12...Rxe5?? R+P for N; 22.Bxf6! only ...gxf6! recaptures. T55R3 DRAW stalemate: grind = queens OFF, ...h6 luft, king behind my rook; K + one blocked pawn inside his net = STALEMATE (twice). T53SF1: 8...O-O?? my d5-knight zero guards, 15...Rd8 no luft -> Qxd8#. Luft before back-rank-heavy moves. NEVER resign; never swap into K+P.
