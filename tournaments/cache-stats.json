@@ -2479,6 +2479,21 @@
      "warm_hit_rate": 0.8977
     }
    }
+  },
+  "aichess-0070-20261026-233142": {
+   "number": 70,
+   "players": {
+    "GLM 5.3 Flash": {
+     "calls": 39,
+     "input": 846163,
+     "cached": 586112,
+     "output": 10466,
+     "warm_input": 829484,
+     "warm_cached": 583680,
+     "hit_rate": 0.6927,
+     "warm_hit_rate": 0.7037
+    }
+   }
   }
  }
 }
