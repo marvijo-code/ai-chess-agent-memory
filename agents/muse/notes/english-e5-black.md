@@ -1,12 +1,12 @@
-# English 1.c4 e5 as Black - wins v DeepSeek T63R1, v GLM T67R2
+# English 1.c4 e5 as Black - wins v DeepSeek T63R1, v GLM T67R2, loss T67 3rd
 
 # T63R1 win v DeepSeek 1017
 - Early: e5/Nc6/Nf6/Bc5/d6/O-O/h6 vs g3/Bg2/Nf3/d3. Bb6 retreat keeps diagonal after Be3. Be6 hits c4. Re8 contests file.
 - Na5 hit c4 twice. e4 hit Nf3/d3. c5 hit Nd4. exd3 forced vs triple hit on e4. Do not hold triple-attacked pawns.
 - After Nd5/Bf5/Nbc7/Nxd5/Nxa8/Nce7/cxd5/Qxa8 White won exchange but N trapped. Ne7 held f5/d5, Q+d5 held escapes, Qxa8 recovered.
 - Middlegame: Bd7 retreat, Qb8/Qc7 hold d6/c5, Ng6/Ne6/Ne5 maneuver, Bg4 pin vs Rd1, Bxh5 took loose h-pawn, Rd8/Rd7 doubled on e7, Rxd6 recapture, Re8+ Kh7 forced, Re6 fxe6 dxe6 Rxd3 won exchange back, Rxg3+ tempo.
-- Endgame: Be8 blockade on e6/e7, Rg5 hit f5, a-passer a2-a1=Q while Be8 still blocked, Rd7/Rxe7 removed last pawn. Q+R mate with Qe1+ Re4+ Qe3+ Rg4+ Qg3+ Rh4#.
-- Clock: 5:11 on Qb8, 2:51 on Bg4, finished 4:37 left vs 30:15. Cap 60 s, routine 10-20 s, up material 5-15 s.
+- Endgame: Be8 blockade on e7/e6, Rg5 hit f5, a-passer a2-a1=Q while Be8 still blocked, Rd7/Rxe7 removed last pawn. Q+R mate with Qe1+ Re4+ Qe3+ Rg4+ Qg3+ Rh4#.
+- Clock: 5:11 on Qb8, 2:51 on Bg4, finished 4:37 left vs 30:15. Cap 60 s, routine 10-20 s, up 5-15 s.
 
 # T67R2 win v GLM 0-1 m30 Nf3#
 - Early: e5/Nc6/Nf6/d6/Be7/O-O/Re8/Be6 vs c4/Nc3/g3/Bg2/d3/Nf3/O-O/h3. Same shell holds e5/d6.
@@ -15,3 +15,8 @@
 - Kill: 20.Nh5?? hung to Nf6 so 20...Nxh5 won N, 21.Nxg7?? hung to Kh8 so 21...Bxg7 kept king safe. 22.Rd1 22...Bxa1 won exchange, 23.Bb2+ 23...Bxb2 24.Qxb2+ Kg8 out of line, 25.Bh3 25...Qxh3 won B, 26...Ng7 saved h5-N before g4, 27.Qf6 27...Re6 hit Q, 28...Rxf6 won Q, 29...Nd4 outpost, 30...Nf3# Q covered f1/h1/h2.
 - Sweep every Nh5/Nxg7/Qf6 landing vs pawn/king guards first; keep Kg8/Bf8 shell, no pawn pushes.
 - Clock: burned 2:38 Bxh3, 2:28 Bf8, 2:52 Na5, 2:30 Re6. Cap 60s, routine 10-20s; long thinks added nothing.
+
+# T67 3rd loss v GLM 1-0 m51 flag
+- Shell to Kh8/Na5-Nc6/h6/Bg4-Be6 level. 17.dxe5 Nh7?! passive to keep d6 invited 18.Nd5 outpost. Fix: Nxe5 at once centralize, never Nh7.
+- Blocker: Nd5 blocked Rd1-Qd7. 22.Nb4 left d-file, Qd7 hung. 22...Bxb4? allowed 23.Rxd7 Bxd7. Move Qd7 off file before blocker leaves.
+- Stayed up after exf4/c6/Bxb4/Bxd7/Nxf4/Nxh3+/Rxc4 but burned Qd7 2:13, Kh8 1:08, h6 3:30, Bg4 4:29, Nh7 4:05 vs 3-10s. Flagged 0:12 vs 20:22. Shell 10-20s cap 60s.
