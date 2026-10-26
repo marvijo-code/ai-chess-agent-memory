@@ -1,8 +1,10 @@
-# Advance Caro as Black - T66R3 loss vs SF19 flag m38
+# Advance Caro as Black - losses vs SF19
+
+# T66R3 loss m38 flag
 
 - Opening (16 plies): 1.e4 c6 2.d4 d5 3.e5 Bf5 4.Be2 e6 5.Nc3 Nd7 6.Nf3 Ne7 7.Nh4 Bg6 8.O-O Nf5
 - Plan was Bxf5 shell + Be7-O-O + c5 vs d4. 9.Nxf5 Bxf5 10.a4 Be7 11.a5 O-O 12.f4 c5 fine until 13.g4!
-- KILL: 13...Bg6 retreat vs g4, then 14.f5! hits e6 and g6 together. 14...exf5 15.gxf5 traps B, 15...Bxf5 16.Rxf5 wins piece (+6). Bg6 had no retreat holding both; Bh5 loses to Bxh5.
+- KILL: 13...Bg6 retreat vs g4, then 14.f5! hits e6 and g6 together. 14...exf5 15.gxf5 traps B, 15...Bxf5 16.Rxf6 wins piece (+6). Bg6 had no retreat holding both; Bh5 loses to Bxh5.
 - Lesson: with Bg6 + e6/d5 chain, f4+g4 means f5 is coming. Never park Bg6. Meet f4 with ...f6 or ...h5 first, or keep Bf5 mobile / trade before g4. Do not play ...c5 that leaves d5 held by e6 only when f5 threatens e6.
 - After loss: Nc6 held d4/e5, Qd7/d8 held d5, Rg7 held f7/h7, Ba7/Bb8 held d4, Kh8/Kg8 tucked. Still +7-8, no counterplay.
 - Clock: burned 3:30 on ...a6, 4:34 on ...Bb4, 4:27 on ...Rc8, 4:11 on ...Bc5, 3:10 on ...Qd7, flagged 1:25. Lost shell = 5-10 s shuffles, invite repeats, save clock. Cap 60s, routine 10-20s.
@@ -15,3 +17,10 @@
 - 25.gxf5 Bxf5 26.Ng5 26...f6 kicked, 27...Bxh3 won pawn, 28...Nxf6 stopped f7, 29.Ne5 29...Bf5 safe by e6, 30.Nxc6?? 30...Rxc6 won N, 31.Qf4?? 31...Qxf4 won Q, then Qxe2/Qxd2/Qxd4/Qxc5/Qxa3/Qxa6.
 - Finish: 39...Rc2 cut rank, 40.Kh1 40...Qa1# back-rank mate.
 - Clock model: 0:40-2:50 moves, finished 20:39 vs 2:25. White burned 7:04 Re2, 9:39 h3, 12:30 g4 + illegal. Keep 10-20s routine, 30-40s captures, hard cap 60s.
+
+# T66F loss vs SF19 m40 flag
+
+- Same h5/Bh7 start to 11...O-O?! (?) vs Ne2/Nf4 plan. Then Nf4 g6 Qc7/Qb6 Nhg5+ Kh8 a4/a5 Qe2/Ng7 Kh1/f6 exf6/Rxf6. Eval crept +0.3 to +3.
+- KILL2: 22.g4 Kg8 23.Rg1 Nf5 24.gxf5 gxf5 25.Ngf3+ Kh8 opened g-file with tempo. Never ...Nf5 with Rg1 live; list gxf5 + checks first.
+- After: Qd7/Qe8/Nd7/Rd8/Bf6 shell held d5/e6 but Qh5/Bg5/Ne5 broke f6, b4?? still won Q for B via Bxh4, then Nxh4+/Neg6+ forced Bxg6/Rxg6. Still lost + forced mate nets.
+- Clock: 2:58 g6, 3:39 Qb6, 2:21 Ng7, 2:23 f6, 3:11 Nf8, 3:01 Kg8, 4:02 Rd8, 3:50 Bf6, 3:07 Bxh4. Flagged 0:40 vs 66min. Down huge = 5-10 s, cap 60 s max even when worse.
