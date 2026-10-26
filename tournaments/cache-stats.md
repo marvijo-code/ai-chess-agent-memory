@@ -7,7 +7,7 @@ Hit rate = cached input tokens / all input tokens of the move requests, read fro
 | Player | Requests | Input tokens | Cached | Hit rate | Warm hit rate |
 | --- | ---: | ---: | ---: | ---: | ---: |
 | DeepSeek V4.1 Flash | 110 | 5577762 | 5100416 | 91.4% | 91.7% |
-| GLM 5.3 Flash | 37 | 1602955 | 1420928 | 88.6% | 89.0% |
+| GLM 5.3 Flash | 66 | 3017151 | 2668864 | 88.5% | 88.9% |
 
 ## All tournaments
 
@@ -16,7 +16,7 @@ Hit rate = cached input tokens / all input tokens of the move requests, read fro
 | DeepSeek V4.1 Flash | 14092 | 322535604 | 250196226 | 77.6% | 77.8% |
 | DeepSeek V4.1 Flash 1017 | 2852 | 141981847 | 125681528 | 88.5% | 88.8% |
 | Fable 5.1 | 179 | 3913645 | 3703873 | 94.6% | 95.5% |
-| GLM 5.3 Flash | 4692 | 142354917 | 112801276 | 79.2% | 79.8% |
+| GLM 5.3 Flash | 4721 | 143769113 | 114049212 | 79.3% | 79.9% |
 | GPT-6 Astra | 456 | 15632539 | 14922624 | 95.5% | 95.9% |
 | GPT-6.1 Sol | 10063 | 311254406 | 290190080 | 93.2% | 93.8% |
 | Haiku 5.5 | 603 | 31298164 | 29862221 | 95.4% | 95.8% |
