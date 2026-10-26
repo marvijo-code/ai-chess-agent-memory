@@ -4,15 +4,19 @@
 3...Bf5 4.Be2 e6 5.Nc3 c5 6.Bb5+ Nc6 7.Bxc6+ bxc6 8.Nge2 Be7. Then take d4, bishop c5/b6, knight e7, castle; c6 guards d5. Plan Bf5-g6, e6, Nd7/c6, c5, Rc8, cxd4.
 BANS: queen d4/d6/b2, bishop g5; with the e5-pawn a knight to f6 throws a knight; no piece d6/f6; no knight c5 while d4/b4; vs b3/Ba3 Bxa3. If Bf5 trades while Ng8 is home, do not castle.
 
+## T69R3 v SF19 (0-1 m29) - Nh6?, c5 break, queen hit
+Book to 9...Qc7 level. 10...c4 11...Nh6? (2:11) 12.Ng3 Bg6 13.Bxh6! gxh6: my knight stood on the c1-h6 bishop's clear diagonal; never a knight on h6 while his dark bishop lives. 15...exf5 16.Nxf5 Bxf5 17.Rxf5 left his rook active.
+19...c5? 20.Qf3 cxd4?? opened f3-a8: 21.Qa8+ Kd7 22.Qd5+ Kc8 23.e6! fxe6 24.Qxe6+ Qd7 25.Qxc4+ Qc7 26.Qe6+ Kd8. With king on c8/d8, every ...c5/...cxd4 must sweep his queen's diagonals to a8/e6 and every rook landing. 27...Qd6?? (6:26) 28.Rd5 hit her; 28...Qd7?? stayed on the d-file: 29.Qxd7#. A queen hit by a rook leaves the file AND rank, and the landing square's guards are checked. Lost position = 5-10 s, not 6:26.
+
 ## T68R2 v SF19 (0-1 m72) - d-file screen, queen fork, clock
-Book to 12...Qd7 was level. 13...d4? (7:47) hit Nc3 and Be3 but abandoned the d5-pawn, Qd7's screen against Rfd1. 14.Nb5; 14...dxe3?? (marked blunder) won Be3 but 15.Rfd1 hit Qd7. 15...Qb7?? walked into 16.Nd6+ forking Ke8 and Qb7; lost queen. A hit queen must leave the file to a square no knight checks her king from (Qe7/Qd8, not b7). Down Q for N: 12:16 on 28...Bg6 and 2-3 min routine moves in a lost position - 5-10 s. 4 invalid tries incl. O-O while Ng8 home: one rejection = different move.
+Book to 12...Qd7 was level. 13...d4? abandoned the d5-pawn, Qd7's screen against Rfd1. 14.Nb5; 14...dxe3?? 15.Rfd1 hit Qd7. 15...Qb7?? walked into 16.Nd6+ forking Ke8/Qb7. A hit queen must leave the file to Qe7/Qd8, not b7. Down Q for N: 12:16 on 28...Bg6 - lost position 5-10 s. 4 invalid tries incl. O-O while Ng8 home.
 
 ## T67R5.1 v SF19 (0-1 m38) - knight route works, ghost queen kills
-Book through 15...Ba5 level. 16...Nf5! 17...Nxe3! 18...Qxe3+! won the e5-pawn; the e7-knight's route to f5 is the plan, keep it. 20...Qd4?? on a GHOST board: the d4-knight had gone to c6 at move 19; 21.Nxd4 won the QUEEN. Then down a queen: 34...Bf6?? attacked Ne5 but 35.Rxc8+ Rxc8 36.Qxc8+ Bd8 37.Qxd8+ Be8 38.Qxe8# - a rook trade on my back rank with his queen on c5. 34...Rxc7 was the move. 2 illegal tries and ~45 min used.
+Book through 15...Ba5 level. 16...Nf5! 17...Nxe3! 18...Qxe3+! won the e5-pawn; the e7-knight's route to f5 is the plan. 20...Qd4?? on a GHOST board: the d4-knight had gone to c6; 21.Nxd4 won my QUEEN. Down a queen: 34...Bf6?? 35.Rxc8+ Rxc8 36.Qxc8+ Bd8 37.Qxd8+ Be8 38.Qxe8# - a rook trade on my back rank with his queen on c5. 34...Rxc7 was the move.
 
 ## Losses (scan misses)
 - T62Final: 16...Bb6?! needed c5; 17...Nc8?? passive; 21...Qb4?? cxb4.
-- T61Final: 16.Ba3! hit Ne7; 16...fxe6?? 17.Rxe6 won the queen while his rook owned the e-file.
+- T61Final: 16.Ba3! hit Ne7; 16...fxe6?? 17.Rxe6 won the queen.
 - T61R3: 18.Rfe1 Qe4 19.Rxe4.
 - T60F: 10...Nf6?? exf6 with e5; 21...Bxg5 Qxg5?? 22.Qxg5.
 
