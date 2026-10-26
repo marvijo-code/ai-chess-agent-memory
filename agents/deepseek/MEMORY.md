@@ -12,13 +12,13 @@ Notes:
 
 ## Rule 0 - board, legality, clock
 - BOARD MAP FROM HIS LAST MOVE BEFORE ANY CAPTURE OR QUEEN MOVE. A piece that moved is not on its old square. T67R5.1 20...Qd4?? was played on a ghost board - the d4-knight had gone to c6 at move 19; 21.Nxd4 won my QUEEN and turned -4 into +9.7.
-- 3 rejected replies on one move = forfeit. Walk piece, actual square, occupant, path, my own blockers. One rejection = different piece/idea. Castling: king/rook unmoved, f8/g8 empty, king not in check or through attacked square. T67R5.1 two rejected tries (...Bf6, ...Bb5) on long thinks.
+- 3 rejected replies on one move = forfeit. Walk piece, actual square, occupant, path, my own blockers. One rejection = different piece/idea. Castling: king/rook unmoved, f8/g8 empty, king not in check or through attacked square. T68R2 tried O-O with Ng8 still home (4 invalid tries); one rejection = change the move.
 - His last move first, then my destination: 0 guards + his capture = gift. Quiets/retreats same sweep.
-- CLOCK: routine 10-15 s, cap 30; up material 5-10; under 15 min 5-10; under 5 min 3-5; from move 20 never over 60. vs SF 10-15 routine, lost position 5-10. Long think never replaces the destination list. T67R5.1 burned ~45 min in 38 moves (3:04 ...Qc7, 3:07 ...cxd4, 3:15 ...Bxb3, 3:25 ...Bd4, 7:22 ...Bxh4 = winning a pawn) - book/structure moves are 5-15 s, the sweep is the spend. T66R5.2 up N+pawns wasted 2-5 min quiet. T68R1 up Q for B from m13, +Q+Q+R by m28, then 10:50 on 32.Rd8 and 6:18 on 35.Qd8+ = FLAG at 1:40. With a queen+ lead every move is 5-10 s; forcing checks first, no multi-minute plan.
+- CLOCK: routine 10-15 s, cap 30; up material 5-10; under 15 min 5-10; under 5 min 3-5; from move 20 never over 60. vs SF 10-15 routine, lost position 5-10. Long think never replaces the destination list. T67R5.1 burned ~45 min in 38 moves (3:04 ...Qc7, 3:07 ...cxd4, 3:15 ...Bxb3, 3:25 ...Bd4, 7:22 ...Bxh4 = winning a pawn) - book/structure moves are 5-15 s, the sweep is the spend. T66R5.2 up N+pawns wasted 2-5 min quiet. T68R1 up Q for B from m13, +Q+Q+R by m28, then 10:50 on 32.Rd8 and 6:18 on 35.Qd8+ = FLAG at 1:40. With a queen+ lead every move is 5-10 s; forcing checks first, no multi-minute plan. T68R2 down Q for N spent 12:16 on 28...Bg6 - lost position 5-10 s.
 
 ## Rule 1 - destination sweep
 - LIST HIS PAWN CAPTURES VS EVERY LANDING, KNIGHTS INCLUDED. White e5-pawn owns f6/d6; g4-pawn f5/h5. T61R1 25...Nd5?? e4; T66R2 16...Nf5?? gxf5; T62R2 14...Qd6?? exd6.
-- MY OWN PIECE ON A LINE IS MY ONLY SCREEN; moving it exposes. T60R2 14.Bxa7?? ...Rxd2; T62R1 12.Bd4??; T67R3 19...Bxe3?? left Qc3 v Qc7 on the c-file, 20.Qxc7 won my queen.
+- MY OWN PIECE ON A LINE IS MY ONLY SCREEN; moving it exposes. T60R2 14.Bxa7?? ...Rxd2; T62R1 12.Bd4??; T67R3 19...Bxe3?? left Qc3 v Qc7 on the c-file, 20.Qxc7 won my queen. T68R2 the d5-pawn was Qd7's screen against Rfd1; 13...d4/14...dxe3 cleared the d-file, 15.Rfd1 hit her, 15...Qb7?? 16.Nd6+ forked Ke8/Qb7.
 - TWO LOOSE UNITS IN A ROW THROW A WON OPENING. Every developing move: list my undefended pieces and his queen/rook/bishop reaching them in one.
 - HITTING HIS QUEEN IS NOT AN ANSWER WHEN IT OPENS A CHECK.
 - A PAWN THAT LEAVES ABANDONS ITS POST. Caro: never ...f6 while king e8/uncastled and e6 has no PIECE guard. QGD c6 guards d5: ...c5 only with a piece guard on d5. Pinned pawn is no guard.
@@ -46,7 +46,7 @@ Notes:
 - QUEEN ON THE LONG DIAGONAL FACING HIS QUEEN/BISHOP IS GIFT. T66R4.2 31.Qf4?? Qxf4.
 - QUEEN NEVER ON AN ENEMY PAWN'S CAPTURE SQUARE, A BISHOP DIAGONAL OR A KNIGHT JUMP SQUARE - and re-read his piece list first. T67R5.1 20...Qd4?? c6xd4 (ghost board). T62Final 21...Qb4?? cxb4.
 - TWO QUEENS FACING ON A FILE/RANK WITH MY PIECE BETWEEN: that piece is FROZEN - its 'trading' capture loses my queen (T67R3).
-- HIT -> she moves that move, off every attacker ray. A bishop landing with tempo on her = she moves.
+- HIT -> she moves that move, off every attacker ray. A bishop landing with tempo on her = she moves. T68R2 Qd7 hit by Rfd1; Qb7?? walked into Nd6+.
 - QUEEN HIT BY A ROOK ALONG FILE/RANK MUST LEAVE THAT FILE/RANK. T61R3 18...Qe4 under Re1; T62R1 12...Rd8 hit Qd2.
 - EVEN A CHECK PASSES THE ROOK-LINE SWEEP: T66R3 26...Qg5+?? 27.Rxg5+.
 - PAWN-SQUARE LEAK BOTH WAYS: GLM five times; mine T62Final, T67R2 (...Qxb2 safe only because Rb8 backed it). Before every queen move list enemy pawns on ranks 3-6, both forward capture squares, and name the recapturer.
@@ -60,7 +60,7 @@ Notes:
 
 ## Rule 4 - material, conversion, clock
 - MATERIAL FROM THE BOARD EVERY MOVE; rescan after every trade. No grabs when level or behind. Level material with a broken king is lost vs SF.
-- DOWN A QUEEN VS SF: no rescue plan - 5-10 s defensive moves, every unit guarded, and keep the first rank solid, the mate usually comes from there (T67R5.1 m38).
+- DOWN A QUEEN VS SF: no rescue plan - 5-10 s defensive moves, every unit guarded, and keep the first rank solid, the mate usually comes from there (T67R5.1 m38). T68R2 12:16 on ...Bg6 down Q for N = wasted clock.
 - DOWN Q FOR R: 2N v R+pawns is NOT a fortress - his rook and king pick the knights one at a time (T67R3). Keep knights guarded and off his king's/rook's approach squares.
 - UP MATERIAL IS A CLOCK PROBLEM: 5-10 s, consolidate, keep units off his pawn squares. T61R2, T62R2, T62R4.2, T66R5.2 all wasted minutes up material.
 - UP A QUEEN+ IS A MATE CLOCK: after each capture recount, then play the first forcing check/ladder; 5-10 s, cap 20. If no mate in 10 s, repeat a safe check or improve one piece. A long think while up a queen is the only way to lose (T68R1: +Q for B, then +Q+Q+R, flagged).
@@ -69,7 +69,7 @@ Notes:
 - AFTER A QUEEN TRADE RECOUNT: if the recapture chain loses a queen, don't start it.
 
 ## Openings
-- Caro Advance B: 1.e4 c6 2.d4 d5 3.e5 Bf5 4.Be2 e6 5.Nc3 c5 6.Bb5+ Nc6 7.Bxc6+ bxc6 8.Nge2 Be7 (16 plies); then take d4, bishop c5/b6, knight e7, castle. T66R1 v Muse level. T60F 10...Nf6?? exf6 (the e5-pawn owns f6). T67R5.1 v SF: book level to move 15 (...Qc7, ...cxd4, ...Bg6, ...Ba5); 12...Bb4? and 13...Ne7?! were the first soft moves, but 16...Nf5! 17...Nxe3! 18...Qxe3+! won a pawn - the e7-knight's route to f5 is the plan, keep it; then 20...Qd4?? lost the queen to a ghost board. Never ...f6 while e6 has no PIECE guard; never recapture ...Bxf5 on an open f-file; ...hxg6 not ...Nxg6.
+- Caro Advance B: 1.e4 c6 2.d4 d5 3.e5 Bf5 4.Be2 e6 5.Nc3 c5 6.Bb5+ Nc6 7.Bxc6+ bxc6 8.Nge2 Be7 (16 plies); then take d4, bishop c5/b6, knight e7, castle. T66R1 v Muse level. T60F 10...Nf6?? exf6 (the e5-pawn owns f6). T67R5.1 v SF: book level to move 15 (...Qc7, ...cxd4, ...Bg6, ...Ba5); 12...Bb4? and 13...Ne7?! were the first soft moves, but 16...Nf5! 17...Nxe3! 18...Qxe3+! won a pawn - the e7-knight's route to f5 is the plan, keep it; then 20...Qd4?? lost the queen to a ghost board. T68R2 v SF: 12...Qd7 was level; 13...d4? cleared the d-file screen of Qd7, 14.Nb5, 14...dxe3?? 15.Rfd1 hit her, 15...Qb7?? 16.Nd6+ forked Ke8/Qb7. Never ...d4/...dxe3 while his Rfd1 can enter; a hit queen goes to Qe7/Qd8, not b7. Never ...f6 while e6 has no PIECE guard; never recapture ...Bxf5 on an open f-file; ...hxg6 not ...Nxg6.
 - Caro Classical 3.Nc3 B (T67R3 L m60; T67R4.2 W m47): trade on e4, develop Bf5; meet h4-h5 with h6 and Bh7; then e6, Nf6, Be7, O-O, later Nbd7, Qc7, c5. T67R3: 17...e5?? kicked a defended Nd4; 19...Bxe3?? cleared the c-file (20.Qxc7). T67R4.2: keep the queen on b6/c7, not on b5/b4/a5. Down Q for R, 2N v R+pawns is lost. Structure moves 5-15 s.
 - English as Black (reversed QGD): 1.c4 Nf6 2.Nc3 e6 3.g3 d5 4.cxd5 exd5 5.Nf3 Be7 6.Bg2 O-O 7.O-O c6 8.d3 (15 plies); then ...Bf5/...Nbd7/...Qb6/...Re8. ...c5 only when d5 has a PIECE guard. BANS: no knight on the e4-pawn's d5/f5, no queen on d7 or the c6-pawn, ...Na4?? bxa4, ...Bxa4?? Rxa4, ...Bd6?? Nf5. T66R5.2: 12.Ne4?? dxe4! dxe4 Nxe4 won a knight; 14...Qxd4 traded queens up; ...c5 kicked Nd4; ...Nb5#.
 - Ruy Lopez as White, Classical 5...Bc5: 1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Bc5 6.c3 O-O 7.Re1 d6 8.h3 (15 plies). Build ...Be6, d4, exd4 cxd4, ...Bb6, Nc3; Bg5 h6 Bxf6 Qxf6; Nd5 Qe6, Nxb6 cxb6, d5! forks Qe6/Nc6. T61S2G1 16...Ne5?? 17.dxe6 won a queen. T62R2 14...Qd6?? on my e5-pawn. T68R1 v GLM: 11...Qd7 12.d5! hit Nc6+Be6; 12...Ne5?? vacated c6, opened a4-d7, 13.Bxd7 won queen for B. Then convert 5-10 s, not 10-min plans. Chigorin 5...Be7: bishop b3, d6, castle, Na5/Bc2; keep the c1-rook, Be3 not Bd2; no piece on the g6-pawn square.
