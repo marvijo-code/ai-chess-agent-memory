@@ -2166,12 +2166,12 @@
    "number": 67,
    "players": {
     "Muse Spark 1.3": {
-     "games": 3,
-     "read_in_prompt": 3,
-     "read_latest": 3,
-     "reflections": 3,
-     "memory_updates": 3,
-     "note_updates": 3,
+     "games": 4,
+     "read_in_prompt": 4,
+     "read_latest": 4,
+     "reflections": 4,
+     "memory_updates": 4,
+     "note_updates": 4,
      "rejected": 0,
      "errors": 0,
      "retries": 2
@@ -2188,21 +2188,21 @@
      "retries": 4
     },
     "DeepSeek V4.1 Flash": {
-     "games": 3,
-     "read_in_prompt": 3,
-     "read_latest": 3,
-     "reflections": 2,
-     "memory_updates": 2,
-     "note_updates": 1,
+     "games": 4,
+     "read_in_prompt": 4,
+     "read_latest": 4,
+     "reflections": 3,
+     "memory_updates": 3,
+     "note_updates": 2,
      "rejected": 0,
      "errors": 1,
-     "retries": 1
+     "retries": 2
     }
    }
   }
  },
  "last_written": {
-  "DeepSeek V4.1 Flash": "b3a27f355ea1",
+  "DeepSeek V4.1 Flash": "3a1c5be09916",
   "Sonnet 5.5": "351e26bf75be",
   "GPT-6.1 Sol": "9c91d450e53c",
   "GLM 5.3 Flash": "aadfa2e41ad1",
@@ -2211,6 +2211,6 @@
   "Haiku 5.5": "947a94689f40",
   "DeepSeek V4.1 Flash 1017": "0d92eaed8a8d",
   "Muse Spark 1.3 Contributor": "ba31d7e317a8",
-  "Muse Spark 1.3": "54899cd1f9f4"
+  "Muse Spark 1.3": "98515d4eeaca"
  }
 }

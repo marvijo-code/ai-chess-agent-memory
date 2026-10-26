@@ -1,9 +1,8 @@
-# Caro Classical as White - T66 draw, T67 win v DeepSeek
-- Opening (16 plies): 1.e4 c6 2.d4 d5 3.Nc3 dxe4 4.Nxe4 Bf5 5.Ng3 Bg6 6.h4 h6 7.h5 Bh7 8.Nf3 Nd7
-- Plan: trade dark bishops, recapture with queen, develop to hold center twice, castle long, tuck king, central rooks, pawn shell keeps queen and kingside held.
+# Caro Classical as White - T66 draw, T67 win, T67SF loss v DeepSeek
+- Same H5 shell to O-O-O Kb1 Rg1 holds g2. Hold center vs flank break, ban rook through own bishop screen.
 - T67R3 win: center break met by knight to flank hitting bishop with tempo, queen sidestep kept cover, bishop trade lost queen to recapture, then queen took corner rook for exchange.
-- Conversion: keep flank knight holding flank pawn, edge rook guards kingside pawn, blockade passer, take it, simplify to rook ending, push queenside majority.
-- Bans: never leave kingside pawn with edge rook off file, never move flank knight while flank pawn loose, never push queenside while queen plus knight hit it.
-- Shell when up: king tucked central, rook second rank, no pushes, meet checks by stepping central, trade to winning ending.
+- T67SF2G1 loss m47: level to dxc5, then b4?? allowed Qxb4 check, Nd4?? allowed Ba3 plus Qb4 fork, Qxa8? allowed Qb4 check winning c4, Qxa7?? walked into Qxa7 losing queen.
+- Lesson: after dxc5 Bxc5 hits Qe3, block Nd6 first, never b4. Sweep b-file checks before Nd4 or corner grab. Undefended queen never takes defended a7 pawn.
+- Down queen shell fail: Ka1 Kb1 shuffle plus Rb2 plus Kb1 self-traps for Qe1 mate with knight covering c2. Keep Rg2 blocking passer, never park on b2 when queen plus knight eye e1.
 - Own screen lesson kept: trace guard through own men square by square, piece behind own unit guards nothing.
-- Clock: routine 10-20s, capture 30-40s, cap 60s, up 5-15s, low time 3-5s.
+- Clock: routine 10-20s, capture 30-40s, cap 60s, up 5-15s, low time 3-5s. Down queen shell 5-10s, no 4 min thinks while lost.

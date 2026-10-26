@@ -1,9 +1,10 @@
 # Chess memory - Muse Spark 1.3 Contributor (3600+10)
 
 ## Record
+- T67SF2G1 W vs DeepSeek: loss mate m47. Classical shell level to dxc5, b4?? Qxb4+, Nd4?? Ba3, Qxa8? Qb4+, Qxa7?? Qxa7 dropped Q, Rb2+Kb1 shell mated Qe1#. 0 illegal.
 - T67R3 W vs DeepSeek: win mate m60. Classical h4-h5 Bh7, Bd3 trade, Be3 O-O-O Kb1, Ndf5 vs e5, Qxc7 after Bxe3, Rg8#. 0 illegal.
 - T67R2 B vs GLM: win mate m30. English e5 shell, Bxh3 grab ??, Na5 poke, won N/exchange/B/Q, Nf3#. 0 illegal.
-- T67R1 W vs SF: loss on time m39. Maroczy pin trap cost piece early, shell shuffle flagged.
+- T67R1 W vs SF: loss on time m39. Maroczy pin trap dropped piece early, shell shuffle flagged.
 - T66F B vs SF: loss flag m40. Needed central delay vs storm, flagged down huge. 0 illegal.
 - T66SF2G1 W vs DeepSeek: win mate m40. Took loose pawn, trapped edge bishop, finished.
 - T66R3 B vs SF: loss flag m38. Bishop died to pawn break, lost piece, flagged.
@@ -31,6 +32,7 @@
 - CARO DODGE: h-push met by bishop retreat dodging fork and double hit.
 - Keep knight guarded, center held twice, no early flank push into clamp.
 - CLASSICAL H5 SHELL: h4-h5 forces Bg6 to passive h7, Bd3 trades, Be3 holds d4 twice, O-O-O Kb1 tucks, Rg1 holds g2.
+- Hold center vs flank break, ban rook through own bishop screen.
 - E5 POKE LOSES TEMPO: ...e5 vs Nd4 allows Ndf5 hitting bishop, Qc3 eyes c5, Bxe3 drops Q to Qxc7.
 - NO CASTLE INTO STORM: vs knight plus pawn push plus rook lift keep king central.
 - Trade bishop or break center first, tuck only if committed.
@@ -47,12 +49,17 @@
 - Keep king central, contest file first, need second rank twice guarded.
 - QUEEN ALONE DOES NOT HOLD: king-only guard loses to sac plus tempo.
 - Count rook sac and king step and pawn push ideas before queen move.
+- QXA7 POISON: undefended queen never takes defended pawn. Qxa7 met Qxa7. List pawn guards before queen grab.
+- CORNER GRAB OPENS CHECK: Qxa8 allowed Qb4+ winning c4. Checks first before far queen sortie with king on b-file.
+- DXC5 OPENS BXC5 ON QUEEN: after dxc5 Bxc5 hits Qe3. Block Nd6 first, never b4 allowing Qxb4+ check.
+- ND4 BLOCK INVITES BA3: Nd4 block allows Ba3 plus Qb4+ fork. Prefer Nc6 hitting queen, sweep b-file checks.
+- RB2 KB1 SELF-MATE: Rb2 blocks king for Qe1 mate with Nd4 covering c2. Down queen keep Rg2 blocking passer, never park on b2 when Q plus N eye e1.
 - ENGLISH BXH3 SUSPECT: wins h-pawn but flagged ??, costs dark bishop + Bf8 tempo. Only with Re8/d6/e5 held.
 - NA5 POKE WINS TEMPO: Na5 hits loose c4 forcing b3, Nc6 returns guarded. exd4 opens e-file hitting Nc3.
 - RE6 LIFT HOLDS: Re6 holds d6/e7 eyes e4, answer Nf4 hit with Re8, Kh8/Qd7 shell, Nd4 outpost sets Nf3 mate with Q cover.
 - STORM PLAN: gain space, open file with tempo, double queen, mate with rook cover.
 - Keep king off open file first, do not push break before file idea ready.
-- TRAPPED CORNER KNIGHT: after exchange knight trapped, hold escapes, recover.
+- TRAPPED CORNER KNIGHT: after exchange knight trapped, hold exits, recover.
 - Centralize, cover exits, take it.
 - FREE UNIT FIRST THEN CONSOLIDATE: take only after sweep, recount, rescan loose.
 - UP EXCHANGE FINISH: win knight hitting queen, then queen takes to squeeze.
@@ -62,7 +69,7 @@
 - DOWN HUGE MODEL: blockade passer, king holds pawns, invite checks for repeat.
 - Same shell repeat shuttle, SF repeats when nothing to push.
 - LOST SHELL CLOCK: down huge shuffle 5-10 sec, hard cap 60, never long think.
-- Burned minutes while losing then flagged twice. Save clock, invite repeats.
+- Burned minutes while losing then flagged twice. Save clock, invite repeats. No 4 min thinks while down queen.
 - MATERIAL FROM BOARD EVERY move, recount guards, equal trades preserve deficit.
 - CLOCK: routine 10-20 sec, capture 30-40, cap 60, up 5-15, low time 3-5.
 - Time goes on destination list, never narrative.
@@ -88,14 +95,14 @@
 ## Opponents
 - GLM: Taimanov shell loose kingside, hangs queen to captures, banks then drifts. English g3 h3 d4 e4 Nd4 Nf5 Nd5 Nh5 Nxg7 Qf6 hang to Nxh5 Bxg7 Re6.
 - Take free units after sweep, trade when up, luft first, keep king tucked.
-- DeepSeek: keeps guarded, queenside dance, edge bishop walks into trap. Classical Bh7 passive, e5 allows Ndf5, Bxe3 drops Q.
-- Keep every unit guarded, blockade passers, fight on in shell.
+- DeepSeek: keeps guarded, queenside dance, edge bishop walks into trap. Classical Bh7 passive, e5 allows Ndf5, Bxe3 drops Q. Punishes Qxa8 Qxa7 with Qb4+ check, converts Q plus N with Qe1 mate.
+- Keep every unit guarded, blockade passers, fight on in shell. Sweep checks before corner queen grabs, never Rb2 plus Kb1 vs Q plus N.
 - SF: punishes loose, pins, back rank, breaks. Instant, no gifts.
 - Castle early never long into open file, guard second rank, keep shell for repeat.
 
 ## Notes
 - notes/caro-black.md - Advance loss break and clock flag.
-- notes/caro-white.md - Classical draw + win, screen blunder, H5 shell and queen win.
+- notes/caro-white.md - Classical draw win loss, H5 shell, queen grab poison and Rb2 mate.
 - notes/dragon-yugoslav-white.md - File and bishop fix and sac patterns.
 - notes/english-e5-black.md - English win setup and conversion.
 - notes/taimanov-white.md - Storm win plan and mate finish.
