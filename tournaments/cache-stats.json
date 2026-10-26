@@ -2364,24 +2364,24 @@
    "number": 66,
    "players": {
     "Muse Spark 1.3": {
-     "calls": 129,
-     "input": 2369090,
-     "cached": 2269997,
-     "output": 1020004,
-     "warm_input": 2321658,
-     "warm_cached": 2240805,
-     "hit_rate": 0.9582,
-     "warm_hit_rate": 0.9652
+     "calls": 161,
+     "input": 3016967,
+     "cached": 2892365,
+     "output": 1296143,
+     "warm_input": 2969535,
+     "warm_cached": 2863173,
+     "hit_rate": 0.9587,
+     "warm_hit_rate": 0.9642
     },
     "DeepSeek V4.1 Flash": {
-     "calls": 149,
-     "input": 8007034,
-     "cached": 7215744,
-     "output": 1155245,
-     "warm_input": 7926920,
-     "warm_cached": 7163520,
-     "hit_rate": 0.9012,
-     "warm_hit_rate": 0.9037
+     "calls": 181,
+     "input": 9628448,
+     "cached": 8667776,
+     "output": 1518215,
+     "warm_input": 9548334,
+     "warm_cached": 8615552,
+     "hit_rate": 0.9002,
+     "warm_hit_rate": 0.9023
     },
     "GLM 5.3 Flash": {
      "calls": 100,

@@ -1,7 +1,8 @@
 # Chess memory - Muse Spark 1.3 Contributor (3600+10)
 
 ## Record
-- T66R3 B v Stockfish 19: L 0-1 m38 flag. Advance Caro Bf5/e6/Nd7/Ne7/Bg6/Nf5/Bxf5/Be7/O-O/c5. 13.g4 Bg6 14.f5! exf5 15.gxf5 Bxf5 16.Rxf5 won piece. Down +7-8 flagged after 2-4 min defends. 0 illegal.
+- T66SF2G1 B v DeepSeek V4.1 Flash: W 0-1 m40 Qa1#. Advance Caro Bf5/e6, h5/Bh7 dodge, Bxb4/a5/Qc7 hold, Rc7/Ra7 won Ba6, Rxc6/Qxf4 finish.
+- T66R3 B v Stockfish 19: L 0-1 m38 flag. Advance Caro Bf5/e6/Nd7/Ne7/Bg6/Nf5/Bxf5/Be7/O-O/c5. 13.g4 Bg6 14.f5! exf5 15.gxf5 Bxf5 won piece. Down +7-8 flagged after 2-4 min defends. 0 illegal.
 - T66R2 W v GLM 5.3 Flash: W 1-0 m17 Qxh7#. Taimanov. g4/h4/g5 break, hxg5+ opened h-file, Qh2 doubled, Bxg5 left N alone, mate covered by Rh1.
 - T66R1 W v DeepSeek V4.1 Flash: D 1/2-1/2 m67 flag draw. Caro. 24.Re4?? Qxc4 dropped Q through own Bd4 screen. Held down Q 40+ moves to RR vs bare K flag.
 - T64R1 W v Stockfish 19: D 1/2-1/2 m37 threefold. Yugoslav. 11.Bd4 over Bc4?, 12.Bc5! vs e5, 13.Ba3? Qb6, 14.Rb1?? Nxc3 e4! Bxf8 Bxc3+ bxc3 Qxb1+.
@@ -14,6 +15,10 @@
 - MOVER ABANDONS A GUARD: name what left and who hits it now. Do not hold triple-attacked pawn with loose pieces.
 - OWN SCREEN KILLS BATTERIES: trace guard through own men square by square. A piece behind own bishop/pawn/knight guards nothing. Same as Nd2 blocks Qd1-d3, Be3 blocks Re1-e4.
 - ADVANCE Bg6 DIES TO g4/f5: Bg6 + e6/d5/c6 chain, White f4/g4 then f5 hits e6+g6 together. exf5 gxf5 traps B, Bxf5 Rxf5 wins piece. Before ...Nf5/Bg6/...c5 with f4 on board prefer ...f6/...h5 or keep Bf5 mobile; never park Bg6 vs coming f5, never ...c5 that leaves d5 held by e6 only.
+- CARO ADVANCE h5/Bh7 DODGE: h5 met b4/g4 idea, Bh7 dodged Nh4 fork and f5 double-hit. Keep Nf5/Bg6 guarded, d5 x2, no early ...c5 into clamp.
+- CARO ADVANCE Bxb4 PUNISH: b4/c4 push left b-pawn loose, Bxb4 free with a5+Qc7 hold. Kept d5 x2 throughout, never ...c5 into clamp.
+- BA6 TRAP: Ba6 hit Rc8, Rc7 stepped off, Ra7 won Ba6. b6/b5 held c6/d5, Qb8/Rc7 cover escapes.
+- UP EXCHANGE FINISH: Rxc6 won N hitting Q, then Qxf4 Qxf3 Qxe2 Qxd2 Qxc5 to Qa1# squeeze. Rc2 cut rank, avoid stalemate.
 - CARO Qc4 DANCE IS LOOSE: keep Q off c4 while Qb6/Qb4/Be7 live. Meet c5 with guards on d4, no Rab1/Qe3 drift.
 - YUGOSLAV d5 BREAK + B-FILE RULE: after exd5 Nxd5 Nxc6 Black plays bxc6 to keep d5 and open b-file. Bd4 guards c3 and is fix over Bc4. After e5 Bc5 escapes with tempo on f8. BANS after bxc6: Bc4, b3, O-O-O, Ba3, Rb1. Before Ba3/Rb1 list Nxc3 plus e4 opening Bg7 to c3, Qb6/Rb8 hits on b2, and Bxc3+ bxc3 Qxb1+ idea. Rb1 on b-file invites Qxb1+.
 - Nxc3 + e4 PATTERN: Qxc3 is right recapture but e4 opens g7-c3 and hits f3/d3. Do not assume consolidation; after e4 keep f3 covered, expect Bxc3+ sac, keep rook off b1.
@@ -39,7 +44,7 @@
 
 ## Opponents
 - GLM 5.3 Flash: Taimanov e6/a6/b5/Bb7/Nf6/Be7/O-O/Rc8, kingside h6/Kh8/Nh7/Bxg5 loose. English g3. Hangs queen/rooks to plain captures, 1 illegal, 10-90 s thinks, banks clock then drifts. Take free units after sweep, trade queens when up, luft first. Never push rim knight to h4 without exits.
-- DeepSeek V4.1 Flash 1017: English g3/Bg2/Nf3/d3/Be3/Qd2/Rfe1, queenside N play, e4/e5 breaks, f4/h4/h5 pushes. Caro Bf5/Bg6/Bh7/Nd7/e6/Ngf6/Be7/O-O plus c5, Qb6/Qb4/Qc7/Qc5 dance; converts Q-up but flags low. Keep every unit guarded, blockade passers. Fight on down material, keep shell, force moves.
+- DeepSeek V4.1 Flash 1017: English g3/Bg2/Nf3/d3/Be3/Qd2/Rfe1, queenside N play, e5/e5 breaks, f4/h4/h5 pushes. Caro Bf5/Bg6/Bh7/Nd7/e6/Ngf6/Be7/O-O plus c5, Qb6/Qb4/Qc7/Qc5 dance; b4/c4 leaves b-pawn loose, Ba6 walks into Rc7/Ra7, Nxc6?? hangs to Rxc6 hitting Q. Converts Q-up but flags low. Keep every unit guarded, blockade passers. Fight on down material, keep shell, force moves.
 - Stockfish 19: punished 11.Bc4 with Nxe3/Rb8/Qa5/Qxc3, O-O-O with Bf5/Qc7/Rfb8/Rxb2+, Ba3/Rb1 with Nxc3/e4/Bxc3+/Qxb1+. Advance: f4/g4/f5! kills Bg6/e6, gxf5 wins B, Rxf5 wins R. Plays bxc6 to keep d5 and open b-file, e5+e4 to open Bg7. No gifts, castle early but never long into open b-file, guard e3/b2/c2. Down huge keep Bc2 + Kf2/Kg3 shell for repeat.
 
 ## Notes
