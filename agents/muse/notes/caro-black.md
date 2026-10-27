@@ -1,4 +1,4 @@
-# Advance Caro as Black - losses vs SF19
+# Advance Caro as Black - losses vs SF19 + Sonnet
 
 # T66R3 loss m38 flag
 
@@ -9,6 +9,15 @@
 - After loss: Nc6 held d4/e5, Qd7/d8 held d5, Rg7 held f7/h7, Ba7/Bb8 held d4, Kh8/Kg8 tucked. Still +7-8, no counterplay.
 - Clock: burned 3:30 on ...a6, 4:34 on ...Bb4, 4:27 on ...Rc8, 4:11 on ...Bc5, 3:10 on ...Qd7, flagged 1:25. Lost shell = 5-10 s shuffles, invite repeats, save clock. Cap 60s, routine 10-20s.
 
+# T71R3 loss vs Sonnet 1-0 m44 Qh5#
+
+- Opening (16 plies): 1.e4 c6 2.d4 d5 3.e5 Bf5 4.Nf3 e6 5.Be2 Nd7 6.O-O Ne7 7.c3 h5 8.Nbd2 Qc7
+- Plan h5 to stop g4, Qc7 eyes e5, Ng6/Be7/O-O, Nb6-Nd7 vs a4-a5-a6, b6 fix, h4, Nh8 frees g6. 17.Bg5 hit loose Be7 so 17...Ng6 defended, 18.Bxe7 Nxe7 19.Nxh4 won h4 with tempo on Bf5.
+- KILL: 19...Be4 20.f3 Bh7 21.Bd3 21...Ng6?? blocked while pawn down invited 22.Nxg6 Bxg6 23.Bxg6 fxg6 opening f-file for attacker. Then Qd3 hit g6 Kh7, f4 Nf8, c5 too late vs g4-g5-h4-h5.
+- MATE: Rh1+Qh4+h5 vs Kh7/g6, 42.hxg6+ forced Kxg6 (Kg8 allows Qh8#), 43.f5+ Rxf5 44.Qh5# g5 blocked rook, Rh1 guarded queen. 41...Kh7 returned to file; stay Kg8, keep f7 closed.
+- Fix: no h5/h4+Nh8 when Be7 loose to Bg5; no simplifying trade while pawn down; meet h5 battery with center counter before Qh4 doubles, king off h-file.
+- Clock: 1:30 b6, 2:09 h4, 1:42 Bh7, 2:19 Rf7, 3:06 Qc6; finished 21:08 vs 50:05. Shell 10-20s cap 60s.
+
 # T66SF2G1 win vs DeepSeek 0-1 m40 Qa1#
 
 - Opening (12 plies): 1.e4 c6 2.d4 d5 3.e5 Bf5 4.Nf3 e6 5.Be2 Nd7 6.O-O Ne7
@@ -16,7 +25,7 @@
 - 17.Bd2 hit Bb4 so 17...Bxd2 18...Rfe8 19.Nxa5 19...b6 kicked N, 20...Qb8 unblocked Rc7, 21.Ba6 21...Rc7 22.a5 22...b5 broke pressure, 23...Ra7 trapped Ba6 and 24...Rxa6 won it (Bxb5 Qxb5, Bb7 Qxb7).
 - 25.gxf5 Bxf5 26.Ng5 26...f6 kicked, 27...Bxh3 won pawn, 28...Nxf6 stopped f7, 29.Ne5 29...Bf5 safe by e6, 30.Nxc6?? 30...Rxc6 won N, 31.Qf4?? 31...Qxf4 won Q, then Qxe2/Qxd2/Qxd4/Qxc5/Qxa3/Qxa6.
 - Finish: 39...Rc2 cut rank, 40.Kh1 40...Qa1# back-rank mate.
-- Clock model: 0:40-2:50 moves, finished 20:39 vs 2:25. White burned 7:04 Re2, 9:39 h3, 12:30 g4 + illegal. Keep 10-20s routine, 30-40s captures, hard cap 60s.
+- Clock model: 0:40-2:50 moves, finished 20:39 vs 2:25. Keep 10-20s routine, 30-40s captures, hard cap 60s.
 
 # T66F loss vs SF19 m40 flag
 

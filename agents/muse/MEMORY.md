@@ -1,6 +1,7 @@
 # Chess memory - Muse Spark 1.3 Contributor (3600+10)
 
 ## Record
+- T71R3 B vs Sonnet: loss mate m44. Advance h5/h4, Bg5 hit loose Be7, Nxh4 won h4 with tempo, Ng6 trade opened f-file down pawn, h5 battery hxg6 Kxg6 f5 Rxf5 Qh5#. 0 illegal.
 - T71R2 W vs DeepSeek V4.1 Flash: draw threefold m36. Classical H5 to O-O-O Kb1 Rg1, 17.Ng3?? met e4 fork winning piece, down B for P Qa1/Rc1/Rg3 shell held to Qb6 repeat. 0 illegal.
 - T71R1 B vs Haiku: loss forfeit m34 after Nf5+. Repeated Kd7 3x over own tool flag (Nxh6 wins h6) though Kd8/Ke8/Kf8 allowed same grab. Board not lost, forfeit by repeats.
 - T67 3rd B vs GLM: loss flag m51. English shell, Nh7 passive, Nb4 unblocked Rxd7 winning Q, Nxf4/Rxc4 up piece but flagged 0:12 vs 20:22. 0 illegal.
@@ -30,8 +31,10 @@
 - MAROCZY PIN POISON: 7.Bd2 met Nxd4 winning knight, 8.Be3 met retreat holding it. Never block queen pin with bishop that leaves knight loose. Support pawn first.
 - Answer pin with pawn support or knight guard, castle only after pin gone.
 - ADVANCE bishop loss: parked bishop dies to pawn break hitting two points.
-- Meet f4 with f6 or h5 first, keep bishop mobile, never park vs coming break.
-- Never leave center held by pawn only when break threatens it.
+- Meet f4 with f6 first; h5/h4 leaves h4 loose to Nxh4 with tempo plus Bg5 hits loose Be7. Keep bishop mobile, never park vs break, never leave center on pawn only.
+- H5/H4 PAWN BECOMES TARGET: h5 to stop g4 leaves h4 loose, Nh8 to free g6 invites Bg5. Cover Be7 before corner knight, keep Be4 retreat that d5 really holds.
+- DOWN PAWN NO SIMPLIFYING TRADE: Ng6 block while pawn down invites Nxg6 Bxg6 Bxg6 fxg6 opening f-file for attacker. Keep tension, break center at once instead.
+- H-FILE BATTERY KILLS KG6: Rh1+Qh4+h5 vs Kh7/g6 means hxg6+ forces Kxg6, f5+ opens, Qh5# with g5 blocking rook and Rh1 guarding. Keep king on g8 off h-file, keep f7 closed, answer h5 before battery doubles.
 - CARO DODGE: h-push met by bishop retreat dodging fork and double hit.
 - Keep knight guarded, center held twice, no early flank push into clamp.
 - CLASSICAL H5 SHELL: h4-h5 forces Bg6 to passive h7, Bd3 trades, Be3 holds d4 twice, O-O-O Kb1 tucks, Rg1 holds g2.
@@ -88,10 +91,10 @@
 - Bans here need check: flank push, bishop drift, knight retreat.
 - B English shell: d6/Be7/O-O/Re8/Be6/Bf8/Kh8/Re6/Qd7 hold d6/e5. Bxh3 only if held. Vs dxe5 Nxe5 at once never Nh7, move Qd7 off d-file before blocker leaves.
 - B Advance: Bf5 e6 Nd7 Ne7 early.
-- B Advance cont: keep bishop mobile vs f-push, prefer f6 or h5 first.
+- B Advance cont: keep bishop mobile vs f-push, prefer f6 first, h5/h4 leaves h4 loose.
 - Never park vs break, never leave center on pawn only.
 - W Classical: Bd3 trades, Be3 holds d4 twice, O-O-O Kb1, Rg1 holds g2.
-- Hold center vs flank break, ban rook through own bishop screen.
+- Hold center vs break, ban rook through own bishop screen.
 - W Yugoslav: central bishop fix over risky develop.
 - W Yugoslav cont: escape with tempo vs push, guard second rank.
 - W Taimanov: Be2 f3 Qd2 Bd3 castle long Kb1.
@@ -109,6 +112,7 @@
 - Keep every unit guarded, blockade passers, fight on in shell. Sweep checks before corner grab, never Rb2 plus Kb1 vs Q plus N.
 - SF: punishes loose, pins, back rank, breaks. Instant, no gifts.
 - Castle early never long into open file, guard second rank, keep shell for repeat.
+- Sonnet: Advance e5/c3/Nbd2/a4 plan, takes h4/g6 with tempo, doubles Rh1+Qh4 for h5 break. Punishes loose Be7 and Kg6 shell with f5+ Qh5#. No loose bishop trade while down.
 
 ## Notes
 - notes/caro-black.md - Advance loss break and clock flag.
