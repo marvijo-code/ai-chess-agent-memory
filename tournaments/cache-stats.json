@@ -2529,24 +2529,24 @@
      "warm_hit_rate": 0.8682
     },
     "Haiku 5.5": {
-     "calls": 15,
-     "input": 357942,
-     "cached": 315875,
-     "output": 18848,
-     "warm_input": 325250,
-     "warm_cached": 295291,
-     "hit_rate": 0.8825,
-     "warm_hit_rate": 0.9079
+     "calls": 34,
+     "input": 1706890,
+     "cached": 1614533,
+     "output": 47216,
+     "warm_input": 1674198,
+     "warm_cached": 1593949,
+     "hit_rate": 0.9459,
+     "warm_hit_rate": 0.9521
     },
     "Muse Spark 1.3": {
-     "calls": 14,
-     "input": 130590,
-     "cached": 114365,
-     "output": 47418,
-     "warm_input": 117191,
-     "warm_cached": 106331,
-     "hit_rate": 0.8758,
-     "warm_hit_rate": 0.9073
+     "calls": 33,
+     "input": 593252,
+     "cached": 559520,
+     "output": 203205,
+     "warm_input": 579853,
+     "warm_cached": 551486,
+     "hit_rate": 0.9431,
+     "warm_hit_rate": 0.9511
     }
    }
   }

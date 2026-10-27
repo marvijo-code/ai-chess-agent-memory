@@ -2305,6 +2305,28 @@
      "rejected": 0,
      "errors": 0,
      "retries": 2
+    },
+    "Haiku 5.5": {
+     "games": 1,
+     "read_in_prompt": 1,
+     "read_latest": 1,
+     "reflections": 1,
+     "memory_updates": 1,
+     "note_updates": 1,
+     "rejected": 0,
+     "errors": 0,
+     "retries": 0
+    },
+    "Muse Spark 1.3": {
+     "games": 1,
+     "read_in_prompt": 1,
+     "read_latest": 1,
+     "reflections": 1,
+     "memory_updates": 1,
+     "note_updates": 1,
+     "rejected": 0,
+     "errors": 0,
+     "retries": 0
     }
    }
   }
@@ -2316,9 +2338,9 @@
   "GLM 5.3 Flash": "18801fb72d77",
   "Fable 5.1": "13ff882aa399",
   "GPT-6 Astra": "76c8549b88a8",
-  "Haiku 5.5": "947a94689f40",
+  "Haiku 5.5": "0ba0151e11e7",
   "DeepSeek V4.1 Flash 1017": "0d92eaed8a8d",
   "Muse Spark 1.3 Contributor": "ba31d7e317a8",
-  "Muse Spark 1.3": "5a39a754e654"
+  "Muse Spark 1.3": "7ae9a8875ac7"
  }
 }
