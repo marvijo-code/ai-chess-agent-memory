@@ -1,6 +1,7 @@
 # Chess memory - Muse Spark 1.3 Contributor (3600+10)
 
 ## Record
+- T71R4 B vs GLM: loss flag m64. English shell Bxc4 won pawn but b3-b6 passer, c3/c2/Qc4/Qb4/Qd2 drift promoted to up exchange, flagged 0:10 vs 7:42. 1 illegal.
 - T71R3 B vs Sonnet: loss mate m44. Advance h5/h4, Bg5 hit loose Be7, Nxh4 won h4 with tempo, Ng6 trade opened f-file down pawn, h5 battery hxg6 Kxg6 f5 Rxf5 Qh5#. 0 illegal.
 - T71R2 W vs DeepSeek V4.1 Flash: draw threefold m36. Classical H5 to O-O-O Kb1 Rg1, 17.Ng3?? met e4 fork winning piece, down B for P Qa1/Rc1/Rg3 shell held to Qb6 repeat. 0 illegal.
 - T71R1 B vs Haiku: loss forfeit m34 after Nf5+. Repeated Kd7 3x over own tool flag (Nxh6 wins h6) though Kd8/Ke8/Kf8 allowed same grab. Board not lost, forfeit by repeats.
@@ -62,6 +63,7 @@
 - ND4 BLOCK INVITES BA3: Nd4 block allows Ba3 plus Qb4+ fork. Prefer Nc6 hitting queen, sweep b-file checks.
 - RB2 KB1 SELF-MATE: Rb2 blocks king for Qe1 mate with Nd4 covering c2. Down queen keep Rg2 blocking passer, never park on b2 when Q plus N eye e1.
 - ENGLISH BXH3 SUSPECT: wins h-pawn but flagged ??, costs dark bishop + Bf8 tempo. Only with Re8/d6/e5 held. Vs dxe5 play Nxe5 centralize, never Nh7 passive.
+- ENGLISH BXC4 SUSPECT: Bxc4 wins pawn but b3 hits bishop, b4/b5/b6 chases queen and makes passer tying queen to c-file. Pushing c3/c2 alone needs queen drift, promotion only nets exchange. Hold c5 with Qc6/Be6 unless twice-held.
 - NA5 POKE WINS TEMPO: Na5 hits loose c4 forcing b3, Nc6 returns guarded. exd4 opens e-file hitting Nc3.
 - BLOCKER LEAVES QUEEN: Nd5 blocked Rd1-Qd7, Nb4 unblocked it so Rxd7 won Q. Before moving blocker move queen off file or guard it.
 - RE6 LIFT HOLDS: Re6 holds d6/e7 eyes e4, answer Nf4 hit with Re8, Kh8/Qd7 shell, Nd4 outpost sets Nf3 mate with Q cover.
@@ -79,7 +81,7 @@
 - Same shell repeat shuttle, SF repeats when nothing to push.
 - LOST SHELL CLOCK: down huge shuffle 5-10 sec, hard cap 60, never long think.
 - Burned minutes while losing then flagged twice. Save clock, invite repeats. No 4 min thinks while down queen.
-- ENGLISH SHELL CLOCK: symmetric English vs fast GLM burned 2-4 min on Qd7/h6/Bg4/Nh7 and flagged up piece. Shell 10-20s, cap 60s, never drift.
+- ENGLISH SHELL CLOCK: rev-QGD/symmetric vs fast GLM burned 1-2 min on Qd7/Nxd4/Bf8/Rad8/Kh8/a6 and flagged up exchange 0:10 vs 7:42 T71R4. Shell 10-20s, cap 60s, never drift.
 - MATERIAL FROM BOARD EVERY move, recount guards, equal trades preserve deficit.
 - CLOCK: routine 10-20 sec, capture 30-40, cap 60, up 5-15, low time 3-5.
 - Time goes on destination list, never narrative.
@@ -89,7 +91,7 @@
 - B English: Bb6 after Be3, Be6 hits queenside.
 - B English cont: Re8 contests, Na5 hits center, e-push hits knight.
 - Bans here need check: flank push, bishop drift, knight retreat.
-- B English shell: d6/Be7/O-O/Re8/Be6/Bf8/Kh8/Re6/Qd7 hold d6/e5. Bxh3 only if held. Vs dxe5 Nxe5 at once never Nh7, move Qd7 off d-file before blocker leaves.
+- B English shell: d6/Be7/O-O/Re8/Be6/Bf8/Kh8/Re6/Qd7 hold d6/e5. Bxh3 only if held. Bxc4 only if c5 twice-held else Be6/Qc6 hold. Vs dxe5 Nxe5 at once never Nh7, move Qd7 off d-file before blocker leaves.
 - B Advance: Bf5 e6 Nd7 Ne7 early.
 - B Advance cont: keep bishop mobile vs f-push, prefer f6 first, h5/h4 leaves h4 loose.
 - Never park vs break, never leave center on pawn only.
@@ -105,8 +107,7 @@
 
 ## Opponents
 - Haiku: Open Sicilian Nxc6 patient, trades rooks, centralizes king, Nf5+ hits. Holds file, no tactics, converts endgame. Never shuffle king.
-- GLM: Taimanov shell loose kingside, hangs queen to captures, banks then drifts. English g3 h3 d4 e4 Nd4 Nf5 Nd5 Nh5 Nxg7 Qf6 hang to Nxh5 Bxg7 Re6. Fast 3-10s symmetric, punishes blocker leaving Qd7 to Rxd7.
-- Take free units after sweep, trade when up, luft first, keep king tucked. Match pace, cap 60s, never drift to flag.
+- GLM: Taimanov shell loose kingside, hangs queen to captures, banks then drifts. Fast 3-10s symmetric. Rev-QGD English: Rb1/Be3/Qd2/Rfd1 then b3-b6 passer, Rc1 blockade, Ra3/Qb3. Punishes blocker leaving Qd7 to Rxd7. Take free units after sweep, trade when up, luft first, keep king tucked. Match pace, cap 60s, never drift to flag.
 - DeepSeek: keeps guarded, queenside dance, edge bishop walks into trap. Classical Bh7 passive, e5 allows Ndf5, Bxe3 drops Q. Punishes Qxa8 Qxa7 with Qb4+ check, converts Q plus N with Qe1 mate.
 - V4.1 Flash burns minutes, 4 illegal tries, fails to convert B up vs compact shell. Bank clock, shell no pushes, invite Qb6/Qc5 repeat.
 - Keep every unit guarded, blockade passers, fight on in shell. Sweep checks before corner grab, never Rb2 plus Kb1 vs Q plus N.
