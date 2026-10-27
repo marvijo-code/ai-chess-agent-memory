@@ -6,7 +6,7 @@
    "depth": 4,
    "streak": 1,
    "steps": [],
-   "updated_at": "2026-10-17T16:07:05+00:00"
+   "updated_at": "2026-10-27T06:38:53+00:00"
   },
   "GPT-6.1 Sol": {
    "depth": 4,
@@ -88,20 +88,20 @@
    "at": "2026-10-10T13:25:28+00:00"
   }
  ],
- "updated_at": "2026-10-27T04:40:59+00:00",
+ "updated_at": "2026-10-27T06:38:53+00:00",
  "last_step": {
-  "player": "Haiku 5.5",
-  "outcome": "loss",
+  "player": "Sonnet 5.5",
+  "outcome": "draw",
   "depth": 4,
-  "streak": 0,
+  "streak": 1,
   "stepped": false,
   "from": 4,
   "to": 4,
   "tournament": "aichess-0071-20261027-002235",
   "number": 71,
-  "game": "r3b1",
-  "color": "white",
-  "termination": "checkmate",
-  "at": "2026-10-27T04:40:59+00:00"
+  "game": "r4b1",
+  "color": "black",
+  "termination": "threefold repetition",
+  "at": "2026-10-27T06:38:53+00:00"
  }
 }
