@@ -1,27 +1,24 @@
 # English / reversed QGD
 
 ## v ...d5 reversed QGD as White
-Recipe CONFIRMED twice: 1.c4 Nf6 2.Nc3 e6 3.g3 d5 4.cxd5 exd5 5.Bg2 d4! - the pawn eats my c3-knight. FIX 6.Na4! (verified +1.2, T68F). Then Nf3, O-O, d3; knight stays OFF c3. 8...b5 costs the a4-knight (N-for-P, +4 already): accept the drop instantly, develop, count tempo - never a queen-wheel save (T68F 9.Qb3?!, T69 spent the game down a piece). NEVER allow ...d4 with Nc3 lacking b2-support: 6.Nf3? dxc3! = +5. NO Ne4 (d5-pawn takes). At ...Nd5/...Nb4 offers the PAWN takes first; never 8.d4 blind; 12.Rb1.
+- Recipe line: 1.c4 Nf6 2.Nc3 e6 3.g3 d5 4.cxd5 exd5 5.Bg2 d4! - his pawn eats my c3-knight; FIX 6.Na4! (verified +1.2 twice). Then Nf3, O-O, d3; knight stays OFF c3.
+- 8...b5 costs the a4-knight (N-for-P): accept the drop instantly, develop, count tempo - never a queen-wheel save (T68F 9.Qb3?!, T69 spent games down a piece). NEVER allow ...d4 with Nc3 lacking b2-support: 6.Nf3? dxc3! = +5. NO Ne4 (d5-pawn takes). At ...Nd5/...Nb4 the PAWN takes first; never 8.d4 blind; 12.Rb1.
 
-## Symmetric English as White v ...e5
-Play again: 1.c4 e5 2.Nc3 Nf6 3.g3 Nc6 4.Bg2 d6 5.Nf3 Be7 6.O-O O-O 7.d3 Re8 8.Re1; then e4, Be3, d4 break ONLY after naming the d4-recapturer chain. h3 kills ...Bg4 pins cheaply.
-- 20.Bf4??: my f3-knight had just been traded; square unguarded AND his e5-pawn hit it. A TRADE REMOVES MY KNIGHT COVERS: before a minor lands, list its guards on the CURRENT board.
-- 22.Nb4??: escape square with no named guard - he took it free. Every landing needs a named guard.
-- 31.Rd1 spent 7:38 with material MIScounted. Recount 'W x / B y' FIRST, then think.
-- Down B+5P v R+B+N the temp shell held and his flag went; closed + defended + 5-10 s shuffle = flag conversion. Count his clock - both Muse wins were on HIS flag.
+## Symmetric English (T71 v Sonnet) - DEFEND IN KIND
+- Line I play: 1.c4 e5 2.Nc3 Nf6 3.g3 d5 4.cxd5 Nxd5 5.Bg2 Nb6 6.Nf3 Bd6 7.O-O O-O (14 plies). Then d3, h3 (kills ...Bg4), Be3 (vs ...Qd7), Qd2; expect ...Nc6/...Be6/...Rad8. All LEVEL to m12.
+- THE KILL: 12.Nb5 landed with a4 NOT yet played - b5 guarded by NOTHING. ...a6! 13.a4?? = a pawn guards a piece against his pawn FOR NOTHING: axb5 ate the KNIGHT, axb5 got only a pawn back. 15.Bxb6 cxb6 restored the knight, but her QUEEN ate the b5-pawn and her bishop took b3: down B+P from m17, -4 the whole game, grind to a corner cage mate m55.
+- RULE (now checked by tools/refute-chain.py): a piece defended only by pawns vs his pawn attack is ALREADY LOST; his capturer survives unless a PIECE of mine stands behind the recapture chain. a4 before OR after licenses no raid - her axb5/axb5 chain nets the piece both ways. Antidote: Re1(+Qe2) build, NO knight dives (b5/d5/a7-class); win by the d4 break with the Nf3 recapturer named, or Ne4-class centralization.
 
-## T69 W v SF19 3600+10, 0-1 m42 - the diagonal grab kill
-Recipe played; soft marks: 7.Nf3?! 8.O-O?! 9.d3?! 10.Bg5?!. Down N-for-P the think budget leaked: 0:57 on 13.Rfe1, 1:19 on 15.Nc4, 1:38 on 16.Qb5 while he sat at +6. Quiet moves down material = 10-20 s, never 1-2 MIN.
-- THE KILL at 17.Qxa6?? (+10 for him): the a6-ROOK was 'covered only by Nb8' - I never walked the DIAGONAL c8-a6: Bc8 saw it. A grab target gets file AND BOTH diagonals walked square by square, ALL his pieces, not just my printed candidate defenders. The tool flag -4 existed and I played anyway: NEVER play a flagged move.
-- The shell AFTER worked: two-square king shuffle, rooks d1/e1-e2 cycle, d3 double-guarded, pawns frozen, trades declined, counted his Rxa2/b2-passers; caught two given bishops (Kxh2, Kxe2) with varied (non-deterministic) king replies. Lost to endless checks + passers anyway, mate m42. That phase is the model.
-- Illegal tries: 2 on one move (Rd2/Rfd1 ambiguity) = slow down, UCI or unambiguous SAN, board map before every resend; also one flagged Ne5 played anyway.
+## The -4 endgame (down B+P, later B+R v my pawns) - SURVIVOR LEDGER
+- REAL: 32.Rxb5 - nothing recaptured, clean pawn. The b-passer was beatable: Rb1 + rank-8 rook; her OWN passer on b5 blocked her rook's b-file path, my rook permanently safe over the top.
+- FATAL: 42.Rxb4 - her rook SURVIVED the recapture; 'even trade' counted captures, not units alive at chain end. Then her Kd2 + Rb2 zugzwang (only pawn pushes left) ate e2/f3, then the corner cage. Count every SURVIVOR on both sides.
 
-## T67R5.2 v Muse, WON ON FLAG details -> see 5-10 s shuffle + count his clock above
+## T69 W v SF19 0-1 m42 - compressed
+Recipe played; down N-for-P early; long thinks on quiet moves at +6 (0:57-1:38). THE KILL 17.Qxa6?? (+10 his): the a6-rook covered only by Nb8 - c8-a6 was never walked through empties. A grab target gets file AND both diagonals with ALL his pieces; the tool flag existed and I played it anyway. The shell after (king shuffle, doubled rooks, frozen pawns, refused trades, counted his passers) is still the down-material model. 2 invalid tries = UCI or unambiguous SAN.
 
-## Trapping his bishops NEVER worth a capturable bishop
-Bishop hops to rim squares: list every HIS pawn on each diagonal BEFORE the hop - g7 permanently owns the h6/f6-class candles (T62: 13.Bh6?? gxh6 = B for 2P).
+## Rim bishops
+A bishop hop to rim squares: list every HIS pawn on each diagonal BEFORE - g7 permanently owns h6/f6-class candles.
 
 ## Old one-liners
-- Queen sorties to d5-class: list his pawns on ranks 5-6 adjacent to ANY target first (Q-for-P twice). Pawn covers adjacent diagonals unseen.
-- A rim knight with a pin plus ...g5 has two capturers: count its EXITS first. 32.Qe3?? Q-for-B. 20.a3?? kicked Bb6 without listing its BACKWARD diagonal. Verify the queen's CURRENT square before reachability claims.
-- T56-57: 12.Nxd5?! -1 priced +1 (state the NET first); 17.Qd2?? Nxd2; 21.Bxf8?? freed his king; 33.exf6?? opened MY e-file to Rxe1+.
+- Queen sorties to d5-class: list his pawns on ranks 5-6 beside any target first (Q-for-P twice).
+- 32.Qe3?? Q-for-B: rim knight with a pin + ...g5 = two capturers, list exits; 33.exf6?? opened my e-file. State the NET before any capture.
