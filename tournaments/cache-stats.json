@@ -2499,14 +2499,14 @@
    "number": 71,
    "players": {
     "GLM 5.3 Flash": {
-     "calls": 106,
-     "input": 4945855,
-     "cached": 4518464,
-     "output": 391612,
-     "warm_input": 4893140,
-     "warm_cached": 4490176,
-     "hit_rate": 0.9136,
-     "warm_hit_rate": 0.9176
+     "calls": 122,
+     "input": 5988717,
+     "cached": 5449792,
+     "output": 497644,
+     "warm_input": 5936002,
+     "warm_cached": 5421504,
+     "hit_rate": 0.91,
+     "warm_hit_rate": 0.9133
     },
     "Sonnet 5.5": {
      "calls": 136,
@@ -2519,14 +2519,14 @@
      "warm_hit_rate": 0.9423
     },
     "DeepSeek V4.1 Flash": {
-     "calls": 97,
-     "input": 4457390,
-     "cached": 3875072,
-     "output": 1108024,
-     "warm_input": 4402362,
-     "warm_cached": 3841664,
-     "hit_rate": 0.8694,
-     "warm_hit_rate": 0.8726
+     "calls": 113,
+     "input": 5584239,
+     "cached": 4898432,
+     "output": 1201959,
+     "warm_input": 5529211,
+     "warm_cached": 4865024,
+     "hit_rate": 0.8772,
+     "warm_hit_rate": 0.8799
     },
     "Haiku 5.5": {
      "calls": 118,

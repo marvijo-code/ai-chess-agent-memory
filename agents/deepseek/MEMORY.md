@@ -5,11 +5,12 @@ Notes:
 - notes/caro-advance-black.md - Caro Advance + Classical 3.Nc3 B
 - notes/qgd-white.md - QGD W
 - notes/ruy-lopez-black.md - Chigorin/Breyer B
-- notes/ruy-lopez-white.md - Ruy W (Classical + quiet 4.d3)
+- notes/ruy-lopez-white.md - Ruy W (Classical + quiet 4.d3 + Four Knights 4...a6)
 - notes/sicilian-black.md - Alapin/Taimanov B
 - notes/sicilian-dragon-white.md - Accelerated Dragon W (SF ...g6/...d5)
 - notes/sicilian-soltis-black.md - Soltis B
 - tools/material-clock.py - material, clock, loose-unit readout before each move
+- tools/repetition-guard.py - warns when a move repeats the position while material is up
 
 ## Rule 0 - board, legality, clock
 - BOARD MAP FROM HIS LAST MOVE BEFORE ANY CAPTURE OR QUEEN MOVE; a piece that moved is not on its old square. T67R5.1 20...Qd4?? on a ghost board - the d4-knight had gone to c6 - and 21.Nxd4 won my QUEEN.
@@ -62,7 +63,7 @@ Notes:
 - MATERIAL FROM THE BOARD EVERY MOVE; no grabs when level or behind. Level material with a broken king is lost vs SF.
 - DOWN A PIECE/QUEEN VS SF: 5-10 s defensive moves, every unit guarded, first rank solid, keep the king's pawn cover (T69R4; T71R1 m32).
 - DOWN Q FOR R: 2N v R+pawns is NOT a fortress (T67R3).
-- UP MATERIAL IS A CLOCK PROBLEM: 5-10 s, consolidate, keep units off his pawn squares. T71R2 up B for P but 24...Nd5 5:38, 25...b5 9:28, 27...c5 8:11 -> 1:24 vs 16:36 and threefold. Trade pieces not pawns; do not let his rook shuffles draw you into repetition.
+- UP MATERIAL IS A CLOCK PROBLEM: 5-10 s, consolidate, keep units off his pawn squares. T71R2 up B for P but 24...Nd5 5:38, 25...b5 9:28, 27...c5 8:11 -> 1:24 vs 16:36 and threefold. Trade pieces not pawns; do not let his rook shuffles draw you into repetition. T71R3 up a pawn: 22.Qc2 11:25 and four 4-min thinks (Rb1/Nxa4/c4/Nf5) produced queen shuffles Qa6/Qb5/Qc6/Qb7 and threefold; name one conversion (Rc1, d5-d6, trade a piece with recapture, king walk), never offer queen trades by repetition - GLM declines them when down.
 - UP A QUEEN+ IS A MATE CLOCK: after each capture recount, then the first forcing check/ladder; 5-10 s, cap 20.
 - UP TWO ROOKS / UP A ROOK: ladder cut/check/tighten 5-10 s.
 - AFTER A QUEEN TRADE RECOUNT: if the recapture chain loses a queen, don't start it.
@@ -73,6 +74,7 @@ Notes:
 - English as Black (reversed QGD, play): 1.c4 Nf6 2.Nc3 e6 3.g3 d5 4.cxd5 exd5 5.Nf3 Be7 6.Bg2 O-O 7.O-O c6 8.d3 (15 plies). Then ...Bf5, ...Nbd7, ...Qb6, ...Re8; ...c5 only when d5 has a PIECE guard. BANS: knight on the e4-pawn's d5/f5, queen on d7 or on the c6-pawn. T66R5.2 12.Ne4?? dxe4! won a knight.
 - Ruy Lopez W, Classical 5...Bc5 (play): 1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Bc5 6.c3 O-O 7.Re1 d6 8.h3 (15 plies). Then ...Be6 and d4. After exd4 cxd4, ...Bb6 and Nc3. Later Bg5 with ...h6 answered by Bxf6 ...Qxf6, then Nd5. The d5! push forks Qe6/Nc6. T68R1 12...Ne5?? vacated c6 and 13.Bxd7 won queen for bishop.
 - Ruy quiet 4.d3 W (worked v GLM T69R2): ...Bd6, O-O, c3, ...Re8; then Nbd2, h3, Re1, ...Bf8. Later Bc4 and Nf1-g3; avoid Bg5. Nf5 hits Bd6/g7. Finisher: Bxh6 with g7 pinned, Qf6+/Qf8#. Convert 5-10 s.
+- Ruy Four Knights/Spanish 4...a6 W (play): 1.e4 e5 2.Nf3 Nf6 3.Nc3 Nc6 4.Bb5 a6 5.Ba4 b5 6.Bb3 Be7 7.O-O O-O 8.d3 d6 (16 plies). Then Be3, Qd2, Rad1, h3, d4; keep e4 guarded, no Nd5 while ...Bb7 stands. T71R3: level after ...Ne5/Bd5 trades, then up a pawn I shuffled the queen into threefold. Convert 5-15 s.
 - Italian Giuoco Pianissimo W: ...Nc6, ...Bc5 and ...Nf6; ...d6, castle, ...Be6, ...h6. Then ...Qd7, ...Re8, ...d5. If ...Bg4, Re1 and h3. Bans: 10.d4?!, queen on d5 while the f6-knight lives.
 - Open Sicilian Taimanov W (play): 1.e4 c5 2.Nf3 e6 3.d4 cxd4 4.Nxd4 Nc6 5.Nc3 a6 6.Be2 Be7 7.O-O Nf6 8.Be3 O-O (16 plies). Then f4, Qd2, Rad1, Kh1; e5 hits Nf6; after ...Nd5 Nxd5 exd5 Bf3! hits d5/Nc6 (T66R3 won a piece). e5 only while the e5-pawn is defended after fxe5.
 - Accelerated Dragon W (T71R1 v SF, 0-1 m32): SF answered 1.e4 with ...c5, ...Nc6, ...g6, ...d5. Level to move 21: after ...d5 exd5 Nxd5 Nxd5 Qxd5 Bf3 (6 plies) his ...Qa5+ is met by c3, and ...Nxd4 by Bxd4 because the c3-pawn is PINNED. Then ...Rd8 freezes Bd4 against Qd1 (Qe2 frees it) and ...Bxd4 cxd4 Rxd4 gives e7 back. From there my queen wandered (17.Qxb7, 19.Qe7, 20.a4, 21.Qf6 - four queen moves, 22 min), his rook went Rb4-b2, and 22.Bd5?? - a bishop attack with NO recapture - lost a piece to ...Bxd5. Play the Taimanov build against ...Nc6/...g6; no wing-pawn grabs while his rook and bishop are unopposed.
@@ -83,6 +85,6 @@ Notes:
 ## Opponents
 - SF19: instant, zero errors. Punishes loose units, passive retreats, queens on rays/pawn diagonals/knight squares, ignored attacked pieces, pawn sacs that open lines to my king (T69R4 13.b4!), and a piece attack with no recapture (T71R1 22.Bd5??). As Black v 1.e4 it alternates Caro and Accelerated Dragon (...Nc6, ...g6, ...d5, ...Qa5+, ...Rd8/...Rc8, ...Be6). 10-15 s; first rank solid; no queen raids for wing pawns.
 - Muse Spark 1.3: patient 30-90 s, zero illegal, banks clock; takes every loose pawn and undefended piece. T71R2 drew while I was up a piece: she had 16:36 left, I had 1:24 after long ...b5/...c5 thinks, then rook/queen shuffles and threefold. Do not gift b4/a4/h3 or a queen on her diagonal; when up, 5-10 s and no repetition.
-- GLM 5.3 Flash: HIS QUEEN ON MY PAWN'S OR KNIGHT'S CAPTURE SQUARE (five+ times: T69R2 ...Qd6?? 20.Nxd6). 1-5 illegal tries. Take gifts only AFTER the pawn/bishop capture list, then convert 5-15 s.
+- GLM 5.3 Flash: HIS QUEEN ON MY PAWN'S OR KNIGHT'S CAPTURE SQUARE (five+ times: T69R2 ...Qd6?? 20.Nxd6). 1-5 illegal tries. Take gifts only AFTER the pawn/bishop capture list, then convert 5-15 s. T71R3: declines queen trades when a pawn down; do not offer by repetition - name a conversion.
 - DeepSeek V4.1 Flash 1017 (mirror): Taimanov/English both ways; keeps units guarded, punishes a piece/queen on his pawn's capture square and a queen on a rook file. Convert with a named plan.
 - Fable 5.1, Sonnet 5.5, GPT-6.1 Sol, Astra: take every unguarded unit, punish loose queen/rook; keep every unit guarded and bank clock. Haiku 5.5: solid Italian Pianissimo, fast; my clock losses there were self-inflicted.
