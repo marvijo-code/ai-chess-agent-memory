@@ -1,6 +1,7 @@
 # Chess memory - Muse Spark 1.3 Contributor (3600+10)
 
 ## Record
+- T71R2 W vs DeepSeek V4.1 Flash: draw threefold m36. Classical H5 to O-O-O Kb1 Rg1, 17.Ng3?? met e4 fork winning piece, down B for P Qa1/Rc1/Rg3 shell held to Qb6 repeat. 0 illegal.
 - T71R1 B vs Haiku: loss forfeit m34 after Nf5+. Repeated Kd7 3x over own tool flag (Nxh6 wins h6) though Kd8/Ke8/Kf8 allowed same grab. Board not lost, forfeit by repeats.
 - T67 3rd B vs GLM: loss flag m51. English shell, Nh7 passive, Nb4 unblocked Rxd7 winning Q, Nxf4/Rxc4 up piece but flagged 0:12 vs 20:22. 0 illegal.
 - T67SF2G1 W vs DeepSeek: loss mate m47. Classical shell level to dxc5, b4?? Qxb4+, Nd4?? Ba3, Qxa8? Qb4+, Qxa7?? Qxa7 dropped Q, Rb2+Kb1 shell mated Qe1#. 0 illegal.
@@ -35,6 +36,7 @@
 - Keep knight guarded, center held twice, no early flank push into clamp.
 - CLASSICAL H5 SHELL: h4-h5 forces Bg6 to passive h7, Bd3 trades, Be3 holds d4 twice, O-O-O Kb1 tucks, Rg1 holds g2.
 - Hold center vs flank break, ban rook through own bishop screen.
+- CLASSICAL E5 FORK: vs ...e5 hitting d4 take/block at once, never Ng3 retreat. Ng3 allowed e4 forking Bd3+Nf3 winning piece. List e4 push before quiet.
 - E5 POKE LOSES TEMPO: ...e5 vs Nd4 allows Ndf5 hitting bishop, Qc3 eyes c5, Bxe3 drops Q to Qxc7.
 - NO CASTLE INTO STORM: vs knight plus pawn push plus rook lift keep king central.
 - Trade bishop or break center first, tuck only if committed.
@@ -69,6 +71,7 @@
 - Cut rank, avoid stalemate, use defended checks to edge.
 - DOWN HUGE CAN DRAW: shell king near pawns, rook second rank, bishop central.
 - No pawn pushes. Seek queen for rook cuts, take freebies. Never resign.
+- DOWN MINOR SHELL DRAWS: Qa1 holds a3, Rc1 holds c2, Ka1/Kb2 shuttle, Nd4 blocks, no pushes. Invite Qb6/Qc5 shuffle for threefold vs clock-low converter.
 - DOWN HUGE MODEL: blockade passer, king holds pawns, invite checks for repeat.
 - Same shell repeat shuttle, SF repeats when nothing to push.
 - LOST SHELL CLOCK: down huge shuffle 5-10 sec, hard cap 60, never long think.
@@ -83,7 +86,7 @@
 - B English: Bb6 after Be3, Be6 hits queenside.
 - B English cont: Re8 contests, Na5 hits center, e-push hits knight.
 - Bans here need check: flank push, bishop drift, knight retreat.
-- B English shell: d6/Be7/O-O/Re8/Be6/Bf8/Kh8/Re6/Qd7 hold d6/e5. Bxh3 only if held. Vs dxe5 Nxe5 at once never Nh7, move Qd7 before d-blocker leaves.
+- B English shell: d6/Be7/O-O/Re8/Be6/Bf8/Kh8/Re6/Qd7 hold d6/e5. Bxh3 only if held. Vs dxe5 Nxe5 at once never Nh7, move Qd7 off d-file before blocker leaves.
 - B Advance: Bf5 e6 Nd7 Ne7 early.
 - B Advance cont: keep bishop mobile vs f-push, prefer f6 or h5 first.
 - Never park vs break, never leave center on pawn only.
@@ -102,7 +105,8 @@
 - GLM: Taimanov shell loose kingside, hangs queen to captures, banks then drifts. English g3 h3 d4 e4 Nd4 Nf5 Nd5 Nh5 Nxg7 Qf6 hang to Nxh5 Bxg7 Re6. Fast 3-10s symmetric, punishes blocker leaving Qd7 to Rxd7.
 - Take free units after sweep, trade when up, luft first, keep king tucked. Match pace, cap 60s, never drift to flag.
 - DeepSeek: keeps guarded, queenside dance, edge bishop walks into trap. Classical Bh7 passive, e5 allows Ndf5, Bxe3 drops Q. Punishes Qxa8 Qxa7 with Qb4+ check, converts Q plus N with Qe1 mate.
-- Keep every unit guarded, blockade passers, fight on in shell. Sweep checks before corner queen grabs, never Rb2 plus Kb1 vs Q plus N.
+- V4.1 Flash burns minutes, 4 illegal tries, fails to convert B up vs compact shell. Bank clock, shell no pushes, invite Qb6/Qc5 repeat.
+- Keep every unit guarded, blockade passers, fight on in shell. Sweep checks before corner grab, never Rb2 plus Kb1 vs Q plus N.
 - SF: punishes loose, pins, back rank, breaks. Instant, no gifts.
 - Castle early never long into open file, guard second rank, keep shell for repeat.
 

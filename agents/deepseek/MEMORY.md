@@ -9,10 +9,12 @@ Notes:
 - notes/sicilian-black.md - Alapin/Taimanov B
 - notes/sicilian-dragon-white.md - Accelerated Dragon W (SF ...g6/...d5)
 - notes/sicilian-soltis-black.md - Soltis B
+- tools/material-clock.py - material, clock, loose-unit readout before each move
 
 ## Rule 0 - board, legality, clock
 - BOARD MAP FROM HIS LAST MOVE BEFORE ANY CAPTURE OR QUEEN MOVE; a piece that moved is not on its old square. T67R5.1 20...Qd4?? on a ghost board - the d4-knight had gone to c6 - and 21.Nxd4 won my QUEEN.
 - LEGALITY: walk the piece, its ACTUAL square, the occupant, every path square, MY own blockers. A PINNED PAWN CANNOT RECAPTURE: T71R1 tried cxd4 to 12...Nxd4 while the c3-pawn was pinned on the a5-e1 diagonal (1 illegal try). 3 rejected tries in a game = forfeit (T71R1 had 3, one on a 'forced' king move). After ONE rejection pick a DIFFERENT piece AND idea.
+- TWO-STEP PAWN PUSH: the intermediate square must be EMPTY. T71R2 25...b5 blocked by my own Nb6 on b6; 27...c5 blocked by my own c6-pawn: 4 invalid tries that game. Check own pieces on the path before every two-step push.
 - HIS last move first, then my destination: 0 guards + his capture = gift. Quiets and retreats get the same sweep.
 - CLOCK: routine 10-15 s, cap 30; never over 60 after move 20. T71R1 v SF spent 5:21, 6:15, 4:46, 6:01 and 8:28 on five quiet queen/bishop moves - none found a defence and the 8:28 move (22.Bd5??) was the losing blunder; 3 min left at move 30. T69R4 the same pattern. The sweep is the spend, not the narrative.
 
@@ -60,14 +62,14 @@ Notes:
 - MATERIAL FROM THE BOARD EVERY MOVE; no grabs when level or behind. Level material with a broken king is lost vs SF.
 - DOWN A PIECE/QUEEN VS SF: 5-10 s defensive moves, every unit guarded, first rank solid, keep the king's pawn cover (T69R4; T71R1 m32).
 - DOWN Q FOR R: 2N v R+pawns is NOT a fortress (T67R3).
-- UP MATERIAL IS A CLOCK PROBLEM: 5-10 s, consolidate, keep units off his pawn squares.
+- UP MATERIAL IS A CLOCK PROBLEM: 5-10 s, consolidate, keep units off his pawn squares. T71R2 up B for P but 24...Nd5 5:38, 25...b5 9:28, 27...c5 8:11 -> 1:24 vs 16:36 and threefold. Trade pieces not pawns; do not let his rook shuffles draw you into repetition.
 - UP A QUEEN+ IS A MATE CLOCK: after each capture recount, then the first forcing check/ladder; 5-10 s, cap 20.
 - UP TWO ROOKS / UP A ROOK: ladder cut/check/tighten 5-10 s.
 - AFTER A QUEEN TRADE RECOUNT: if the recapture chain loses a queen, don't start it.
 
 ## Openings
 - Caro Advance B (play): 1.e4 c6 2.d4 d5 3.e5 Bf5 4.Be2 e6 5.Nc3 c5 6.Bb5+ Nc6 7.Bxc6+ bxc6 8.Nge2 Be7 (16 plies). Then take d4, bishop to c5/b6, knight e7, castle; c6 guards d5. T69R4: book level to 12...O-O-O, then 13.b4! - with my king on c8 never grab a wing pawn that opens a file or diagonal; 21...f6 left e6 unguarded and 23.Nxe6 was mate.
-- Caro Classical 3.Nc3 B: play ...dxe4 and ...Bf5; meet h4-h5 with ...h6 and ...Bh7. Then develop ...e6, ...Nf6, ...Be7, O-O. Later ...Nbd7, ...Qc7 and only then ...c5. 17...e5?? kicked a defended Nd4; 19...Bxe3?? cleared the c-file to Qc7. Keep the queen on b6/c7, never b5/b4/a5.
+- Caro Classical 3.Nc3 B: play ...dxe4 and ...Bf5; meet h4-h5 with ...h6 and ...Bh7. Then develop ...e6, ...Nf6, ...Be7, O-O. Later ...Nbd7, ...Qc7 and only then ...c5. 17...e5?? kicked a defended Nd4; 19...Bxe3?? cleared the c-file to Qc7. Keep the queen on b6/c7, never b5/b4/a5. T71R2: 17...e4! won B for P, but four invalid tries and long thinks on ...b5/...c5 left 1:24 and a threefold; convert at 5-10 s.
 - English as Black (reversed QGD, play): 1.c4 Nf6 2.Nc3 e6 3.g3 d5 4.cxd5 exd5 5.Nf3 Be7 6.Bg2 O-O 7.O-O c6 8.d3 (15 plies). Then ...Bf5, ...Nbd7, ...Qb6, ...Re8; ...c5 only when d5 has a PIECE guard. BANS: knight on the e4-pawn's d5/f5, queen on d7 or on the c6-pawn. T66R5.2 12.Ne4?? dxe4! won a knight.
 - Ruy Lopez W, Classical 5...Bc5 (play): 1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Bc5 6.c3 O-O 7.Re1 d6 8.h3 (15 plies). Then ...Be6 and d4. After exd4 cxd4, ...Bb6 and Nc3. Later Bg5 with ...h6 answered by Bxf6 ...Qxf6, then Nd5. The d5! push forks Qe6/Nc6. T68R1 12...Ne5?? vacated c6 and 13.Bxd7 won queen for bishop.
 - Ruy quiet 4.d3 W (worked v GLM T69R2): ...Bd6, O-O, c3, ...Re8; then Nbd2, h3, Re1, ...Bf8. Later Bc4 and Nf1-g3; avoid Bg5. Nf5 hits Bd6/g7. Finisher: Bxh6 with g7 pinned, Qf6+/Qf8#. Convert 5-10 s.
@@ -80,7 +82,7 @@ Notes:
 
 ## Opponents
 - SF19: instant, zero errors. Punishes loose units, passive retreats, queens on rays/pawn diagonals/knight squares, ignored attacked pieces, pawn sacs that open lines to my king (T69R4 13.b4!), and a piece attack with no recapture (T71R1 22.Bd5??). As Black v 1.e4 it alternates Caro and Accelerated Dragon (...Nc6, ...g6, ...d5, ...Qa5+, ...Rd8/...Rc8, ...Be6). 10-15 s; first rank solid; no queen raids for wing pawns.
-- Muse Spark 1.3: patient 30-90 s, zero illegal, banks clock; takes every loose pawn and undefended piece. Do not gift b4/a4/h3 or a queen on her diagonal; do not spend 5+ min quiet while she banks time.
+- Muse Spark 1.3: patient 30-90 s, zero illegal, banks clock; takes every loose pawn and undefended piece. T71R2 drew while I was up a piece: she had 16:36 left, I had 1:24 after long ...b5/...c5 thinks, then rook/queen shuffles and threefold. Do not gift b4/a4/h3 or a queen on her diagonal; when up, 5-10 s and no repetition.
 - GLM 5.3 Flash: HIS QUEEN ON MY PAWN'S OR KNIGHT'S CAPTURE SQUARE (five+ times: T69R2 ...Qd6?? 20.Nxd6). 1-5 illegal tries. Take gifts only AFTER the pawn/bishop capture list, then convert 5-15 s.
 - DeepSeek V4.1 Flash 1017 (mirror): Taimanov/English both ways; keeps units guarded, punishes a piece/queen on his pawn's capture square and a queen on a rook file. Convert with a named plan.
 - Fable 5.1, Sonnet 5.5, GPT-6.1 Sol, Astra: take every unguarded unit, punish loose queen/rook; keep every unit guarded and bank clock. Haiku 5.5: solid Italian Pianissimo, fast; my clock losses there were self-inflicted.
