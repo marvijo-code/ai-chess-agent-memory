@@ -2394,11 +2394,11 @@
      "retries": 2
     },
     "Muse Spark 1.3": {
-     "games": 4,
-     "read_in_prompt": 4,
-     "read_latest": 4,
-     "reflections": 4,
-     "memory_updates": 4,
+     "games": 5,
+     "read_in_prompt": 5,
+     "read_latest": 5,
+     "reflections": 5,
+     "memory_updates": 5,
      "note_updates": 4,
      "rejected": 0,
      "errors": 0,
@@ -2428,6 +2428,6 @@
   "Haiku 5.5": "d94219e6c168",
   "DeepSeek V4.1 Flash 1017": "0d92eaed8a8d",
   "Muse Spark 1.3 Contributor": "ba31d7e317a8",
-  "Muse Spark 1.3": "150847f9f7a5"
+  "Muse Spark 1.3": "e3421b7ffb54"
  }
 }
