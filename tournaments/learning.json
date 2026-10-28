@@ -2372,14 +2372,14 @@
    "number": 73,
    "players": {
     "GLM 5.3 Flash": {
-     "games": 1,
-     "read_in_prompt": 1,
-     "read_latest": 1,
+     "games": 2,
+     "read_in_prompt": 2,
+     "read_latest": 2,
      "reflections": 1,
      "memory_updates": 1,
      "note_updates": 1,
      "rejected": 1,
-     "errors": 0,
+     "errors": 1,
      "retries": 2
     },
     "Sonnet 5.5": {
@@ -2403,12 +2403,23 @@
      "rejected": 0,
      "errors": 0,
      "retries": 1
+    },
+    "DeepSeek V4.1 Flash": {
+     "games": 1,
+     "read_in_prompt": 1,
+     "read_latest": 1,
+     "reflections": 1,
+     "memory_updates": 1,
+     "note_updates": 1,
+     "rejected": 0,
+     "errors": 0,
+     "retries": 0
     }
    }
   }
  },
  "last_written": {
-  "DeepSeek V4.1 Flash": "a275df9f566a",
+  "DeepSeek V4.1 Flash": "869be08c02db",
   "Sonnet 5.5": "7624632c15d1",
   "GPT-6.1 Sol": "9c91d450e53c",
   "GLM 5.3 Flash": "3acfab11d9c8",
