@@ -2609,24 +2609,24 @@
      "warm_hit_rate": 0.9206
     },
     "Muse Spark 1.3": {
-     "calls": 103,
-     "input": 2226301,
-     "cached": 1968495,
-     "output": 624789,
-     "warm_input": 2136544,
-     "warm_cached": 1910646,
-     "hit_rate": 0.8842,
-     "warm_hit_rate": 0.8943
+     "calls": 124,
+     "input": 3269002,
+     "cached": 2981428,
+     "output": 832600,
+     "warm_input": 3179245,
+     "warm_cached": 2923579,
+     "hit_rate": 0.912,
+     "warm_hit_rate": 0.9196
     },
     "DeepSeek V4.1 Flash": {
-     "calls": 136,
-     "input": 7074239,
-     "cached": 6215680,
-     "output": 1144794,
-     "warm_input": 6984076,
-     "warm_cached": 6160640,
+     "calls": 159,
+     "input": 8485216,
+     "cached": 7454848,
+     "output": 1435853,
+     "warm_input": 8395053,
+     "warm_cached": 7399808,
      "hit_rate": 0.8786,
-     "warm_hit_rate": 0.8821
+     "warm_hit_rate": 0.8814
     }
    }
   }
