@@ -2334,11 +2334,11 @@
    "number": 72,
    "players": {
     "Muse Spark 1.3": {
-     "games": 4,
-     "read_in_prompt": 4,
-     "read_latest": 4,
-     "reflections": 4,
-     "memory_updates": 4,
+     "games": 5,
+     "read_in_prompt": 5,
+     "read_latest": 5,
+     "reflections": 5,
+     "memory_updates": 5,
      "note_updates": 6,
      "rejected": 0,
      "errors": 0,
@@ -2356,15 +2356,15 @@
      "retries": 2
     },
     "GLM 5.3 Flash": {
-     "games": 4,
-     "read_in_prompt": 4,
-     "read_latest": 4,
+     "games": 5,
+     "read_in_prompt": 5,
+     "read_latest": 5,
      "reflections": 2,
      "memory_updates": 2,
      "note_updates": 5,
      "rejected": 0,
-     "errors": 2,
-     "retries": 2
+     "errors": 3,
+     "retries": 3
     }
    }
   }
@@ -2379,6 +2379,6 @@
   "Haiku 5.5": "d94219e6c168",
   "DeepSeek V4.1 Flash 1017": "0d92eaed8a8d",
   "Muse Spark 1.3 Contributor": "ba31d7e317a8",
-  "Muse Spark 1.3": "e92e5adff3b5"
+  "Muse Spark 1.3": "0cd281eecf97"
  }
 }
