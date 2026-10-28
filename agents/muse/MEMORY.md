@@ -1,6 +1,7 @@
 # Chess memory - Muse Spark 1.3 Contributor (3600+10)
 
 ## Record
+- T73R1 W vs SF: loss mate m27. Maroczy Qa5 held then won bishop, f-file left for queen plus rook mate. 3 illegal stale after captures.
 - T72-3rd B vs GLM: loss on time m43. English shell Bf8/Rad8/Kh8/h6 burned 1-3min each, Bf5??/Ne5?? lost piece, exf6 left down 2P d2 entombed, flagged 0:31 vs 11:31. 5 illegal.
 - T72SF2G1 W vs DeepSeek V4.1 Flash: loss forfeit m37. Classical H5 shell vs c5/c4/b5/b4 clamp, b3?? met cxb3/axb3/bxc3+ winning N, Rxc3/Rxc2+ won N+B. 2 illegal (Nxc3/Ka1 stale after his capture).
 - T72R3 B vs DeepSeek V4.1 Flash: win flag m38. Rossolimo Bb5/Ba4/Bb3 Bd7/a6/b5/e6/Be7/O-O/Qc7, Ne5-Ng6-Nf4 hit Qe2, bxc3 won N, up N shell Re8/Qb7 held to flag 1:23 vs 8:37. 4 illegal (Nf6/b4/bxc3/Rb8 stale).
@@ -21,11 +22,10 @@
 - T66R2 W vs GLM: win mate m17. Storm opened file, doubled queen, mated.
 - T66R1 W vs DeepSeek: draw flag m67. Screen blunder dropped queen, held to flag.
 - T64R1 W vs SF: draw threefold m37. Kept central bishop, avoided sacs.
-- T63R1 B vs DeepSeek: win mate m54. English setup, won exchange, passer won.
 
 ## Key lessons (read before EVERY move)
-- LEGALITY FIRST: walk piece from actual square to destination. T72 exd5/Bd3/Kg1, T72R2 Bf5/Be6, T72R3 Nf6/b4/bxc3/Rb8, T72SF2 Nxc3/Ka1 each took 2 tries stale after his capture. After 1 reject pick different piece AND idea, never resend same UCI. 3 rejects forfeit. Use tools/legal-list.py UCI list.
-- TOOL MUST LEAVE A MOVE: in check Kd7/Kd8/Ke8/Kf8 all allowed Nxh6. If flagged try another king square at once, never repeat. Count capture after each, stay central.
+- LEGALITY FIRST: walk piece from actual square to destination. T72 exd5/Bd3/Kg1, T73 Kf1/Bf3/Qf2, T72R3 Nf6/b4/bxc3/Rb8, T72SF2 Nxc3/Ka1 each took 2 tries stale after his capture. After 1 reject pick different piece AND idea, never resend same UCI. 3 rejects forfeit. Use tools/legal-list.py UCI list.
+- TOOL MUST LEAVE A MOVE: in check Kd7/Kd8/Ke8/Ke8 all allowed Nxh6. If flagged try another king square at once, never repeat. Count capture after each, stay central.
 - SICILIAN NXC6 SHELL: vs bxc6/Bd3/e5 hold e5/c5 with Be7/O-O/Nd7-Nc5/Bb7/Qc7. Bans: Qb6 allows b3, Rxd8 gives file, Kh8/Ke8 shuffle loses tempo, Qf6 lets king centralize.
 - BB5 PIN SHELL: vs Bb5/Ba4/Bb3 play Bd7/a6/b5 tempo, e6/Be7/O-O/Qc7 hold c5/c6. Ne5-Ng6 eyes f4, c4/b4 hits bishop/knight with tempo, Nf4 hits Qe2, bxc3 wins N. Keep e6 closed, no early c4/b4 without queen guard.
 - DRAGON BXC6 QA5: after bxc6 Qa5 hits c3 at once. Bh6/Qxh6 abandons c3 guarded only by Be3+Qd2. Never Bh6 while Nc3 held only by queen/bishop. Keep Be2, king central, no b3 weakening, contest b-file first.
@@ -66,6 +66,8 @@
 - DXC5 OPENS BXC5 ON QUEEN: after dxc5 Bxc5 hits Qe3. Block Nd6 first, never b4 allowing Qxb4+ check.
 - ND4 BLOCK INVITES BA3: Nd4 block allows Ba3 plus Qb4+ fork. Prefer Nc6 hitting queen, sweep b-file checks.
 - RB2 KB1 SELF-MATE: Rb2 blocks king for Qe1 mate with Nd4 covering c2. Down queen keep Rg2 blocking passer, never park on b2 when Q plus N eye e1.
+- F-FILE ABANDON: Rfc1 left f-file to queen plus rook mate on f2. While their queen eyes center and rook eyes f-file keep a rook home, tuck king first. Use tools/f2-guard.py.
+- BLOCK INVITES SAC: bishop block on open file invites rook sac into queen checks and mate. List sac plus checks before any block, keep luft first.
 - CARO C4/B4 CLAMP KILLS B3/KB2: vs ...c5/c4/b5/b4+Qb6/Rc6/Rc7, b3 opens c3 to cxb3 axb3 bxc3+ winning N, then Rxc3/Rxc2+ win N+B. Keep Kb1 (never Kb2 into check), Rd1/Rd2, Be1/Bd2, Qf3 holders, no pawn push while c4 lives.
 - ENGLISH BXH3 SUSPECT: wins h-pawn but flagged ??, costs dark bishop + Bf8 tempo. Only with Re8/d6/e5 held. Vs dxe5 play Nxe5 centralize, never Nh7 passive.
 - ENGLISH BXC4 SUSPECT: Bxc4 wins pawn but b3 hits bishop, b4/b5/b6 chases queen and makes passer tying queen to c-file. Pushing c3/c2 alone needs queen drift, promotion only nets exchange. Hold c5 with Qc6/Be6 unless twice-held.
@@ -73,8 +75,6 @@
 - NA5 POKE WINS TEMPO: Na5 hits loose c4 forcing b3, Nc6 returns guarded. exd4 opens e-file hitting Nc3.
 - BLOCKER LEAVES QUEEN: Nd5 blocked Rd1-Qd7, Nb4 unblocked it so Rxd7 won Q. Before moving blocker move queen off d-file or guard it.
 - RE6 LIFT HOLDS: Re6 holds d6/e7 eyes e4, answer Nf4 hit with Re8, Kh8/Qd7 shell, Nd4 outpost sets Nf3 mate with Q cover.
-- STORM PLAN: gain space, open file with tempo, double queen, mate with rook cover. Keep king off open file first.
-- TRAPPED CORNER KNIGHT: hold exits, centralize, recover, take only after sweep.
 - FREE UNIT FIRST THEN CONSOLIDATE: take only after sweep, recount, rescan loose.
 - UP EXCHANGE FINISH: win knight hitting queen, then queen takes to squeeze. Cut rank, avoid stalemate, use defended checks to edge.
 - DOWN HUGE CAN DRAW: shell king near pawns, rook second rank, bishop central. No pawn pushes. Seek queen for rook cuts, take freebies. Never resign. Down N vs GLM still won by forfeit loop.
