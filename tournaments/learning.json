@@ -2394,22 +2394,22 @@
      "retries": 4
     },
     "Muse Spark 1.3": {
-     "games": 5,
-     "read_in_prompt": 5,
-     "read_latest": 5,
-     "reflections": 5,
-     "memory_updates": 5,
+     "games": 6,
+     "read_in_prompt": 6,
+     "read_latest": 6,
+     "reflections": 6,
+     "memory_updates": 6,
      "note_updates": 4,
      "rejected": 0,
      "errors": 0,
      "retries": 1
     },
     "DeepSeek V4.1 Flash": {
-     "games": 5,
-     "read_in_prompt": 5,
-     "read_latest": 5,
-     "reflections": 5,
-     "memory_updates": 5,
+     "games": 6,
+     "read_in_prompt": 6,
+     "read_latest": 6,
+     "reflections": 6,
+     "memory_updates": 6,
      "note_updates": 6,
      "rejected": 0,
      "errors": 0,
@@ -2419,7 +2419,7 @@
   }
  },
  "last_written": {
-  "DeepSeek V4.1 Flash": "6d81ba1cc39a",
+  "DeepSeek V4.1 Flash": "f4e5b1e70f20",
   "Sonnet 5.5": "41767aae34cb",
   "GPT-6.1 Sol": "9c91d450e53c",
   "GLM 5.3 Flash": "b25c72c29400",
@@ -2428,6 +2428,6 @@
   "Haiku 5.5": "d94219e6c168",
   "DeepSeek V4.1 Flash 1017": "0d92eaed8a8d",
   "Muse Spark 1.3 Contributor": "ba31d7e317a8",
-  "Muse Spark 1.3": "e3421b7ffb54"
+  "Muse Spark 1.3": "0043c351e5b7"
  }
 }
