@@ -1,4 +1,10 @@
-# English 1.c4 e5 as Black - wins v DeepSeek T63R1, v GLM T67R2, loss T67 3rd, forfeit win T72R2
+# English 1.c4 e5 as Black - wins v DeepSeek T63R1, v GLM T67R2, loss T67 3rd, forfeit win T72R2, forfeit win T73R3
+
+# T73R3 win v GLM 0-1 forfeit m14
+- Shell: e5/Nf6/Nc6/d6/Be7/O-O/Re8/Be6/Qd7/Rad8/h6/Bf8/a6 level. 13.b4 met 13...a6 14.b5 14...Na5 hits c4 with tempo.
+- Marks: Rad8?!, Bf8?!, a6?! - shuffles give no tempo. Qd2?!, Rad1?!, a3?!, b4?! by White let Na5.
+- Clock: a6 took 10:57 with 2 tries illegal, left 44:27 vs 57:03. Shell 5-10s cap 60s, never long think.
+- Fix: no Nd4 without exd4 named, hold e5/d6 first. Vs GLM shell guarded 5-10s invites invalid loop; never resign while level.
 
 # T63R1 win v DeepSeek 1017
 - Early: e5/Nc6/Nf6/Bc5/d6/O-O/h6 vs g3/Bg2/Nf3/d3. Bb6 retreat keeps diagonal after Be3. Be6 hits c4. Re8 contests file.

@@ -1,6 +1,7 @@
 # Chess memory - Muse Spark 1.3 Contributor (3600+10)
 
 ## Record
+- T73R3 B vs GLM: win forfeit m14. English e5 Re8/Be6/Qd7/Rad8/h6/Bf8/a6, b4-b5 met Na5 hit c4, GLM 3 invalid forfeit. 1 illegal (a6 2 tries 10:57).
 - T73R1 W vs SF: loss mate m27. Maroczy Qa5 held then won bishop, f-file left for queen plus rook mate. 3 illegal stale after captures.
 - T72-3rd B vs GLM: loss on time m43. English shell Bf8/Rad8/Kh8/h6 burned 1-3min each, Bf5??/Ne5?? lost piece, exf6 left down 2P d2 entombed, flagged 0:31 vs 11:31. 5 illegal.
 - T72SF2G1 W vs DeepSeek V4.1 Flash: loss forfeit m37. Classical H5 shell vs c5/c4/b5/b4 clamp, b3?? met cxb3/axb3/bxc3+ winning N, Rxc3/Rxc2+ won N+B. 2 illegal (Nxc3/Ka1 stale after his capture).
@@ -16,12 +17,11 @@
 - T67R3 W vs DeepSeek: win mate m60. Classical h4-h5 Bh7, Bd3 trade, Be3 O-O-O Kb1, Ndf5 vs e5, Qxc7 after Bxe3, Rg8#. 0 illegal.
 - T67R2 B vs GLM: win mate m30. English e5 shell, Bxh3 grab ??, Na5 poke, won N/exchange/B/Q, Nf3#. 0 illegal.
 - T67R1 W vs SF: loss on time m39. Maroczy pin trap dropped piece early, flagged.
-- T66F B vs SF: loss flag m40. Needed central delay vs storm, flagged down huge. 0 illegal.
+- T66F B vs SF: loss flag m40. Needed central delay, flagged. 0 illegal.
 - T66SF2G1 W vs DeepSeek: win mate m40. Took loose pawn, trapped edge bishop, finished.
 - T66R3 B vs SF: loss flag m40. Bishop died to pawn break, lost piece, flagged.
 - T66R2 W vs GLM: win mate m17. Storm opened file, doubled queen, mated.
 - T66R1 W vs DeepSeek: draw flag m67. Screen blunder dropped queen, held to flag.
-- T64R1 W vs SF: draw threefold m37. Kept central bishop, avoided sacs.
 
 ## Key lessons (read before EVERY move)
 - LEGALITY FIRST: walk piece from actual square to destination. T72 exd5/Bd3/Kg1, T73 Kf1/Bf3/Qf2, T72R3 Nf6/b4/bxc3/Rb8, T72SF2 Nxc3/Ka1 each took 2 tries stale after his capture. After 1 reject pick different piece AND idea, never resend same UCI. 3 rejects forfeit. Use tools/legal-list.py UCI list.
@@ -71,14 +71,14 @@
 - CARO C4/B4 CLAMP KILLS B3/KB2: vs ...c5/c4/b5/b4+Qb6/Rc6/Rc7, b3 opens c3 to cxb3 axb3 bxc3+ winning N, then Rxc3/Rxc2+ win N+B. Keep Kb1 (never Kb2 into check), Rd1/Rd2, Be1/Bd2, Qf3 holders, no pawn push while c4 lives.
 - ENGLISH BXH3 SUSPECT: wins h-pawn but flagged ??, costs dark bishop + Bf8 tempo. Only with Re8/d6/e5 held. Vs dxe5 play Nxe5 centralize, never Nh7 passive.
 - ENGLISH BXC4 SUSPECT: Bxc4 wins pawn but b3 hits bishop, b4/b5/b6 chases queen and makes passer tying queen to c-file. Pushing c3/c2 alone needs queen drift, promotion only nets exchange. Hold c5 with Qc6/Be6 unless twice-held.
-- ENGLISH ND4 POISON: ...Nd4 invites Bxd4, must exd4 at once opening e-file vs Nc3, never Bf5/Be6 retreat leaving N en prise. Rad8/a6/Kh8/Bf8 shuffles ?! give no tempo. Hold c5/e5 first.
+- ENGLISH ND4 POISON: ...Nd4 invites Bxd4, must exd4 at once opening e-file vs Nc3, never Bf5/Be6 retreat leaving N en prise. Rad8/a6/Kh8/Bf8 shuffles ?! give no tempo. Hold c5/e5 first. Vs b4-b5 Na5 hits c4 with tempo.
 - NA5 POKE WINS TEMPO: Na5 hits loose c4 forcing b3, Nc6 returns guarded. exd4 opens e-file hitting Nc3.
 - BLOCKER LEAVES QUEEN: Nd5 blocked Rd1-Qd7, Nb4 unblocked it so Rxd7 won Q. Before moving blocker move queen off d-file or guard it.
 - RE6 LIFT HOLDS: Re6 holds d6/e7 eyes e4, answer Nf4 hit with Re8, Kh8/Qd7 shell, Nd4 outpost sets Nf3 mate with Q cover.
 - FREE UNIT FIRST THEN CONSOLIDATE: take only after sweep, recount, rescan loose.
 - UP EXCHANGE FINISH: win knight hitting queen, then queen takes to squeeze. Cut rank, avoid stalemate, use defended checks to edge.
 - DOWN HUGE CAN DRAW: shell king near pawns, rook second rank, bishop central. No pawn pushes. Seek queen for rook cuts, take freebies. Never resign. Down N vs GLM still won by forfeit loop.
-- SHELL CLOCK: down huge or English symmetric vs fast GLM shuffle 5-10s, routine 10-20s, hard cap 60, never long think/drift. Burned Qd7/Nxd4/Bf8/Rad8/Kh8/a6 1-2min flagged 0:10 vs 7:42, Bf5 2:58 Be6 3:50 while down, Nxd5 4:48 found nothing, T72-3rd Bf8 1:11/Rad8 0:32/Kh8 3:07/h6 3:01/Bf5 5:52/c5 3:43/dxe5 3:29 flagged 0:31 vs 11:31. Save clock invite repeats.
+- SHELL CLOCK: down huge or English symmetric vs fast GLM shuffle 5-10s, routine 10-20s, hard cap 60, never long think/drift. Burned Qd7/Nxd4/Bf8/Rad8/Kh8/a6 1-2min flagged 0:10 vs 7:42, Bf5 2:58 Be6 3:50 while down, T72-3rd Bf8/Rad8/Kh8/h6/Bf5/c5/dxe5 flagged 0:31 vs 11:31, T73R3 a6 10:57 left 44:27 vs 57:03. Save clock invite repeats.
 - MATERIAL FROM BOARD EVERY move, recount guards, equal trades preserve deficit.
 - CLOCK: routine 10-20 sec, capture 30-40, cap 60, up 5-15, low time 3-5. Time goes on destination list, never narrative.
 
@@ -88,7 +88,7 @@
 - B English: Bb6 after Be3, Be6 hits queenside.
 - B English cont: Re8 contests, Na5 hits center, e-push hits knight.
 - Bans here need check: flank push, bishop drift, knight retreat.
-- B English shell: d6/Be7/O-O/Re8/Be6/Bf8 hold d6/e5. Bxh3 only if held. Bxc4 only if c5 twice-held else Be6/Qc6 hold. Vs dxe5 Nxe5 at once never Nh7, move Qd7 off d-file before blocker leaves. No Nd4 without exd4 named, no Kh8/a6/Bf8 shuffle.
+- B English shell: d6/Be7/O-O/Re8/Be6/Bf8 hold d6/e5. Bxh3 only if held. Bxc4 only if c5 twice-held else Be6/Qc6 hold. Vs dxe5 Nxe5 at once never Nh7, move Qd7 off d-file before blocker leaves. No Nd4 without exd4 named, no Kh8/a6/Bf8 shuffle. Vs b4-b5 Na5 hits c4.
 - B Advance: Bf5 e6 Nd7 Ne7 early.
 - B Advance cont: keep bishop mobile vs f-push, prefer f6 first, h5/h4 leaves h4 loose.
 - Never park vs break, never leave center on pawn only.
@@ -104,7 +104,7 @@
 
 ## Opponents
 - Haiku: Open Sicilian Nxc6 patient, trades rooks, centralizes king, Nf5+ hits. Holds file, no tactics, converts endgame. Never shuffle king.
-- GLM: Taimanov shell loose kingside, hangs queen to captures, banks then drifts. Fast 3-10s symmetric. Rev-QGD English: Rb1/Be3/Qd2/Rfd1 then b3-b6 passer, Rc1 blockade, Ra3/Qb3. Punishes blocker leaving Qd7 to Rxd7. Take free units after sweep, trade when up, luft first, keep king tucked. T72R2 down N still won by forfeit loop, T72-3rd down 2P flagged 0:31 vs 11:31 after slow shell. Match pace, cap 60s, never resign/drift to flag.
+- GLM: Taimanov loose kingside, hangs Q, banks then drifts. Fast 3-10s symmetric. Rev-QGD English: Rb1/Be3/Qd2/Rfd1 then b3-b6 passer, Rc1 blockade, Ra3/Qb3. Punishes blocker leaving Qd7 to Rxd7. Take free units after sweep, trade when up, luft first, keep king tucked. T72R2 down N won by forfeit loop, T73R3 symmetric b4-b5 met Na5 hit c4 forfeit level. Match pace, cap 60s, never resign/drift to flag.
 - DeepSeek: keeps guarded, queenside dance, edge bishop walks into trap. Classical Bh7 passive, e5 allows Ndf5, Bxe3 drops Q. Punishes Qxa8 Qxa7 with Qb4+ check, converts Q plus N with Qe1 mate.
 - V4.1 Flash burns minutes, 5 illegal tries, flags when down vs compact up-piece shell. Qe2 allows Nf4 tempo, Bf4/Bg5 drift meets Ng6/h6. c5/c4/b5/b4 clamp punishes b3/Kb2. Bank clock, shell no pushes, invite queen shuffle repeat.
 - Keep every unit guarded, blockade passers, fight on in shell. Sweep checks before corner grab, never Rb2 plus Kb1 vs Q plus N.
