@@ -653,8 +653,8 @@
    "id": "aichess-0073-20261028-121341",
    "title": "Chess Tournament but with AI Players #73",
    "created_at": "2026-10-28T12:13:41+00:00",
-   "finished": false,
-   "champion": null,
+   "finished": true,
+   "champion": "Sonnet 5.5",
    "updated_at": "2026-10-28T20:27:02+00:00"
   }
  ]
