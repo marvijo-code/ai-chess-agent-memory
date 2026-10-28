@@ -1,22 +1,18 @@
 # Open Sicilian / Taimanov as Black
 
-## T71R2 v SF19, 3.e5-...Nd5 hybrid, L m21 (Qh8#) - SELF-MATED KING
-Line: 1.e4 c5 2.Nf3 Nf6 3.e5 Nd5 4.d4 cxd4 5.Nxd4 e6 6.c4 Nb6?! (15 plies). 7.Nb5! (his knight walks onto mine - the b5-raid mirror) 7...Nc6 8.Nd6+ Bxd6! 9.exd6 O-O: even B-for-N, his e5-pawn a permanent d6-passer, only +2.
-- THE OPENING WAS NOT THE PROBLEM. My downfall was the kingside pair 10...h6?! 11...g5?! chosen as 'flag-clean' anti-consolidation: g5 pushed the g-pawn AWAY from the king, DELETING g7; 19.hxg5 hxg5 then deleted h6/h7. King g8 left with f7-pawn + f8-rook only, g7/h7 open.
-- His a5! then cxd5/exd5/Qxd5 cost d5 ('down 2' from m14). Midgame: I hunted a ...Nb3 fork on Qd4/Ra1/a5 with 20...Nc5?? and had SWEEPED only the b-file of Nb7/c5 squares - never the QUEEN's own diagonals. 21.Qh8# on the emptied d4-e5-f6-g7-h8 diagonal. A quiet central queen while my king has lost cover is a MATE PREP, not a waiting move.
-- Checks before EVERY later move: (1) MY flights f7/g7/h7 ledger after any f/g/h push or g/h capture-trade; (2) walk HIS queen BOTH diagonals + file through empties to her edge; (3) run tools/mate-sweep.py.
-- Clock fine, 4 invalid tries (all ghost/path once): re-list my pieces after EVERY his capture.
-- Next try vs this 3.e5 order: 6...Nc7 or 3...e6 staying solid (both unverified).
+## 3.e5-...Nd5 hybrid v SF (T71R2 L m21, T73R5 L m47) - PLAY AGAIN with the m11 fix
+Line: 1.e4 c5 2.Nf3 Nf6 3.e5 Nd5 4.d4 cxd4 5.Nxd4 Nc6 6.Nf3 e6 7.a3 d6 8.c4 Nb6 (16 plies), then ...Be7 10.Bxe7 Qxe7 11.exd6.
+- THE KILL (T73R5): his d6-PAWN attacks my queen on e7. 11...Qxd6! CAPTURES THE UNDEFENDED ATTACKER = level (verified: nothing white guards d6 - Nf3 no, c4/d4 pawns no, Qd1/Rd1 blocked by his own d4-pawn). I played 11...Qd7?! blockading it: +2.6, and the pawn then poisoned e7/d6 for 35 moves - its e7-cover cornered my king to g8/h8 and WAS the final net (46.Qh7+ Kf8 47.Qh8#).
+- 10...Qxe7?! (SF mark): 10...Nxd4 in-between candidate, unverified.
+- ENDGAME: his axb5 pried my c6-knight (all-game hero: blocked c5, guarded e5) and the wall fell. A hero blocker dies to the first pawn hit - have its relief ready BEFORE, not after.
+- BANS (both games): the ...h6+...g5 pair (T71R2 emptied king cover, Qh8#); knight-parks on the d4-h8 diagonal (20...Nc5?? Qh8#); any kingside push with a vacator behind his queen (23...h5 died to Qd1-h5 once 24.Ng5 vacated f3 - list his vacators first).
+- 14 invalid tries were ALL 2nd-attempt sole-legal in-check resends (Kh8/Kg8/Qxf7/Kf8): pawn-paths.py now lists all check replies; with exactly ONE, resend once - accepted 10x, no forfeit. Ghost citations (my Kg8 refused for an Nh7 flag) are part of this pattern.
 
-## T66R3 v DS-4.1, L MATE m30 - the d5-bishop I never guarded; checks I never swept
-His known build: Be2/Be3/f4/Qd2/Rad1, 12.e5! break. 12...Nd5 (SF-?; try ...Nd7, unverified) 13.Nxd5 exd5 14.Bf3 Nxd4 15.Bxd5 Bxd5 16.Bxd4 = B-for-2P, level. THEN my drift:
-- My d5-BISHOP was guarded only by Qd8 THROUGH MY OWN d7-PAWN. 18.Rfe1 18...Rc7? drifted. THE FIX: ...Qd7! defends d5 AND e7. NEVER drift with her blocked.
-- 19.Bxf6; I recaptured ...Bxf6?? which ABANDONED d5: 20.Qxd5+ took my last bishop WITH CHECK. The RETREAT ...Be6! guarded d5. Attacked piece = list retreats that ALSO guard the other hanging unit.
-- Down 3 gesture kills: 21...h5??, 22...Bd4+?? Qxd4+, 25...Rxd5! Q-for-R was RIGHT, then 26...Qg5+?? Rxg5+ gave her straight back - his Rd5 owned the 5th rank. MY CHECK = destination sweep like any move.
-- LEGALITY: burned 3 invalid tries on one 16...f6 (Qd7 onto my own pawn; Nc6 with NO knight left). After every HIS capture REBUILD my piece list.
+## T66R3 v DS-4.1, L MATE m30 - the d5-bishop I never guarded
+His build: Be2/Be3/f4/Qd2/Rad1, 12.e5! break. 12...Nd5 13.Nxd5 exd5 14.Bf3 Nxd4 15.Bxd5 Bxd5 16.Bxd4 = level. Then 18...Rc7? drift; 19.Bxf6 Bxf6?? ABANDONED d5 (guarded only by Qd8 through my d7-PAWN): 20.Qxd5+. FIX: retreat ...Be6! which ALSO guards, or ...Qd7 early. Down-3 gesture kills: h5/Bd4+/Qg5+ all ??. 3 invalid tries on one 16...f6 - rebuild the piece list after every HIS capture.
 
-## T66R2 v Muse 1.3, L MATE m17 - storm defense killed by my own moves
-His build: Nc3/Be3/Qd2/f3/Bd3/O-O-O/Kb1, then g4-h4-g5 at the OPEN h-file. Kills: 12...h6? (g5 target AND opened my h-file), 13...Kh8?! parked ON the built file, 14...hxg5? opened it myself, 16...Bxg5?? - blocker with NO named guard, 17.Qxh7#. Counterplay to test: 12...Nxd4 13.Bxd4 e5 (unverified).
+## T66R2 v Muse 1.3, L MATE m17 - storm defense
+His build: Nc3/Be3/Qd2/f3/Bd3/O-O-O/Kb1, then g4-h4-g5 at the open h-file. Kills: 12...h6? (g5 target AND opened my h-file), 13...Kh8?! parked ON the built file, 14...hxg5? opened it myself, 16...Bxg5?? blocker with NO named guard, 17.Qxh7#. Counterplay to test: 12...Nxd4 13.Bxd4 e5 (unverified).
 
 ## T62R2/T51R1 v DS-4.1 - never land on his e5-pawn's squares
-Kills: 14...Qd6?? exd6 (Q for P); 17...Rfd8?? into his e7-passer's d8; 11...Bc5?? pre-marked; 13...Qxc3?? Qxd4 (b2-PAWN was the guard). RULES: after his e5-class push BOTH d6/f6 banned for EVERY my piece, queen first; a 7th-rank passer = contest from BEHIND only; never trade into a ?? idea.
+Kills: 14...Qd6?? exd6; 17...Rfd8?? into his e7-passer; 11...Bc5?? pre-marked; 13...Qxc3?? Qxd4 (b2-PAWN the guard). After his e5-class push BOTH d6/f6 banned for EVERY my piece, queen first; a 7th-rank passer = contest from BEHIND only.
