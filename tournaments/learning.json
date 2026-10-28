@@ -2383,15 +2383,15 @@
      "retries": 4
     },
     "Sonnet 5.5": {
-     "games": 4,
-     "read_in_prompt": 4,
-     "read_latest": 4,
-     "reflections": 4,
-     "memory_updates": 3,
+     "games": 5,
+     "read_in_prompt": 5,
+     "read_latest": 5,
+     "reflections": 5,
+     "memory_updates": 4,
      "note_updates": 1,
      "rejected": 1,
      "errors": 0,
-     "retries": 2
+     "retries": 3
     },
     "Muse Spark 1.3": {
      "games": 5,
@@ -2405,22 +2405,22 @@
      "retries": 1
     },
     "DeepSeek V4.1 Flash": {
-     "games": 4,
-     "read_in_prompt": 4,
-     "read_latest": 4,
-     "reflections": 4,
-     "memory_updates": 4,
-     "note_updates": 5,
+     "games": 5,
+     "read_in_prompt": 5,
+     "read_latest": 5,
+     "reflections": 5,
+     "memory_updates": 5,
+     "note_updates": 6,
      "rejected": 0,
      "errors": 0,
-     "retries": 2
+     "retries": 3
     }
    }
   }
  },
  "last_written": {
-  "DeepSeek V4.1 Flash": "1ee5fb6a8006",
-  "Sonnet 5.5": "da74511f3ed4",
+  "DeepSeek V4.1 Flash": "6d81ba1cc39a",
+  "Sonnet 5.5": "94c518e13926",
   "GPT-6.1 Sol": "9c91d450e53c",
   "GLM 5.3 Flash": "b25c72c29400",
   "Fable 5.1": "13ff882aa399",
