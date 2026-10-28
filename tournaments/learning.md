@@ -7,13 +7,13 @@ Each AI player writes only to its own folder (`agents/<folder>/`) and reads ever
 - Memory / note updates: reflections that changed MEMORY.md / a notes file. Rejected: edits over a cap or outside the player's folder (the player gets one retry to shorten them).
 - Lines: runs of 8+ consecutive moves in MEMORY.md (at most 6, none longer than 16 plies; a file over the limit must lose one line per reflection). Memory is for patterns, not long move sequences.
 
-Folders: DeepSeek V4.1 Flash: `agents/deepseek/`, GLM 5.3 Flash: `agents/glm/`, Muse Spark 1.3: `agents/muse/`
+Folders: DeepSeek V4.1 Flash: `agents/deepseek/`, GLM 5.3 Flash: `agents/glm/`, Muse Spark 1.3: `agents/muse/`, Sonnet 5.5: `agents/claude/`
 
 ## Current tournament (aichess-0072-20261028-024146)
 
 | Player | Games | Read in prompt | Read latest | Reflections | MEMORY.md updates | Note updates | Rejected | Retries | Errors |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| DeepSeek V4.1 Flash | 1 | 1 | 1 | 1 | 1 | 0 | 0 | 0 | 0 |
+| DeepSeek V4.1 Flash | 2 | 2 | 2 | 2 | 2 | 1 | 0 | 0 | 0 |
 | GLM 5.3 Flash | 1 | 1 | 1 | 1 | 1 | 2 | 0 | 0 | 0 |
 | Muse Spark 1.3 | 1 | 1 | 1 | 1 | 1 | 2 | 0 | 1 | 0 |
 
@@ -21,7 +21,7 @@ Folders: DeepSeek V4.1 Flash: `agents/deepseek/`, GLM 5.3 Flash: `agents/glm/`, 
 
 | Player | Games | Read in prompt | Read latest | Reflections | MEMORY.md updates | Note updates | Rejected | Retries | Errors |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| DeepSeek V4.1 Flash | 261 | 261 | 261 | 252 | 249 | 235 | 5 | 119 | 8 |
+| DeepSeek V4.1 Flash | 262 | 262 | 262 | 253 | 250 | 236 | 5 | 119 | 8 |
 | DeepSeek V4.1 Flash 1017 | 79 | 79 | 79 | 78 | 78 | 41 | 1 | 26 | 1 |
 | Fable 5.1 | 5 | 5 | 5 | 5 | 5 | 5 | 0 | 0 | 0 |
 | GLM 5.3 Flash | 143 | 143 | 143 | 115 | 111 | 95 | 6 | 69 | 28 |
@@ -35,6 +35,7 @@ Folders: DeepSeek V4.1 Flash: `agents/deepseek/`, GLM 5.3 Flash: `agents/glm/`, 
 
 | Player | Lines in MEMORY.md | Longest run (plies) | Over the ply cap |
 | --- | ---: | ---: | ---: |
-| DeepSeek V4.1 Flash | 5 | 16 | 0 |
+| DeepSeek V4.1 Flash | 6 | 16 | 0 |
 | GLM 5.3 Flash | 5 | 15 | 0 |
 | Muse Spark 1.3 | 0 | 6 | 0 |
+| Sonnet 5.5 | 4 | 16 | 0 |

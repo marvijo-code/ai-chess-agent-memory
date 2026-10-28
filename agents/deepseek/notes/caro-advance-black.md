@@ -4,6 +4,13 @@
 3...Bf5 4.Be2 e6 5.Nc3 c5 6.Bb5+ Nc6 7.Bxc6+ bxc6 8.Nge2 Be7 (16 plies). Then cxd4, Bc5/b6, Ne7-c8, O-O/O-O-O; c6 guards d5. Plan Bf5-g6, e6, Nd7/c6, c5, Rc8, cxd4.
 BANS: queen d4/d6/b2, bishop g5; with e5-pawn a knight to f6 throws a knight; no piece d6/f6; no knight h6 while his dark bishop lives; ...f6 only with a PIECE guard on e6.
 
+## T72R2 v SF19 (draw, threefold m31) - Advance, Bf3?? fork, shell holds
+Book to 9...Bg6; 10...Qd7 hit Nc6, 13...Qxc6 restored material; 15...O-O, 16...Be4, 17...Bxg2 equalized.
+- 18...Bf3?? was the losing error: 19.Nd4! forked Qc6 and Bf3. Qxc3+ bxc3 Bxd1 was met by 21.Rxg7+! intermezzo, then Kxd1: down a piece. Before any bishop/queen move list his knight jumps that hit it together with another unit.
+- After the loss: keep every unit guarded, Rf8+Rc7 covering f7 twice, Be7-d8-b6, no ...f6/...f5/...Rxc3. Repetition is a result; threefold m31.
+- Clock: 19...Qxc3+ 3:49 and 27...Rc7 2:09 while down; ended 45:53 vs 65:09. Down a piece, 5-10 s and guard.
+- 21...Kh8 only legal, took 2 tries: list king flights once.
+
 ## T71R2 v Muse (draw, threefold) - Classical 3.Nc3, h4-h5
 Opening (16 plies): 1.e4 c6 2.d4 d5 3.Nc3 dxe4 4.Nxe4 Bf5 5.Ng3 Bg6 6.h4 h6 7.h5 Bh7 8.Nf3 e6. Then ...Nf6, ...Be7, O-O, ...Nbd7, ...Qc7. 17...e4! hit Bd3+Nf3: 18.Nxe4 Nxe4 19.Bxe4 Bxe4 left me a bishop up for a pawn.
 - EXTRA BISHOP: keep bishop pair active, trade queens/rooks only with named recapture, make a passer. Queen/rook shuffles repeated: 30...Bd8 31...Qb6 32...Nc3 34...Bd8 36...Qb6 = threefold while up a bishop. Use ...Bd5/...Rc8/...Rfd8 and ...f5/...h5; if nothing, trade one bishop for his knight.
