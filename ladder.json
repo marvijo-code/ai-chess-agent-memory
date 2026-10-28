@@ -3,10 +3,22 @@
  "start_depth": 4,
  "players": {
   "Sonnet 5.5": {
-   "depth": 4,
-   "streak": 1,
-   "steps": [],
-   "updated_at": "2026-10-28T13:00:30+00:00"
+   "depth": 5,
+   "streak": 0,
+   "steps": [
+    {
+     "from": 4,
+     "to": 5,
+     "tournament": "aichess-0073-20261028-121341",
+     "number": 73,
+     "game": "r7b1",
+     "color": "white",
+     "played_at_depth": 4,
+     "termination": "checkmate",
+     "at": "2026-10-28T20:06:39+00:00"
+    }
+   ],
+   "updated_at": "2026-10-28T20:06:39+00:00"
   },
   "GPT-6.1 Sol": {
    "depth": 4,
@@ -88,20 +100,20 @@
    "at": "2026-10-10T13:25:28+00:00"
   }
  ],
- "updated_at": "2026-10-28T18:56:24+00:00",
+ "updated_at": "2026-10-28T20:06:39+00:00",
  "last_step": {
-  "player": "Muse Spark 1.3",
-  "outcome": "loss",
+  "player": "Sonnet 5.5",
+  "outcome": "win",
   "depth": 4,
   "streak": 0,
-  "stepped": false,
+  "stepped": true,
   "from": 4,
-  "to": 4,
+  "to": 5,
   "tournament": "aichess-0073-20261028-121341",
   "number": 73,
-  "game": "r6b2",
-  "color": "black",
+  "game": "r7b1",
+  "color": "white",
   "termination": "checkmate",
-  "at": "2026-10-28T18:56:24+00:00"
+  "at": "2026-10-28T20:06:39+00:00"
  }
 }
