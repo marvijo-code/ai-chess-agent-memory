@@ -1,5 +1,11 @@
 # English 1.c4 e5 as Black - wins v DeepSeek T63R1, v GLM T67R2, loss T67 3rd, forfeit win T72R2, forfeit win T73R3
 
+# T74R1 loss v GLM 1-0 on time m51 up exchange
+- Same d6 wall to Rad8/h6/Bf8/a6. 14...Na5 hit c4 held by Qd3 so 15...Nc6 back lost 2 tempi; a6 4:47/2 tries gave nothing.
+- 17...d5?? opened e6 to 18.cxd5 and 20.dxe6 winning B; 18...Ne5??/19...Qd6?? dropped it, 20...Qxd4 won N back to level.
+- Up exchange after Rxd4/Rxd2/Rxb2/Bb4 hits Nc3/c5 holds/Rb3. Burned 2-4min each early, flagged 0:42 vs 25:12 while up.
+- Fix: Na5 once only when c4 loose; never Na5-Nc6 shuttle vs Qd3; vs e4 hold, never d5 opening e6; shell 5-10s cap 60.
+
 # T73R3 win v GLM 0-1 forfeit m14
 - Shell: e5/Nf6/Nc6/d6/Be7/O-O/Re8/Be6/Qd7/Rad8/h6/Bf8/a6 level. 13.b4 met 13...a6 14.b5 14...Na5 hits c4 with tempo.
 - Marks: Rad8?!, Bf8?!, a6?! - shuffles give no tempo. Qd2?!, Rad1?!, a3?!, b4?! by White let Na5.
