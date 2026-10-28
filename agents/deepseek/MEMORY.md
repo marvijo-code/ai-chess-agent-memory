@@ -12,17 +12,17 @@ Notes:
 - tools/: material-clock, clock-guard, repetition-guard, legal-list, fork-alert, queen-rook-safety, late-mate-scan
 
 ## Rule 0 - board, legality, clock
-- CLOCK IS THE #1 LOSS MODE: T74R1 forfeited at move 49 with 11:47 vs 50:12 left - 48 min burned on 1-3:40 thinks in a level-to-worse position, and the last reply timed out (provider 103 s). A >100 s reply is refused and loses the game. Routine 5-15 s, capture/trade 20-30 s, HARD CAP 60 s; level or worse after move 25 cap 15 s (8 s after 40). Count minutes vs moves every move.
-- CLOCK: T73R6 flagged 7:07 vs 53:31 after 7:04/7:38 thinks; T73R3 flagged 0:55 vs 42:31 in a level rook ending after 4-min thinks; T73R5 drew with 2:12 left after 3-6 min quiet bishop moves (he had 19:28). Closed shell: quiet retreats 5-10 s, one plan, repeat it.
-- LONG THINKS BUY NOTHING: T73R4 9:01 on 15...Bxe4 chose the losing simplification; T73R5 5:59/3:58/3:44 found no win in a pawn-down shell; T73R7 1:53-3:02 in a winning position; T74 48 min total.
+- CLOCK IS THE #1 LOSS MODE: T74R1 forfeited m49 11:47 vs 50:12 after 48 min (provider 103 s); >100 s reply loses. T73R6 7:07 vs 53:31; T73R3 0:55 vs 42:31; T73R5 2:12 vs 19:28. Routine 5-15 s, capture/trade 20-30 s, HARD CAP 60 s; level or worse after m25 cap 15 s (8 s after 40). Count minutes vs moves every move. Closed shell: quiet retreats 5-10 s, one plan, repeat.
+- LONG THINKS BUY NOTHING: T73R4/R5/R7 and T74 48 min found no save; pick the list, send, move on.
 - TOOL AVOID IS NOT MATERIAL: T73R7 17.Bxb8! was legal and won Q for B (Rc8 recaptures); my loose-piece tool flagged it and I played 17.Bg3?? (SF ??). If a flagged move captures his QUEEN and the only recapturer is a rook/bishop, count Q for B/R and play it; expect one refusal, then resubmit once with the count. Recheck any tool AVOID by material before obeying.
-- INVALID TRIES come after his captures and after my long thinks (T72R5 4, T73R3 1, T73R4 1, T73R5 2, T73R6 8). Rebuild every square from the FEN after his move; check the UCI with tools/legal-list.py; 3 tries = forfeit; after ONE rejection change piece AND idea. T73R6 53...Nc7 took 3 illegal tries on a forced defense: enumerate legal moves from the FEN.
+- INVALID TRIES come after his captures and my long thinks (T72R5 4, T73R6 8, T74R2 5). Rebuild every square from the FEN after his move; check the UCI with tools/legal-list.py; 3 tries = forfeit; after ONE rejection change piece AND idea. In check, enumerate every legal king move/block from the FEN; T74R2 23.Kh1 took 3 tries.
 - BOARD MAP FROM HIS LAST MOVE before any capture: a moved piece is not on its old square (T67R5.1 Qd4?? on a ghost d4-knight cost my queen).
 - LEGALITY: actual square, occupant, path squares, my own blockers; a pinned pawn cannot recapture; O-O needs king/rook unmoved and empty flights; two-step push needs empty transit.
 - HIS last move first, then my destination: 0 guards + his capture = gift; quiets and retreats too.
 - ONE MINOR MUST NOT MAKE FOUR MOVES: when a piece is kicked, develop ANOTHER piece or trade it (T73R5 Bf4/Bg3/Bf3/Be2 tours cost 20 moves and most of my clock).
 
 ## Rule 1 - destination sweep
+- ATTACKED PIECE: list its retreat squares before any quiet move; never fill one with another piece. T74R2 11.Be2?? filled e2, the d4-knight's only safe flight (f3 was a pawn), and Qd5 hit d4: 11...Nxd4 won a piece. A defended piece can still be lost when his capture has a second recapturer; count the chain, not just my first recapture.
 - AN ATTACKED PIECE IS THE MOVE when nothing of mine recaptures there (T72R5 12.Ng3 on the f5-bishop: ...Bg6/...Bd7/...g6).
 - LIST HIS PAWN CAPTURES VS EVERY LANDING, knights included: e5 owns f6/d6, g4 f5/h5 (T66R2 16...Nf5?? gxf5).
 - AN ATTACK IS NOT A DEFENCE (T71R1 22.Bd5?? Bxd5).
@@ -85,13 +85,13 @@ Notes:
 - Ruy Four Knights 4...a6 W (play): 1.e4 e5 2.Nf3 Nf6 3.Nc3 Nc6 4.Bb5 a6 5.Ba4 b5 6.Bb3 Be7 7.O-O O-O 8.d3 d6 (16 plies). Then Be3, Qd2, Rad1, h3, d4; keep e4 guarded, no Nd5 while ...Bb7 stands. Before the queen leaves the 2nd rank put Rb1 under b2.
 - Ruy 3...a6 4...d5 (v GLM): 5.exd5 b5 6.Bb3 Nd4 7.c3 Nxb3 8.Qxb3 gave me a pawn but his fortress held - open a second front, do not repeat.
 - Italian Giuoco Pianissimo W: ...Nc6/...Bc5/...Nf6, ...d6, castle, ...Be6, ...Qd7/...Re8/...d5; if ...Bg4 then Re1/h3. No 10.d4?! or a queen on d5 while Nf6 lives.
-- Accelerated Dragon W: play the Taimanov build; after ...d5 exd5 Nxd5 Nxd5 Qxd5 Bf3 meet ...Qa5+ with c3, ...Nxd4 with Bxd4 (c3 pinned). No queen wander, no Bd5 without a recapture.
+- Accelerated Dragon W: play the Taimanov build; after ...d5 exd5 Nxd5 Nxd5 Qxd5 play Bf3! hitting the queen (not Be2??; T74R2 lost a piece). Meet ...Qa5+ with c3, ...Nxd4 with Bxd4 (c3 pinned). No queen wander, no Bd5 without a recapture.
 - Open Sicilian Taimanov B: ...Nxc6/...bxc6 with Bd3 and Be7. The e5-clamp is answered only by ...Nd5 and ...Bf8. With my king on e8 g7 has NO guard: never ...d6, never castle, never ...Nf6 while e5 stands; cover g7 with a PIECE. After ...Bf8 no ...g6, no ...h5.
 - Dragon/Yugoslav B: 13.Qxd5 -> 13...Qc7 only, keep queens. Never move the last screen on a rank/file.
 - Maroczy Bind W: c4, Nc3, Be2, Be3, Qd2, Rfd1; watch ...Ng4, ...f5, ...Qa5; never a rook on c4/d4/e4 a pawn captures; h3 before the queen trade.
 
 ## Opponents
-- SF19: instant, zero errors. Punishes loose units, passive retreats, queens on rays/pawn squares/knight squares, ignored attacked pieces, pawn sacs opening lines to my king. As White vs my Caro Advance: Be2/Nc3/Nge2/O-O/b3-bxc4/Ng3-Nce4/Qe2/Bf4/Rad1, then Qa6+/Qb7# once my king sat on c8 with b7 empty. Its free-pawn grabs are safe because of the tempo after. 10-15 s; first rank solid; no wing-pawn raids.
+- SF19: instant, zero errors. Punishes loose units, passive retreats, queens on rays/pawn squares/knight squares, ignored attacked pieces, pawn sacs opening lines to my king. As White vs my Caro Advance: Be2/Nc3/Nge2/O-O/b3-bxc4/Ng3-Nce4/Qe2/Bf4/Rad1, then Qa6+/Qb7# once my king sat on c8 with b7 empty. Its free-pawn grabs are safe because of the tempo after. T74R2: vs Yugoslav ...d5 central strike; when my knight's retreat is blocked, ...Nxd4 wins it. 10-15 s; first rank solid; no wing-pawn raids.
 - Muse Spark 1.3: patient 30 s-4 min, usually zero illegal, banks clock, takes every loose pawn and undefended piece, sits in a shell; the clock is the game against her. 5-10 s a move, no 7-min thinks. T73R7 as Black Open Sicilian: took e5 with ...Nxe5, then ...Qb8?/...Ng6??/...Nd5??/...Ne5??; Qxe5! won a piece; 3 invalid replies on 24...Kf8 forfeited. Active open positions crack her; keep units guarded and bank clock.
 - GLM 5.3 Flash: HIS QUEEN ON MY PAWN'S OR KNIGHT'S CAPTURE SQUARE (five+ times). 1-7 illegal tries, often 3 on a check reply. Take gifts only after the pawn/bishop capture list; T72R1 built an a5/b5/c6/e5 fortress and won on my flag; decline queen trades when a pawn down - name a conversion.
 - DeepSeek V4.1 Flash 1017 (mirror): Taimanov/English both ways; keeps units guarded; punishes a piece on his pawn's square and a queen on a rook file.
