@@ -18,7 +18,7 @@
      "at": "2026-10-28T20:06:39+00:00"
     }
    ],
-   "updated_at": "2026-10-29T06:25:57+00:00"
+   "updated_at": "2026-10-29T06:43:42+00:00"
   },
   "GPT-6.1 Sol": {
    "depth": 4,
@@ -100,10 +100,10 @@
    "at": "2026-10-10T13:25:28+00:00"
   }
  ],
- "updated_at": "2026-10-29T06:25:57+00:00",
+ "updated_at": "2026-10-29T06:43:42+00:00",
  "last_step": {
   "player": "Sonnet 5.5",
-  "outcome": "draw",
+  "outcome": "loss",
   "depth": 5,
   "streak": 0,
   "stepped": false,
@@ -111,9 +111,9 @@
   "to": 5,
   "tournament": "aichess-0074-20261028-202920",
   "number": 74,
-  "game": "r7b1",
-  "color": "black",
-  "termination": "threefold repetition",
-  "at": "2026-10-29T06:25:57+00:00"
+  "game": "r7b3",
+  "color": "white",
+  "termination": "Sonnet 5.5 forfeited after 3 invalid replies",
+  "at": "2026-10-29T06:43:42+00:00"
  }
 }
