@@ -8,7 +8,7 @@ Hit rate = cached input tokens / all input tokens of the move requests, read fro
 | --- | ---: | ---: | ---: | ---: | ---: |
 | DeepSeek V4.1 Flash | 249 | 13389149 | 12226048 | 91.3% | 91.6% |
 | GLM 5.3 Flash | 136 | 5944741 | 5182144 | 87.2% | 87.6% |
-| Muse Spark 1.3 | 211 | 6512399 | 5918453 | 90.9% | 91.3% |
+| Muse Spark 1.3 | 217 | 6814578 | 6213275 | 91.2% | 91.6% |
 | Sonnet 5.5 | 264 | 14869821 | 13865162 | 93.2% | 93.7% |
 
 ## All tournaments
@@ -22,5 +22,5 @@ Hit rate = cached input tokens / all input tokens of the move requests, read fro
 | GPT-6 Astra | 456 | 15632539 | 14922624 | 95.5% | 95.9% |
 | GPT-6.1 Sol | 10063 | 311254406 | 290190080 | 93.2% | 93.8% |
 | Haiku 5.5 | 761 | 40763218 | 38696645 | 94.9% | 95.3% |
-| Muse Spark 1.3 | 1487 | 35331541 | 32787991 | 92.8% | 93.3% |
+| Muse Spark 1.3 | 1493 | 35633720 | 33082813 | 92.8% | 93.4% |
 | Sonnet 5.5 | 11764 | 343117270 | 325708407 | 94.9% | 95.6% |
