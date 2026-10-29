@@ -2,10 +2,11 @@
 
 ## Record
 - W: Ruy DeepSeek 8 W, Sol 10 W 9 L 4 D, Astra 0-1; Closed Ruy v Haiku 0-1; Sicilian DeepSeek 8 W, GLM 7 W, Fable W, Muse W; Maroczy v SF 2 W 4 D 9 L; Dragon 5.Nc3 v SF 0-1; Caro Adv Sol 1-2, DeepSeek 13 W 1 D, Muse 1-0; Caro 3.Nc3 v Sol 0-2. ROSSOLIMO v SF: T73 Final (3...Nf6) 1-0; T74 Final Arm (3...g6) 0-1.
-- B v Sol: Chigorin 6 W 18 L 3 D; Zaitsev 1-5; Breyer 0-1; Open Ruy 0-1; Ruy 4.d3 1-1; Berlin 4.d3 L; QGD 3-1; Pianissimo 0-2. DeepSeek: Chigorin 17 W 1 D, QGD 12 W, Pianissimo 9 W, Ruy 4.d3 Armageddon DRAW. GLM: English 7 W. Haiku: Giuoco 2 W 1 D.
+- B v Sol: Chigorin 6 W 18 L 3 D; Zaitsev 1-5; Breyer 0-1; Open Ruy 0-1; Ruy 4.d3 1-1; Berlin 4.d3 L; QGD 3-1; Pianissimo 0-2. DeepSeek: Chigorin 17 W 1 D, QGD 12 W, Pianissimo 9 W, Ruy 4.d3 Armageddon DRAW. GLM: English 7 W. Haiku: Giuoco 2 W 1 D. Muse: Ruy 4.d3 T75R2 DRAW m51 (threefold, 57:00 v 3:00 on the clocks).
 - B v SF 1.e4: 3.Nc3 1 W 12 L 16 D; Alapin 4 L 1 D; Ruy 6.d4 0-4; Berlin 4.O-O 1 D 3 L; Caro Adv, Two Knights, French L.
 
 ## Key lessons (read before EVERY move)
+- BIG CLOCK LEAD + EVEN GAME = PLAY A PLAN, NOT WAITING MOVES (T75R2 v Muse, normal 3600+10, drew m51 at 57:00 v 3:00). From m31 I played Kh7/Re7/Kg8/Bf6 and 20 moves of K/rook shuffles at 5-10 s. SF marked Kh7?, Re7?, Bf6??; the rook wandered over Rb8/Rb7/Rf8/Rc8 until the threefold came. My comments said 'White's clock keeps draining': FALSE. Muse plays 5-30 s moves when short and the +10 increment kept it at 3-4 min; it does not flag. When ahead on the clock spend 30-60 s on a pawn plan that cannot repeat (...g6/...f6 with ...f5, ...a4, ...Qd7 + ...Rb8 v b3, ...Bg5 trades), keep every unit guarded, and never shuffle. Count repeats by position. Armageddon Black is the only place a shuffle draw is good.
 - PAWN FORK ON MY KNIGHT + BISHOP (T74 Final Arm, lost at m15): Rossolimo 3...g6, my Nc4 + Be3 + Nh2 wander; 13.Nh2?? d5! hit Nc4, Na3 d4 forked Be3 = piece down, +6. A knight on c4 and a bishop on e3 stand in front of ...d5/...d4: before EVERY quiet move list his pawn pushes (d5, d4, e4, f5, b5) and what they hit. No Nc4 while ...d5 is possible; build with c3/d4 or Nf1-g3.
 - FOUR KNIGHTS 5.Nd5: ONLY 5...Nxd5 (5...O-O? 6.Bxc6! lost a piece at m6). At moves 4-8 of a SF opening RE-READ the Openings line and play it. A piece-down shell held 75 moves: Qf7/Qf8 + Rd8, K shuffle, 5-30 s moves; SF broke in only after my ...h5/...c6/...f5.
 - ARMAGEDDON BLACK = A DRAW WINS (v DeepSeek 4.d3 shell, pawn up, repeated Qd3/Qd2). Guarded setup, 5-15 s moves, trade when safe, take the threefold. DeepSeek burns its clock.
@@ -30,22 +31,22 @@
 - PASSER ON HIS 6th/7th: before any grab name who guards the queening square and the check after (Rxb2?? d8=Q+). SKEWER: Q in front of R/K on one line (Kh2?? Bh6!).
 - UP MATERIAL, QUEENS OFF: trade queens/rooks, K to his passers only when nothing is trappable, loose pawns only with a traced recapture, name his next push, 3-10 s moves, stalemate check. OPPOSITE BISHOPS + 1 PAWN = DRAW. Models: T39F, T44R2, T73 Final, T74R1.
 - MATE FIRST BEFORE A CAPTURE THAT OPENS A LINE TO MY K (hxg5?? Qh7#).
-- THE SAME HOLE IN HIS PLAY WINS: after every trade check which of HIS pieces lost its guard (DeepSeek ...Bc5?? hung a bishop to a pawn; 28.Qb2?? ...Nxe3). Look each move for his piece on my pawn's capture square.
+- THE SAME HOLE IN HIS PLAY WINS: after every trade check which of HIS pieces lost its guard (DeepSeek ...Bc5?? hung a bishop to a pawn; 28.Qb2?? ...Nxe3).
 - RECAPTURE ORDER WHEN UP A PIECE: take with the piece whose loss costs least. ATTACKED PIECE = LIST RETREATS BEFORE ANY 'TEMPO' SAC. ALL KNIGHT JUMPS before a rook/piece lands (Re1?? Nxe1).
 - NO GRABS v SF. NO ENDING TRADE WITHOUT A COUNT. Equal B v B = KEEP the bishops.
 - A PAWN MOVE OPENS A LINE AND HIS SCREEN PIECE MOVES WITH TEMPO (b3?? Nxc4!; b3?? Rxb3; Bf4?? Nxf4): list the line it opens and each capture his blocker can make.
 - A NOTE THAT NAMES THE FIX IS AN ORDER. A move on a NOT list is dead (d5? T71R2, Qf2?!/Rc7?? T73R2, Nc3/Bb3 T40Arm, 5...O-O? T74). Re-read the Openings line BEFORE 'improving'.
 - TRADE OFFER = NAME EACH RECAPTURER BY SQUARE: the mover is not one, it must not be hit, its capture must not remove a guard (Rc1?? Rxc1+; Bd3?? Nxd3).
-- HIS PAWNS GET LOOSE WHEN HIS PIECES STACK ON ONE WING: count attackers v guards, take one with a clean recapture. His rook behind his own B/N is unguarded.
-- CLOCK: SLOW DOWN only where a piece LEAVES a duty (moves 15-30 of an equal opening; captures with a pawn on his 6th; rook/queen grabs). No move over 30 s elsewhere; Armageddon White ~10 s (10 min total); behind or lost = 5-10 s; under 4:00 cap 5. MUSE/DeepSeek BURN THEIR CLOCK: v them keep a safe guarded setup, bank time.
-- PASSIVE (T30SF2G1, T40R4, T74SF2G1G1): pick a plan BEFORE his break; rook BEHIND a passer or blockade it; v a K walk stop it early; v a pawn storm hit the centre/other wing.
+- HIS PAWNS GET LOOSE WHEN HIS PIECES STACK ON ONE WING: count attackers v guards, take one with a clean recapture.
+- CLOCK: SLOW DOWN only where a piece LEAVES a duty (moves 15-30 of an equal opening; captures with a pawn on his 6th; rook/queen grabs) or when I lead on the clock and need a plan (see top). Armageddon White ~10 s (10 min total); behind or lost = 5-10 s; under 4:00 cap 5. DeepSeek burns its clock; Muse burns it early (2-3 min on moves 13-37) then plays fast: v them keep a safe guarded setup AND bank time, but a lead does not flag Muse.
+- PASSIVE (T30SF2G1, T40R4, T74SF2G1G1, T75R2): pick a plan BEFORE his break; rook BEHIND a passer or blockade it; v a K walk stop it early; v a pawn storm hit the centre/other wing.
 - SCAN every move: his last move; checks, discovered attacks, pins, skewers, pawn breaks (e5!, d5, f4-f6, g4-g5, h4-h5, ...e4, ...f5, ...d5, ...b5), passed pawns, Bg5/Bh6, ALL knight jumps, open files. Answer f6 with ...Bxf6/...Nd7. As White v Chigorin NO d5 unless Rc1 already pins Nc6 to Qc7.
 - v SF: trade bishops/rooks only if the pawn ending is counted, castle EARLY, no pawn pushes near my K or on a long diagonal, no grabs, luft early.
 - DOWN v others: DeepSeek/GLM/Fable/Haiku hang pieces when worse or even; Sol too. A piece down v Sol: he trades queens, rolls the d-pawn, walks K and converts. A ROOK DOWN v a non-SF: K shuffles lose to K+R mate.
 
 ## Openings (details in notes)
 - W v SF 1.e4 c5 2.Nf3 Nc6: ROSSOLIMO v 3...Nf6 WORKED (T73 Final): 3.Bb5 Nf6 4.e5 Nd5 5.Nc3 Nc7 6.Bxc6 dxc6 7.O-O Bg4 8.h3 Bh5 (16 plies). Plan d3, Re1+, Be3, Qe2, d4 break, Rad1, Ne4. Watch ...Bh5 pin, Rd1 behind Bd4. v 3...g6 (T74 Arm L): 4.O-O Bg7 5.Re1 e5 6.Bxc6 bxc6 then NOT Nbd2-c4/Nh2 (...d5! forks, see lessons). Unverified: 6.c3 or 7.c3 and d4, Nbd2-f1; keep Be3 only after ...d5 is stopped.
-- B RUY 4.d3 v DeepSeek (Armageddon, draw advanced): 1.e4 e5 2.Nf3 Nc6 3.Bb5 Nf6 4.d3 d6 5.O-O Be7 6.c3 O-O 7.Re1 Bd7 8.Nbd2 Re8 (16 plies). Then ...h6, ...a6, ...b5, ...Na5, ...c5, ...Qc7: level. Keep ...Bd7 and ...Rac8; ...Nxe3 fxe3 trades; later ...d5, ...e4 into a pawn up; safe Qc7/Rc5 setup.
+- B RUY 4.d3 v DeepSeek (Armageddon, draw advanced): 1.e4 e5 2.Nf3 Nc6 3.Bb5 Nf6 4.d3 d6 5.O-O Be7 6.c3 O-O 7.Re1 Bd7 8.Nbd2 Re8 (16 plies). Then ...h6, ...a6, ...b5, ...Na5, ...c5, ...Qc7: level. Keep ...Bd7 and ...Rac8; ...Nxe3 fxe3 trades; later ...d5, ...e4 into a pawn up; safe Qc7/Rc5 setup. v MUSE (T75R2 draw): same build (6.Ba4, c3, Nbd2-f1-g3, h3, b3, Bb2, Qe2, d4-d5) level to m30 with ...h6/...Bf8/...a6/...b5/...Na5/...c5/...Qc7/...Rac8/...Ng6-f4 (22...b4?! SF ?!). Then g3 kicked Nf4 and I only waited: find a ...f5/...Bg5 plan by m25 (see top lesson).
 - W Open Sicilian v Muse (Scheveningen): Nc3, Be2, O-O, Be3, f4, Kh1, a4, Bf3, Nxc6 bxc6 fxe5 dxe5 Qd3, Rad1, h3, Qe2; every unit guarded, g4 only with hxg4 ready. Muse sits in a shell and flags.
 - W v SF Sicilian ...Nc6 ...g6 (Dragon): 5.c4 Maroczy, NOT 5.Nc3 (...Ng4 won a piece). Yugoslav anyway: Be3, f3, Qd2 FIRST; Bc4/Bb3 only after f3.
 - W Maroczy v SF (notes white-maroczy-b6-sf, white-open-sicilian-sf): Nc3, Nb3 v ...Qa5, Be2, Be3, O-O (never skip), Qd2, Rac1, Rfd1. v ...Nc5 Nd4. v ...Ng4 Bxg4 Bxg4 f3 Be6: castled = 14.Nd5 (book), NOT 14.Qe2?! Bxc3!. v ...Ne5! Rac1; c4 needs a rook/queen guard, never b3 while Bg7 sees a1. v ...f5 exf5 Rxf5: 18.Bd4 is MARKED ? (T73R2). Try 18.Qe3/18.Nd4 (unverified). NOT Kh1?! b5!. h3 BEFORE the queen trade.
@@ -67,7 +68,7 @@
 
 ## Opponents
 - DeepSeek (1 loss in 72): hangs pieces when worse or even (...Bc5??, ...Kf7??, 28.Qb2??); illegal tries; no luft; burns 2-7 min on quiet moves, times out. Converts a free piece at once: never gift one. In the Caro plays ...c5/...f6.
-- Muse Spark 1.3: 30 s-5 min thinks, flagged m35; zero invalid usually. Takes every loose unit. Play solid guarded moves quickly.
+- Muse Spark 1.3: 30 s-5 min thinks early (T75R2: 2-3 min on moves 13-37), then 5-30 s when under 5 min, so the +10 keeps it near 3-4 min: no flag from a shuffle. Zero invalid usually. Takes every loose unit. As White v my Ruy shell it shuffled Bc2/Bd3 and Kg2/Kh2 and accepted repeats. Play solid guarded moves quickly early, then play a PLAN.
 - Haiku 5.5: v Closed Ruy takes loose pawns. Hangs big pieces when pressed. Never resign vs it.
 - GLM Flash (1 loss in 12): English g3, same build every time (13.d4 crack, then e4-e5 thrusts that hang pieces); illegal tries, forfeits. Hangs QUEEN and rooks to plain captures. Take free captures, trade, luft first.
 - Fable 5.1 (W): ...Bb4/...bxc6/...d5; no luft. Astra (L): Chigorin ...Na5/...c5/...Qc7/...a4/...Rac8; punishes an unguarded rook.
