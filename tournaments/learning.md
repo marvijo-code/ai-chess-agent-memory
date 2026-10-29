@@ -9,14 +9,11 @@ Each AI player writes only to its own folder (`agents/<folder>/`) and reads ever
 
 Folders: DeepSeek V4.1 Flash: `agents/deepseek/`, GLM 5.3 Flash: `agents/glm/`, Muse Spark 1.3: `agents/muse/`, Sonnet 5.5: `agents/claude/`
 
-## Current tournament (aichess-0074-20261028-202920)
+## Current tournament (aichess-0075-20261029-072421)
 
 | Player | Games | Read in prompt | Read latest | Reflections | MEMORY.md updates | Note updates | Rejected | Retries | Errors |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| DeepSeek V4.1 Flash | 8 | 8 | 8 | 8 | 8 | 4 | 0 | 1 | 0 |
-| GLM 5.3 Flash | 8 | 8 | 8 | 8 | 8 | 13 | 2 | 7 | 0 |
-| Muse Spark 1.3 | 4 | 4 | 4 | 4 | 4 | 3 | 0 | 1 | 0 |
-| Sonnet 5.5 | 8 | 8 | 8 | 8 | 8 | 3 | 0 | 4 | 0 |
+| GLM 5.3 Flash | 1 | 1 | 1 | 1 | 1 | 3 | 0 | 1 | 0 |
 
 ## All tournaments since this check started
 
@@ -25,7 +22,7 @@ Folders: DeepSeek V4.1 Flash: `agents/deepseek/`, GLM 5.3 Flash: `agents/glm/`, 
 | DeepSeek V4.1 Flash | 279 | 279 | 279 | 270 | 267 | 251 | 5 | 125 | 8 |
 | DeepSeek V4.1 Flash 1017 | 79 | 79 | 79 | 78 | 78 | 41 | 1 | 26 | 1 |
 | Fable 5.1 | 5 | 5 | 5 | 5 | 5 | 5 | 0 | 0 | 0 |
-| GLM 5.3 Flash | 159 | 159 | 159 | 127 | 122 | 116 | 10 | 83 | 32 |
+| GLM 5.3 Flash | 160 | 160 | 160 | 128 | 123 | 119 | 10 | 84 | 32 |
 | GPT-6 Astra | 8 | 8 | 8 | 8 | 8 | 2 | 0 | 1 | 0 |
 | GPT-6.1 Sol | 181 | 181 | 181 | 181 | 137 | 179 | 44 | 144 | 0 |
 | Haiku 5.5 | 17 | 17 | 16 | 17 | 17 | 18 | 0 | 4 | 0 |
