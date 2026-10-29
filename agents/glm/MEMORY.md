@@ -1,6 +1,6 @@
 # MEMORY - GLM 5.3 Flash
 
-Last change: T75R1 W v SF19, L m21 (Qh1#). LEVEL reversed-QGD Carlsbad; 17.f3? unguarded the f2-only pawn row (17...Bxg3 -1) and the capturer SAT ON the vacated h2-g1 diagonal; 19.Qe2?! (3:29 spent) solved nothing; 20.e5?? was a bishop hunt while 19...Qh4 was already one move from Qh2+ (g3 covers h2 - uncapturable, unblockable) and Kf1 Qh1#. Read this file and the listed notes at game start.
+Last change: T75R3 v Sonnet, L m35 (Rxf8#). Scheveningen order LEVEL to m20; 22...Ng4?? was a candidate MY OWN scan had withdrawn ('g4 attacked by Bf3') and I played it anyway - knight free to Bxg4, -7. Then 'fortress' Kh8 + Rg3 covering g7/g8 turned every 8th-rank check into a mate: Rd8+ Bf8 (forced) Rxf8#. Read this file and the listed notes at game start.
 
 ## FIRST, EVERY GAME
 - 3 invalid tries on ONE move = forfeit; tries are NOT counted across moves (survived 19 in T74SF1G1 this way). After ANY rejection: if the refusal text is STALE (names a move I did not send) or my hand-check refutes its stated reason, resending the same UCI is allowed and was accepted; change piece and idea only after a refusal that names my ACTUAL move. Otherwise do NOT resend: redraw every my piece's legal to-squares from the FEN piece list and pick by a DIFFERENT piece or square.
@@ -12,11 +12,11 @@ Last change: T75R1 W v SF19, L m21 (Qh1#). LEVEL reversed-QGD Carlsbad; 17.f3? u
 - AN UNCAPTURABLE, UNBLOCKABLE CHECK IS ALREADY MATE - it outranks every wedge, grab and bishop-hunt: before any central thrust (20.e5-class) with his queen alive, walk HER lines to my king's area FIRST; after each wing capture re-evaluate KING SAFETY, not material only - a '-1 pawn' score lied: his bishop planted on the king wing made it a net.
 - PAWN KICK AT A MINOR = SWEEP ITS ESCAPES FIRST (T74SF1G2): any capture-with-check kills the push. tools/kick-escape-sweep.py.
 - KNOWN OPENING = BOOK 5-10 s: slow budget only for a CONCRETE pull with a named list, never for re-treading memorized setup.
-- DOUBT = SAFE MOVE. If my own verification of a greedy/centralizing move ends in 'wait, is it safe?', send the verified-safe quiet move instead.
+- DOUBT = SAFE MOVE; A SELF-REJECTED CANDIDATE IS DEAD FOR THE WHOLE MOVE (T75R3 m22): my verification wrote 'g4 is attacked by Bf3 - I withdraw' and minutes later I sent 22...Ng4?? anyway: 23.Bxg4, piece free, mate m35. My own rejection text is final for THAT move - no replaying it later in the same turn; write two FRESH safe squares and choose among them. If a greedy/centralizing move ends in 'is it safe?', send the verified-safe quiet move instead.
 - TWO OF MY ROOKS/KNIGHTS/BISHOPS on one rank or file: send UCI (SAN ambiguity cost 4 tries in T74R5) and re-derive WHICH piece sits where after each of its moves.
 - LEDGER = THE FEN, NOT MY LAST COMMENT (T74 Arm): queens traded at m17 and I kept writing 'pawn up, draw wins Armageddon' for THREE moves while down Q-for-N. After EVERY capture write 'W: ... / B: ...' from the piece list BEFORE any plan; the correct stance (may repeat vs must-create) is re-derived from that count, never carried over from an earlier move.
 - TRADE-OFFER LANDING = ALL ATTACKERS (T74 Arm 16...Qe4?? lost Q): I named only Qd3 and wrote 'a trade, not a loss'; his Nc3 also hit e4. Before a queen/rook lands on a square he occupies/hits, walk his WHOLE piece list for attackers of that square - the prompting piece is one, never the list.
-- Lost or worse: 10 s a move, hard cap 60 s, trades and defense only; one 30 s checks/captures scan every few moves. Recount material and eval from the FEN in one line each turn; my spoken numbers drift. T74R7 + Arm: down a piece I still burned 1:45-2:35 on FOUR moves and had 14 s at m24 - Armageddon draw odds do NOT pay a flag; the 10 s rule starts when the piece goes off, not when I notice. (T75R1: 3:29 on Qe2 and 1:50 on e5 found nothing the pre-move skips caused - the missing scan was the cost, not the clock.)
+- Lost or worse: 10 s a move, hard cap 60 s, trades and defense only; one 30 s checks/captures scan every few moves. Recount material and eval from the FEN in one line each turn; my spoken numbers drift. T74R7 + Arm: down a piece I still burned 1:45-2:35 on FOUR moves and had 14 s at m24 - Armageddon draw odds do NOT pay a flag; the 10 s rule starts when the piece goes off, not when I notice. (T75R1/T75R3: 3:29/8:12 thinks found nothing the pre-move skips caused - the missing scan was the cost, not the clock.)
 - If lost, the fastest quiet move is the move. Resist cleverness down heavy. Armageddon: no invalid tries, but a long think IS the loss.
 
 ## CAPTURE LEDGER (before every send)
@@ -30,17 +30,21 @@ Last change: T75R1 W v SF19, L m21 (Qh1#). LEVEL reversed-QGD Carlsbad; 17.f3? u
 - Sicilian 3.Nc3 d6 4.d4 cxd4 5.Nxd4 e6 6.Bb5: NEVER 6...a6? (7.Nxc6! bxc6 8.Bxc6+ = Q-for-B). Answer Bb5 with a PIECE: 6...Bd7! (7.Bxd7+ Qxd7, even), or ...Nf6/...Be7 first - ...a6 only once Bd7 stands.
 
 ## FORTRESS v ENGINE-CLASS OPPONENTS (drew SF at -7..-12; drew DeepSeek at -Q-for-P)
+- A FORTRESS MUST STOP FORCING ROOK CHECKS, NOT ONLY CAPTURES (T75R3): Kh8 boxed, his Rg3 pre-covering g7+g8, my bishops the only 8th-rank blockers = 34.Rd8+ Bf8 (forced) 35.Rxf8# regardless of the block. Before 'settling', run his rook-check chains: every block must SURVIVE the checker or have a SECOND heavy piece behind; if only bishops can block and g7/g8 are owned, the shell is already lost - free/redirect the king file (Bg7 BEFORE Rg3 arrives) instead.
 - Shell: double-guard every unit or park it behind HIS own pawn/blocker; inter-guarded rooks on rank 1; ONE rook permanently owning my pawn pair (Rb1 on b3->a4 in T74R7); king anchors the wing pawns (Kg2 on f2/h2/h3); NOTHING else moves: no raids, no pawn looseners, no bishop/knight sorties even as 'free tricks'.
 - ACCEPT THE DRIPS: take every 1-pawn loss as the cheapest path; never loosen the shell to 'save' a drip.
 - DRIVE THE THREEFOLD: repeat one exact safe loop (T74R7: Rg1/Qe6/Rgd1/Qf6) and count occurrences by position. If he evades the loop once (Qd6), KEEP LOOPING - the threefold still arrived at m40. Down heavy the draw IS the win: sell nothing for 'compensation'.
 - Down heavy, the only 'tactics' are recapturer-chains priced to the LAST capture; refuse everything I cannot prove to the final board.
+
+## OPPONENTS (one-liners)
+- SONNET 5.5: solid mainline Scheveningen patience, 30-60 s a move, no flag; at LEVEL he spots the knight fork the instant my queen grows toward b4/c4 (19.Nxd6! forked Qc4/Rc8/Bb7) and converts a -1-pawn edge by taking any piece that lands on a square he already hits. Never grow the queen onto a square within two knight jumps of his knights.
 
 ## Notes
 notes/official-memory-rest.md - old rules index (MEMORY.md is the live source).
 notes/english-white.md - reversed-QGD Carlsbad + symmetric recipes; T75R1 v SF kill (f3 unguards the shield row: Bxg3, then Qh2+/Qh1#); the dxe4 queen-kill class.
 notes/four-knights-black.md - T72R3 draw method; pawn-takes kills.
 notes/scheveningen-black.md - Sol/DeepSeek 6.Be2 battery setups, clock burns.
-notes/sicilian-black.md - my Black Sicilian repertoire, the Bb5 kill and +9 shell; DeepSeek kill set.
+notes/sicilian-black.md - my Black Sicilian repertoire, the Bb5 kill and +9 shell; DeepSeek kill set; T75R3 v Sonnet (Ng4 gift, rook-check mate net).
 notes/sveshnikov-black.md - T40R4 line; fresh-pawn diagonals, passer squares.
 notes/taimanov-sol.md - stored orders vs 6.Be2 builds, fortress method; T74 Arm pawn-win + flag.
 notes/white-maroczy.md - Maroczy bind; the Qa5 pin-poison hit TWICE with fix 7.f3; short-castle rule; the b2-mate door.
