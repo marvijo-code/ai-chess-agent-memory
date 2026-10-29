@@ -1,6 +1,7 @@
 # Chess memory - Muse Spark 1.3 Contributor (3600+10)
 
 ## Record
+- T76R1 B vs Sonnet: loss forfeit m5 Qxa2. 4...Qa5+?? met Nc3 tempo loss, Qxa2?? met Rxa2 tool flagged AVOID resent x3 forfeited. 4 illegal (2 cxd4, 2 Qa5+).
 - T75-3rd W vs DeepSeek: loss forfeit m40 Qd4+. Classical h4/h5/Bh7/Bd3/O-O-O/Kb1, Rh1/Rd2/Rc3 shuffles, Rdc1??/c5?!/Bd4??/b3?? met Bxe5/Bxf4/Bxc1/Rxd4/Rxc4 down 2R, Kb1 x3 over AVOID forfeited. 2 illegal.
 - T75SF1G1 B vs SF: loss forfeit m43. Nf6 before cxd4 met dxc5/Qxd8+ Kxd8 losing castle +2 to +11, Bd5/cxd5/Kd8/Rxc5 7 illegal (2-3 tries each), burned 4-7min early left 1:11.
 - T75R5 W vs GLM: loss forfeit m42. Scheveningen Qe1/Qe2 shuffle slow, g4/a3 loose, d5 break, e5/f5 unsound, Nxb5/Nxc6 miscalc, low clock 1:03 left. 0 illegal.
@@ -22,8 +23,9 @@
 - T72R3/R2/R1+T71R4/R3: wins flag/forfeit vs GLM/Flash (Bb5 pin bxc3 won N, e5 shell), losses time/mate vs GLM/SF/Sonnet (Qf2#, Qh5#). 14 illegal total.
 
 ## Key lessons (read before EVERY move)
-- LEGALITY FIRST: walk piece from actual square to destination. After 1 reject redraw FEN, pick different piece AND idea, never resend stale UCI. 3 rejects forfeit. Use tools/legal-list.py UCI list. T75SF1G1 7 invalid over 5 moves forfeited; T75-3rd Bd4/b4/Kb1 2-try loops; when in check list replies once and send in 5-10s.
-- TOOL AVOID IS AN ORDER: T75-3rd Kb1 x3 forfeited though tool named only -1P g4-Nxf6 while down 2R; T73R4 Kf1 x3, T71R1 Kd7 x3, T73-3rd Kf8 x3 each forfeited. After one refusal switch piece and idea at once, never resend flagged UCI even if legal or loss looks small.
+- LEGALITY FIRST: walk piece from actual square to destination. After 1 reject redraw FEN, pick different piece AND idea, never resend stale UCI. 3 rejects forfeit. Use tools/legal-list.py UCI list. T75SF1G1 7 invalid over 5 moves forfeited; T76R1 4 invalid over 2 moves; T75-3rd Bd4/b4/Kb1 2-try loops; when in check list replies once and send in 5-10s.
+- TOOL AVOID IS AN ORDER: T76R1 Qxa2 x3 forfeited though tool correctly flagged Rxa2; T75-3rd Kb1 x3 forfeited though tool named only -1P g4-Nxf6 while down 2R; T73R4 Kf1 x3, T71R1 Kd7 x3, T73-3rd Kf8 x3 each forfeited. After one refusal switch piece and idea at once, never resend flagged UCI even if loss looks small.
+- OPEN QA5+/QXA2 POISON: 4...Qa5+?? after Nxd4 meets Nc3 blocking with tempo, no follow check. Never Qxa2 grabbing a2 under Ra1 to Rxa2. Play Nf6/Nc6/e6 Scheveningen, never early queen sortie. If queen hit retreat at once.
 - WHITE SCHEVENINGEN HASTE: T75R5 Qe1/Qe2 wasted 2 tempi, Kh1/Rac1/h3/g4 slow vs Qc7/b6/Bb7/h6 shell. Black holds to m20 then ...Nc5/b5/d5 breaks. Do not storm without e4 twice and f5 counted; Bd3 blocks c1, b3/a3 loosens c3/b4. Meet ...d5 tense, keep Nc3, play Rad1/Kh1 fast 10-20s.
 - E4 GRAB QA4+ TRAP: with Ke8 uncastled + Qa4 alive, Nxe4?? meets Nc6 hit plus b4 or Qa4+ Bd7 Qxe4. e4 held by nothing after cxd4/cxd4/d5. Before grab list Qa4+/Qb5+/Bb5+, keep Nc6 or second guard. Run tools/qa4-trap.py.
 - SCHEVENINGEN QB8/RB8 HANG: Qc7/Rac8/Rfe8 passive vs f4/e5. Qb8 leaves Rb8 on Bg3 diagonal. Before recapture walk Bg3-f4-e5-d6-c7-b8. Ng6 hits Bf4 but drops e5/d5; Nd5 needs capture counted. Vs f4/Nf5/e5 never d5??.
