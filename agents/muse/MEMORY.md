@@ -1,6 +1,7 @@
 # Chess memory - Muse Spark 1.3 Contributor (3600+10)
 
 ## Record
+- T75R3 B vs SF: loss on time m30. c3 Nc6 cxd4 Nf6 d5 Nb8 retreat. Qa4 b6?! Nd4 Nxe4 Nc6 b4 Bf5 bxc5. Bd3 Bg6 Bxe4 f5 down +10. Rc7 Qd7 e6 Qe7 Kd8 c4-c3 d5 Be7. Flagged 0:26 vs 64:59. 2 illegal.
 - T75R2 W vs Sonnet: draw threefold m51. Ruy d3 Berlin, d4/d5 lock, Nxe2/Nf4 outpost, Bd3/Bc2 shuffle 4x, g3 kick, Kg2/Kh2 loop vs Kg8/Kh7/Rb8/Rb7/Rf8/Rc8 held draw 2:57 vs 57:40. 1 illegal.
 - T75R1 B vs DeepSeek V4.1 Flash: draw threefold m42 up Q. Nf6 before cxd4 (2 tries illegal) Nc6?! e5 d5?? met Nxe7+/Nxd5/Nxf6+ Qxd7 winning pieces, Rxd4?? met Qxb6 winning Q, Qa7/Qa8/Qb8/Qc8/Rc8/Rd8 shuffle drew Kg1/Kg2. 3 illegal, left 26:52 vs 40:11.
 - T74R5 B vs Sonnet: loss on time m35. Scheveningen Nf6?! before cxd4 (2 tries stale), Nc6 (2 tries), e5 break level, Rac8/Rfe8/Rcd8/Rd7/Bf8/Ree7 shuffles 2-5min each, flagged 0:17 vs 57:55. 2 illegal.
@@ -18,16 +19,16 @@
 - T72R3/R2/R1+T71R4/R3: wins flag/forfeit vs GLM/Flash (Bb5 pin bxc3 won N, e5 shell), losses time/mate vs GLM/SF/Sonnet (Qf2#, Qh5#). 14 illegal total.
 
 ## Key lessons (read before EVERY move)
-- LEGALITY FIRST: walk piece from actual square to destination. T75R2 Bd3 took 2 tries invalid; T75R1 Nf6 before cxd4 took 2 tries illegal, Qxf6/Rcd4/Rc8 each took 2 tries stale; T74R5 Nf6/Nc6 each took 2 tries stale before cxd4, T74R4 cxd4/Nc6/Bd7/Kg8/b3, T72 exd5/Bd3/Kg1, T73 Kf1/Bf3/Qf2 each took 2-3 tries stale. After 1 reject pick different piece AND idea, never resend. 3 rejects forfeit. Use tools/legal-list.py UCI list.
+- LEGALITY FIRST: walk piece from actual square to destination. T75R3 cxd4 first took 2 tries illegal, Qc7 return 2 tries stale; T75R2 Bd3 took 2 tries invalid; T75R1 Nf6 before cxd4 took 2 tries illegal, Qxf6/Rcd4/Rc8 each 2 tries stale; T74R5 Nf6/Nc6 each 2 tries stale before cxd4, T74R4 cxd4/Nc6/Bd7/Kg8/b3, T72 exd5/Bd3/Kg1, T73 Kf1/Bf3/Qf2 each 2-3 tries stale. After 1 reject pick different piece AND idea, never resend. 3 rejects forfeit. Use tools/legal-list.py UCI list.
 - TOOL AVOID IS AN ORDER: T73R4 Kf1 x3 over AVOID, T71R1 Kd7 x3, T73-3rd Kf8 x3 each forfeited. After one refusal switch piece and idea at once, never resend flagged UCI even if legal.
-- E4 GRAB QA4+ TRAP: with Ke8 uncastled + Nb8 retreated + Qd1 alive, Nxe4?? meets Qa4+ Bd7 Qxe4 winning N (T74R4). e4 held by nothing after cxd4/cxd4/d5 (Nf3/d4 do not guard e4). Before any Nxe4/Bxc3 grab list Qa4+/Qb5+/Bb5+ checks, keep Nc6 on board or second guard, need Bd7 covered twice. Run tools/qa4-trap.py.
+- E4 GRAB QA4+ TRAP: with Ke8 uncastled + Qa4 alive, Nxe4?? meets Nc6 hitting Q plus b4 opening (T75R3 b4! won N, +2 to +10) or Qa4+ Bd7 Qxe4 winning N (T74R4). e4 held by nothing after cxd4/cxd4/d5 (Nf3/d4 do not guard e4). Before any Nxe4/Bxc3 grab list Qa4+/Qb5+/Bb5+ checks, keep Nc6 on board or second guard, need Bd7 covered twice. Run tools/qa4-trap.py.
 - SCHEVENINGEN QB8/RB8 HANG: Qc7/Rac8/Rfe8 vs f4/e5 passive. Qb8 to hold e5 leaves Rb8 on Bg3-b8 diagonal. Before Qxb8 recapture walk Bg3-f4-e5-d6-c7-b8. Ng6 hits Bf4 but abandons e5/d5; Nd5 needs Nxd5 counted; Bc6 holds once. Vs f4/Nf5/e5 never d5?? opening (T75R1 Nxe7+/Nxd5/Nxf6+ Qxd7 won pieces).
 - QXE3 HOLDS QUEEN IN CHECK: vs Qe3+ on g1-a7 diagonal Kf1/Kh1 abandons Qd2 to Qxd2. Must capture Qxe3 or block. Name what king move abandons.
-- RUY BERLIN D3 LOCK: c3/Re1/Nbd2/Bc2/Nf1-g3/h3/Bb2/Qe2/Rac1, d4 only with e4 twice, d5 locks knight must retreat. T75R2 c4?! weakened, Bd3/Bc2 shuffled 4x vs Nf4 guarded by e5 (marks ?!). Meet Nf4+Bxg5 with Nf3/g3 only after Kh1/Qe3 hold f3, then Kg2/Kh2 shell. Never shuffle bishop while e5 holds knight.
+- RUY BERLIN D3 LOCK: c3/Re1/Nbd2/Bc2/Nf1-g3/h3/Bb2, d4 only with e4 twice, d5 locks knight must retreat. T75R2 c4?! weakened, Bd3/Bc2 shuffled 4x vs Nf4 guarded by e5 (marks ?!). Meet Nf4+Bxg5 with Nf3/g3 only after Kh1/Qe3 hold f3, then Kg2/Kh2 shell. Never shuffle bishop while e5 holds knight.
 - RUY E4 ABANDON: e4 held only by Nc3 vs Nf6/Re8/Bb7. Ncxd4 abandons e4 to Nxe4. Recapture Nfxd4 to keep Nc3 on e4, or hold e4 twice first.
 - F3 KICK INVITES NXC3: f3 hits Ne4 but Ne4 has Nxc3 hitting Qe2 tempo, then c5 kicks Nd4. List knight escapes before pawn kick. Prefer Bxe4/Qxe4.
-- SICILIAN CXD4 FIRST: never Nf6/Nc6 hold vs d4 (T75R1 Nf6 2 tries illegal, T74R5 Nf6?!), always cxd4 first. Vs bxc6/Bd3/e5 hold e5/c5 with Be7/O-O/Nd7-Nc5/Bb7/Qc7. Bans: Qb6 allows b3, Rxd8 gives file, Kh8 shuffle, Qf6 lets king centralize.
-- BB5 PIN SHELL: vs Bb5/Ba4/Bb3 play Bd7/a6/b5 tempo, e6/Be7/O-O/Qc7. Ne5-Ng6-Nf4 hit Qe2, c4/b4 with tempo, bxc3 wins N. Keep e6 closed.
+- SICILIAN CXD4 FIRST + C3: never Nf6/Nc6 hold vs d4 (T75R1 Nf6 2 tries illegal, T74R5 Nf6?!), always cxd4 first. Vs 4.c3 never Nc6 holding d4 pawn: 5.cxd4 d5 forks Nc6/Nf6 forcing Nb8 retreat losing tempo (T75R3, T74R4). Answer c3 with Nf6/dxc3/e6 first. Vs bxc6/Bd3/e5 hold e5/c5 with Be7/O-O/Nd7-Nc5/Bb7/Qc7. Bans: Qb6 allows b3, Rxd8 gives file, Kh8 shuffle, Qf6 lets king centralize.
+- BB5 PIN SHELL: vs Bb5/Ba4/Bb3 play Bd7/a6/b5 tempo, e6/Be7/O-O/Qc7. Ne5-Ng6-Nf4 hit Qe2, c4/b4 with tempo, bxc3 wins N. Keep e6 closed. T75R3 b6?! without Bd7 weakened c6/a7 to Nd4/Nc6/Qc2/b4.
 - DRAGON BXC6 QA5: after bxc6 Qa5 hits c3 at once. Bh6/Qxh6 abandons c3 held only by Be3+Qd2. Keep Be2, king central, no b3, contest b-file first.
 - QUEEN FORK AND E-FILE: Qe3 meets Nd5 hitting queen+knight. With Ke1 and empty e2 keep queen on e-file guarding d2/e2. Qc1 allows double plus Rd2+. List knight jumps, keep Rd1 first.
 - DESTINATION SWEEP EVERY move: pawn captures first, then knights/sliders/king; development/quiet never makes square safe. MOVER ABANDONS GUARD: name what left and who hits it now.
@@ -43,7 +44,7 @@
 - ENGLISH ND4/NA5 POISON: Nd4 needs exd4 at once opening e-file vs Nc3, never Bf5/Be6 retreat leaving N en prise. Na5-Nc6 shuttle vs Qd3 loses 2 tempi. Vs e4 never d5 opening e6, hold c5/e5 first. Vs b4-b5 Na5 hits c4 once.
 - BLOCKER LEAVES QUEEN: Nd4 blocked Rd1-Qd7, Nb4 unblocked it so Rxd7 won Q. Before moving blocker move queen off d-file or guard it.
 - UP QUEEN FINISH, NO SHUFFLE DRAW: T75R1 up Q shuffled Qa7/Qa8/Qb8/Qc8+Rc8/Rd8/Rfe8/h6/g6/Kg7/Kg8 while Kg1/Kg2 repeated. Up Q = centralize Q, trade one rook with recapture named, checks first, give luft once. Repeating a loop up Q is a loss. UP P no Nh5/Nf6 repeat vs Bg3/Bf4 drew; trade not shuffle.
-- SHELL CLOCK: T75R2 burned 1-3min moves 13-36 vs Sonnet 6-24s and left 2:57 vs 57:40; T75R1 burned 2-4min on e5/d5/Qd6/Qc8/Bb3/c3 while level/up and kept 26:52 vs 40:11; T74R5 flagged 0:17 vs 57:55 with Rac8/Rfe8/Rcd8/Rd7/Ree7 each 2-5min; T74R1 flagged 0:42. Symmetric/up shuffle 5-10s, routine 10-20s, cap 60, never 2-4min in shell. Bank clock, invite repeats.
+- SHELL CLOCK: T75R3 down +9 burned 5:45 Nxe4, 5:24 Bg6, 3:35 Bf5, 3:36 Rc8, 7:22 Qc7, flagged 0:26 vs 64:59; T75R2 burned 1-3min moves 13-36 vs 6-24s and left 2:57 vs 57:40; T75R1 burned 2-4min on e5/d5/Qd6/Qc8/Bb3/c3 while level/up and kept 26:52 vs 40:11; T74R5 flagged 0:17 with Rac8/Rfe8/Rcd8/Rd7/Ree7 each 2-5min; T74R1 flagged 0:42. Symmetric/up shuffle 5-10s, routine 10-20s, cap 60, never 2-4min in shell. Down huge = 5-10s, invite repeats. Bank clock.
 - MATERIAL FROM BOARD EVERY move, recount guards, equal trades preserve deficit.
 - CLOCK: routine 10-20s, capture 30-40, cap 60, up 5-15, low time 3-5. Time goes on destination list, never narrative.
 
@@ -53,9 +54,9 @@
 - B English: d6/Be7/O-O/Re8/Be6/Bf8 hold d6/e5. Bxh3/Bxc4 only if held else Be6/Qc6. Vs dxe5 Nxe5 at once never Nh7, Qd7 off d-file before blocker leaves. No Nd4 without exd4, no Kh8/a6/Bf8 shuffle. Vs b4-b5 Na5 hits c4 once.
 - B Scheveningen: Be7/O-O/Bd7/Qc7, no Rac8/Rfe8 vs f4/e5. Vs e5 dxe5 Nxe5 only if Bf4 met Ng6 with e5 held twice; no Qb8 leaving Rb8, no Nd5 without recapture. No d5?? vs Nf5.
 - B Advance: Bf5 e6 Nd7 Ne7 early. Meet f4 with f6/h5 first, never Bg6 park vs f4/g4, never c5 alone, keep Kg8 vs h-storm.
-- W Ruy d3 Berlin: c3/Re1/Nbd2/Bc2/Nf1-g3/h3/Bb2/Qe2/Rac1, d4 only held twice, d5 locks, no c4 vs b4/c5, meet Nf4 with g3 after Kh1. Kg2/Kh2 shell fast.
+- W Ruy d3 Berlin: c3/Re1/Nbd2/Bc2/Nf1-g3/h3/Bb2, d4 only held twice, d5 locks, no c4 vs b4/c5, meet Nf4 with g3 after Kh1. Kg2/Kh2 shell fast.
 - W Classical: Bd3, Be3 holds d4 twice, O-O-O Kb1, Rg1 holds g2. Vs c5/c4/b5/b4 keep Kb1/Rd1/Qf3, never b3/Kb2. Vs Bd6/e5 never dxe5, never Bd4 while Ng3 loose.
-- W Yugoslav: central bishop fix over risky develop. Dragon bxc6 opens b-file, Qa5 hits c3, Bh6 drops guard. Keep Be2, king central, no Qc1 while rooks live, contest d-file first.
+- W Yugoslav: central bishop fix over risky develop. Dragon bxc6 opens b-file, Qa5 hits c3, Bh6 drops guard. Keep Be2, king central, no b3, contest b-file first.
 - W Taimanov: Be2 f3 Qd2 Bd3 castle long Kb1. Storm g-push h-push g-break Q-double vs shell.
 - W Maroczy: c-pawn clamp, knight develops, bishop supports. Vs Qa5 pin support first then castle.
 
@@ -63,8 +64,9 @@
 - Haiku: Open Sicilian Nxc6 patient, trades rooks, centralizes king, Nf5+. Never shuffle king.
 - GLM: Taimanov loose, hangs Q, banks then drifts. Fast 3-10s. English Rb1/Be3/Qd2/Rfd1 then b3-b6 passer. Punishes blocker leaving Qd7. Take free units after sweep, trade when up, luft first. Match pace, cap 60s.
 - DeepSeek: keeps guarded, queenside dance. Classical Bd6/e5 wins P then Bf4/Bxg3 wins N, c-clamp h-runner Rc1# vs Kf1+Nf4. V4.1 Flash can play fast when better (T75R1 2-47s) while opponent burns; earlier burns minutes, 2 illegal tries, flags when down vs shell. Bank shell, no pushes.
-- Sonnet: Advance e4/c3/Nbd7/a4, takes h4/g6 with tempo, doubles Rh1+Qh4 for h5 break. Ruy Na5/Nxb3/Bb7/Re8 solid, wins e4 after Ncxd4 via Nxe4/Nxc3; Berlin d6/Be7/O-O/Bd7/Re8/h6/Bf8/a6/b5/Na5/c5/Qc7/Rac8 holds e5 4x, Nxe2/Nf4 outpost, avoids repeat Kg8/Kh7/Rb8/Rb7/Rf8/Rc8 to drain clock (T75R2). Scheveningen patient 6-20s, shuffles Kg2/Kh2/Rd2/Red1 to flag when up (T74R5 4 invalid tries). Takes every loose unit.
-- SF: punishes loose, pins, back rank, breaks. Instant, no gifts. Dragon d5 break, bxc6 opens file, Qa5/Rb8/Rd8 double kills. Castle early never long into open file, guard second rank, keep shell for repeat.
+- Sonnet: Advance e4/c3/Nbd7/a4, takes h4/g6 with tempo, doubles Rh1+Qh4 for h5 break. Ruy Na5/Nxb3/Bb7/Re8 solid, wins e4 after Ncxd4 via Nxe4/Nxc3; Berlin d6/Be7/O-O/Bd7/Re8/h6/Bf8/a6/b5/Na5/c5/Qc7 holds e5 4x, Nxe2/Nf4 outpost, avoids repeat Kg8/Kh7/Rb8/Rb7/Rf8/Rc8 to drain clock (T75R2). Scheveningen patient 6-20s, shuffles Kg2/Kh2/Rd2/Red1 to flag when up (T74R5 4 invalid tries). Takes every loose unit.
+- SF: punishes loose, pins, back rank, breaks. Instant, no gifts. Dragon d5 break, bxc6 opens file, Qa5/Rb8/Rd8 double kills. T75R3 Qc2! b4! won N to +5 in 2 moves. Castle early never long into open file, guard second rank, keep shell for repeat.
+- Fable: takes loose, trades queens when up, no luft. Model: fortress, checks, back-rank mate.
 
 ## Notes
 - notes/caro-white.md - Classical draw win loss, H5 shell, queen grab poison and Rb2 mate.

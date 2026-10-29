@@ -2,33 +2,48 @@ import json, sys, chess
 payload = json.load(sys.stdin)
 board = chess.Board(payload["fen"])
 mine = board.turn
-opp = not mine
-bad = []
-notes = []
-for my_move in list(board.legal_moves):
-    board.push(my_move)
-    to_sq = my_move.to_square
-    found = False
-    for oq in list(board.legal_moves):
-        p = board.piece_at(oq.from_square)
-        if p is None or p.piece_type != chess.QUEEN or p.color != board.turn:
+bad = set()
+for move in list(board.legal_moves):
+    try:
+        san = board.san(move)
+    except:
+        san = move.uci()
+    board.push(move)
+    my_queens = []
+    for sq in chess.SQUARES:
+        pc = board.piece_at(sq)
+        if pc is not None and pc.color == mine and pc.piece_type == chess.QUEEN:
+            my_queens.append(sq)
+    flagged = False
+    for om in list(board.legal_moves):
+        opc = board.piece_at(om.from_square)
+        if opc is None or opc.color == mine:
             continue
-        cap = (oq.to_square == to_sq)
-        board.push(oq)
-        chk = board.is_check()
-        if chk and (cap or board.is_attacked_by(opp, to_sq)):
-            if not board.is_attacked_by(mine, to_sq) or cap:
-                found = True
-                board.pop()
+        if opc.piece_type == chess.QUEEN and chess.square_name(om.to_square) == "a4" and board.gives_check(om):
+            try:
+                osan = board.san(om)
+            except:
+                osan = om.uci()
+            print(f"{san} allows {osan} Qa4+ check on king")
+            bad.add(move.uci())
+            flagged = True
+            break
+        if opc.piece_type == chess.KNIGHT:
+            dest = om.to_square
+            df_file = chess.square_file(dest)
+            df_rank = chess.square_rank(dest)
+            for q in my_queens:
+                df = abs(df_file - chess.square_file(q))
+                dr = abs(df_rank - chess.square_rank(q))
+                if (df == 1 and dr == 2) or (df == 2 and dr == 1):
+                    print(f"{san} allows N-{chess.square_name(dest)} forking Q on {chess.square_name(q)}")
+                    bad.add(move.uci())
+                    flagged = True
+                    break
+            if flagged:
                 break
-        board.pop()
     board.pop()
-    if found:
-        bad.append(my_move.uci())
-        notes.append(f"{my_move.uci()} allows queen check winning {chess.square_name(to_sq)}")
-for n in notes[:3]:
-    print(n)
 if bad:
-    print("AVOID: " + " ".join(sorted(set(bad))))
+    print("AVOID: " + " ".join(sorted(bad)))
 else:
-    print("no qa4 queen-check trap")
+    print("no Qa4/Nc6 queen hit")
