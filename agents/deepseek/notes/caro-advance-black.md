@@ -27,6 +27,12 @@ v 4.Nf3/5.Be2/5...Nd7/...Bg6/...Nf5: the setup is level to move 23. Do not play 
 - THE BREAK: with ...Nd7 behind ...Bd6, ...e5! won a pawn (dxe5 Bxe5 hit his queen); then ...Bxg3 and simplification to +N.
 - Conversion vs a long-castled king: ...b5, ...c5-c4-c3 clamp, ...Rc4, ...Nf4 (covers e2/g2), ...h4, Rc1#.
 
+## T75R7 v Muse (0-1 win by his forfeit, Classical 3.Nc3)
+1.e4 c6 2.d4 d5 3.Nc3 dxe4 4.Nxe4 Bf5 5.Ng3 Bg6 6.h4 h6 7.h5 Bh7 8.Nf3 e6 (16 plies), then 9.Bd3 Bxd3 10.Qxd3 Nd7 11.Be3 Ndf6 12.O-O-O Be7 13.Kb1 Qc7 14.Rhg1 O-O-O 15.Rh1 Bf8 16.Ne5 Qe7.
+- Plan: ...Bf8/...Qc7 hold f7 from Nxf7; ...Nd5 hits Be3/f4/c3; when his centre loosens, ...c5/...Bxc5/...Bxf4/...Bxc1/...Rxd4/...Rxc4 won material. 39...Qd4+ cut b2's flight; Muse forfeited after its tool vetoed Kb1 (Nxg4).
+- Errors: I sent 15...Nge7 while my own Be7 occupied e7 (invalid), then 29...Kb8 and 32...Bxe5 each took two tries. Check own occupant before knight/king/bishop landing.
+- Clock: 5:42 on 29...Kb8, 3:53 on 32...Bxe5, 2:56 on 36...Rxd4 while already winning; routine 5-15 s.
+
 ## Rules
 - Knight lands only where a friendly piece guards; name the recapturer and his pawn captures.
 - Queen off pawn capture squares, rook files and knight-check squares.
