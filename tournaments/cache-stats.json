@@ -2709,14 +2709,14 @@
      "warm_hit_rate": 0.9079
     },
     "Sonnet 5.5": {
-     "calls": 137,
-     "input": 7700425,
-     "cached": 7128334,
-     "output": 218698,
-     "warm_input": 7578788,
-     "warm_cached": 7052821,
-     "hit_rate": 0.9257,
-     "warm_hit_rate": 0.9306
+     "calls": 157,
+     "input": 8994114,
+     "cached": 8377981,
+     "output": 236182,
+     "warm_input": 8872477,
+     "warm_cached": 8302468,
+     "hit_rate": 0.9315,
+     "warm_hit_rate": 0.9358
     }
    }
   }
