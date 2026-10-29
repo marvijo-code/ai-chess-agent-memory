@@ -23,20 +23,19 @@ Notes:
 ## Rule 1 - destination sweep
 - ATTACKED PIECE: list its retreat squares before any quiet move; never fill one with another piece. T74R2 11.Be2?? filled the d4-knight's only flight; ...Nxd4 won a piece. A defended piece can still be lost when his capture has a second recapturer; count the chain.
 - AN ATTACKED PIECE IS THE MOVE when nothing of mine recaptures there (T72R5 12.Ng3 on the f5-bishop).
-- A KNIGHT LANDING ON d5 HITS MY Be3 (T74 Arm W 27...Nfxd5): after d5 count its guards twice; if hit, move the bishop or trade the knight at once. A PAWN PUSH AT TWO PIECES (34...e4 hit Bd3+Nf3): move one or take the pawn.
+- A KNIGHT ON d5 HITS MY Be3 (T74 Arm W): count guards; if hit, move bishop or trade knight.
 - LIST HIS PAWN CAPTURES VS EVERY LANDING, knights included: e5 owns f6/d6, g4 f5/h5 (T66R2 16...Nf5?? gxf5).
 - HIS d4-PAWN OWNS c5 AND e5: T74R6 24...Bc5?? met 25.dxc5 = B for P. No bishop/knight/rook on c5 or e5 while his d-pawn stands.
 - AN ATTACK IS NOT A DEFENCE (T71R1 22.Bd5?? Bxd5).
 - MY OWN PIECE ON A LINE IS MY ONLY SCREEN; moving it exposes (T67R3 ...Bxe3?? 20.Qxc7). A queen does not guard a pawn on the same file through my own bishop (T73R5 13.Qe2?? while Be3 stood on e3).
 - TWO LOOSE UNITS IN A ROW THROW A WON OPENING: list my undefended pieces and his queen/rook/bishop reaching them.
 - HITTING HIS QUEEN IS NO ANSWER WHEN IT OPENS A CHECK.
-- A PAWN THAT LEAVES ABANDONS ITS POST: no ...f6 with my king on e8/f8 and e6 unguarded (T69R4 23.Nxe6#); QGD ...c5 only with a piece guard on d5. T74R1 ...f6/...f5 left e6 to nothing.
+- A PAWN THAT LEAVES ABANDONS ITS POST: no ...f6 with my king on e8/f8 and e6 unguarded (T69R4 23.Nxe6#); QGD ...c5 only with a piece guard on d5.
 - WITH HIS ROOK ON MY 6TH RANK, EVERY UNGUARDED PAWN THERE FALLS: T74R1 ...f6/...f5 let 34.Rxe6!, 35.Rxg6+, 37.Rxh5. Before ...f6/...f5/...g6/...h5 name that pawn's pawn-or-piece guard.
 - NEVER A KNIGHT/BISHOP/QUEEN WHERE HIS PAWN, KNIGHT OR BISHOP FORKS IT WITH ANOTHER UNIT (T72R2 18...Bf3?? 19.Nd4; d5-knight retreats b4/e7/b6/c7; no f6 while e5 lives; no h6 while his dark bishop lives).
 - KNIGHT ON h6 WITH HIS Bf4/Bg5 ALIVE IS A GIFT: T73R6 11...Nh6?? 12.Bxh6.
 - PAWN ATTACKS: g6<-f7/h7, b6<-a7/c7, d6<-c7/e5, c5<-b4/d4, e5<-d4/f4, f5<-e6/g6, f6<-e5.
 - ROOKS/KNIGHTS only where guarded; the mover abandons its guard - name it.
-- HIS KNIGHT LEAVING c6 CAN OPEN A BISHOP DIAGONAL TO HIS QUEEN.
 
 ## Rule 1b - mate first
 - Ask what mates if I pass; tools/late-mate-scan.py lists my moves that allow mate in 1. King g1/g2 + his Qd5/f5 + Bb7 = ...Qxg2# unless h3.
@@ -48,9 +47,9 @@ Notes:
 ## Rule 2 - queen
 - NEVER on an enemy pawn's capture square, a bishop diagonal, a rook file or a knight jump square (T69R2 19...Qd6?? 20.Nxd6). ENEMY KNIGHT COUNTS TOO: T74 Arm W 16...Qe4?? landed on Nc3's capture square, 17.Nxe4 = Q for N.
 - A KNIGHT JUMP WITH CHECK KILLS HER (T72R5 19.Nc5 20.Nb7+).
+- A QUEEN ON HIS QUEEN'S RANK/FILE WITH ONE OF HIS PIECES BETWEEN IS NOT SAFE: that blocker can move with tempo (T75R1 19.Qb6?? her Nc6-d4 opened c6, ...Qxb6 won my queen). Count the blocker's legal moves before she lands; when up material keep her defended and off his queen's lines.
 - WANDERING QUEEN: name ONE square and keep her there; T73R3 Qb6-Qa7-Qc7-Qd7-Qb6-Qa5 cost 10 min.
 - A QUEEN GRAB IS A DEVELOPMENT LOAN: T73R4 14...Qxd4?! handed him 15.Bf4/16.Nxe4/17.Rad1. Before any queen capture list his developing replies and the file his rook takes.
-- QUEEN ON e2/d2/d3 IN FRONT OF HIS KNIGHTS: ...Ne5/...Nf4 hits her with tempo.
 - HIT -> she moves that move, off every attacker ray; a rook hit leaves file AND rank.
 - QUEEN RECAPTURE: walk every enemy attacker of the landing square; a queen who is the sole guard of a piece loses it.
 
@@ -92,7 +91,7 @@ Notes:
 
 ## Opponents
 - SF19: instant, zero errors. Punishes loose units, passive retreats, queens on rays/pawn squares/knight squares, ignored attacked pieces, pawn sacs opening lines to my king. Vs my Caro Advance: Be2/Nc3/Nge2/O-O/b3, then Qa6+/Qb7# with my king on c8 and b7 empty. T74R2: vs Yugoslav ...d5 central strike; when my knight's retreat is blocked, ...Nxd4 wins it. 10-15 s; first rank solid.
-- Muse Spark 1.3: patient 30 s-4 min, usually zero illegal, banks clock, takes every loose pawn and undefended piece, sits in a shell; the clock is the game against her. 5-10 s a move, no 7-min thinks. T73R7: Qxe5! won a piece; 3 invalid replies forfeited. T74R3: my ...e5! won a pawn while she burned 3-6 min a move; ...b5/...c5-c4-c3, Nf4, Rc1#.
+- Muse Spark 1.3: patient 30 s-4 min, zero illegal, banks clock, takes loose units, sits in a shell; the clock is the game. 5-10 s a move. T73R7 Qxe5! won a piece. T74R3 my ...e5! won a pawn while she burned 3-6 min. T75R1: up B+P, 19.Qb6?? let her Nc6-d4 open c6 and ...Qxb6 won my queen; my Rd4/Rd5 fortress then drew by threefold as her clock ran. No queen on her queen's rank with a movable blocker.
 - GLM 5.3 Flash: HIS QUEEN ON MY PAWN'S OR KNIGHT'S CAPTURE SQUARE (7+ times, incl. T74 Arm W 16...Qe4?? 17.Nxe4 = Q for N, and T74R7 19.Qf3?? exf3). 1-7 illegal tries, often 3 on a check reply. Take gifts only after the pawn/bishop/knight capture list; decline queen trades when a pawn down - name a conversion. T74R4: ...b5-b4 hit Nc3; my e5/Ne2-g3-e4-d6/Nb7 won exchange and queen. Down material he fortresses (Bf8/Ndf6/Rb8/h6) but still burns 1:49 thinks (T74 Arm W: flagged 0:14 at m23) - trade the fork-source knight, queen tempo, 5-15 s, let his clock die. T74R7: with Q+N up I let his Kg2 + inter-guarded rooks shell reach a threefold.
 - DeepSeek V4.1 Flash 1017 (mirror): Taimanov/English both ways; keeps units guarded; punishes a piece on his pawn's square and a queen on a rook file.
 - Sonnet 5.5: 40-50 min clock, punishes a loose queen/rook and every pawn grab; in endings he centralizes the king, puts a rook on my 6th rank and eats unguarded pawns (T74R1: e6, g6, h5). T73R6 met ...Nh6 with Bxh6 and doubled my pawns, then won the d5-rook with Nxe6+. T74 Arm W: quiet Ruy, ...b5/...Na5/...c5/...Qc7/...Bc6/...Nc4/...a5/...b4; took loose d5 and Be3, then accepted repetition with draw odds. Bank clock from move 1: 5-10 s book, 10-15 s quiet.
