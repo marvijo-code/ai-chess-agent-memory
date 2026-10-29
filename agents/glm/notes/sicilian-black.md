@@ -1,28 +1,21 @@
 # Open Sicilian / Taimanov as Black
 
-## T74R4 v DeepSeek V4.1 Flash, L on FORFEIT (3 invalid, down R+2P)
-- my 25...Qa5?? instead of Qd8 (kept b8 guarded) = rook free; then the a6-pawn and b6-pawn could NOT BOTH push (I tried) - the trade-clamp pawn staying frozen is lesson REC-TRADE PAWN (MEMORY).
-- 19.Bd3! by him was the opening-key lesson: when his bishop LEAVES a file-square, my pieces parked behind a blocker on the same line are targets on my NEXT move - run the vacation sweep after his vacating move, not only mine.
-- 24...Nd6?? gave his N e2 a fork landing on b7 hitting Qb6+Rb8: with my queen and a ROOK in range of ONE jump square, queen flight Qd8 (re-guards b8) not Qa5 (offside, rook hangs).
-- 31.e5! (my best and last winning try) was one pawn-fork too late: earlier 29...b5?? (instead of a5) would have been THE SAME ago move without risking the a6-pawn. NEVER push both sides of a b6/a6 clamp piece; push the b5 side only, and only when the a6-pawn trade recapturer is NOT needed this turn.
-- His zero illegal replies in 32 moves; he banked the full clock and never left a hanging piece: take NOTHING until a full chain census on the CURRENT board proves the final capture.
+## T74 SF1G1 v SF19: Old Sicilian 6.Bb5 - DRAW from -7 at m9
+- 6.Bb5 pins my c6-knight TO Qd8; 6...a6? only wastes a tempo while pinned. His 7.Nxc6! made 7...bxc6?? the kill: the b-pawn LOADED the c6 square for 8.Bxc6+! Qd7 (forced) 9.Bxd7+ Kxd7 = queen-for-bishop, +7 by move 9 with nothing left to try.
+- FIX: with Nc6 pinned to my queen, answer Nxc6 with the QUEEN recapture 7...Qd7! hitting the c6-knight - 8.Bxc6 then meets Qxc6 for even material. Pawn recaptures around a pinned knight are what convert a +2.5 pawn into Q-for-B. General rule: UNPIN FIRST (...Nf6/...Qc7) before any ...a6/...b5 probe; never leave the queen behind a pinned knight.
+- SHELL THAT DREW: down a queen from m9, the fortress built by m15 held +8..+11 for 100+ plies while SF shuffled: king d7/d8/c7/e8 inside the Bc8+Rd8 cover; Be7 the SOLE guard of f6, never leaving e7/d8; d6 always double-covered (K+B); knight rotating c6/b8 covered a5/b8/d8/e7; Ra8+Nb8 mutual cover; ALL 1-pawn drips (g3/h5/a5/f7) ACCEPTED - drips never unlock a shell. Model: every unit double-guarded or unreachable (Ra8 sat safe behind his own a4-pawn forever). THREEFOLD IS A WIN; sell nothing for "compensation".
 
-## T71R2/T73R5 pathology (already noted)
-- 3.e5 ...Nd5 hybrid: play again; his real kill T73R5 = d6-pawn attacks my e7-queen, CAPTURE it (11...Qxd6!), never blockade - had I let the e5-pawn then live to the early 15...d6?!, his 17.Bxb4/Qxd6-class takes-and-runs grabbed material every check.
+## Invalid-reply discipline (19 tries this game, still survived)
+- A rejection whose text cites a move I did NOT play is STALE: hand-verify the intended move from the FEN piece list, then resend the SAME UCI ONCE - accepted 6x this game (Bd8/Be7/Kd7/Kd8/Ke8/Nc6). Never a 3rd try of one move. If the text cites MY move, or the same UCI is refused a 2nd time: different square AND different plan.
+- In check with exactly ONE legal reply: run the pawn-path/check-replies check, resend that move once - this has been the save 10x.
+
+## v DeepSeek V4.1 Flash - the repeated kill set
+- T74R4 L forfeit (down R+2P from m25): 25...Qa5?? instead of Qd8, which kept b8 guarded. NEVER push BOTH sides of a b6/a6 clamp; push the b5 side only, when the a6 trade recapturer is not needed that turn (29...b5?? was one pawn-fork too late). His 19.Bd3! - when HIS bishop leaves a line square while my pieces are parked behind the same blocker, they are targets on MY next move: the vacation sweep counts HIS vacates too. 24...Nd6?? let his Ne2 fork b7 hitting Qb6+Rb8 with one jump - queen flight Qd8 re-guards. His zero illegal replies: take NOTHING without a full chain census to the LAST capture on the CURRENT board.
+- T66R3 L m30: 19...Bxf6?? abandoned d5, guarded only through MY d7-PAWN: 20.Qxd5+ at once. A piece parked behind an attacked pawn defends through it only while the pawn survives - retreat ...Be6-class which also covers, or ...Qd7 before the break.
+- T66R2 v Muse L m17 (g4-h4-g5 storm): 12...h6? GIVES him the g5 target and opens my own h-file; 13...Kh8? parks ON the built file; 14...hxg5? re-opens it MYSELF; 16...Bxg5?? blocker with NO named guard = 17.Qxh7#. Counter candidate still untested: 12...Nxd4 13.Bxd4 e5. Every kingside push against an incoming storm: pre-classify as 'covers g5/the files' or BANNED.
+- T62R2/T51R1: his e5-class push bans d6/f6 for EVERY of my units, queen FIRST; 13...Qxc3?? met Qxd4 (his b2-PAWN was d4's second guard); a 7th-rank passer is contested from BEHIND only, never 17...Rfd8? into it.
 
 ## 3.e5-...Nd5 hybrid v SF (T71R2 L m21, T73R5 L m47) - PLAY AGAIN with the m11 fix
-Line first 16 plies: 1.e4 c5 2.Nf3 Nf6 3.e5 Nd5 4.d4 cxd4 5.Nxd4 Nc6 6.Nf3 e6 7.a3 d6 8.c4 Nb6; continuation: ...Be7 10.Bxe7 Qxe7 11.exd6 (same consecutive game, rest of the line kept to gestion: remaining plies run 8).
-- THE KILL (T73R5): his d6-PAWN attacks my queen on e7. 11...Qxd6! CAPTURES THE UNDEFENDED ATTACKER = level (verified: nothing white guards d6 - Nf3 no, c4/d4 pawns no, Qd1/Rd1 blocked by his own d4-pawn). I played 11...Qd7?! blockading it: +2.6, and the pawn then poisoned e7/d6 for 35 moves - its e7-cover cornered my king to g8/h8 and WAS the final net (46.Qh7+ Kf8 47.Qh8#).
-- 10...Qxe7?! (SF mark): 10...Nxd4 in-between candidate, unverified.
-- ENDGAME: his axb5 pried my c6-knight (all-game hero: blocked c5, guarded e5) and the wall fell. A hero blocker dies to the first pawn hit - have its relief ready BEFORE, not after.
-- BANS (both games): the ...h6+...g5 pair (T71R2 emptied king cover, Qh8#); knight-parks on the d4-h8 diagonal (20...Nc5?? Qh8#); any kingside push with a vacator behind his queen (23...h5 died to Qd1-h5 once 24.Ng5 vacated f3 - list his vacators first).
-- 14 invalid tries were ALL 2nd-attempt sole-legal in-check resends (Kh8/Kg8/Qxf7/Kf8): pawn-paths.py now lists all check replies; with exactly ONE, resend once - accepted 10x, no forfeit.
-
-## T66R3 v DS-4.1, L MATE m30 - the d5-bishop I never guarded
-His build: Be2/Be3/f4/Qd2/Rad1, 12.e5! break. 12...Nd5 13.Nxd5 exd5 14.Bf3 Nxd4 15.Bxd5 Bxd5 16.Bxd4 = level. Then 18...Rc7? drift; 19.Bxf6 Bxf6?? ABANDONED d5 (guarded only by Qd8 through my d7-PAWN): 20.Qxd5+. FIX: retreat ...Be6! which ALSO guards, or ...Qd7 early. Down-3 gesture kills: h5/Bd4+/Qg5+ all ??. 3 invalid tries on one 16...f6 - rebuild the piece list after every HIS capture.
-
-## T66R2 v Muse 1.3, L MATE m17 - storm defense
-His build: Nc3/Be3/Qd2/f3/Bd3/O-O-O/Kb1, then g4-h4-g5 at the open h-file. Kills: 12...h6? (g5 target AND opened my h-file), 13...Kh8?! parked ON the built file, 14...hxg5? opened it myself, 16...Bxg5?? blocker with NO named guard, 17.Qxh7#. Counterplay to test: 12...Nxd4 13.Bxd4 e5 (unverified).
-
-## T62R2/T51R1 v DS-4.1 - never land on his e5-pawn's squares
-Kills: 14...Qd6?? exd6; 17...Rfd8?? into his e7-passer; 11...Bc5?? pre-marked; 13...Qxc3?? Qxd4 (b2-PAWN the guard). After his e5-class push BOTH d6/f6 banned for EVERY my piece, queen first; a 7th-rank passer = contest from BEHIND only.
+- Line: 1.e4 c5 2.Nf3 Nf6 3.e5 Nd5 4.d4 cxd4 5.Nxd4 Nc6 6.Nf3 e6 7.a3 d6 8.c4 Nb6 (16 plies), then ...Be7 10.Bxe7 Qxe7 11.exd6.
+- THE KILL: his d6-PAWN attacks my e7-queen - 11...Qxd6! CAPTURES THE UNDEFENDED ATTACKER = level (nothing guards d6); my 11...Qd7?! was +2.6 and that pawn's cover ended in the Kf8/Qh8# net by m47. 10...Nxd4 in-between candidate unverified.
+- Standing bans: the ...h6+...g5 pair (empties king cover; Qh8#); knight parks on the d4-h8 diagonal (20...Nc5?? Qh8#); any kingside push while a vacator sits behind his queen (list his vacators first). A hero blocker (the c5-knight) died to the FIRST pawn hit - have its relief ready before, not after.
