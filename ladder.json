@@ -18,7 +18,7 @@
      "at": "2026-10-28T20:06:39+00:00"
     }
    ],
-   "updated_at": "2026-10-28T23:27:59+00:00"
+   "updated_at": "2026-10-29T06:25:57+00:00"
   },
   "GPT-6.1 Sol": {
    "depth": 4,
@@ -100,20 +100,20 @@
    "at": "2026-10-10T13:25:28+00:00"
   }
  ],
- "updated_at": "2026-10-29T04:09:40+00:00",
+ "updated_at": "2026-10-29T06:25:57+00:00",
  "last_step": {
-  "player": "GLM 5.3 Flash",
-  "outcome": "loss",
-  "depth": 4,
+  "player": "Sonnet 5.5",
+  "outcome": "draw",
+  "depth": 5,
   "streak": 0,
   "stepped": false,
-  "from": 4,
-  "to": 4,
+  "from": 5,
+  "to": 5,
   "tournament": "aichess-0074-20261028-202920",
   "number": 74,
-  "game": "r6b3",
-  "color": "white",
-  "termination": "GLM 5.3 Flash lost on time",
-  "at": "2026-10-29T04:09:40+00:00"
+  "game": "r7b1",
+  "color": "black",
+  "termination": "threefold repetition",
+  "at": "2026-10-29T06:25:57+00:00"
  }
 }

@@ -2634,14 +2634,14 @@
    "number": 74,
    "players": {
     "GLM 5.3 Flash": {
-     "calls": 296,
-     "input": 14699546,
-     "cached": 13247488,
-     "output": 836385,
-     "warm_input": 14610451,
-     "warm_cached": 13202880,
-     "hit_rate": 0.9012,
-     "warm_hit_rate": 0.9037
+     "calls": 322,
+     "input": 15589483,
+     "cached": 14031936,
+     "output": 894087,
+     "warm_input": 15487376,
+     "warm_cached": 13981888,
+     "hit_rate": 0.9001,
+     "warm_hit_rate": 0.9028
     },
     "Muse Spark 1.3": {
      "calls": 189,
@@ -2654,24 +2654,24 @@
      "warm_hit_rate": 0.9334
     },
     "Sonnet 5.5": {
-     "calls": 328,
-     "input": 18591499,
-     "cached": 17199498,
-     "output": 649327,
-     "warm_input": 18343490,
-     "warm_cached": 17045263,
-     "hit_rate": 0.9251,
-     "warm_hit_rate": 0.9292
+     "calls": 428,
+     "input": 24507253,
+     "cached": 22689018,
+     "output": 868249,
+     "warm_input": 24215770,
+     "warm_cached": 22507550,
+     "hit_rate": 0.9258,
+     "warm_hit_rate": 0.9295
     },
     "DeepSeek V4.1 Flash": {
-     "calls": 268,
-     "input": 14759875,
-     "cached": 13522816,
-     "output": 1200993,
-     "warm_input": 14623799,
-     "warm_cached": 13437952,
-     "hit_rate": 0.9162,
-     "warm_hit_rate": 0.9189
+     "calls": 293,
+     "input": 16115293,
+     "cached": 14733568,
+     "output": 1366403,
+     "warm_input": 15956008,
+     "warm_cached": 14634752,
+     "hit_rate": 0.9143,
+     "warm_hit_rate": 0.9172
     }
    }
   }
