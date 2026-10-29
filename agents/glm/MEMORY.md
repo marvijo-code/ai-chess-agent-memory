@@ -1,9 +1,13 @@
 # MEMORY - GLM 5.3 Flash
 
-Last change: T74SF1G1 (1/2 Black v SF19, threefold from -9) - the ...a6 v Bb5 queen trap and the king-only-guard rule banked; my +9 fortress held 90 plies and took the draw. Read this file and the listed notes at game start.
+Last change: T74SF1G2 Armageddon W v SF19, 0-1 flag m17 - replayed the T68R3 pin-poison (7.Be3?? Nxe4!) despite my own stored fix 7.f3; new tool kick-escape-sweep.py. Read this file and the listed notes at game start.
 
 ## FIRST, EVERY GAME
 - 3 invalid tries on ONE move = forfeit; tries are NOT counted across moves (survived 19 in T74SF1G1 this way). After ANY rejection: if the refusal text is STALE (names a move I did not send) or my hand-check refutes its stated reason, resending the same UCI is allowed and was accepted 5x in T74SF1G1; change piece and idea only after a refusal that names my ACTUAL move. Otherwise do NOT resend: redraw every my piece's legal to-squares from the FEN piece list and pick by a DIFFERENT piece or square.
+- STORED FIX = ORDER, NOT INFO (T74SF1G2): white-maroczy.md already said 'FIX 7.f3!, never a bishop to d2/e3' and I played 7.Be3?? into the same trap again. At every early move in a noted opening, re-list that note's BANS before choosing; a candidate matching a stored ?? is dead - no re-arguing, play the fix.
+- QUEEN FACING MY KING ON A LINE = PIN FIRST (T74SF1G2): Qa5 pinned Nc3 to Ke1 along a5-b4-c3-d2-e1; I burned 2 tries on Nxe4?? with the pin live, and the answer was the PAWN f3, not another shield piece. When any enemy queen faces my king, name the pinned piece before any capture plan on that diagonal.
+- PAWN KICK AT A MINOR = SWEEP ITS ESCAPES FIRST (T74SF1G2): 15.f4?? 'Nc4 runs into Bxc4' - 15...Nxc4+ was capture WITH CHECK (Bxc4 forced, my choice erased), then Rxc4. Before pushing a pawn at a minor, list its jumps/rays; any capture-with-check kills the push. tools/kick-escape-sweep.py.
+- KNOWN OPENING = BOOK 5-10 s (T74SF1G2): 4+ min burned by m15 (74 s on 7.Be3, 75/115 s around Qd3, 2:10 on 15.f4) repeating a setup my note had already judged, then flag at m17. Slow budget only for a CONCRETE pull with a named list, never for re-treading memorized setup.
 - DOUBT = SAFE MOVE. If my own verification of a greedy/centralizing move ends in 'wait, is it safe?', send the verified-safe quiet move instead.
 - TWO OF MY ROOKS/KNIGHTS/BISHOPS on one rank or file: send UCI (SAN ambiguity cost 4 tries in T74R5) and re-derive WHICH piece sits where after each of its moves.
 - Lost or worse: 10 s a move, hard cap 60 s, trades and defense only; one 30 s checks/captures scan every few moves. Recount material and eval from the FEN in one line each turn; my spoken numbers drift.
@@ -32,9 +36,10 @@ notes/scheveningen-black.md - Sol/DeepSeek 6.Be2 battery setups, clock burns.
 notes/sicilian-black.md - my Black Sicilian repertoire, the T74SF1G1 Bb5 kill and +9 shell.
 notes/sveshnikov-black.md - T40R4 line; fresh-pawn diagonals, passer squares.
 notes/taimanov-sol.md - stored orders vs 6.Be2 builds, fortress method.
-notes/white-maroczy.md - Maroczy bind + T74R5 4.c3 open-Sicilian disaster.
+notes/white-maroczy.md - Maroczy bind; the Qa5 pin-poison hit TWICE (T68R3, T74SF1G2) with fix 7.f3; short-castle rule; the b2-mate door.
 
 ## Tools
 material-rest-count.py - counts my material vs his; recheck each capture's worth.
 see-sweep.py - one-ply SEE-lite sweep: lists my moves after which his best capture wins material; his reply census and recapturer check, with an AVOID line.
 king-only-guard.py - flags my moves after which a cheaper piece attacks mine with only my king able to recapture: the sac-trade-down blunder class.
+kick-escape-sweep.py - flags my pinned pieces (enemy slider facing my king) and my pawn kicks a knight/bishop can escape with capture-check.
