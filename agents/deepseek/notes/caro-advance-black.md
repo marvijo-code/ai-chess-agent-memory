@@ -4,6 +4,16 @@
 1.e4 c6 2.d4 d5 3.e5 Bf5 4.Be2 e6 5.Nc3 c5 6.Bb5+ Nc6 7.Bxc6+ bxc6 8.Nge2 Be7 (16 plies). Then ...c4/...Nge7/...O-O; c6 guards d5; keep the f5-bishop guarded (...Bg6 when Ng3 hits it). BANS: no ...f6 without a piece guard on e6; no ...g5/...h5 uncastled; no ...Nh6 while his Bf4/Bg5 lives.
 The ...Bf5/...e6/...Nd7/...Ne7/...Bg6/...h6/...Qc7/...Nf5/...Be7/O-O build was level to m20 (T74R1).
 
+## v 4.Nf3/5.Be2/Nbd2/c3 (T74R6 v Sonnet, draw threefold)
+1.e4 c6 2.d4 d5 3.e5 Bf5 4.Nf3 e6 5.Be2 Be7 6.O-O Nd7 7.Nbd2 c5 8.c3 (15 plies), then ...cxd4/...Qc7/...Rac8 pressure.
+- 8...cxd4 9.cxd4 f6?! (SF ?!): frees g8 and ...Ngxf6 but hands him the e5 outpost (Nb3-Ne5, Qd2) and devalues d5. Keep the tension; ...f6 only for a concrete gain.
+- ...Qc7/...Qd6/...b6/...Qxd7/...Rac8/...Nd7/...h6/...Nxe5/...Qb4/...Qxd2 kept it level to m23. The real errors were 23...Kf7?! (SF ??) and 24...Bc5??.
+- 24...Bc5?? 'activating' met 25.dxc5 bxc5 = B for P: HIS d4-PAWN OWNS c5 AND e5. No bishop there while d4 stands.
+- DOWN B FOR P: king to the centre (f7-e7-e6-d5-d4), passers ...c4 and ...d3, rook on the d-file guarding them (Rd8-Rd7-Rd5), loose wing pawns (a3, b4). Once his rook hit f5 while mine had to hold d2, the threefold was a real result.
+- With extra pawns later SF marked 51...Kxa3?? and the Rd7/Rd5 shuttles: free the rook (bishop guards the passer) instead of grabbing.
+- CLOCK: 55 min in 56 moves, ended 4:19 vs 22:02; the 2-3 min moves (...Kf7 3:07, ...Bc5 3:27, ...Kd4 3:00, ...d2 2:52) were exactly the blunders. Level/simplified = 10-20 s.
+- 5...Be7 cost one illegal try: my own c6 pawn blocks Nb8-c6.
+
 ## T74R1 v Sonnet (0-1 forfeit m49) - three pawns, 48 min
 - A symmetric trade left my last minor on the only open file as his target (his Qc1/Re2 came with tempo).
 - ...f6/...f5 abandoned e6 (d5 guards c4/e4); his rook on my 6th then took e6, g6 (king-only guard) and h5. Every pawn there needs a pawn or piece guard.
