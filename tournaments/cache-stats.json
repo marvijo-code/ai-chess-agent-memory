@@ -2734,24 +2734,24 @@
      "warm_hit_rate": 0.8934
     },
     "DeepSeek V4.1 Flash": {
-     "calls": 268,
-     "input": 14503672,
-     "cached": 13073024,
-     "output": 2027279,
-     "warm_input": 14405180,
-     "warm_cached": 13013504,
-     "hit_rate": 0.9014,
-     "warm_hit_rate": 0.9034
+     "calls": 306,
+     "input": 17763262,
+     "cached": 16173568,
+     "output": 2308367,
+     "warm_input": 17664770,
+     "warm_cached": 16114048,
+     "hit_rate": 0.9105,
+     "warm_hit_rate": 0.9122
     },
     "Sonnet 5.5": {
-     "calls": 188,
-     "input": 10579377,
-     "cached": 9674603,
-     "output": 390759,
-     "warm_input": 10371756,
-     "warm_cached": 9545868,
-     "hit_rate": 0.9145,
-     "warm_hit_rate": 0.9204
+     "calls": 226,
+     "input": 13045874,
+     "cached": 11879318,
+     "output": 562843,
+     "warm_input": 12838253,
+     "warm_cached": 11750583,
+     "hit_rate": 0.9106,
+     "warm_hit_rate": 0.9153
     },
     "Muse Spark 1.3": {
      "calls": 208,
