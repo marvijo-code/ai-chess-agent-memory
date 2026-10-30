@@ -1,54 +1,102 @@
 import json, sys, chess
 
-payload = json.load(sys.stdin)
-board = chess.Board(payload["fen"])
-me = board.turn
-opp = not me
-legal = list(board.legal_moves)
-bad = {}
+V = {1: 1, 2: 3, 3: 3, 4: 5, 5: 9, 6: 99}
 
-for mv in legal:
-    board.push(mv)
-    for r in list(board.legal_moves):
-        pc = board.piece_at(r.from_square)
-        if pc is None or pc.piece_type != chess.PAWN or r.promotion:
+
+def minatt(b, color, sq):
+    vals = [V[b.piece_type_at(s)] for s in b.attackers(color, sq)]
+    return min(vals) if vals else None
+
+
+def has_safe(b, sq):
+    me = b.turn
+    val = V[b.piece_type_at(sq)]
+    for m in list(b.legal_moves):
+        if m.from_square != sq:
             continue
-        board.push(r)
-        sq = r.to_square
-        targets = []
-        for s in board.attacks(sq):
-            q = board.piece_at(s)
-            if q and q.color == me and q.piece_type in (2, 3, 4, 5):
-                targets.append(s)
-        if targets:
-            can_take_with_pawn = False
-            for m2 in board.legal_moves:
-                p2 = board.piece_at(m2.from_square)
-                if m2.to_square == sq and p2 and p2.piece_type == chess.PAWN:
-                    can_take_with_pawn = True
-            guarded = bool(board.attackers(opp, sq))
-            if not can_take_with_pawn and guarded:
-                trapped = []
-                for s in targets:
-                    safe = False
-                    for m2 in board.legal_moves:
-                        if m2.from_square == s and not board.is_attacked_by(opp, m2.to_square):
-                            safe = True
-                    if not safe:
-                        trapped.append(s)
-                if len(targets) >= 2 or trapped:
-                    names = ",".join(chess.square_name(s) for s in targets)
-                    bad.setdefault(mv.uci(), []).append(
-                        "%s hits %s" % (r.uci(), names))
-        board.pop()
-    board.pop()
+        b.push(m)
+        a = minatt(b, not me, m.to_square)
+        ok = a is None or (a >= val and b.is_attacked_by(me, m.to_square))
+        b.pop()
+        if ok:
+            return True
+    return False
 
-if len(bad) >= len(legal):
-    print("Pawn-push threat exists against every move (already on the board): no AVOID.")
-else:
-    for u, why in sorted(bad.items()):
-        print("%s allows pawn push %s (guarded pawn, no pawn capture; fork or no safe retreat)" % (u, why[0]))
-    if bad:
-        print("AVOID: " + " ".join(sorted(bad)))
+
+def trapped(b, p):
+    me = b.turn
+    out = []
+    for sq in b.attacks(p):
+        pc = b.piece_at(sq)
+        if pc and pc.color == me and pc.piece_type not in (chess.PAWN, chess.KING):
+            if not has_safe(b, sq):
+                out.append(sq)
+    return out
+
+
+def escape(b, p):
+    me = b.turn
+    for m in list(b.legal_moves):
+        if m.to_square != p:
+            continue
+        if b.piece_type_at(m.from_square) != chess.PAWN:
+            if not b.is_attacked_by(not me, p):
+                return True
+            continue
+        b.push(m)
+        ok = True
+        for r in list(b.legal_moves):
+            if r.to_square == p and b.piece_type_at(r.from_square) == chess.PAWN:
+                b.push(r)
+                if trapped(b, p):
+                    ok = False
+                b.pop()
+        b.pop()
+        if ok:
+            return True
+    return False
+
+
+def threats(b):
+    res = {}
+    for m in list(b.legal_moves):
+        if b.piece_type_at(m.from_square) != chess.PAWN:
+            continue
+        b.push(m)
+        p = m.to_square
+        tr = trapped(b, p)
+        if tr and not escape(b, p):
+            for sq in tr:
+                res[sq] = m.uci()
+        b.pop()
+    return res
+
+
+def main():
+    payload = json.load(sys.stdin)
+    board = chess.Board(payload["fen"])
+    base = {}
+    if not board.is_check():
+        board.push(chess.Move.null())
+        base = threats(board)
+        board.pop()
+    lines = []
+    for sq, mv in base.items():
+        lines.append("EXISTING: his pawn push %s would trap my piece on %s (no safe square)" % (mv, chess.square_name(sq)))
+    for m in list(board.legal_moves):
+        board.push(m)
+        th = {} if board.is_game_over() else threats(board)
+        board.pop()
+        for sq, mv in th.items():
+            if sq in base and sq != m.to_square:
+                continue
+            lines.append("AVOID: %s - then his pawn push %s hits my piece on %s which has no safe square (trapped, lost for a pawn)" % (m.uci(), mv, chess.square_name(sq)))
+            break
+    if not lines:
+        print("no pawn-push trap found")
     else:
-        print("no guarded pawn push forks two pieces or traps a piece (2-ply check only)")
+        for l in lines[:10]:
+            print(l)
+
+
+main()
