@@ -1,7 +1,8 @@
 # Chess memory - Muse Spark 1.3 Contributor (3600+10)
 
 ## Record
-- T76R4 W vs Flash: win time m45 up P. Classical Rhg1/Kb1/Rd2/Rgd1 slow, 22.dxe5 won N after 21...Ne5??, 30.Ne4?? met fxe4 back to +1, Qc2/Qe2 shuffle met Rxd2/Rd8, Ka1/Nf3 shell held flagged 20:39 vs 0:20. 4 illegal (Qc4, Qe2e4 malformed, Qd2, Nxd2 2 tries each).
+- T76R5 B vs SF: draw m21 threefold down 6. 3...Nd7 before cxd4 let d5 clamp, Qc7 met Bc4+ fork cycle, Kg8/Kh8 shell drew vs +5/+7. 4 illegal (Nd7 + 3 king replies 2 tries in check).
+- T76R4 W vs Flash: win m45 up P. Classical Rhg1/Kb1/Rd2/Rgd1 slow, 22.dxe5 won N after 21...Ne5??, 30.Ne4?? met fxe4 back to +1, Qc2/Qe2 shuffle met Rxd2/Rd8, Ka1/Nf3 shell held flagged 20:39 vs 0:20. 4 illegal (Qc4, Qe2e4 malformed, Qd2, Nxd2 2 tries each).
 - T76R3 W vs GLM: draw m64 threefold down N. Classical f4/Qe1/Qg3/Rf3 slow vs Qc7/b6/Bb7/h6/Bf6/Rae8, 18.Rb1?? missed Bxd4 recapture down N, c3/b4/c4 loosened, Kg1/Kh1 10-30s shell held. 4 illegal (56.Kf1 3 tries in check).
 - T76R1 B vs Sonnet: loss forfeit m5 Qxa2. 4...Qa5+?? met Nc3 tempo loss, Qxa2?? met Rxa2 tool flagged AVOID resent x3 forfeited. 4 illegal (2 cxd4, 2 Qa5+).
 - T75-3rd W vs DeepSeek: loss forfeit m40 Qd4+. Classical h4/h5/Bh7/Bd3/O-O-O/Kb1, Rh1/Rd2/Rc3 shuffles, Rdc1??/c5?!/Bd4??/b3?? met Bxe5/Bxf4/Bxc1/Rxd4/Rxc4 down 2R, Kb1 x3 over AVOID forfeited. 2 illegal.
@@ -24,7 +25,7 @@
 - T72SF2G1 W vs Flash: loss forfeit m37. Classical shell vs c5/c4/b5/b4 clamp, b3?? met cxb3 winning N. 2 illegal.
 
 ## Key lessons (read before EVERY move)
-- LEGALITY FIRST: walk piece from actual square to destination. After 1 reject redraw FEN, pick different piece AND idea, never resend stale UCI. 3 rejects forfeit. Use tools/legal-list.py UCI list. T76R4 Qe2e4 malformed + Qc4/Qd2/Nxd2 2-try loops; T75SF1G1 7 invalid over 5 moves forfeited; T76R1 4 invalid over 2 moves; T76R3 56.Kf1 3 tries in check; when in check list replies once and send in 5-10s.
+- LEGALITY FIRST: walk piece from actual square to destination. After 1 reject redraw FEN, pick different piece AND idea, never resend stale UCI. 3 rejects forfeit. Use tools/legal-list.py UCI list. T76R4 Qe2e4 malformed + Qc4/Qd2/Nxd2 2-try loops; T75SF1G1 7 invalid over 5 moves forfeited; T76R1 4 invalid over 2 moves; T76R3 56.Kf1 3 tries in check; T76R5 4 invalid (Nd7 + 3x Kg replies 2 tries in check); when in check list replies once and send in 5-10s.
 - TOOL AVOID IS AN ORDER: T76R1 Qxa2 x3 forfeited though tool correctly flagged Rxa2; T75-3rd Kb1 x3 forfeited though tool named only -1P g4-Nxf6 while down 2R; T73R4 Kf1 x3, T71R1 Kd7 x3, T73-3rd Kf8 x3 each forfeited. After one refusal switch piece and idea at once, never resend flagged UCI even if loss looks small.
 - OPEN QA5+/QXA2 POISON: 4...Qa5+?? after Nxd4 meets Nc3 blocking with tempo, no follow check. Never Qxa2 grabbing a2 under Ra1 to Rxa2. Play Nf6/Nc6/e6 Scheveningen, never early queen sortie. If queen hit retreat at once.
 - WHITE SCHEVENINGEN HASTE: T75R5 Qe1/Qe2 wasted 2 tempi, Kh1/Rac1/h3/g4 slow vs Qc7/b6/Bb7/h6 shell; T76R3 f4/Qe1/Qg3/Rf3/a3 same slow, f5?? met Bxd4 winning N, 18.Rb1?? missed Bxd4 recapture down N to draw. RECAPTURE FIRST: after ...Bxd4/...Bxe3 list recapturers (Be3/Rd1/Qxd4) and play one at once, never quiet while piece hangs. Run tools/free-capture.py. Do not storm without e4 twice and f5 counted; Bd3 blocks c1, b3/a3 loosens c3/b4. Meet ...d5 tense, keep Nc3, play Rad1/Kh1 fast 10-20s.
@@ -34,15 +35,15 @@
 - RUY BERLIN D3 LOCK: c3/Re1/Nbd2/Bc2/Nf1-g3/h3, d4 only with e4 twice, d5 locks knight must retreat. T75R2 c4?! weakened, Bd3/Bc2 shuffled vs Nf4 held by e5. Meet Nf4+Bxg5 with Nf3/g3 only after Kh1/Qe3 hold f3, then Kg2/Kh2 shell fast.
 - RUY E4 ABANDON: e4 held only by Nc3 vs Nf6/Re8/Bb7. Ncxd4 abandons e4 to Nxe4. Recapture Nfxd4 to keep Nc3 on e4, or hold e4 twice first.
 - F3 KICK INVITES NXC3: f3 hits Ne4 but Ne4 has Nxc3 hitting Qe2 tempo, then c5 kicks Nd4. List escapes before pawn kick. Prefer Bxe4/Qxe4.
-- SICILIAN CXD4 FIRST + C3: never Nf6/Nc6 holding vs d4, always cxd4 first. T75SF1G1 3...Nf6 met 4.dxc5! dxc5 5.Qxd8+ Kxd8 losing castle to +2, shell to +11 loss. Vs 4.c3 never Nc6 holding pawn: 5.cxd4 d5 forks. Answer c3 with Nf6/dxc3/e6 first. Hold e5/c5 with Be7/O-O/Nd7-Nc5/Bb7/Qc7. Bans: Qb6 allows b3, Rxd8 gives file, Kh8 shuffle, Qf6 lets king centralize.
+- SICILIAN CXD4 FIRST + C3: never Nf6/Nc6 holding vs d4, always cxd4 first. T75SF1G1 3...Nf6 met 4.dxc5! dxc5 5.Qxd8+ Kxd8 losing castle to +2, shell to +11 loss. Vs 4.c3 never Nc6 holding pawn: 5.cxd4 d5 forks. Answer c3 with Nf6/dxc3/e6 first. Hold e5/c5 with Be7/O-O/Nd7-Nc5/Bb7/Qc7. Bans: Qb6 allows b3, Rxd8 gives file, Kh8 shuffle, Qf6 lets king centralize. T76R5 Nd7 before cxd4 met d5 clamp to +2 into Bc4+/Nf7+/Nxd6+ cycle.
 - BB5 PIN SHELL: vs Bb5/Ba4/Bb3 play Bd7/a6/b5 tempo, e6/Be7/O-O/Qc7. Ne5-Ng6-Nf4 hit Qe2, c4/b4 tempo, bxc3 wins N. Keep e6 closed. T75R3 b6?! without Bd7 weakened c6/a6 to Nd4/Nc6/Qc2/b4.
 - DRAGON BXC6 QA5: after bxc6 Qa5 hits c3 at once. Bh6/Qxh6 abandons c3 held only by Be3+Qd2. Keep Be2, king central, no b3, contest b-file first.
 - QUEEN FORK AND E-FILE: Qe3 meets Nd5 hitting queen+knight. With Ke1 and empty e2 keep queen on e-file guarding d2/e2. Qc1 allows double plus Rd2+. List jumps, keep Rd1 first.
-- DESTINATION SWEEP EVERY move: pawn captures first, then knights/sliders/king; quiet never makes square safe. MOVER ABANDONS GUARD: name what left and who hits it now.
+- DESTINATION SWEEP EVERY move, pawn captures first, then knights/sliders/king; quiet never makes square safe. MOVER ABANDONS GUARD: name what left and who hits it now.
 - MAROCZY PIN POISON: 7.Bd2 met Nxd4 winning N, 8.Be3 met retreat holding it. Never block pin with bishop leaving knight loose. Support pawn first.
 - ADVANCE F4/G4 F5 KILL: Bg6+e6/d5 vs f4/g4 means f5! hits e6+g6. Never park Bg6 vs f4; meet f4 with f6/h5 first, keep Bf5 mobile/trade before g4, never c5 leaving d5 on e6 only.
-- H-FILE BATTERY KILLS KG6: Rh1+Qh4+h5 vs Kh7/g6 means hxg6+ forces Kxg6, f5+ opens, Qh5# with g5 blocking. Keep king g8 off h-file, keep f7 closed.
-- CLASSICAL E5 BREAK WINS PAWN: vs Bd6/Nd7/Re8/Qc7 e5 hits d4. dxe5 allows Bxe5 winning P then Ne5 hitting Q/Nf3. Meet e5 tense, never dxe5 without Nxe5 counted twice.
+- H-FILE BATTERY KILLS KG6: Rh1+Qh4+h5 vs Kh7/g6, 42.hxg6+ forces Kxg6, 43.f5+ opens, Qh5# with g5 blocking. Keep king g8 off h-file, keep f7 closed.
+- CLASSICAL E5 BREAK WINS PAWN: vs Bd6/Nd7/Re8/Qc7 e5 hits d4. dxe5 allows Bxe5 winning P then Ne5 hitting Q/Nf3. Meet e5 tense, never dxe5 without Nxe5 counted twice; Bd3 blocks c1, b3/a3 loosens c3/b4.
 - BD4/NE4 INVITE WINNING RECAPTURE: Bd4 blocking Be5 allows Bf4 hitting f4/Ng3 tempo, Bxf4/Bxg3 wins, Bxc1/Rxd4/Rxc4 down exchange+. T74R3 Bd4? met Bf4/Bxg3 won N; T75-3rd Bd4?? while f4 loose met Bxf4 then Bxc1 down 2R. T76R4 30.Ne4?? into Qc5 tempo met fxe4 winning N for P back to +1. Prefer Qe2/f4 hold, never Bd4 while f4/Ng3 loose, never Ne4 while e4 loose to pawn, never c5 dropping e5, never b3 while c1 loose. Hold e5/f4 twice first.
 - C-CLAMP+H-RUNNER MATE: c5-c4-c3 fixes b4/b2, h4 with Nf4 covers e2/g2, Rc1# mates Kf1 boxed. Vs Nf4 keep Ke1/d1 central, R second rank covering c1/e2, never Kf1 while Nf4 lives.
 - F-FILE ABANDON/BLOCK SAC: Rfc1 left f-file to mate on f2. Bishop block invites rook sac into queen checks and mate. List sac plus checks, keep luft first.
@@ -51,7 +52,7 @@
 - ENGLISH ND4/NA5 POISON: Nd4 needs exd4 at once opening e-file vs Nc3, never Bf5/Be6 retreat leaving N en prise. Na5-Nc6 shuttle vs Qd3 loses 2 tempi. Vs e4 never d5 opening e6, hold c5/e5 first. Vs b4-b5 Na5 hits c4 once.
 - BLOCKER LEAVES QUEEN: Nd4 blocked Rd1-Qd7, Nb4 unblocked it so Rxd7 won Q. Before moving blocker move queen off d-file or guard it.
 - UP QUEEN FINISH, NO SHUFFLE DRAW: T75R1 up Q shuffled Qa7/Qa8/Qb8/Rc8/Rd8 while Kg1/Kg2 repeated. Up Q = centralize Q, trade one rook with recapture named, checks first, give luft once. Up P no Nh5/Nf6 repeat vs Bg3/Bf4 drew; trade not shuffle.
-- SHELL CLOCK: T76R4 banked 20:39 vs 0:20 by 10-30s Kb1/Qc2/Qe2/Rd2 holds after up N/P, no pushes, forced Rxd2/Rd8 simplifications accepted, opponent flagged. T76R3 burned 1-3min f4/Qe1/Rd1/Qg3/Rf3/f5/Rb1 left 6:47 vs 24:29 yet Kg1/Kh1/Re3/Rb3 10-30s shell drew down N vs +3/+6. Symmetric/up shuffle 5-10s, routine 10-20s, cap 60, never 2-4min in shell. Down huge = 5-10s, no pushes (c3/b4/c4 loosened), invite repeats. Bank clock.
+- SHELL CLOCK: T76R4 banked 20:39 vs 0:20 by 10-30s Kb1/Qc2/Qe2/Rd2 holds after up N/P, no pushes, forced Rxd2/Rd8 simplifications accepted, opponent flagged. T76R3 burned 1-3min f4/Qe1/Rd1/Qg3/Rf3/f5/Rb1 left 6:47 vs 24:29 yet Kg1/Kh1/Re3/Rb3 10-30s shell drew down N vs +3/+6. T76R5 down 6 Kg8/Kh8 10-22s drew +7 threefold m21 banked 51:33. Symmetric/up shuffle 5-10s, routine 10-20s, cap 60, never 2-4min in shell. Down huge = 5-10s, no pushes (c3/b4/c4 loosened), invite repeats. Bank clock.
 - MATERIAL FROM BOARD EVERY move, recount guards, equal trades preserve deficit.
 - CLOCK: routine 10-20s, capture 30-40, cap 60, up 5-15, low time 3-5. Time goes on destination list, never narrative.
 
