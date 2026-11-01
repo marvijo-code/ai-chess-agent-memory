@@ -2779,14 +2779,14 @@
      "warm_hit_rate": 0.945
     },
     "GLM 5.3 Flash": {
-     "calls": 55,
-     "input": 2447889,
-     "cached": 2125952,
-     "output": 181905,
-     "warm_input": 2409772,
-     "warm_cached": 2103872,
-     "hit_rate": 0.8685,
-     "warm_hit_rate": 0.8731
+     "calls": 65,
+     "input": 3010981,
+     "cached": 2607040,
+     "output": 267493,
+     "warm_input": 2972864,
+     "warm_cached": 2584960,
+     "hit_rate": 0.8658,
+     "warm_hit_rate": 0.8695
     },
     "Sonnet 5.5": {
      "calls": 10,
@@ -2799,14 +2799,14 @@
      "warm_hit_rate": 0.8397
     },
     "DeepSeek V4.1 Flash": {
-     "calls": 24,
-     "input": 1359154,
-     "cached": 1157760,
-     "output": 119755,
-     "warm_input": 1337653,
-     "warm_cached": 1145088,
-     "hit_rate": 0.8518,
-     "warm_hit_rate": 0.856
+     "calls": 31,
+     "input": 1595359,
+     "cached": 1337472,
+     "output": 195458,
+     "warm_input": 1573858,
+     "warm_cached": 1324800,
+     "hit_rate": 0.8384,
+     "warm_hit_rate": 0.8418
     }
    }
   }
