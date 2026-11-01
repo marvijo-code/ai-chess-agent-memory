@@ -2,7 +2,7 @@
 
 Notes:
 - notes/capture-safety.md - pre-move scan + blunder catalogue
-- notes/caro-advance-black.md - Caro Advance/Classical B
+- notes/caro-advance-black.md - Caro Advance/Classical B; T77R6 empty-reply
 - notes/qgd-white.md - QGD W
 - notes/ruy-lopez-black.md - Chigorin/Breyer B
 - notes/ruy-lopez-white.md - Ruy W
@@ -13,7 +13,7 @@ Notes:
 
 ## Rule 0 - board, legality, clock
 - THE CLOCK LOSES GAMES, AND SO DO INVALID TRIES: T77R5 clock fine (46:55 vs 43:30) yet 12 invalid tries burned 2:56 on 34.Bd2, 1:47 on 40.Ng3, 2:41 on 51.e8=Q+. Routine 5-15 s; capture/check/pawn break 15-25 s; 30+ s ONLY for a named forcing line. Long-think offenders: T75R2, T76R1, T76SF1G1 (7:33 and 4:24 thinks, ended 1:06 vs 37:00), T77R4 (3:38 on 16...f4). From move 15 level/worse: 10 s a move, cap 20. Under 5 min: 5 s; under 1 min: 2 s and copy a legal UCI.
-- INVALID REPLIES: 3 tries on ONE move = forfeit. Every send: legal list, destination empty/enemy, path clear, own blockers. After ONE rejection change piece AND idea; a refusal naming my move is final. Promotions and check replies get the same check as any other move.
+- INVALID REPLIES: 3 tries on ONE move = forfeit; an EMPTY reply is a try (T77R6: 0 illegal yet forfeit at 19.Bf4 after 3 empty attempts). Every send: legal list, destination empty/enemy, path clear, own blockers. At a quiet turn pre-list 3 sound UCIs; if one is refused/unavailable, send the next. After ONE rejection change piece AND idea; a refusal naming my move is final. Promotions and check replies get the same check as any other move.
 - In check/forced: read the FEN once, list every legal reply, send exact UCI in 5-10 s; never send a remembered king square.
 - Tool AVOID is not material: count Q for B/R before obeying; obey pawn-capture flags. His last move first; legality actual square, occupant, path, own blockers, pinned pawn, O-O flights.
 - Material from board every move. Name my loose units and his queen/rook/bishop reaching them before any quiet move.
@@ -42,6 +42,7 @@ Notes:
 - VS PERPETUAL: with a big material lead my queen must block a checking line or trade (T76R3 Q+2R vs Q+B became forever checks).
 - QUEEN ON A PAWN-GUARD DUTY: T76SF1G1 50/52...Qb5?? under 1 min. With <2 min move her to a central defended square or accept the trade.
 - HIS QUEEN ON THE E-FILE, MY BISHOP PINS: ...Re8 won a tempo twice (T77R2); blocking a check with a developing move that attacks her was best (14...Bf7! after Qe6+). Use these tempos.
+- DO NOT SHUTTLE THE QUEEN WITH NO NEW TARGET: T77R6 12...Qb6?! 13...Qc7?! 15...Qb6 again (SF ?! both) wasted tempi in a level Caro. A queen retreat must take a new duty; otherwise play a rook/pawn plan.
 
 ## Rule 3 - captures & trades
 - RECAPTURE != TRADE: my recapturer must reach in one move and stay guarded. An undefended piece is not free if his answer comes with tempo; never R for B/P.
@@ -65,7 +66,7 @@ Notes:
 ## Openings (details in notes)
 - Open Sicilian Scheveningen W: 1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 e6 6.Be2 Be7 7.O-O O-O 8.Be3 (15). Then f4/Qe1/Qg3/a4/Rad1/Kh1; e5 break, exd6 Bxd6, Qh3, f5, Nxh6 once g7 empty, Nd5, Bxc5, Qc3+, Ne8+, Qg7#. 4-20 s.
 - Open Sicilian Taimanov W: 1.e4 c5 2.Nf3 e6 3.d4 cxd4 4.Nxd4 Nc6 5.Nc3 a6 6.Be2 Be7 7.O-O Nf6 8.Be3 O-O (16). Then f4/Qd2/Rad1/Kh1; e5 hits Nf6; vs Qd7/Rd7/Qc6 cluster Bxf6! gxf6 Nxf6+ Kg7 Bxc6 wins queen. Vs ...d6 hedgehog choose d5/e5 or f4 by m15-18.
-- Caro Advance B: 1.e4 c6 2.d4 d5 3.e5 Bf5 4.Nf3 e6 5.Be2 Be7 6.O-O Nd7 7.Nbd2 Nh6 8.c3 O-O (16). Then ...Qc7/...Bxd3/...c5/...Nf5 with d5 guarded; no ...f6 without e6 piece guard. 4.Be2/5.Nc3: ...Nd7/...Be7/...Nh6/...O-O, then ...c5 is a BLUNDER while c6 is d5's only guard: T77R4 10...c5?? 11.Bxf5! exf5 12.Nxd5 = -2P. Before ...c5 name a PIECE guard on d5.
+- Caro Advance B: 1.e4 c6 2.d4 d5 3.e5 Bf5 4.Nf3 e6 5.Be2 Be7 6.O-O Nd7 7.Nbd2 Nh6 8.c3 O-O (16). Then ...Qc7/...Bxd3/...c5/...Nf5 with d5 guarded; no ...f6 without e6 piece guard. 4.Be2/5.Nc3: ...Nd7/...Be7/...Nh6/...O-O, then ...c5 is a BLUNDER while c6 is d5's only guard: T77R4 10...c5?? 11.Bxf5! exf5 12.Nxd5 = -2P. Before ...c5 name a PIECE guard on d5. T77R6 level to 19.Bf4; Qc7-Qb6 shuffle was ?!; keep the quiet-reply list ready.
 - Caro Classical B: 1.e4 c6 2.d4 d5 3.Nc3 dxe4 4.Nxe4 Bf5 5.Ng3 Bg6 6.h4 h6 7.h5 Bh7 8.Nf3 e6 (16). Then ...Bxd3 Qxd3, ...Nd7/...Ndf6/...Be7/...O-O/...Qc7/...Bf8; keep f7 guarded; break ...e5 with Bd6+Nd7 behind; ...c5 only with a d5 piece guard.
 - Ruy W Classical 5...Bc5: 1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Bc5 6.c3 O-O 7.Re1 d6 8.h3 (15). Then ...Be6, d4; exd4 cxd4 ...Bb6 and Nc3; later Bg5 ...h6 Bxf6, Nd5. 5-15 s.
 - Ruy W Closed Chigorin: 1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Re1 b5 7.Bb3 d6 8.c3 O-O (16). Then h3/Bc2 vs ...Na5, d4/Nbd2/Nf1-g3. After ...cxd4 cxd4 ...Nc6, d5 ...Nb4 Bb1 ...a5 normal; do NOT 20.b4?!. Keep Kg1 guarding f2 until queens off. 5-15 s.
@@ -77,5 +78,5 @@ Notes:
 - Muse Spark 1.3: patient 30 s-4 min early; T76R7 he burned to 1:07 and forfeited (I 44:58), but T76R4 he flagged me. Zero gifts, takes tempos (Rc5/Rc6 on my queen), sits in a shell; 2-4 illegal tries. Vs him: 5-10 s from move 15, count every landing, bank clock. T77R3 (Italian, draw): I lost a piece to 17.Bd5??, then Qd2/Qe2 fortress held and his clock fell to 0:52.
 - GLM 5.3 Flash: HIS QUEEN ON MY PAWN/KNIGHT CAPTURE SQUARE (7+ times); 1-12 illegal tries. Take gifts only after the capture list; decline queen trades when pawn down. Down material he fortresses but burns time. T77R2 (English, draw): down a pawn he steered knight shuffles into a threefold and I cooperated - when up, break the loop.
 - DeepSeek V4.1 Flash 1017 (mirror): Taimanov/English both ways; keeps units guarded; punishes a piece on his pawn square and a queen on a rook file.
-- Sonnet 5.5: 40-50 min clock, punishes loose queen/rook/pawn grabs; in endings centralizes the king, rook on my 3rd, eats unguarded pawns. T77R5 (Closed Ruy 5.Nc3, 0-1): waiting ...Re8/...Bf8/...Bf5/...b4 squeeze with tempo on my pieces, then the queen trade that opened b5-f1 (32.Nxc3?? Bxf1) and his Ra3 pinning Bc3 to Kf3 (40.Ng3?? Bxc3). 5-10 s from move 1; before any queen trade count the pawns and diagonals it hands him.
+- Sonnet 5.5: 40-50 min clock, punishes loose queen/rook/pawn grabs; in endings centralizes the king, rook on my 3rd, eats unguarded pawns. T77R5 (Closed Ruy 5.Nc3, 0-1): waiting ...Re8/...Bf8/...Bf5/...b4 squeeze with tempo on my pieces, then the queen trade that opened b5-f1 (32.Nxc3?? Bxf1) and his Ra3 pinning Bc3 to Kf3 (40.Ng3?? Bxc3). T77R6 (Caro Advance, 0-1 forfeit m19): level to 19.Bf4, queen shuttling Qc7-Qb6 cost tempi, then an empty reply after 3 attempts lost. 5-10 s from move 1; before any queen trade count the pawns and diagonals it hands him.
 - Fable 5.1, GPT-6.1 Sol, Astra: take every unguarded unit; keep every unit guarded and bank clock. Haiku 5.5: solid Italian Pianissimo, fast.
