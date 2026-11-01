@@ -1,32 +1,33 @@
 # Ruy Lopez as White
 
 ## Book
-Classical 5...Bc5: 1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Bc5 6.c3 O-O 7.Re1 d6 8.h3. Then ...Be6, d4 exd4 cxd4 Bb6, Nc3, Bg5 h6 Bxf6 Qxf6, Nd5. Keep 5-15 s.
-Closed Chigorin 5...Be7: 1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Re1 b5 7.Bb3 d6 8.c3 O-O. Then h3, Bc2 vs ...Na5, d4, Nbd2; after ...cxd4 cxd4 ...Nc6, d5 ...Nb4 Bb1 ...a5, Nf1-g3. 5-15 s.
+Classical 5...Bc5: 1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Bc5 6.c3 O-O 7.Re1 d6 8.h3, then ...Be6, d4; exd4 cxd4 ...Bb6, Nc3, Bg5 h6 Bxf6, Nd5.
+Closed Chigorin 5...Be7: 1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Re1 b5 7.Bb3 d6 8.c3 O-O, then h3/Bc2 vs ...Na5, d4, Nbd2/Nf1-g3; keep Kg1 on f2 until queens off, no 20.b4.
+5.Nc3: 1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.Nc3 Be7 6.O-O b5 7.Bb3 d6 8.d3 O-O (16), then Be3/Re1/Qd2, d4 exd4 Nxd4, keep Nd5/Nf5.
 
-## T76R7 v Muse (1-0, Muse forfeited m43) - Ruy 5.Nc3
-- Opening actually played: 1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.Nc3 b5 6.Bb3 Be7 7.d3 d6 8.O-O O-O (16 plies). Then Be3/Na5/Nd5; I kept a huge clock lead (44:58 vs 1:07) and he forfeited.
-- 11.Nxf6+?? traded my strong Nd5 for Bf6; after ...Bxf6 Black got ...c5/...b4 counterplay. Keep Nd5; trade only when it wins a pawn or a bishop, not to relieve a c6 attack.
-- 15.Bc3?? after ...c5 allowed ...b4 with tempo on the bishop. Prefer Be3/Bf2 or a concrete trade; c3 is a pawn-kick square.
-- 23.f3?? covers e4 but does not stop ...Ne5 hitting c4; queen activity (Qh6/Qf5) was better. f3 only when e4 truly needs a second guard.
-- Long thinks: 32.Nd5 4:11, 37.a3 2:55, 36.Rfd1 2:29. In a +20 min clock position keep 5-15 s; with his clock under 3 min, solid blockade moves are enough.
-- Muse: burned 2-4 min a move early, 2 illegal tries, flagged at 1:07. His clock is a real target when he over-thinks, but T76R4 he flagged me; do not rely on it.
+## T77R5 v Sonnet (0-1, Qh2# m59) - a queen trade lost the exchange
+Level to m29 in the 5.Nc3/d3 line. 30.Qd3? (SF ?) ...Bb5! hit her; 31.Qc3 Qxc3 32.Nxc3?? Bxf1 won the exchange - my Ne2 had screened b5-c4-d3-e2-f1 and its recapture on c3 opened it.
+- Before accepting a queen trade name the diagonal/file my recapturer blocks from its OLD square.
+- Queen on d3 here is a target for ...Bb5/...Bc6; keep her d2/e2/c2 with a duty.
+- Sonnet vs Be3+Qd2: ...Re8, ...Bf8, then ...Qe5/...Qh5 and ...Bf5 kicked my e4-knight every time; keep knights guarded, no repeated Ne4 tour.
+- With Ra3 pinning Bc3 on the 3rd rank, the pinned bishop guarded only by Ne2 fell (40.Ng3 Bxc3). His Q+R then mated a K on g3/h4 via ...Qf1/...Qf2+/...Qh2#.
+- 12 invalid tries, all on forced moves (34.Bd2 3 tries 2:56; 40.Ng3 3; 51.e8=Q+ 3). Forced move: one UCI in 5-10 s; a gate refusal = a different legal move at once.
+
+## T76R7 v Muse (1-0, forfeit m43) - 5.Nc3
+- 11.Nxf6+?? traded Nd5 for Bf6 and freed ...c5/...b4; keep Nd5.
+- 15.Bc3?? after ...c5 allowed ...b4 tempo; 23.f3?? does not stop ...Ne5 hitting c4.
+- 44:58 vs 1:07: 5-15 s blockades; his flag is real when he over-thinks, but do not rely on it.
 
 ## T76R2 v Sonnet (0-1, mate m56) - Closed Chigorin
-- Level to ~m24. 20.b4?! allowed ...axb4; 21.Bd2?! bxa3 22.Rxa3 opened the a-file and lost a pawn. b4 only when b5 falls and the a-file is safe; otherwise keep tension and improve Nf1-g3/Be3.
-- 24.Bxc5 Rxc5 25.Rb3 blockade. Down pawns. 29.Kh2?! removed the king from f2; after 29...Rxc1 30.Qxc1 Qxf2 won f2. With his queen live, keep Kg1 guarding f2 until queens trade. Qxc1 was forced; the king move was the error.
-- 39.h4/46.Rg3/47.Rb3/48.Rg3 shuffles made no progress; long thinks 4:51 on Qd2, 5:04 on h4, 3:24 on Rb3 while down. In a locked shell play 5-10 s and pick one plan; do not give f2/d5/e3.
-- 54.Kf1 unpinned Ne3 but the king stopped guarding e3; ...Bxe3 won a piece. Before a king move name every square it guarded.
-- 55...Rc1+ 56.Bd1 Rxd1#: back-rank box; keep luft/flights and a guard on d1. Only one legal reply: list it once.
+- 20.b4?! axb4 21.Bd2 bxa3 22.Rxa3 lost a pawn; b4 only when b5 falls and the a-file is safe.
+- 29.Kh2?! stopped guarding f2 (...Rxc1 Qxc1 Qxf2); 54.Kf1 stopped guarding e3 (...Bxe3 won a piece). Before a king move name what it guarded.
+- Down pawns, 4-5 min thinks found nothing; 5-10 s and one plan.
 
 ## T71R3 v GLM (draw, threefold)
-- c4-knight leak after 13.d4 exd4 14.Nxd4 Ne5 15.Bd5?! ...Bxd5 16.exd5 Nc4 hit Be3/Qd2; 17.Qe2 forced and b2 fell to ...Nxb2. Before the queen leaves rank 2, put Rb1 under b2.
-- Conversion fail: Qb5/Qb6/Qb7 trade offers -> threefold. With all pawns one wing and no entry, queen trade is a draw; keep queens and use Rb1-b6/Rb7, c4-c5, f4/g4, Kf2.
-- Clock: 11:25 on 22.Qc2, 4:20/4:31/4:04 on Rb1/Nxa4/c4. Routine 10-20 s; after one rejection change piece AND idea.
+- Put Rb1 under b2 before the queen leaves rank 2.
+- All pawns on one wing: keep queens, Rb1-b6/c4-c5/f4-g4; a trade is a draw.
 
 ## Recurring
 - QUEEN FOR A PAWN: she stood on an enemy pawn capture square (7 games). List pawn squares first.
-- No piece on a square his g6-pawn covers (f5/h5); Nf5 only if g6 is gone or pinned.
-- No undefended knight where his knight attacks; no check he can capture; no rook grab his pawns reach.
-- Knights on the 6th/7th: list a/b/c pawn captures; rook landing needs an actual guard.
-- Long thinks in this line produce illegal tries and misses; routine <=15 s, cap 30; won <=10 s.
+- No piece where his g6-pawn covers it (f5/h5); no undefended knight he attacks; no check he can take.
+- Long thinks in this line produce illegal tries; routine <=15 s, cap 30.
