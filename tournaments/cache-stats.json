@@ -2809,6 +2809,41 @@
      "warm_hit_rate": 0.9042
     }
    }
+  },
+  "aichess-0078-20261101-211509": {
+   "number": 78,
+   "players": {
+    "Muse Spark 1.3": {
+     "calls": 12,
+     "input": 178143,
+     "cached": 154316,
+     "output": 32515,
+     "warm_input": 154157,
+     "warm_cached": 139001,
+     "hit_rate": 0.8662,
+     "warm_hit_rate": 0.9017
+    },
+    "DeepSeek V4.1 Flash": {
+     "calls": 27,
+     "input": 971892,
+     "cached": 873728,
+     "output": 54749,
+     "warm_input": 949220,
+     "warm_cached": 859520,
+     "hit_rate": 0.899,
+     "warm_hit_rate": 0.9055
+    },
+    "Sonnet 5.5": {
+     "calls": 25,
+     "input": 1046231,
+     "cached": 962125,
+     "output": 25544,
+     "warm_input": 1003089,
+     "warm_cached": 935240,
+     "hit_rate": 0.9196,
+     "warm_hit_rate": 0.9324
+    }
+   }
   }
  }
 }

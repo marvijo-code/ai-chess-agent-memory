@@ -1,5 +1,11 @@
 # Dragon Yugoslav as White - file, Qa5 and e-file rules
 
+# T78R1 loss vs SF19 forfeit m13 down 3P
+- 8.Qd2 d5 9.Be2? passive left Nd4+d5 tension; 9...Nxd4 10.Bxd4 dxe4 won e-pawn and opened d-file vs Qd2/K uncastled.
+- 11.Bxf6? tried to remove defender but 11...Qxd2+ 12.Kxd2 Rd8+ 13...Bxf6 won B. Qd2+ wins tempo because K must walk into Rd8+.
+- Fix vs d5: resolve at once exd5 Nxd5 Nxc6/bxc6, never Be2 holding tension; Be2 only after center fixed. List Nxd4/dxe4/Rd8+ before any bishop trade.
+- In check Rd8+: list king flights once, send in 5-10s; down tool flags all, send least-bad in ONE try, never 3x same.
+
 - Setup vs ...g6/Bg7/Nf6/O-O: e4/Nf3/d4/Nxd4/Nc3/Be3/f3/Qd2. SF breaks ...d5. After exd5 Nxd5 Nxc6 Black has bxc6! (only good): keeps d5 pawn, opens b-file for Rb8.
 - T63R3 draw: 11.Bc4? left Be3 undefended. 11...Nxe3 12.Qxe3 abandoned Bc4 to Rb8/Qa5. 13.b3? did not stop Qxc3. Bans: Bc4?, b3?.
 - T63F loss m18: after Nxd5 cxd5 I played 12.O-O-O? SF 12...Bf5 hit c2, 13.Kb1 13...Qc7 hit c2, 14.Bd3 14...Rfb8 doubled on b2, 15.Qc1? 15...Rxb2+! 16.Ka1 Rb7+ 17.c3 Qxc3+ 18.Qxc3 Bxc3#. Qc1 by K only, a2/b2/c2 loose, Bg7 x-ray.
