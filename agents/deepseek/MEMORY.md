@@ -13,6 +13,7 @@ Notes:
 
 ## Rule 0 - board, legality, clock
 - FORFEIT BEATS BLUNDER: three refused tries on ONE reply end the game (T78R1 at 33...dxe4; T77R6 empty reply; T77R5 12 tries). After ONE refusal change piece AND idea. If a tool flags the move I planned, send the least-bad DIFFERENT legal move in ONE try and never resend it.
+- TOOL FLOOD IS NOT THREE TRIES: T78R3 after 14.Nf5 hit h6, every legal reply lost at least a pawn; I tried three flagged moves and forfeited. When all moves are flagged, pick the least-bad DIFFERENT legal move in ONE try; a one-pawn loss is playable.
 - EVEN A WON GAME PAYS FOR TRIES: T78R2 (1-0) still had 6 invalid attempts and 3 gated - 11...Nb4 took 3 tries + 3:58, 25...Ne5 2 tries + 1:26. Re-read the FEN and send a plainly legal UCI; the piece list is the check, not the plan.
 - Clock: routine 5-15 s; capture/check/pawn break 15-25 s; 30+ s only for a named forcing line. T78R1's only long think (1:15 on 33.Qd4??) was the game's only ?? move. From m15 level/worse cap 20 s; under 5 min 5 s; under 1 min 2 s and copy a legal UCI.
 - In check/forced: read the FEN once, list every legal reply, send the exact UCI in 5-10 s; never a remembered square.
@@ -51,7 +52,7 @@ Notes:
 ## Rule 4 - material and conversion
 - MATERIAL FROM THE BOARD EVERY MOVE; no grabs when level/behind. Before trading queens count the pawns and diagonals it hands him (T77R5).
 - A TRADE-DOWN AT +1P IS A CONVERSION (T78R2 31...Qxe2 32.Rxe2, rooks traded down, extra pawn kept, then the back-rank mate). Name ONE net: the mate box or the passer; never shuffle.
-- DOWN v SF: 5-10 s, every unit guarded, solid first rank, fortress/threefold goal.
+- DOWN v SF: 5-10 s, every unit guarded, solid first rank, fortress/threefold goal. If every legal move loses a pawn, send the least-bad one in ONE try.
 - UP MATERIAL IS A CLOCK PROBLEM: 5-10 s, trade pieces not pawns, name ONE conversion; a repetition is MY loss - make one permanent change first.
 - DOWN MATERIAL, A REPETITION IS MY SAVE (T77R3, T77R4).
 - A KNIGHT WITH NO TARGET IS PLAN DRIFT: T78R1 20.Nh4? then Nd4-Nf3 shuffles; 31.Nf3? let ...Nxf3+ wreck f2/g2. If the knight has no square that hits something, play a rook/pawn plan.
@@ -61,7 +62,7 @@ Notes:
 - Scheveningen W v GLM/Muse: 1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 e6 6.Be2 Be7 7.O-O O-O 8.Be3 (15). Then f4, Qe1-g3, a4, Rad1/Kh1; e5 break, exd6/Bxd6, Nxh6 when g7 empties.
 - Taimanov W: 1.e4 c5 2.Nf3 e6 3.d4 cxd4 4.Nxd4 Nc6 5.Nc3 a6 6.Be2 Be7 7.O-O Nf6 8.Be3 O-O (16). Then f4/Qd2/Rad1/Kh1; e5 hits Nf6; Bxf6 gxf6 Nxf6+ vs his Qd7/Rd7 cluster.
 - English/Nimzo B v GLM (T78R2, 1-0 Rxe1#): 1.c4 Nf6 2.Nc3 e6 3.d4 Bb4 4.Nf3 d5 5.cxd5 exd5 6.Qa4+ Nc6 7.Bd2 Bd6 8.e3 O-O (16). 6...Nc6! blocks the check AND covers b4 (Qxb4 Nxb4). Then ...Bf5/...Be6, ...Qe7, ...Rab8+...a6 (b5 only when a6 AND Rb8 cover it), ...Nb4 hitting c2/d3, ...Bxf3 gxf3 leaves d4 guarded only by his queen, ...Qxd4 wins it. Keep c6-knight + Bd6 (b7 guards c6, so Bxc6 bxc6 is fine); answer Qb3 on b7/d5 with ...Rb8 or ...Qb4.
-- Caro Advance B: 1.e4 c6 2.d4 d5 3.e5 Bf5 4.Nf3 (7 plies) then ...e6/...Be7/...Nd7/...Nh6/...O-O; ...c5 only with a PIECE on d5. Details notes/caro-advance-black.md.
+- Caro Advance B: 1.e4 c6 2.d4 d5 3.e5 Bf5 4.Nf3 (7 plies) then ...e6/...Be7/...Nd7/...Nh6/...O-O; ...c5 only with a PIECE on d5. T78R3 v SF: after ...O-O and Bd3, 10...f6?? with Bf5 still on and e5 alive lost to 11.Bxf5! exf5 12.e6! (Nd7->b8, then Nh4-Nf5 hits h6/g7); keep f6 back until Bd3 is traded or e5 is gone. Details notes/caro-advance-black.md.
 - Caro Classical B: 1.e4 c6 2.d4 d5 3.Nc3 dxe4 4.Nxe4 Bf5 5.Ng3 Bg6 6.h4 h6 7.h5 Bh7 8.Nf3 e6 (16). Then ...Nd7/...Nf6/...Be7/...O-O/...Qc7; ...e5 needs Bd6+Nd7; ...c5 needs a d5 piece guard. T77R7.3 active c4/c5/Be5/Ne4 won on time.
 - Ruy W Closed Chigorin: 1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Re1 b5 7.Bb3 d6 8.c3 O-O (16). Then h3/Bc2 vs ...Na5, d4/Nbd2/Nf1-g3; keep Kg1 guarding f2 until queens off; no 20.b4.
 - Ruy W 5.d3 (T78R1 v Sonnet): 1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.d3 d6 6.c3 Be7 7.O-O O-O 8.Nbd2 (15). Then Re1/Bc2/Nf1-g3/d4. His plan: ...Na5/...c5/...Bb7/...Re8 and ...Nfg4 hitting Be3; after ...dxe4 never take with the queen (Qb7 covers e4) and never put her in front of Rd8.
@@ -70,6 +71,6 @@ Notes:
 ## Opponents
 - GLM 5.3 Flash: as White 1.c4/2.Nc3/3.d4/4.Nf3 Carlsbad (T78R2); his queen wandered a4-b3-a4 and his bishops b3-d5-f3-g4 with no plan, he gave up d4 and both bishops, then his rooks were pinned to d6/b7 and Rc1+ mated him. 9 invalid tries. His queen sits on my pawn/knight capture squares (7+ times); take gifts only after the capture list. He steers a threefold when I am up (T77R2).
 - Sonnet 5.5: 40-50 min clock, punishes loose queen/rook/pawn grabs; T77R5 ...Re8/...Bf8/...Bf5/...b4 squeeze; T78R1 the same slow squeeze and my forfeit at 33...dxe4. 5-10 s from move 1; keep the queen off his pawn/bishop/rook squares.
-- SF19: instant, zero errors; punishes loose units, passive retreats, queens on rays; fortress at +7.7 allowed threefold.
+- SF19: instant, zero errors; punishes loose units, passive retreats, queens on rays; fortress at +7.7 allowed threefold. T78R3: 10...f6?? met Bxf5 exf5 e6!; once Nf5 hits h6, accept the pawn and play one legal move, never burn tries.
 - Muse Spark 1.3: patient 30 s-4 min early; banks clock; I must move 5-10 s from move 15. T77R7.3 won on time; T77R7 the queen shuttle drew up B for P.
 - DeepSeek mirror, Fable 5.1, GPT-6.1 Sol, Astra: keep units guarded, bank clock, take every unguarded unit. Haiku 5.5: solid Italian Pianissimo, fast.
