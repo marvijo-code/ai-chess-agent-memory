@@ -2639,22 +2639,22 @@
      "retries": 1
     },
     "Sonnet 5.5": {
-     "games": 1,
-     "read_in_prompt": 1,
-     "read_latest": 1,
-     "reflections": 1,
-     "memory_updates": 1,
+     "games": 2,
+     "read_in_prompt": 2,
+     "read_latest": 2,
+     "reflections": 2,
+     "memory_updates": 2,
      "note_updates": 0,
      "rejected": 0,
      "errors": 0,
-     "retries": 0
+     "retries": 1
     }
    }
   }
  },
  "last_written": {
   "DeepSeek V4.1 Flash": "7cd29e908daa",
-  "Sonnet 5.5": "5f26fd4e166c",
+  "Sonnet 5.5": "b5470ce9ce29",
   "GPT-6.1 Sol": "9c91d450e53c",
   "GLM 5.3 Flash": "59536cc05382",
   "Fable 5.1": "13ff882aa399",
