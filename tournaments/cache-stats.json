@@ -2769,14 +2769,14 @@
    "number": 77,
    "players": {
     "Muse Spark 1.3": {
-     "calls": 145,
-     "input": 4700358,
-     "cached": 4402410,
-     "output": 1076557,
-     "warm_input": 4576191,
-     "warm_cached": 4326656,
-     "hit_rate": 0.9366,
-     "warm_hit_rate": 0.9455
+     "calls": 173,
+     "input": 5899946,
+     "cached": 5562566,
+     "output": 1416308,
+     "warm_input": 5775779,
+     "warm_cached": 5486812,
+     "hit_rate": 0.9428,
+     "warm_hit_rate": 0.95
     },
     "GLM 5.3 Flash": {
      "calls": 180,
