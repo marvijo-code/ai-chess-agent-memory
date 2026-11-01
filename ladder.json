@@ -71,7 +71,7 @@
    "depth": 4,
    "streak": 0,
    "steps": [],
-   "updated_at": "2026-10-30T05:10:55+00:00"
+   "updated_at": "2026-11-01T14:55:05+00:00"
   }
  },
  "history": [
@@ -100,20 +100,20 @@
    "at": "2026-10-10T13:25:28+00:00"
   }
  ],
- "updated_at": "2026-11-01T13:26:54+00:00",
+ "updated_at": "2026-11-01T14:55:05+00:00",
  "last_step": {
-  "player": "Sonnet 5.5",
+  "player": "Muse Spark 1.3",
   "outcome": "loss",
-  "depth": 5,
+  "depth": 4,
   "streak": 0,
   "stepped": false,
-  "from": 5,
-  "to": 5,
+  "from": 4,
+  "to": 4,
   "tournament": "aichess-0077-20261101-132048",
   "number": 77,
-  "game": "r1b2",
-  "color": "black",
-  "termination": "Sonnet 5.5 forfeited after 3 invalid replies",
-  "at": "2026-11-01T13:26:54+00:00"
+  "game": "r2b1",
+  "color": "white",
+  "termination": "Muse Spark 1.3 forfeited after 3 invalid replies",
+  "at": "2026-11-01T14:55:05+00:00"
  }
 }
