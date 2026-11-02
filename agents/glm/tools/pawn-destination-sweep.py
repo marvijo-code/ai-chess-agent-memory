@@ -1,75 +1,72 @@
-import json, sys
-import chess
+import json, sys, chess
 
-VAL = {chess.PAWN: 1, chess.KNIGHT: 3, chess.BISHOP: 3, chess.ROOK: 5, chess.QUEEN: 9, chess.KING: 0}
+p = json.load(sys.stdin)
+b = chess.Board(p["fen"])
+me = chess.WHITE if p["side_to_move"] == "white" else chess.BLACK
+if me != b.turn:
+    me = b.turn
 
-payload = json.load(sys.stdin)
-board = chess.Board(payload['fen'])
-me = board.turn
-you = not me
+NOTE = {chess.PAWN: "pawn", chess.KNIGHT: "knight", chess.BISHOP: "bishop",
+        chess.ROOK: "rook", chess.QUEEN: "queen"}
+VAL = {chess.PAWN: 1, chess.KNIGHT: 3, chess.BISHOP: 3, chess.ROOK: 5, chess.QUEEN: 9}
 
-kingsq = board.king(me)
-if kingsq is None:
-    kfile, krank = -9, -9
-else:
-    kfile = chess.square_file(kingsq)
-    krank = chess.square_rank(kingsq)
 
-def hangs(b):
-    free, konly = set(), set()
+def has_real_defense(board, sq, color):
+    for s in board.attackers(color, sq):
+        pc = board.piece_at(s)
+        if pc and pc.piece_type != chess.KING:
+            return True
+    return False
+
+if b.is_check():
+    print("IN CHECK - read the see-sweep reply list instead; this sweep is noise in check")
+    sys.exit()
+
+# my mini-pieces already attacked before my move: skip them (avoid flooding lost games)
+pre = set()
+for sq in chess.SQUARES:
+    pc = b.piece_at(sq)
+    if pc and pc.color == me and pc.piece_type != chess.KING:
+        if b.attackers(not me, sq):
+            pre.add(sq)
+
+avoids = []
+notes = []
+for move in list(b.legal_moves):
+    uci = move.uci()
+    try:
+        san = b.san(move)
+    except Exception:
+        san = uci
+    b.push(move)
+    worst = 0
+    worst_txt = None
     for sq in chess.SQUARES:
+        if sq in pre:
+            continue
         pc = b.piece_at(sq)
-        if pc is None or pc.color != me or pc.piece_type == chess.KING:
+        if not pc or pc.color != me or pc.piece_type == chess.KING:
             continue
-        if not b.attackers(you, sq):
+        kinds = set()
+        s_items = [b.piece_at(s) for s in b.attackers(not me, sq) if b.piece_at(s)]
+        for it in s_items:
+            kinds.add(it.piece_type)
+        if chess.PAWN not in kinds and chess.KNIGHT not in kinds:
             continue
-        guards = b.attackers(me, sq)
-        if not guards:
-            free.add(sq)
-        elif all(b.piece_type_at(d) == chess.KING for d in guards):
-            konly.add(sq)
-    return free, konly
+        if not has_real_defense(b, sq, me):
+            v = VAL[pc.piece_type]
+            if v > worst:
+                worst = v
+                worst_txt = NOTE[pc.piece_type] + " on " + chess.square_name(sq)
+    b.pop()
+    if worst >= 3 and worst_txt:
+        avoids.append("AVOID: " + uci + " - " + san + " leaves a " + worst_txt +
+                      " hit by his pawn/knight jump with no piece defence (minor+ loss)")
 
-pre_free, pre_ko = hangs(board)
-avoid = []
-shown = 0
-for mv in list(board.legal_moves):
-    san = board.san(mv)
-    board.push(mv)
-    free, konly = hangs(board)
-    msgs = []
-    bad = False
-    for sq in sorted(free - pre_free, key=lambda s: -VAL[board.piece_type_at(s)]):
-        pc = board.piece_at(sq)
-        v = VAL[pc.piece_type]
-        atks = [a for a in board.attackers(you, sq) if board.piece_type_at(a) != chess.KING]
-        if not atks:
-            continue
-        cheapest = min(VAL[board.piece_type_at(a)] for a in atks)
-        who = ','.join(sorted(chess.square_name(a) for a in atks))
-        shell_pawn = (pc.piece_type == chess.PAWN and abs(chess.square_file(sq) - kfile) <= 1
-                      and abs(chess.square_rank(sq) - krank) <= 2)
-        tag = 'SHELL PAWN FREE' if shell_pawn else ('FREE LOSS' if v - cheapest >= 2 else 'loose (equal trade risk)')
-        msgs.append('%s%s -> free to %s (%s)' % (pc.symbol(), chess.square_name(sq), who, tag))
-        if v - cheapest >= 2 or shell_pawn:
-            bad = True
-    for sq in sorted(konly - pre_ko, key=lambda s: -VAL[board.piece_type_at(s)]):
-        pc = board.piece_at(sq)
-        atks = [a for a in board.attackers(you, sq) if board.piece_type_at(a) != chess.KING]
-        if not atks:
-            continue
-        who = ','.join(sorted(chess.square_name(a) for a in atks))
-        msgs.append('%s%s -> king-only recapture vs %s' % (pc.symbol(), chess.square_name(sq), who))
-    board.pop()
-    if msgs and shown < 8:
-        print(san + ': ' + '; '.join(msgs[:2]) + (' (+more)' if len(msgs) > 2 else ''))
-        shown += 1
-    if bad:
-        avoid.append(mv.uci())
-
-if shown == 0:
-    print('no move hands him a new free capture or a king-only recapture')
-if avoid:
-    print('AVOID: ' + ' '.join(sorted(set(avoid))))
+if avoids:
+    for line in avoids[:6]:
+        print(line)
+    if len(avoids) > 6:
+        print("AVOID: (more, " + str(len(avoids) - 6) + " further flagged moves)")
 else:
-    print('AVOID: (none)')
+    print("clean: no pawn/knight jump of his hits your piece undefended after any move")
