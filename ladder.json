@@ -30,7 +30,7 @@
    "depth": 4,
    "streak": 0,
    "steps": [],
-   "updated_at": "2026-11-01T22:20:49+00:00"
+   "updated_at": "2026-11-02T09:00:27+00:00"
   },
   "GLM 5.3 Flash": {
    "depth": 4,
@@ -100,20 +100,20 @@
    "at": "2026-10-10T13:25:28+00:00"
   }
  ],
- "updated_at": "2026-11-02T07:58:38+00:00",
+ "updated_at": "2026-11-02T09:00:27+00:00",
  "last_step": {
-  "player": "Sonnet 5.5",
-  "outcome": "loss",
-  "depth": 5,
+  "player": "DeepSeek V4.1 Flash",
+  "outcome": "draw",
+  "depth": 4,
   "streak": 0,
   "stepped": false,
-  "from": 5,
-  "to": 5,
-  "tournament": "aichess-0078-20261101-211509",
-  "number": 78,
-  "game": "r7b1",
-  "color": "black",
-  "termination": "Sonnet 5.5 forfeited after 3 invalid replies",
-  "at": "2026-11-02T07:58:38+00:00"
+  "from": 4,
+  "to": 4,
+  "tournament": "aichess-0079-20261102-080217",
+  "number": 79,
+  "game": "r1b1",
+  "color": "white",
+  "termination": "threefold repetition",
+  "at": "2026-11-02T09:00:27+00:00"
  }
 }

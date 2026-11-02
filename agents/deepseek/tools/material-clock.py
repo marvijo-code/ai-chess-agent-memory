@@ -1,41 +1,69 @@
-import json, sys, chess
+import json
+import sys
+import chess
 
-payload = json.load(sys.stdin)
-board = chess.Board(payload["fen"])
-val = {chess.QUEEN: 9, chess.ROOK: 5, chess.BISHOP: 3, chess.KNIGHT: 3, chess.PAWN: 1}
+VALUES = {chess.PAWN: 1, chess.KNIGHT: 3, chess.BISHOP: 3, chess.ROOK: 5, chess.QUEEN: 9, chess.KING: 0}
 
-def material(color):
+
+def material(board, color):
     total = 0
     for square in chess.SQUARES:
         piece = board.piece_at(square)
-        if piece and piece.color == color and piece.piece_type != chess.KING:
-            total += val[piece.piece_type]
+        if piece is not None and piece.color == color:
+            total += VALUES[piece.piece_type]
     return total
 
-mine = material(board.turn)
-theirs = material(not board.turn)
-diff = mine - theirs
 
-clocks = payload.get("clocks", {})
-you_ms = clocks.get("you_ms")
-opp_ms = clocks.get("opponent_ms")
+def worst_loss(board, move):
+    """Approximate the biggest material swing against me after this move."""
+    board.push(move)
+    worst = 0
+    for reply in board.legal_moves:
+        victim = board.piece_at(reply.to_square)
+        if victim is None:
+            continue
+        gain = VALUES[victim.piece_type]
+        board.push(reply)
+        recapture = 0
+        for back in board.legal_moves:
+            if back.to_square == reply.to_square:
+                piece = board.piece_at(back.to_square)
+                if piece is not None:
+                    recapture = max(recapture, VALUES[piece.piece_type])
+        board.pop()
+        worst = max(worst, gain - recapture)
+    board.pop()
+    return worst
 
-def fmt(ms):
-    return "?" if ms is None else f"{ms/1000:.0f}s"
 
-print(f"Material: you {mine}, opponent {theirs}, diff {diff:+d}.")
-print(f"Clock: you {fmt(you_ms)}, opponent {fmt(opp_ms)}.")
-if diff > 0:
-    print("UP MATERIAL: play 5-10 s, trade pieces not pawns, avoid repetition, keep every unit guarded.")
-elif diff < 0:
-    print("DOWN MATERIAL: 5-10 s defensive moves, no grabs, keep units guarded.")
-else:
-    print("Material level: no grabs; every unit guarded.")
+def main():
+    payload = json.load(sys.stdin)
+    board = chess.Board(payload["fen"])
+    if board.turn == chess.WHITE:
+        me, them, myname = chess.WHITE, chess.BLACK, "White"
+    else:
+        me, them, myname = chess.BLACK, chess.WHITE, "Black"
+    my_mat = material(board, me)
+    their_mat = material(board, them)
+    moves = list(board.legal_moves)
+    scored = []
+    for move in moves:
+        san = board.san(move)
+        scored.append((worst_loss(board, move), san, move.uci()))
+    scored.sort(key=lambda item: item[0])
+    print("material %s %d v %d (diff %+d)" % (myname, my_mat, their_mat, my_mat - their_mat))
+    best = scored[:3]
+    print("least-loss moves: " + ", ".join("%s(%d)" % (san, loss) for loss, san, uci in best))
+    # flag only big losses, and always keep at least three legal moves unflagged
+    big = [item for item in scored if item[0] >= 5]
+    big.sort(key=lambda item: -item[0])
+    allowed = max(0, len(scored) - 3)
+    big = big[:allowed]
+    if not big:
+        print("no move loses an exchange or more")
+    for loss, san, uci in big[:6]:
+        print("AVOID: %s - %s loses material worth %d (exchange or more)" % (uci, san, loss))
 
-for square in chess.SQUARES:
-    piece = board.piece_at(square)
-    if piece and piece.color == board.turn and piece.piece_type != chess.KING:
-        if board.attackers(not board.turn, square) and not board.attackers(board.turn, square):
-            print(f"LOOSE: your {piece.symbol()} on {chess.square_name(square)}")
 
-print("AVOID:")
+if __name__ == "__main__":
+    main()
