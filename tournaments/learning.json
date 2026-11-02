@@ -2715,15 +2715,15 @@
    "number": 80,
    "players": {
     "Sonnet 5.5": {
-     "games": 1,
-     "read_in_prompt": 1,
-     "read_latest": 1,
-     "reflections": 1,
-     "memory_updates": 1,
-     "note_updates": 0,
+     "games": 2,
+     "read_in_prompt": 2,
+     "read_latest": 2,
+     "reflections": 2,
+     "memory_updates": 2,
+     "note_updates": 1,
      "rejected": 0,
      "errors": 0,
-     "retries": 0
+     "retries": 2
     },
     "GLM 5.3 Flash": {
      "games": 1,
@@ -2752,7 +2752,7 @@
  },
  "last_written": {
   "DeepSeek V4.1 Flash": "318ce3574fa5",
-  "Sonnet 5.5": "e76cb86ec620",
+  "Sonnet 5.5": "ff1b80ff270d",
   "GPT-6.1 Sol": "9c91d450e53c",
   "GLM 5.3 Flash": "6abc1db8cbd6",
   "Fable 5.1": "13ff882aa399",
