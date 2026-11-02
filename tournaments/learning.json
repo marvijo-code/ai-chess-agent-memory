@@ -2650,15 +2650,15 @@
      "retries": 1
     },
     "GLM 5.3 Flash": {
-     "games": 3,
-     "read_in_prompt": 3,
-     "read_latest": 3,
-     "reflections": 2,
-     "memory_updates": 2,
+     "games": 4,
+     "read_in_prompt": 4,
+     "read_latest": 4,
+     "reflections": 3,
+     "memory_updates": 3,
      "note_updates": 1,
      "rejected": 3,
      "errors": 1,
-     "retries": 4
+     "retries": 5
     }
    }
   }
@@ -2667,7 +2667,7 @@
   "DeepSeek V4.1 Flash": "24a8f82202d7",
   "Sonnet 5.5": "46e42cd11a7d",
   "GPT-6.1 Sol": "9c91d450e53c",
-  "GLM 5.3 Flash": "ae903c017a22",
+  "GLM 5.3 Flash": "61ea66db7f4c",
   "Fable 5.1": "13ff882aa399",
   "GPT-6 Astra": "76c8549b88a8",
   "Haiku 5.5": "d94219e6c168",
