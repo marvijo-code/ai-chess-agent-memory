@@ -1,5 +1,10 @@
 # Dragon Yugoslav as White - file, Qa5 and e-file rules
 
+# T79R4 loss vs SF19 forfeit m19 down 6
+- 11.Bc4? abandoned Be3 to 11...Nxe3! (+0.3 to +2.0). 12.Qxe3! only recapture, then 12...Rb8 13.Rb1?! 13...Bd4 14.Qd2 Rb7 15.Ke2?! Kg7 16.Qc1?! Rb4 17.Kd3 a5 18.a3? Bb6+ gated Bc4-Rxb4 x3 forfeited.
+- Fix: never Bc4/Bb3 while Be3 loose to Nf6/Nd5. Sweep Nxe3/Bxd5 first or guard Be3 twice. Keep Be2, f3 Qd2 O-O-O order. After Nxe3 down, castle long at once, never Ke2 Kd3 walk into check. a3 leaves Bc4 to Rxb4: mover abandons guard.
+- Clock: Ke2 3:13 Qc1 2:27 a3 2:02 while down burned. Down = 5-10s keepers. In check Bb6+ send least-bad different in ONE try.
+
 # T78R1 loss vs SF19 forfeit m13 down 3P
 - 8.Qd2 d5 9.Be2? passive left Nd4+d5 tension; 9...Nxd4 10.Bxd4 dxe4 won e-pawn and opened d-file vs Qd2/K uncastled.
 - 11.Bxf6? tried to remove defender but 11...Qxd2+ 12.Kxd2 Rd8+ 13...Bxf6 won B. Qd2+ wins tempo because K must walk into Rd8+.
