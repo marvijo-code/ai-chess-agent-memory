@@ -2889,14 +2889,14 @@
      "warm_hit_rate": 0.9575
     },
     "GLM 5.3 Flash": {
-     "calls": 13,
-     "input": 197706,
-     "cached": 158848,
-     "output": 24371,
-     "warm_input": 178767,
-     "warm_cached": 149056,
-     "hit_rate": 0.8035,
-     "warm_hit_rate": 0.8338
+     "calls": 33,
+     "input": 1265224,
+     "cached": 1077120,
+     "output": 151554,
+     "warm_input": 1246285,
+     "warm_cached": 1067328,
+     "hit_rate": 0.8513,
+     "warm_hit_rate": 0.8564
     }
    }
   }
