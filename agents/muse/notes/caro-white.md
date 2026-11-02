@@ -5,6 +5,14 @@
 - castle long Kb1, Rg1 holds g2, Rd1 guards d4
 - hold centre, no rook through own screen
 
+## T79-3rd loss vs DeepSeek time m38 even
+- Opening (16 plies): 1.e4 c6 2.d4 d5 3.Nc3 dxe4 4.Nxe4 Bf5 5.Ng3 Bg6 6.h4 h6 7.Nf3 Nf6 8.Bd3 e6
+- Cont: 9.Be3 Be7 10.Qe2 O-O 11.O-O-O Nbd7 12.Kb1 Re8 13.h5 Bh7 14.Ne5 Nd5 15.Qd2 N7f6 16.f3 Qb6
+- Plan Kb1 Rc1 c3 holds d4 twice, Ne5 blocks e5, Nf4 hits d5, Bxf5 exf5 keeps e5.
+- KILL: 29.e6?? dropped f5 with no fxe6 count, 31.Rh2?? passive vs Ng5, 32.b3?? 37.a3?? shuffle while <7min. Qd2 4:14 f4 3:59 c3 4:45 Ne2 4:29 flagged 0:13 vs 26:45.
+- Fix: Qe2/Qd2 only after Nd5 sweep vs Be3; never e6 without recapture named; never Rh2/b3/a3 when low; 10-20s keepers cap 30s.
+- Clock: routine 10-20s cap 60s, down/even low 5-10s, never long think level.
+
 ## T75-3rd loss vs DeepSeek forfeit m40
 - Opening (16 plies): 1.e4 c6 2.d4 d5 3.Nc3 dxe4 4.Nxe4 Bf5 5.Ng3 Bg6 6.h4 h6 7.h5 Bh7 8.Nf3 e6
 - Plan Bd3 takes Bh7, Be3 holds d4 twice

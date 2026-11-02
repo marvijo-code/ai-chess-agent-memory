@@ -1,6 +1,7 @@
 # Chess memory - Muse Spark 1.3 Contributor (3600+10)
 
 ## Record
+- T79R7 W vs Flash: loss time m38 even. Classical h5 Ne5 f4 c4 c5 e6 shell burned 2-4min to 0:13 vs 26:45. 1 illegal.
 - T79SF1G1 B vs SF: loss forfeit m7 even. FourKnights Bb4 O-O Nxd5 exd5, book e4 flagged Nc6 loss x3 forfeited. False: b7+d7 hold vs Bb5+d5. 0 illegal (3 tool refusals).
 - T79R5 B vs Flash: loss time m34 up P. Italian shell Nd7-F6 loop + passive keepers burned 1-5min each to 0:41 vs 53:05 timeout. 1 illegal.
 - T79R4 W vs SF: loss forfeit m19 down 6. Yugoslav 11.Bc4? met Nxe3 won piece, Rb8 Bd4 Rb4 a5 Bb6+ check gated Bc4-Rxb4 x3 forfeited. Ke2 Kd3 walked into check. 0 illegal.
@@ -8,8 +9,8 @@
 - T79R1 B vs Sonnet: loss forfeit m41 down exchange. e5 Nxe5 level, Nc4 Bf6 gxf6 opened g-file, Rxc4 left b8 hanging. Burned 6min+4min to 9min vs 52min timeout.
 - T78R5 B vs Sonnet: loss forfeit m42 even. Najdorf e6 Be7 O-O Nc6 Bd7 Qc7 Rac8 Rfd8, e5 Nxc6 bxc6 fxe5 dxe5, Re8 Bd8 Be6, Bb4 Nd7 Kh8 f6, 26...Nc5?? met Bxe3, Qf5+ flood gated e5 forfeited. 2-4min to 16:09 vs 52:15.
 - T78R4 B vs Flash: loss forfeit m45 even. Najdorf e5 Be7 O-O, exf4 Bxf4 Nc6 d5, Qc8 Qc7 Qb6 f6 Re7 Rd7 shell burned 2-3min to 4:45 vs 22:28. 2 illegal.
-- T78R3 W vs Flash: loss time m55 even. English g4 g5 Nd5 f4 h4 vs Qc7 Rb8 O-O, d6-d7 vs Bd8 Rf5 blockade, Kc2 Kc3 shuffle flagged 1:21 vs 28:19. 2 illegal.
-- T78R1 W vs SF: loss forfeit m13 down 3P. Yugoslav Be3 f3 Qd2 vs g6 Bg7 Nf6 O-O d5, 9.Be2?? met Nxd4 dxe4, 11.Bxf6? met Qd2+ Rd8+ won B. 0 illegal.
+- T78R3 W vs Flash: loss time m55 even. English g4 g5 Nd5 f4 h4 vs Qc7 Rb8 O-O, d6-d7 vs Bd8 Rf8 blockade, Kc2 Kc3 shuffle flagged 1:21 vs 28:19. 2 illegal.
+- T78R1 W vs SF: loss forfeit m13 down 3P. Yugoslav Be3 f3 Qd2 vs g6 Bg7 Nf6 O-O d5, 9.Be2? met Nxd4 dxe4, 11.Bxf6? met Qd2+ Rd8+ won B. 0 illegal.
 - T77-3rdB vs Flash: loss time m23 even. Caro h6 Bh7 Nd7 e6 Be7 shell, O-O Re8 Rc8 b6 burned 40-70s to 0:17 vs 11:37. 0 illegal.
 - T77-3rd W vs Flash: draw m37 down N. h4 h5 Bd3 Qd2 O-O-O Kb1 shell vs Nd5 b5 Qb6, a3 Rc1 c5 Nd4 Ka2, f4 f5 Nc2 met b3+ won N. 4 illegal.
 - T77SF1G1 B vs SF: loss forfeit m36 down 9. 6...d6 7...a5 met Bxc6 Ba4, 8...Nxe3 12...d5 gated, 3x invalid forfeited. 4 illegal.
@@ -29,7 +30,8 @@
 - OPEN QA5+ QXA2 POISON: 4...Qa5+ after Nxd4 meets Nc3 tempo. Never Qxa2 under Ra1 to Rxa2. Play Nf6 Nc6 e6, never early queen sortie. If hit retreat at once.
 - RUY NA5 C5 C6 POISON: 10...c6 chases Nd5 weakens d6, 14...c5 hits Bd4 opens d5, 15...b4 meets c3 Bxf6 doubling. Keep Ne7 Nc6 Bd7 Re8, hold d6 twice, meet d4 exd4 only.
 - YUGOSLAV BC4 POISON: T79R4 11.Bc4? abandoned Be3 to Nxe3 won piece +0.3 to +2.0, Rb8 Bd4 won game. Never Bc4 Bb3 while Be3 loose to Nf6 Nd5. Sweep Nxe3 Bxd5 first or guard Be3 twice. Keep Be2, f3 Qd2 O-O-O order.
-- ITALIAN SHUTTLE SHELL POISON: T79R5 up P flagged on time. Never Nd7-Nf6-Nd7-Nf6 loop vs Nf1-g3-h4-f5. Never Kh7 Be6 Rd7 Kg8 Bd3 passive keepers while up. Rcd8 4:27 Kh7 4:43 Rd7 4:25 Bd3 4:22 c5 5:46 c4 5:07 = timeout model. One develop then 10-20s keepers, push d5/c5 once with recapture named.
+- CARO CLASSICAL WHITE CLOCK POISON: T79R7 even flagged 0:13 vs 26:45. h5 chase plus Ne5 block plus Rh3 lift plus f4/c-shell vs Qb6 b5 b4 burned 2-4min each. Routine 10-20s, cap 60, one develop then keeper. Never long think level. Down = 5-10s.
+- ITALIAN SHUTTLE SHELL POISON: T79R5 up P flagged on time. Never Nd7-Nf6 loop vs Nf1-g3-h4-f5. Never passive keepers while up. One develop then 10-20s keepers, push d5/c5 once with recapture named.
 - ITALIAN BG4 BB6 RB8 POISON: 8...Bg4 9...Bh5 passive vs Be3 d4, 17...Rb8 18...a6 met Bd5 f3 clamp. Contest e-file with Re8 first, Qe7 h6 after, never Rb8 a6 while Bd5 lives.
 - NAJDORF E5 TIMING: T78R4 e5 shell burned shuffling Qc8 Qc7 Qb6 f6 Re7 Rd7. T78R5 Nxc6 bxc6 fxe5 dxe5 level, Re8 Bd6 Be6 hold e5. T79 e5 Nxe5 level ok but Nc4 Bf6 gxf6 opened g-file vs Qf3, Rf8 passive, Rxc4 left Rb8 to Rxb8 won R. Never Nc5 while Be6 loose, never Bf6 gxf6 while Qf3 lives, never queen rook king shuffle.
 - DRAGON D5 QA5 BF5: Vs d5 resolve exd5 Nxc6 at once, never passive Be2 holding tension. Never c3 blocking Bc1 while Qa5 lives. Never Bd4 vs Bf5. Bh6 drops c3 held only Be3+Qd2. DESTINATION SWEEP EVERY move.
@@ -39,7 +41,7 @@
 - CLASSICAL E5 BREAK: vs Bd6 Nd7 Re8 Qc7 e5 hits d4. dxe5 allows Bxe5 won P then Ne5. Never dxe5 without Nxe5 counted twice. Never Bd4 while f4 Ng3 loose, never Ne4 while e4 loose, never b3 while c1 loose.
 - CARO CLAMP + ENGLISH GRABS: vs c5 c4 b5 b4 Qb6 b3 opens c3 to cxb3 won N, Nc2 met b3+ tempo. Keep Kb1 never Ka2, Rd1 Rd2 Be1 Qf3. Bxh3 costs dark bishop, Bxc4 b3 b4 chase queen. Only with Re8 d6 e5 held.
 - BLOCKER LEAVES QUEEN: Nd4 blocked Rd1-Qd7, Nb4 unblocked it so Rxd7 won Q. Before moving blocker move queen off d-file or guard it. Same for rook leaving rook: guard b8 before Rxc4. Ke2 Kd3 walked into Bb6+ while down.
-- UP PIECE FINISH NO SHUFFLE: Up = centralize Q, trade rook with recapture named, checks first, luft once. Down = 5-10s, invite repeats. T78R3 d7 vs Bd8 Rf5 blockade: passer needs rooks behind it, keep queens, no king shuffle.
+- UP PIECE FINISH NO SHUFFLE: Up = centralize Q, trade rook with recapture named, checks first, luft once. Down = 5-10s, invite repeats. T78R3 d7 vs Bd8 Rf8 blockade: passer needs rooks behind it, keep queens, no king shuffle.
 - SHELL CLOCK: Routine 10-20, cap 60, never 2-4min. T79R5 worst: 4-5min x5 to 0:41 vs 53:05 forfeited UP pawn. T78R5 2-4min x8 to 16:09 forfeited even. T79 6:16 Rfd8 4:07 Rb8 gated to 9:01 vs 52:32 timeout forfeited. T79R3 Bxc4 2:39 exd5 3:19 Bf4 2:49 still slow but banked 40:06. Provider 90s timeout = forfeit. Down = 5-10s. Equal trades preserve deficit.
 - WHITE SCHEVENINGEN HASTE + BF4 PIN: f3 Bxf4 vs e5 wedge level. Qe1 Qe2 waste tempi, f5 Bxd4, Rb1 missed recapture. RECAPTURE FIRST. Storm only e4 twice f5 counted. Nb5 f5 10-20s. T79R3 g3 blocks Qxh2, b3 chases Bc4, Qd3 holds, exd5 hits Be6, Bf4 pins Qc7 to Kb8 won Q.
 - E4 GRAB QA4+ TRAP: With Ke1 uncastled + Qa5 alive, Nxe4 meets Nc3 hit plus b4 or Qa5+ Bd7 Qxe4. Before grab list Qa4 Qb5 Bb5, keep Nc6 or second guard.
