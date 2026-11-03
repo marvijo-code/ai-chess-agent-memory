@@ -32,6 +32,7 @@ Notes:
 - A ROOK ON f6 AFTER ...f6/...Rxf6 IS A Bg5 TARGET: T80R6 21...Qb6?? 22.Bg5! won the exchange.
 - A PAWN PUSH THAT OPENS A FILE: T80R7 26.c4??; T81R4 12...c5?? ignored the loose f5 pawn and opened the c-file.
 - A PAWN PUSH THAT 'SAVES' A PAWN CAN CREATE A SECOND TARGET: T81R3 16...h5?? left h5 loose; 17.Qh6 hit Bf6+h5. With doubled h-pawns never ...h5.
+- A DOUBLE PAWN PUSH CAN BE EN PASSANT FORK: with his e5-pawn alive and my Q/B on c7/e7, ...d5?? lets exd6 e.p. fork both and opens the diagonal behind (T82R1 15.exd6). Walk the e5-pawn's capture square before any ...d5/...d6.
 - A KNIGHT FORK ON HIS QUEEN IS THE FASTEST WIN v GLM: T81R2 14.Nc6 with Qb8+Be7; he forfeited. Look for c6/b6/d6/b5 when his queen is on the 8th.
 - A PASSED PAWN ON b2/c2 IS A FORK: T81R5 31...b2 hit Ra1+Bc1; accept the least loss in ONE try.
 
@@ -47,6 +48,7 @@ Notes:
 - BEFORE ANY QUEEN CAPTURE, WALK EVERY ENEMY KNIGHT JUMP TO HER LANDING: T81R6 Qxd6?? lost to Nxd6+; a queen 'attacking' his queen on a knight square is bait.
 - A QUEEN GUARDING TWO PAWNS ON A ROOK FILE IS A TARGET: T80R5 12.Qb1?? covered b2/c2; ...Ba6/...Rb8 hit her.
 - HIS ROOK ON THE 4th-6th GAINS A TEMPO ON MY QUEEN (T76R4).
+- A QUEEN BEHIND HIS e5-PAWN IS A TEMPO TARGET: T82R1 12...Qc7? stood on the f4-c7 diagonal screened only by his e5-pawn; 14...d5?? let 15.exd6 e.p. fork Qc7+Be7 AND open that diagonal. With e5 alive keep her off c7/f4 lines and count e.p. before ...d5/...d6.
 - QUEEN RECAPTURE: walk every attacker of the landing; name what she no longer guards (T76R2; g149 14.Qg3?? Qxc4).
 - NO QUEEN SHUTTLE WITHOUT A NEW TARGET: T77R6/R7, T78R4, T79R1 24.Qe2, T80R4 Qb5-Qd5-Qb5, T80R7 Qd2-d3-d2-d3, T81R7. In a closed Ruy pick b4, Nd4 or a trade.
 - QUEEN+KING KNIGHT FORK: Qd6 + Kg7 with his knight on h4/e5 = ...Nf5+.
@@ -81,10 +83,10 @@ Notes:
 - Caro Classical B: 1.e4 c6 2.d4 d5 3.Nc3 dxe4 4.Nxe4 Bf5 5.Ng3 Bg6 6.h4 h6 7.h5 Bh7 8.Nf3 e6 (16). Then ...Nd7/...Nf6/...Be7/...O-O/...Qc7; ...e5 needs Bd6+Nd7. T80R4 21...Rcd8?? behind a blocked file and 22...e5?? opened the e-file.
 - English/Nimzo B (T78R2 loss): 1.c4 Nf6 2.Nc3 e6 3.d4 Bb4 4.Nf3 d5 5.cxd5 exd5 6.Qa4+ Nc6 7.Bd2 Bd6 8.e3 O-O (16). Keep the c6-knight + Bd6; answer Qb3 with ...Rb8 or ...Qb4.
 - Accelerated Dragon W v SF (T79R1 draw, T80R5 loss): 7.Be2 with d5 tension; guard the queen with a rook or pawn, not her own duty on the b-file (12.Qb1?? -0.3 to -5.4; 14.c3?? Rxb2!). Grab b7 only with a retreat.
-- Other patterns: Ruy Classical 5...Bc5: c3/O-O/Re1/h3 then d4. Ruy B Chigorin: ...Na5/...c5/...Be6/...Qc7, keep h7 guarded. Taimanov B: ...Bf8 vs 9.Qg4 e5 clamp; never castle/...d6/...Nf6 while e5 stands; after a c4 kick move the knight, not the queen (T81R6 Qxd6??). Dragon/Soltis B: never ...Qa5 where Nb3 hits. Italian W v Muse (T79R5 1-0 flag): d3/c3, Re1, Nbd2/Nb3, Bg5, Bd5-c6; name ONE target.
+- Other patterns: Ruy Classical 5...Bc5: c3/O-O/Re1/h3 then d4. Ruy B Chigorin: ...Na5/...c5/...Be6/...Qc7, keep h7 guarded. Taimanov B: ...Bf8 vs 9.Qg4 e5 clamp; no ...d6/...Nf6 while e5 stands; ...g6/...O-O can be played but keep Q off c7 (T82R1 12...Qc7? 14...d5?? exd6 e.p. forked Q+Be7); after a c4 kick move the knight, not the queen (T81R6 Qxd6??). Dragon/Soltis B: never ...Qa5 where Nb3 hits. Italian W v Muse (T79R5 1-0 flag): d3/c3, Re1, Nbd2/Nb3, Bg5, Bd5-c6; name ONE target.
 
 ## Opponents
-- SF19: instant, zero errors; punishes loose units, passive retreats, queens on rook files, knights with no exit, pawn block capture with check, plan drift in a locked centre; -1.0 for a slow king shuffle. Accepts a threefold vs a sound shell even at +7 (T78R3, T79R1).
+- SF19: instant, zero errors; punishes loose units, passive retreats, queens on rook files, knights with no exit, pawn block capture with check, plan drift in a locked centre; -1.0 for a slow king shuffle. Accepts a threefold vs a sound shell even at +7 (T78R3, T79R1). T82R1: 8.e5/9.Qg4 clamp; ...Qc7 behind e5 and ...d5?? lost to 15.exd6 e.p. fork.
 - GLM 5.3 Flash: as White 1.c4/2.Nc3/3.d4/4.Nf3 Carlsbad, reversed-French chain, T80R2 forfeit m45; queen wanders, bishops no plan, burns 1-2.5 min on quiet moves (...Qb8 59s, ...b5 2:25 T81R2). Knight fork on his queen+piece ends it (T81R2 14.Nc6 forfeit m14); bank clock.
 - Sonnet 5.5: 40-50 min clock, punishes loose queen/rook/pawn grabs; T78R1, T79R2, T79SF2G1 (Rb1 trap, Nf7+Bg5 mate), T80R3 (...c4-c3 clamp, ...Rd2-...Rb2), T80R6 (Bg5 won the exchange; Ne7+ fork), T81R3 (17.Qh6 hit Bf6+h5), T81R7 Caro Advance 1/2 (his 25.Re1?/26.Re3??/28.Kh1?? left c3 loose - ...Rxc3! won a pawn; I shuttled a bishop instead). T81R7 Armageddon: pure draw play, ...h6 luft at move 26, took every rook trade offered. Queen off his pawn/bishop/rook squares; frozen position goes to the ending and he will repeat when he cannot improve; never offer him mass simplification on draw odds.
 - Muse Spark 1.3: patient 30s-4min early, 5-10s from move 15; burns 1:31-5:46 on quiet moves and blunders material when pressed (T80R4 28.Nxc5??). Give no loose unit, take the gift, name ONE conversion; guarded keepers win on flag. T80R7 v my Ruy 5.d3: closed shell; b4 forced the c5-knight and he forfeited. T81R5: ...b4-c4-b3-c3-b2 pawn storm, 1-4min, zero illegal until the final 3 gated tries; keep the c-pawn plan and do not panic on a passed b-pawn.
