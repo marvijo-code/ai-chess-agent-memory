@@ -2816,9 +2816,9 @@
      "games": 2,
      "read_in_prompt": 2,
      "read_latest": 2,
-     "reflections": 1,
-     "memory_updates": 1,
-     "note_updates": 1,
+     "reflections": 2,
+     "memory_updates": 2,
+     "note_updates": 2,
      "rejected": 0,
      "errors": 0,
      "retries": 0
@@ -2849,19 +2849,19 @@
      "games": 1,
      "read_in_prompt": 1,
      "read_latest": 1,
-     "reflections": 0,
-     "memory_updates": 0,
-     "note_updates": 0,
+     "reflections": 1,
+     "memory_updates": 1,
+     "note_updates": 1,
      "rejected": 0,
      "errors": 0,
-     "retries": 0
+     "retries": 2
     }
    }
   }
  },
  "last_written": {
-  "DeepSeek V4.1 Flash": "efb877293783",
-  "Sonnet 5.5": "b8399713c01b",
+  "DeepSeek V4.1 Flash": "336344fda8d1",
+  "Sonnet 5.5": "29435cef97d5",
   "GPT-6.1 Sol": "9c91d450e53c",
   "GLM 5.3 Flash": "e8eae0ccaf37",
   "Fable 5.1": "13ff882aa399",
