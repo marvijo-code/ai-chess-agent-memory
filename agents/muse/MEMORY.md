@@ -1,6 +1,7 @@
 # Chess memory - Muse Spark 1.3 Contributor (3600+10)
 
 ## Record
+- T81R1 B vs SF: loss forfeit m7 even. FourKnights Bb4 O-O Nxd5 exd5 correct, book e4 flagged Nc6 loss x3 forfeited REPEAT T79SF1. False: b7+d7 hold vs Bb5+d5. 0 illegal (3 tool refusals).
 - T80-3rd B vs Flash: loss forfeit m32 level. Breyer Ne7 Ng6 h6 Re8 Bf8 Qc7, cxd5 Bc8 Be7 Bb7, Qd2-Ne4-Nc5 loop, bxc4 Ra8 passive, 30...Nf4?? met Bxf4 exf4 opened e-file vs Re1. Tool gated b4 replies x3 forfeited. 1 illegal.
 - T80SF2G1 B vs SF: loss forfeit m44 down 6. FourKnights correct 6...Nxd5 7...e4 book (4:21 gated x2), 11...fxe6 level, 16...b6 19...bxc5?? met dxc5 still hit Bd6 won B 0.4 to 6.7, Kh8 gated x2, Qxc4 bxc4 tool c5-loss x3 forfeited. 8 illegal (tool refusals).
 - T80R5 B vs Sonnet: loss forfeit m30 down P. Advance shell, 25...Nd7?? met cxd5 exd5 e6 fork Nd7/f7, 30.Ne5+ c6 loose gated forfeit. 1 illegal (Rcd8 tool-gated x2).
@@ -8,7 +9,6 @@
 - T80R3 B vs Flash: win forfeit m18 winning exchange. English shell, Qe3?? met Nc2 fork Qe3 Ra1 Re1. Opp 3x invalid forfeited. 0 illegal. My 5:30 Bxd5 wasted.
 - T80R1 W vs SF: loss forfeit m12 down B. Yugoslav 10.Be2?? met Nxe3 won B, 11.Nxc6 opened Qd8-Qd2, 11...Nxg2+ check gated Qd2-Qd8 x3 forfeited. 0 illegal (3 tool refusals).
 - T79R7 W vs Flash: loss time m38 even. Classical h5 Ne5 f4 c4 c5 e6 shell burned 2-4min to 0:13 vs 26:45. 1 illegal.
-- T79SF1G1 B vs SF: loss forfeit m7 even. FourKnights Bb4 O-O Nxd5 exd5, book e4 flagged Nc6 loss x3 forfeited. False: b7+d7 hold vs Bb5+d5. 0 illegal (3 tool refusals).
 - T79R5 B vs Flash: loss time m34 up P. Italian shell Nd7-F6 loop + passive keepers burned 1-5min each to 0:41 vs 53:05 timeout. 1 illegal.
 - T79R4 W vs SF: loss forfeit m19 down 6. Yugoslav 11.Bc4? met Nxe3 won piece, Rb8 Bd8 Rb8 a5 Bb6+ check gated Bc4-Rxb4 x3 forfeited. Ke2 Kd3 walked into check. 0 illegal.
 - T79R3 W vs Flash: win forfeit m19 up P. Be3 f3 Qd2 O-O-O Kb1 b3 Qd3 exd5 g3 Bf4 pinned Qc7 to Kb8 won Q. 1 illegal gated Bxc4.
@@ -20,7 +20,7 @@
 - T77-3rdB vs Flash: loss time m23 even. Caro h6 Bh7 Nd7 e6 Be7 shell, O-O Re8 Rc8 b6 burned 40-70s to 0:17 vs 11:37. 0 illegal.
 - T77-3rd W vs Flash: draw m37 down N. h4 h5 Bd3 Qd2 O-O-O Kb1 shell vs Nd5 b5 Qb6, a3 Rc1 c5 Nd4 Ka2, f4 f5 Nc2 met b3+ won N. 4 illegal.
 - T77SF1G1 B vs SF: loss forfeit m36 down 9. 6...d6 7...a5 met Bxc6 Ba4, 8...Nxe3 12...d5 gated, 3x invalid forfeited. 4 illegal.
-- T77R4 B vs Sonnet: loss forfeit m43 down R+P. Ruy Nd8 Ne6 Kh8 Qb8 Rc6 Nc4 shell met Bxf4 d4 exd4, 35...Re6 36...Rb6 pinned met e5+ Rxd6. 4 illegal.
+- T77R4 B vs Sonnet: loss forfeit m43 down R+P. Ruy Nd8 Ne6 Kh8 Qb8 Rc6 Nc4 shell met Bf4 d4 exd4, 35...Re6 36...Rb6 pinned met e5+ Rxd6. 4 illegal.
 - T77R3 B vs Flash: draw m40 threefold up B. 8...Bg4 9...Bh5 passive vs Be3 d4, 17...Rb8 18...a6 met Bd5 f3 clamp, 24...c5 burned to 0:52 vs 49:08. 3 illegal.
 - T77R2 W vs SF: loss forfeit m14 Bd3. exd5 Nxd5 Qxd5 c3 met Nxd4 Bxd4, Rd8 Qa5 Bf5 won B, 3x tool-refused. 0 illegal.
 - T77R1 W vs Flash: win forfeit m28 up P. g4 h4 h6 g5 f4 f5 storm vs Qc7 a6 b5 Bb7, 23.Nb5 hit Qd8, 24.f5 met gxf5 won P. 4 illegal.
@@ -29,9 +29,9 @@
 - T76SF2G1 B vs SF: draw m42 threefold down 8. 4...Nc6 d6 Nf6 e5-Ne4 Ng5 met Bxg5 f6 exf6 to +9, Na5 Rb8 Bb7 shell, Kg8 Kh8 loop drew. 3 illegal.
 
 ## Key lessons (read before EVERY move)
-- LEGALITY FIRST: after 1 reject redraw FEN, pick different piece AND idea, never resend stale UCI. 3 rejects forfeit, tool refusal = reject. In check list replies once and send in 5-10s. T79R4 Bb6+ all flagged Bc4-Rxb4: send least-bad DIFFERENT in ONE try, never resend.
+- LEGALITY FIRST: after 1 reject redraw FEN, pick different piece AND idea, never resend stale UCI. 3 rejects forfeit, tool refusal = reject. In check list replies once and send in 5-10s. T79R4 Bb6+ all flagged Bc4-Rxb4: send least-bad DIFFERENT in ONE try, never resend. T79+T81 e4 flood: after 1 tool refusal NEVER resend same UCI, play different keeper at once.
 - TOOL AVOID IS AN ORDER: after one refusal switch piece and idea at once, never resend flagged UCI. DOWN/FALSE FLOOD: T78R5 Qf5+ left e5, T80R5 Ne5+ named Nxc6, T80SF2G1 Kh8/c5 gated down B, T80-3rd b4 gated level on false 3P count: recount W/B from FEN, send least-bad DIFFERENT in ONE try, never burn 3 tries.
-- FOUR KNIGHTS ND5 POISON: vs 6.Nd5 Nxd5 only, never d6 Nxe4. After Nxd5 exd5 play e4! hitting Nf3, then dxc6 exf3 Qxf3 dxc6. c6 has TWO guards b7+d7 so Bxc6 dxc6 holds. Castle early, no early queen sortie. Bd6+b6 vs c4: c5 hits d6 twice (bxc5 dxc5 still hits) won B. Never Bd6+b6 while c4 lives; meet c4 with c5/d5 first.
+- FOUR KNIGHTS ND5 POISON: vs 6.Nd5 Nxd5 only, never d6 Nxe4. After Nxd5 exd5 play e4! hitting Nf3, then dxc6 exf3 Qxf3 dxc6. c6 has TWO guards b7+d7 so Bxc6 dxc6 holds 2v2 safe. e4 BOOK holds despite Nc6 flag (T79+T81 forfeits). If gated once play d6/Ne7 keeper at once, fix tool to count pawn guards. Castle early, no early queen sortie. Bd6+b6 vs c4: c5 hits d6 twice (bxc5 dxc5 still hits) won B. Never Bd6+b6 while c4 lives; meet c4 with c5/d5 first.
 - OPEN QA5+ QXA2 POISON: 4...Qa5+ after Nxd4 meets Nc3 tempo. Never Qxa2 under Ra1 to Rxa2. Play Nf6 Nc6 e6, never early queen sortie. If hit retreat at once.
 - RUY NA5 C5 C6 POISON: 10...c6 chases Nd5 weakens d6, 14...c5 hits Bd4 opens d5, 15...b5 meets c3 Bxf6 doubling. Keep Ne7 Nc6 Bd7 Re8, hold d6 twice, meet d4 exd4 only.
 - YUGOSLAV BC4 POISON: T79R4 11.Bc4? abandoned Be3 to Nxe3 won piece +0.3 to +2.0, Rb8 Bd8 won game. Never Bc4 Bb3 while Be3 loose to Nf6 Nd5. Sweep Nxe3 Bxd5 first or guard Be3 twice. Keep Be2, f3 Qd2 O-O-O order.
@@ -65,7 +65,7 @@
 - W Ruy d3 Berlin: c3 Re1 Nbd2 Bc2 Nf1-g3 h3, d4 only held twice, d5 locks, no c4 vs b4 c5, meet Nf4 with g3 after Kh1.
 - W Classical: Bd3, Be3 holds d4 twice, O-O-O Kb1, Rg1 holds g2. Vs c5 c4 b5 keep Kb1 Rd1 Qf3, never b3 Kb2. Hold e5 f4 twice first.
 - W Yugoslav: central bishop fix over risky develop. Keep Be2, king central, no b3, contest b-file first. Never Bc4 while Be3 loose. Vs d5 Be2 O-O-O first.
-- W Taimanov: Be2 f3 Qd2 Bd3 castle long Kb1. Storm g-push h-push h-break Q-double vs shell.
+- W Taimanov: Be2 f3 Qd2 Bd3 castle long Kb1. Storm g-push h-push Q-double vs shell.
 - W Maroczy: c-pawn clamp, knight develops, bishop supports. Vs Qa5 pin support first then castle.
 
 ## Opponents
@@ -77,8 +77,8 @@
 - Fable: takes loose, trades queens when up, no luft. Model: fortress, checks, back-rank mate.
 
 ## Notes
-- notes/caro-white.md - Classical draw loss win, H5 shell, queen grab and Rb2 mate.
 - notes/caro-black.md - Advance loss and break and clock flag.
+- notes/caro-white.md - Classical draw loss win, H5 shell, queen grab and Rb2 mate.
 - notes/dragon-yugoslav-white.md - File and bishop fix and sac patterns.
 - notes/english-e5-black.md - English Nc2 fork win, shell and clock.
 - notes/maroczy-white.md - Maroczy pin loss and shell clock.
