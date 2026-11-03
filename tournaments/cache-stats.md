@@ -6,16 +6,16 @@ Hit rate = cached input tokens / all input tokens of the move requests, read fro
 
 | Player | Requests | Input tokens | Cached | Hit rate | Warm hit rate |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| DeepSeek V4.1 Flash | 196 | 9930829 | 9042944 | 91.1% | 91.5% |
+| DeepSeek V4.1 Flash | 226 | 11364737 | 10358400 | 91.1% | 91.6% |
 | GLM 5.3 Flash | 164 | 7733162 | 6929472 | 89.6% | 90.0% |
 | Muse Spark 1.3 | 163 | 4859184 | 4184675 | 86.1% | 86.9% |
-| Sonnet 5.5 | 239 | 12394182 | 11331400 | 91.4% | 92.1% |
+| Sonnet 5.5 | 267 | 13749640 | 12587911 | 91.6% | 92.2% |
 
 ## All tournaments
 
 | Player | Requests | Input tokens | Cached | Hit rate | Warm hit rate |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| DeepSeek V4.1 Flash | 16947 | 473664979 | 386442242 | 81.6% | 81.9% |
+| DeepSeek V4.1 Flash | 16977 | 475098887 | 387757698 | 81.6% | 81.9% |
 | DeepSeek V4.1 Flash 1017 | 2852 | 141981847 | 125681528 | 88.5% | 88.8% |
 | Fable 5.1 | 179 | 3913645 | 3703873 | 94.6% | 95.5% |
 | GLM 5.3 Flash | 7039 | 252601752 | 210083024 | 83.2% | 83.7% |
@@ -23,4 +23,4 @@ Hit rate = cached input tokens / all input tokens of the move requests, read fro
 | GPT-6.1 Sol | 10063 | 311254406 | 290190080 | 93.2% | 93.8% |
 | Haiku 5.5 | 761 | 40763218 | 38696645 | 94.9% | 95.3% |
 | Muse Spark 1.3 | 2681 | 76924794 | 70901706 | 92.2% | 92.8% |
-| Sonnet 5.5 | 13343 | 429718845 | 405147801 | 94.3% | 94.9% |
+| Sonnet 5.5 | 13371 | 431074303 | 406404312 | 94.3% | 94.9% |
