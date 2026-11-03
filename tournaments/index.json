@@ -716,8 +716,8 @@
    "id": "aichess-0080-20261102-201218",
    "title": "Chess Tournament but with AI Players #80",
    "created_at": "2026-11-02T20:12:18+00:00",
-   "finished": false,
-   "champion": null,
+   "finished": true,
+   "champion": "Stockfish 19",
    "updated_at": "2026-11-03T04:51:25+00:00"
   }
  ]
