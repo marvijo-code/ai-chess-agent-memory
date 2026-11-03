@@ -1,12 +1,12 @@
 # MEMORY - GLM 5.3 Flash
 
-Last change: T80R4. Black v SF (his 4.c3! Sicilian), L forfeit m17 from +6.8. Kill chain: 10...Qc7? parked her ON the f4-e5-d6-c7 ray; 12...Nxe5?! (dxe5! was right) fed him the Bxd7+ tempo; 14.Nb5! hit Qc7 with Rd1 behind d6 AND the follow-up fork Nd6+ (knight on d6 hits b7) - only ...Qb8 escaped. ~30 min burned to forfeit in a LOST position (5 invalid). Read file + listed notes at game start.
+Last change: T81R1. White v Sonnet (reversed GP Sicilian), opening LEVEL to m45. Endgame kill chain: GHOST LEDGER said '+1 pawn' while pawns were W a4,c5,f2,g2,h2 (5) v B a6,b7,c6,f7,g7,h6 (6) = level/-1, so I 'converted patiently'; 50.Rd3 invited the last-rook trade WITHOUT counting the K+P king race - his Kf6/Ke6 was one tempo ahead (51...Kd5!) and ate c5+a5; 52.Kc3?? instead of Kd4! handed c5 over with tempo; -3 pawn race lost, mated m70. 23 invalid tries (3x on Kc3/f5/Kc3) cost no clock (~40 min left) - the loss was pure endgame chess.
 
 ## FIRST, EVERY GAME
 - FORFEIT = HIS ONLY WIN FROM ANY POSITION (T80R3 even game; T80R4 lost game): one sweep, pick the cheapest legal keeper, send ONCE in 5-10 s. LOST position = NO search and no solving of the material loss on the board; down big = fastest legal keeper, never try to patch the deficit mid-move.
-- RAY-THROUGH-QUEEN CENSUS (T80R4 11.Bf4!): after every HIS bishop/rook/queen move walk every line through my queen's current square, and never place her on a bishop's landing diagonal. A ONE-PAWN screen is not a guard against a bishop riding the line. Before blocking the ray with a PIECE, play out Bxf4/Bxe5 and the follow-up captures in my head: a piece block that loses tempo captures after the trade is not a block - block with a pawn or move her first (...Qb8 before his Bf4 ever lands).
-- DOUBLE-HIT QUEEN: the flight must dodge the FOLLOW-UP fork (T80R4 14.Nb5! with Rd1 behind d6): name the attacker's next fork square and walk its 8 jumps before choosing her flight (...Qb8 only; ...Qb7/...Qb6/...Qd7 all died to Nd6+ or the rook). Capturing the attacker counts as a flight too.
-- GHOST LEDGER = WRONG EVALUATION: after EVERY capture write BOTH sides' captures and count TOTALS, never remembered squares; if a capture contradicts my running note, re-walk from the FEN, not the note. LEDGER = THE FEN: write W .../B ... after every capture.
+- RAY-THROUGH-QUEEN CENSUS (T80R4 11.Bf4!): after every HIS bishop/rook/queen move walk every line through my queen's current square, and never place her on a bishop's landing diagonal. A ONE-PAWN screen is not a guard against a bishop riding the line. Before blocking the ray with a PIECE, play out Bxf4/Bxe5 and the follow-up captures: a piece block that loses tempo captures after the trade is not a block - block with a pawn or move her first.
+- DOUBLE-HIT QUEEN: the flight must dodge the FOLLOW-UP fork (T80R4 14.Nb5! with Rd1 behind d6): name the attacker's next fork square and walk its 8 jumps before choosing her flight (...Qb8 only). Capturing the attacker counts as a flight too.
+- GHOST LEDGER = WRONG EVALUATION: after EVERY capture write BOTH sides' captures and count TOTALS, never remembered squares; if a capture contradicts my running note, re-walk from the FEN, not the note. LEDGER = THE FEN: write W .../B ... after every capture, PAWNS BY NAME (T81R1: I wrote '+1 pawn' the whole endgame while the count was 5 v 6 = level/-1, and played 'patient conversion' in a level rook ending).
 - EVERY SEND = UCI FROM THE CURRENT FEN, never a remembered SAN ('Rfc1' no rook f1 forfeited a level game); doubled rooks = UCI FIRST, think after. tools/heavy-squares.py before every heavy send. After a HIS capture rebuild the piece list from the FEN BEFORE writing the UCI.
 - 3 failed tries on ONE move = forfeit. TOOL-AVOID refusals are tries. STALE refusal (names a move I did not send) = resend that UCI ONCE (worked 10+ times). Refusal naming my TARGET = idea DEAD: change piece AND idea in ONE try, never resend.
 - HIS FORK OR HIT ON Q+HEAVIES = PRICE ONCE, SEND ONCE (T80R3 m18): when Q and rooks are hit together, play the flight that keeps her and let the CHEAPEST unit drop; count it from the FEN and send in 10 s.
@@ -32,13 +32,22 @@ Last change: T80R4. Black v SF (his 4.c3! Sicilian), L forfeit m17 from +6.8. Ki
 - A GUARD LIST IS GUESSWORK UNTIL SQUARE-WALKED: tools/see-sweep.py.
 - UNCAPTURABLE UNBLOCKABLE CHECK = MATE: tools/mate-net-scan.py before central thrusts.
 - PAWN KICK AT A MINOR: sweep its escapes first (tools/kick-escape-sweep.py).
-- CLOCK: book 5-10 s, routine 10-20 s, HARD CAP 30 s unless a named forced win; even endgame hold = 30-60 s cap (T80R2); UNEQUAL + LONG THINK = KILL; down heavy: fastest quiet keeper ~10 s; LOST: 5 s and move.
+- CLOCK: book 5-10 s, routine 10-20 s, HARD CAP 30 s unless a named forced win; even endgame hold = 30-60 s cap (T80R2); UNEQUAL + LONG THINK = KILL; down heavy: fastest quiet keeper ~10 s; LOST: 5 s and move. T81R1: 3:06 on 40.e5+?! and 2:19 on 52.Kc3?? in a LEVEL endgame - the long thinks produced an inaccuracy and a blunder, not moves.
 - TRADE-OFFER LANDING = all his attackers of the square, never the prompting piece alone.
+
+## ENDGAME VERDICTS
+- LAST-ROOK TRADE = K+P RACE COUNT FIRST (T81R1 50.Rd3? Rxd3!): before allowing or offering the trade into a bare pawn ending, count king TEMPI to every pawn group and who gets the opposition; if his king is closer or arrives with the move, KEEP THE ROOKS and hold. His clean pattern: trade rooks ONLY once the pawn race is already won.
+- K+P KING PLACEMENT: my king stands DIRECTLY in front of / adjacent to the contested pawn (Kd4 holds c5 against Kd5); one square off (52.Kc3??) gives ...Kxc5 with tempo and the roller (Kb4-a5-a4) starts. Name the pawn my king defends BEFORE every king move.
+- FLAG WIN v MUSE (T78R3): freeze every unit on ONE named job, pass at 6-30 s while he burns 1-3 min. Same shape v SONNET has NO flag (T78R4).
+- +2P -N WALL v SF (T77R5, held ~45): c3/c4/e4/f3/g3, Bf1/Be2 on d3, rooks c2+d2, K g1/g2; his rooks entombed behind his own Nc5.
+- A FORTRESS MUST STOP FORCING CHECKS: run his rook-check chains before settling; every block survives the checker or has a 2nd heavy piece behind.
+- Shell: every unit double-guarded or parked behind HIS blockers; ONE rook permanently owning my pawn pair; king anchors the wing; NOTHING else moves. ACCEPT THE DRIPS: a 1-pawn loss is the cheapest path. NEVER resign; never trade into K+P (K+blocked pawn = stalemate twice).
+- DRIVE THE THREEFOLD when down; UP +5 the same loop is MY loss.
 
 ## OPENING as White: Nimzo-English chain / reversed-Sicilian v ...e5
 - 1.c4 Nf6 2.Nc3 e6 3.e4! d5 4.e5 Ne4 5.d3 (9 plies; twice level, playable).
 - CRITICAL 6: 5...Nxc3 FORKS my Qd1, so 6.bxc3! is FORCED. Doubled c2/c3 = fine; go Nf3/Be2, then after his ...f6 exf6 Bxf6 reply 12.d4! and after ...cxd4 13.Bxd4 keeps the blockade; cxd5 exd5 attacks the entombed Bd7 only BEFORE ...Be6.
-- 1.c4 Nf6 2.Nc3 e5!: transpose to the reversed GP Sicilian (see notes/english-white.md, T80R3 line) - LEVEL to m17; the ONLY loss was 18.Qe3?? (knight-jump census). Play again BOTH branches; queen stays behind her pawn screen, d2 or a trade-guarded square.
+- 1.c4 Nf6 2.Nc3 e5!: transpose to the reversed GP Sicilian (see notes/english-white.md; T80R3 v Muse AND T81R1 v Sonnet) - LEVEL both times; the only losses were 18.Qe3?? (knight-jump census) and the T81R1 endgame. Play again; queen stays behind her pawn screen, d2 or a trade-guarded square.
 - Even + solid opponent: verify the ledger, pick ONE pawn target or accept a level draw; NEVER a 30+ move shuffle from a hand-written ledger.
 
 ## OPENING as Black
@@ -47,23 +56,16 @@ Last change: T80R4. Black v SF (his 4.c3! Sicilian), L forfeit m17 from +6.8. Ki
 - v the 4.c3 dialect (SF T80R4, trap WORKS): 4...dxc3! 5.Nxc3 Nc6 6.Bb5 Bd7 7...g6/...Bg7/Qb3-Ng5/e6/Rd1 - LEVEL to m10; the ONLY kills were queen-square ghosts (10...Qc7? onto his Bf4 ray, 12...Nxe5?! instead of dxe5!). See notes/sicilian-black.md. Old branch: 4...dxc3 5.Nxc3 Nf6 6...dxe5 7.Qxd8+ Kxd8 = pawn up, queens off (v Sol/DeepSeek/Muse builds).
 - v the English Attack (f3/Be3/Qd2/O-O-O/g4-h4): confirmed with the ...Nxd4/...e5 counterstrike; see notes/scheveningen-black.md.
 
-## FROZEN ENDGAME (two verdicts)
-- FLAG WIN v MUSE (T78R3): freeze every unit on ONE named job, pass at 6-30 s while he burns 1-3 min. Same shape v SONNET has NO flag (T78R4).
-- +2P -N WALL v SF (T77R5, held ~45): c3/c4/e4/f3/g3, Bf1/Be2 on d3, rooks c2+d2, K g1/g2; his rooks entombed behind his own Nc5.
-- A FORTRESS MUST STOP FORCING CHECKS: run his rook-check chains before settling; every block survives the checker or has a 2nd heavy piece behind.
-- Shell: every unit double-guarded or parked behind HIS blockers; ONE rook permanently owning my pawn pair; king anchors the wing; NOTHING else moves. ACCEPT THE DRIPS: a 1-pawn loss is the cheapest path. NEVER resign; never trade into K+P (K+blocked pawn = stalemate twice).
-- DRIVE THE THREEFOLD when down; UP +5 the same loop is MY loss.
-
 ## OPPONENTS (one-liners)
 - STOCKFISH 19 (depth 4-6, instant, zero illegal): takes every even trade, grinds with king walks; rook DOUBLING on my open Kd8 file, h4/g4/g5 opening my king, Rf7 eating f7. T80R4: rides a bishop FULLY down a line to my queen through one pawn screen (Bf4 to Qc7), collects the trades with tempo (Bxd7+), then forks queen+king with Nd6+ behind the rook - punish for ANY queen parked on a bishop's landing diagonal. Clock is the only lose-condition I control.
-- SONNET 5.5: fast clean banker (10-40 s, zero illegal), banks 45-50 min in locked even positions - v him NO flag plan. Weapon vs a dripping structure: ROOK CHECKS at squares my retreats uncover. Takes EVERY trade when my lander lacks MY defenders; spots knight forks instantly. T80R1 as Black hit Qb6 AND freed d4 with ONE tempo (Nb3): count what HIS repositioning FREES before crossing onto his rays.
+- SONNET 5.5: fast clean banker (10-40 s, zero illegal), banks 45-50 min in locked even positions - v him NO flag plan. Weapon vs a dripping structure: ROOK CHECKS at squares my retreats uncover. Takes EVERY trade when my lander lacks MY defenders; spots knight forks instantly. T80R1 as Black hit Qb6 AND freed d4 with ONE tempo (Nb3). T81R1: ENDGAME CONVERTER - took the last-rook trade ONLY when the K+P race was already won (50...Rxd3! with his king one tempo ahead), then king roller Kd5-Kxc5-Kb4 eating pawns with tempo; zero gifts. Count king tempi before accepting ANY trade into a pawn ending; a level rook ending v him is a DRAW RESULT - take it.
 - DEEPSEEK V4.1 FLASH: solid both ways, zero gifts, takes every drip the same turn, BANKS FASTER. T80R2 (W, my loss): clean opener, then solid ...f6 break and a c-passer; even the whole way; his conversion from equal = wait for my time; his flag is NOT the danger, mine is: 10-20 s/move even in shaping.
 - MUSE SPARK 1.3: SLOW (0:27-1:49 on solid moves, 5:30 on one break), no gifts; FINDS knight forks instantly (T80R3 ...Nc2 won a level game). Trading bishop pair (Bxf6!) keeps his structure tight. English storm v him: flag KILLED him (T78R3). Once LOW he king-shuffles steering repetition.
 - ALL OPPONENTS: once I'm up BIG their best move is 'do nothing' and bank. Give one pawn break or rook-attack per game, not material.
 
 ## Notes
 notes/official-memory-rest.md - old rules index (live source = MEMORY.md).
-notes/english-white.md - English as White: reversed-QGD order; reversed-Sicilian v Sonnet + T80R3 v Muse (Nc2-fork kill); threefold save v DeepSeek; bishops-only clock death v Sonnet.
+notes/english-white.md - English as White: reversed-GP build (T80R3 + T81R1, level both); T81R1 endgame kills (ghost pawn ledger, rook trade into lost K+P race, Kc3??); threefold save v DeepSeek; bishops-only clock death v Sonnet.
 notes/four-knights-black.md - T72R3 draw method; pawn-takes kills.
 notes/scheveningen-black.md - Sonnet/Muse/Sol builds; the T80R1 Qb6-on-Be3-ray + bishops break kill; T78R3 frozen-endgame flag win.
 notes/sicilian-black.md - T80R4 v SF 4.c3 dialect (Bf4-ray + Nb5-fork kills); T75R4 g5 kick kill, Bb5 kill, +9 shell.
