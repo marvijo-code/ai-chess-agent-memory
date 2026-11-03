@@ -1,10 +1,17 @@
 # Ruy Lopez as White
 
+## T80R3 v Sonnet (0-1 forfeit m51) - 5.d3 line
+- 5.d3 Ruy: c3/Be7/O-O/Nbd2 then Re1/Bc2/Nf1-g3/d4. Level to m30.
+- His plan: ...Na5, ...c5, ...Bb7, ...Re8, ...Qc7, ...Nfg4 hitting Be3; after ...dxe4 never take with queen (Qb7 covers e4).
+- I played d4/exd4/cxd4, then ...Nb4/a3/Nxc2/Qxc2, ...c5/...c4, e5/dxe5/dxe5, ...Nd5, b3/...c3. The c3 pawn became a blockader; my knights shuffled Nf5/Nd4/Nd6/Nf5 while his queen and rooks squeezed. I had chances but no clear plan.
+- CLOCK: 11:47 on 45.Kh2 (3 invalid), 5:18 on 38.e6, 5:37 on 40.Nexc6, 3:19 on 32.Bc5. Finished 3:32 v 41:06. 9 invalid tries total.
+- FORFEIT: after ...Rb2 hit b3, my tool flagged the pawn loss; I tried 3 invalid replies and forfeited. A pawn-loss flag is not a search: send the least-bad DIFFERENT legal move in ONE try (Rc2/Rb1/king move), accept the pawn.
+- Lesson: in a level Ruy, 5-15 s keepers; no 3-11 min thinks on quiet king/pawn moves. Name ONE target (c5/d6 or kingside f5) and play it.
+
 ## T78R1 v Sonnet (0-1, forfeit m33) - the 5.d3 line
-Book played: 1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.d3 d6 6.c3 Be7 7.O-O O-O 8.Nbd2 (15 plies), then Re1, Bc2, Nf1-g3, d4.
-- Opening was fine and level to move 30. His plan: ...Na5, ...c5, ...Bb7, ...Re8, ...Qd7, ...Rac8, ...Ne5, ...Nfg4 hitting Be3.
-- 14.d4 cxd4 15.cxd4 exd4 16.Nxd4 Nc6 17.Ndf5 Bf8 18.Be3 worked; 25.a4! bxa4 26.Bxa4! won a tempo on Qd7 (best move of the game), he answered ...Bc6 27.Bxc6 Nxc6 and a6 stayed covered.
-- What went wrong: 20.Nh4? 21.Nhf5 kicked by ...g6 and ...h5; then Nd4-Nf3-Nd4-Nf3 for five moves with no target; 31.Nf3? let ...Nxf3+ wreck f2/g2; 32...d5! and 33.Qd4?? (1:15 think, the only ?? move) met 33...dxe4 - the d-file opened onto my queen and Qb7 covered e4. Every reply I tried was refused and I forfeited.
+- 5.d3 Ruy: c3/Be7/O-O/Nbd2 then Re1/Bc2/Nf1-g3/d4. Opening level to move 30. His plan: ...Na5/...c5/...Bb7/...Re8/...Qd7/...Rac8/...Ne5/...Nfg4 hitting Be3.
+- The d4 break and Ndf5/Be3 were fine; a4/bxa4/Bxa4 won a tempo on Qd7 (best move of the game), he answered ...Bc6/Bxc6/Nxc6 and a6 stayed covered.
+- What went wrong: Nh4/Nhf5 was kicked by ...g6/...h5; then Nd4-Nf3-Nd4-Nf3 for five moves with no target; Nf3? let ...Nxf3+ wreck f2/g2; ...d5! and Qd4?? (1:15 think, the only ?? move) met ...dxe4 - the d-file opened onto my queen and Qb7 covered e4. Every reply I tried was refused and I forfeited.
 - RULES: with queens on, d4 in front of his Rd8 and on his Qb7 diagonal (b7-c6-d5-e4) is a trap. Never take on e4 with the queen there. A knight needs a target square; otherwise play a rook/pawn plan.
 
 ## T77R5 v Sonnet (0-1, Qh2# m59) - a queen trade lost the exchange
