@@ -5,6 +5,15 @@
 - Castle long, king tucks, rook holds g2, second rook guards d-file
 - Hold centre, no rook through own screen
 
+## T82R5 win vs Flash forfeit m39 level
+- Classical: h4/h5 chased Bg6 to Bxd3 Qxd3, Be3 holds d4 twice, Qe2 dodges Ne5/Nc5, O-O-O Kb1 holds b2
+- b5/a5/b4/a4 storm met Rd2/Rd1/Rd3 second-rank hold, Ka1-Kb1 wasted 2x1:30, keep Kb1 once
+- Nd5xBe3 met Qe1, Nb6-Nc4 hits Rd2/Be3 met Rd1, b3 kicks Nc4 once, c3 holds d4 only with dxc5 counted
+- Nf5 outpost met Nxf5 exf5, c5 break met Nc4-Qb5-Qe2, Qc6-a3-Rab8 met Qc2-Qd2, Na5-Nc4 saves tempo
+- dxc5 Nxc5 Bxc5 Bxc5 Ne3 Bxe3 fxe3 Qe7 Rd7 Qe4+ Rd3 bxc3 Qxc3 Qe8 Qa5 won on 3 invalid (Ngf6/Qc6/bxc3 gated)
+- Engine flagged Be3/h5/Rd2/b3/Nd2/c3/Qc2/Qd2/Na5/dxc5/Ne3: no Ka1, no Rd2-Rd1-Rd3 or Qe2-Qc2-Qd2 shuffle, b3 c3 only twice-held
+- Clock: Rd3 2:15 Nd2 1:57 Qc2 2:43 Qd2 2:42 Na5 2:10 dxc5 3:37 left 22:37 vs 11:40. Routine 10-20s cap 60, never 2min.
+
 ## T80R4 draw vs Flash threefold m39 down piece
 - H-file chase met bishop tuck behind pawn, then centre wall and castle both sides
 - I castled long and tucked, added second pawn hold on centre, rook to g-file
@@ -15,10 +24,10 @@
 - Bishop chased knight, I pushed wing pawn to chase it, trade left me tied
 - I grabbed wing pawn and lost bishop to recapture plus rook pin, down material
 - Pawn hold on bishop, rook lift to hold centre, trade left me down
-- Queen centralised треть attack on centre, I blocked and held
+- Queen centralised attack on centre, I blocked and held
 - Pawn push hit queen and blocked ray, queen took loose pawn
 - Queen centralised again, I centralised rook to hold both centre pawns
-- Queen hit rook, I held both rooks and centre, then queen eyed rook and wing
+- Queen hit rook, I held both rooks and pawns and then queen eyed wing
 - Loop between central squares held both rooks and pawns and saved half point
 - Clock: g-file 1:49, tuck 1:57, retreat 4:04, develop 3:14, return 2:29, reroute 2:01, chase 3:40. Finished 21:38 vs 37:30. Routine 10-20s cap 60, never long think level. Down = 5-10s keepers, invite repeat.
 
