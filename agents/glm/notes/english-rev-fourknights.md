@@ -1,31 +1,18 @@
-# T81R5 - White v SF19, 0-1 (forfeit m31)
+# English / reversed builds v SF19
+Stored opening shell lives in MEMORY. Both SF losses came AFTER m13: the kills are mid-game, not book.
 
-## Position at the end
-1.e4 c6 2.d4 d5 3.Nc3 dxe4 4.Nxe4 Bf5 5.Ng3 Bg6 6.h4 (reversed Maroczy slot).
+## T82R2 - White, 0-1 on time (8 invalid tries)
+- THE SAC: 12...b6 13.g3? emptied g2 under his living Bc8: 14...Bh3! attacked Rf1 straight down h3-g2-f1 and 15...Bxf1 was R-for-B in one pair (+0.1 -> +4.3). My g-pawn can never take h3 (pawns capture upward) and c1 cannot answer.
+- FIX: g3 only with the h3 door dead - Bc5 traded, Rf1 already stepped, or f1 with a piece guard AND the plan to meet ...Bh3 by rook step the same move. Face his c8-bishop after EVERY g-pawn push; the door works both ways (his ...g6 push reopens MY diagonal onto his rooks).
+- QUEUED WEAPONS DON'T EXIST: I wrote '11.Be3 trades his active Bc5' on three straight move blocks yet sent Qd2/Qd1/g3/Nd2 keeper instead - Bc5 was finally traded at 18...Bxe3, after the exchange was gone. A named trade plays THAT move, or the note was a lie.
+- Marks were innocent: 8.a4?, 9.Nd5?!, 10.Nxf6+?! - +0.1 after 10...Qxf6!. His gains came from MY wait: +0.72 ...a5, +0.86 ...b6, +1.59 ...Bb4, +2.80 ...Bh3! - each while I spent 1-4 min 'proving' keepers were covered.
+- CLOCK: m15 = 20:21 + 3 gated tries (half the clock gone AT move 15; even the referee's Nd2 left Rf1 inside the net); m32 = 3 gated tries over Ke3; m35 = 6:34 for Qd1, then flag. After the FIRST refusal: FEN piece list, ONE plain legal retreat, ~5 s. Three tries never once bought a better move - the 'prove the keeper is safe' burn IS the blunder.
 
-White's actual game-memory entry said it all: 'm35 black b5 my reaction unknown'. It was never played; the position is replayable and worth testing. Idea: Qe2-c4 relocated 2P+2Y, rook shaft, raid on the uncastled king.
+## T81R5 - reversed Maroczy slot, 0-1 forfeit m31
+- Slot (11 plies): 1.e4 c6 2.d4 d5 3.Nc3 dxe4 4.Nxe4 Bf5 5.Ng3 Bg6 6.h4. Level to the unplayed m35 b5 wedge; a replayable test.
+- Same three kills one game earlier: 6-10 s keeper cadence decayed into 4-5 min think blocks (m26/28/30/31, +4 eval); a phantom tool flag on a safe rook lift over-ridden thrice = forfeit; 32 min burned over the last 10 moves at +4, 4 min left.
+- Kept: quiet cap 15-25 s (3-5 min reserved for TWO concrete plans, never 'waiting'); a tool refusal = play the OTHER quiet candidate (rook lift / kingside push are both valid), never a third over-ride.
 
-## How the game actually ended
-- The +4 evaluation chain ran mydozing in the endgame: 6-10s thinks became 4-5 min thinks on quiet moves (m26, m28, m30, m31 all 3-5 min).
-- At m31 the tool's 1st candidate was fine; the 2nd candidate (a quiet rook lift) was flagged as losing material (-2 byte, from a phantom 1-ply capture path). I ignored the refusal, sent it - forfeit.
-
-## What I did RIGHT
-- Handled the opening in under 30 s total (2 short segments).
-- Sacrificed nothing in the b4 wedge commit (still not vals incorrect).
-
-## What I did WRONG (ordered by cost)
-1. m24-m31, the 4-5 min slows. These were "eternal thinking" - GM says closed-ish endgame, two short-range candidates at most, send in 15-20 s. THAT NUMBER (4-5 min) destroyed the game clock, not the chess.
-2. m31 forfeit: tool said candidate loses; instead of interleaving a new candidate (rook lift + kingside push are both valid), I failed to override. This 'send refused move anyway' caught me a THIRD time in the tournament.
-3. m15 ...0-0 was a tempo misplay (2 rooks open, up one). But the tool did NOT flag it at candidate time, only later - next time check 'does my quiet move lose material' INSIDE the CANDIDATE generation, not as an afterthought.
-
-## Rules sharpened
-- REFUSAL = DROPPED IDEA: after the tool refuses, the very next sent move is a DIFFERENT square; the tool should at minimum re-send once if clearly legal vs stale.
-- QUIET-MOVE CAP: in ANY position with a single untied passed pawn (or a neutral-heavy) and no mate left, 15-25 s is the cap; a 4-5 min think only happens on 'which of TWO concrete plans'
-- Candidate-finality: on time-critical (m24+) moves, 2-3 candidates max, one short reason each, ship the toppiest.
-
-## Clock verdict
-- Burned ~32 min on ~10 last moves; opponent banked enormous time. m31 flag at 4 min lesf was DUE.
-
-## Replay plan
-- Same reversed setup; castle EARLY (m9-10), keep the b4 as a midgame threat.
-- The whole point of the test: stay in 15-25 s quiet-move mode to m35+, look for the +2-3 window by material activity.
+## Shared clock law v SF
+- His clock never moves (65 min held, zero invalid, instant moves, every trade accepted): the only clock in the room is mine. Level v SF = 15-25 s keepers to move 30+, one 30 s named check per ten moves.
+- Both flag losses came from healthy positions: T81R5 was +4 at m31, T82R2 was level-to-marked at m13. SF needs no tactic to beat me - he needs me to stop moving.

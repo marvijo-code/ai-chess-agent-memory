@@ -13,9 +13,9 @@ Notes:
 
 ## Rule 0 - board, legality, clock
 - FORFEIT BEATS BLUNDER: 3 refused tries on ONE move ends it. After ONE refusal change piece AND idea, send the least-bad legal move in a single try; never resend a flagged capture (T81R5 32.Bxb2 x3, referee auto-played). In check the legal list is final: K flights, blocks, captures by square. T81R7 0 illegal - plain legal sends cost nothing.
-- ARMAGEDDON WHITE (10 min) IS A CLOCK GAME FIRST: T81R7 lost on time with the board LEVEL - 2:10 on 21.exd6, 1:53 on 23.Ne5, 1:45 on 27.Qf4, 1:32 on 20.e5, 1:03 on 15.Rad1. Book/Ruy keepers 3-10s, routine cap 15s, under 5 min 3-5s, under 1 min 2s. Long thinks on quiet keepers find nothing (T78R1, T79R1/R2/R7, T80R2/R3/R5/R6/R7, T81R2/R3/R4/R5/R6/R7). 30s only for a named forcing line.
+- ARMAGEDDON WHITE (10 min) IS A CLOCK GAME FIRST: T81R7 lost on time with the board LEVEL - 2:10 on 21.exd6, 1:53 on 23.Ne5, 1:45 on 27.Qf4, 1:32 on 20.e5, 1:03 on 15.Rad1. Book/Ruy keepers 3-10s, routine cap 15s, under 5 min 3-5s, under 1 min 2s. Long thinks on quiet keepers find nothing (T78R1, T79R1/R2/R7, T80R2/R3/R5/R6/R7, T81R2/R3/R4/R5/R6/R7, T82R2 2:10-5:09 a move in a won game). 30s only for a named forcing line.
 - A QUEEN CAPTURE THE TOOL FLAGS WITH A KNIGHT CHECK IS DEAD: T81R6 17...Qxd6?? Nxd6+. When c4 kicks my Nd5, the knight moves; never answer a kick with a queen grab.
-- REREAD THE FEN, SEND A PLAINLY LEGAL UCI: T78R2, T78R4, T78R7, T80R3, T80R4, T80R7, T81R2/R4 had illegal sends. A refused quiet keeper becomes a DIFFERENT quiet keeper in one try.
+- REREAD THE FEN, SEND A PLAINLY LEGAL UCI: T78R2, T78R4, T78R7, T80R3, T80R4, T80R7, T81R2/R4, T82R2 (9.Bb3) had illegal sends. A refused quiet keeper becomes a DIFFERENT quiet keeper in one try.
 - Tool AVOID is not material: count queen for bishop/rook before obeying; IN CHECK a pawn-loss flag is NOISE.
 - Material from the board every move, written W x / B y. Name my loose units and his lines to them before any quiet move.
 
@@ -26,6 +26,7 @@ Notes:
 - RECAPTURE WITH THE PIECE THAT DOES NOT OPEN A LINE: T77R5 31...Qxc3 32.Nxc3?? took Ne2 off b5-f1 and ...Bxf1 won the exchange.
 - A GUARD MUST REACH IN ONE MOVE; a pinned guard guards nothing. An attacked piece gets its retreat list before any quiet move.
 - A BISHOP ON THE 7th WITH NO RETREAT IS A TEMPO TARGET: T79R1 15.Bxb7 Rb8 16.Ba6 Rxb2.
+- MY ROOK PARKED ON b2/b3 TO HOLD A PAWN OR KNIGHT IS A BISHOP TARGET: T82R2 38.Rb2?/43.Rb2?! let ...Bd4 hit it with tempo twice. Post a rook where his bishop cannot reach it (c-file, d1) unless it wins a pawn.
 - LIST HIS PAWN CAPTURES VS EVERY LANDING, knights included; every knight jump; every bishop/rook line. PAWN FORK ON A KNIGHT LANDING (T76R4).
 - AN ATTACK IS NOT A DEFENCE; my own piece on a line is my only screen. A knight 'hitting' his queen must count his capture and its check (T81R7 23.Ne5? Bxe5! and dxe5 Qxd1+).
 - A KNIGHT ON f5 + my Kg8 + Nf6 guarding d5: ...Nf6-h5?? allows Ne7+ (T80R6).
@@ -47,6 +48,7 @@ Notes:
 - NEVER on an enemy pawn capture square, bishop diagonal, rook file or knight jump. T78R1 33.Qd4?? in front of Rd8 and on e4.
 - BEFORE ANY QUEEN CAPTURE, WALK EVERY ENEMY KNIGHT JUMP TO HER LANDING: T81R6 Qxd6?? lost to Nxd6+; a queen 'attacking' his queen on a knight square is bait.
 - A QUEEN GUARDING TWO PAWNS ON A ROOK FILE IS A TARGET: T80R5 12.Qb1?? covered b2/c2; ...Ba6/...Rb8 hit her.
+- HIS QUEEN WHO IS THE ONLY GUARD OF A LOOSE PIECE IS A FORK TARGET: T82R2 she had to hold Bb4, so every knight hop to b3/c5 hit her with tempo and the third one won the bishop (47.Nb3 forked Qc5+Rd4). Fork a tied queen, never a free one.
 - HIS ROOK ON THE 4th-6th GAINS A TEMPO ON MY QUEEN (T76R4).
 - A QUEEN BEHIND HIS e5-PAWN IS A TEMPO TARGET: T82R1 12...Qc7? stood on the f4-c7 diagonal screened only by his e5-pawn; 14...d5?? let 15.exd6 e.p. fork Qc7+Be7 AND open that diagonal. With e5 alive keep her off c7/f4 lines and count e.p. before ...d5/...d6.
 - QUEEN RECAPTURE: walk every attacker of the landing; name what she no longer guards (T76R2; g149 14.Qg3?? Qxc4).
@@ -72,11 +74,11 @@ Notes:
 - DOWN A PIECE, A FORTRESS NEEDS NO WEAK PAWN.
 - ROOK ENDING DOWN A PAWN: name his rook's entry squares.
 - A KNIGHT WITH NO TARGET IS PLAN DRIFT.
-- A CLEAN WIN = one plan, guarded units, fast safe moves; a level game against a slow opponent is won by HIS forfeit (T78R7, T79R5, T80R2, T81R2, T81R5), but no pure drift.
+- A CLEAN WIN = one plan, guarded units, fast safe moves; a level game against a slow opponent is won by HIS forfeit (T78R7, T79R5, T80R2, T81R2, T81R5, T82R2), but no pure drift.
 - AN EXCHANGE DOWN IS NOT A SHELL: keep d5 guarded, trade pieces not pawns.
 
 ## Openings
-- Ruy d3 W (main; T81R7 and earlier): 1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.d3 d6 6.c3 Be7 7.O-O O-O 8.Nbd2 (15). Then Re1/Bc2/Nf1-g3/d4. His ...Bd7, ...Re8, ...Bf8, ...Qd7, ...a6/...b5/...Na5-...Nxb3 plan equalises; after ...exd4 cxd4 and ...c6 the d4 break leaves a level IQP-free position, so name a plan (b4, Nd4, queenside push) instead of shuffling - and keep the clock: this shell has cost me every long game. The Berlin move order (...Nf6 early, no ...a6) takes the same d3/c3/Nbd2/Re1 build.
+- Ruy d3 W (main; T81R7 and T82R2): 1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.d3 d6 6.c3 Be7 7.O-O O-O 8.Nbd2 (15). Then Re1/Bc2/Nf1-g3/d4. His ...Bd7, ...Re8, ...Bf8, ...Qd7, ...a6/...b5/...Na5-...Nxb3 plan equalises; after ...exd4 cxd4 and ...c6 the d4 break leaves a level IQP-free position, so name a plan (b4, Nd4, queenside push) instead of shuffling - and keep the clock: this shell has cost me every long game. The Berlin move order (...Nf6 early, no ...a6) takes the same d3/c3/Nbd2/Re1 build. v Sonnet's ...Na5/...c5/...Qc7/...Re8/...Bd7/...d5: 14.Nf5 Bxf5 15.exf5, then 18.d4 exd4 19.cxd4 cxd4 20.Bxd4 Nxd4 21.Nxd4 = +1P; keep the f5 wedge; his ...d4/...d3/...Rxe1+ tempo is the counter (23.Nd2?? SF), answered by the Nd2 blockade.
 - Ruy W Closed Chigorin: 1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Re1 b5 7.Bb3 d6 8.c3 O-O (16). Then h3/Bc2 vs ...Na5, d4/Nbd2/Nf1-g3; keep Kg1 guarding f2 until queens off; no 20.b4.
 - Scheveningen/Taimanov W: 1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 e6 6.Be2 Be7 7.O-O O-O 8.Be3 (16). Then f4, Qe1-g3/Qd2 (never Qd3), a4, Rad1/Kh1, e5 break. Taimanov (...Nc6/...a6) is the same build; ...b4 answered by Nd4-c6 forking Qb8+Be7 (T81R2 forfeit); 13.Kh1?? pure wait was SF's mark. vs ...a6/...e5/...Be6 (T78R4) f4 exf4 Bxf4 is level; Nc5/Bf3 are ?? once his rooks/queen come.
 - Caro Advance B: 1.e4 c6 2.d4 d5 3.e5 Bf5 4.Nf3 (7) then ...e6/...Be7/...Nd7/...Nh6/...O-O; ...c5 only with a PIECE on d5. No ...f6 while Bd3 is on. T81R7: ...Nh6-g6 and 9...c5 10.dxc5 Nxc5 11.Nxc5 Bxc5 12.Nd4 Be4! held level; ...Qh4 defended the doubled h6; 27.Rce1 left c3 loose - ...Rxc3! won a pawn. T81R3 16...h5??, T81R4 ...exf5?!/12...c5??, T80R6 ...Qb6?? Bg5 and ...N6h5?? Ne7+ fork.
@@ -88,6 +90,6 @@ Notes:
 ## Opponents
 - SF19: instant, zero errors; punishes loose units, passive retreats, queens on rook files, knights with no exit, pawn block capture with check, plan drift in a locked centre; -1.0 for a slow king shuffle. Accepts a threefold vs a sound shell even at +7 (T78R3, T79R1). T82R1: 8.e5/9.Qg4 clamp; ...Qc7 behind e5 and ...d5?? lost to 15.exd6 e.p. fork.
 - GLM 5.3 Flash: as White 1.c4/2.Nc3/3.d4/4.Nf3 Carlsbad, reversed-French chain, T80R2 forfeit m45; queen wanders, bishops no plan, burns 1-2.5 min on quiet moves (...Qb8 59s, ...b5 2:25 T81R2). Knight fork on his queen+piece ends it (T81R2 14.Nc6 forfeit m14); bank clock.
-- Sonnet 5.5: 40-50 min clock, punishes loose queen/rook/pawn grabs; T78R1, T79R2, T79SF2G1 (Rb1 trap, Nf7+Bg5 mate), T80R3 (...c4-c3 clamp, ...Rd2-...Rb2), T80R6 (Bg5 won the exchange; Ne7+ fork), T81R3 (17.Qh6 hit Bf6+h5), T81R7 Caro Advance 1/2 (his 25.Re1?/26.Re3??/28.Kh1?? left c3 loose - ...Rxc3! won a pawn; I shuttled a bishop instead). T81R7 Armageddon: pure draw play, ...h6 luft at move 26, took every rook trade offered. Queen off his pawn/bishop/rook squares; frozen position goes to the ending and he will repeat when he cannot improve; never offer him mass simplification on draw odds.
+- Sonnet 5.5: 40-50 min clock, punishes loose queen/rook/pawn grabs; T78R1, T79R2, T79SF2G1 (Rb1 trap, Nf7+Bg5 mate), T80R3 (...c4-c3 clamp, ...Rd2-...Rb2), T80R6 (Bg5 won the exchange; Ne7+ fork), T81R3 (17.Qh6 hit Bf6+h5), T81R7 Caro Advance 1/2 (his 25.Re1?/26.Re3??/28.Kh1?? left c3 loose - ...Rxc3! won a pawn; I shuttled a bishop instead). T81R7 Armageddon: pure draw play, ...h6 luft at move 26, took every rook trade offered. T82R2 (1-0 forfeit, level, +1P after trades): full Chigorin vs my 5.d3 with ...d5 then ...d4/...d3 wedge and ...a5-a4-a3; 5 invalid replies, gated 3x on 47...Re4 (6:48) with Qc5+Rd4 forked, then Qxc5 Bxc5 Nxc5 = up a piece. Level + my blockade + his clock/gates decide; his queen tied to a loose bishop is the fork target. Queen off his pawn/bishop/rook squares; frozen position goes to the ending and he will repeat when he cannot improve; never offer him mass simplification on draw odds.
 - Muse Spark 1.3: patient 30s-4min early, 5-10s from move 15; burns 1:31-5:46 on quiet moves and blunders material when pressed (T80R4 28.Nxc5??). Give no loose unit, take the gift, name ONE conversion; guarded keepers win on flag. T80R7 v my Ruy 5.d3: closed shell; b4 forced the c5-knight and he forfeited. T81R5: ...b4-c4-b3-c3-b2 pawn storm, 1-4min, zero illegal until the final 3 gated tries; keep the c-pawn plan and do not panic on a passed b-pawn.
 - DeepSeek mirror, Fable 5.1, GPT-6.1 Sol, Astra: keep units guarded, bank clock, take every unguarded unit. Haiku 5.5: solid Italian Pianissimo, fast.
