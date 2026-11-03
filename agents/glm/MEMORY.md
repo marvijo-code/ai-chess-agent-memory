@@ -1,11 +1,13 @@
 # MEMORY - GLM 5.3 Flash
 
-Last change: T82R2.0. WHITE v SF19 L on time: the T81R5 4.Nf3 reversed-Four-Knights build died the SAME way twice - 13.g3 Bb4 14.Qd1 14...Bh3! attacked the raw Rf1 (g2 empty, no white pawn can take on h3), 15...Bxf1 = exchange down at m16; the real killer was MY 15.Nd2 MELTDOWN: 20:21 on one move + 3 gated tries -> auto-move (8 invalid in the game). SPEND LAW: cap ANY single move at 60 s; after TWO refusals the next send is the plainest legal keeper (Kg1/Kh1/rook switch) in ONE try <=15 s. BAN the 4.Nf3/Be2 build v SF; the T82R1.2 g3/Be3 build with a3 BEFORE ...Bb4 is the White default everywhere.
+Last change: T82R3. WHITE default: g3/Be3 build with a3 BEFORE ...Bb4 (v SF too); the 4.Nf3/Be2 build is BANNED (T81R5 ...b5 wedge, T82R2 13...Bh3! raw-Rf1 exchange = -4 twice; my 15.Nd2 meltdown was 20:21 + 3 gated tries). SPEND LAW stands: cap ANY single move at 60 s; after TWO refusals the next send is the plainest legal keeper (Kg1/Kh1/rook switch) in ONE try <=15 s. T82R3 (BLACK v DeepSeek): a FORCED RECAPTURE CLOSES THE MOVE - see FIRST section; that forfeiture burned 48:28 of clock, not tactics.
 
 ## FIRST, EVERY GAME
 - 60s ONE-MOVE LAW (T82R2: 20:21 lost the game, not the exchange): a refused candidate is a FEN WALK <=15 s; SECOND refusal = plainest legal keeper, one try; NEVER a third variant of the same idea. TOOL-AVOID namer = my own rule: different quiet king/rook/bishop-square move in one try.
+- FORCED RECAPTURE = MOVE CLOSED (T82R3: 3 tries on 'Ng4' after 17...Rxe7 18.Bg5 - the e5-KNIGHT cannot reach g4, knight pair rebuilt from memory): forced replies 3-10 s from the FEN; HIS next move opens a fresh cycle = ONE verified plain legal keeper (~10 s) BEFORE any new idea; locate BOTH my knights BY SQUARE from the FEN before a knight UCI; a cut-off/unfinished plan note means the LAST VERIFIED KEEPER goes NOW, never a fresh unstudied jump.
+- AN ATTACKED UNIT PLAIN ESCAPE IS HIS TEMPO (T82R3 13.Nf5!): a pawn counterstrike vs a GUARDED pawn does not hold the attacker - he may retreat ONTO an attack of mine. Price every candidate hit of the attacked piece (retreat, kick, trade) before pushing.
 - BISHOP-ENTRY FILE: my g-pawn on g3 (g2 empty) or any unit on a rank his pawn has passed = his bishop LANDS and my white pieces cannot take it (13...Bb4 ...Ng4-...Bh3 counted twice, Bxf1!). Before any Qd1/Qd2-type retreat, name his h3/g4 entries and whether ANY capture reaches the landing square; the rook the bishop eats needs its own flight (Re1/Rg1) named in the retreat census.
-- FORFEIT = HIS ONLY WIN (T80R3/T80R4/T81R2/T81R5): a true flag naming MY piece on the board = one try, keep the piece, play the shell; a refusal naming my TARGET = the idea is DEAD.
+- FORFEIT = HIS ONLY WIN (T80R3/T80R4/T81R2/T81R5/T82R3): a true flag naming MY piece on the board = one try, keep the piece, play the shell; a refusal naming my TARGET = the idea is DEAD.
 - ENGINE DRIFT = MOVE FIRST (T82R2 v SF: 2:37 Nd5, 2:15 Qd2, 4:09 Nb3, 1:57 Qe2, 3:07 Kg1, then the 20:21 freeze): keepers in a worse position are 10-20 s, ONE sentence of verification. Deep thinks sharpen NEITHER side.
 - SF DRIFTS = PURE GENIUS (T82R2): Qh6-f4-h4 checking loop, Rdf8/Rg8 doubling, c6+f5 flips, each check keeps the king running while my flag dies. DOWN = 5-10 s instant sends, accept the drip, no king-step 'improvements' unless a check forces them.
 - PAWN CAPTURE OPENS MY K-FILE: 31.gxf4 opened the h-file to his Qh6 (Qxh4+ at once). Before any g/h capture near my castled king, walk the queen's newly-opened file; leaving the h-pawn's guard silently = Qxh4+ net (Ke3/Qxf4 loop).
@@ -35,23 +37,24 @@ Last change: T82R2.0. WHITE v SF19 L on time: the T81R5 4.Nf3 reversed-Four-Knig
 - Fortress stops forcing checks; SHELL: double guards, king anchors the wing, accept drips, never resign; K+blocked pawn = stalemate twice.
 
 ## OPENING as White: g3/Be3 build everywhere (incl. v SF); bans: 4.Nf3/Be2 reversed-FK
-- DEFAULT (T82R1.2 v Muse, LEVEL whole game; now also the v SF choice): 1.c4 Nf6 2.Nc3 e6 3.g3 Nf6... order: 3.g3 Nf6 4.Bg2 Bb4 5.Nf3 O-O 6.O-O d6 7.d3 Re8, then e4 h6, 9.Be3 Be6, 10.Qd2 Rc8; a3+b4 dissolve the Bb4 pin into queenside space; his Bd4 centralization met by the even Bxd4 series (11.a3 Bc5 12.b4 Bc... 13.Bxd4!), Nd5 holds d4/e4 with the g2-bishop backing d5; queen stays d2 or trade-guarded; 22.Kf1?? was the mark (king off g1 only for a NAMED threat); his provoking bishops answered by Qe2/Qf2 banked trades and b5 interposition. The win came from the clock. Cube the a3 rule: BEFORE his ...Bb4/...Be6 exists, not after.
+- DEFAULT (T82R1.2 v Muse, LEVEL whole game; also the v SF choice): 1.c4 Nf6 2.Nc3 e6 3.g3 Nf6 4.Bg2 Bb4 5.Nf3 O-O 6.O-O d6 7.d3 Re8, then e4 h6, 9.Be3 Be6, 10.Qd2 Rc8; a3+b4 dissolve the Bb4 pin into queenside space, a3 BEFORE his ...Bb4 exists; his Bd4 centralization met by 11.a3 Bc5 12.b4 Bc... 13.Bxd4! (banked trades, b5 interposition); Nd5 holds d4/e4 with g2-bishop backing; queen stays d2 or trade-guarded; king off g1 only for a NAMED threat. Cube: BEFORE his ...Bb4/...Be6 exists, not after. The Muse win came from the clock.
 - 1.c4 Nf6 2.Nc3 e6 3.e4! d5 4.e5 Ne4 5.d3; CRITICAL 5...Nxc3 forks Qd1, 6.bxc3!; Nf3/Be2, f6 exf6 Bxf6, 12.d4!, 13.Bxd4 keeps the blockade (v Muse W).
 - 1.c4 e5 reversed-GP build: LEVEL three times (T80R3, T81R1, T82R1.2); losses were tactic/endgame/opponent clock - PLAY AGAIN; queen stays d2 or trade-guarded.
-- BANNED v SF: 4.Nf3/Be2/7.O-O reversed-Four-Knights (T81R5 ...b5 wedge; T82R2 ...Bb4 pin + ...Bh3! raw-Rf1 exchange, both -4 by midgame). The 8.a4? anti-b5 tempo and Nd5/Nxf6+?!(self-trading the wedge killer's support) did not save it; the g2-shell works only with a3/anti-pin first and the queen OFF e.g. d2-c2 not d1.
+- BANNED v SF: 4.Nf3/Be2/7.O-O reversed-Four-Knights; the g2-shell works only with a3/anti-pin first and queen OFF e.g. d2-c2 not d1.
 - Even + solid opponent: verify the ledger, ONE pawn target or a level draw; never a 30+ move shuffle from a hand ledger.
 
 ## OPENING as Black
 - Sicilian 3.Nc3 d6 4.d4 cxd4 5.Nxd4 e6 6.Bb5: NEVER 6...a6?; answer with a PIECE first; pinned Nc6 UNPIN FIRST.
 - 2...d6 6.Be2 build: his break opening HIS bishop ray = my bishop on it hangs, CAPTURE THAT BISHOP FIRST (16...Bxf3!). Raid needs ...Bb7 first; every ...b5/...b4 knight-jump sweep first.
 - v the 4.c3 dialect: LEVEL to m10; the raid needs ...Bb7 first, queen stays c7 (T81R2: 11...Qb8?/b5??/b4?? fed 14.Nc6).
+- v the 6.Be2 battery (T82R3, notes/taimanov-sol.md): ...e5 ONLY with ...Nxd4/Be3 traded or ...Rfe8 already placed - e5 hits only his f4-PAWN, his d4-knight's plain retreat Nf5! hits Be7 with tempo and my whole game becomes defense of e7; my 15...Ne5! (block his Bf4 diagonal + unblock c7) was right. A LATER kingside kick must price the kicker's trade exits (16...g6?! served 17.Nxe7+ N-for-B).
 - v the English Attack: ...Nxd4/...e5 counterstrike confirmed; see notes/scheveningen-black.md.
 - Four Knights v 3.Nc3: 3...Bb4, 1/2 from -5; NEVER Ncd7??/Nb3??; into the shell SHUFFLE, threefold only after every recurrence counted.
 
 ## OPPONENTS (one-liners)
 - STOCKFISH 19: instant, zero illegal, 8-9 sent moves + auto in T82R2 while I kept 25 min; grinds: Bb4-pin -> Qd1 -> Bh3! exchange, king-hunt check loop to flag, wedges SELF-EXECUTE. Every move obeys the 60s law; every retreat includes a flight census; he accepts threefold only vs a sound shell.
 - SONNET 5.5: banks 45-50 min, takes the last-rook trade only when the K+P race is won; a level rook ending = DRAW RESULT.
-- DEEPSEEK V4.1: solid, banks faster, one ghost per game; T82R1.1: ...Qc7 met by my ...d5 exd6 e.p. fork - see EP CENSUS.
+- DEEPSEEK V4.1: solid and error-light, banks faster, one ghost per game; T82R1.1: ...Qc7 met by my ...d5 exd6 e.p. fork - see EP CENSUS; T82R3 he played a clean 6.Be2 Scheveningen build with only inaccuracies as errors and I forfeited m18 with 48:28 left - his wins over me are MY mechanics failures, beat him with tactics + clock, not hope.
 - MUSE SPARK 1.3: SLOW, finds forks, forfeits on time when level (T78R3, T82R1.2 m35). Recipe: trade his ONE active aggressor (13.Bxd4!), then ~15 fast keepers <=30 s while he burns 2-4 min/move; flag KILLS him.
 - ALL: when I'm up BIG their plan is 'do nothing' and bank; one pawn break or rook-attack per game.
 
@@ -63,7 +66,7 @@ notes/four-knights-black.md - four knights v SF: pawn-takes kills
 notes/scheveningen-black.md - Sonnet/Muse/Sol builds, English-attack jobs
 notes/sicilian-black.md - 4.c3 dialect, g5-kick kill, +9 shell
 notes/sveshnikov-black.md - T40R4 line; fresh-pawn diagonal rules
-notes/taimanov-sol.md - stored orders vs 6.Be2 battery builds; T74 Arm pawn-win + flag
+notes/taimanov-sol.md - stored orders vs 6.Be2 battery builds; T74 Arm pawn-win + flag; T82R3 e5?? + forced-recapture forfeit
 notes/white-maroczy.md - Maroczy; 7.f3! pin fix; SHORT castle; b2 mate door
 
 ## Tools
