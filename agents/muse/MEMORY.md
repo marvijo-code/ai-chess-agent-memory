@@ -1,6 +1,7 @@
 # Chess memory - Muse Spark 1.3 Contributor (3600+10)
 
 ## Record
+- T81R5 B vs Flash: loss forfeit m36 level. Ruy d3 Bd7 Re8 Bf8 h6 Ne7 Ng6 shell, exd4 cxd4 e5 Nd5 exd6 Bxd6, b3 c3 b2 Rxb2 won B, Rb5 left to 36.c4 fork Rb5/d5 tool-gated x3 forfeited. 2 illegal (tool refusals).
 - T81R4 W vs Sonnet: loss forfeit m31 down P. Ruy d3 Bg4 shell, d4 met Nxe4 won P, d5 Bf4 errors, tool a3 flood x3 forfeited. Burned 5:27+6:02+3:05 to 34:10 vs 49:36. 0 illegal.
 - T81R3 W vs Flash: win forfeit m22 even. English Attack Be3 f3 Qd2 O-O-O Kb1 g4 g5 Nce2 Ng3 Bd3 Rhe1 Bb5 f4 Rf1 Bc4 hxg3, opp 3x invalid forfeited. SF Rf1?? Bc4?? Rhe1?! Bb5?. Burned 5:18+4:34+3:50 to 33:58 vs 46:10. 1 illegal.
 - T81R1 B vs SF: loss forfeit m7 even. FourKnights Bb4 O-O Nxd5 exd5 correct, book e4 flagged Nc6 loss x3 forfeited REPEAT T79SF1. False: b7+d7 hold vs Bb5+d5. 0 illegal (3 tool refusals).
@@ -25,14 +26,13 @@
 - T77R4 B vs Sonnet: loss forfeit m43 down R+P. Ruy Nd8 Ne6 Kh8 Qb8 Rc6 Nc4 shell met Bf4 d4 exd4, 35...Re6 36...Rb6 pinned met e5+ Rxd6. 4 illegal.
 - T77R3 B vs Flash: draw m40 threefold up B. 8...Bg4 9...Bh5 passive vs Be3 d4, 17...Rb8 18...a6 met Bd5 f3 clamp, 24...c5 burned to 0:52 vs 49:08. 3 illegal.
 - T77R2 W vs SF: loss forfeit m14 Bd3. exd5 Nxd5 Qxd5 c3 met Nxd4 Bxd4, Rd8 Qa5 Bf5 won B, 3x tool-refused. 0 illegal.
-- T77R1 W vs Flash: win forfeit m28 up P. g4 h4 h6 g5 f4 f5 storm vs Qc7 a6 b5 Bb7, 23.Nb5 hit Qd8, 24.f5 met gxf5 won P. 4 illegal.
 
 ## Key lessons (read before EVERY move)
 - LEGALITY FIRST: after 1 reject redraw FEN, pick different piece AND idea, never resend stale UCI. 3 rejects forfeit, tool refusal = reject. In check list replies once and send in 5-10s. T79R4 Bb6+ all flagged Bc4-Rxb4: send least-bad DIFFERENT in ONE try, never resend. T79+T81 e4 flood + T81R4 a3 pawn flood x3: after 1 tool refusal NEVER resend same UCI, switch square at once.
-- TOOL AVOID IS AN ORDER: after one refusal switch piece and idea at once, never resend flagged UCI. DOWN/FALSE FLOOD: T78R5 Qf5+ left e5, T80R5 Ne5+ named Nxc6, T80SF2G1 Kh8/c5 gated down B, T80-3rd b4 gated level on false 3P count, T81R4 a3 pawn gated while down P: recount W/B from FEN, send least-bad DIFFERENT in ONE try, never burn 3 tries.
+- TOOL AVOID IS AN ORDER: after one refusal switch piece and idea at once, never resend flagged UCI. DOWN/FALSE FLOOD: T80SF2G1 Kh8/c5 gated down B, T80-3rd b4 gated level false 3P, T81R4 a3 gated down P, T81R5 Rb5 c4-fork gated x3: recount W/B from FEN, move rook off c4 ray in ONE try, never burn 3 tries.
 - FOUR KNIGHTS ND5 POISON: vs 6.Nd5 Nxd5 only, never d6 Nxe4. After Nxd5 exd5 play e4! hitting Nf3, then dxc6 exf3 Qxf3 dxc6. c6 has TWO guards b7+d7 so Bxc6 dxc6 holds 2v2 safe. e4 BOOK holds despite Nc6 flag (T79+T81 forfeits). If gated once play d6/Ne7 keeper at once, fix tool to count pawn guards. Castle early, no early queen sortie. Sweep Nxe3 Bxd5 first or guard Be3 twice. Keep Be2, f3 Qd2 O-O-O order.
 - OPEN QA5+ QXA2 POISON: 4...Qa5+ after Nxd4 meets Nc3 tempo. Never Qxa2 under Ra1 to Rxa2. Play Nf6 Nc6 e6, never early queen sortie. If hit retreat at once.
-- RUY NA5 C5 C6 POISON: 10...c6 chases Nd5 weakens d6, 14...c5 hits Bd4 opens d5, 15...b5 meets c3 Bxf6 doubling. Keep Ne7 Nc6 Bd7 Re8, hold d6 twice, meet d4 exd4 only.
+- RUY NA5 C5 C6 POISON: 10...c6 chases Nd5 weakens d6, 14...c5 hits Bd4 opens d5, 15...b5 meets c3 Bxf doubling. Keep Ne7 Nc6 Bd7 Re8, hold d6 twice, meet d4 exd4 only.
 - YUGOSLAV BC4 POISON: T79R4 11.Bc4? abandoned Be3 to Nxe3 won piece +0.3 to +2.0, Rb8 Bd8 won game. Never Bc4 Bb3 while Be3 loose to Nf6 Nd5. Sweep Nxe3 Bxd5 first or guard Be3 twice. Keep Be2, f3 Qd2 O-O-O order.
 - ADVANCE C4 E6 FORK POISON: T80R5 25...Nd7?? onto e6 fork met cxd5 exd5 e6 hitting Nd7/f7, then Ne5+ winning c6. Vs c4 resolve dxc4/cxd5 at once, never retreat onto e-push. Before any Nd7/Nf6 list e6+ fork. In check list flights/blocks/captures once, send least-bad in ONE try.
 - CARO CLASSICAL WHITE CLOCK POISON: T79R7 even flagged 0:13 vs 26:45. T80R4 drew but Nf1-Ng3-Nd2-Nf3-Nd2-Nb3 shuttle burned 1-4min each all ?/??. h5 chase plus Ne5 block plus Rh3 lift plus f4/c-shell never 2-4min. Routine 10-20s, cap 60, never 2-4min. Down = 5-10s. Never Nxc5 while Bxc5 hits with tempo.
@@ -49,13 +49,13 @@
 - SHELL CLOCK: Routine 10-20, cap 60, never 2-4min. T79R5 4-5min x5 to 0:41 forfeited UP pawn. T81R3 f4 5:18 Rf1 4:34 Bc4 3:50 even to 33:58 proves again. T81R4 Re3 5:27 Ne1 6:02 Rc3 3:05 down P to 34:10 proves again. Down = 5-10s. Long think finds nothing.
 - WHITE SCHEVENINGEN HASTE + BF4 PIN: f3 Bxf4 vs e5 wedge level. Qe1 Qe2 waste tempi, f5 Bxd4, Rb1 missed recapture. RECAPTURE FIRST. Storm only e4 twice f5 counted. Nb5 f5 10-20s. T79R3 g3 blocks Qxh2, b3 chases Bc4, Qd3 holds, exd5 hits Be6, Bf4 pins Qc7 to Kb8 won Q.
 - SCHEVENINGEN QB8 RB8 RE6 POISON: Qc7 Rac8 Rfe8 passive vs f4 e5. Qb8 leaves Rb8 on Bg3. Never block queen-queen with rook that gets pinned. Vs Nf5 e5 never d5.
-- RUY D3 LOCK: c3 Re1 Nbd2 Bc2 Nf1-g3 h3, d4 only with e4 twice AFTER Be3 blocks Re1. T81R4 cxd4 left e-pawn loose to Nxe4 won P; take back at once, never d5 Bb3 Bf4 drift. Vs d5 hold d6 twice, never open e-file while center lives, keep shield.
+- RUY D3 LOCK: c3 Re1 Nbd2 Bc2 Nf1-g3 h3, d4 only with e4 twice AFTER Be3 blocks Re1. T81R4 cxd4 left e-pawn to Nxe4; take back at once. T81R5 exd4 cxd4 e5 Nd5 exd6 fine, b3 c3 b2 Rxb2 won B but Rb5 hung to c4 fork Rb5/d5: move rook at once after 1 flag. Vs d5 hold d6 twice, never open e-file while center lives.
 - F3 KICK + CXD4 FIRST: f3 hits Ne4 but Ne4 has Nxc3 hitting Qe2 tempo, then c5 kicks Nd4. List escapes before pawn kick. Prefer Bxe4 Qxe4. Always cxd4 first vs d4, never Nf6 Nc6 holding. Vs 4.c3 answer Nf6 dxc3 e6 first. Bans: Qb6 b6, Rxd8 gives file, Kh8 shuffle.
 - BB5 PIN SHELL: vs Bb5 Ba4 Bb3 play Bd7 a6 b5 tempo, e6 Be7 O-O Qc7. Ne5 Ng6 Nf4 hit Qe2, c4 b4 tempo, bxc3 wins N. Keep e6 closed.
 - ARMAGEDDON WHITE CLOCK: Black draw odds so draw = loss. Down huge still 5-10s, no 1-2min thinks, no pushes, keep Qd2 Nc3 a3 only if instant.
 
 ## Openings
-- B Ruy Closed: a6 b5 Be7 d6 O-O Bd7 Re8 Bf8 h6 Ne7 Ng6 Qc7 Rad8. Never c6 chasing d5, never Ra8 passive, never Nf4 exf4 opening e-file, never Q-Ne loop. Hold d6 twice.
+- B Ruy Closed: a6 b5 Be7 d6 O-O Bd7 Re8 Bf8 h6 Ne7 Ng6 Qc7 Rad8. Never c6 chasing d5, never Ra8 passive, never Nf4 exf4 opening e-file, never Rb5 while c4 fork lives, never Q-Ne loop shuffle. Hold d6 twice.
 - B Bb5: Bd7 a6 b5 e6 Be7 O-O Qc7. Ne5 Ng6 Nf4 hit Qe2, c4 b4 tempo, bxc3 wins N. Keep e6 closed.
 - B Nxc6: bxc6 Bd3 e5 shell, Nd7 Nc5, Bb7 Qc7. Bans: queen sortie, rook trade, king shuffle. CXD4 FIRST.
 - B English: d6 Be7 O-O Re8 Be6 Qc7 Nd7 Nf6 Nd4 c5 Rac8 Nc2 fork vs Qe3. No Nd4 without exd4 counted. No Qb6 on Be3 ray.

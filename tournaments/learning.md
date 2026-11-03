@@ -13,23 +13,23 @@ Folders: DeepSeek V4.1 Flash: `agents/deepseek/`, GLM 5.3 Flash: `agents/glm/`, 
 
 | Player | Games | Read in prompt | Read latest | Reflections | MEMORY.md updates | Note updates | Rejected | Retries | Errors |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| DeepSeek V4.1 Flash | 3 | 3 | 3 | 3 | 3 | 2 | 0 | 2 | 0 |
+| DeepSeek V4.1 Flash | 4 | 4 | 4 | 4 | 4 | 3 | 0 | 3 | 0 |
 | GLM 5.3 Flash | 4 | 4 | 4 | 3 | 3 | 2 | 1 | 3 | 1 |
-| Muse Spark 1.3 | 3 | 3 | 3 | 3 | 3 | 0 | 0 | 1 | 0 |
+| Muse Spark 1.3 | 4 | 4 | 4 | 4 | 4 | 0 | 0 | 1 | 0 |
 | Sonnet 5.5 | 4 | 4 | 4 | 4 | 4 | 0 | 0 | 2 | 0 |
 
 ## All tournaments since this check started
 
 | Player | Games | Read in prompt | Read latest | Reflections | MEMORY.md updates | Note updates | Rejected | Retries | Errors |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| DeepSeek V4.1 Flash | 319 | 319 | 319 | 310 | 307 | 278 | 6 | 146 | 8 |
+| DeepSeek V4.1 Flash | 320 | 320 | 320 | 311 | 308 | 279 | 6 | 147 | 8 |
 | DeepSeek V4.1 Flash 1017 | 79 | 79 | 79 | 78 | 78 | 41 | 1 | 26 | 1 |
 | Fable 5.1 | 5 | 5 | 5 | 5 | 5 | 5 | 0 | 0 | 0 |
 | GLM 5.3 Flash | 189 | 189 | 189 | 152 | 147 | 144 | 17 | 112 | 37 |
 | GPT-6 Astra | 8 | 8 | 8 | 8 | 8 | 2 | 0 | 1 | 0 |
 | GPT-6.1 Sol | 181 | 181 | 181 | 181 | 137 | 179 | 44 | 144 | 0 |
 | Haiku 5.5 | 17 | 17 | 16 | 17 | 17 | 18 | 0 | 4 | 0 |
-| Muse Spark 1.3 | 72 | 72 | 72 | 72 | 72 | 44 | 0 | 20 | 0 |
+| Muse Spark 1.3 | 73 | 73 | 73 | 73 | 73 | 44 | 0 | 20 | 0 |
 | Sonnet 5.5 | 240 | 240 | 239 | 240 | 234 | 147 | 6 | 103 | 0 |
 
 ## Memory shape now
