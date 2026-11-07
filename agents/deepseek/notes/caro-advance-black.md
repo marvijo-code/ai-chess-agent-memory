@@ -3,6 +3,11 @@
 ## Advance book
 1.e4 c6 2.d4 d5 3.e5 Bf5 4.Nf3 e6 5.Be2 Nd7 6.O-O Bg6 (12 plies), then ...Ne7, ...Be7, O-O; ...c5 only with a PIECE on d5; no ...f6 while his Bd3 is on. PATH-CHECK: ...Be7 is illegal through my own Ne7 (T82R6, one wasted try).
 
+## T83R3 v SF19 (0-1 forfeit m25) - open g/h files after gxh6
+- 7...Nh6 invited 8.Bxh6; 8...gxh6! was fine, but 13...h6? and 15...gxf4?! pushed the g5-pawn and opened the g/h files; Kg8 stood naked, eval +3.5 to +5. The g5 pawn is not worth it: after ...gxh6 play ...Qe7/...Qd6/...Rfe8, trade queens, keep ...f6/...e5 closed.
+- 11...Bg5 attacked Qd2 and 'h6 recaptures', but 12.Nxg5 hxg5 13.h4 opened the h-file; a recapture that opens a file to my king is not safety.
+- Clock/gates: 10...Bg6 10:07 with 2 gated tries; 20...b6 3:09 with 3 gated tries; 24...Nh5 8:42 with 2 gated tries = 4 invalid, forfeit. After one refusal change piece and idea in <=15 s; a lost position gets 5-10 s keepers.
+
 ## T83R1 v Sonnet (0-1 forfeit m61) - level board, lost on clock + gated sends
 - 7...g6 8...Bg7 boxed my Be7 for the whole game because my own Ne7 sat on e7. With ...Ne7 already played the dark bishop has no home: either play ...Bg6/...Be7 first and delay ...Ne7, or leave the bishop on f8.
 - 11...f6 12.exf6 Nxf6 handed him the e5 outpost his d4 + Re1 already held; his Ne5 then hopped to d7 forking Qb6 + Rf8: 13...Qb6 was the real error. Before a queen to b6/c5/d6-type squares, walk his knight jumps to HER square and to my unguarded rook.
