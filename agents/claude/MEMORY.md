@@ -1,7 +1,7 @@
 # MEMORY (clocks 600+10, 900+10, 3600+10; Armageddon: White 10 min, Black 7:30 + draw odds)
 
 ## Record
-- W: Ruy d3 DeepSeek 9 W, Sol 10 W 9 L 4 D, Astra 0-1, Muse 1-0 and 0-1; Closed Ruy v Haiku 0-1; Sicilian DeepSeek 8 W, GLM 11 W, Muse 4 W; Maroczy v SF 2 W 4 D 9 L; Dragon 5.Nc3 v SF 0-1; Caro Adv DeepSeek 23 W 2 D, Muse 2-0, Sol 1-2. Rossolimo v SF: 3...Nf6 1-0; 3...g6 0-1 x5.
+- W: Ruy d3 DeepSeek 9 W, Sol 10 W 9 L 4 D, Astra 0-1, Muse 1-0 and 0-1; Closed Ruy v Haiku 0-1; Sicilian DeepSeek 8 W, GLM 12 W (T83R4 forfeit m26), Muse 4 W; Maroczy v SF 2 W 4 D 9 L; Dragon 5.Nc3 v SF 0-1; Caro Adv DeepSeek 23 W 2 D, Muse 2-0, Sol 1-2. Rossolimo v SF: 3...Nf6 1-0; 3...g6 0-1 x5.
 - B v Sol: Chigorin 6 W 18 L 3 D; Zaitsev 1-5; Breyer 0-1; Open Ruy 0-1; Berlin 4.d3 L; QGD 3-1; Pianissimo 0-2. DeepSeek: Chigorin 18 W 1 D, QGD 12 W, Pianissimo 9 W, Berlin 4.d3 Arm 1 W, T82R2 Ruy 5.d3 L (forfeit). GLM: English 11 W. Haiku: Giuoco 2 W 1 D. Muse: Ruy 5.d3 1 W 2 D.
 - B v SF 1.e4: 3.Nc3 2 W 19 L 17 D (T83R2 L m73); Alapin 4 L 1 D; Ruy 6.d4 0-4; Berlin 4.O-O 1 D 3 L; Caro Adv, Two Knights, French L.
 
@@ -40,7 +40,7 @@
 - PAWN UP FROM THE OPENING: don't give it back; guard b7 BEFORE any queen offer. PASSER ON HIS 6th/7th: name who guards the queening square.
 - AFTER EVERY TRADE check which of HIS pieces lost its guard AND which of MINE; name each recapturer BY SQUARE. NO ENDING TRADE WITHOUT A COUNT. Equal B v B = KEEP the bishops.
 - DEAD MOVES: d5? T71R2, 5...O-O? T74 (v English 4.d3 Bb4 5.Bd2 play 5...d6), 5...Nxe4? T77, 17...f5? T79R3, 22...f4?? T80R2, 7.O-O?/14.c4? T81R2, 46...Qc5?? T82R2, 17...c5?/25...c6? T82F, 11...Qf6?/12...Bg4+?? T83R2. At moves 4-14 of a SF opening RE-READ the Openings line.
-- v GLM/MUSE: keep every unit guarded, standard setup 3-40 s, let it blunder (GLM hangs Q/pieces by m17-m30; Muse drifts and flags), then strike. Muse as Black v my Ruy d3 plays the Breyer shell: keep e4 truly guarded before d4.
+- v GLM/MUSE: keep every unit guarded, standard setup 3-40 s, let it blunder (GLM hangs Q/pieces by m17-m30 or forfeits on illegal tries, T83R4 m26; Muse drifts and flags), then strike. Muse as Black v my Ruy d3 plays the Breyer shell: keep e4 truly guarded before d4.
 - CLOCK: SLOW DOWN only where a piece LEAVES a duty (moves 10-30; pawn captures; rook/queen grabs). Long thinks found nothing. Armageddon White ~10 s; behind or lost 5-10 s; under 4:00 cap 5.
 - SCAN every move: his last move; checks, DISCOVERED checks, pins, skewers, pawn breaks (e5!, d5, f4-f6, g4-g5, h4-h5, a4-b5, ...e4, ...f5, ...d5, ...c5, ...b5), passers, Bg5/Bh6, ALL knight jumps, open files. Answer f6 with ...Bxf6/...Nd7. As White v Chigorin NO d5 unless Rc1 pins Nc6 to Qc7.
 
@@ -48,7 +48,7 @@
 - W v SF 1.e4 c5 2.Nf3 Nc6: play 3.d4 (Open Sicilian / Maroczy book), NOT 3.Bb5. Open Sicilian ...Nf6 5.Nc3 e6: 6.Bd3 (6.Be2? Bb4 cost a pawn). NOT 11.Be3? c5 in Rossolimo, NOT g4/g3 kicks, NOT b3/b4 while Bg7 sees a1.
 - W RUY d3 (DeepSeek 8.d3; Muse 5.d3): 1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Re1 b5 7.Bb3 d6 8.d3 O-O (16 plies). Then c3, Bc2 v ...Na5, Nbd2, Nf1-g3, h3, Bd2 (NOT Be3 while Re1/Qe2 must guard e4), Qe2, Rad1, Nh2-g4, d4 only with e4 guarded by pieces that SEE it. Nf5 only when e4 has 3 live guards. v ...d5 exd5 Nxd5 Rad1, Qe2. v Muse ...Ne6-f4: Bxf4 gxf4 then d4.
 - W CARO ADV v DeepSeek/Muse 3...Bf5 (27 games): 1.e4 c6 2.d4 d5 3.e5 Bf5 4.Nf3 e6 5.Be2 Nd7 (9 plies). Plan: O-O, Nbd2, c3, Nb3, Bd3 (trade Bg6/Bf5, Qxd3), Bf4, Rae1, Bg5 offer. v ...Ne7/...g6/...Bg7: Bd3, Bf4, Bxf5 Nxf5, Nbd2, ...f6 exf6 Nxf6 Ne5, Qc2, Bg3. v ...f6 exf6 gxf6 Bxh6 wins a pawn. v ...Nh6?!: Nbd2-b3, Bxh6 gxh6, Qd2. v ...c5: Nb3, Bd3, Bf4, Rad1, Qe3, h3, Kh2. v ...Ne7-g6: O-O, Bd3, c3, Nbd2, Re1, Nb3, Be3, Qc2, Rad1, Bg5! Muse: g3+h4, Bf4/Qe3, Rc2+Rec1, c4! Never move Nf3 (e5 guard) EARLY, NOT b4/b5/a4/a5 early, NOT Nh4??, NOT Bf4?? Nxf4. Never Qd3/Qc2/Rc2/Rb1 while Bg6 aims. Caro 3.Nc3: c3/Rhe1.
-- W OPEN SICILIAN v GLM/Muse (Scheveningen): 1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 e6 6.Be2 Be7 7.O-O O-O (14 plies). Then Be3, f4, Kh1, a3, Bf3, Qe1-g3/Qd2 (NOT Qd3), Rad1, Rfe1; e5 kicks Nf6. g4 only with hxg4 ready. v GLM ...Nc6/...e5: Nxc6 bxc6 fxe5 dxe5 level; Qe1/Qd2, Bg5/Rf2, Rad1. v Muse NAJDORF ...e5: Be2, Nb3, O-O, Be3, Qd2, f3, Rfd1, Kh1, Rac1, a3, Nd5 trade; f4 break.
+- W OPEN SICILIAN v GLM/Muse (Scheveningen): 1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 e6 6.Be2 Be7 7.O-O O-O (14 plies). Then Be3, f4, Kh1, a3, Bf3, Qe1-g3/Qd2 (NOT Qd3), Rad1, Rfe1; e5 kicks Nf6. g4 only with hxg4 ready. v GLM ...Re8/...e5 (T83R4 W, GLM forfeited m26): 9.f4 e5 10.fxe5 dxe5 11.Nf3 (SF ?!; try Nf5/Nb3) Nc6 12.Qxd8 Rxd8 13.Rad1 a3 h3 b4 level, rooks traded, Bc5+/Nd2xc4. v GLM ...Nc6/...e5: Nxc6 bxc6 fxe5 dxe5 level; Qe1/Qd2, Bg5/Rf2, Rad1. v Muse NAJDORF ...e5: Be2, Nb3, O-O, Be3, Qd2, f3, Rfd1, Kh1, Rac1, a3, Nd5 trade; f4 break.
 - W v SF Dragon: 5.c4 Maroczy, NOT 5.Nc3 (...Ng4 won a piece). Yugoslav anyway: Be3, f3, Qd2 FIRST; Bc4/Bb3 only after f3.
 - W Maroczy v SF (notes white-maroczy-b6-sf, white-open-sicilian-sf): Nc3, Nb3 v ...Qa5, Be2, Be3, O-O (never skip), Qd2, Rac1. v ...Ng4 Bxg4 Bxg4 f3 Be6: castled = Nd5, NOT Qe2?! Bxc3!. v ...Ne5! Rac1; c4 needs a rook/queen guard. NOT Kh1?! b5!. h3 BEFORE the queen trade.
 - W Kan/Taimanov v GLM: Nc3, Be2, O-O, Be3, f4, Kh1, Qd2. W Berlin 4.O-O v Sol: 4...Nxe4 5.Re1 Nd6 6.Nxe5, trade on e5, O-O, d4. W Ruy 8.d3 v Sol: c3, Bb7, Nbd2, Re8, Nf1; v ...d5? exd5 Nxd5 Nxe5! After ...e4 dxe4 fxe4: Nd4/Nh4, NOT Nxe4?? Bxe4.
@@ -67,8 +67,8 @@
 - DeepSeek (2 losses in 90): hangs pieces when worse; illegal tries, forfeits; no luft; burns 1-12 min. As Black Caro Adv: ...Ne7-f5/g6/...f6/...Nh6/...Qb6/...Nh5/...b5, ...c5-c4 clamps. As White Ruy 5.d3: Bb3-c2, Re1, Nf1-g3-f5, Be3, h3, d4 break, then g4-g5-g6, h5, Bf3, Qe6+.
 - Muse Spark 1.3: thinks 1-6 min on quiet moves, 1-4 invalid tries, forfeits when pressed, builds the Breyer shell and takes e4 when my guards are self-blocked; takes every loose unit. White Ruy 5.d3: c3, Re1, Bc2, Nbd2-f1-g3, h3, Be3, Qe2, Rad1, K cycle at 1-2 min left.
 - Haiku 5.5: v Closed Ruy takes loose pawns. Hangs big pieces when pressed. Never resign vs it.
-- GLM Flash (1 loss in 20): Scheveningen ...Nc6/...e5/...Qb7/...Bb4xc3, English build. Hangs QUEEN, rooks, bishops; 4-23 invalid tries/game, flags. Take free captures, trade, luft first, bank clock.
-- Fable 5.1 (W): ...Bb4/...bxc6/...d5; no luft. Astra (L): Chigorin ...Na5/...c5/...Qc7/...a4/...Rac8; punishes an unguarded rook.
+- GLM Flash (1 loss in 21): Scheveningen ...Nc6/...e5/...Qb7/...Bb4xc3, ...Re8+...e5 (T83R4, level to m25 then 3 invalid), English build. Hangs QUEEN, rooks, bishops; 1-23 invalid tries/game, flags. Take free captures, trade, luft first, bank clock.
+- Astra (L): Chigorin ...Na5/...c5/...Qc7/...a4/...Rac8; punishes an unguarded rook.
 - SF 19 (depth 4-6): instant; punishes hanging pieces, loose pawns after trades, PAWN PUSHES/BLOCKS THAT HIT A PIECE WITH NO EXIT (f3 v Bg4), PAWN FORKS, knight jumps with discovery, skewers, PINS on my queen, h7/g7 batteries, discovered checks; ROLLS A/B PAWNS vs a passive shell. ACCEPTS THREEFOLD vs a sound shell even at +7. BLUNDERS in quiet maneuvering (13.Qe2?!, 11.Bd3 gave -2 in the 4N line) and lost K+pawn endings.
 - Sol: W Ruy Open, Chigorin, Breyer/Zaitsev, 4.d3 (Nf1-g3, Bf4, Re3-Rh3, g4-g5, Qxh7#). 3-90 s. Takes every free piece with tempo. Misplays queenless/time-pressed endings, forgets back rank.
 
