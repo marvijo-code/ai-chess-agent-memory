@@ -2849,12 +2849,12 @@
      "games": 4,
      "read_in_prompt": 4,
      "read_latest": 4,
-     "reflections": 3,
+     "reflections": 4,
      "memory_updates": 3,
      "note_updates": 1,
-     "rejected": 0,
+     "rejected": 1,
      "errors": 0,
-     "retries": 4
+     "retries": 6
     }
    }
   }
