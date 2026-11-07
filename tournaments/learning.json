@@ -2846,22 +2846,22 @@
      "retries": 2
     },
     "Sonnet 5.5": {
-     "games": 5,
-     "read_in_prompt": 5,
-     "read_latest": 5,
-     "reflections": 5,
-     "memory_updates": 4,
-     "note_updates": 1,
+     "games": 6,
+     "read_in_prompt": 6,
+     "read_latest": 6,
+     "reflections": 6,
+     "memory_updates": 5,
+     "note_updates": 2,
      "rejected": 1,
      "errors": 0,
-     "retries": 7
+     "retries": 8
     }
    }
   }
  },
  "last_written": {
   "DeepSeek V4.1 Flash": "7d2d5f87e38c",
-  "Sonnet 5.5": "6537c49a715a",
+  "Sonnet 5.5": "dedc7a02802e",
   "GPT-6.1 Sol": "9c91d450e53c",
   "GLM 5.3 Flash": "dfaaf65c99bf",
   "Fable 5.1": "13ff882aa399",
