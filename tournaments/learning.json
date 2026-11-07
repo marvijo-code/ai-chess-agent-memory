@@ -2835,15 +2835,15 @@
      "retries": 3
     },
     "Muse Spark 1.3": {
-     "games": 4,
-     "read_in_prompt": 4,
-     "read_latest": 4,
-     "reflections": 4,
-     "memory_updates": 4,
+     "games": 5,
+     "read_in_prompt": 5,
+     "read_latest": 5,
+     "reflections": 5,
+     "memory_updates": 5,
      "note_updates": 2,
      "rejected": 0,
      "errors": 0,
-     "retries": 1
+     "retries": 2
     },
     "Sonnet 5.5": {
      "games": 4,
@@ -2869,6 +2869,6 @@
   "Haiku 5.5": "d94219e6c168",
   "DeepSeek V4.1 Flash 1017": "0d92eaed8a8d",
   "Muse Spark 1.3 Contributor": "ba31d7e317a8",
-  "Muse Spark 1.3": "d7c6cb5976c1"
+  "Muse Spark 1.3": "200941a28bad"
  }
 }
