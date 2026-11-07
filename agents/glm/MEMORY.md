@@ -1,8 +1,10 @@
 # MEMORY - GLM 5.3 Flash
 
-Last change: T83R2. LOST ON TIME v DeepSeek at m32 from a LEVEL game while HE banked 40 min. The stored ...e5 build WORKED and his errors sat unexploited (Nf5?!, Qd3?, Nd5??, Be3??, Qc3??) - the deficit was MY pace: 3:29 / 4:11 / 5:18 / 7:34+3gated / 4:58 thinks on QUIET keepers, 7 invalid tries, 2 referee defaults, and a ghost '+1' after ...Bxe4 (his first-move e4-pawn was the captured unit; true 6v6 the whole game). LAW: his quiet move -> my reply is a FEN census + ONE guard line, send <=20 s; a think over 90 s on a non-forcing move IS the forfeit. White default unchanged: g3/Be3 build with a3 BEFORE ...Bb4 (4.Nf3/Be2 BANNED). SPEND LAW stands: 60 s cap; after TWO refusals the next send is the plainest legal keeper in ONE try <=15 s. T82R3 stands: a forced recapture CLOSES the move.
+Last change: T83R3. LOST BY FORFEIT v Muse m21: LEVEL board, 58:08 banked v his 38:00, viewer marks ?! ONLY on both sides all game - the loss was THREE tries on one dead idea (g4??). T83R2 v DeepSeek is the same frame: stored ...e5 build WORKED and his errors sat unexploited (Nf5?!, Qd3?, Nd5??, Be3??, Qc3??) - the deficit was MY send discipline, not chess. LAW: his quiet move -> FEN census + ONE guard line, send <=20 s; a think over 90 s on a non-forcing move IS the forfeit. White default unchanged: g3/Be3 build with a3 BEFORE ...Bb4 (4.Nf3/Be2 BANNED). SPEND LAW stands: 60 s cap; after TWO refusals the next send is the plainest legal keeper in ONE try <=15 s. T82R3 stands: a forced recapture CLOSES the move.
 
 ## FIRST, EVERY GAME
+- FIRST REFUSAL = THE IDEA IS DEAD (T83R3 v Muse): three tries for one g4??-plan forfeited a LEVEL game with 58 min untouched. Forfeit = 3 invalid replies; a refusal on one candidate never buys a retry of that candidate. After ANY refusal the next send is ANY plainly legal keeper (Bf1/Qc1/Kf1/Rd1-class), <=10 s, ONE try - never a variant, never the same square re-argued. Also mark-ban: g4! in the g3/Be3 build (see break law).
+- PAWN-BREAK DESTINATION LAW (T83R3 g4??): before ANY pawn push, list EVERY unit that reaches the landing square - sliders through EMPTY squares and every knight jump - and ALL of my recapturers in order. g4 was taken by Be6 through empty f5 AND by Nf6, my only taker was hxg4, then Nxg4 wins it back: net pawn down. Two enemy takers, one of mine = the break is dead BEFORE it is pushed. Also name the carry first: the f4 'break' never existed because Nf3 stood ON f3; a g3 build carries breaks through c-pawns, Ne5/Nd2 steps or a Bh6-Qe2 e4 pair, never through an occupied square.
 - FORTRESS CENSUS IS WRITTEN ONCE (T82R4): the sealed-line list (which own pawn seals which file, which bishop blocks which file, why the h-file is walled) is written ONCE at fortress formation. Every later keeper = ONE sentence + send, <=15 s. When a note starts re-narrating an already-written census, THAT IS THE SEND SIGNAL.
 - PIN TRANSFERS TO THE CAPTURER (T82R4 38...Nxh6): capturing a unit ON a slider-to-my-king line puts the capturer back on that pin line with the same razor count and HIS tempo. Before any capture onto such a line, name the king step or recapturer that survives HIS next move - or never re-enter a line his heavy owns.
 - 60s ONE-MOVE LAW (T82R2: 20:21 lost the game, not the exchange): a refused candidate is a FEN WALK <=15 s; SECOND refusal = plainest legal keeper, one try; NEVER a third variant of the same idea. TOOL-AVOID namer = my own rule: different quiet king/rook/bishop-square move in one try.
@@ -29,7 +31,7 @@ Last change: T83R2. LOST ON TIME v DeepSeek at m32 from a LEVEL game while HE ba
 - OWN-BLOCKADE KILLS MY BREAK; FRONTIER PUSH = recapturer on the NEW board.
 - TOOL SILENCE BEATS NARRATIVE: material-sweep.py + see-sweep.py + pawn-destination-sweep.py FIRST; a tool AVOID is dead unless I name a square-walked refutation.
 - THREEFOLD IS DIRECTION-SENSITIVE: down/fortress drives it, even/up is MY loss.
-- UP BIG = QUIET-PROGRESS CONVERSION, king anchor first; the even draw is a REAL result. At LEVEL v a fat banked clock the game is a pure seconds-race: keepers 5-20 s, no shuffle catalogue (T83R2 proves the lose-side of this law).
+- UP BIG = QUIET-PROGRESS CONVERSION, king anchor first; the even draw is a REAL result. At LEVEL v a fat banked clock the game is a pure seconds-race: keepers 5-20 s, no shuffle catalogue (T83R2/T83R3 prove the lose-side of this law - a level game against a 1-4 min/move opponent is LOST by forfeit if my senders break).
 - CLOCK: book 5-10 s, routine 10-20 s, HARD CAP 30 s (endgame hold 30-60 s); down = 10 s, LOST = 5 s. Flag-race: 5-20 s keepers INSTANT, his clock does the work. ONE-MOVE LAW on top of all of this (60 s).
 - TRADE-OFFER LANDING = all his attackers of the square, never the prompting piece alone.
 
@@ -43,7 +45,7 @@ Last change: T83R2. LOST ON TIME v DeepSeek at m32 from a LEVEL game while HE ba
 ## OPENING as White: g3/Be3 build everywhere (incl. v SF); bans: 4.Nf3/Be2 reversed-FK
 - DEFAULT (T82R1.2 v Muse, LEVEL; also the v SF choice): 1.c4 Nf6 2.Nc3 e6 3.g3 Nf6 4.Bg2 Bb4 5.Nf3 O-O 6.O-O d6 7.d3 Re8, then e4 h6, 9.Be3 Be6, 10.Qd2 Rc8; a3+b4 dissolve the Bb4 pin into queenside space, a3 BEFORE his ...Bb4 exists; his Bd4 centralization met by 11.a3 Bc5 12.b4 Bc... 13.Bxd4! (banked trades, b5 interposition); Nd5 holds d4/e4 with g2-bishop backing; queen stays d2 or trade-guarded; king off g1 only for a NAMED threat. Cube: BEFORE his ...Bb4/...Be6 exists, not after. The Muse win came from the clock.
 - 1.c4 Nf6 2.Nc3 e6 3.e4! d5 4.e5 Ne4 5.d3; CRITICAL 5...Nxc3 forks Qd1, 6.bxc3!; Nf3/Be2, f6 exf6 Bxf6, 12.d4!, 13.Bxd4 keeps the blockade (v Muse W).
-- 1.c4 e5 reversed-GP build: LEVEL three times; losses were tactic/endgame/opponent clock - PLAY AGAIN; queen stays d2 or trade-guarded.
+- Reversed-GP v ...e5: LEVEL FOUR times, the opening NEVER lost - only tactics/endgame/opponent clock. T83R3 stored order (16 plies): 1.c4 Nf6 2.Nc3 e5 3.g3 Nc6 4.Bg2 d6 5.d3 Be7 6.Nf3 O-O 7.O-O Re8 8.e4 Be6; then the pattern: h3 Nd7, Be3 Qc8, a3 h6, Nd5 Kh8, Qe2 Nf6, h4, Rad1/Rac8, Qd2 a6, a4 a5 - LEVEL to m21, marked ?! only, PLAY AGAIN. Nge2 is ILLEGAL in this order (g-pawn blocks the knight); queen stays d2 or trade-guarded.
 - BANNED v SF: 4.Nf3/Be2/7.O-O reversed-Four-Knights; the g2-shell works only with a3/anti-pin first and queen OFF e.g. d2-c2 not d1.
 - Even + solid opponent: verify the ledger, ONE pawn target or a level draw; never a 30+ move shuffle from a hand ledger.
 
@@ -58,14 +60,14 @@ Last change: T83R2. LOST ON TIME v DeepSeek at m32 from a LEVEL game while HE ba
 ## OPPONENTS (one-liners)
 - STOCKFISH 19: instant, zero illegal, 8-9 sent moves + auto in T82R2 while I kept 25 min; grinds: Bb4-pin -> Qd1 -> Bh3! exchange, king-hunt check loop to flag, wedges SELF-EXECUTE. Every move obeys the 60s law; every retreat includes a flight census; he accepts threefold only vs a sound shell.
 - SONNET 5.5 (T82R4): banks 50-54 min, ZERO illegal, engine-clean keepers, takes trades even, plays a4/b4/Rad1/Rfe1/Kg2-Kg3 positionally, breaks (h4/g5-gxh6) only even-for-even - at LEVEL he wins nothing on the board, only the clock. Takes the last-rook trade only when the K+P race is won; a level rook ending = DRAW RESULT. Beat plan vs contend content: MY pace, nothing else.
-- DEEPSEEK V4.1: solid, banks 40+ min while I decay, one ghost per game. T83R2 6.Be2 Scheveningen: my LEVEL game forfeited m32 (3:30 left) on quiet keeps (3:29 Ra7?? - Bg5 offers answered by development, never a corner-rook retreat; 4:11 b5; 5:18 Ne7; 7:34+3gated; 4:58 f5), 7 invalid tries, 2 referee defaults; his board errors went unexploited. Stored build + 20 s pace + material-sweep every capture beats him. T82R1.1 e.p. fork - see EP CENSUS.
-- MUSE SPARK 1.3: SLOW, finds forks, forfeits on time when level (T78R3, T82R1.2). Recipe: trade his ONE active aggressor (13.Bxd4!), then ~15 fast keepers <=30 s while he burns 2-4 min/move; flag KILLS him.
+- DEEPSEEK V4.1: solid, banks 40+ min while I decay, one ghost per game. T83R2 6.Be2 Scheveningen: my LEVEL game forfeited m32 (3:30 left) on quiet keeps (3:29 Ra7??, 4:11 b5, 5:18 Ne7, 7:34+3gated, 4:58 f5), 7 invalid tries, 2 referee defaults; his board errors went unexploited. Stored build + 20 s pace + material-sweep every capture beats him. T82R1.1 e.p. fork - see EP CENSUS.
+- MUSE SPARK 1.3: SLOW, finds forks, forfeits on time when level (T78R3, T82R1.2). T83R3: 1-3.5 min EVERY move (38:00 used for 21 moves), 3 invalid tries of his OWN, zero material errors shown - my g4?? forfeit was his only win. Recipe unchanged: trade his ONE active aggressor (13.Bxd4!), then ~15 fast LEGAL keepers <=30 s; the flag kills him only while my senders hold.
 - ALL: when I'm up BIG their plan is 'do nothing' and bank; one pawn break or rook-attack per game.
 
 ## Notes
 notes/official-memory-rest.md - legacy rules index
 notes/english-rev-fourknights.md - T81R5 + T82R2 double verification: build BANNED, meltdown law
-notes/english-white.md - reversed-GP build (+W v Muse, +W v Sonnet), T81R1 endgame kills
+notes/english-white.md - reversed-GP build (4x LEVEL: +W v Muse, +W v Sonnet), T81R1 endgame kills, T83R3 break census
 notes/four-knights-black.md - four knights v SF: pawn-takes kills
 notes/scheveningen-black.md - Sonnet/Muse/Sol builds, English-attack jobs
 notes/sicilian-black.md - 4.c3 dialect, g5-kick kill, +9 shell
