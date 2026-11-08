@@ -9,14 +9,12 @@ Each AI player writes only to its own folder (`agents/<folder>/`) and reads ever
 
 Folders: DeepSeek V4.1 Flash: `agents/deepseek/`, GLM 5.3 Flash: `agents/glm/`, Muse Spark 1.3: `agents/muse/`, Sonnet 5.5: `agents/claude/`
 
-## Current tournament (aichess-0084-20261108-035328)
+## Current tournament (aichess-0085-20261108-115918)
 
 | Player | Games | Read in prompt | Read latest | Reflections | MEMORY.md updates | Note updates | Rejected | Retries | Errors |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| DeepSeek V4.1 Flash | 6 | 6 | 6 | 6 | 6 | 4 | 0 | 6 | 0 |
-| GLM 5.3 Flash | 4 | 4 | 4 | 4 | 4 | 6 | 0 | 5 | 0 |
-| Muse Spark 1.3 | 7 | 7 | 7 | 7 | 7 | 1 | 0 | 2 | 0 |
-| Sonnet 5.5 | 6 | 6 | 6 | 6 | 6 | 2 | 0 | 4 | 0 |
+| GLM 5.3 Flash | 1 | 1 | 1 | 1 | 1 | 0 | 0 | 1 | 0 |
+| Muse Spark 1.3 | 1 | 1 | 1 | 1 | 1 | 1 | 0 | 0 | 0 |
 
 ## All tournaments since this check started
 
@@ -25,11 +23,11 @@ Folders: DeepSeek V4.1 Flash: `agents/deepseek/`, GLM 5.3 Flash: `agents/glm/`, 
 | DeepSeek V4.1 Flash | 342 | 342 | 342 | 333 | 330 | 293 | 7 | 159 | 8 |
 | DeepSeek V4.1 Flash 1017 | 79 | 79 | 79 | 78 | 78 | 41 | 1 | 26 | 1 |
 | Fable 5.1 | 5 | 5 | 5 | 5 | 5 | 5 | 0 | 0 | 0 |
-| GLM 5.3 Flash | 201 | 201 | 201 | 164 | 159 | 160 | 19 | 126 | 37 |
+| GLM 5.3 Flash | 202 | 202 | 202 | 165 | 160 | 160 | 19 | 127 | 37 |
 | GPT-6 Astra | 8 | 8 | 8 | 8 | 8 | 2 | 0 | 1 | 0 |
 | GPT-6.1 Sol | 181 | 181 | 181 | 181 | 137 | 179 | 44 | 144 | 0 |
 | Haiku 5.5 | 17 | 17 | 16 | 17 | 17 | 18 | 0 | 4 | 0 |
-| Muse Spark 1.3 | 95 | 95 | 95 | 95 | 95 | 50 | 0 | 28 | 0 |
+| Muse Spark 1.3 | 96 | 96 | 96 | 96 | 96 | 51 | 0 | 28 | 0 |
 | Sonnet 5.5 | 261 | 261 | 260 | 261 | 254 | 153 | 7 | 122 | 0 |
 
 ## Memory shape now
@@ -38,5 +36,5 @@ Folders: DeepSeek V4.1 Flash: `agents/deepseek/`, GLM 5.3 Flash: `agents/glm/`, 
 | --- | ---: | ---: | ---: |
 | DeepSeek V4.1 Flash | 6 | 16 | 0 |
 | GLM 5.3 Flash | 6 | 15 | 0 |
-| Muse Spark 1.3 | 0 | 6 | 0 |
+| Muse Spark 1.3 | 1 | 9 | 0 |
 | Sonnet 5.5 | 6 | 16 | 0 |
