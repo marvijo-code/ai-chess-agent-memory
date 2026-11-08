@@ -1,11 +1,11 @@
 # MEMORY - GLM 5.3 Flash
 
-Last change: T85R3. Drew 1/2 v Sonnet as White (threefold m46). Reversed-QGD was level to m20, queens off m24, then my 26.Nf5+ burned 1:37 on a FALSE 'Nxf5 wins a clean bishop' read (the bishop merely retreated with tempo) and tempo-drift handed the initiative over: I ended -1 in a BvB ending - but the down-side FORTRESS (Kc3 anchor + bishop tour d3/c4/b5) held to threefold exactly as the direction rule says. T85R1's forfeit budget laws held here: 1 gated try total, no forfeit.
+Last change: T85R4. WON as Black v DeepSeek V4.1 Flash (forfeit m27, his 3 gated replies with 28 min left). QGD Carlsbad fired AGAIN end to end: ...Ne4! straight into the f4-hole his 12.f4/Nb3 opened, the ...c5 wedge even PAST his Nb3 anti-c5 plan (Ne4 freed d5-keeper duty, Qc7 backed c5), ...Nc5xd3 trades, then a level clamp while he burned 2:47-7:06 per QUIET move. My 5 gated tries across the game cost nothing - 46:12 banked when he died - because every refusal was answered at once by a DIFFERENT keeper. T85R3 fortress lessons stood unused; spread-refusal law confirmed.
 
 ## FIRST, EVERY GAME
 - CHECK THAT 'TAKES A PIECE' (T85R3): before sending a check I say wins material, name ALL guards of the target AND its live retreats that carry tempo; 26.Nf5+ 'won the Bf5' that just stepped to Bd7/c8 - a defended minor near his king is NOT a win, and a 1:37 think bought nothing. Only zero-retreat pieces are grabs.
 - BvB -1 FORTRESS TEMPLATE, PROVEN v SONNET (T85R3): king adjacent ON the flank kills the passer by occupancy (Kc3 made c3/c4/b4 impossible AND double-guards b3 with a2), bishop tours the one triangle (d3/c4/b5), NEVER vacate the guard pawns (b3/a2), same-color bishops alone make my other pawns immune. -1 = threefold is THREE: repeat the keeper; if he sidesteps (45...Be4), repeat again next turn.
-- ONE TRY PER MOVE AT LEVEL (T85R1): gated sends x2 a move ALONE can forfeit. Pre-verify with material-sweep + safe-keepers, send ONCE, 10-20 s. After a gate: a DIFFERENT legal keeper, one try, done - and never let every candidate be a gated variant of one idea.
+- ONE TRY PER MOVE AT LEVEL (T85R1); T85R4 PROOF: 5 gated tries in ONE game never forfeited - each was answered instantly by a DIFFERENT keeper in seconds. Refusals CLUSTERED on one move are the forfeit; spread ones are survivable. Gated sends x2 in one move alone can still die. Pre-verify with material-sweep + safe-keepers, send ONCE, 10-20 s. After a gate: a DIFFERENT legal keeper, one try, done.
 - SORTIE PRICE = LANDING SQUARE EXITS (T85R1): before a bishop/rook/queen sortie onto a forward/remote square, list how I get it BACK (which of my exits are still legal next move, what his rooks/knights cover) - a square with both exits covered by one of his rook/knight pairs is a PARKING SPOT, play it only when I mean to trade it. Bb6/Ba7-class queen-hits fired for one tempo each and cost a WHOLE BISHOP of play.
 - DOUBLE-HIT = ONE COMPUTED SEND (T84R5): when two units hang at once, compute the least-loss ONCE from the FEN and that read IS the send. Recompute inside a gated slot costs the slot's time - 10 s, never 4 min.
 - OVERRIDE DEATH (T84R3): a tool AVOID naming the lost unit + capturer + line is CLOSED - pick a different keeper, never send the flagged move to 'check the tool'. My whole forfeit record is this one override repeated.
@@ -59,7 +59,7 @@ Last change: T85R3. Drew 1/2 v Sonnet as White (threefold m46). Reversed-QGD was
 - Even + solid opponent: verify the ledger, ONE pawn target or a level draw; never a 30+ move shuffle from a hand ledger.
 
 ## OPENING as Black
-- v DeepSeek 1.d4: QGD CARLSBAD - PLAY AGAIN (T84R5 WIN). Level to m22; the ...d4 wedge + ...c5 break with Rc8 behind won queenside space. Hanging: Qc7 while his Bg3 diagonal lives; bare c5/d5 pushes without knight/Rc8 support die to his e4-class hits. see notes/qgd-black.md
+- v DeepSeek 1.d4: QGD CARLSBAD - PLAY AGAIN, WINS T84R5 AND T85R4 (both level + his forfeit). The ...d4 wedge + ...c5 break with Rc8 behind wins queenside space TWO games running, even PAST his Nb3-blocking setup: ...Ne4! straight into the square his 12.f4 vacates once Nd2-b3 leaves, Qc7 backs c5, then ...Nc5xd3 = even trades, LEVEL. Hanging: Qc7 while his Bg3 diagonal lives; bare c5/d5 pushes without knight/Rc8 support die to his e4-class hits. see notes/qgd-black.md
 - Sicilian 3.Nc3 d6 4.d4 cxd4 5.Nxd4 e6 6.Bb5: NEVER 6...a6?; answer with a PIECE first; UNPIN FIRST.
 - 2...d6 6.Be2 build: his break opening HIS bishop ray = my bishop on it hangs, CAPTURE THAT BISHOP FIRST (16...Bxf3!). Raid needs ...Bb7 first.
 - v the 4.c3 dialect: LEVEL to m10; the raid needs ...Bb7 first, queen stays c7.
@@ -70,7 +70,7 @@ Last change: T85R3. Drew 1/2 v Sonnet as White (threefold m46). Reversed-QGD was
 ## OPPONENTS (one-liners)
 - STOCKFISH 19: instant, zero illegal; wedges SELF-EXECUTE; pin -> Bh3! exchange, king-hunt loop, Q+R herding net in check. Every move obeys the 60 s law; accepts threefold only vs a sound shell.
 - SONNET 5.5: banks 50-57 min, ZERO illegal, engine-clean keepers, trades evenly. At LEVEL he wins only the clock; a level rook ending = DRAW RESULT, CONFIRMED AGAIN T85R3. In a -1 BvB he converts the passer properly (Kd5 infiltration, b6+/c5+ tempo moves, one deviation 45...Be4 to dodge my repeat) but could NOT break the anchored Kc3 fortress in 20 moves. His kills (Qd4+) arrive only AFTER my shelter loses its SECOND guard. Beat plan: MY pace.
-- DEEPSEEK V4.1: solid but ONE double-hit ghost per game. At level/slightly better he burns 5-7 min thinks on QUIET moves and can FLAG with 5 min left. Rule: shell + 5-10 s instant keeps in ANY level or down-but-solid spot; never mirror his tempo.
+- DEEPSEEK V4.1: the CLOCK is his whole loss mechanism - two straight level-position forfeits (T84R5, T85R4) while burning 2-7 min thinks on QUIET moves, one gated card after another near the end. ONE double-hit ghost per game, otherwise engine-clean keepers. Rule: Carlsbad/shell + 10-60 s instant keeps, bank 40+ min, never mirror his tempo; holding ANY deficit shell the same way wins on his flag too.
 - MUSE SPARK 1.3 (T85R1): SLOW (1-3 min/move all phases), ZERO board/invalid errors, and he does NOT attack - he PARKS units (Rc7/Rc6/Rec8/Qd6 waited 12 moves on my entombed Ba7) and lets my senders forfeit. Beat plan: every unit on a square with two live exits, ONE verified send per move at 10-20 s, show progress by a SUPPORTED central break (e4/d4) every ~8 moves, never edge/king-shelf shuffles; a level game v him is decided entirely by MY try budget.
 - ALL: when I'm up BIG they bank; one pawn break or rook-attack per game.
 
@@ -79,7 +79,7 @@ notes/official-memory-rest.md - legacy rules index
 notes/english-rev-fourknights.md - v SF: g3-door, wedge slot, herding net
 notes/english-white.md - reversed-GP builds, T84R3 Sonnet +1-forfeit, endgame kills
 notes/four-knights-black.md - four knights v SF: pawn-takes kills
-notes/qgd-black.md - T84R5 v DeepSeek WIN: Carlsbad build, d4+c5 breaks, double-hit send economy
+notes/qgd-black.md - T84R5/T85R4 v DeepSeek WINS: Carlsbad build, d4+c5 breaks, double-hit send economy
 notes/scheveningen-black.md - Sonnet/Muse/Sol/DeepSeek builds, English-attack jobs
 notes/sicilian-black.md - 4.c3 dialect, g5-kick kill, +9 shell
 notes/sveshnikov-black.md - T40R4 line; fresh-pawn diagonal rules
