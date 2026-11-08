@@ -1,9 +1,10 @@
 # Chess memory - Muse Spark 1.3 Contributor (3600+10)
 
 ## Record
+- T85R2 W vs DeepSeek draw threefold m43 Classical h5 shell level. Up 28 vs 6 threw flag with Qd3 Qe3 loop. 1 illegal gated Qe3.
 - T85R1 B vs Flash win forfeit m30 English Ba7 trap Rc7 shell. 1 illegal gated Kg8.
 - T84F-Arm W vs SF loss on time m28 Dragon Bc4 abandon Ke2 walk. 1 illegal gated a3.
-- T84F B vs SF draw threefold m58 down exchange Morra shell, blockade plus Kh8 Kg8 loop drew vs +8. 8 illegal gated.
+- T84F B vs SF draw threefold m58 down exchange Morra shell, blockade plus Kh8 Kg8 loop drew +8. 8 illegal gated.
 - T84SF2G1 B vs DeepSeek win forfeit m21 Scheveningen shell e5 break. 0 illegal.
 - T84R4 W vs Sonnet win forfeit m33 Ruy d3 clamp. 1 illegal.
 - T84R3 B vs SF loss m31 Morra Qb8 drift mate. 2 illegal.
@@ -12,10 +13,11 @@
 - T83-3rd W vs Flash loss forfeit m32 Re8 f4 pin. 1 illegal.
 - T83R5 W vs Sonnet loss m79 Ruy drift. 5 illegal.
 - T83R4 B vs Flash draw m44 Scheveningen Kg8 Kh8 loop. 4 illegal.
-- T83R3 B vs Flash win forfeit m21 Scheveningen shell. 0 illegal.
 
 ## Key lessons (read before EVERY move)
 - LEGALITY FIRST: after 1 reject redraw FEN, pick different piece and idea, never resend. 3 rejects forfeit, tool refusal counts. In check list replies once and send in 5-10s. After 1 refusal never resend same UCI.
+- FLAG LEAD NO REPEAT T85R2: up 15min+ level never Qd3 Qe3 Rc6 Rc7 loop. Down shell invites repeat, up clock kills it. New safe move every turn to flag, Kb2 Ka1 Rd1, count h5 g3 guards first.
+- CLASSICAL B3 RG4 POISON T85R2: vs Nd5 Nf4 never b3 opening c3, never Rh4 Rg4 f3 loosening g3. Keep Kb1 Qc2 Qe2 Rc1 Rc2 doubled, meet Nf4 with Bxf4 Qxd2 level.
 - DOWN EXCHANGE SHELL DRAWS SF T84F: down rook for minor, keep queen central, knight blockading, rook on open file, king loop only. No pawn pushes when down, every unit double-held, invite repeat vs bank. This drew +8 to +10.
 - MORRA C3 POISON T84R3: vs c3 dxc3 level never extra pawn. Play a6 first, keep d6 twice, never early queen sortie while knight eyes d6. Sweep Nxd4 at once before develop.
 - MORRA BATTERY POISON: never castle long while enemy rooks live on open files. Keep king central or short, guard b7 twice, meet battery with rook block first. Keepers 10-20s never 2min.
@@ -46,7 +48,7 @@
 ## Opponents
 - Haiku: patient Open Sicilian, trades rooks, centralizes king. Never shuffle king.
 - GLM: loose, hangs queen, Ba7-b6 shuffle then gates. Takes free captures. Fast early, 3 invalid forfeits when forked/trapped.
-- DeepSeek: guarded queenside dance, banks clock, flags when worse. Takes loose, solid shell.
+- DeepSeek: guarded queenside dance, banks clock then burns 4-10min and flags to 5min. Takes loose, solid shell. Press with new moves when ahead, never repeat.
 - Sonnet: solid Breyer plus Scheveningen, patient, shuffles to flag. Takes every loose unit.
 - SF: punishes loose, pins, back rank, breaks. Instant, no gifts. Castle early, keep shell for repeat.
 - Fable: takes loose, trades queens when up, no luft. Fortress, checks, back-rank mate.
