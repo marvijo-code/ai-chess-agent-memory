@@ -1,4 +1,4 @@
-# Black vs 1.e4 e5 2.Nf3 Nc6 3.Nc3 (SF plays it every time; 2 W, 19 L, 18 D)
+# Black vs 1.e4 e5 2.Nf3 Nc6 3.Nc3 (SF plays it every time; 2 W, 20 L, 18 D)
 
 3...Nf6 4.Bb5 Bb4, then 5.O-O (line A) or 5.Nd5 (line B). NEVER 3...Bc5 (4.Nxe5!).
 
@@ -10,17 +10,17 @@
 - Endings v SF: K tied to c7 while his K walked: ...g6/...h5 early.
 
 ## LINE B: 5.Nd5 Nxd5 6.exd5 e4 7.Qe2 O-O 8.dxc6 exf3 9.Qxf3
-- The tool flags ...Nxd5, ...e4, ...O-O with vague reasons ('c3 trick'). They are book: resend each ONCE (T84R5: 2 gated tries each, no forfeit). NEVER 5...Nxe4? (3 refusals = forfeit).
-- 9...Re8+ 10.Kd1 dxc6 11.Bd3 Bd7 (BOOK) 12.b3 Qe7 13.c3 Bd6 14.Kc2 Rad8 15.Bb2 Be6 16.c4: level (SF -0.4).
-- T84R5 D (m61, threefold at SF +7): 16...Qg5?! 17.h4 Qe7 (two tempi lost) 18.Qe4 (aims Bd3+Qe4 at h7). 18...g6? (4:31 think) 19.Qd4! hits g7/a7, Qh8 threat; 19...f6 20.Qxf6 Qxf6 21.Bxf6 = pawn and structure gone, +5..+8. Fix (unverified): keep the queen on e7, no ...Qg5; v Qe4 play ...Rd7, ...Bf5 (Bxf5 Qxf5) or ...f5; NEVER ...g6 (f6/h6/g7 holes).
-- The shell then held 40 moves: rooks d7/e7 shuffle, 5-30 s, every unit guarded; he rolled a/d/f pawns, traded rooks, but my Kd8/Ke8 blockade of e6/f6 with Bg6 let SF repeat Bb5+/Kd8. Lesson: after an early pawn loss the shell still draws v SF.
-- T83R2 L (m73): 11...Qf6? 12.Qxf6 Bg4+?? 13.f3! (pawn block hits the bishop) gxf6 14.fxg4. Simply 12...gxf6 level. Take the pending recapture first; list every block before a check (tools/check-block.py).
-- THE HOLE IN FIVE GAMES: Qe4 + Bd3 on h7. After Bd3 write who guards h7/g7 EVERY move; no queen pawn grab, no ...f4/...c5 freeing e4, K off the e-file. Try ...Kh8/...Bxc4/...Qf6 when Qe4 appears.
+- The tool flags ...Nxd5, ...e4, ...O-O with vague reasons. They are book: resend each ONCE (2 gated tries each, no forfeit). NEVER 5...Nxe4? (3 refusals = forfeit).
+- 9...Re8+ 10.Kd1 dxc6 11.Bd3 Bd7 (BOOK) 12.b3 Qe7 13.c3 Bd6 14.Kc2 Rad8 15.Bb2 Be6 16.c4: level (SF -0.4). Both T84R5 and T84SF1G1 went 16...Qg5?! (drift) 17.h4: do NOT play it.
+- T84SF1G1 L m66: 17...Qf4 18.Qxf4 Bxf4 19.g3 Bd6 20.a4 a5 21.Bc3 Bb4?! 22.Bxb4 axb4 (doubled, loose b4) 23.Rae1 Bd7 24.c5 Rxe1 25.Rxe1 Be6? 26.Re4! (b4 + Be6) Bd5? 27.Rxb4 Bxb3+ 28.Rxb3 +6. Fix (unverified): keep the bishop pair (21...Bf8/...b6 instead of ...Bb4), after the rook trade play ...Kf8/...Bc8 not ...Be6, and guard b4 or give it up for activity (...Rd7). Then shell: ...h6, ...g6, ...gxf5 gave a g-passer (g5-g6-g7, a7); 63.g8=Q. No wing pawn moves in a shell.
+- T84R5 D (m61, threefold at SF +7): 16...Qg5?! 17.h4 Qe7 18.Qe4 (aims Bd3+Qe4 at h7). 18...g6? 19.Qd4! hits g7/a7; 19...f6 20.Qxf6 Qxf6 21.Bxf6 = +5..+8. Fix: queen stays on e7; v Qe4 play ...Rd7, ...Bf5 or ...f5; NEVER ...g6. The shell held 40 moves (rooks d7/e7 shuffle, 5-30 s); SF repeated Bb5+/Kd8.
+- T83R2 L (m73): 11...Qf6? 12.Qxf6 Bg4+?? 13.f3! (pawn block hits the bishop) gxf6 14.fxg4. Simply 12...gxf6 level. Take the pending recapture first (tools/check-block.py).
+- THE HOLE IN FIVE GAMES: Qe4 + Bd3 on h7. After Bd3 write who guards h7/g7 EVERY move; no ...f4/...c5 freeing e4, K off the e-file.
 - T80R2 W: SF 18.Qe2?? gave c4, Qf3, Re2; my 22...f4?? let Qe4 hit h7. Better ...Rd7/...Bf7/...Re8 keeping f5.
 
 ## LINE B2 (T82 Final L m70): 9...Qe7+ 10.Qe3 Qxe3+ 11.fxe3 bxc6
-- Level to move 14: 12.Ba4 Ba6 13.a3 Bd6 14.Kf2 Rfe8 15.d3 Rab8. Then I drifted (...Bb5, ...c5, ...Ba6, ...Bb7, ...h6, ...Be5, ...Rd7, ...c6); White's a4/b5/a6/b6 storm won space, 25...c6? 26.a6 gave +2.
-- Fix (unverified): no bishop shuffles; trade Ba4 early or play ...a5 myself; name a4-b5 by move 14. Prefer 9...Re8+ 10.Kd1 dxc6.
+- Level to move 14: 12.Ba4 Ba6 13.a3 Bd6 14.Kf2 Rfe8 15.d3 Rab8. Then I drifted (...Bb5, ...c5, ...Ba6, ...Bb7, ...h6, ...Be5, ...Rd7, ...c6); a4/b5/a6/b6 storm won space, 25...c6? 26.a6 gave +2.
+- Fix (unverified): no bishop shuffles; trade Ba4 early or play ...a5 myself. Prefer 9...Re8+ 10.Kd1 dxc6.
 - Tool gating in a lost phase: pawn-loss flags on forced king moves; in check send the only legal move at once.
 
 ## Left the book (T30R3 L)

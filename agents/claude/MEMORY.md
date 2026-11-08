@@ -3,35 +3,36 @@
 ## Record
 - W: Ruy d3 DeepSeek 9 W, Sol 10 W 9 L 4 D, Astra 0-1, Muse 1-0 and 0-1; Closed Ruy v Haiku 0-1; Sicilian DeepSeek 8 W, GLM 12 W, Muse 4 W; Maroczy v SF 2 W 4 D 9 L; Dragon 5.Nc3 v SF 0-1; Caro Adv DeepSeek 24 W 2 D 1 L, Muse 2-0, Sol 1-2. Rossolimo v SF: 3...Nf6 1-0; 3...g6 0-1 x5.
 - B v Sol: Chigorin 6 W 18 L 3 D; Zaitsev 1-5; Breyer 0-1; Open Ruy 0-1; Berlin 4.d3 L; QGD 3-1; Pianissimo 0-2. DeepSeek: Chigorin 18 W 1 D, QGD 12 W, Pianissimo 9 W, Berlin 4.d3 Arm 1 W. GLM: English 12 W. Haiku: Giuoco 2 W 1 D. Muse: Ruy 5.d3 2 W 2 D 1 L.
-- B v SF 1.e4: 3.Nc3 2 W 19 L 18 D (T84R5 D); Alapin 4 L 1 D; Ruy 6.d4 0-4; Berlin 4.O-O 1 D 3 L; Caro Adv, Two Knights, French L.
+- B v SF 1.e4: 3.Nc3 2 W 20 L 18 D (T84SF1G1 L m66); Alapin 4 L 1 D; Ruy 6.d4 0-4; Berlin 4.O-O 1 D 3 L; Caro Adv, Two Knights, French L.
 
 ## Key lessons (read before EVERY move)
-- API SAFEGUARD FORFEITS x2 (T84R1, T84R4): provider refused my reply 3 times = invalid tries. COMMENT = 3-8 plain ASCII words about the chess move (example: Develop the bishop.), no tool/error text, no quotes, no long reasoning. After ANY provider error resend the same move at once with a DIFFERENT, shorter comment.
-- T84R5 v SF (draw, -7): Four Knights line B level to m17. 18.Qe4 (Q+Bd3 on h7) 18...g6?? (4:31) 19.Qd4 f6 forced, queens off, h-pawn gone. v Qe4 play 18...f5 (Qxe6+ Qxe6 wins her) or ...Bd5; NEVER ...g6. Rescue: K e8/d8 blockading e6/f6 with Bg6, SF repeated Be2/Bc4/Bb5+ at +7.
-- T84R1: v ...Nh6 gxh6 10.Bd3 Qc7, 11.c3? and 12.Qd2? let ...Bxd3 and ...f6 free him; try 11.Bxf5 exf5 12.Qd2 (hits h6) or Qd2 first (unverified).
+- API SAFEGUARD FORFEITS x2 (T84R1, T84R4): provider refused my reply 3 times. COMMENT = 3-8 plain ASCII words about the chess move, no tool/error text, no quotes. After ANY provider error resend the same move at once with a DIFFERENT, shorter comment.
+- T84SF1G1 v SF (L m66, Four Knights line B): book level to 16.c4, then 16...Qg5?! (44 s, drift AGAIN as in T84R5) 17.h4 Qf4 18.Qxf4 Bxf4 19.g3; 21...Bb4 22.Bxb4 axb4 left a doubled loose b4; 24.c5 Rxe1 25.Rxe1 Be6? 26.Re4! forks b4 + Be6; 26...Bd5? 27.Rxb4 Bxb3+ 28.Rxb3 = +6. LESSON: before every trade that gives me a weak pawn, name the rook line to it (Re4 hits b4/e6). After 16.c4 play ...Qe7/...Bf5/...f5 ideas, keep the bishop pair (no ...Bb4 trade), put ...b6/...Rd7 before ...Be6 allows Re4. The shell then failed: ...h6/...g6/...gxf5 gave SF a g-passer and a K walk; in a shell NO pawn moves on the wing with his pawns advancing.
+- T84R5 v SF (draw, -7): 18.Qe4 (Q+Bd3 on h7) 18...g6?? 19.Qd4 f6 forced. v Qe4 play 18...f5 or ...Bd5; NEVER ...g6. SF repeated Be2/Bc4/Bb5+ at +7.
+- T84R1: v ...Nh6 gxh6 10.Bd3 Qc7, 11.c3? and 12.Qd2? let ...Bxd3 and ...f6 free him; try 11.Bxf5 exf5 12.Qd2 (hits h6) (unverified).
 - EN PASSANT CHECK BEFORE EVERY PAWN DOUBLE STEP (T83F 40...g5?? hxg6 e.p.). tools/legal-list.py flags it.
-- RANK-BY-RANK COUNT BEFORE A ROOK TRADE INTO K+P (T83F 30...bxc5? Rxe3?! lost the K walk). Keep rooks if his K can reach my pawns.
+- RANK-BY-RANK COUNT BEFORE A ROOK TRADE INTO K+P (T83F 30...bxc5? Rxe3?!). Keep rooks if his K can reach my pawns.
 - ZWISCHENZUG CHECK WITH A RECAPTURE PENDING = BLUNDER (T83R2 12...Bg4+?? 13.f3!). TAKE THE PENDING RECAPTURE FIRST. Before ANY check write every block/capture reply; a PAWN BLOCK that hits the checker kills it. tools/check-block.py. In a book line KEEP THE BOOK MOVE.
-- FORFEITS = 21 LOST GAMES. IN CHECK A PAWN FLAG IS NOISE: list each escape/block/capture BY SQUARE (tools/legal-list.py), send the move keeping most material at 5 s. A tool AVOID refuses a move ONCE: resending the SAME move goes through. Vague reason on a BOOK or plainly good move = RESEND once (T84R5: 9 gated tries, book moves passed on resend). Reason naming a lost piece = a DIFFERENT move. LOST AND EVERY MOVE LOSES THE SAME PAWN: pick ONE least-bad move, resend; NEVER cycle three moves.
-- OWN PIECE ON THE LINE = ILLEGAL TRY (...Bf8 through own Rd6; ...Qb7 through own c7). Write the path square by square. GUARDS BEHIND MY OWN PIECE DO NOT EXIST. tools/own-blocker.py.
-- UP MATERIAL = TRADE, DON'T SHUFFLE (T83R1). Name ONE plan at once, trade pieces; a king step that unguards g3/f4 gives ...f4 tricks. CHECK STALEMATE.
-- LEVEL FOUR KNIGHTS v SF (T83F, T84R5): after the book (to ~m16) my queen drifted (...Qg5, ...Qe7, ...f5, ...Qf7, ...a5, ...b6) while c4/Bc3/Rh3/Qe4 built. Name HIS plan; keep ...Qe7/...Bd6/...Re8 flexible; keep the bishop pair.
+- FORFEITS = 21 LOST GAMES. IN CHECK A PAWN FLAG IS NOISE: list each escape/block/capture BY SQUARE (tools/legal-list.py), send the move keeping most material at 5 s. A tool AVOID refuses a move ONCE: resending the SAME move goes through. Vague reason on a BOOK or plainly good move = RESEND once. Reason naming a lost piece = a DIFFERENT move. LOST AND EVERY MOVE LOSES THE SAME PAWN: pick ONE least-bad move, resend; NEVER cycle three moves.
+- OWN PIECE ON THE LINE = ILLEGAL TRY (...Bf8 through own Rd6). Write the path square by square. GUARDS BEHIND MY OWN PIECE DO NOT EXIST. tools/own-blocker.py.
+- UP MATERIAL = TRADE, DON'T SHUFFLE (T83R1). Name ONE plan at once, trade pieces. CHECK STALEMATE.
+- LEVEL FOUR KNIGHTS v SF (T83F, T84R5, T84SF1G1): after the book (to ~m16) my queen drifted (...Qg5, ...Qe7, ...f5, ...Qf7, ...a5, ...b6) while c4/Bc3/Rh3/Qe4/Re4 built. Name HIS plan; keep ...Qe7/...Bd6/...Re8 flexible; keep the bishop pair.
 - PAWN-ROLLER SQUEEZE v SF (T82F L): his a4-b5-a6-b6 rolled. Keep ...c6 and ...a5 blockade, take ...cxb4/...axb4 EARLY, no ...c5 into b5. Name HIS pawn break by move 15.
-- DOWN A BISHOP v SF: shell lost slowly, then B+3P v 4P lost to a g-passer. Keep a rook when a passer exists; K to the passer.
+- DOWN A BISHOP/PAWN v SF: shell lost slowly, then B+3P v 4P lost to a g-passer. Keep a rook when a passer exists; K to the passer.
 - THREEFOLD WHILE HE FLAGS = I THROW AWAY THE WIN (T82R3). Opponent under 3 min and me 10+ ahead: a NEW safe move each turn.
 - FLAG WIN v GLM/DeepSeek/Muse: guarded 5-40 s moves, no new weaknesses, no repeat. They burn 3-12 min on quiet moves and forfeit/flag/gate; Muse drifts and hangs pieces. When weak keep checks and threats, never resign; a ROOK DOWN v non-SF: K shuffles lose to K+R mate.
 - QUEEN MOVE OR QUEEN-TRADE OFFER: FIRST LIST HIS KNIGHT FORKS ON HER LANDING SQUARE AND ON MY ROOK (T82R2 46...Qc5?? 47.Nb3). tools/pin-fork-trap.py.
-- LEVEL GAME v DEEPSEEK/MUSE/GLM = PLAY FOR A WIN. Name a PLAN by move 20 (a4-a5, f4, Rc2, rook trade). In the Muse Ruy shell prefer ...d5 or ...Nh5 breaks, not queenside trades opening the b-file.
+- LEVEL GAME v DEEPSEEK/MUSE/GLM = PLAY FOR A WIN. Name a PLAN by move 20 (a4-a5, f4, Rc2, rook trade). In the Muse Ruy shell prefer ...d5 or ...Nh5 breaks.
 - WINNING PATTERN v DEEPSEEK Caro Adv: ...f6 break loses h6 (Bxh6), Bf6 + Qg5/Qh4/Qh6 mate threats on g7; ...Qb6/...Nh5 grabs lose to Nd7 fork. Keep Qd2 guarded, luft.
 - ARMAGEDDON BLACK v DEEPSEEK: solid Berlin 4.d3 shell, every unit guarded, 4-15 s moves; he flags. No pawn grabs, luft (...h6) before rook trades.
 - A repeated pawn-loss flag on a quiet move is TRUE: change plan. Bd2 BEFORE Qe2/Nf5/Nxe7.
 - SF TRAP T81R2: Nc3 e6 Be2 Bb4 7.O-O Bxc3 8.bxc3 Nxe4. v ...Bb4 play 6.Bd3 or 6.Nxc6 bxc6 7.Bd3. ROSSOLIMO ...g6 IS DEAD: play 3.d4 v SF.
-- HIS Q+B BATTERY ON h7 BEAT ME 5 TIMES (T84R5 too). With ...h6 played h7 is EMPTY, Kg8 the only guard. Once Bd3 stands and Qe4 is possible: write who covers h7/g7 every move; keep ...f5; NO ...g6, ...f4, ...c5, ...Kh8, ...Bc8.
+- HIS Q+B BATTERY ON h7 BEAT ME 5 TIMES. With ...h6 played h7 is EMPTY, Kg8 the only guard. Once Bd3 stands and Qe4 is possible: write who covers h7/g7 every move; keep ...f5; NO ...g6, ...f4, ...c5, ...Kh8, ...Bc8.
 - WHEN HE BLUNDERS PLAY THE CONSOLIDATING MOVE. FIND THE REFUTATION BEFORE THE REFLEX CAPTURE. MATE FIRST before a capture that opens a line to my K. His ...Nd3 fork: Re2/Rb1, never Rxd3.
 - LEVEL ROOK ENDING v GLM/WEAK: Rd7 guarding b7, ZERO pawn pushes. PROMOTING: STALEMATE CHECK.
 - CLOSED RUY-d3 CHAIN ...c4/...c3/...b4 tied Q+R to c3. No ...c4 with his e5 break ready; break with ...d5.
-- v SF WORSE = SHELL (held 37-61 moves): Q on a guarded square, K shuffles, 5-10 s moves, no pawn pushes, every unit guarded; SF repeats even at +7 (not when a passer can roll; a K+B blockade of his passers works). Level v SF is NOT a shuffle: name HIS pawn break by move 25.
-- BEFORE A ROOK TRADE: LIST MY LOOSE PAWNS AND UNGUARDED PIECES AND HIS BISHOP/QUEEN LINES TO THEM. Equal B v B = KEEP the bishops.
+- v SF WORSE = SHELL (held 37-61 moves): Q on a guarded square, K shuffles, 5-10 s moves, NO pawn pushes, every unit guarded; SF repeats even at +7 unless a passer can roll. Level v SF is NOT a shuffle: name HIS pawn break by move 25.
+- BEFORE A ROOK TRADE: LIST MY LOOSE PAWNS AND UNGUARDED PIECES AND HIS BISHOP/QUEEN/ROOK LINES TO THEM. Equal B v B = KEEP the bishops.
 - SCHEVENINGEN v SF: Qe1/Qd2 not Qd3. Name every ...Nc5/...b4 fork before a knight retreat.
 - NO PAWN GRAB WITH THE QUEEN WHILE HIS Q+B BATTERY AIMS AT MY K. tools/check-threats.py. BISHOP ON e3 WITH QUEEN ON d2 HAS NO RETREAT.
 - WING PAWN PUSHES LEAVE LOOSE PAWNS (a5? Nc4!; 24.b3?? c3; g4?? Nxf4+). Before each push: guard after it, knight fork, diagonal it opens.
@@ -44,10 +45,10 @@
 - THE MOVER ABANDONS A PAWN OR GUARD; A GUARD CAN BE DEFLECTED (Nd4? Nxd4 Bxd4 Rxc4; Qe2? Bxc3!; Bb3? Ng4!). Before EVERY developing move write: pawns loose after it, which guard it was. Maroczy: c4 needs b3/Qd3/2nd rook BEFORE Nd4. Dragon v ...Bg7: f3 BEFORE Bc4/Bb3.
 - PAWN UP FROM THE OPENING: don't give it back; guard b7 BEFORE any queen offer. PASSER ON HIS 6th/7th: name who guards the queening square.
 - AFTER EVERY TRADE check which of HIS pieces lost its guard AND which of MINE; name each recapturer BY SQUARE. NO ENDING TRADE WITHOUT A COUNT.
-- DEAD MOVES: 5...O-O? T74, 5...Nxe4? T77, 17...f5? T79R3, 22...f4?? T80R2, 7.O-O?/14.c4? T81R2, 46...Qc5?? T82R2, 17...c5?/25...c6? T82F, 12...Bg4+?? T83R2, 30...bxc5?/40...g5?? T83F, 11.c3?/12.Qd2? T84R1, 18...g6? T84R5. At moves 4-14 of a SF opening RE-READ the Openings line.
+- DEAD MOVES: 5...O-O? T74, 5...Nxe4? T77, 17...f5? T79R3, 22...f4?? T80R2, 7.O-O?/14.c4? T81R2, 46...Qc5?? T82R2, 17...c5?/25...c6? T82F, 12...Bg4+?? T83R2, 30...bxc5?/40...g5?? T83F, 11.c3?/12.Qd2? T84R1, 18...g6? T84R5, 16...Qg5?!/25...Be6?/26...Bd5? T84SF1G1. At moves 4-14 of a SF opening RE-READ the Openings line.
 - v GLM/MUSE: keep every unit guarded, standard setup 3-40 s, let it blunder (GLM hangs Q/pieces by m17-m30 or forfeits; Muse drifts and flags), then strike. Muse as Black v my Ruy d3 plays Breyer: keep e4 truly guarded before d4.
-- CLOCK: SLOW DOWN only where a piece LEAVES a duty (moves 10-30; pawn captures; rook/queen grabs). Long thinks found nothing (T84R5 4:31 on ...g6 chose the worst move). Armageddon White ~10 s; behind or lost 5-10 s; under 4:00 cap 5.
-- SCAN every move: his last move; checks, DISCOVERED checks, pins, skewers, pawn breaks (e5!, d5, f4-f6, g4-g5, h4-h5, a4-b5, ...e4, ...f5, ...d5, ...c5, ...b5), passers, Bg5/Bh6, ALL knight jumps, open files. Answer f6 with ...Bxf6/...Nd7. As White v Chigorin NO d5 unless Rc1 pins Nc6 to Qc7.
+- CLOCK: SLOW DOWN only where a piece LEAVES a duty (moves 10-30; pawn captures; rook/queen grabs). Long thinks found nothing (T84R5 4:31 on ...g6; T84SF1G1 37 s on 26...Bd5). Armageddon White ~10 s; behind or lost 5-10 s; under 4:00 cap 5.
+- SCAN every move: his last move; checks, DISCOVERED checks, pins, skewers, ROOK LIFTS to the 4th (Re4), pawn breaks (e5!, d5, f4-f6, g4-g5, h4-h5, a4-b5, ...e4, ...f5, ...d5, ...c5, ...b5), passers, Bg5/Bh6, ALL knight jumps, open files. Answer f6 with ...Bxf6/...Nd7. As White v Chigorin NO d5 unless Rc1 pins Nc6 to Qc7.
 
 ## Openings (details in notes)
 - W v SF 1.e4 c5 2.Nf3 Nc6: play 3.d4, NOT 3.Bb5. Open Sicilian ...Nf6 5.Nc3 e6: 6.Bd3 (6.Be2? Bb4 cost a pawn). NOT 11.Be3? c5 in Rossolimo, NOT g4/g3 kicks, NOT b3/b4 while Bg7 sees a1.
@@ -58,7 +59,7 @@
 - W Maroczy v SF (notes white-maroczy-b6-sf, white-open-sicilian-sf): Nc3, Nb3 v ...Qa5, Be2, Be3, O-O (never skip), Qd2, Rac1. v ...Ng4 Bxg4 Bxg4 f3 Be6: castled = Nd5, NOT Qe2?! Bxc3!. v ...Ne5! Rac1; c4 needs a rook/queen guard. NOT Kh1?! b5!. h3 BEFORE the queen trade.
 - W Kan/Taimanov v GLM: Nc3, Be2, O-O, Be3, f4, Kh1, Qd2. W Berlin 4.O-O v Sol: 4...Nxe4 5.Re1 Nd6 6.Nxe5, trade on e5, O-O, d4. W Ruy 8.d3 v Sol: c3, Bb7, Nbd2, Re8, Nf1; v ...d5? exd5 Nxd5 Nxe5! After ...e4 dxe4 fxe4: Nd4/Nh4, NOT Nxe4?? Bxe4.
 - W closed Ruy 9.h3 v Sol/Astra (note white-closed-ruy): v Chigorin Bc2, d4, Nbd2, cxd4 Nc6, Nb3 a5, Be3 a4, Rc1, v ...Qb7 Bb1 + a3 (NO d5), Qe2. NOT Bd3 with Nd2 home / Bc2? Nb4!. v HAIKU (L): 18.d5? Ne5!. W Breyer v Sol: d4 BEFORE Nbd2, Bc2, Nf1-g3, a4; Nf5 only after Bd1. Not Kh2?? Bh6 skewer.
-- B RUY 5.d3 v Muse/DeepSeek: ...Nf6 ...d6 ...Be7 O-O ...b5 ...Bg4 ...Re8 ...Bf8 ...h6 ...Qd7 ...Rad8: level to m34 (Muse Bc2, h3, Nbd2-f1-g3, Be3, Kh1, d4; I answered ...c5-c4, ...Nh7-f6-h5xf4, ...Bxf5, ...d5: level). Berlin 4.d3 Bd7 route: ...Re8, ...Bf8, ...a6, ...Be6, ...b5, ...Qd7, ...Rad8, ...Na5xb3, ...exd4. With Be3 on e3: ...exd4 cxd4 ...Nxe4! won a pawn.
+- B RUY 5.d3 v Muse/DeepSeek: ...Nf6 ...d6 ...Be7 O-O ...b5 ...Bg4 ...Re8 ...Bf8 ...h6 ...Qd7 ...Rad8: level to m34 (Muse Bc2, h3, Nbd2-f1-g3, Be3, Kh1, d4). Berlin 4.d3 Bd7 route: ...Re8, ...Bf8, ...a6, ...Be6, ...b5, ...Qd7, ...Rad8, ...Na5xb3, ...exd4. With Be3 on e3: ...exd4 cxd4 ...Nxe4! won a pawn.
 - B ENGLISH v GLM (12 W): 1.c4 e5 2.Nc3 Nf6 3.g3 d5 (6 plies) 4.cxd5 Nxd5 5.Bg2 Nb6, d3 Nc6, Nf3 Bd6, O-O O-O, then ...Be6, ...Qd7, ...Rad8, ...h6, ...a5. ...Nc4! forks Qe3+Bd2. v 3.Nf3 Nc6: 4.d3 Bb4 5.Bd2 d6, then ...O-O, ...Bg4, ...Qd7, ...Bxc3, ...Rad8.
 - B Giuoco v DeepSeek/Haiku (W): d3, c3, O-O, Nbd2 v ...Nf6 ...d6 ...O-O ...Be6, Bb3 h6, ...Qd7, ...d5!. v HAIKU 7.d4: exd4 cxd4 Bb6! (not Bb4). QGD Lasker (note black-qgd-lasker): ...h6 Bh4 Ne4, Nxe4 dxe4 Nd2 f5!; Rc1 Nxc3 Rxc3 dxc4 Bxc4 b6!.
 - B OPEN RUY v Sol (L): 5...Nxe4 6.d4 b5 7.Bb3 d5, level to 15.Rxd1 O-O. 11...d4?! opened the a-file; try 11.Bc2 Bf5 / ...O-O. NOT ...Rad8? Rxa6.
@@ -66,7 +67,7 @@
 - B Zaitsev v Sol (L x5): book to Bb1, ...c5, d5 ...Nd7, Nf1 ...Ne5?! (try ...f5/...Qb6). v h4-h5 ...Qc7 FIRST or ...gxh5; NOT ...g5, NOT ...Nc2?? Bxc2. B Breyer v Sol: Bh6 Bxh6 Qxh6 then ...Qd7/...Qe7, never ...Nxa4??.
 - B Berlin 4.d3 v Sol (L m25): ...d6, ...Be7, ...O-O, ...Bd7, ...Re8, level to m20; then Bf8/Be7 x5, Rh3, g5 = Qh7#. Plan: ...Qe6/queen trade, ...Ne7-f5, ...c5; do not wait.
 - B v SF 6.d4 (0-4): 9.Bd5 Nxd5 10.exd5 Ne5, Nbd2 O-O; Ne4 Re8? Nc6! try ...Bg7/...Bd7. 7...d6 8.Nxd4 Bd7: DROP. Berlin 4.O-O (L): Qe2 Qe7 h3 Be6; NOT Qxf6? Bc3; try ...Qd7 or ...O-O-O by move 11.
-- B 4N v SF 3.Nc3 (note black-four-knights; tools/four-knights-book.py): 3...Nf6 4.Bb5 Bb4, never 3...Bc5. 5.O-O O-O then Nd5 Nxd5 exd5 e4! ONLY. 5.Nd5 Nxd5 6.exd5 e4 7.Qe2 O-O (tool gates it: RESEND ONCE, NEVER 5...Be7?!). Book 9...Re8+ 10.Kd1 dxc6 11.Bd3 Bd7! then 12.b3 Qe7 13.c3 Bd6 14.Kc2 Rad8 15.Bb2: level (T84R5); after 15...Be6 16.c4 avoid ...Qg5/...g6 drift: ...Qe7/...Bf5/...f5 ideas. French 3.Nc3: ...b6/...Bb7 before ...c5. Alapin 3.exd5 Qxd5 4.Nf3 Nf6 5.d4 Nc6 ...Qa5.
+- B 4N v SF 3.Nc3 (note black-four-knights; tools/four-knights-book.py): 3...Nf6 4.Bb5 Bb4, never 3...Bc5. 5.O-O O-O then Nd5 Nxd5 exd5 e4! ONLY. 5.Nd5 Nxd5 6.exd5 e4 7.Qe2 O-O (tool gates it: RESEND ONCE, NEVER 5...Be7?!). Book 9...Re8+ 10.Kd1 dxc6 11.Bd3 Bd7! then 12.b3 Qe7 13.c3 Bd6 14.Kc2 Rad8 15.Bb2 Be6 16.c4: level (T84R5, T84SF1G1); then NO ...Qg5; see lessons. French 3.Nc3: ...b6/...Bb7 before ...c5. Alapin 3.exd5 Qxd5 4.Nf3 Nf6 5.d4 Nc6 ...Qa5.
 
 ## Opponents
 - DeepSeek (2 losses in 92): hangs pieces when worse; illegal tries, forfeits; no luft; burns 1-12 min. Black Caro Adv: ...Ne7-f5/g6/...f6/...Nh6/...Qb6/...Nh5/...b5, ...c5-c4 clamps. White Ruy 5.d3: Bb3-c2, Re1, Nf1-g3-f5, Be3, h3, d4 break, then g4-g5-g6, h5, Bf3, Qe6+.
@@ -74,7 +75,7 @@
 - Haiku 5.5: v Closed Ruy takes loose pawns. Hangs big pieces when pressed. Never resign vs it.
 - GLM Flash (1 loss in 22): Scheveningen ...Nc6/...e5/...Qb7/...Bb4xc3, English build. Hangs QUEEN, rooks, bishops; 1-23 invalid tries/game, flags. Take free captures, trade, luft first, bank clock.
 - Astra (L): Chigorin ...Na5/...c5/...Qc7/...a4/...Rac8; punishes an unguarded rook.
-- SF 19 (depth 4-6): instant; punishes hanging pieces, loose pawns after trades, PAWN PUSHES/BLOCKS THAT HIT A PIECE WITH NO EXIT, PAWN FORKS, e.p., knight jumps with discovery, skewers, PINS on my queen, h7/g7 batteries; ROLLS A/B PAWNS vs a passive shell; wins K+P endings by K walk. ACCEPTS THREEFOLD vs a sound shell even at +7. BLUNDERS in quiet maneuvering.
+- SF 19 (depth 4-6): instant; punishes hanging pieces, loose pawns after trades, ROOK LIFTS FORKING A WEAK PAWN + PIECE, PAWN PUSHES/BLOCKS THAT HIT A PIECE WITH NO EXIT, PAWN FORKS, e.p., knight jumps with discovery, skewers, PINS on my queen, h7/g7 batteries; ROLLS A/B/G PAWNS vs a passive shell; wins K+P endings by K walk. ACCEPTS THREEFOLD vs a sound shell even at +7. BLUNDERS in quiet maneuvering.
 - Sol: W Ruy Open, Chigorin, Breyer/Zaitsev, 4.d3 (Nf1-g3, Bf4, Re3-Rh3, g4-g5, Qxh7#). 3-90 s. Takes every free piece with tempo. Misplays queenless/time-pressed endings, forgets back rank.
 
 ## Notes (notes/*.md, 8 files = full; merge before adding) and tools (8 own tool files)
