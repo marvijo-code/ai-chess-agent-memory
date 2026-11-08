@@ -1,6 +1,7 @@
 # Chess memory - Muse Spark 1.3 Contributor (3600+10)
 
 ## Record
+- T85R3 B vs SF loss forfeit m13 Bb5 Bxc6 exd6 fork Qc7 gated x3.
 - T85R2 W vs DeepSeek draw threefold m43 Classical h5 shell level. Up 28 vs 6 threw flag with Qd3 Qe3 loop. 1 illegal gated Qe3.
 - T85R1 B vs Flash win forfeit m30 English Ba7 trap Rc7 shell. 1 illegal gated Kg8.
 - T84F-Arm W vs SF loss on time m28 Dragon Bc4 abandon Ke2 walk. 1 illegal gated a3.
@@ -12,10 +13,10 @@
 - T84R1 W vs Flash win forfeit m27 English Attack f4 f5. 1 illegal.
 - T83-3rd W vs Flash loss forfeit m32 Re8 f4 pin. 1 illegal.
 - T83R5 W vs Sonnet loss m79 Ruy drift. 5 illegal.
-- T83R4 B vs Flash draw m44 Scheveningen Kg8 Kh8 loop. 4 illegal.
 
 ## Key lessons (read before EVERY move)
-- LEGALITY FIRST: after 1 reject redraw FEN, pick different piece and idea, never resend. 3 rejects forfeit, tool refusal counts. In check list replies once and send in 5-10s. After 1 refusal never resend same UCI.
+- LEGALITY FIRST: after 1 reject redraw FEN, FEN-walk piece square path, pick different piece and idea, never resend. 3 rejects forfeit, tool refusal counts. In check list replies once and send in 5-10s. After 1 refusal never resend same UCI. GATED = stale square, never variant of same idea.
+- BB5 BXC6 E5 POISON T85R3: after Bxc6 bxc6 e5 never Bb7 Rb8 Qc7 slow while e5 lives. exd6 forks Qc7+Be7. Keep Nf6 Nd7 O-O first, hold d6 twice, sweep exd6 Qb3 Ba7 before any Qc7. Never Q+B both on d6-pawn squares.
 - FLAG LEAD NO REPEAT T85R2: up 15min+ level never Qd3 Qe3 Rc6 Rc7 loop. Down shell invites repeat, up clock kills it. New safe move every turn to flag, Kb2 Ka1 Rd1, count h5 g3 guards first.
 - CLASSICAL B3 RG4 POISON T85R2: vs Nd5 Nf4 never b3 opening c3, never Rh4 Rg4 f3 loosening g3. Keep Kb1 Qc2 Qe2 Rc1 Rc2 doubled, meet Nf4 with Bxf4 Qxd2 level.
 - DOWN EXCHANGE SHELL DRAWS SF T84F: down rook for minor, keep queen central, knight blockading, rook on open file, king loop only. No pawn pushes when down, every unit double-held, invite repeat vs bank. This drew +8 to +10.
@@ -34,6 +35,7 @@
 - ARMAGEDDON CLOCK T84F-Arm: White needs win so draw is loss, Black draw odds so draw is win. White must attack with recapture named, no Ke2 walk, no Rb1/Qd3 drift. Level or down huge still 5-10s, one try, never 1-2min or gated repeat. Lost on time 0:38 vs 12:09 at +10.
 
 ## Openings
+- B Bb5 Bxc6: Nf6 Nd7 O-O first. Never Bb7 Rb8 Qc7 vs e5 live. Hold d6 twice, sweep exd6 Qb3 Ba7.
 - B Morra: a6 e6 Nf6 first. Never count extra, keep d6 twice.
 - B Ruy Closed: a6 b5 d6 O-O Bd7 Re8. Hold d6 twice.
 - B English: d6 Be7 O-O Re8 Be6 Qc7 a6 Nd7 Nc5. Vs Ba7 keep Rc7 Nbd7 Qd6 Rec8. No Nd4 without exd4 named.
