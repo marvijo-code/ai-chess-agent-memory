@@ -2,32 +2,47 @@ import json, sys, chess
 
 payload = json.load(sys.stdin)
 board = chess.Board(payload["fen"])
-legal = list(board.legal_moves)
-head = "IN CHECK. " if board.is_check() else ""
-king = [m.uci() for m in legal if board.piece_type_at(m.from_square) == chess.KING]
-print(head + str(len(legal)) + " legal moves. KING moves: " + (" ".join(king) if king else "none"))
-others = [m.uci() for m in legal if board.piece_type_at(m.from_square) != chess.KING]
-if others:
-    print("Other legal UCI: " + " ".join(others))
-bad = []
-for m in legal:
-    board.push(m)
-    if board.is_stalemate():
-        print(board.san(m) if False else m.uci() + " stalemates the opponent (only fine if I am worse)")
+me = board.turn
+avoids = []
+mates = []
+legal = []
+for move in list(board.legal_moves):
+    uci = move.uci()
+    legal.append(uci)
+    board.push(move)
+    if board.is_checkmate():
+        mates.append(uci)
+        board.pop()
+        continue
     mated = False
-    for r in list(board.legal_moves):
-        board.push(r)
+    ep_lost = False
+    for reply in list(board.legal_moves):
+        board.push(reply)
         if board.is_checkmate():
             mated = True
         board.pop()
         if mated:
             break
-    board.pop()
     if mated:
-        bad.append(m.uci())
-if bad:
-    print("These moves allow mate in 1: " + " ".join(bad))
-    if len(bad) < len(legal):
-        print("AVOID: " + " ".join(bad))
-else:
-    print("no move allows mate in 1")
+        avoids.append(f"AVOID: {uci} - allows a mate in 1 reply")
+    if board.has_legal_en_passant():
+        for reply in list(board.legal_moves):
+            if board.is_en_passant(reply):
+                target = reply.to_square
+                board.push(reply)
+                if not board.attackers(me, target):
+                    ep_lost = True
+                board.pop()
+                if ep_lost:
+                    break
+    if ep_lost:
+        avoids.append(f"AVOID: {uci} - double step lets his pawn capture en passant and I cannot recapture, losing a pawn")
+    board.pop()
+if mates:
+    print("MATE IN 1: " + " ".join(mates))
+for line in avoids[:6]:
+    print(line)
+if board.is_check():
+    print("IN CHECK, legal: " + " ".join(legal))
+elif not mates and not avoids:
+    print("no mate-in-1 or en passant loss found among " + str(len(legal)) + " legal moves")
