@@ -3094,24 +3094,24 @@
      "warm_hit_rate": 0.9409
     },
     "DeepSeek V4.1 Flash": {
-     "calls": 141,
-     "input": 6186917,
-     "cached": 5485696,
-     "output": 757672,
-     "warm_input": 6065971,
-     "warm_cached": 5472640,
-     "hit_rate": 0.8867,
-     "warm_hit_rate": 0.9022
+     "calls": 152,
+     "input": 7160991,
+     "cached": 6371968,
+     "output": 853822,
+     "warm_input": 7040045,
+     "warm_cached": 6358912,
+     "hit_rate": 0.8898,
+     "warm_hit_rate": 0.9032
     },
     "Muse Spark 1.3": {
-     "calls": 134,
-     "input": 3640539,
-     "cached": 3366912,
-     "output": 814147,
-     "warm_input": 3523053,
-     "warm_cached": 3295254,
-     "hit_rate": 0.9248,
-     "warm_hit_rate": 0.9353
+     "calls": 143,
+     "input": 3945900,
+     "cached": 3656057,
+     "output": 915684,
+     "warm_input": 3828414,
+     "warm_cached": 3584399,
+     "hit_rate": 0.9265,
+     "warm_hit_rate": 0.9363
     },
     "GLM 5.3 Flash": {
      "calls": 146,
