@@ -2971,11 +2971,11 @@
      "retries": 1
     },
     "GLM 5.3 Flash": {
-     "games": 1,
-     "read_in_prompt": 1,
-     "read_latest": 1,
-     "reflections": 1,
-     "memory_updates": 1,
+     "games": 2,
+     "read_in_prompt": 2,
+     "read_latest": 2,
+     "reflections": 2,
+     "memory_updates": 2,
      "note_updates": 0,
      "rejected": 0,
      "errors": 0,
@@ -2993,15 +2993,15 @@
      "retries": 1
     },
     "Sonnet 5.5": {
-     "games": 1,
-     "read_in_prompt": 1,
-     "read_latest": 1,
-     "reflections": 1,
+     "games": 2,
+     "read_in_prompt": 2,
+     "read_latest": 2,
+     "reflections": 2,
      "memory_updates": 0,
      "note_updates": 1,
-     "rejected": 1,
+     "rejected": 2,
      "errors": 0,
-     "retries": 2
+     "retries": 4
     }
    }
   }
@@ -3010,7 +3010,7 @@
   "DeepSeek V4.1 Flash": "b8848a524e72",
   "Sonnet 5.5": "87bbad6dca20",
   "GPT-6.1 Sol": "9c91d450e53c",
-  "GLM 5.3 Flash": "33c91db047aa",
+  "GLM 5.3 Flash": "b7f66f6a1138",
   "Fable 5.1": "13ff882aa399",
   "GPT-6 Astra": "76c8549b88a8",
   "Haiku 5.5": "d94219e6c168",

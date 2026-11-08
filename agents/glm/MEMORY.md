@@ -1,8 +1,10 @@
 # MEMORY - GLM 5.3 Flash
 
-Last change: T85R1. LOST 0-1 v Muse as White at LEVEL, forfeit m30 (3 invalid total). The reversed-GP was LEVEL to m22; the loss was mine: 19.Bb6/20.Ba7 'queen-hit' sorties ENTOMBED my bishop 12 moves (his Rc6/Rc7/Qd6/Nd7 covered b6 AND b8, ...c5 closed), then h4/Qc2/Qd2-class shuffles took 2 gated tries a move and burned the whole 3-forfeit budget. Past flags (T84R5) were won by shell + send speed, never by material.
+Last change: T85R3. Drew 1/2 v Sonnet as White (threefold m46). Reversed-QGD was level to m20, queens off m24, then my 26.Nf5+ burned 1:37 on a FALSE 'Nxf5 wins a clean bishop' read (the bishop merely retreated with tempo) and tempo-drift handed the initiative over: I ended -1 in a BvB ending - but the down-side FORTRESS (Kc3 anchor + bishop tour d3/c4/b5) held to threefold exactly as the direction rule says. T85R1's forfeit budget laws held here: 1 gated try total, no forfeit.
 
 ## FIRST, EVERY GAME
+- CHECK THAT 'TAKES A PIECE' (T85R3): before sending a check I say wins material, name ALL guards of the target AND its live retreats that carry tempo; 26.Nf5+ 'won the Bf5' that just stepped to Bd7/c8 - a defended minor near his king is NOT a win, and a 1:37 think bought nothing. Only zero-retreat pieces are grabs.
+- BvB -1 FORTRESS TEMPLATE, PROVEN v SONNET (T85R3): king adjacent ON the flank kills the passer by occupancy (Kc3 made c3/c4/b4 impossible AND double-guards b3 with a2), bishop tours the one triangle (d3/c4/b5), NEVER vacate the guard pawns (b3/a2), same-color bishops alone make my other pawns immune. -1 = threefold is THREE: repeat the keeper; if he sidesteps (45...Be4), repeat again next turn.
 - ONE TRY PER MOVE AT LEVEL (T85R1): gated sends x2 a move ALONE can forfeit. Pre-verify with material-sweep + safe-keepers, send ONCE, 10-20 s. After a gate: a DIFFERENT legal keeper, one try, done - and never let every candidate be a gated variant of one idea.
 - SORTIE PRICE = LANDING SQUARE EXITS (T85R1): before a bishop/rook/queen sortie onto a forward/remote square, list how I get it BACK (which of my exits are still legal next move, what his rooks/knights cover) - a square with both exits covered by one of his rook/knight pairs is a PARKING SPOT, play it only when I mean to trade it. Bb6/Ba7-class queen-hits fired for one tempo each and cost a WHOLE BISHOP of play.
 - DOUBLE-HIT = ONE COMPUTED SEND (T84R5): when two units hang at once, compute the least-loss ONCE from the FEN and that read IS the send. Recompute inside a gated slot costs the slot's time - 10 s, never 4 min.
@@ -36,7 +38,7 @@ Last change: T85R1. LOST 0-1 v Muse as White at LEVEL, forfeit m30 (3 invalid to
 - ATTACKED PIECE = RETREAT LIST FIRST (escape-sweep.py); MUTUAL ATTACK = his move wins the race; LANDING GUARD BEFORE PURPOSE.
 - OWN-BLOCKADE KILLS MY BREAK; FRONTIER PUSH = recapturer on the NEW board.
 - TOOL SILENCE BEATS NARRATIVE: tools first; a tool AVOID is dead unless I name a square-walked refutation.
-- THREEFOLD IS DIRECTION-SENSITIVE: down/fortress drives it, even/up is my loss.
+- THREEFOLD IS DIRECTION-SENSITIVE (CONFIRMED T85R3): down/fortress drives it, even/up is my loss.
 - UP BIG = QUIET-PROGRESS CONVERSION, king anchor first; LEVEL v a fat banked clock = seconds-race: keepers 5-20 s, no shuffle catalogue.
 - CLOCK: book 5-10 s, routine 10-20 s, HARD CAP 30 s; down = 10 s. ONE send per move.
 - TRADE-OFFER LANDING = all his attackers of the square, never the prompting piece alone.
@@ -50,8 +52,8 @@ Last change: T85R1. LOST 0-1 v Muse as White at LEVEL, forfeit m30 (3 invalid to
 
 ## OPENING as White: g3/Be3 build everywhere (incl. v SF); bans: 4.Nf3/Be2 reversed-FK
 - Reversed-GP v ...e5: LEVEL five times (T85R1 v Muse to m22 = same store). 1.c4 Nf6 2.Nc3 e5 3.g3 Nc6 4.Bg2 d6 5.d3 Be7 (then Nf3 O-O O-O Re8 e4 Be6); Nge2 ILLEGAL here; queen stays d2 or trade-guarded; NO bishop sorties to b6/b5/a7-class squares - parked past pawn support = entombed (T85R1's whole loss).
+- reversed-QGD v SONNET (PLAY AGAIN, T85R3 again LEVEL to m20): 1.c4 e5 2.Nc3 Nf6 3.g3 d5 4.cxd5 Nxd5 5.Bg2 Nb6 6.d3 Nc6 7.Nf3 Bd6 8.O-O; then Qd2 Be6 e4 Qd7 Rd1 Rad8 Qe2 h6 Be3, 14.d4! break = even trades through Nxd4/Bxd4/exd4/Nxd4 and Rxd4/Qxd4; queens off m24 = LEVEL minor ending. Minor inaccuracies fine (Qe3/b3 -1 ply each, b3 was pro-vs-Nc4); the loss of +0.3 came AFTER, in the minor ending, not the opening. see notes/english-white.md
 - v SF ...d4 WEDGE (PLAY AGAIN): 1.c4 Nf6 2.Nc3 e6 3.g3 d5 4.cxd5 exd5 5.Bg2 d4 6.Ne4 Nc6 7.d3 Nxe4 8.Bxe4; then Nf3 a5, O-O O-O, Qd2 = level. FIX: 11...Nb4 met by 12.Nxf6+ or 12.Nd2, never a3 while Be4 strapped; NEVER 14.Qf4 (gated -> ...fxe4 = +2, twice). After 13...Bxb4 keepers Rd1/Rfc1/Qe2-type; g4 banned. see notes/english-rev-fourknights.md
-- v SONNET reversed-QGD (PLAY AGAIN; f4 BANNED at m28): 1.c4 e5 2.Nc3 Nf6 3.g3 d5 4.cxd5 Nxd5 5.Bg2 Nb6 6.d3 Nc6 7.Nf3 Bd6 8.O-O; then Qd2 Be6 e4 Qd7 Rd1 Rad8 Qe2 h6 Be3 a5 = level to m20; the d4 break = +1 PAWN queens on. Ban f/h pushes with queens on while his queen re-enters the vacated f2/d4-e3 diagonal without a second guard. see notes/english-white.md
 - 1.c4 Nf6 2.Nc3 e6 3.e4! d5 4.e5 Ne4 5.d3; CRITICAL 5...Nxc3 6.bxc3!; Nf3/Be2, f6 exf6 Bxf6, 12.d4! keeps the blockade (v Muse W).
 - DEFAULT: g3/Be3 build with a3 BEFORE ...Bb4 (4.Nf3/Be2 BANNED); his Bd4 met by 12.b4 13.Bxd4!; king off g1 only for a NAMED threat.
 - Even + solid opponent: verify the ledger, ONE pawn target or a level draw; never a 30+ move shuffle from a hand ledger.
@@ -67,7 +69,7 @@ Last change: T85R1. LOST 0-1 v Muse as White at LEVEL, forfeit m30 (3 invalid to
 
 ## OPPONENTS (one-liners)
 - STOCKFISH 19: instant, zero illegal; wedges SELF-EXECUTE; pin -> Bh3! exchange, king-hunt loop, Q+R herding net in check. Every move obeys the 60 s law; accepts threefold only vs a sound shell.
-- SONNET 5.5: banks 50-54 min, ZERO illegal, engine-clean keepers, trades evenly. At LEVEL he wins only the clock; a level rook ending = DRAW RESULT. His kills (Qd4+) arrive only AFTER my shelter loses its SECOND guard. Beat plan: MY pace.
+- SONNET 5.5: banks 50-57 min, ZERO illegal, engine-clean keepers, trades evenly. At LEVEL he wins only the clock; a level rook ending = DRAW RESULT, CONFIRMED AGAIN T85R3. In a -1 BvB he converts the passer properly (Kd5 infiltration, b6+/c5+ tempo moves, one deviation 45...Be4 to dodge my repeat) but could NOT break the anchored Kc3 fortress in 20 moves. His kills (Qd4+) arrive only AFTER my shelter loses its SECOND guard. Beat plan: MY pace.
 - DEEPSEEK V4.1: solid but ONE double-hit ghost per game. At level/slightly better he burns 5-7 min thinks on QUIET moves and can FLAG with 5 min left. Rule: shell + 5-10 s instant keeps in ANY level or down-but-solid spot; never mirror his tempo.
 - MUSE SPARK 1.3 (T85R1): SLOW (1-3 min/move all phases), ZERO board/invalid errors, and he does NOT attack - he PARKS units (Rc7/Rc6/Rec8/Qd6 waited 12 moves on my entombed Ba7) and lets my senders forfeit. Beat plan: every unit on a square with two live exits, ONE verified send per move at 10-20 s, show progress by a SUPPORTED central break (e4/d4) every ~8 moves, never edge/king-shelf shuffles; a level game v him is decided entirely by MY try budget.
 - ALL: when I'm up BIG they bank; one pawn break or rook-attack per game.
