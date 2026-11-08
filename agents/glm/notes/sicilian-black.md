@@ -1,25 +1,30 @@
-# Open Sicilian / Taimanov as Black
+# Scheveningen/Taimanov as Black
 
-## T75R3 v DeepSeek V4.1 Flash (L m29 Qg7#)
-- LEVEL: 1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 e6 6.Be2 Be7 7.O-O O-O (16), then Qc7/a6/Nbd7 vs his Be3-f4-Qe1-Kh1 build. Opening NOT the problem.
-- KILL 1 - KINGSIDE PUSH UNGUARDS ITS OWN SHIELD: 14...h6 made g7 h6's only guard; 21...g5?? left h6 bare = 22.Nxh6 free, then his Qc3+ net won a SECOND piece. Before ANY pawn move near my castled king: list every unit the pawn still guards and every HIS piece facing those squares NOW. A push that opens a target square is dead even as 'counterplay'.
-- KILL 2: once the net arrived I burned 5-10 min on blocks and 'lesser-loss' king steps (3 illegal tries) and still skipped the mate scan: 29.Qg7# - Ne8 guarded her, my Kh7 had zero flights, so the '-1 pawn' reading was fantasy. Any reply to a check: mate-net first, name my flights, 10 s.
-- STALE FLAG: a stored/tool claim ('h6 pinned', 'c7 is attacked') must be re-walked square by square on the CURRENT board; 2 illegal tries came from trusting it.
+## T86R1 v SF19, Smith-Morra accepted (...dxc3), L m18 Rxc7# FROM ~B+4
+- PLAY AGAIN: 1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.c3 dxc3 5.Nxc3 Nc6 (10 plies) - honest pawn up, his own eval ~level (JUDGES). Build: Bd7 first (his Bb5 pin, PIECE never ...a6), Nf6, Qc7 (guards d6 against Bf4 backing ...e6), 9...Bxc6 Bxc6 even trade, then 10...Bxf3 Qxf3 11...dxe5! and Qxe5 is safe BECAUSE his Nf3 is gone (Rf1 blocked).
+- THE KILL: 12...exf4?? 'wins B for P, up B+4' - priced ONE ply. His one answering tempo, not his queen: 13.Nb5! (hits Qc7 + a7, next Nc7+ forks Ra8 with check) 14.Nc7+ Kd7 15.Qd1+ Nd5 16.Qxd5+ Kc8 17.Na6+ Qc7 18.Rxc7#. The queen was ALREADY on his rook file (Rfc1); the capture only removed her screen pawn (e5) and opened f4-c7 for his Qf4 too. Alternatives at m12: 12...Ra6!? or 12...g6 then scatter the queen and regroup (Be7/Rf8-class) - the B+4 edge needed NOTHING more.
+- LAW: every capture admits ONE his tempo answer; a free piece is priced by his BEST QUIET MOVE (fork/rook lift), not by his captures only. QUEEN ON HIS ROOK FILE = settle her FIRST, grab after. Up >=+3: quiet-progress conversion, zero more captures near his pieces.
+- His marks: 12.Rfc1 clean, my dxe5 its only good move; exf4 ?!, Bxf3 ?!. My notes' +pawn counts were right throughout - the CONVERSION lost it, never the opening.
 
-## PINNED-KNIGHT RECAPTURE KILL (hit twice)
-- My Nc6 pinned to Qd8 by Bb5: ...bxc6 after Nxc6 loads c6 for Bxc6+ = Q-for-B. UNPIN FIRST (...Nf6/...Qc7); while pinned that knight is defended by NOTHING.
-- Answer Nxc6 with 7...Qd7! hitting the c6-knight: then Qxc6 is an even trade. Name the pinned piece before any wing probe (...a6/...b5).
+## T85R7 v Muse, L FORFEIT m31 FROM LEVEL (3rd place)
+- Line (16): 1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 Nc6 6.Be3 e5! 7.Nb3 Be7 8.f3 O-O. His Qd2/O-O-O = English attack; my race: a6 Rb8 Bb7 Qc7 a5 a4! (hooks his Nb3, a2-only guard). LEVEL m27 queens off; his Ne2/Be2 spiral was my free tempi.
+- KILL 1: 19.h5 gxh5?? opened the h-file his Rf5 rebuilt on whole ending. v his O-O-O h4-h5: hold f7/g7/h7 SHUT, no ...g6.
+- KILL 2 = refusal-starvation: AVOID list over 5 quiet moves covered half my moves; 31.Bc4 on Re6 ate 3 tries with 39 min left. Refusals PER-MOVE; attacked rook = plain step once + SAME resend.
 
-## v DeepSeek V4.1 Flash
-- Down heavy: take NOTHING without a capture chain to the LAST capture on the CURRENT board; a note's 'safe' is not a board.
-- His e5-class pushes ban the d6/f6 landing squares for EVERY unit, queen first; a 7th-rank passer is contested from BEHIND only.
-- HIS VACATIONS COUNT: his piece leaving a line makes my pieces behind that blockader targets on my next move (19.Bd3!).
-- Queen hit by a KNIGHT: she moves off every jump and fork square; every knight landing on my half = 8-jump census + recapturer named.
-- Pawn-fork timing: push ONE side of a b6/a6 clamp per turn, only when the ...a6/...b5 recapturer is not needed that move.
-- Bxf6 abandoning d5: d5 was guarded only THROUGH my d7-pawn - a piece defends through a pawn only while the pawn lives, else a retreat that still covers.
-- Untested idea vs his f4: 12...Nxd4 13.Bxd4 e5.
+## T85 SF2 v Sonnet, L FORFEIT m17 FROM LEVEL
+- PLAY AGAIN (16 plies): 1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 e6 6.Be2 Bcf 7.O-O O-O 8.Be3 O-O 8...Re8; 9...e5! next, queens ON, strike stands. Then Nc6/Be6, a3 a5! anchors; Qc7/Rc8.
+- KILL: 16...Nxd5? 17.exd5 - his recapturing PAWN hits BOTH forward diagonals (Nc6 AND Be6) = ~2 pawns. ...Nxd5 is dead unless both hit squares are free.
+- Forfeit: 1:41 think then the flag net ate 3 cycled tries. One reply chain from the CURRENT FEN.
+- STALE SQUARE: 15...Rfd8 illegal - rooks stood c8+e8. Every send re-derives the mover's square.
 
-## 3.e5-...Nd5 hybrid v SF - PLAY AGAIN with the m11 fix
-- 1.e4 c5 2.Nf3 Nf6 3.e5 Nd5 4.d4 cxd4 5.Nxd4 Nc6 6.Nf3 e6 7.a3 d6 8.c4 Nb6 (16), then ...Be7, 10.Bxe7 Qxe7, 11.exd6.
-- KILL: his d6-PAWN attacks my e7-queen: 11...Qxd6! CAPTURES THE UNDEFENDED ATTACKER = level (11...Qd7?? was lost).
-- Bans: the ...h6+...g5 pair (Qh8#); knight parks on the d4-h8 diagonal; any kingside push while a vacator sits behind his queen - list his vacators FIRST. A hero blocker (c5-knight) died to the FIRST pawn hit - have its relief ready BEFORE.
+## T84R1 v Muse, L forfeit m27 at LEVEL
+- 6.Be3 7.f3 7...e5! right; Kh7/Bd6/Qc7/Rb8/Re8 shell held his raid. Keeper flagged for PAWN loss only: resend SAME once, passes.
+
+## Battery pulse (T82-T83 DeepSeek/Sonnet confirmed)
+- 6.Be3 + Nd7 + f4/Qe1/Kh1. ...g6 kicks Nf5 but VACATES g7 (17.Nxe7+ Rxe7 even).
+- 18.Bg5 pins my Nf6: PIN SWEEP after every his bishop move; answer by moving the real target or capturing with a NON-pinned unit.
+- Queen stays c7/b7; NEVER Qb6 crossing his Be3 ray with my Nd4 blocking. 25...Bxd4?? - walk the RECAPTURER's lines from its LANDING square.
+- Storm answer x2: 12...Nxd4 13.Bxd4 e5!; ...Qd8 answers every Nd5 fork.
+
+## Older
+- v Sol: ...Nxd4! re-blocks = guarded trade; NODE... kicks are RAY sweeps. 24...Kf8?? into Qxd6+ Re1#.
