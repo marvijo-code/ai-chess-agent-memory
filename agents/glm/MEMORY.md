@@ -1,9 +1,10 @@
 # MEMORY - GLM 5.3 Flash
 
-Last change: T86R1 L v SF19 as Black (Smith-Morra accepted, mate m18) FROM B+4: 12...exf4?? - a winning capture whose ONE his answering tempo (13.Nb5 -> Nc7+ Kd7 15.Qd1+ royal chain) recouped the rook and mated. Up big: settle the queen first, ZERO more captures.
+Last change: T86R3 L FORFEIT v DeepSeek as White (reversed-Carlsbad, m26) FROM LEVEL: ...Bg4 hit h5+f3 and the ONE ~1-pawn flag was noise - the law is RESEND THE SAME UCI once; I cycled a THIRD different flagged candidate = forfeit with 50 min banked. A pawn flag never buys cycling, only one resend.
 
 ## FIRST, EVERY GAME
-- REFUSAL LIST EXPIRES PER-MOVE (T85 3rd, proven in T86: 6 gated tries survived only by resend-same): gated/AVOID calls never carry across QUIET moves. A refusal is a statement about ONE position; after ANY board change the list is blank. Before every send count sendable keepers >2; if not, the plain one-step retreat of the attacked unit IS the send (send once, resend SAME if flagged).
+- REFUSAL LIST EXPIRES PER-MOVE (T85 3rd, proven in T86): gated/AVOID calls never carry across QUIET moves. A refusal is a statement about ONE position; after ANY board change the list is blank. Before every send count sendable keepers >2; if not, the plain one-step retreat of the attacked unit IS the send (send once, resend SAME if flagged).
+- ONE TRY PER MOVE AT LEVEL: pre-verify with material-sweep + safe-keepers, send ONCE, 10-20 s. A refusal naming ONLY a ~1-pawn loss in a level/borderline position is NOISE: RESEND THE SAME move once (it goes through). Cycling a third DIFFERENT flagged candidate forfeited T86R3 from a level board. After a MATERIAL gate (piece/rook/exchange/mate): a DIFFERENT legal keeper, one try.
 - SHELTER VS RACE (T85 3rd): v his O-O-O h4-h5 build my ...g6?! was unneeded; holding f7/g7/h7 SHUT (no concession) plus queenside hooks outraced him, and gxh5 opened the h-file his Rf5 rebuilt on for the whole ending. In a queenless race every opened file near both kings is HIS tempo weapon.
 - STALE-SQUARE RATCHET, BOTH MOVES (T85R5, T85SF2): after ANY hop, mine or his, the piece's old square is DEAD for the next plan; every send re-derives the mover's square from the FEN in one line: piece@sq -> UCI. My forfeit record is stale squares, overrides and memo-fixes, nothing else.
 - MEMO FIX = NAME ITS CURRENT TARGET (T85R5): a stored answer (e.g. ...Nb4 -> Nxf6+) fires only if that target EXISTS on this board; write who occupies each square the fix touches before sending it.
@@ -12,7 +13,6 @@ Last change: T86R1 L v SF19 as Black (Smith-Morra accepted, mate m18) FROM B+4: 
 - WEDGE-CREEP LAW (T85R5): a static +0.5..1 v SF compounds every 3-4 keepers; at the FIRST +1 play the named unblock inside 10 moves. A clamp is not a shell: shells are for LOSERS, clamps demand a break.
 - CHECK THAT 'TAKES A PIECE': name ALL guards of the target AND its live retreats that carry tempo; a defended minor near his king is NOT a win. Only zero-retreat pieces are grabs.
 - BvB FORTRESS (proven v Sonnet): king adjacent ON the flank kills the passer by occupancy; bishop tours the one triangle; NEVER vacate the guard pawns; same-color bishops make my other pawns immune. -1 = threefold is THREE: repeat the keeper; if he sidesteps, repeat again next turn.
-- ONE TRY PER MOVE AT LEVEL; refusals CLUSTERED on one move forfeit. Pre-verify with material-sweep + safe-keepers, send ONCE, 10-20 s. After a gate: a DIFFERENT legal keeper, one try.
 - OVERRIDE DEATH: a tool AVOID naming the lost unit + capturer + line is CLOSED - pick a different keeper, never send the flagged move to 'check the tool'. The gated candidate is the REFEREE's move; read its reason first.
 - TOOL FLAG NAMING MY PAWN: verify by naming a CURRENT guard of that pawn; a live guard = the guarding keeper IS the send.
 - FIRST REFUSAL = THE IDEA IS DEAD: next send is a plainly legal keeper <=10 s, one try.
@@ -39,6 +39,7 @@ Last change: T86R1 L v SF19 as Black (Smith-Morra accepted, mate m18) FROM B+4: 
 - CLOCK: book 5-10 s, routine 10-20 s, HARD CAP 30 s; down = 10 s. ONE send per move.
 - TRADE-OFFER LANDING = all his attackers of the square, never the prompting piece alone.
 - KING v HIS STORM: a king in front of an unfired storm is a target-in-place; walk FARTHEST from the named storm file.
+- SEAL PUSH = TARGET BUILDER (T86R3): h4-h5 'sealing' his g5-kick left h5 hanging once his Bf5 reached g4 - a pawn that cannot be re-guarded is a LOSE-1-BUT-PLAY-ON, worth ONE resend, never a three-try hunt. Before ANY push past move 20 name who guards the new front square when it is attacked.
 
 ## ENDGAME VERDICTS
 - FORTRESS KING = ONE SQUARE, SIT at formation; only a NAMED threat moves him.
@@ -48,6 +49,7 @@ Last change: T86R1 L v SF19 as Black (Smith-Morra accepted, mate m18) FROM B+4: 
 - SHELL: double guards, king anchors the wing, accept drips, never resign; K+blocked pawn = stalemate twice.
 
 ## OPENING as White: g3 build everywhere (incl. v SF); bans: 4.Nf3/Be2 reversed-FK
+- v ...e6+...d5 REVERSED-CARLSBAD - PLAY AGAIN (16 plies): 1.c4 e6 2.Nc3 Nf6 3.g3 d5 4.cxd5 exd5 5.d3 Be7 6.Bg2 O-O 7.Nf3 Re8 8.O-O Nbd7; level to m26. Then Re1 c6 d4 Bf4, Rb1, a4-class build; his ...Ne4 outpost makes the e4 break DEAD (no clean recapture ever) - play Nc5/Nd3 regroupings and even queen trades instead. BANS: h4-h5 seal (h5 hangs to ...Bf5-g4), Qd3??/Qc2?? (Ne4's d2/g3 jumps hit both), a5/b4 past his queen. Loss was sends, not chess.
 - v SF WEDGE - DO NOT PLAY v SF (0-3): self-executing f5/g5 wedge, 'level' wrong at m11. see notes/english-rev-fourknights.md
 - Reversed-GP v ...e5 - LEVEL five times; 1.c4 Nf6 2.Nc3 e5 3.g3 Nc6 4.Bg2 d6 5.d3 Be7; then Nf3, short castles, Re8, e4/Be6 build. NO bishop sorties to b6/b5/a7-class squares - parked past pawn support = entombed.
 - Reversed-QGD v SONNET - PLAY AGAIN, LEVEL to m20+: 1.c4 e5 2.Nc3 Nf6 3.g3 d5 4.cxd5 Nxd5 5.Bg2 Nb6; then d3/Nc6/Nf3/Bd6, short castle, Qd2/Be6 build, the d4! break near move 14 = even trades, queens off. The loss came later, not the opening. see notes/english-white.md
@@ -67,14 +69,14 @@ Last change: T86R1 L v SF19 as Black (Smith-Morra accepted, mate m18) FROM B+4: 
 ## OPPONENTS (one-liners)
 - STOCKFISH 19: instant, zero illegal, his clock never moves (mine is the only one in the room). Punishes static clamps by COMPOUNDING: +0.3 per few quiet moves until the wedge is +7. Punishes capture greed with the NEXT tempo, not the recapture: my exf4?? at B+4 -> Nb5/Nc7+/Qd1+ royal chain, mate m18. Level v SF = 15-25 s keepers, ONE named break by m25; keepers-only = slow death; accepts threefold only vs a sound shell.
 - SONNET 5.5: banks 50-60 min, zero illegal, engine-clean keepers, trades evenly. At level he wins only the clock; a level rook ending = DRAW RESULT. In -1 BvB he converts the passer but could NOT break the anchored Kc3 fortress. His kills arrive only AFTER my shelter loses its SECOND guard. Beat plan: MY pace.
-- DEEPSEEK V4.1: the CLOCK is his whole loss mechanism - straight level forfeits burning 2-7 min thinks on QUIET moves near the end. One double-hit ghost per game, otherwise engine-clean keepers. Beat plan: Carlsbad/shell + 10-60 s instant keeps, bank 40+ min, never mirror his tempo.
+- DEEPSEEK V4.1 Flash: loses by CLOCK only - 2-9 min thinks on QUIET moves (T86R3: 8:55 on Qb4) even as the flag race says otherwise; ended 27 min vs my 50 banked, so MY pace was winning on the clock. Board: engine-clean keepers (only f6?/Qc7?? all game), parks units inside his walls (Ne4 outpost, Qb4) with no entry. Beat plan: pre-verified keepers 10-20 s, bank 40+ min, ONE frozen move per flag - my forfeits vs him are mine.
 - MUSE SPARK 1.3: SLOW (1-3 min/move), zero board errors, does NOT attack - parks units and lets my senders forfeit. Beat plan: every unit on a square with two live exits, ONE verified send per move at 10-20 s, progress by a SUPPORTED central break every ~8 moves; a level game v him is decided entirely by MY try budget.
 - ALL: when I'm up BIG they bank; one pawn break or rook-attack per game.
 
 ## Notes
 notes/official-memory-rest.md - legacy rules index
 notes/english-rev-fourknights.md - v SF: wedge line, memo-fix + creep + stale-square kills, herding net
-notes/english-white.md - reversed-GP builds, T84R3 Sonnet +1-forfeit, endgame kills
+notes/english-white.md - reversed builds incl. T86R3 v DeepSeek, T84R3 Sonnet +1-forfeit, endgame kills
 notes/four-knights-black.md - four knights v SF: pawn-takes kills
 notes/qgd-black.md - T84R5/T85R4 v DeepSeek WINS: Carlsbad build, d4+c5 breaks, double-hit send economy
 notes/scheveningen-black.md - T85R7 Muse race + refusal-starvation forfeit; T85 SF2 two-diagonal kill
