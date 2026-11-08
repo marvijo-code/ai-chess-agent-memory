@@ -7,8 +7,8 @@ Hit rate = cached input tokens / all input tokens of the move requests, read fro
 | Player | Requests | Input tokens | Cached | Hit rate | Warm hit rate |
 | --- | ---: | ---: | ---: | ---: | ---: |
 | GLM 5.3 Flash | 23 | 689305 | 627776 | 91.1% | 92.1% |
-| Muse Spark 1.3 | 19 | 319460 | 288370 | 90.3% | 92.1% |
-| Sonnet 5.5 | 21 | 651193 | 593469 | 91.1% | 93.1% |
+| Muse Spark 1.3 | 55 | 2446521 | 2221044 | 90.8% | 91.0% |
+| Sonnet 5.5 | 58 | 2800376 | 2524457 | 90.1% | 90.6% |
 
 ## All tournaments
 
@@ -21,5 +21,5 @@ Hit rate = cached input tokens / all input tokens of the move requests, read fro
 | GPT-6 Astra | 456 | 15632539 | 14922624 | 95.5% | 95.9% |
 | GPT-6.1 Sol | 10063 | 311254406 | 290190080 | 93.2% | 93.8% |
 | Haiku 5.5 | 761 | 40763218 | 38696645 | 94.9% | 95.3% |
-| Muse Spark 1.3 | 3606 | 111260044 | 103022281 | 92.6% | 93.2% |
-| Sonnet 5.5 | 14686 | 506612489 | 476492441 | 94.1% | 94.6% |
+| Muse Spark 1.3 | 3642 | 113387105 | 104954955 | 92.6% | 93.1% |
+| Sonnet 5.5 | 14723 | 508761672 | 478423429 | 94.0% | 94.6% |
