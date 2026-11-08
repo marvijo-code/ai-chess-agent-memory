@@ -1,24 +1,14 @@
 # Ruy Lopez as White
 
-## 5.d3 line
-1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.d3 d6 6.c3 Be7 7.O-O O-O 8.Nbd2 (15).
-Then Re1/Bc2/Nf1-g3; d4 when e4 is held twice; b4 before c4.
-
-### T82R2 v Sonnet (1-0 forfeit; level, then +1 pawn)
-9.Bb3 b5 10.Bc2 Na5 11.Re1 c5 12.Nf1 Qc7 13.Ng3 Re8 14.Nf5 Bxf5 15.exf5 Nc6 (16 plies).
-- 16.Be3 d5 17.h3 Rad8 18.d4! exd4 19.cxd4 cxd4 20.Bxd4 Nxd4 21.Nxd4 = +1 pawn. Against his ...d5/...c5 centre the d4 break IS the plan; keep the f5 wedge (guards e6/g6, stops ...e4).
-- His reply ...d4 22...d4 23.Nd2 (SF ??) met ...Rxe1+ 24.Qxe1 d3, hitting Bc2 with tempo: count ...d3 whenever his d-pawn is passed and my bishop sits on c2. The Nd2 blockade holds the pawn but the wedge is his compensation.
-- A rook parked on b2/b3 to blockade his b-pawn is a bishop target: 38.Rb2?/43.Rb2?! let ...Bd4 hit it with tempo twice. Prefer the c-file/d1 unless it wins a pawn.
-- WIN: his queen was the only guard of Bb4, so every knight hop to b3/c5 hit her with tempo; 47.Nb3 forked Qc5+Rd4, he gated 3x on ...Re4 (6:48), 48.Qxc5 Bxc5 49.Nxc5 = up a piece.
-- Clock: 2:10 g6, 4:56 h5, 5:09 Rb2, 3:54 axb4 found nothing; ended 25 min v his 42. Long thinks in a won position are pure waste.
-
-### T81R7.3 v Sonnet (0-1 flag m29, Armageddon; draw odds against me)
-His Berlin shell: ...Bd7/...Re8/...Bf8/...a6/...b5/...Be6/...Qd7/...Rad8/...Na5xb3/...a5/...c6. 17.axb3! good; 18.d4 exd4 19.cxd4 c6 20.e5 Ng4 21.exd6 Nxe3 22.Rxe3 Bxd6 level. CHESS FINE, CLOCK FATAL: 8:52 used by m28, flagged 1:08 v 5:33, plus 2 wasted sends. MUST-WIN vs 3...Nf6: consider 4.O-O Nxe4 5.d4 Nd6 6.Bxc6 dxc6 7.dxe5 (7 plies) or the Scotch instead of 4.d3; keep 4.d3 when a draw is acceptable.
-
-- T81R5 v Muse (1-0 forfeit m36): ...b4/...c6/...c5-c4/...b3/...c3 storm; 16.e5! Nd5 17.exd6 Bxd6 fixed his centre; 36.c4 forked Rb5+Nd5. No queen shuttle; every unit guarded; bank time.
-- T80R7: 26.c4?? opened the b-file (...bxc4, ...Ra8, ...Nf4). b4 before c4.
-- T80R3: the ...c4-c3 clamp ties Q+R; name one target instead of 3-11 min thinks.
-- T78R1: never Qxe4 (Qb7 covers e4); a knight with no target is drift.
+## 5.d3 vs the Breyer (T86R2 v Sonnet, draw; T82R2 v Sonnet, win)
+Book: 1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.d3 b5 6.Bb3 d6 7.c3 Be7 8.O-O O-O (16).
+Then Re1, Nbd2, Bc2, Nf1-g3; his Breyer regrouping is ...Re8, ...Bf8, ...h6, ...Bb7, ...Nb8-d7, ...c6.
+- T86R2 the game went 9.Re1 Re8 10.Nbd2 Bf8 11.Bc2 h6 (6 plies), then d4 exd4 cxd4 and 13.d5 Nb8 was space; 16.dxc6 Bxc6 left his d6 backward. Level all the way.
+- THE PAWN FORK THAT COST A PIECE: 25...e4 hit my Rd3 and my Nf3 together - a piece for a pawn, -2 to the end. Before a piece lands on d3 or f3 (any square his e5-pawn's push hits with two of my units), count that push.
+- DOWN A PIECE WITH QUEENS ON, PERPETUAL CHECK IS THE SAVE: 70.Qc8+ Kh7 71.Qf5+ Kg8 72.Qc8+ drew. Keep the queen able to reach c8/f5 with check and never trade her.
+- SF marked 20.Bd3?, 24.Re3?, 25.Rd3?! as drift in a level position; the chain Bxe4 Bxe4 Nxe4 Nxe4 Rxe4 was fine.
+- CLOCK: level to m30 at 5-25 s a move, then 4:43 on Rd4, 4:04 on a3, 2:31 on b3, 2:19 on Kh1, 7:35 on e4; ended 2:56 v 53:31. A level shell is 5-15 s; the long thinks found nothing and one of them walked into ...e4. 7 gated tries, each cleared by resending the same UCI once.
+- T82R2: after ...Na5/...c5/...Qc7 I played Re1, Nf1-g3, then Nf5 trading his light bishop, and the d4 break vs his ...d5/...c5 won a pawn. Count ...d3 whenever his d-pawn is passed and my bishop sits on c2 (...Rxe1+ ...d3). His queen was the only guard of Bb4, so knight hops to b3/c5 hit her with tempo and won a piece. A rook parked on b2/b3 blockading is a bishop target.
 
 ## Closed Chigorin
 1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Re1 b5 7.Bb3 d6 8.c3 O-O (16).
@@ -27,10 +17,11 @@ Then h3/Bc2 vs ...Na5, d4, Nbd2/Nf1-g3; keep Kg1 on f2 until queens off; no b4 w
 ## Other book
 - Classical 5...Bc5: c3, O-O, Re1, h3, then d4; after exd4 cxd4 play Bb6/Nc3/Bg5/Nd5.
 - 5.Nc3: d3/Be3/Re1/Qd2, d4 exd4 Nxd4, keep Nd5/Nf5.
-- Queen trade: name the ray my recapturer blocked from its OLD square (T77R5 31...Qxc3 32.Nxc3?? Bxf1).
+- Quiet 8.d3 Chigorin-type: Re1, Bc2, Nbd2, d4; meet ...d5 with exd5 and Nxe5 ideas.
+- T81R7 AI Armageddon: a level Berlin shell with rooks off is HIS draw; as must-win White consider 4.O-O Nxe4 lines.
 
 ## Recurring
 - QUEEN FOR A PAWN: she stood on an enemy pawn capture square (7 games). List pawn squares first.
 - No piece where his g6/f5 pawn covers it; no check he can take.
-- Routine <=12 s; Armageddon W 5-8 s from move 15. Long thinks in this line produced illegal tries and flags.
+- Routine <=15 s; long thinks in this line produced illegal tries, flags and the ...e4 fork.
 - A pawn push that opens a file needs the file counted first; b4 before c4.
