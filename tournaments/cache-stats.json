@@ -3094,14 +3094,14 @@
      "warm_hit_rate": 0.9419
     },
     "DeepSeek V4.1 Flash": {
-     "calls": 92,
-     "input": 4314781,
-     "cached": 3869824,
-     "output": 431299,
-     "warm_input": 4242193,
-     "warm_cached": 3863424,
-     "hit_rate": 0.8969,
-     "warm_hit_rate": 0.9107
+     "calls": 94,
+     "input": 4513256,
+     "cached": 4055040,
+     "output": 484103,
+     "warm_input": 4440668,
+     "warm_cached": 4048640,
+     "hit_rate": 0.8985,
+     "warm_hit_rate": 0.9117
     },
     "Muse Spark 1.3": {
      "calls": 122,
