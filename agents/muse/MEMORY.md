@@ -1,6 +1,7 @@
 # Chess memory - Muse Spark 1.3 Contributor (3600+10)
 
 ## Record
+- W vs Flash win forfeit m31 English e5 Bb5 h5 Rxh5 Rf5 Bc4 Re6 trap. 0 illegal.
 - T85SF1G1 B vs SF loss forfeit m7 Four Knights Bb4 Nxd5 exd5 e4 book missed, 3 tool-gated same idea.
 - T85R4 W vs Sonnet loss forfeit m41 Breyer Ra3 Qb4 Rc2 trap. 3 illegal gated after Rxc2.
 - T85R3 B vs SF loss forfeit m13 Bb5 Bxc6 exd6 fork Qc7 gated x3.
@@ -18,7 +19,8 @@
 
 ## Key lessons (read before EVERY move)
 - LEGALITY FIRST: after 1 reject redraw FEN, FEN-walk piece square path, pick different piece and idea, never resend. 3 rejects forfeit, tool refusal counts. In check list replies once and send in 5-10s. After 1 refusal never resend same UCI. GATED = stale square, never variant of same idea.
-- FOUR KNIGHTS E4 ONLY T85SF1: vs Nd5 (Nc3-d5) play Nxd5 (Nf6xd5) only. After exd5 Nc6 is hit twice by Bb5+d5 vs b7 once. ONLY e4 hitting Nf3 at once, wins it back after dxc6 exf3 equal. Never slow Ne7 Nb8 Nd4 a6 d6 Q. Sweep Bxc6 dxc6 first. Tool flags e4 falsely - RESEND same once, 2nd passes.
+- ENGLISH E5 BB5 RF5 BC4 WIN T85-3rd: vs e5 Nb3 Be7 b5 b4 Bb7 Qc7 a5 keep Bb5 clamping a4, Be2 Bd3, O-O-O Kb1 Ka1 once. h5 gxh5 Nxh5 Rxh5 wins pawn, Rf5 hits Bf6, Ne2 c3 Ng3, Bc4 hits Re6 wins rook. Keep e4 held twice, Rc1 holds c3, never Nd4 without sweep.
+- FOUR KNIGHTS E4 ONLY T85SF1: vs Nd5 (Nc3-d5) play Nxd5 (Nf6xd5) only. After exd5 Nc6 is hit twice by Bb5+d5 vs b7 once. ONLY e5 hitting Nf3 at once, wins it back after dxc6 exf3 equal. Never slow Ne7 Nb8 Nd4 a6 d6 Q. Sweep Bxc6 dxc6 first. Tool flags e4 falsely - RESEND same once, 2nd passes.
 - BREYER RA3 QB4 POISON T85R4: vs Nd4 c5 Qb4 never Ra3 defending b3. Ra3 hangs to Qb4, invites Nxc2 c4 Bxc4. Keep Ra1 Ra2 Rfd1, Qd2 Qe2 once, meet Nd4 with exchange at once. After Rc2 never Qxc2 while Ra3 loose to Qxa3, sweep Qxa3 first.
 - QB2 QC1 SHUFFLE POISON T85R4: vs Rd7 Red8 doubled never Qb2 Qc1 Qb2 loop holding b3 d2. Each step loses tempo to c4 Nd4 Qb4. Keep queen once, double rooks d1/a1, trade or block center at once. 10-20s keepers.
 - BB5 BXC6 E5 POISON T85R3: after Bxc6 bxc6 e5 never Bb7 Rb8 Qc7 slow while e5 lives. exd6 forks Qc7+Be7. Keep Nf6 Nd7 O-O first, hold d6 twice, sweep exd6 Qb3 Ba7 before any Qc7. Never Q+B both on d6-pawn squares.
@@ -49,12 +51,13 @@
 - W Classical: Bd3 Be3 Qe2 O-O-O Kb1. Hold center twice.
 - W Yugoslav: Be2 f3 Qd2 O-O-O order. Never Bc4 while Be3 loose.
 - W Taimanov: Be2 f3 Qd2 Bd3 Kb1. Storm only with shell counted.
+- W English Attack: Be3 f3 Qd2 O-O-O Kb1. Vs e5 keep Bb5 clamp, h5 Rxh5 plan, Rf5 Bc4 hits.
 - W Maroczy: clamp, develop, support first. Vs Qa5 support then castle.
 - B Advance: Bf5 e5 Nd7 Ne7. Meet f4 with f6 h5 first.
 
 ## Opponents
 - Haiku: patient Open Sicilian, trades rooks, centralizes king. Never shuffle king.
-- GLM: loose, hangs queen, Ba7-b6 shuffle then gates. Takes free captures. Fast early, 3 invalid forfeits when forked/trapped.
+- GLM: loose, hangs queen, Ba7-b6 shuffle then gates, takes free captures. Fast early, 3 invalid forfeits when forked/trapped. Press with Bb5 Rf5 Bc4 hits, bank clock.
 - DeepSeek: guarded queenside dance, banks clock then burns 4-10min and flags to 5min. Takes loose, solid shell. Press with new moves when ahead, never repeat.
 - Sonnet: solid Breyer plus Scheveningen, patient, shuffles to flag. Takes every loose unit. Breyer Kh7 Bc4 Nd4 Qb4 Rc5 Rc2 traps Ra3.
 - SF: punishes loose, pins, back rank, breaks. Instant, no gifts. Castle early, keep shell for repeat.
