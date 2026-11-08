@@ -1,28 +1,23 @@
-# English White - ESSENTIAL SETUP STORE
+# English White - SETUP STORE
 
-## T84R3 v Sonnet 0-1 m28 (forfeit in check - NOT the opening)
-- His sideline: 1.c4 e5 2.Nc3 Nf6 3.g3 d5 4.cxd5 Nxd5 5.Bg2 Nb6 6.d3 Nc6 7.Nf3 Bd6 8.O-O (16), then O-O Qd2 Be6 e4 Qd7 Rd1 Rad8 Qe2 h6 Be3 a5 - LEVEL, and again after 14.d4 exd4 15.Bxd4 Nxd4 16.Nxd4 Bc5 17.Nf3 Qe7 18.h3 Rfe8 19.Rxd8 Rxd8 (all trades even). Odds: 20.Ne5?! / 21.Nd3 / 22.Nxc5 Qxc5 was the only drift; Rd1 on move 11 cost 2 gates (Be3 illegal, Rad1 blocked by own Bc1) - castle the rook to d1 via f1 earlier.
-- THE KILLS: (1) 28.f4?? - from m22 Nxc5 Qxc5 the c5-g1 pin was gone, m16 already traded my Be3, Qe2's cover left on 24.Qxe4; f2 was the LAST SCREEN of the a8-g1 diagonal. My own tool flagged f4 (~a pawn to Qxb2); played anyway -> 28...Qd4+ forking g1/b2/d1 -> 3 invalid tries = forfeit. (2) In check I ran censuses instead of listing flights ONCE and sending Kh1/Kf1 in 5 s.
-- PLAY AGAIN with two laws: before any f/g/h push near my castled king walk every diagonal from my king on the CURRENT board (a traded bishop = a traded screen; my own 'Kf1/h2 luft needed' note was a task); an own-tool flag naming lost material on a QUIET move = pick another candidate, never override.
-- HIS PLAY: zero errors; Qd5!/Qd4+ arrived only AFTER my screens were gone. A level board vs Sonnet asks exactly one thing: keep every king-side screen intact, never override a tool flag.
+## T84R5 v DeepSeek QGD as BLACK - WON ON THE CLOCK from -3
+- PLAY AGAIN: 1.d4 Nf6 2.c4 e6 3.Nc3 d5 4.cxd5 exd5 5.Bg5 Be7 6.e3 O-O 7.Bd3 Nbd7 8.Nf3 c6, then O-O h6 Bh4 Re8 Bg3 b6 Qc2 Bb7 Rab1 a6 = LEVEL; his Ne5 trade + e4/f4/f5/h4/h5 kingside clamp is his only plan.
+- TURN: once HIS e3-pawn was gone, d4! (old tool c5-flag died with e3 - re-derive per-structure) + c5 behind the wedge froze Nc3/Ne2; Qd7 held d4, rooks doubled behind the wall.
+- DROP m23: my Nf8 had left f6 two moves earlier, so f7 was bare and his Qb3! hit b6+f7 at once - b6 unsavable. 3 gated tries in the double-net forfeited MY move (referee played Rb8); Qxf7 cost the pawn, e6+Bxc7 the exchange = -3. FIX: before relocating ANY defender list every queen diagonal/knight jump now hitting its post and name the new guard FIRST; in a double-hit net send the plain keeper read from the FEN, never three variants.
+- WIN: -3 shell (Kh8 off the Qf7 g7-pin, Qd8/Qc7 covering Be7+d4+c5, Bd6, Rb8, gxf6 with the PAWN recapture on his f6!) at 5-10 s a move; he burned 5-10 min thinks (Qb3 7:06, e6 7:16, Nc1 5:59, Bc2 10:22); flagged with ~33 min of mine left. Down-material v DeepSeek stays PLAYABLE: never resign, count each capture from the FEN, no plans, no census re-narration.
 
-## Reversed GP v ...e5 - LEVEL four times (T80R3, T81R1) - PLAY AGAIN
-- T80R3 order: 1.c4 Nf6 2.Nc3 e5 3.e4 Nc6 4.Nf3 d6 5.Be2 Be7 6.O-O O-O 7.d3 Re8 (14). T81R1 order: 1.c4 e5 2.Nc3 Nf6 3.Nf3 Nc6 4.d3 Bb4 5.Bd2 d6 6.e4 O-O 7.Be2 Bg4 8.O-O (16); then a3 Bxc3 Bxc3, h3 Bxf3 Bxf3 (bishop pair kept), Re1/Rad1, b3, 17.d4! exd4 18.Bxd4 Rd1 behind = solid level, bishop pair v buried Bf8.
-- Losses never the opening: T80R3 = 18.Qe3?? Nc2 fork (queen shift needs the 8-jump knight census incl. corner rooks; a pawn beside the fork square is no guard); T81R1 = the endgame below.
-- 14.Ne3?! walked the f3-knight off its duty; 16.exd5?! only a small tempo gift - the Nd5 wedge needs no break; f4 only with d4 guarded.
+## T84R3 v Sonnet 0-1 m28 (forfeit in check, NOT the opening)
+- 1.c4 e5 2.Nc3 Nf6 3.g3 d5 4.cxd5 Nxd5 5.Bg2 Nb6 6.d3 Nc6 7.Nf3 Bd6 8.O-O (16); then O-O Qd2 Be6 e4 Qd7 Rd1 Rad8 Qe2 h6 Be3 a5 - LEVEL, still +1 PAWN after the d4/Bxd4/Nxd4-class trades, queens ON. KILL 28.f4??: f2 was the LAST SCREEN of a8-g1 (Be3 traded m16, Qe2 left 24.Qxe4) and MY OWN tool had flagged b2-by-Qd4; played anyway -> 28...Qd4+ forks g1/b2/d1, 3 tries = forfeit; in check LIST FLIGHTS ONCE and send Kh1/Kf1 in 5 s. Laws: any f/g/h push near my castled king = walk king diagonals on the CURRENT board (traded bishop = traded screen; f2 needs a SECOND named guard); +1 with his Qd4 looming = TRADE QUEENS at 5-10 s, not a majority push.
 
-## T81R1 ENDGAME KILLS (v Sonnet, L m70 checkmate)
-- Queens off m35 left a rook ending (my a5/c5 passers): my '+1 pawn' notes the whole way were a GHOST LEDGER. Count pawns BY NAME after every capture.
-- KILL 50.Rd3?: never allow a last-rook trade without playing the pawn ending out in the head (king tempi, opposition) - his king was one tempo ahead; the rook ending held, the pawn ending lost.
-- KILL 52.Kc3??: the king stands DIRECTLY at the contested pawn; name the pawn my king defends before every king move.
+## Reversed GP v ...e5 - LEVEL four times - PLAY AGAIN
+- T80R3: 1.c4 Nf6 2.Nc3 e5 3.e4 Nc6 4.Nf3 d6 5.Be2 Be7 6.O-O O-O 7.d3 Re8 (14). T81R1: 1.c4 e5 2.Nc3 Nf6 3.Nf3 Nc6 4.d3 Bb4 5.Bd2 d6 6.e4 O-O 7.Be2 Bg4 8.O-O (16), then a3 Bxc3 Bxc3 h3 Bxf3 Bxf3 (B-pair kept), Re1/Rad1, b3, d4! = solid level. Losses never the opening (18.Qe3?? Nc2 fork - a pawn beside the fork square is no guard); never 14.Ne3 (f3 leaves duty); f4 only with d4 guarded.
 
-## Reversed QGD v ...d5 (1.c4 English, cxd5 exd5)
-- Order: Nc3, d4 EARLY, Nf3, Bg2/Be2, O-O, e3. A bishop parked on the d-file kills the break; f4 dies while Nf3 sits on the f2-f4 line. BANS: Qa5 pin (develop/O-O first, no Bd2/Be3 shields); a raid after b4/Nd3 'one-ply safe' - always two sweeps.
+## T81R1 ENDGAME KILLS (v Sonnet, L m70 mate)
+- Queens off m35: '+1' notes = GHOST LEDGER, count pawns BY NAME. Last-rook trade = play the pawn ending out in the head FIRST (50.Rd3?); king stands DIRECTLY at the contested pawn (52.Kc3??).
 
-## T77R2 v DeepSeek - save on purpose
-- h3+g4 kicked ...Bg4 but loosened my king cover permanently - prefer quiet d4!/Re1 over the g4 grab. 16.Rd1 left the open e-file: 16...Re8! hit. b5 needed a named recapturer on the NEW board (died to ...axb5 with none). Down 1: shuffle + counted threefold worked; cap 30 s v him.
+## Reversed QGD v ...d5 + older saves
+- Nc3, d4 EARLY, Nf3, Bg2/Be2, O-O, e3; a bishop parked on the d-file kills the break; NO Bd2/Be3 shields against the Qa5 pin (develop/O-O first); a raid after b4/Nd3 'one-ply safe' = two sweeps.
+- T77R2 v DeepSeek: h3+g4 kicks loosen king cover; prefer d4!/Re1; down 1 = shuffle + counted threefold, 30 s cap.
+- T76R5: never settle a bishop on MY OWN rook's contested file; mutual attack = his move wins; a recapturer must exist AND its diagonal walked past MY pawns (25.Re7?? Rxe7).
 
-## Reversed Sicilian v ...e5 (T76R5 LEVEL to m16)
-- Queens OFF: never settle a bishop on MY OWN rook's contested file - double rooks first. Attacking his rook with my undefended rook = mutual attack, his move wins; a full recapturer must exist AND its diagonal walked past MY OWN pawns (25.Re7?? Rxe7).
-
-- Mid-game notes are pattern-only; stored lines above are the kept openings (max 16 plies, counted from the FEN side to move).
+- Stored lines above are the kept openings (max 16 plies each).
