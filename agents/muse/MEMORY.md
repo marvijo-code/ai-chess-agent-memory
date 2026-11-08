@@ -1,21 +1,20 @@
 # Chess memory - Muse Spark 1.3 Contributor (3600+10)
 
 ## Record
+- T83-3rd W vs Flash loss forfeit m32 down B Re8 f4 pin. Classical Bd3 Be3 Qe2 O-O-O Kb1 done, then Rc1 plus Rc2 plus Rh1 plus Rg1 plus Qd1 plus Nd2 drift gated, Re8 plus f4 won e3 B. 1 illegal.
 - T83SF1G1 B vs SF loss forfeit m24 down 2+ crushed. FourKnights Bb4 O-O Nd5 Nxd5 exd5 e4 book flagged x2, Bc4 Be6 fxe6 Qb3 Qd6 d4, Rab8 Ba5 Bb6 met b4 Kh8 Qc2 Qd5 Bf4 Re7 Re5 Qd6 Kg8 Rbe8 a4 Qd7 flagged then a5 trap won B forfeit. 3 illegal.
 - T83R5 W vs Sonnet loss 0-1 m79 mate. Ruy d3 Breyer Kh1 Qc1 Bd2 d4, e5 dxe5 Rxe5 Bxd3 lost B, Bb2 Nd3 fork, Bc2/Bd3 shuffle burned to 6min vs 46min, Ra8 mate. 5 illegal.
-- T83R4 B vs Flash draw threefold m44 down 2. Scheveningen Bd6 Rfe8 Kh8 Qb8 Rf7 Re7 held vs f5 d5 Bg5, drew via Kg8 Kh8 loop vs 2:39 bank. 4 illegal.
+- T83R4 B vs Flash draw threefold m44 down 2. Scheveningen Bd6 Rfe8 Kh8 Qb8 Rf7 Re7 held vs f4 d5 Bg5, drew via Kg8 Kh8 loop vs 2:39 bank. 4 illegal.
 - T83R3 B vs Flash win forfeit m21 level. English Re8 Be6 Nd7 Qc7 Qd7 Rac8 Ra8 a6 a5 Kh8 Ng4 Nf6 shell held vs g3 Bg2 e4 Be3 Nd5. Won on 3 invalid. 0 illegal.
 - T83R1 W vs SF loss 0-1 m19 mate. Dragon Yugoslav Be2?? repeat of T80R1 left Be3 to Nxe3 then Bxd4. Down shell Ka1 Kb1 loop then Bxc3 Qxa2 mate. 0 illegal.
 - T82-3rd-AD B vs Flash loss time m20 level. Classical simplify plan good but 55s+ thinks flagged to 0:39. 0 illegal.
 - T82-3rd W vs Flash draw threefold m48 level. Classical shell then Rh3 Rh4 loop drew vs bank. Early pushes flagged. 2 illegal.
 - T82SF1G1 B vs SF loss forfeit m7 even. FourKnights correct to exd5 then book e4 flagged Nxe5 loss x3 REPEAT. 0 illegal.
 - T82R5 W vs Flash win forfeit m39 level. Classical storm then Rd7 Qe4 won on 3 invalid. 0 illegal.
-- T82R4 B vs SF loss forfeit m48 down 5. FourKnights correct then Qf6 c5 Ke6 errors then h-run gated. 4 illegal.
+- T82R4 B vs SF loss forfeit m48 down 5. FourKnights correct then Qf6 c5 Ke7 errors then h-run gated. 4 illegal.
 - T82R3 W vs Sonnet draw threefold m62 down P. Ruy blockade plus Nc5 Ne4 plus Qd1 Qd2 plus Kh1 Kh2 Kg1 loop drew. 3 illegal.
 - T82R1 B vs Flash loss forfeit m35 level. English pin then slow shuffle flagged. 1 illegal.
 - T81F W vs SF loss forfeit m41 down exchange. Yugoslav Bd4 error then Bxb7 Qxg2 run then Qxc2 gated. 3 illegal.
-- T81SF1G1 B vs Sonnet win forfeit m24 level. Breyer shell then exd4 cxd5 break won on tool flood. 0 illegal.
-- T81R5 B vs Flash loss forfeit m36 level. Ruy shell then b3 c3 b2 Rxb2 won B, Rb5 c4 fork gated. 2 illegal.
 
 ## Key lessons (read before EVERY move)
 - LEGALITY FIRST: after 1 reject redraw FEN, pick different piece and idea, never resend stale UCI. 3 rejects forfeit, tool refusal = reject. In check list replies once and send in 5-10s. T83SF1G1 burned 2 on e4 book plus 1 on Qd7 then 3x on Ba6 trap forfeit: after 1 refusal NEVER resend same UCI, switch square at once. EXCEPT down 4+ rook ending where every move loses same pawn (T82R4): resend BEST once, 2nd send passes, never cycle 3 losers. EXCEPT FourKnights e4 book false flag: RESEND e4 once, 2nd try d6 keeper, never 3x e4. Castle early. Sweep Nxe3 Bxd5 first or guard Be3 twice.
@@ -26,8 +25,8 @@
 - RUY NA5 C5 C6 POISON: 10.c6 chases Nd5 weakens d6, 14.c5 hits Bd4 opens d5, 15.b5 meets c3 doubling. Keep Ne7 Nc6 Bd7 Re8, hold d6 twice, meet d4 exd4 only.
 - YUGOSLAV BC4 POISON: T79R4 11.Bc4 abandoned Be3 to Nxe3 won piece, Rb8 Bd8 won game. Never Bc4 Bb3 while Be3 loose. Sweep Nxe3 Bxd5 first or guard Be3 twice. Keep Be2 then f3 then Qd2 then O-O-O order.
 - ADVANCE C4 E6 FORK POISON: T80R5 Nd7 onto e6 fork met cxd5 exd5 e6 hitting Nd7 then Ne5 winning c6. Vs c4 resolve dxc4 or cxd5 at once, never retreat onto e-push. Before any Nd7 Nf6 list e6 fork. In check list flights then blocks then captures once.
-- ENGLISH BB4 PIN SHELL: T82R1 Bb4 pin met a3 kick to Bc5 then Bd4, b4 space holds. T83R3 level win only by his 3 invalid: never Qc8 Qc7 plus Rac8 Ra8 plus Kh8 Ng4 Nf6 shuffle while clock burns, keep one setup 10-20s keepers. Timeout forfeits like flag.
-- CARO CLASSICAL WHITE CLOCK POISON: T79R7 even flagged 0:13. T80R4 all flagged. T82R5 win but Be3 plus Rd2 plus b3 plus Nd2 plus c3 plus Qc2 plus Qd2 plus Na5 plus dxc5 plus Ne3 all flagged: keep Bd3 Qd3, Kb1 once never Ka1 Kb1, Rg1 Rd1 only, b3 c3 only twice-held, no Rd2 Rd1 Rd3 shuffle. h5 Ne5 Rh3 f4 never 2-4min. Routine 10-20s cap 60. T82-3rd: early pushes flagged but Rh3 Rh4 plus Qd1 Rc2 plus Kb1 shell drew vs bank: low clock 5-10s keepers, invite repeat.
+- ENGLISH BB4 PIN SHELL: T82R1 Bb4 O-O d6 Re8 h6 Be6 Rc8, Bc5 Bd4?! exd4 Nd5 outpost on e4, Nd7 Nde5 Nxf3 Ne5 Nf3+ Bxf3, c6 c5 Be6 Kg8 g5?! Nh5 Re7 g4 Qf4 Kh7?? Nf6+ fork gated x3 forfeited. Keep Bc5, never Bd4 granting Nd5, never g5/g4 without Nf6+ sweep, never Kh8 while Ng4 Nf6 loops.
+- CARO CLASSICAL WHITE CLOCK POISON: T79R7 T80R4 flagged. T82R5 win but Be3 plus Rd2 plus b3 plus Nd2 plus c3 plus Qc2 plus Qd2 plus Na5 plus dxc5 plus Ne5 all flagged: keep Bd3 Qd3, Kb1 once never Ka1 Kb1, Rg1 Rd1 only, b3 c3 only twice-held, no Rd2 Rd1 Rd3 shuffle. h5 Ne5 Rh3 f4 never 2-4min. Routine 10-20s cap 60. T82-3rd Rh3 plus Rh4 loop drew vs bank. T83-3rd Rc1 plus Rc2 plus Rh1 plus Rg1 plus Qd1 plus Qe2 plus Nd2 plus Nf1 drift gated, Re8 pins e3 f4 won B: keep Qc2 Qe2 once, no rook shuffle, list f4 e-file. 1 illegal.
 - ITALIAN SHUTTLE SHELL POISON: T79R5 up P flagged on time. Never Nd7 Nf6 loop vs Nf1 g3 h4 f5. Never passive keepers while up. One develop then 10-20s keepers, push d5 c5 once with recapture named.
 - ITALIAN BG6 BB8 RB8 POISON: 8.Bg4 9.Bh5 passive vs Be3 d4, 17.Rb8 met Bd5 f3 clamp. Contest e-file with Re8 first, Qe7 h6 after, never Rb8 a6 while Bd5 lives.
 - NAJDORF E5 TIMING: T78R4 e5 shell burned shuffling Qc8 Qc7 Qb6 plus Re8 Re7 Rd7. Re8 Bd6 Be6 hold e5. Never Nc5 while Be3 loose, never Bf6 gxf6 while Qf3 lives, never queen rook king shuffle.
@@ -63,7 +62,7 @@
 - Haiku: Open Sicilian Nxc6 patient, trades rooks, centralizes king, Nf5+. Never shuffle king.
 - GLM: Taimanov loose, hangs Q, banks then drifts. T83R3 English g3 held level to m21 then 3 invalid forfeit. Fast 3-10s early, 1-3min mid, 3x invalid forfeits when forked. Takes free Bxd5 Bxe3. T79R3 Qc7 Kb8 lost Q to Bf4 after g3 blocked Qxh2.
 - DeepSeek: keeps guarded, queenside dance. Classical Bd6 e6 won P then Bf4 Bg5 wins N, c-clamp h-runner Rc1 mate vs Kf1 Nf4. Fast 5-20s banks clock. Flags when worse. T79R5 Italian 2-20s banked 53:05 vs my shell. T82R5 Classical storm gated 3x forfeited m39: keep b3 c3 twice-held, no Ka1 Rd2 shuffle, 10-20s. T82-3rd Classical e5 d5 c5 b4 clamp then Kg8 Kh8 plus R-shuffle fortress: no pawn push wins, low clock Rh3 Rh4 Qd1 Rc2 shell draws. T82-3rd-AD Classical Ne5-trade Nd5 Nb4 Nxd3 Bf6 Bxe5 level: take simplify in 10-20s, bank clock, never 60s with draw odds. T83R4 Scheveningen f4 e5 d5 level, f5 d5 bind plus Bg5 h3 Kh2 b3 Nb5: no h6 h5 h4 loosening, keep Bd6 Rf7 blockade, Kg8 Kh8 loop draws vs low clock.
-- Sonnet: Ruy Na5 Nxb3 Bb7 Re8 solid, Bg4 pin Nxe4 Nc4 clamp, Breyer Bd7 Re8 h6 Bf8 holds e5. Scheveningen patient 6-20s, shuffles Kg2 Kh2 Rd2 to flag. Takes every loose unit. T80R5 Advance c4 e6 fork won P vs Nd7 shell. T82R3 Chigorin d5 cxd4 exd4 held extra pawn, banks 40min: don't drift, keep Bd3 Nc5 blockade and force repeat. T83R5 Breyer Kh7 a5 b4 Rb8 Rc4 Nd3 fork won B: no Bc2/Bd3 shuffle.
+- Sonnet: Ruy Na5 Nxb3 Bb7 Re8 solid, Bg4 pin Nxe4 Nc4 clamp, Breyer Bd7 Re8 h6 Bf8 holds e5. Scheveningen patient 6-20s, shuffles Kg2 Kh2 Rd2 to flag. Takes every loose unit. T80R5 Advance c4 e6 fork won P vs Nd7 shell. T82R3 Chigorin d5 cxd4 exd4 held extra pawn, banks 40min: don't drift, keep Bd3 Nc5 blockade and force repeat. T83R5 Breyer Kh7 a5 b5 Rb8 Rc4 Nd3 fork won B: no Bc2/Bd3 shuffle.
 - SF: punishes loose, pins, back rank, breaks. Instant, no gifts. Dragon d5 break, bxc6 opens file, Qa5 Rb8 Rd8 double kills. Castle early never long into open file, guard second rank, keep shell for repeat.
 - Fable: takes loose, trades queens when up, no luft. Model: fortress, checks, back-rank mate.
 
