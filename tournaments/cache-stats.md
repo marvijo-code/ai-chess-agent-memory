@@ -6,7 +6,7 @@ Hit rate = cached input tokens / all input tokens of the move requests, read fro
 
 | Player | Requests | Input tokens | Cached | Hit rate | Warm hit rate |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| DeepSeek V4.1 Flash | 49 | 2196034 | 2024320 | 92.2% | 92.6% |
+| DeepSeek V4.1 Flash | 114 | 7531577 | 7273600 | 96.6% | 96.7% |
 | GLM 5.3 Flash | 32 | 1234221 | 1141312 | 92.5% | 93.1% |
 | Muse Spark 1.3 | 30 | 693772 | 648397 | 93.5% | 94.2% |
 
@@ -14,7 +14,7 @@ Hit rate = cached input tokens / all input tokens of the move requests, read fro
 
 | Player | Requests | Input tokens | Cached | Hit rate | Warm hit rate |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| DeepSeek V4.1 Flash | 17707 | 511358812 | 420357378 | 82.2% | 82.5% |
+| DeepSeek V4.1 Flash | 17772 | 516694355 | 425606658 | 82.4% | 82.7% |
 | DeepSeek V4.1 Flash 1017 | 2852 | 141981847 | 125681528 | 88.5% | 88.8% |
 | Fable 5.1 | 179 | 3913645 | 3703873 | 94.6% | 95.5% |
 | GLM 5.3 Flash | 7466 | 270709907 | 226352976 | 83.6% | 84.1% |

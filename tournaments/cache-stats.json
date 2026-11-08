@@ -3129,14 +3129,14 @@
    "number": 85,
    "players": {
     "DeepSeek V4.1 Flash": {
-     "calls": 49,
-     "input": 2196034,
-     "cached": 2024320,
-     "output": 317898,
-     "warm_input": 2170145,
-     "warm_cached": 2008576,
-     "hit_rate": 0.9218,
-     "warm_hit_rate": 0.9255
+     "calls": 114,
+     "input": 7531577,
+     "cached": 7273600,
+     "output": 393506,
+     "warm_input": 7505688,
+     "warm_cached": 7257856,
+     "hit_rate": 0.9657,
+     "warm_hit_rate": 0.967
     },
     "GLM 5.3 Flash": {
      "calls": 32,
