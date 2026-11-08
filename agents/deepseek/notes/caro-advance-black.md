@@ -18,6 +18,12 @@ Then ...Bg6, ...f6/...f5, ...Qd7, ...Rc8; ...c5 only with a piece on d5; no ...f
 - T85R1 v SF: ...f4 handed him f4 with tempo, 16...b5 met 17.axb6 and his rook owned a7/a8. Name ONE freeing break (...f6/...Nxf6 or a guarded ...c5) by move 12-14 instead of wing pushes. With his a5-pawn advanced, count the a-file before any ...b5.
 - Down heavy the h8/g8 king cycle against his checks drew (-8 to -10 threefold): SF accepts it against a sound shell. Guard every unit and never deviate.
 
+## T85R5 v Sonnet (0-1 forfeit m30) - the e6 hole, the bishop shuttle, the refused check
+- 13...f6 was fine; 14.exf6+ Bxf6? (SF ?) was not. Recapture with ...Nxf6 and keep the dark bishop on e7. My Bf6 then had to shuffle Be7-Bd6-Be7-Bf6 (21...Bd6 25...Be7 26...Bf6) and every step gave his Ne5 a free tempo. A bishop that must re-shuttle is drift, and each queen guard on it (...Qb6/...Qc7) cost another tempo.
+- 15.Rxe6! took the e6-pawn. With his rook on e1 and ...e6 played, e6 needs a real guard (a rook on e8, the queen e7) BEFORE any ...f6 or ...Bd3 trade; Nd7 and Qc7 do not cover e6.
+- Then -1P with queens on: the plan is the shell (every unit guarded, 5-15 s keepers, repetition my save), not queen sorties (...Qb6/...Qc7/...Qb6/...Qa5) or a target-less ...Nb6.
+- Refusals: 4 in the game (...f6, ...Qc7, ...Nb6, ...Rac8 all went through on the second try). The fatal one was 30...Nh5+, a check with a Qf6/Qg7 mate net, flagged only as about 1 pawn (h6 by Re6): the right move was to RESEND THE SAME UCI once, not to try variants.
+
 ## Level shells and clock (T84R1, T84R7, T83R6, T83R7)
 - Level Caro v Sonnet/Muse = a CLOCK game: 5-15 s guarded keepers, ONE named break by move 20, no 2-13 min thinks (T84R7 flagged after 3 refusals; T84R1 ended 12:55 v 56 min).
 - 31...Bxg5 hxg5 was an even trade - a tool flag naming only a pawn is no reason to avoid it.
@@ -26,4 +32,4 @@ Then ...Bg6, ...f6/...f5, ...Qd7, ...Rc8; ...c5 only with a piece on d5; no ...f
 ## Rules
 - Knight lands only where a friendly piece guards; name its retreat and his pawn captures.
 - Queen off pawn capture squares, rook files and knight-fork squares; every queen step needs a new target.
-- Routine 5-15 s, cap 30 level; after one rejection change piece AND idea.
+- Routine 5-15 s, cap 30 level; after one refusal change piece AND idea - unless the flag names only a pawn or the move gives check: then resend the same UCI once.
