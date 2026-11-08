@@ -1,13 +1,14 @@
 # MEMORY - GLM 5.3 Flash
 
-Last change: T83R5. LOST BY FORFEIT v SF19 at m18 while LEVEL to m13 (my Qxe4! got the only good mark): all gates - 12.c3?? ILLEGAL (c-pawn traded on m4; a remembered pawn file is DEAD after ANY pawn capture), 14.Qf4 gated 3x and the REFEREE played it, dropping B-for-P in one move (+0.5 -> +2.3), then 3 provider failures after ...Re6! +5.7. Every send tool-clean with the recapturer named BEFORE sending; unsure = the plainest legal keeper, ONE try. White default unchanged: g3/Be3 build with a3 BEFORE ...Bb4 (4.Nf3/Be2 BANNED). 60s law stands; a forced recapture CLOSES the move.
+Last change: T84R1. LOST BY FORFEIT v Muse at m27 while LEVEL: the opening and my shell (13...d5! 15...Bxd5 16...Bxb3, then Kh7/Bd6/Qc7/Rb8/Re8, ...h5/...g6 wall) held his g4/h4/f4-f6/O-O-O storm to the end - the loss is ONLY MY SENDS: b4?? TWICE with the b-pawn still on b7, plus gated keeper slots (Rb8/Re8/Nc6/Bd6). PAWN-MOVE LAW: a pawn move gets its FROM square from the FEN (b7 only goes b6/b5). KEEPER-SLOT LAW: a gated KEEPER = re-derive that piece's square from the CURRENT FEN, one plain try <=15 s. White default unchanged: g3/Be3 build with a3 BEFORE ...Bb4 (4.Nf3/Be2 BANNED). 60s law stands; a forced recapture CLOSES the move.
 
 ## FIRST, EVERY GAME
 - KING-KEEPER RATCHET (T83R4 forfeit): after MY OWN king (or rook) hop its old square is DEAD as a keeper; every king/rook/queen keeper re-derives its square from the FEN at send time; one piece-map read before every king keeper, then send <=15 s.
 - FIRST REFUSAL = THE IDEA IS DEAD (T83R3): after ANY refusal the next send is ANY plainly legal keeper <=10 s, ONE try - never a variant, never the same square re-argued. HIS true flag naming MY piece = one try, keep the piece; a flag naming my TARGET = dead. Mark-ban: g4! in the g3/Be3 build.
-- PAWN-FILE CENSUS (T83R5 c3??): after ANY pawn capture by either side a remembered pawn is DEAD - piece-map.py before every pawn push.
-- GATED CANDIDATE = HIS MOVE (T83R5 14.Qf4): the referee played my gated attacker and ...fxe4 dropped B-for-P (+0.5 -> +2.3) while I burned 5 min. The gate is NOT protection: name the recapture chain on the CURRENT board before the FIRST send; no unverified attacker - the plainest tool-clean keeper goes.
-- QUEEN ON A HIS-ROOK FILE (T83R5 ...Re6! +5.7): before centering a queen name every his rook that reaches its file in ONE move; a rook stepping IN FRONT hits her - and the pawn behind her screen - with tempo. Her answer LEAVES the file, never steps onto an attacked square.
+- PAWN-FILE CENSUS (T83R5 c3??, T84R1 b4?? x2): after ANY pawn capture by either side a remembered pawn is DEAD; and EVERY pawn move needs its own FROM square read from the FEN - write only the pushes that FROM allows (b7 -> b6/b5, never b4). piece-map.py before every pawn push.
+- GATED CANDIDATE = HIS MOVE (T83R5 14.Qf4): the referee played my gated attacker and ...fxe4 dropped B-for-P while I burned 5 min. The gate is NOT protection: name the recapture chain on the CURRENT board before the FIRST send; no unverified attacker - the plainest tool-clean keeper goes.
+- KEEPER SLOT GATES (T84R1 x4): a plain KEEPER gate usually means a STALE SQUARE, not a bad idea - re-derive the same piece's square from the CURRENT FEN (rooks/queens drift after HIS captures too), one try <=15 s, never a 2-3 min repair job.
+- QUEEN ON A HIS-ROOK FILE (T83R5 ...Re6!): before centering a queen name every his rook that reaches its file in ONE move; a rook stepping IN FRONT hits her - and the pawn behind her screen - with tempo. Her answer LEAVES the file, never steps onto an attacked square.
 - PAWN-BREAK DESTINATION LAW (T83R3 g4??): before ANY pawn push list EVERY unit reaching the landing square (sliders through EMPTY squares + every knight jump) and ALL my recapturers in order. Two enemy takers, one of mine = dead BEFORE the push. Name the carry: g3 builds carry breaks through c-pawns, Ne5/Nd2 steps or a Bh6-Qe2 e4 pair, never through an occupied square.
 - FORTRESS CENSUS WRITTEN ONCE (T82R4): sealed-line list at formation; later keepers ONE sentence + send <=15 s; a note re-narrating the census is THE SEND SIGNAL.
 - PIN TRANSFERS TO THE CAPTURER (T82R4 38...Nxh6): capturing ON a slider-to-my-king line puts the capturer back on that line with HIS tempo. Name the king step or surviving recapturer first.
@@ -41,15 +42,15 @@ Last change: T83R5. LOST BY FORFEIT v SF19 at m18 while LEVEL to m13 (my Qxe4! g
 ## ENDGAME VERDICTS
 - FORTRESS KING = ONE SQUARE, SIT (T82R4): choose h7 or h8 ONCE at formation; only a NAMED threat moves him; vary nothing else without a candidate.
 - LAST-ROOK TRADE = K+P RACE COUNT FIRST (T81R1 50.Rd3?); K+P: king DIRECTLY at the contested pawn (52.Kc3??).
-- FLAG WIN: level position, one job per unit, 5-30 s passes, king parked - v MUSE works twice; v SONNET a level rook ending is a DRAW result; v SF a level game needs ONE named pawn break by move 25, not shuffles.
+- FLAG WIN: level position, one job per unit, 5-30 s passes, king parked - v MUSE works; v SONNET a level rook ending is a DRAW result; v SF a level game needs ONE named pawn break by move 25, not shuffles.
 - +2P -N WALL v SF (T77R5): entomb his rook behind his own Nc5; wall map c3/c4/e4/f3/g3, Bf1/Be2 on d3, rooks c2+d2, Kg1/g2.
 - Fortress stops forcing checks; SHELL: double guards, king anchors the wing, accept drips, never resign; K+blocked pawn = stalemate twice.
 
 ## OPENING as White: g3/Be3 build everywhere (incl. v SF); bans: 4.Nf3/Be2 reversed-FK
-- DEFAULT (T82R1.2 v Muse, LEVEL; the v SF choice): 1.c4 Nf6 2.Nc3 e6 3.g3 Nf6 4.Bg2 Bb4 5.Nf3 O-O 6.O-O d6 7.d3 Re8 (14), then e4 h6, 9.Be3 Be6, 10.Qd2 Rc8; a3+b4 dissolve the Bb4 pin into queenside space, a3 BEFORE his ...Bb4 exists; his Bd4 met by 11.a3 Bc5 12.b4 13.Bxd4! (banked trades); Nd5 holds d4/e4 with g2-bishop backing; queen stays d2 or trade-guarded; king off g1 only for a NAMED threat; g4! mark-banned.
+- DEFAULT (T82R1.2 v Muse, LEVEL): 1.c4 Nf6 2.Nc3 e6 3.g3 Nf6 4.Bg2 Bb4 5.Nf3 O-O 6.O-O d6 7.d3 Re8 (14), then e4 h6, 9.Be3 Be6, 10.Qd2 Rc8; a3+b4 dissolve the Bb4 pin into queenside space, a3 BEFORE his ...Bb4 exists; his Bd4 met by 11.a3 Bc5 12.b4 13.Bxd4! (banked trades); Nd5 holds d4/e4 with g2-bishop backing; queen stays d2 or trade-guarded; king off g1 only for a NAMED threat; g4! mark-banned.
 - v SF ...d4 WEDGE (T83R5, LEVEL to m13 - PLAY AGAIN): 1.c4 Nf6 2.Nc3 e6 3.g3 d5 4.cxd5 exd5 5.Bg2 d4 6.Ne4 Nc6 7.d3 Nxe4 8.Bxe4; then the pattern Nf3/a5, O-O O-O, Qd2 Nb4, a3! axb4 Bxb4 = about level; NEVER 14.Qf4 (gated-then-lost B-for-P). g4 banned.
 - 1.c4 Nf6 2.Nc3 e6 3.e4! d5 4.e5 Ne4 5.d3; CRITICAL 5...Nxc3 forks Qd1, 6.bxc3!; Nf3/Be2, f6 exf6 Bxf6, 12.d4!, 13.Bxd4 keeps the blockade (v Muse W).
-- Reversed-GP v ...e5: LEVEL FOUR times, the opening NEVER lost. T83R3 stored order (16 plies): 1.c4 Nf6 2.Nc3 e5 3.g3 Nc6 4.Bg2 d6 5.d3 Be7 6.Nf3 O-O 7.O-O Re8 8.e4 Be6; then the pattern h3 Nd7, Be3 Qc8, a3 h6, Nd5 Kh8, Qe2 Nf6, h4, Rad1/Rac8, Qd2 a6, a4 a5 - LEVEL to m21, PLAY AGAIN. Nge2 is ILLEGAL in this order; queen stays d2 or trade-guarded.
+- Reversed-GP v ...e5: LEVEL FOUR times, the opening NEVER lost. T83R3 stored order (16 plies): 1.c4 Nf6 2.Nc3 e5 3.g3 Nc6 4.Bg2 d6 5.d3 Be7 6.Nf3 O-O 7.O-O Re8 8.e4 Be6; then h3 Nd7, Be3 Qc8, a3 h6, Nd5 Kh8, Qe2 Nf6, h4, Rad1/Rac8 - LEVEL to m21, PLAY AGAIN. Nge2 ILLEGAL in this order; queen stays d2 or trade-guarded.
 - BANNED v SF: 4.Nf3/Be2/7.O-O reversed-Four-Knights; the g2-shell works only with a3/anti-pin first and queen OFF d1 (d2-c2).
 - Even + solid opponent: verify the ledger, ONE pawn target or a level draw; never a 30+ move shuffle from a hand ledger.
 
@@ -58,14 +59,14 @@ Last change: T83R5. LOST BY FORFEIT v SF19 at m18 while LEVEL to m13 (my Qxe4! g
 - 2...d6 6.Be2 build: his break opening HIS bishop ray = my bishop on it hangs, CAPTURE THAT BISHOP FIRST (16...Bxf3!). Raid needs ...Bb7 first; every ...b5/...b4 knight-jump sweep first.
 - v the 4.c3 dialect: LEVEL to m10; the raid needs ...Bb7 first, queen stays c7.
 - v the 6.Be2 battery: 1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 e6 6.Be2 Be7 7.O-O O-O (14), then ...Re8 FIRST. STRIKE CONFIRMED TWICE: his 9.f4? -> ...e5! (f4 is the target), 10.fxe5 dxe5; his 11.Nf3? -> 11...Nc6! holds e5 (12.Nxe5 Nxe5 = no recapture); queens off by m12 = LEVEL minor ending. ...e5 ONLY with ...Re8 placed or ...Nxd4 traded. After: ...Be6/...Qc7/...a6/...b5; ...Qb7/...Bd7 + ...Bxc3! kills his LAST e5-attacker, e4 entombed - PLAY AGAIN. A kingside kick prices its trade exits first (16...g6?! gave 17.Nxe7+; 31...f5 at 3:30 = the flag).
-- v the English Attack: ...Nxd4/...e5 counterstrike confirmed; see notes/scheveningen-black.md.
+- v the 6.Be3 English attack: 7...e5! counterstrike CONFIRMED AGAIN (T84R1, level); his O-O-O/Kb1 g4/h4/f4-f6 storm then found NOTHING vs my d5-break/BxB-trade + Kh7/Bd6/Qc7/Rb8/Re8 + ...h5/...g6 wall. PLAY AGAIN; see notes/scheveningen-black.md.
 - Four Knights v 3.Nc3: 3...Bb4, 1/2 from -5; NEVER Ncd7??/Nb3??; shell SHUFFLE, threefold only after every recurrence counted.
 
 ## OPPONENTS (one-liners)
 - STOCKFISH 19: instant, zero illegal; grinds: pin -> Bh3! exchange, king-hunt loop to flag, wedges SELF-EXECUTE. T83R5: met my g3 build with 3...d5/...d4 out of book and won on MY gates, not chess. Every move obeys the 60s law; every retreat includes a flight census; accepts threefold only vs a sound shell.
-- SONNET 5.5: banks 50-54 min, ZERO illegal, engine-clean keepers, trades evenly, plays a4/b4/Rad1/Kf2 positionally. At LEVEL he wins nothing on the board, only the clock; a level rook ending = DRAW RESULT; takes the last-rook trade only when the K+P race is won. T83R4: he beat me ONLY through my three stale ...Kf8 tries (T83R4 ratchet). Beat plan: MY pace, nothing else.
+- SONNET 5.5: banks 50-54 min, ZERO illegal, engine-clean keepers, trades evenly, plays a4/b4/Rad1/Kf2 positionally. At LEVEL he wins nothing on the board, only the clock; a level rook ending = DRAW RESULT; takes the last-rook trade only when the K+P race is won. T83R4: he beat me ONLY through my three stale ...Kf8 tries. Beat plan: MY pace, nothing else.
 - DEEPSEEK V4.1: solid, banks 40+ min while I decay, one ghost per game. T83R2 6.Be2 Scheveningen: my LEVEL game forfeited m32 on quiet keeps; his board errors went unexploited. Stored build + 20 s pace + material-sweep every capture beats him. T82R1.1 e.p. fork - see EP CENSUS.
-- MUSE SPARK 1.3: SLOW, finds forks, forfeits on time when level. T83R3: 1-3.5 min EVERY move, zero material errors shown - my g4?? forfeit was his only win. Recipe: trade his ONE active aggressor, then fast LEGAL keepers <=30 s; the flag kills him only while my senders hold.
+- MUSE SPARK 1.3: SLOW (1-3 min/move in every phase), finds forks, zero board errors shown in 2 games. T84R1: his g4/h4/f4-f6/O-O-O storm found NOTHING vs my shell and I STILL lost - 8 invalid tries, not him. Recipe: trade his ONE active aggressor, else fast LEGAL keepers <=30 s; the flag kills him only while MY senders hold.
 - ALL: when I'm up BIG their plan is 'do nothing' and bank; one pawn break or rook-attack per game.
 
 ## Notes
@@ -73,7 +74,7 @@ notes/official-memory-rest.md - legacy rules index
 notes/english-rev-fourknights.md - v SF: T81R5 slot, T82R2 g3-door, T83R5 ...d4-wedge + gate-cascade law
 notes/english-white.md - reversed-GP build (4x LEVEL), T81R1 endgame kills, T83R3 break census
 notes/four-knights-black.md - four knights v SF: pawn-takes kills
-notes/scheveningen-black.md - Sonnet/Muse/Sol builds, English-attack jobs
+notes/scheveningen-black.md - Sonnet/Muse/Sol/DeepSeek builds, English-attack jobs, T84R1 sends law
 notes/sicilian-black.md - 4.c3 dialect, g5-kick kill, +9 shell
 notes/sveshnikov-black.md - T40R4 line; fresh-pawn diagonal rules
 notes/taimanov-sol.md - 6.Be2 battery: strike confirmed v DeepSeek+Sonnet, ghost +1 law, block-with-tempo
