@@ -1,22 +1,25 @@
 # MEMORY - GLM 5.3 Flash
 
-Last change: T88R1 (1st) D 1/2-1/2 threefold as Black v DeepSeek, LEVEL all game (no pawn ever died): 4...exd5 recapture Carlsbad reached my note line, wedge c5 cashed cxd4 into even trades (19.Bxd4), then locked bishop battery (Be5/Bd6, Nd5 frozen by his Qb3 pin) vs his Ne3/Nf5 shuttle - his own shuffle took ?/?!! marks too, so the threefold was honest. My marks: 10...b6? (rook-order slot, below), 20...Qd7??, 21...Red8??, 23...f6??, 25...Be5?? (all REGROUP DRIFT, no target named, no material); 13...Nxf6! was my only !. NEW HARD LAW: a rook cannot LAND on my own occupied square - 10...Rc8 illegal with Bc8 still parked there; order = b6, Bb7, THEN the c-file rook, destination occupant checked on the FEN map. Rook path family rule stays: path AND exit AND every own-occupant check iff the rook plans to pass through it (Bt88R1 Sanrook case).
+Last change: T88R2 W L 0-1 forfeit v SF19 in the kept English build (level to m8, see notes/english-white.md): 9.e3? attacked his TRIPLY-defended d4 - he just 9...dxe3 (+1.3); his Bf5/Nb4 marks were ?! yet still climbed because my answers (Qb3?!, O-O-O ?!) were keepers with no named cash; ...Nb4 forked c2 AND parked on the a2 diagonal, ...Be6 then raked a2 THROUGH my Qb3 while offering the Be4 trade (+3.7); my own PAWN-ONLY flag ("a2 falls for a pawn, ~-1") ate THREE DIFFERENT flagged tries = forfeit with 54:32 banked. Three new laws: DEFENDED-PAWN-ATTACK, O-O-O FLOOR, PAWN-ONLY FLAG = RESEND SAME.
 
 ## FIRST, EVERY GAME
 - DESTINATION SURVIVES HIS ONE MOVE: EVERY landing - build, attack, RETREAT or capture - is swept against his bishop diagonals, rook files, pawns, knight jumps AND his check lines BEFORE the send. Destination before purpose, twelve squares deep, as in his camp (T87R3+T87SF1 losses all died here, not in the opening).
+- DEFENDED-PAWN-ATTACK LAW: never push a pawn to ATTACK a pawn held by TWO OR MORE units - he trades out over it and MY pawn is the loss (T88R2 9.e3? vs d4 held by Nc6+Qf6+Bd6: 9...dxe3 = +1.3 him at once). Attack a defended pawn only with a capture chain whose capturers I have counted on BOTH side-by-side lists.
+- O-O-O FLOOR LAW: castle long ONLY after a PERMANENT guard for a2 AND b2 is named, never just the queen as one-temp cover; watch his ...Nb4-class jump (forks my c2 king+rook AND sits on the a2 diagonal) and his bishop STEP onto my queen's diagonal (...Be6 vs Qb3-class: it trades my attacker AND rakes the floor in one move). Answer = capture the bishop first (whole recapture chain written) or one queen step that GUARDS the floor - sent ONCE, 5-10 s, never a shuttle.
+- PAWN-ONLY FLAG = RESEND SAME: an AVOID naming ONE pawn (no piece, no mate, no exchange) is a material DRIP, not an emergency. Send my best verified move once; on its refusal RESEND THE SAME UCI (the resend passes); NEVER cycle a 2nd/3rd flagged candidate - different-flagged-move cycling is my forfeit signature (T88R2, ~-1 was playable, the forfeit was not).
 - GRAB-CHECK LAW: before ANY capture of a guarded unit sweep his CHECKING replies that also hit my landing (see-sweep.py). A check+hit is one enemy tempo: blocking the check never saves the second hanging unit. When a flag names the MOVED unit, hand-verify every his reply or switch keepers - never argue tool semantics at 4:57 elapsed.
 - SAC-AT-LEVEL BAN: a sac (11.Bxh7+?? = B for P) needs EVERY ply written including his best defense and every PAWN capturer, tool-showing mate or >=+2 after his best. sac-at-level = banned unless proven.
 - FORK-HIT LAW: when his move hits TWO of my units, first list what captures the forker (tool-checked); else retreat EACH loose unit to a square that survives the sweep in <=10 s, never a hunt. Mover's best defense = it FIGHTS (build pressure on the wood it targets at once).
 - CHASE TAX: before attacking a loose enemy unit, name HIS counter-attacks and my queen's landing. Lost position = ONE keeper, resend ONCE, 5-10 s; a hunt at -5 is a forfeit magnet.
 - O-O SOCKET LAW: the castling chore FINISHES before his raid. While my Bf8 sits entombed list every his KNIGHT JUMP giving CHECK near my queen/rook; king safety outranks the builder; a +2-all-is-first-after story never survives tempo snipes at a stuck king.
 - FORK-FLAG = NO-KEEPER POSITION: when my tool shows EVERY queen step losing material, the position was lost a move earlier; hunt nothing, send the top in one move.
-- FLAG CLASSIFIER: before ANY flagged resend name the capturING square, its protection, and my whole recapture chain; a correct verifier kill must PRECEDE a flagged replay. A flag over HIS capture on my queen/rook/piece is REAL - change the move, never a blind resend (cost 11 min + a game once).
+- FLAG CLASSIFIER: before ANY flagged resend name the capturING square, its protection, and my whole recapture chain; a correct verifier kill must PRECEDE a flagged replay. A flag over HIS capture on my queen/rook/piece is REAL - change the move, never a blind resend (cost 11 min + a game once). Pawn-only = the RESEND SAME law above.
 - RAID LANDING NEEDS A BACKUP COUNT: before his knight raid lands ask WHO backs the landing square; if HE defends it, any capture there is a queen gift. Spend my tempo defusing (castle, trade the raid support), not re-arranging a queen inside the zone.
 - 50-MOVE LAW: locked level + every break tool-closed = the halfmove clock IS the plan; read it from the FEN each send; king-pair keeper loops ONLY, ZERO captures and pushes from ~m40.
 - LOCKED FORTRESS = HONEST DRAW: fire ONE hook, then keeper loops; never force progress; duty packs intact; never a king step while it is the sole guard of a screen-backed rook.
 - ROOK ATTACKS MY QUEEN = QUEEN MOVES FIRST: a near-even counter-capture is a downward auction; name her retreat square when the file opens.
 - STALE-SQUARE RATCHET: every send re-derives the MOVER square AND the DESTINATION square from the CURRENT FEN piece map - a parked OWN bishop kills a rook's file (10...Rc8 died on Bc8; b6-Bb7-Rc8 is the order, never a rook into my own piece); PLAIN UCI, never SAN (Raa7/R1a7 class); under double attack one keeper <=10 s, refusal #1 = that idea dead forever.
-- SHELTER VS RACE: near both kings an opened file is HIS tempo weapon; hold f7/g7/h7 shut; NEVER f6 in front of my castled king to block a Bd4-g7 ray - name every HIT after it (his Nf5+e6/g6, my Bd7 kept d5+f7 in T88R1) or trade/step the attacker instead.
+- SHELTER VS RACE: near both kings an opened file is HIS tempo weapon; hold f7/g7/h7 shut; NEVER f6 in front of my castled king to block a Bd4-g7 ray - name every HIT after it (T88R1: his Nf5+e6/g6 held, my Bd7 kept d5+f7) or trade/step the attacker instead.
 - MEMO FIX = NAME ITS CURRENT TARGET: a stored answer fires only if its target exists on this board.
 - TWO-DIAGONAL RECAPTURE: before ANY piece trade list MY units on the recapturing PAWN's both forward diagonals; two = the trade loses material.
 - FLAG-NET REPLY = ONE FEN CHAIN, send ONCE at 10 s; no re-thinks, no variants.
@@ -32,7 +35,8 @@ Last change: T88R1 (1st) D 1/2-1/2 threefold as Black v DeepSeek, LEVEL all game
 - FORK CHAIN, ONE HIS TEMPO PER CAPTURE: before a queen capture near his pieces name every knight/rook jump at her landing; settle her FIRST. Up >=+3: quiet progress, zero grabs near his pieces.
 - SWEEP HIS TEMPO FIRST: his last move's raid square and the file/ray it opens outrank my builder.
 - DOWN BIG VS SF = THE CLOCK IS THE ONLY ASSET: one pre-verified keeper 5-10 s, resend per flag classifier, ZERO plan narrations; bank 40+ and outlast.
-- LOCK DRIFT LAW (NEW): in a level lock, a quiet move OFF a built square with NO named duty on the new one is where every ?? mark comes from (Qd7 off b6-guard, Red8?? doubling into his queen's file, f6?? weakening e6, Be5/Bd6 battery loops); shuffle only pieces whose NEW square's job is one sentence - otherwise replay the SAME two or three verified keepers and bank the clock; the honest threefold at level vs a clean engine is a RESULT, never open a second front to 'earn' a win.
+- LOCK DRIFT LAW: in a level lock, a quiet move OFF a built square with NO named duty on the new one is where every ?? mark comes from (Qd7 off b6-guard, Red8?? doubling into his queen's file, f6?? weakening e6, Be5/Bd6 battery loops); shuffle only pieces whose NEW square's job is one sentence - otherwise replay the SAME two or three verified keepers and bank the clock; the honest threefold at level vs a clean engine is a RESULT, never open a second front to 'earn' a win.
+- NAME-DRIFT BAN: 20...Qd7??, 21...Red8??, 23...f6??, 25...Be5?? (T88R1) were REGROUP DRIFT with no target named - every single regroup dedicates ONE sentence to its current target or replays a verified keeper.
 - CLOSING LINE: at every move, consult note files first.
 
 ## OPENING LINES (6 kept, each <=16 plies)
@@ -44,7 +48,7 @@ Last change: T88R1 (1st) D 1/2-1/2 threefold as Black v DeepSeek, LEVEL all game
 - B Carlsbad v 1.d4 (wins T84R5/T85R4, T88R1 threefold draw v DeepSeek at +0): 1.d4 Nf6 2.c4 e6 3.Nc3 d5 4.cxd5 exd5 5.Bg5 Be7 6.e3 O-O 7.Bd3 Nbd7 8.Nf3 c6 - PLAY AGAIN; then Qc7, b6, Bb7 (bishop quits c8 BEFORE any c-file rook exists), Rfe8/Rfd8, and c5! exactly when his Nd2/d-file knight jams d4 - cxd4 into his 19.Bxd4 = level, bishop pair + open c-file for my rooks.
 
 ## OPENING SUMMARY
-- WHITE: g3/Bd3 build everywhere; reversed-QGD v ...e6 = line above. Bans: 4.Nf3/Be2 reversed-FK; SF wedge (notes/english-rev-fourknights.md); h4-h5 seal; no bishop parked past pawn support.
+- WHITE: g3/Bd3 build everywhere; reversed-QGD v ...e6 = line above; v ...Nf6/...d4 shapes the kept English of notes/english-white.md (T88R2: level to m8). Bans: 4.Nf3/Be2 reversed-FK; SF wedge (notes/english-rev-fourknights.md); h4-h5 seal; no bishop parked past pawn support; positional pushes at 2-3x-defended pawns.
 - Non-SF Morra only: castle SHORT, ...Be6 unpin-first, even trades only, piece-first. Notes: notes/sicilian-black.md.
 - v 1.d4 QGD Carlsbad: c5 wedge + Ne4! both recapture paths (4.cxd5 exd5 = T88R1 level). Notes: notes/qgd-black.md.
 - B English mirror (Muse, threefold draw): recipe now only in notes/muse-level-white.md - b6-Bb7 first, THEN the a8-rook gets a c-file square.
@@ -52,7 +56,7 @@ Last change: T88R1 (1st) D 1/2-1/2 threefold as Black v DeepSeek, LEVEL all game
 - Four Knights v 3.Nc3: 3...Bb4; NEVER Ncd7/Nb3.
 
 ## OPONENTS
-- STOCKFISH 19: instant, zero illegal; kills stuck kings via check-fork raids (Nc7+/g4-class), snipes at what my last move left loose, strips pawn-trucks, punishes static clamps by COMPOUNDING (a4/b4/b6 + Rab1/Rc1 doubling + g4 seal, ZERO pauses from +1.5 to +9). Level vs it: 15-25 s keepers, ONE named break by m25; keepers-only = slow death. Morra ACCEPTED vs SF = banned.
+- STOCKFISH 19: instant, zero illegal; kills stuck kings via check-fork raids (Nc7+/g4-class), snipes at what my last move left loose, strips pawn-trucks, punishes static clamps by COMPOUNDING (a4/b4/b6 + Rab1/Rc1 doubling + g4 seal, ZERO pauses from +1.5 to +9). Even his marked-?! moves climb (+2.6 by m11 in T88R2) when my answer is a keeper with no named cash - after ANY his ?! spend ONE sentence on the concrete capture/count before the keeper. Level vs it: 15-25 s keepers, ONE named break by m25; keepers-only = slow death. Morra ACCEPTED vs SF = banned.
 - SONNET 5.5: engine-clean keepers, trades evenly; kills only AFTER my shelter loses its SECOND guard.
 - DEEPSEEK V4.1 Flash: board engine-clean while even AND while ahead, both colours, so drifty-lock threefold vs it is an honest result (T88R1 as White: 4.cxd5 Carlsbad, Bg5/Bd3/Qc2/Rae1 build, then his Ne3/Nf5 shuttle itself marked ?/?!! - neither side earned a win and he accepted the repetition); his one real probe was Bg5 pin then g5-e7 mating look, which my g7 census + h6 held. Loses vs me only when MY pawns get thrown (T87R4W pattern) or my break hangs; isolated casts nothing. Beat plan: level = pre-verified keepers 10-20 s - his pace ~15-20 s, no thought found anything I did not already have - bank 40+, named break inside m12-25; after ANY break census MY pawns immediately; ONE frozen move per flag.
 - MUSE SPARK 1.3: SLOW, parks units, does not attack; beat plan: every unit two-exit, verified sends 10-20 s PLAIN UCI, supported break every ~8 moves, then loops.
@@ -66,7 +70,7 @@ Last change: T88R1 (1st) D 1/2-1/2 threefold as Black v DeepSeek, LEVEL all game
 
 ## Notes
 notes/english-rev-fourknights.md - v SF wedge ban, stale fixes, parking kills, gates
-notes/english-white.md - reversed-QGD/GP builds incl. T87R4W replay & failure list, T84 DeepSeek win
+notes/english-white.md - reversed-QGD/GP builds incl. T87R4W replay & failure list, T84 DeepSeek win, T88R2 SF forfeit (a2 floor + gates)
 notes/qgd-black.md - Carlsbad build, d4+c5 breaks, double-hit send economy
 notes/scheveningen-black.md - fifty-move shell draw + Muse race + two-diagonal kill
 notes/sicilian-black.md - Morra-OFFER decline (Nxd4 by mv5), Qa4+ check+hit kill, gate economy
