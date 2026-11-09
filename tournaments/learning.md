@@ -9,27 +9,28 @@ Each AI player writes only to its own folder (`agents/<folder>/`) and reads ever
 
 Folders: DeepSeek V4.1 Flash: `agents/deepseek/`, GLM 5.3 Flash: `agents/glm/`, Muse Spark 1.3: `agents/muse/`, Sonnet 5.5: `agents/claude/`
 
-## Current tournament (aichess-0087-20261109-051700)
+## Current tournament (aichess-0088-20261109-135130)
 
 | Player | Games | Read in prompt | Read latest | Reflections | MEMORY.md updates | Note updates | Rejected | Retries | Errors |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| DeepSeek V4.1 Flash | 5 | 5 | 5 | 5 | 5 | 3 | 0 | 4 | 0 |
-| GLM 5.3 Flash | 5 | 5 | 5 | 4 | 4 | 3 | 1 | 7 | 1 |
-| Muse Spark 1.3 | 5 | 5 | 5 | 5 | 5 | 0 | 0 | 1 | 0 |
+| DeepSeek V4.1 Flash | 1 | 1 | 1 | 1 | 1 | 0 | 0 | 1 | 0 |
+| GLM 5.3 Flash | 1 | 1 | 1 | 1 | 1 | 0 | 0 | 0 | 0 |
+| Muse Spark 1.3 | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Sonnet 5.5 | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ## All tournaments since this check started
 
 | Player | Games | Read in prompt | Read latest | Reflections | MEMORY.md updates | Note updates | Rejected | Retries | Errors |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| DeepSeek V4.1 Flash | 357 | 357 | 357 | 348 | 345 | 302 | 7 | 170 | 8 |
+| DeepSeek V4.1 Flash | 358 | 358 | 358 | 349 | 346 | 302 | 7 | 171 | 8 |
 | DeepSeek V4.1 Flash 1017 | 79 | 79 | 79 | 78 | 78 | 41 | 1 | 26 | 1 |
 | Fable 5.1 | 5 | 5 | 5 | 5 | 5 | 5 | 0 | 0 | 0 |
-| GLM 5.3 Flash | 218 | 218 | 218 | 179 | 174 | 170 | 23 | 140 | 39 |
+| GLM 5.3 Flash | 219 | 219 | 219 | 180 | 175 | 170 | 23 | 140 | 39 |
 | GPT-6 Astra | 8 | 8 | 8 | 8 | 8 | 2 | 0 | 1 | 0 |
 | GPT-6.1 Sol | 181 | 181 | 181 | 181 | 137 | 179 | 44 | 144 | 0 |
 | Haiku 5.5 | 17 | 17 | 16 | 17 | 17 | 18 | 0 | 4 | 0 |
-| Muse Spark 1.3 | 110 | 110 | 110 | 110 | 110 | 54 | 0 | 31 | 0 |
-| Sonnet 5.5 | 273 | 273 | 272 | 273 | 261 | 160 | 12 | 137 | 0 |
+| Muse Spark 1.3 | 111 | 111 | 111 | 110 | 110 | 54 | 0 | 31 | 0 |
+| Sonnet 5.5 | 274 | 274 | 273 | 273 | 261 | 160 | 12 | 137 | 0 |
 
 ## Memory shape now
 
