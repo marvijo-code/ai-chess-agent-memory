@@ -1,12 +1,13 @@
 # Chess memory - Muse Spark 1.3 Contributor (3600+10)
 
 ## Record
+- D W vs Flash draw threefold m35 English g3 e5 Nd5 dxe3 down 2 Kg2 Kh1 loop drew. 1 illegal gated Qd2.
 - B vs DeepSeek loss forfeit m21 Scheveningen a5 bxa5 pawn tool-gate x3. 0 illegal.
 - D W vs Flash draw threefold m58 English g3 e5 Re8 Kh8 shell level. Down clock loop drew. 2 illegal.
 - W vs SF loss forfeit m23 Maroczy Bh6 Re3 f4 tool-rook-flag resent x3. 3 illegal.
 - D B vs Sonnet draw threefold m55 Zaitsev shell level. Down 3 vs 53 banked Kh8 Kg8 loop drew. 0 illegal.
 - W vs Flash win forfeit m31 English e5 Bb5 h5 Rxh5 Rf5 Bc4 Re6 trap. 0 illegal.
-- T85SF1G1 B vs SF loss forfeit m7 Four Knights Bb4 Nxd5 exd5 e4 book missed, 3 tool-gated same idea.
+- T85SF1G1 B vs SF loss forfeit m7 Four Knights Bb4 Nxd5 exd5 e4 book missed, 3 tool-gated same idea. 0 illegal.
 - T85R4 W vs Sonnet loss forfeit m41 Breyer Ra3 Qb4 Rc2 trap. 3 illegal gated after Rxc2.
 - T85R2 W vs DeepSeek draw threefold m43 Classical h5 shell level. Up 28 vs 6 threw flag with Qd3 Qe3 loop. 1 illegal gated Qe3.
 - T85R1 B vs Flash win forfeit m30 English Ba7 trap Rc7 shell. 1 illegal gated Kg8.
@@ -22,7 +23,7 @@
 - LEGALITY FIRST: after 1 reject redraw FEN, FEN-walk piece square path, pick different piece and idea, never resend. 4 forfeits, tool refusal counts. In check list replies once and send in 5-10s. After 1 refusal never resend same UCI. GATED = stale square, never variant of same idea.
 - SCHEVENINGEN A5 POISON T86R5: vs a3+b4 never a5. bxa5 wins pawn free, axb4 axb4 opens lines with no recapture. Keep a6, hold b4 with Nd7/Qc7/Rc8, strike b5 only with b6/a6 defended twice. Before any a5/b5 list bxa5/axb4 and both recapturers.
 - TOOL PAWN FLAG VERIFY - NO BLIND RESEND: pawn-only AVOID can be REAL (T86R5 a5-bxa5). Before any resend name capturer square, its guards, and my recapturers in order. If capture wins free pawn, flag is REAL: switch piece and square at once. RESEND SAME once only when you name a live guard/recapture that keeps material.
-- ENGLISH G3 E5 SHELL DRAW T86R4: vs e5 Re8 Bg4 c5 Nd4 Qe5 keep Nd5 Be3 Bf2 Re1 Rc1 Kh1 once. Never f4 f5 Qf3 a3 Rb1 Re2 b3 drift, b3?? locks a3/b3 for b5 bxa4. Strike e5 at once vs Rcd8 shell, Qxd5 Qxd5 cxd5 level, e6 hits Rd7/f7, exf7+ even. Down clock fortress Re6 Rg6 Be4 hold d5 f5, Kg shuffle for threefold. 10-20s, never 2-3min early.
+- ENGLISH G3 E5 ND5/B3 POISON T87R1: vs e5 Nc6 d6 Be7 O-O never early Nd5 Nxd5 cxd5 Nd4 hits f3 wins center. Never b3 Bb2 while e3 held once vs d4: dxe3 exf2+ wins pawn; play d3 Qe2 first hold e3 twice. Never Re2 on Bg4 diagonal, never Qd3 leaving e2/c3 once-held Rxe2 Rxc3. Down 2 shell Qd2 Qb2 holds a2 b4, Kg2 Kh1 loop draws. 10-20s keepers.
 - ENGLISH E5 BB5 RF5 BC4 WIN T85-3rd: vs e5 clamp Bb5, Be2 Bd3, castle long Kb1 Ka1. h5 Rxh5 wins pawn, Rf5 hits Bf6, Ne2 c3 Ng3, Bc4 hits Re6 wins rook. Keep e4 held twice, Rc1 holds c3, never Nd4 without sweep.
 - ZAITSERV SHELL DRAWS DOWN CLOCK T86R1: vs Bh6 Ng5 h4 g4 g5 keep Re7 Re6 Nd7 Nf6 Nd6, Bg7 Bh8 Bc6, Qc7 Qd7 Qd8, hold d6 e5 g6 twice. Down 50min Kh8 Kg8 loop draws vs bank. No pushes, every unit double-held. 0 illegal.
 - FOUR KNIGHTS BOOK T85SF1: vs Nd5 play Nxd5 only. After exd5 Nc6 hit by Bb5+d5 vs b7 once. ONLY e5 hitting Nf3 at once, wins back after dxc6 exf3 equal. Never slow Ne7 Nb8 Nd4 a6 d6 Q. Sweep Bxc6 dxc6 first. Tool flags e5 falsely - RESEND same once, 2nd passes. Keep c6 twice-held, trade/block c-file at once.
@@ -62,7 +63,7 @@
 
 ## Opponents
 - Haiku: patient Open Sicilian, trades rooks, centralizes king. Never shuffle king.
-- GLM: loose, hangs queen, Ba7-b6 shuffle then gates, takes free captures. Fast early, 3 invalid forfeits when forked/trapped. Press with Bb5 Rf5 Bc4 hits, bank clock.
+- GLM: loose, hangs queen, Ba7-b6 shuffle then gates, takes free captures. Fast early, 3 invalid forfeits when forked/trapped. Press with Bb5 Rf5 Bc4 hits, bank clock. Solid English mirror won 2 pawns T87R1 but settles for Qb6 shuffle draw.
 - DeepSeek: guarded queenside dance, banks clock then burns 4-10min and flags to 5min. Takes loose, solid shell. Press with new moves when ahead, never repeat. Punishes a5/b5 hooks with bxa5.
 - Sonnet: solid Breyer plus Scheveningen, patient, shuffles to flag. Takes every loose unit. Breyer Kh7 Bc4 Nd4 Qb4 Rc5 Rc2 traps Ra3. Banks 50min, zero illegal, wins clock if I drift.
 - SF: punishes loose, pins, back rank, breaks. Bh6 x-ray on e3 rook, Be6+Ng4 wins Be3. Instant, no gifts. Castle early, keep shell for repeat.
