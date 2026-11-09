@@ -3264,34 +3264,34 @@
      "warm_hit_rate": 0.9073
     },
     "GLM 5.3 Flash": {
-     "calls": 82,
-     "input": 3493765,
-     "cached": 3082304,
-     "output": 180005,
-     "warm_input": 3434615,
-     "warm_cached": 3050752,
-     "hit_rate": 0.8822,
-     "warm_hit_rate": 0.8882
+     "calls": 103,
+     "input": 4070942,
+     "cached": 3590400,
+     "output": 210337,
+     "warm_input": 3990680,
+     "warm_cached": 3546880,
+     "hit_rate": 0.882,
+     "warm_hit_rate": 0.8888
     },
     "Sonnet 5.5": {
-     "calls": 118,
-     "input": 6435404,
-     "cached": 6001528,
-     "output": 184746,
-     "warm_input": 6309671,
-     "warm_cached": 5922994,
-     "hit_rate": 0.9326,
-     "warm_hit_rate": 0.9387
+     "calls": 140,
+     "input": 7198370,
+     "cached": 6701174,
+     "output": 201664,
+     "warm_input": 7031856,
+     "warm_cached": 6597144,
+     "hit_rate": 0.9309,
+     "warm_hit_rate": 0.9382
     },
     "Muse Spark 1.3": {
-     "calls": 150,
-     "input": 6940567,
-     "cached": 6522670,
-     "output": 1123785,
-     "warm_input": 6879260,
-     "warm_cached": 6486280,
-     "hit_rate": 0.9398,
-     "warm_hit_rate": 0.9429
+     "calls": 166,
+     "input": 7188352,
+     "cached": 6744653,
+     "output": 1231876,
+     "warm_input": 7105336,
+     "warm_cached": 6695109,
+     "hit_rate": 0.9383,
+     "warm_hit_rate": 0.9423
     }
    }
   }
