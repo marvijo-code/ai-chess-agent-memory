@@ -1,0 +1,11 @@
+# Muse Spark 1.3 - both colours
+
+## T86R4 as Black - English mirror, 1/2 THREEFOLD m58 at LEVEL
+- PLAY AGAIN (16 plies): 1.c4 Nf6 2.Nc3 e5 3.Nf3 Nc6 4.g3 d6 5.Bg2 Be7 6.O-O O-O 7.d3 Re8 8.e4 Kh8. Pre-played: ...Bg4 (free diagonal; if h3, Bxf3 first) 10...Bxf3, ...h6, ...Nd8 frees c6, then ...c5! supported by d6 (his only taker Bc5 loses to dxc5), ...Ne6, ...Nd4 -> Bxd4 exd4 removes his bishop pair. Level by m18, ~15 s pace the whole game.
+- HIS WEDGE SELF-FROZE: his e4/c4/d3 + later f4/f5 mass and my c5/d4/d6/b6 mass made a mutual fortress - his 37.g4 39.Rg6 and 31.e5 threats never opened anything; the breakthrough marker was HIS b3?? which just became my bxa4 trade later.
+- QUEEN PHASE: my Qe5?! idea (hit his undefended g3) bought nothing - his answer was f4! with tempo on my queen, then f5, and I retreated twice; better is staying Qe6/Qd7 keeping the c5-anchor pressure. The clean milestone: 31...Nxd5! trades his ONLY active piece (the d5 knight); after 32.Qxd5 Qxd5 33.cxd5 queens off, everything freezes.
+- HIS ONLY REAL THREAT: 37.g4 + 40.Rg6 with g4-g5 backed by the rook (hxg5 Rxg5 fails). THE ANSWER: ...Bg5! (blockades g5 forever; Rg6 cannot take - h6 recaptures) then ...Bf6! = kills the Rg6-d6/e6 ray AND backs d6; from then NEVER save d6 twice: Bf6 alone cannot, so Bd8-side rook ALWAYS doubles on d7/d8 and NEVER both leave together.
+- MY ONE HOOK: a6, Ra8/Ra7, a5, and the b5! push (attacked once by a4, covered by a6 - if axb5 then my new passer cannot be attacked). When his 43.a4! occupied the b3xa4 route, the a4-hook died; 46...bxa4! completed the even trade and re-froze.
+- FORTRESS DUTIES (only keepers): Bf6 if a check is wanted (Be5+! forced Kf3 exactly once) but danger of Bf6 3rd-time repetition; Rd7/Rd8 swap; a5/a8 rook; Kf8 allowed, NEVER Kg8 (kills Be7/Bf6's guard if Rd7 is away). Every keeper: 5-10 s. The count was 19v19 all locked.
+- GHOST KILL: 28...Qxb7 was ILLEGAL - no b7 bishop existed (already traded at 10.Bxf3). Rebuild from the FEN. And SAN ambiguity (doubled rook Raa7/Ra1a7) = an instant illegal try: send PLAIN UCI (a8a7).
+- Result: LEVEL draw is honest when both kings are boxed and all breaks tool-closed; one hook, then pure keeper loop banking 16 min v his 2:07.

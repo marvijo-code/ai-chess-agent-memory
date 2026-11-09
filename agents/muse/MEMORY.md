@@ -1,6 +1,7 @@
 # Chess memory - Muse Spark 1.3 Contributor (3600+10)
 
 ## Record
+- D W vs Flash draw threefold m58 English g3 e5 Re8 Kh8 shell level. Down clock loop drew. 2 illegal.
 - W vs SF loss forfeit m23 Maroczy Bh6 Re3 f4 tool-rook-flag resent x3. 3 illegal.
 - D B vs Sonnet draw threefold m55 Zaitsev shell level. Down 3 vs 53 banked Kh8 Kg8 loop drew. 0 illegal.
 - W vs Flash win forfeit m31 English e5 Bb5 h5 Rxh5 Rf5 Bc4 Re6 trap. 0 illegal.
@@ -18,12 +19,13 @@
 - T84R1 W vs Flash win forfeit m27 English Attack f4 f5. 1 illegal.
 
 ## Key lessons (read before EVERY move)
-- LEGALITY FIRST: after 1 reject redraw FEN, FEN-walk piece square path, pick different piece and idea, never resend. 3 rejects forfeit, tool refusal counts. In check list replies once and send in 5-10s. After 1 refusal never resend same UCI. GATED = stale square, never variant of same idea.
+- LEGALITY FIRST: after 1 reject redraw FEN, FEN-walk piece square path, pick different piece and idea, never resend. 3 forfeits, tool refusal counts. In check list replies once and send in 5-10s. After 1 refusal never resend same UCI. GATED = stale square, never variant of same idea.
+- ENGLISH G3 E5 SHELL DRAW T86R4: vs e5 Re8 Bg4 c5 Nd4 Qe5 keep Nd5 Be3 Bf2 Re1 Rc1 Kh1 once. Never f4 f5 Qf3 a3 Rb1 Re2 b3 drift, b3?? locks a3/b3 for b5 bxa4. Strike e5 at once vs Rcd8 shell, Qxd5 Qxd5 cxd5 level, e6 hits Rd7/f7, exf7+ even. Down clock fortress Re6 Rg6 Be4 hold d5 f5, Kg shuffle for threefold. 10-20s, never 2-3min early.
 - ENGLISH E5 BB5 RF5 BC4 WIN T85-3rd: vs e5 clamp Bb5, Be2 Bd3, castle long Kb1 Ka1. h5 Rxh5 wins pawn, Rf5 hits Bf6, Ne2 c3 Ng3, Bc4 hits Re6 wins rook. Keep e4 held twice, Rc1 holds c3, never Nd4 without sweep.
 - ZAITSERV SHELL DRAWS DOWN CLOCK T86R1: vs Bh6 Ng5 h4 g4 g5 keep Re7 Re6 Nd7 Nf6 Nd6, Bg7 Bh8 Bc6, Qc7 Qd7 Qd8, hold d6 e5 g6 twice. Down 50min Kh8 Kg8 loop draws vs bank. No pushes, every unit double-held. 0 illegal.
-- FOUR KNIGHTS E4 ONLY T85SF1: vs Nd5 play Nxd5 only. After exd5 Nc6 is hit twice by Bb5+d5 vs b7 once. ONLY e5 hitting Nf3 at once, wins it back after dxc6 exf3 equal. Never slow Ne7 Nb8 Nd4 a6 d6 Q. Sweep Bxc6 dxc6 first. Tool flags e4 falsely - RESEND same once, 2nd passes.
+- FOUR KNIGHTS BOOK T85SF1: vs Nd5 play Nxd5 only. After exd5 Nc6 hit by Bb5+d5 vs b7 once. ONLY e5 hitting Nf3 at once, wins back after dxc6 exf3 equal. Never slow Ne7 Nb8 Nd4 a6 d6 Q. Sweep Bxc6 dxc6 first. Tool flags e5 falsely - RESEND same once, 2nd passes. Keep c6 twice-held, trade/block c-file at once.
 - BREYER RA3 QB4 POISON T85R4: vs Nd4 c5 Qb4 never Ra3 defending b3. Ra3 hangs to Qb4, invites Nxc2 c4 Bxc4. Keep Ra1 Ra2 Rfd1, Qd2 Qe2 once, meet Nd4 with exchange at once. After Rc2 never Qxc2 while Ra3 loose to Qxa3, sweep Qxa3 first.
-- QB2 QC1 SHUFFLE POISON T85R4: vs Rd7 Red8 doubled never Qb2 Qc1 Qb2 loop holding b3 d2. Each step loses tempo to c4 Nd4 Qb4. Keep queen once, double rooks d1/a1, trade or block center at once. 10-20s keepers.
+- QB2 QC1 SHUFFLE POISON T85R4: vs Rd7 Red8 doubled never Qb2 Qc2 Qb1 loop holding b3 d2. Each step loses tempo to c5 Nd4 Qb4. Keep queen once, double rooks d1/a1, trade or block center at once. 10-20s keepers.
 - BB5 BXC6 E5 POISON T85R3: after Bxc6 bxc6 e5 never Bb7 Rb8 Qc7 slow while e5 lives. exd6 forks Qc7+Be7. Keep Nf6 Nd7 O-O first, hold d6 twice, sweep exd6 Qb3 Ba7 before any Qc7. Never Q+B both on d6-pawn squares.
 - MAROCZY NG4 BH6 POISON T86R2: vs Be6+Ng4 never Nd5 allowing Qxd2 removing e3 guard, then Nxe3 wins bishop pair. Keep Qd2 or Bxg4/h3 first. Never Re2/Re3 on Bh6 diagonal, f4 blocks nothing Bxf4 still hits. Rook off diagonal to d2/c2 at once.
 - FLAG LEAD NO REPEAT T85R2: up 15min+ level never Qd3 Qe3 Rc6 Rc7 loop. Down shell invites repeat, up clock kills it. New safe move every turn to flag, Kb2 Ka1, Rd1, count h5 g3 first.
@@ -33,7 +35,6 @@
 - MORRA BATTERY POISON: never castle long while enemy rooks live on open files. Keep king central or short, guard b7 twice, meet battery with rook block first. Keepers 10-20s never 2min.
 - BREYER MATE POISON T84R2: shell boxes own king, enemy bishop x-rays h7. Sweep Qh7 plus Qg7 every move, never double rooks while queen eyes h7. Evacuate via Be7 or luft first.
 - TOOL AVOID IS ORDER: after refusal naming lost piece/queen/rook/exchange/mate switch piece and idea at once, NEVER resend. T86R2 f4 flagged rook loss resent x3 forfeited. Vague/pawn-only reason or book winning it back (e4 wins Nf3) RESEND SAME once, 2nd passes. After Rxc2 rewrite squares, walk path, one try.
-- FOUR KNIGHTS POISON: vs Nd5 play Nxd5 only. Keep c6 twice-held, never queen sortie early. Trade or block c-file at once.
 - DRAGON BC4/BE2 POISON T84F-Arm: vs O-O+d5 never Bc4/Bb3/Be2 holding tension while Be3 loose to Nxe3. Play Nxd5 Qxd5 or Nxc6 bxc6 first, sweep Nxe3 Bxd5 Nxg2, guard Be3 twice before Bc4. Castle long Kb1 at once, never Ke2/Kd3 walk into Rb4/Qe5+.
 - QA5 PLUS QXA2 POISON: never Qxa2 under Ra1, never Qxc3 while Qa5 eyes a2. Keep Kb1, guard a2 twice, retreat early queen sortie at once.
 - ENGLISH NC2/BA7 T85R1: Qe3 plus Re1 plus Ra1 all lose to Nd4 c2 fork, keep Nd4 till queen leaves file. Vs Bb6-a7 shuffle keep Rc6 Rc7 Nbd7 Qd6 Rec8 trapping, Kh8 Kg8 once, never grab. Routine 10-20s cap 60.
