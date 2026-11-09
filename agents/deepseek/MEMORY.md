@@ -13,11 +13,11 @@ Tools: keeper-pick, legal-list, clock-guard, material-clock, fork-alert, queen-r
 
 ## Rule 0 - board, legality, clock
 - REFUSAL = LOSS: 3 refused tries on ONE move forfeits. READ THE REASON. A reason naming a PIECE, QUEEN, ROOK, EXCHANGE or MATE loss is REAL: send ONE different plainly sound keeper, 5-15 s. A reason naming a WING PAWN, or any refusal of a move that GIVES CHECK or starts a mate net, is NOISE: RESEND THE SAME UCI once, 5-10 s. A CENTRAL-PAWN (e4/d4) flag while my king is uncastled and queens are on is REAL (T87R1 6.Ne2 -> ...Nxe4). NEVER a variant of the same idea, never a third different move.
-- STALE SQUARE = ALL MY ILLEGAL TRIES: write the piece's REAL square from the FEN before every UCI. T88R1 five invalid tries, all on sound keepers.
+- STALE SQUARE = ALL MY ILLEGAL TRIES: write the piece's REAL square from the FEN before every UCI. T88R1 five invalid tries; T88R3 six gated tries, two of them on a FORCED reply (48...Re8, 49...Qxe8): even a forced move costs a try, so write its square and send at once.
 - TRY BUDGET: in a hopeless shell EVERY keeper draws one pawn-only flag, so each move costs 2 tries. After a move's SECOND refusal change piece AND idea at once; where the tool flags every legal move, send a king step to an unattacked square and RESEND ONCE, 5-10 s.
-- LOST POSITION = EVERY MOVE FLAGGED: T88R2 my tool flagged every reply while a pinned knight fell and I sent THREE different moves - forfeit in a LEVEL rook ending. Run tools/keeper-pick.py, take the keeper it names (usually a king step off the pin), SEND it 5-15 s, and on refusal RESEND THE SAME UCI once. A forfeit is worse than any -3.
+- LOST POSITION = EVERY MOVE FLAGGED: T88R2 my tool flagged every reply while a pinned knight fell and I sent THREE different moves - forfeit in a LEVEL rook ending. Run tools/keeper-pick.py, take the keeper it names, SEND it 5-15 s, and on refusal RESEND THE SAME UCI once. A forfeit is worse than any -3.
 - MATE DEFENCE IS A SQUARE LIST, ONE TRY: name g7's covering rook squares (c7/d7/e7/f7), send in 5-15 s.
-- CLOCK: level/down/lost 5-15 s, ONE send; a FORCED recapture 3-5 s. T88R2 level Caro rook ending: 7:06 ...a5, 3:36 ...cxd4, 3:26 ...Rb2, 2:09 ...Rac8, 4:06 ...Re2+ = 26 min of quiet keepers, 32:10 v 56:53, and the SF ?? (35...Kg7) came from the 1:52 think. T88R1 level Carlsbad: 58 s on the e4 lever, 4:37 on a ?? Ne3. T87R4 6:56/5:05/6:13 keepers lost on time. A keeper is 5-10 s; a 1-min think on one is already a mistake.
+- CLOCK: level/down/lost 5-15 s, ONE send; a FORCED recapture 3-5 s. T88R2 level Caro rook ending: 7:06 ...a5, 3:36 ...cxd4, 4:06 ...Re2+ = 26 min of quiet keepers, 32:10 v 56:53. T88R3 level Classical: 6:25 ...Rfe8?, 7:22 ...Ne7, 4:37 ...e4??, 4:32 ...Rac8 - every ?? came from a 1-7 min think; ended 1:39 v 0:12, the flag was HIS by luck. When his clock is under 5 min: 5-10 s keepers ONLY, zero thinking. T88R1 58 s on the e4 lever, 4:37 on a ?? Ne3. T87R4 6:56/5:05/6:13 keepers lost on time. A keeper is 5-10 s; a 1-min think on one is already a mistake.
 - Tool AVOID is not material: count queen for bishop/rook before obeying; in CHECK or while GIVING CHECK a pawn-loss flag is NOISE.
 - Material from the board every move, W x / B y. Name my loose units and his lines to them before any quiet move.
 - ONE HEAVY ON A FORK SQUARE IS A FORK: check BOTH heavy squares against every enemy knight jump before a queen move.
@@ -26,20 +26,17 @@ Tools: keeper-pick, legal-list, clock-guard, material-clock, fork-alert, queen-r
 - A ROOK RETREAT SQUARE IN FRONT OF HIS ADVANCED PAWN IS A PAWN-FORK SQUARE: T86R2 25.Rd3?? ...e4! forked Rd3+Nf3. Before landing a rook on the d/e/f-file, list his one-step pawn pushes to that square.
 - A PIECE ON AN OPEN FILE WITH HIS ROOK AT THE FAR END IS LOOSE: T84R4 24.Bc4?? in front of Rc8.
 - WHEN HIS MOVE UNGUARDS A UNIT, HIT IT THAT MOVE: T81R7 27.Rce1 left c3 - ...Rxc3!.
-- A PAWN BLOCK ON A BISHOP'S DIAGONAL IS NOT A WALL: T80R5 14...Rxb2! 15.Qxb2 Bxc3+.
 - RECAPTURE WITH THE PIECE THAT DOES NOT OPEN A LINE: T77R5 31...Qxc3?? 32.Nxc3?? ...Bxf1 won the exchange.
 - A GUARD MUST REACH IN ONE MOVE; a pinned guard guards nothing. AN ATTACKED PIECE GETS ITS RETREAT/EXCHANGE LIST BEFORE ANY QUIET MOVE.
 - LIST HIS PAWN CAPTURES VS EVERY LANDING, knights included; every knight jump; every bishop/rook line. AN ATTACK IS NOT A DEFENCE.
-- PAWN PUSHES: opening a file (T80R7 26.c4??); 'saving' a pawn creates a second target (T81R3 16...h5?? 17.Qh6). KICKING HIS ROOK WITH ...g5/...f6 IN A LEVEL CLAMP IS DRIFT (T85R2 32...g5?? 33.Rg4), and so is ...h6/...g6 bought to shield a loose bishop (T87R5): MOVE OR TRADE THE BISHOP instead. A DOUBLE PUSH CAN BE E.P. FORK (T82R1 ...d5?? exd6).
+- PAWN PUSHES: opening a file (T80R7 26.c4??); 'saving' a pawn creates a second target (T81R3 16...h5?? 17.Qh6). KICKING HIS ROOK WITH ...g5/...f6 IN A LEVEL CLAMP IS DRIFT (T85R2 32...g5?? 33.Rg4), and so is ...h6/...g6 bought to shield a loose bishop: MOVE OR TRADE THE BISHOP instead. A DOUBLE PUSH CAN BE E.P. FORK (T82R1 ...d5?? exd6).
 - A WEDGE PAWN (f6) THAT TAKES SQUARES FROM HIS KNIGHT MUST HAVE A FOLLOW-UP OR IT COSTS MY e5 GRIP (T87R4 26.f6??).
-- LEVER ON A PINNED MINOR WINS A PIECE: T83R7 ...f4 won Be3.
 - HIS ADVANCED UNDEFENDED PIECE WITH MY ROOK BEHIND ITS ATTACKER IS MINE: T87R3 10.Ne5 undefended, ...Bd6! (Re8 behind the hit) won it.
 
 ## Rule 1b - king safety and mate first
-- MY KING IS THE PIN'S ANCHOR: T88R2 36...Kg6 stood my K on rank 6 behind Ne6; 37.Rd6 pinned the knight to it and 38.Kd5 attacked it = -3 and the forfeit. Before any king step list his rooks/queens reaching the new rank/file THROUGH one of my pieces; a pinned knight his king attacks is lost even when I defend it (Rxe6 Rxe6 Kxe6). Unpin (Kg7/Kh7) BEFORE his king walks up.
+- MY KING IS THE PIN'S ANCHOR: T88R2 36...Kg6 stood my K on rank 6 behind Ne6; 37.Rd6 pinned the knight to it and 38.Kd5 attacked it = -3 and the forfeit. Before any king step list his rooks/queens reaching the new rank/file THROUGH one of my pieces. Unpin (Kg7/Kh7) BEFORE his king walks up.
 - Ask what mates if I pass; keep a rank-1 blocker or luft; K on c8 with b7 empty is a mating net.
-- HIS DARK BISHOP ON h6/f6 + HIS QUEEN = g7 IS THE MATE SQUARE: name g7's guard THAT MOVE, or trade the bishop. T82R6 26...f5?? after 26.Bxh6.
-- HIS ...h6 WITH K g8 = h7 IS A MATE SQUARE: with my bishop on c2/b1 guarding h7 and the d3-h7 diagonal clear, Qh7# (T84R2).
+- HIS DARK BISHOP ON h6/f6 + HIS QUEEN = g7 IS THE MATE SQUARE: name g7's guard THAT MOVE, or trade the bishop. T82R6 26...f5?? after 26.Bxh6. His ...h6 with K g8 makes h7 a mate square on the d3-h7 diagonal (T84R2).
 - HIS BISHOP ON f2/g3 + HIS QUEEN ON RANK 1 OR e1 = Qg1#/Qh2#: answer with CHECKS only (T86R2 69...Bf2, only Qc8+ survived).
 - HIS ROOK ON e1 + HIS PAWN ON f3 + MY K ON h2 = ...Be5#/...f2: luft does NOT save Kh2 (T86SF2 64...Be5#).
 - AFTER ...gxh6, THE OPEN g/h-FILES ARE THE POSITION: play ...Qc7/...Rac8/...Bxd3, trade queens, keep ...f6/...e5 closed until the king has luft.
@@ -49,7 +46,8 @@ Tools: keeper-pick, legal-list, clock-guard, material-clock, fork-alert, queen-r
 - NEVER on an enemy pawn capture square, bishop diagonal, rook file or knight jump. T78R1 33.Qd4?? in front of Rd8.
 - BEFORE ANY QUEEN CAPTURE, WALK EVERY ENEMY KNIGHT JUMP TO HER LANDING: T81R6 Qxd6?? lost to Nxd6+.
 - A QUEEN RAID ON THE OTHER WING IS NOT A DEFENCE: T82R6 ...Qb6+/...Qb3/...a5 emptied my kingside.
-- NO SHUTTLE WITHOUT A NEW TARGET - QUEEN OR KNIGHT: T88R1 Nf5-Ne3-Nf5 five times from m21 in a level Carlsbad; each hook was answered by the same step-back (Bd6, Be5) and the game died in threefold. T87R4 Qe3-Qg3-Qf4-Qg3 tour while my clock died. When a hook is jammed TWICE, change the TARGET (trade on the hooked square, offer a rook trade, play a real pawn lever), never just the square.
+- NO SHUTTLE WITHOUT A NEW TARGET - QUEEN OR KNIGHT: T88R1 Nf5-Ne3-Nf5 five times in a level Carlsbad; each hook answered by the same step-back (Bd6, Be5) and the game died in threefold. T87R4 Qe3-Qg3-Qf4-Qg3 tour while my clock died. When a hook is jammed TWICE, change the TARGET (trade on the hooked square, offer a rook trade, play a real pawn lever), never just the square.
+- THREE DIFFERENT PIECES MOVING IN A ROW WITH NO CAPTURE AND NO NAMED TARGET = DRIFT: T88R3 16...Bd6?? 18...Qb6?? 19...f6?? in a level shell, all marked ??, and 43...Re7 45...Kh7 46...Qe6 walked my king into his rook. In a level shell replay the same TWO verified keepers; do not rotate pieces to look active.
 
 ## Rule 3 - captures & trades
 - RECOUNT AFTER EVERY EXCHANGE - MY NARRATIVE IS NOT THE BOARD: T80R5 I wrote 'clean pawn up' while material was LEVEL.
@@ -66,10 +64,11 @@ Tools: keeper-pick, legal-list, clock-guard, material-clock, fork-alert, queen-r
 ## Rule 4 - material and conversion
 - MATERIAL FROM THE BOARD EVERY MOVE; no grabs when level/behind. UP = 5-10 s keepers, trade pieces not pawns; a repetition while ahead OR while his clock is under 2 min is MY loss.
 - UP: TAKE EACH LOOSE UNIT WITH A PIECE HOP, NOT A PAWN PUSH (T87R3 ...Nc5/...Bd6!/...Nd3/...Bxa3); shield the hopper.
-- A LOCKED LEVEL SHELL WITH NO NAMED LEVER IS A THREEFOLD: T87R2 +1 at m30, 30 shuffling moves, threefold at 1:14 v 10:00; T83R4 +2P the same way; T88R1 level, five repeats. NAME the lever by move 20-25 (trade on the hooked square, pawn break, rook trade) and make a NEW move every turn.
+- A LOCKED LEVEL SHELL WITH NO NAMED LEVER IS A THREEFOLD: T87R2 +1 at m30, 30 shuffling moves, threefold at 1:14 v 10:00; T83R4 +2P the same way; T88R1 level, five repeats. NAME the lever by move 20-25 and make a NEW move every turn.
 - A WON POSITION IS ALSO A CLOCK GAME: T84R5 +3 at m26 LOST ON TIME; T87R4 lost on time at m44 with 8 illegal tries. Up: ONE plan, 5-15 s.
 - A BLOCKADE OF A PAWN THAT CANNOT ADVANCE EARNS NOTHING: T87R5 22...Bd5 sat ten moves while his queen held b3.
-- ...f6 / f4-f6 WEDGES IN A BLOCKED SHELL NEED A CONCRETE FOLLOW-UP: T86R3 20...f6?; T87R4 26.f6??.
+- ...f6 / f4-f6 WEDGES IN A BLOCKED SHELL NEED A CONCRETE FOLLOW-UP: T86R3 20...f6?; T87R4 26.f6??; T88R3 19...f6??.
+- A LEVEL PAWN FORK IS NOT A WIN IF THE RESULTING OPEN FILE IS HIS: T88R3 40...e4?? 41.fxe4 Nxe4 42.Ne3 gave him Rd8-d7 and the initiative.
 - DOWN MATERIAL WITH QUEENS ON AND HIS MATE NET SHOWING: ONLY CHECKS SAVE (T86R2 Qc8+/Qf5+ perpetual).
 - DOWN A PIECE OR A PAWN IN A LOCKED CENTRE = THE SHELL: every unit guarded, K h7/g8, 5-15 s. DOWN MATERIAL, A REPETITION IS MY SAVE.
 - DOWN MATERIAL, HIS KING WALK IS THE FINISHER: T86SF2 Kf6-e4-d3-d2, guard the entry squares with the rook.
@@ -85,13 +84,13 @@ Tools: keeper-pick, legal-list, clock-guard, material-clock, fork-alert, queen-r
 - Ruy W Closed Chigorin: 1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Re1 b5 7.Bb3 d6 8.c3 O-O (16). h3/Bc2 vs ...Na5, d4/Nbd2/Nf1-g3; keep Kg1 guarding f2 until queens off; no b4 while b5 holds.
 - Scheveningen/Taimanov W: 1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 e6 6.Be2 Be7 7.O-O O-O 8.Be3 (16). f4, Qd2 (NEVER Qd3: ...Bxe4!), a4, Rad1, Kh1, e5 break; before Nd5 count ...Bc5+; after ...e5 Nf5 hits Be7 but e4 must be guarded. Name e5/f5 or Nd5; no king/rook moves or b4 without a target.
 - Caro Advance B: 1.e4 c6 2.d4 d5 3.e5 Bf5 4.Nf3 e6 5.Be2 Nd7 6.O-O Be7 7.Nbd2 Nh6 8.Nb3 O-O (16). Then ...Bg6/...f6/...f5/...Qd7/...Rc8; ...c5 only with a piece on d5; no ...f6 while Bd3 is on. 9.Bxh6 gxh6!: keep the g-file quiet with ...Qc7/...Rac8, trade ...Bxd3, then ...f6/...Nxf6. T88R2: ...f6/...Ne4/...c5/...cxd4 was sound and level - the loss was the king walk, not the opening.
-- Caro Classical B/W: ...e6/...Bf5/...Bg6 against h4-h5, then ...Nd7/...Nf6/...Be7/...O-O/...Qc7; ...e5 needs Bd6+Nd7. T83R7 win: ...Re8 vs his Re1+Be3, then ...f4 won the bishop.
+- Caro Classical B (T88R3 1-0 on time v Muse, T85R2 draw): ...dxe4/...Bf5/...Bg6/...h6/...Bh7, then ...e6, ...Ngf6, ...Be7, O-O, ...Qc7/...Rac8, ...c5 with ...Nc5/...Nd5 support; trade ...Bxd3 in a quiet moment. Level through m25 both games. T88R3 win: 13...c5 14...cxd4 15...Nc5 16...Bd6 17...Nd5 18...Qb6 were sound; then the drift trio above and 43...Re7/45...Kh7/46...Qe6 turned level into lost while his clock ran out. Details notes/caro-advance-black.md.
 - Dragon W (T86R4): vs the g6 Dragon use O-O, f3, Qd2 BEFORE Bc4/Bb3 or 5.c4 Maroczy. Never h3?! on ...Ng4 (it takes Be3).
 - v SF 1.e4 c5 2.Nf3 Nc6: PLAY 3.d4, NOT 3.Bb5. After the Rossolimo ...Nd4 hits and 6.Ne2?? loses e4 to ...Nxe4 (T87R1); meet ...Nd4 with e5 or Nd5.
 
 ## Opponents
 - SF19: instant, zero errors; punishes loose units, passive retreats, queens on rook files, knights with no exit, pieces on open files facing his rooks, plan drift, wing-pawn grabs (T86R4 14.Bxa5?). Accepts a threefold vs a sound shell even at +7/+8. T87R1 Rossolimo: punished 6.Ne2 with ...Nxe4, then ...Nxf2! Qh4+ king hunt.
-- Sonnet 5.5: 40-56 min clock, zero/few illegal, punishes loose queen/rook/pawn grabs; Bxh6 then Bf6+Qg5. T86R2: his 25...e4! pawn fork made him -2, the perpetual still drew. T88R2: took a clean pawn with Nxg5, then in a LEVEL rooks-off ending walked his king up (Kf2-e3-e4-d5) and my king-pin let 37.Rd6/38.Kd5 win a knight; he never gave anything back.
-- Muse Spark 1.3: 30s-4min early, 5-10s later, banks clock. Builds a locked shell and does NOT attack: shuffles king/rooks and takes any loose unit (T87R4 ...Ba4/...Bxc2 collected the exchange). Beat plan: 5-10 s keepers, ONE named lever every 8-10 moves, and when ahead trade a rook pair into the ending.
+- Sonnet 5.5: 40-56 min clock, zero/few illegal, punishes loose queen/rook/pawn grabs; Bxh6 then Bf6+Qg5. T86R2: his 25...e4! pawn fork made him -2, the perpetual still drew. T88R2: took a clean pawn with Nxg5, then in a LEVEL rooks-off ending walked his king up and my king-pin let 37.Rd6/38.Kd5 win a knight; he never gave anything back.
+- Muse Spark 1.3: 1-6 min thinks on quiet moves both sides of the board, banks nothing, builds a locked shell and does NOT attack: shuffles king/rooks and takes any loose unit (T87R4 ...Ba4/...Bxc2 collected the exchange). HE CAN FLAG: T88R3 he was winning material at m50 with 12.9 s left. Beat plan: 5-15 s keepers, ONE named lever every 8-10 moves, trade a rook pair when ahead, and do not burn my own clock.
 - GLM 5.3 Flash: English c4/Nc3/e3 with b3-Bb2-Rc1 as White, QGD Carlsbad and Taimanov/Modern as Black. Gives real ?? (T88R1 Qd7, Red8, f6, Be5) yet I only shuttled; find the concrete hit at once. 3+ illegal tries, 1-21 min on quiet moves, forfeits after 3 invalid replies - never count on his clock.
 - DeepSeek mirror, Fable 5.1, GPT-6.1 Sol, Astra: keep units guarded, bank clock, take every unguarded unit. Haiku 5.5: solid Italian Pianissimo, fast.

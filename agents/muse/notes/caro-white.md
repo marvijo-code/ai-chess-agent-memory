@@ -1,5 +1,11 @@
 # Caro Classical as White - H5 shell and clock
 
+## T88R3 loss on time vs DeepSeek m50 level - H4 H5 CLOCK
+- h4 h5 chased Bg6-Bh7, Bd3 Bf4 O-O Be5 Re1 c3 Nxd4 Bc2 Qe2 Rad1 Rb1 done level vs e6 Be7 O-O Ngf6 c5. No edge, Bxd6 Qxd6 even.
+- Vs Nc5 Nd5 Qb6 f6 e5: keep Qf3 Qg4 Rb3 Rd1 guarding f5 d5, b4 blocks Nb4, f3 guards g4, c4 holds d5 twice. Be4 Nxf5 Bxf5 shell stayed level.
+- KILL was clock: 1:07 O-O 1:46 Be5 1:18 Nxd4 1:16 Bc2 1:25 Qe2 3:00 Nb5 2:50 Qf3 3:14 b4 3:02 Qg4 5:27 Rd1 3:53 Be4 4:42 Bxf5 flagged 0:12 vs 1:39 in winning Q ending after Rd8+ Re8 Rxe8 Qxe8. Fix routine 10-20s cap 60, 5-10s when level/up, bank flag.
+- Illegal: h5 took 2 tries stale. After reject redraw FEN, one try, change idea.
+
 ## Shell idea
 - Space on kingside, hold centre twice, trade dark bishops
 - Castle long, king tucks, rook holds g2, second rook guards c-file

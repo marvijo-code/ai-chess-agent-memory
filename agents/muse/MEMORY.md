@@ -1,6 +1,7 @@
 # Chess memory - Muse Spark 1.3 Contributor (3600+10)
 
 ## Record
+- W vs DeepSeek loss on time m50 Classical h4 h5 Bh7 shell level, won queen ending but flagged 0:12 vs 1:39. 1 illegal gated h5.
 - B vs Sonnet loss mate m56 Scheveningen h6 Bxf6 Qh4 Kh7 Kg7 Bd7 Rxd7 exchange Qh8#. 6 illegal gated Ng8/Rxd7/Bd6.
 - B vs SF loss forfeit m12 Morra c3 dxc3 e5 Ng8 exd6 Bxd6 Ne4 hanging Bd6 tool-gate x3. 0 illegal.
 - T87SF2G1 B vs DeepSeek win on time m44 Nimzo IQP d4 push Ba4 Bxc2 exchange win, banked flag. 1 illegal gated Rc7.
@@ -24,8 +25,9 @@
 
 ## Key lessons (read before EVERY move)
 - LEGALITY FIRST: after 1 reject redraw FEN, FEN-walk piece square path, pick different piece and idea, never resend. 4 forfeits, tool refusal counts. In check list replies once and send in 5-10s. After 1 refusal never resend same UCI unless every move is flagged - then RESEND SAME ONCE (refusal is once-only). GATED = stale square, never variant of same idea. After any capture recount survivors first (Bxf6 gxf6 kills Nf6 so Ng8 is empty).
+- CARO CLASSICAL H4 H5 CLOCK POISON T88R3: vs Bf5 Bg6 h6 Nd7 e6 Be7 O-O level, h4 h5 chasing to Bh7 gives no edge. Bd3 Bf4 Be5 Re1 c3 Nxd4 Bc2 Qe2 Rad1 Rb1 Bxd6 shell level. Burned 1-3min on O-O Be5 Nxd4 Qg4 Rd1 Be4 Bxf5 flagged 0:12 vs 1:39 in winning Q ending. Routine 10-20s cap 60, 5-10s when level/up, bank flag vs DeepSeek, never 1-3min keepers.
 - MORRA E5 NG8 POISON T87F: vs Qb3 plus Rd1 battery never e6 then Ng8 retreat vs e5. e5 hits Nf6 at once, exd6 opens d-file to Rd1 plus Ne4 winning Bd6 (d6 held once by Q, Nc6/Ng8 do not reach). Meet e5 with block/capture named before any e6, keep d6 twice, castle fast, no Rb8 drift. Sweep e5/exd6/Ne4 every move.
-- FOUR KNIGHTS BB4 SHELL T87R3: after bxc6 Bb7 Be7 Rc8 hold d6 at once, never Kh8 Bd6-Be7 shuffle vs Bf4+Re1+Rad1. Never Rxb4 Bxh4 Rxa4 wing grabs while Qf3/Rf4 eyes f7, rook leaves f7 = Rxf7 sac mates. Keep Rb7 Qc7 Bd4 guarding f7 twice, no Ra6 Rb6 loop, never dxc5 opening Qc5.
+- FOUR KNIGHTS BB4 SHELL T87R3: vs bxc6 Bb7 Be7 Rc8 hold d6 at once, never Kh8 Bd6-Be7 shuffle vs Bf4+Re1+Rad1. Never Rxb4 Bxh4 Rxa4 wing grabs while Qf3/Rf4 eyes f7, rook leaves f7 = Rxf7 sac mates. Keep Rb7 Qc7 Bd4 guarding f7 twice, no Ra6 Rb6 loop, never dxc5 opening Qc5.
 - SCHEVENINGEN A5 POISON T86R5: vs a3+b4 never a5. bxa5 wins pawn free, axb4 axb4 opens lines with no recapture. Keep a6, hold b4 with Nd7/Qc7/Rc8, strike b5 only with b6/a6 defended twice. Before any a5/b5 list bxa5/axb4 and both recapturers.
 - TOOL PAWN FLAG VERIFY - NO BLIND RESEND: pawn-only AVOID can be REAL (T86R5 a5-bxa5). Before any resend name capturer square, its guards, and my recapturers in order. If capture wins free pawn, flag is REAL: switch piece and square at once. RESEND SAME only when you name a live guard/recapture that keeps material.
 - ENGLISH G3 E5 ND5/B3 POISON T87R1: vs e5 Nc6 d6 Be7 O-O never early Nd5 Nxd5 cxd5 Nd4 hits f3 wins center. Never b3 Bb2 while e3 held once vs d4: dxe3 exf2+ wins pawn; play d3 Qe2 first hold e3 twice. Never Re2 on Bg4 diagonal, never Qd3 leaving e2/c3 once-held Rxe2 Rxe3. Down 2 shell Qd2 Qb2 holds a2 b4, Kg2 Kh1 loop drew. 10-20s keepers.
@@ -65,12 +67,13 @@
 - W English Attack: Be3 f3 Qd2 O-O-O Kb1. Vs e5 keep Bb5 clamp, h5 Rxh5 plan, Rf5 Bc4 hits.
 - W Maroczy: clamp, develop, support first. Vs Qa5 support then castle. Vs Ng4 keep Qd2, never Nd5 trade. Vs Bh6 never Re2/Re3.
 - W English IQP: Bf4 e3 Bd3 O-O Qc2, hold d4 twice, meet c5 with tension first. No early f4/e4/f6.
+- W Classical Caro: h4 h5 chase gives no edge vs Bh7 shell. Bd3 Bf4 O-O Qc2 Qe2 Rc1, hold d4 twice, keep 10-20s.
 - B Advance: Bf5 e5 Nd7 Ne7. Meet f4 with f6 h5 first.
 
 ## Opponents
 - Haiku: patient Open Sicilian, trades rooks, centralizes king. Never shuffle king.
 - GLM: loose, hangs queen, Ba7-b6 shuffle then gates, takes free captures. Fast early, 3 invalid forfeits when forked/trapped. Press with Bb5 Rf5 Bc4 hits, bank clock. Solid English mirror won 2 pawns T87R1 but settles for Qb6 shuffle draw.
-- DeepSeek: guarded queenside dance, banks clock then burns 4-10min and flags to 5min. Takes loose, solid shell. Press with new moves when ahead, never repeat. Punishes a5/b5 hooks with bxa5. IQP shell Re5 Re6 Bg6 holds e4 triple, draws down clock with keepers. Nimzo QGD: long thinks exd5 6:56, Kh1 Kg1 triple-gated loops flags - bank and keep 10-20s keepers.
+- DeepSeek: guarded queenside dance, banks clock then burns 4-10min and flags to 5min. Takes loose, solid shell. Press with new moves when ahead, never repeat. Punishes a5/b5 hooks with bxa5. IQP shell Re5 Re6 Bg6 holds e4 triple, down clocks with keepers. Nimzo QGD: long thinks exd5 6:56, Kh1 Kg1 triple-gated loops flags - bank and keep 10-20s keepers. Classical Caro: Bh7+Qb6+Rc8 shell level, 6 gated illegals but banks flag if White slow T88R3.
 - Sonnet: solid Breyer plus Scheveningen, patient, shuffles to flag. Takes every loose unit. Breyer Kh7 Bc4 Nd4 Qb4 Rc5 Rc2 traps Ra3. Scheveningen Qg3 Bg5 f4: h6 met Bxf6 Qh4 wins cover. Banks 50min, zero illegal, wins clock if I drift.
 - SF: punishes loose, pins, back rank, breaks. Bh6 x-ray on e3 rook, Be6+Ng4 wins Be3. Instant, no gifts. Castle early, keep shell for repeat.
 - Fable: takes loose, trades queens when up, no luft. Fortress, checks, back-rank mate.
