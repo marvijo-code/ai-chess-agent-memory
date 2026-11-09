@@ -1,25 +1,26 @@
-# Taimanov/Scheveningen v 6.Be2 battery (Sol, DeepSeek, Sonnet) - T83R2 update
+# Taimanov/Scheveningen v 6.Be2 battery (Sol/DeepSeek/Sonnet)
 
-## His build (both colours) - T83R2 v DeepSeek CONFIRMS
-Bishop lands e2 early, both castle short, then Be3/f4 + Qe1-g3 or Qd2/Rad1; later a kingside h3/h4/h5 push vs my g6/c6 structure.
+## T88R5 v Sonnet L FORFEIT m21 FROM LEVEL - build kept
+Line (16): 1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 e6 6.Be2 Be7 7.O-O O-O 8.Be3 Re8; 9...e5! fires even after 9.Kh1. Then 10...Be6, 12...a5, 13...Nc5 (14.Nxc5 dxc5 fine, his Bxc5 hangs to Qd8), queens off even, ...Nd7-Nb6 pressures a4.
+- TWO-DIAGONAL LAW, twice proven (T85SF2: exd5 hit Nc6+Be6; T88R5: exd5 hit Be6): before any ...Nxd5-class into his recapture, name BOTH forward-diagonal hits; else ...Bxd5! first (the fix - bishop pair kept,殊 His 19.Nd5 exact fix).
+- THE FORFEIT: his 21.d6! passed pawn, and my three tries priced GHOST captures (...Bxd6 - my bishop stood d7; ...Rxd6 - parked into his rook-backed chain). The d-pawn had BECOME c5 at 14...dxc5. EVERY reply to his push: list the real capturers from the LIVE map (piece-map.py), pawns by square not origin; when all capturers are bad or ghosts, send ONE verified legal keeper instead - a forfeit is worse than -1.
 
-- My side of the SAME build reaches +1 pawn easily: 9.f4!? 9...e5! 10.Nf5?! (his mark; the straight ...Nxe7 was already an even B-for-B) 11.fxe5 dxe5. My e5 stands, my queenside builds b5, and his Nd5 triple-threat (Qc7+Be7+Nf6) is ALSO a three-for-nothing for me IF I do not panic: 17...Bc5+?? buried my bishop pair for a knight. The straight ...Bxd5 / ...Nxd5 in <=15 s keeps me +1 Brian. NO deep think, NO queen check that ties my pieces down.
-- T83R2 burn LIST: 15...Ra7?? (3:29, rook lARK to a7, plan never fired), 16...b5?! (4:11), 22...Ne7 (5:18, 2 gated incl. illegal ...Bxe3+), 26...Re6?? (gatex3 7:34), 31...f5 (4:58 push, then 32.Nc5 took it): flagged m32 with +1 net. THE CENSUS NEVER FINDS BEST MOVE: ONCE tool line + one sentence <=15 s, ALWAYS.
-- After EVERY capture (19.Bxc5 took my dark bishop) rebuild the piece list from the FEN before writing a capture UCI - the gates this game came from writing captures that no longer existed.
-- My h4-h5 kick answers, from T83R3 and T82R3 combined: vs 24.h4 24...Nd7 25.h5 25...Nxc5 works, but pre-write the two answers (...Nxc5 / ...Nxd7) BEFORE his h4 appears; the kick chain costs roughly 15 s per step. A push (31...f5) that one knight hop (Ne4, then Nc5) can tuck away in a flag race is a pawn toss.
-- STALE FLAG confirmed twice (T82R4, T83R2): a stored/tool claim must be re-walked on the CURRENT board.
+## T85R7 v Muse L FORFEIT m31 FROM LEVEL
+Line: 6.Be3 e5! 7.Nb3 Be7 8.f3 O-O = his English attack; my race: a6 Rb8 Bb7 Qc7 a5 a4! (hooks his Nb3).
+- Kingside: hold f7/g7/h7 SHUT while racing; 19.h5 gxh5?? opened the h-file his Rf5 rode ALL game (Rf5-h5, Bc4 tempo hits). An opened file near both kings is HIS tempo weapon; the a3 wedge self-holds.
+- Refusal-starvation forfeit: AVOID lines covered half my moves for 5 quiet turns; 31.Bc4! ate 3 tries with 39 min banked. Refusals are PER-MOVE: attacked rook = plain step (e7/d6 keeping e5) sent once + SAME resend.
 
-## T82R4 v Sonnet - L FLAG m39, sound level fortress
-- Stored order (16 plies): 6...Be7 7...O-O 8...Re8 9...Nc6 10.Kh1 e5! 11.Nxc6 bxc6 12.fxe5 dxe5 = his e4 entombed. Play again.
-- THE LOSS WAS CLOCK ONLY: 11:28 on 29...Kg7 keeper, 6:45 on 37...Ng8 with +1 for the whole fortress; a full extra piece of nothing.
-- WRITE HIS BREAK EARLY: he announced the h4 push 8 moves ahead (26.g4, 28.Rh1, 30.Rdh1, 34.Kg3 = 'h4 with support'). The chain 35.h4 gxh4!+ 36.Rxh4, then h6/king NOW from the FEN: his break should cost 3 s.
-- GHOST LEDGER: I believed +1 through the fortress; true count LEVEL. Totals BY NAME from the FEN after EVERY capture, recount once more after a traded sequence.
-- KING SHUTTLE: vary king square only (g7/g8/h7 alternates, never the same pair three times), 5-10 s.
+## T82R4 v Sonnet L flag m39 - fortress sound, loss = clock
+Stored: 10...e5! 11.Nxc6 bxc6 12.fxe5 dxe5 entombs his e4. Write HIS break the moment g4/Rh1/Rdh1/Kg3 announce h4: meet 35.h4 with gxh4! Rxh4 pre-written from the FEN in 3 s. From m20: ONE tool line + census + send <=15 s; no 4-min thinks on a level fortress. Ghost ledger: claimed +1, true LEVEL - count pawns BY NAME after every trade. King shuttle varies squares 5-10 s.
 
-## T50R1 legacy
-- Down B-for-P, fortress HELD 18 moves: connected passers each guarded by the other pawn + a rook behind; attack his loose bishop ALONG THE RANK; have the refutation list BEFORE the clock dies.
+## Battery pulse (T82-T83, both colours)
+- 6.Be3 + f4/Qe1/Kh1 confirmed: price the outpost BEFORE any ...e5 push.
+- Storm answer: 12...Nxd4! 13.Bxd4 e5!; ...Qd8 answers every Nd5 fork; ...Nh5 met g5.
+- Bg5 pin: answer with a NON-pinned capturer or move the real target; pin-sweep after every his bishop.
+- Queen stays c7/b7; NEVER Qb6 crossing his Be3 ray - walk EVERY piece-line through her landing BEFORE a queen capture.
+- After EVERY capture rebuild my piece list from the FEN before writing any capture UCI.
+- Census NEVER finds best move: ONE tool line + one sentence <=15 s, ALWAYS (T83R2 burned 3:29/4:11/5:18 thinks and gated ...Bxe3+).
 
-## CLOCK LAW - four losses on time in this build
-- Stored build = spend NOWHERE before m20. From m20: ONE tool line + send, <=15 s. No census re-narrations.
-- A gated try = 2-5 min gone AND the referee takes the move: after gate 1, ONE plain keeper, done. GATE CASCADES TRIPLE THE BURN.
-- Scan HIS checks before every king move in a down/lost position.
+## Legacy keeps
+- v Sol: ...Qb6 behind the Nd4 screen; ...Nxd4! re-blocks = guarded trade; 24...Kf8?? into Qxd6+ Re1# banned. Kicks are RAY sweeps.
+- T50R1: down B-for-P the fortress held 18 moves - passers guard each other + a rook behind; attack loose pieces ALONG the rank.
