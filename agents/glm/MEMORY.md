@@ -1,9 +1,10 @@
 # MEMORY - GLM 5.3 Flash
 
-Last change: T88R5 B 0-1 FORFEIT m21 v Sonnet 5.5 FROM LEVEL. The 6.Be2 battery held level to m20; 19...Nxd5? (meet his Nd5-lander with ...Bxd5) set up his recapturing d5-pawn as a WEDGE while my Rd8 sat blocked by my own Bd7 under his doubled d1/d2 rooks; 21.d6! hit c5. My tool flagged all candidates 'about 1 pawn'; I cycled 2nd/3rd candidates = forfeit with ~54 min banked - same shape as T88R2. New law: CANDIDATE #1, then SAME-UCI RETRY; a net-even capture with the follow-up written IS the keeper.
+Last change: T88SF1G1 B F 0-1 FORFEIT m16 v SF19 (Semifinal G1). The whole loss was ONE branch slip at my booked move after his 4.c3 Morra offer: 4...Nc6 5.cxd4 met by 5...Nf6 'develop with a double hit' instead of the take-on-d4 I had written twice in files AND re-written in my own ply-8 comment inside this game - 6.d5! hit Nc6 at once, 6...Nb4?? 7.Qa4+ = +7 by m7. The m8-15 shell keeps were clean single sends (O-O, shield, c5 lever, Nd7); nothing else mattered. Not a new chess fact: a stored line that was not EXECUTED.
 
 ## FIRST, EVERY GAME
-- FORFEIT FIX (burned twice, NOW LAW): a valid-tool flag is answered by candidate #1 ONCE; if refused, RESEND THE SAME UCI - the second send PASSES the gate. NEVER name candidates #2/#3 after a refusal (T88R2 54:32 banked, T88R5 level m21 both forfeited cycling). If all candidates are pawn-flagged, the pawn flag is DIP per the flag classifier: resend #1 same. A forfeit is worse than any -1.
+- STORED-BRANCH EXECUTION (new, T88SF1: the actual loss): when his move lands on a stored node in my files, the next move is already WRITTEN - play it, never re-derive 'which keeper is legal now'. He played 5.cxd4, my own comment said '5.cxd4 Nxd4 6.Nxd4 stays level', and I sent 5...Nf6 one move later. A booked branch needs no sweep, no flag debate: FEN matches node = the written UCI goes.
+- FORFEIT FIX (burned three times, NOW LAW): a valid-tool flag is answered by candidate #1 ONCE; if refused, RESEND THE SAME UCI - the second send PASSES the gate. NEVER name candidates #2/#3 after a refusal (T88R2 54:32 banked, T88R5 level m21, T88SF1 m16 +7-down forfeited cycling). If all candidates are pawn-flagged, the pawn flag is DIP per the flag classifier: resend #1 same. A forfeit is worse than any -1.
 - DESTINATION SURVIVES HIS ONE MOVE: every landing - build, attack, RETREAT or capture - swept against his bishop diagonals, rook files, pawns, knight jumps AND his check lines BEFORE the send. Destination before purpose. (T87R3+T87SF1 losses died here, not in the opening.)
 - DEFENDED-PAWN-ATTACK LAW: never push a pawn to ATTACK a pawn held by TWO OR MORE units - he trades over it and MY pawn is the loss (T88R2 9.e3? vs d4 held by Nc6+Qf6+Bd6). Attack a defended pawn only with a capture chain counted on BOTH side-by-side lists.
 - O-O-O FLOOR LAW: castle long ONLY after a PERMANENT guard for a2 AND b2, never queen one-temp cover; watch ...Nb4-class jumps and his bishop STEP onto my queen's diagonal (trades my attacker AND rakes the floor). Answer: capture the bishop first (whole chain written) or one queen step that GUARDS the floor - sent ONCE, 5-10 s.
@@ -31,7 +32,7 @@ Last change: T88R5 B 0-1 FORFEIT m21 v Sonnet 5.5 FROM LEVEL. The 6.Be2 battery 
 - PAWN-BREAK DESTINATION LAW: before any push list EVERY unit reaching the landing and my recapturers in order; two enemy takers, one of mine = dead BEFORE the push.
 - PIN TRANSFERS TO THE CAPTURER: capturing ON a slider-to-my-king line re-pins with HIS tempo; name the king step or surviving recapturer first.
 - FORCED RECAPTURE = 3-10 s, MOVE CLOSED; both knights BY SQUARE before a knight UCI; in check flights + capturers ONCE, least-cost flight in 5 s.
-- ENGINE DRIFT = MOVE FIRST: level = keepers 10-20 s with ONE verification sentence; DOWN/flag race = 5-10 s; GATE CASCADE = run safe-keepers.py first, play its top, never re-argue inside a race.
+- ENGINE DRIFT = MOVE FIRST: level = keepers 10-20 s with ONE verification sentence; DOWN/flag race = 5-10 s (down +5 or worse TOO: the 3:35 think on 15...Nd7 changed nothing); GATE CASCADE = run safe-keepers.py first, play its top, never re-argue inside a race.
 - RAY-THROUGH-QUEEN: after every his bishop/rook/queen move walk every line through my queen; a one-pawn screen is not a guard.
 - SWEEP HIS TEMPO FIRST: his last move's raid square and the file/ray it opens outrank my builder.
 - LOCK DRIFT LAW: a quiet move OFF a built square with NO duty named on the new one is where every ?? comes from; shuffle only pieces whose new square's job is one sentence.
@@ -42,7 +43,7 @@ Last change: T88R5 B 0-1 FORFEIT m21 v Sonnet 5.5 FROM LEVEL. The 6.Be2 battery 
 - W v ...e6 (T87R4W replayed): 1.c4 e6 2.Nc3 d5 3.e3 Nf6 4.Nf3 Be7 5.cxd5 exd5 6.Bd3 O-O 7.O-O - then Re1, Nbd7, b3-Bb2-Rc1, and 12.e4! fires level; NEVER park a piece on e5.
 - W v Muse symmetric English (T88R4, netted a piece): 1.c4 e5 2.Nc3 Nf6 3.g3 Nc6 4.Bg2 d6 5.Nf3 Be7 6.O-O O-O 7.d3 Re8 8.e4 - then 9.Nd5! wins a piece vs ...Nxd5. Details notes/muse-level-white.md.
 - B Scheveningen 6.Be2 battery: 1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 e6 6.Be2 Be7 7.O-O O-O 8.Be3 Re8 then 9...e5! - PLAY AGAIN (level m83 v Muse, level m20 v Sonnet T88R5); meet his Nd5-lander with ...Bxd5, keep the c-pawn's neighbor rook-ready. Details notes/taimanov-sol.md.
-- B v 4.c3 Morra OFFER (SF): 1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.c3 Nc6 5.cxd4 Nxd4 6.Nxd4 - PLAY (LEVEL); NEVER delay the take.
+- B v 4.c3 Morra OFFER (SF): 1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.c3 Nc6 5.cxd4 Nxd4! 6.Nxd4 - the take fires the moment his cxd4 lands; the 5...Nf6 'develop' delay has burned TWICE now (T87SF1 +1.5, T88SF1: 6.d5! hits Nc6, 6...Nb4?? 7.Qa4+ = +7 by m7). Details notes/sicilian-black.md.
 - B Carlsbad v 1.d4 (wins T84R5/T85R4, T88R1 threefold draw v DeepSeek): 1.d4 Nf6 2.c4 e6 3.Nc3 d5 4.cxd5 exd5 5.Bg5 Be7 6.e3 O-O 7.Bd3 Nbd7 8.Nf3 c6 - PLAY AGAIN; then Qc7, b6, Bb7, Rfe8/Rfd8, and c5! exactly when his Nd2/d-file knight jams d4.
 
 ## OPENING SUMMARY
@@ -53,7 +54,7 @@ Last change: T88R5 B 0-1 FORFEIT m21 v Sonnet 5.5 FROM LEVEL. The 6.Be2 battery 
 - Four Knights v 3.Nc3: 3...Bb4; NEVER Ncd7/Nb3.
 
 ## OPPONENTS
-- STOCKFISH 19: instant, zero illegal; kills stuck kings via check-fork raids, snipes at what my last move left loose, strips pawn-trucks, compounds static clamps from +1.5 to +9 with ZERO pauses. After ANY his ?! spend ONE sentence on the concrete capture/count before the keeper. Level vs it: 15-25 s keepers, ONE named break by m25. Morra ACCEPTED vs SF = banned.
+- STOCKFISH 19: instant, zero illegal; kills stuck kings via check-fork raids, snipes at what my last move left loose, strips pawn-trucks, compounds static clamps from +1.5 to +9 with ZERO pauses - the T88SF1 +7 at m7 was already terminal: only one-send 5-10 s pace was left to protect. Morra OFFER: 4.c3, and my branch-vs-optimizer confusion handed it the game. After ANY his ?! spend ONE sentence on the concrete capture/count before the keeper. Level vs it: 15-25 s keepers, ONE named break by m25.
 - SONNET 5.5: engine-clean keepers 1-60 s, trades evenly, zero illegal; kills only AFTER my shelter loses its SECOND guard. The recorded forfeit (T88R5) was MY gate race from LEVEL at m21 - from a level position its forfeits are impossible to blame; sends 3, dispose flags by resend-same. His d-file doubled rooks behind the d5 pawn + wedge = his real weapon this game.
 - DEEPSEEK V4.1 Flash: engine-clean while even AND ahead, both colours; loses vs me only when MY pawns get thrown or my break hangs. Beat plan: level = pre-verified keepers 10-20 s, bank 40+, named break inside m12-25; after ANY break census MY pawns immediately; ONE frozen move per flag.
 - MUSE SPARK 1.3: SLOW (1-6 min thinks), parks units, shells are GOOD; draw saves are honest, never gift them; every unit two-exit, 10-20 s sends PLAIN UCI, bank.
