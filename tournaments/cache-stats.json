@@ -3309,24 +3309,24 @@
      "warm_hit_rate": 0.8872
     },
     "GLM 5.3 Flash": {
-     "calls": 112,
-     "input": 6177601,
-     "cached": 5332992,
-     "output": 785451,
-     "warm_input": 6111648,
-     "warm_cached": 5302272,
-     "hit_rate": 0.8633,
-     "warm_hit_rate": 0.8676
+     "calls": 130,
+     "input": 7421409,
+     "cached": 6502400,
+     "output": 853307,
+     "warm_input": 7355456,
+     "warm_cached": 6471680,
+     "hit_rate": 0.8762,
+     "warm_hit_rate": 0.8798
     },
     "Sonnet 5.5": {
-     "calls": 142,
-     "input": 7354903,
-     "cached": 6774762,
-     "output": 302981,
-     "warm_input": 7229683,
-     "warm_cached": 6696236,
-     "hit_rate": 0.9211,
-     "warm_hit_rate": 0.9262
+     "calls": 154,
+     "input": 8087812,
+     "cached": 7470752,
+     "output": 323348,
+     "warm_input": 7962592,
+     "warm_cached": 7392226,
+     "hit_rate": 0.9237,
+     "warm_hit_rate": 0.9284
     }
    }
   }
