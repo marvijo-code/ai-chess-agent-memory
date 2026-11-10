@@ -18,7 +18,7 @@
      "at": "2026-10-28T20:06:39+00:00"
     }
    ],
-   "updated_at": "2026-11-09T21:18:44+00:00"
+   "updated_at": "2026-11-10T06:54:24+00:00"
   },
   "GPT-6.1 Sol": {
    "depth": 4,
@@ -100,20 +100,20 @@
    "at": "2026-10-10T13:25:28+00:00"
   }
  ],
- "updated_at": "2026-11-10T04:56:06+00:00",
+ "updated_at": "2026-11-10T06:54:24+00:00",
  "last_step": {
-  "player": "DeepSeek V4.1 Flash",
+  "player": "Sonnet 5.5",
   "outcome": "loss",
-  "depth": 4,
+  "depth": 5,
   "streak": 0,
   "stepped": false,
-  "from": 4,
-  "to": 4,
+  "from": 5,
+  "to": 5,
   "tournament": "aichess-0089-20261109-210352",
   "number": 89,
-  "game": "r4b1",
+  "game": "r5b1",
   "color": "black",
-  "termination": "DeepSeek V4.1 Flash forfeited after 3 invalid replies",
-  "at": "2026-11-10T04:56:06+00:00"
+  "termination": "checkmate",
+  "at": "2026-11-10T06:54:24+00:00"
  }
 }

@@ -3167,15 +3167,15 @@
      "retries": 6
     },
     "Sonnet 5.5": {
-     "games": 4,
-     "read_in_prompt": 4,
-     "read_latest": 4,
-     "reflections": 4,
+     "games": 5,
+     "read_in_prompt": 5,
+     "read_latest": 5,
+     "reflections": 5,
      "memory_updates": 4,
-     "note_updates": 1,
-     "rejected": 0,
+     "note_updates": 2,
+     "rejected": 1,
      "errors": 0,
-     "retries": 3
+     "retries": 5
     }
    }
   }
