@@ -3299,34 +3299,34 @@
    "number": 89,
    "players": {
     "DeepSeek V4.1 Flash": {
-     "calls": 70,
-     "input": 3435757,
-     "cached": 3049088,
-     "output": 398627,
-     "warm_input": 3384390,
-     "warm_cached": 3032448,
-     "hit_rate": 0.8875,
-     "warm_hit_rate": 0.896
+     "calls": 97,
+     "input": 4777755,
+     "cached": 4188672,
+     "output": 674764,
+     "warm_input": 4702686,
+     "warm_cached": 4172032,
+     "hit_rate": 0.8767,
+     "warm_hit_rate": 0.8872
     },
     "GLM 5.3 Flash": {
-     "calls": 63,
-     "input": 3474332,
-     "cached": 2945024,
-     "output": 376532,
-     "warm_input": 3430898,
-     "warm_cached": 2924544,
-     "hit_rate": 0.8477,
-     "warm_hit_rate": 0.8524
+     "calls": 112,
+     "input": 6177601,
+     "cached": 5332992,
+     "output": 785451,
+     "warm_input": 6111648,
+     "warm_cached": 5302272,
+     "hit_rate": 0.8633,
+     "warm_hit_rate": 0.8676
     },
     "Sonnet 5.5": {
-     "calls": 96,
-     "input": 4971837,
-     "cached": 4566579,
-     "output": 228017,
-     "warm_input": 4887340,
-     "warm_cached": 4513516,
-     "hit_rate": 0.9185,
-     "warm_hit_rate": 0.9235
+     "calls": 142,
+     "input": 7354903,
+     "cached": 6774762,
+     "output": 302981,
+     "warm_input": 7229683,
+     "warm_cached": 6696236,
+     "hit_rate": 0.9211,
+     "warm_hit_rate": 0.9262
     }
    }
   }

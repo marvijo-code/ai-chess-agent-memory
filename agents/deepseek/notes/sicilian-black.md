@@ -1,31 +1,27 @@
-# Sicilian as Black - Alapin/Dragon/Taimanov
+# Sicilian as Black - Taimanov/Alapin
 
-## Taimanov B vs 6.Nxc6/8.e5 clamp (g158,g164,T38R6,T50R3,T82R1 v SF: all 0-1)
-Book: 1.e4 c5 2.Nf3 e6 3.Nc3 Nc6 4.d4 cxd4 5.Nxd4 Nf6 6.Nxc6 bxc6 7.Bd3 Be7 8.e5 Nd5 (15 plies). 8...Nd5! and 9...Bf8 vs 9.Qg4 are the only moves; ...Bf8 guards g7 with a PIECE.
-- g158 9...O-O?? 10.Bh6! Bb7?? 11.Qxg7#. g7's only guard was my king.
-- g164 9...d6? loses too: an e8-king does NOT guard g7.
-- T38R6 9...Nf6?? 10.exf6! - the e5-PAWN owns f6. 11...Rf8 safe; 12...Rg8?? 13.Qxg8+ (K e8 two squares from g8).
-- T50R3 9...Bf8 10.O-O Qc7 11.Re1 g6?? opened a1-h8; 15.Qf6! won Rh8; 16...Qb6?? 17.Bh6! Qb2 18.Qxf8#. Keep f8 AND g7 covered; no ...g6/...h5/queen pawn-grab after ...Bf8.
-- T82R1 v SF: 9...g6 10.O-O O-O 11.Bh6 Re8 12.Ne4. Then 12...Qc7? 13...Nb6?? 14...d5?? allowed 15.exd6 e.p., forking Qc7+Be7 and opening Qf4-c7. Do not park the queen on c7 behind his e5-pawn; before ...d5/...d6 walk the diagonal behind that pawn. With e5 alive, a c4 kick must move Nd5 to a square with an exit, and ...f6 comes first.
-- Answer to 9.Qg4: cover g7 with ...Bf8/...Kf8, or kick ...h5 only if g7 is guarded. NEVER ...d6/...Nf6 while e5 stands; ...g6/...O-O can be played but keep Q off c7 and count e.p.
+## Taimanov B vs 6.Nxc6 + 7.e5 clamp (v SF: g158,g164,T38R6,T50R3,T82R1,T89R3 all L)
+Book: 1.e4 c5 2.Nf3 e6 3.Nc3 Nc6 4.d4 cxd4 5.Nxd4 Nf6 6.Nxc6 bxc6 7.Bd3 Be7 8.e5 Nd5 (15 plies).
+- 8...Nd5 and then ...Be7/...Bf8/...O-O ONLY with g7 guarded by a PIECE. 9...O-O?? 10.Bh6 Qxg7# (g158); 9...d6? and 9...Nf6?? lose the same way (g164, T38R6: the e5-pawn owns f6). Keep the queen off c7 behind e5 (T82R1 e.p. fork), no ...g6.
+- T89R3 v SF: 7.e5 Nd5 8.Qf3 Qc7?! 9.Qg3 - his queen over the e5-pawn. Then ...Nb4-...c5-...Bb7-...Bc6-...Nd5 was a FIVE-PIECE TOUR, no capture, no target; 13...Nd5? let 14.Nxd5 exd5 15.e6! (e6! = +2.8) and his Qg3+Bf4+Bc3+Rad1+Bg4 clamp beat ...f5.
+- Correct plan in this clamp: ONE piece guard of g7 (...Be7/...Bf8), ONE break named by move 12, castle only after the guard, and count Nxd5 exd5 e6! before every knight landing.
+- Clock: ...Nb4 9:14, ...Nd5 6:41, ...Qd7 8:22, ...Ke8 4:05, ...Qb7 3:44 = ~52 of 60 min by move 26; flagged 8:05 v 1:04:29. Level shell = 5-15 s, one send.
 
 ## Taimanov B, quiet 6.Be2 (g103,g150,g152,g156,T37R7)
-Book: 6.Be2 e6 7.O-O Be7 8.Be3 O-O 9.f4 a6 10.Kh1 Bd7 11.a4 Qc7 12.Bf3 Nxd4 13.Bxd4 (15 plies), then ...Rfe8/...Rad8. His Qe1-g3 + Bd4 menaces Qxg7#; trade Bd4 or play ...f6/luft the moment Qg3 appears - never a passive rook shuffle.
-- T37R7 v Astra (0-1, Qxh7# m31): 9...d5 10.e5 Nd7 11.Qe1 Nc5?? 12.Qg3 f6 13.exf6 Bxf6 14.Nxc6! moved his Nd4 SCREEN off the e3-c5 line and 15.Bxc5 won my loose c5-KNIGHT. Before ...Nc5 name its guard (only ...b6/...d6) and who screens his bishop's line; BAN ...Nc5 there.
-- g156 v Sol: 15...Qb6?? lost my QUEEN to 16.Bxb6 - she stood on that bishop's d4-b6 diagonal. Walk every enemy bishop diagonal to its end before any queen move.
-- g103: 12...Bd6?? guarded only by my queen - 13.Qxd6 Qxd6 14.Bxd6; 17...Bf5?? Rxf5; 36-38 s thinks.
+Book: ...e6/...Be7/O-O/...a6/...Bd7/...Qc7/...Nxd4/...Bxd4 then ...Rfe8/...Rad8 (15 plies).
+- His Qe1-g3 + Bd4 = Qxg7#: trade Bd4 or play ...f6/luft the moment Qg3 appears. T37R7 11...Nc5?? - only ...b6/...d6 guard it, and 14.Nxc6 moved Nd4 off the e3-c5 screen so 15.Bxc5 won the knight. BAN ...Nc5 there. g156 15...Qb6?? Bxb6 (walk the bishop diagonal). g103 12...Bd6?? Qxd6.
 
-## Taimanov B, g34 v GLM (1-0 m26)
-6.Bg5 e6 7.Qd2 Be7 8.O-O-O O-O 9.f4 a6 10.Be2 Bd7 11.g4 b5 (15 plies) is safe while White has no a4. 13...Bxd4! 14.Qxd4?? Nxd4 = Q for B. Then ...Qc7/...f6/...gxf6/...d5/...Bc6. 24...Qxf4+ 25.Kb1?? dropped Kc1's guard of d2 -> ...Qxd2 ...Qe1#.
+## Taimanov B, 6.Bg5 (g34, 1-0)
+6.Bg5 e6 7.Qd2 Be7 8.O-O-O O-O 9.f4 a6 10.Be2 Bd7 11.g4 b5 (15) is safe while White has no a4. 13...Bxd4! 14.Qxd4?? Nxd4 = Q for B. Then ...Qc7/...f6/...d5/...Bc6; watch ...Qxf4+ dropping d2.
 
 ## Alapin 4.c3
 - 5.Qxd4: ...Nc6/...g6/...Bg7/...O-O/...Nc5. No ...Nb4, no knight to d4 (12...Nd4?? 13.Rxd4), no ...b5 while Rd1 faces Qd8.
-- g95: 6...Nf6?! allows 7.Nc3!; after 3...d5 the queen MOVES off d5 when hit - 7...e6?? 8.Nxd5 = Q for N.
-- g91: 10...bxc6! not ...Bxc6?! (11.d5!); 14...Bxe6! not ...fxe6?! (16.exd6+); 19...Qxd6?? 20.Qxd6+ - d6-pawn was the last screen on the open d-file.
+- g95: 6...Nf6?! allows 7.Nc3!; after 3...d5 the queen MOVES off d5 when hit (7...e6?? 8.Nxd5 = Q for N).
+- g91: 10...bxc6! not ...Bxc6?! (11.d5!); 19...Qxd6?? 20.Qxd6+ - d6 was the last screen on the open d-file.
 
 ## Recurring
-- QUEEN: hit -> she moves that move; 'defended' never counts; pawns e6 hits d5/f5, d5 c4/e4, f7 e6/g6; walk BOTH his bishop diagonals and his knight jumps to her landing square.
-- MATE FIRST: Qg4/Bh6 and Qg3/Bd4 - count g7's guards BEFORE castling/shuffling; an e8-king guards nothing two ranks away.
-- SCREEN: a knight screening his bishop can leave with tempo; the piece behind is then loose. A capture on the last screen of his queen/rook file = Q/R for P.
-- RECAPTURE != TRADE: name my recapturer on the destination AND that it reaches it in ONE move.
-- Time: book <=10 s, routine <=15 s; long thinks fixed nothing (T38R6 9...Nf6 37 s; T50R3 ...g6 2:50, ...Qb6 3:23; T82R1 ...d5 1:22).
+- QUEEN: hit -> she moves that move; walk BOTH his bishop diagonals and every knight jump to her landing; e6 hits d5/f5, d5 hits c4/e4, f7 hits e6/g6.
+- MATE FIRST: Qg3/Bh6 and Qg3+Bf4 - count g7's guards BEFORE castling; an e8-king guards nothing two ranks away.
+- SCREEN: a knight screening his bishop can leave with tempo; a capture on the last screen of his rook/queen file = Q/R for P.
+- RECAPTURE != TRADE: name my recapturer on the destination and that it reaches it in ONE move.
+- Time: book <=10 s, routine <=15 s; every long think in this line was a ?/?? or the flag.
